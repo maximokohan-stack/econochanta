@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Econochanta</title>
+  <meta name="description" content="La economía argentina filtrada por lo que vos tenés. Sin chamuyo.">
+  <meta name="theme-color" content="#f3f5f7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1317" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+
+  <header class="top">
+    <div class="top__row">
+      <div>
+        <p class="brand">econochanta</p>
+        <p class="top__date" id="fecha"></p>
+      </div>
+      <button class="icon-btn" id="tema" type="button" aria-label="Cambiar tema claro u oscuro">Tema</button>
+    </div>
+    <p class="banner" id="banner" hidden>Datos de ejemplo. Todavía no está conectado al BCRA ni a DolarAPI.</p>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- HOY -->
+    <section id="vista-hoy" class="vista" aria-labelledby="h-hoy">
+      <h1 id="h-hoy" class="sr-only">Hoy</h1>
+
+      <article class="card hero" aria-live="polite">
+        <p class="label">Tu plata hoy, en términos reales</p>
+        <p class="hero__num" id="hero-num">0,00%</p>
+        <p class="hero__sub" id="hero-sub"></p>
+        <dl class="hero__meta">
+          <div><dt>Desde ayer</dt><dd id="hero-dia">-</dd></div>
+          <div><dt>En pesos, 30 días</dt><dd id="hero-mes">-</dd></div>
+        </dl>
+      </article>
+
+      <article class="card note">
+        <h2 class="label">Lo que te toca hoy</h2>
+        <p id="mensaje" class="note__text"></p>
+      </article>
+
+      <article class="card" aria-labelledby="h-termo">
+        <h2 id="h-termo" class="label">Tu termómetro</h2>
+        <div class="gauge">
+          <svg viewBox="0 0 180 100" class="gauge__svg" role="img" id="gauge-svg" aria-label="Termómetro personal">
+            <path class="gauge__track" d="M10 90 A80 80 0 0 1 170 90" pathLength="100" />
+            <path class="gauge__value" id="gauge-valor" d="M10 90 A80 80 0 0 1 170 90" pathLength="100" />
+          </svg>
+          <div class="gauge__read">
+            <p class="gauge__score" id="score">0</p>
+            <p class="gauge__mood" id="mood"></p>
+          </div>
+        </div>
+        <p class="hint">Sube cuando todo está en calma. Cada factor pesa distinto según lo que cargaste en tu perfil.</p>
+        <ul class="factors" id="factores"></ul>
+      </article>
+
+      <article class="card" aria-labelledby="h-dolar">
+        <h2 id="h-dolar" class="label">Dólar y brecha</h2>
+        <ul class="quotes" id="cotizaciones"></ul>
+        <figure class="spark">
+          <svg viewBox="0 0 300 70" id="spark" role="img" aria-label="Evolución del dólar MEP en 30 días"></svg>
+          <figcaption class="hint">Dólar MEP, últimos 30 días</figcaption>
+        </figure>
+      </article>
+
+      <article class="card" aria-labelledby="h-alertas-hoy">
+        <h2 id="h-alertas-hoy" class="label">Alertas activas</h2>
+        <ul class="alerts" id="alertas-hoy"></ul>
+        <a class="link" href="#alertas">Configurar alertas</a>
+      </article>
+    </section>
+
+    <!-- PERFIL -->
+    <section id="vista-perfil" class="vista" aria-labelledby="h-perfil" hidden>
+      <h1 id="h-perfil" class="title">Tu perfil</h1>
+      <p class="lead">Cinco datos para que todo se mida contra tu bolsillo y no contra el promedio. Se guardan solo en este dispositivo.</p>
+
+      <form class="card form" id="form-perfil" autocomplete="off" novalidate>
+        <div class="field">
+          <label for="p-ingreso">Sueldo neto mensual (ARS)</label>
+          <input id="p-ingreso" name="ingreso" type="number" inputmode="decimal" min="0" step="1000">
+          <p class="field__help">Lo que te entra por mes en pesos.</p>
+        </div>
+        <div class="field">
+          <label for="p-ahorroARS">Ahorros en pesos (ARS)</label>
+          <input id="p-ahorroARS" name="ahorroARS" type="number" inputmode="decimal" min="0" step="1000">
+          <p class="field__help">Plazo fijo, cuenta remunerada o efectivo.</p>
+        </div>
+        <div class="field">
+          <label for="p-ahorroUSD">Ahorros en dólares (USD)</label>
+          <input id="p-ahorroUSD" name="ahorroUSD" type="number" inputmode="decimal" min="0" step="10">
+          <p class="field__help">Todo lo que tenés en dólares, donde sea.</p>
+        </div>
+        <div class="field">
+          <label for="p-alquiler">Alquiler o cuota UVA mensual (ARS)</label>
+          <input id="p-alquiler" name="alquiler" type="number" inputmode="decimal" min="0" step="1000">
+          <p class="field__help">Cualquier gasto fijo que se ajuste por inflación.</p>
+        </div>
+        <div class="field">
+          <label for="p-gastoUSD">Gasto mensual en dólares (USD)</label>
+          <input id="p-gastoUSD" name="gastoUSD" type="number" inputmode="decimal" min="0" step="10">
+          <p class="field__help">Viajes, suscripciones y compras afuera.</p>
+        </div>
+        <div class="form__actions">
+          <button class="btn btn--ghost" type="button" id="perfil-reset">Volver al ejemplo</button>
+        </div>
+        <p class="hint" id="perfil-estado" role="status"></p>
+      </form>
+
+      <article class="card" aria-labelledby="h-expo">
+        <h2 id="h-expo" class="label">Cómo estás expuesto</h2>
+        <ul class="factors" id="exposicion"></ul>
+      </article>
+    </section>
+
+    <!-- CALCULAR -->
+    <section id="vista-calcular" class="vista" aria-labelledby="h-calc" hidden>
+      <h1 id="h-calc" class="title">Calculadoras</h1>
+      <p class="lead">Dos preguntas que te hacés todos los meses, con números de hoy.</p>
+
+      <div class="tabs" role="tablist" aria-label="Calculadoras">
+        <button role="tab" id="tab-pf" aria-controls="panel-pf" aria-selected="true" class="tab">Plazo fijo o dólar</button>
+        <button role="tab" id="tab-sueldo" aria-controls="panel-sueldo" aria-selected="false" class="tab" tabindex="-1">Sueldo vs inflación</button>
+      </div>
+
+      <article class="card form" id="panel-pf" role="tabpanel" aria-labelledby="tab-pf">
+        <div class="field">
+          <label for="pf-monto">Monto a invertir (ARS)</label>
+          <input id="pf-monto" type="number" inputmode="decimal" min="0" step="1000" value="500000">
+        </div>
+        <div class="field">
+          <label for="pf-tna">Tasa nominal anual del plazo fijo (%)</label>
+          <input id="pf-tna" type="number" inputmode="decimal" min="0" step="0.5">
+        </div>
+        <div class="field">
+          <label for="pf-dias">Plazo (días)</label>
+          <input id="pf-dias" type="number" inputmode="numeric" min="1" step="1" value="30">
+        </div>
+        <div class="field">
+          <label for="pf-dolar">Cuánto suponés que sube el dólar por mes (%)</label>
+          <input id="pf-dolar" type="number" inputmode="decimal" step="0.1">
+          <p class="field__help">Por defecto, lo que subió en los últimos 30 días. Es un supuesto, nadie sabe el futuro.</p>
+        </div>
+        <div class="result" id="pf-resultado" aria-live="polite"></div>
+      </article>
+
+      <article class="card form" id="panel-sueldo" role="tabpanel" aria-labelledby="tab-sueldo" hidden>
+        <div class="field">
+          <label for="s-sueldo">Tu sueldo de hoy (ARS)</label>
+          <input id="s-sueldo" type="number" inputmode="decimal" min="0" step="1000">
+        </div>
+        <div class="field">
+          <label for="s-aumento">Cuánto te aumentaron en los últimos 12 meses (%)</label>
+          <input id="s-aumento" type="number" inputmode="decimal" step="0.5" value="28">
+        </div>
+        <div class="field">
+          <label for="s-inflacion">Inflación de esos 12 meses (%)</label>
+          <input id="s-inflacion" type="number" inputmode="decimal" step="0.1">
+        </div>
+        <div class="result" id="s-resultado" aria-live="polite"></div>
+      </article>
+    </section>
+
+    <!-- ALERTAS -->
+    <section id="vista-alertas" class="vista" aria-labelledby="h-alertas" hidden>
+      <h1 id="h-alertas" class="title">Alertas</h1>
+      <p class="lead">Avisos solo por lo que te toca. Elegí a partir de qué brecha querés enterarte.</p>
+
+      <ul class="alert-config" id="alertas-config"></ul>
+
+      <article class="card note">
+        <h2 class="label">Avisos al celular</h2>
+        <p class="note__text">Todavía no. Para recibir un aviso con la app cerrada hace falta un servidor que revise los precios. Por ahora las alertas se evalúan cuando abrís la app.</p>
+      </article>
+    </section>
+  </main>
+
+  <nav class="nav" aria-label="Secciones">
+    <a href="#hoy" data-vista="hoy">Hoy</a>
+    <a href="#perfil" data-vista="perfil">Perfil</a>
+    <a href="#calcular" data-vista="calcular">Calcular</a>
+    <a href="#alertas" data-vista="alertas">Alertas</a>
+  </nav>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "Econochanta",
+  "short_name": "Econochanta",
+  "description": "La economía argentina filtrada por lo que vos tenés. Sin chamuyo.",
+  "lang": "es-AR",
+  "start_url": "./index.html#hoy",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0f1317",
+  "theme_color": "#0f1317",
+  "icons": [
+    { "src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}
