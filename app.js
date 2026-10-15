@@ -1,10 +1,10 @@
 (function () {
   "use strict";
 
-  var M = window.ECONO_MOCK;
   var KEY_PERFIL = "econochanta:v1:perfil";
   var KEY_ALERTAS = "econochanta:v1:alertas";
   var KEY_TEMA = "econochanta:v1:tema";
+  var KEY_PLATA = "econochanta:v1:plata";
 
   /* ---------- utilidades ---------- */
 
@@ -55,11 +55,30 @@
     if (text !== undefined) e.textContent = text;
     return e;
   }
+  function hace(iso) {
+    var min = Math.max(0, Math.round((Date.now() - new Date(iso).getTime()) / 60000));
+    if (min < 1) return "recién";
+    if (min < 60) return "hace " + min + " min";
+    var h = Math.round(min / 60);
+    if (h < 24) return "hace " + h + " h";
+    return "hace " + Math.round(h / 24) + " d";
+  }
+  function hora(iso) {
+    return new Date(iso).toLocaleTimeString("es-AR", { hour: "2-digit", minute: "2-digit" });
+  }
+  function urlSegura(u) {
+    return typeof u === "string" && /^https?:\/\//i.test(u) ? u : null;
+  }
 
   /* ---------- estado ---------- */
 
+  var M = clone(window.ECONO_MOCK);
   var perfil = load(KEY_PERFIL, window.ECONO_PERFIL_DEFAULT);
   var alertas = load(KEY_ALERTAS, window.ECONO_ALERTAS_DEFAULT);
+  var plata = null;
+  try { plata = JSON.parse(localStorage.getItem(KEY_PLATA) || "null"); } catch (e) { plata = null; }
+  var filtro = { tema: "todos", medio: "todos" };
+  var cargando = false;
 
   /* ---------- modelo ---------- */
 
@@ -67,7 +86,38 @@
     var s = M.serieMep30d;
     var min = Math.min.apply(null, s);
     var max = Math.max.apply(null, s);
-    return { rango: (max - min) / min * 100, var30: (s[s.length - 1] / s[0] - 1) * 100, min: min, max: max };
+    return { rango: (max - min) / min * 100, var30: (s[s.length - 1] / s[0] - 1) * 100 };
+  }
+
+  var MAPA_IPC = {
+    "Transporte": "transporte", "Hogar": "equipamiento", "Salud": "salud",
+    "Ocio": "recreacion", "Compras": "prendas", "Educación": "educacion"
+  };
+
+  function inflacionPersonal() {
+    if (!plata || !plata.gastoPorCat || !M.ipc || !M.ipc.general) return null;
+    var gen = M.ipc.general.mom;
+    var total = 0, suma = 0, cubierto = 0, filas = [];
+    Object.keys(plata.gastoPorCat).forEach(function (c) {
+      if (c === "Deudas") return;
+      var monto = plata.gastoPorCat[c];
+      if (!(monto > 0)) return;
+      var key = MAPA_IPC[c];
+      var dato = key && M.ipc[key] ? M.ipc[key].mom : null;
+      var v = dato !== null ? dato : gen;
+      total += monto; suma += monto * v;
+      if (dato !== null) cubierto += monto;
+      filas.push({ cat: c, monto: monto, v: v, propio: dato !== null });
+    });
+    if (total <= 0) return null;
+    filas.forEach(function (f) { f.share = f.monto / total * 100; });
+    filas.sort(function (a, b) { return b.share - a.share; });
+    var pers = suma / total;
+    return {
+      personal: pers, general: gen,
+      ratio: gen > 0 ? clamp(pers / gen, 0.5, 2) : 1,
+      cobertura: cubierto / total * 100, filas: filas, fecha: M.ipc.general.fecha
+    };
   }
 
   function exposicion(p) {
@@ -91,13 +141,14 @@
   function factores(p) {
     var e = exposicion(p);
     var s = serie();
-    var infl = M.inflacionMensual;
+    var ip = inflacionPersonal();
+    var infl = M.inflacionMensual * (ip ? ip.ratio : 1);
     var brechaCcl = (M.dolar.ccl / M.dolar.oficial - 1) * 100;
     var tasaReal = M.tnaPlazoFijo / 12 - infl;
 
     var lista = [
       {
-        id: "inflacion", nombre: "Inflación del mes", valor: pctPlain(infl, 1),
+        id: "inflacion", nombre: ip ? "Tu inflación del mes" : "Inflación del mes", valor: pctPlain(infl, 1),
         score: clamp(100 - (infl - 0.5) / 5 * 100, 0, 100),
         peso: 1 + 2 * (e.wIngreso + e.wAhorroARS) + 2 * e.idx
       },
@@ -127,7 +178,7 @@
     var score = lista.reduce(function (a, f) { return a + f.peso * f.score; }, 0) / sumaPesos;
     lista.forEach(function (f) { f.pesoPct = f.peso / sumaPesos * 100; });
 
-    return { lista: lista, score: Math.round(score), e: e, s: s, infl: infl, brechaCcl: brechaCcl, tasaReal: tasaReal };
+    return { lista: lista, score: Math.round(score), e: e, s: s, infl: infl, brechaCcl: brechaCcl, tasaReal: tasaReal, ip: ip };
   }
 
   function mood(score) {
@@ -159,7 +210,7 @@
     })[0];
     switch (peor.id) {
       case "inflacion":
-        return "Lo que más te pega hoy es la inflación del mes: " + pctPlain(r.infl, 1) + ". Tu sueldo y tus ahorros en pesos tienen que rendir al menos eso para no perder.";
+        return "Lo que más te pega es la inflación del mes: " + pctPlain(r.infl, 1) + (r.ip ? " según lo que gastás vos" : "") + ". Tu sueldo y tus ahorros en pesos tienen que rendir al menos eso para no perder.";
       case "tasaReal":
         return r.tasaReal < 0
           ? "Tu plazo fijo pierde " + pctPlain(Math.abs(r.tasaReal), 1) + " por mes contra los precios. Mirá la calculadora antes de renovar."
@@ -169,13 +220,191 @@
       case "volatilidad":
         return "El dólar se movió " + pctPlain(r.s.rango, 1) + " entre su mínimo y su máximo de los últimos 30 días. Evitá decidir apurado.";
       default:
-        return "Las reservas cayeron " + pctPlain(Math.abs(M.reservasVar30d), 1) + " en 30 días. Es la señal más débil del día y no te toca de forma directa, pero conviene saberlo.";
+        return "Las reservas " + (M.reservasVar30d < 0 ? "cayeron " : "subieron ") + pctPlain(Math.abs(M.reservasVar30d), 1) + " en 30 días. Es la señal más débil del día y no te toca de forma directa, pero conviene saberlo.";
     }
   }
 
-  /* ---------- render: Hoy ---------- */
+  /* ---------- Inicio: tapa de noticias ---------- */
 
-  function renderHoy() {
+  var TEMAS_FALLBACK = [
+    { id: "dolar", label: "Dólar" }, { id: "inflacion", label: "Inflación y precios" },
+    { id: "mercados", label: "Mercados" }, { id: "actividad", label: "Actividad y empleo" },
+    { id: "politica", label: "Política económica" }, { id: "empresas", label: "Empresas" },
+    { id: "otros", label: "Otros" }
+  ];
+
+  function temasDe(n) { return (n && n.temas) || TEMAS_FALLBACK; }
+  function labelTema(n, id) {
+    var t = temasDe(n).filter(function (x) { return x.id === id; })[0];
+    return t ? t.label : "Otros";
+  }
+
+  function chip(texto, activo, onClick) {
+    var b = el("button", "chip", texto);
+    b.type = "button";
+    b.setAttribute("aria-pressed", activo ? "true" : "false");
+    b.addEventListener("click", onClick);
+    return b;
+  }
+
+  function itemNoticia(it, n, mostrarTema) {
+    var li = el("li");
+    var url = urlSegura(it.url);
+    var a = el(url ? "a" : "span", "news");
+    if (url) { a.href = url; a.target = "_blank"; a.rel = "noopener noreferrer"; }
+    var meta = el("span", "news__meta");
+    meta.appendChild(el("span", "news__medio", String(it.medio || "")));
+    meta.appendChild(el("span", "news__time", it.fecha ? hace(it.fecha) : ""));
+    if (mostrarTema) {
+      var p = el("span", "pill pill--tema", labelTema(n, it.tema));
+      meta.appendChild(p);
+    }
+    a.appendChild(meta);
+    a.appendChild(el("span", "news__title", String(it.titulo || "")));
+    li.appendChild(a);
+    return li;
+  }
+
+  function renderCinta() {
+    var d = M.dolar;
+    var items = [
+      { n: "Oficial", v: d.oficial, a: d.ayer.oficial },
+      { n: "MEP", v: d.mep, a: d.ayer.mep },
+      { n: "CCL", v: d.ccl, a: d.ayer.ccl },
+      { n: "Blue", v: d.blue, a: d.ayer.blue }
+    ];
+    var ul = $("cinta");
+    ul.textContent = "";
+    items.forEach(function (it) {
+      var li = el("li");
+      li.appendChild(el("span", "tape__name", it.n));
+      li.appendChild(el("span", "tape__val", ars(it.v)));
+      var v = (it.v / it.a - 1) * 100;
+      var c = el("span", "tape__chg", pct(v, 2));
+      c.dataset.signo = v > 0.005 ? "pos" : v < -0.005 ? "neg" : "";
+      li.appendChild(c);
+      ul.appendChild(li);
+    });
+  }
+
+  function renderNoticias() {
+    var cont = $("noticias");
+    var nota = $("noticias-nota");
+    var chipsT = $("chips-tema"), chipsM = $("chips-medio");
+    cont.textContent = ""; chipsT.textContent = ""; chipsM.textContent = "";
+    var n = M.noticias;
+
+    if (!n || !n.items || !n.items.length) {
+      var vacio = el("div", "card empty");
+      vacio.appendChild(el("p", "empty__title", "No hay titulares todavía"));
+      vacio.appendChild(el("p", "empty__text", "Las noticias se generan con scripts/fetch_news.py y se guardan en news.json. Corré el script o revisá tu conexión y tocá Actualizar."));
+      cont.appendChild(vacio);
+      nota.textContent = "";
+      return;
+    }
+
+    var items = n.items;
+    var conteoTema = {}, conteoMedio = {};
+    items.forEach(function (it) {
+      conteoTema[it.tema] = (conteoTema[it.tema] || 0) + 1;
+      conteoMedio[it.medio] = (conteoMedio[it.medio] || 0) + 1;
+    });
+
+    chipsT.appendChild(chip("Todas (" + items.length + ")", filtro.tema === "todos", function () { filtro.tema = "todos"; renderNoticias(); }));
+    temasDe(n).forEach(function (t) {
+      if (!conteoTema[t.id]) return;
+      chipsT.appendChild(chip(t.label + " (" + conteoTema[t.id] + ")", filtro.tema === t.id, function () { filtro.tema = t.id; renderNoticias(); }));
+    });
+    chipsM.appendChild(chip("Todos los medios", filtro.medio === "todos", function () { filtro.medio = "todos"; renderNoticias(); }));
+    Object.keys(conteoMedio).forEach(function (m) {
+      chipsM.appendChild(chip(m, filtro.medio === m, function () { filtro.medio = m; renderNoticias(); }));
+    });
+
+    var filtrados = items.filter(function (it) {
+      return (filtro.tema === "todos" || it.tema === filtro.tema) && (filtro.medio === "todos" || it.medio === filtro.medio);
+    });
+
+    function seccion(titulo, lista, verMas) {
+      var sec = el("section", "card news-sec");
+      var h = el("h2", "label", titulo);
+      sec.appendChild(h);
+      var ul = el("ul", "news-list");
+      lista.forEach(function (it) { ul.appendChild(itemNoticia(it, n, true)); });
+      sec.appendChild(ul);
+      if (verMas) sec.appendChild(verMas);
+      return sec;
+    }
+
+    if (!filtrados.length) {
+      var v = el("div", "card empty");
+      v.appendChild(el("p", "empty__title", "Sin resultados"));
+      v.appendChild(el("p", "empty__text", "No hay titulares con ese filtro en las últimas " + (n.ventanaHoras || 48) + " horas."));
+      cont.appendChild(v);
+    } else if (filtro.tema === "todos" && filtro.medio === "todos") {
+      var ultimas = filtrados.slice(0, 8);
+      cont.appendChild(seccion("Lo último", ultimas, null));
+      var usados = {};
+      ultimas.forEach(function (it) { usados[it.url] = true; });
+      temasDe(n).forEach(function (t) {
+        var resto = filtrados.filter(function (it) { return it.tema === t.id && !usados[it.url]; });
+        if (!resto.length) return;
+        var btn = null;
+        if (resto.length > 4) {
+          btn = el("button", "link link--btn", "Ver las " + resto.length + " de " + t.label);
+          btn.type = "button";
+          btn.addEventListener("click", function () { filtro.tema = t.id; renderNoticias(); window.scrollTo(0, 0); });
+        }
+        cont.appendChild(seccion(t.label, resto.slice(0, 4), btn));
+      });
+    } else {
+      var titulo = (filtro.tema === "todos" ? "Todos los temas" : labelTema(n, filtro.tema)) + (filtro.medio === "todos" ? "" : " en " + filtro.medio);
+      cont.appendChild(seccion(titulo + " (" + filtrados.length + ")", filtrados.slice(0, 60), null));
+    }
+
+    var okMedios = (n.fuentes || []).filter(function (f) { return f.ok; }).map(function (f) { return f.medio; });
+    nota.textContent = "Titulares de " + okMedios.join(", ") + ". Se abren en el sitio de cada medio. Ventana de " + (n.ventanaHoras || 48) +
+      " horas, con temas asignados por palabras del título. Actualizado " + (n.actualizado ? hace(n.actualizado) : "sin dato") + ".";
+  }
+
+  function renderInicio() {
+    var r = factores(perfil);
+    var v = variaciones(r);
+    var m = mood(r.score);
+    $("strip-num").textContent = pct(v.mes, 2);
+    $("strip-num").dataset.signo = v.mes < 0 ? "neg" : v.mes > 0 ? "pos" : "";
+    $("strip-mood").textContent = "Termómetro " + r.score + ", " + m.texto;
+    renderCinta();
+    renderNoticias();
+  }
+
+  /* ---------- estado de datos ---------- */
+
+  var ETIQUETAS = {
+    dolar: "cotizaciones", historia: "histórico del dólar", inflacion: "inflación",
+    plazoFijo: "plazo fijo", reservas: "reservas", ipc: "inflación por rubro", noticias: "noticias"
+  };
+
+  function renderEstado() {
+    var banner = $("banner");
+    var stamp = $("actualizado");
+    if (M.actualizadoEn) stamp.textContent = (M.esMock ? "Datos de ejemplo" : "En vivo") + ", actualizado " + hora(M.actualizadoEn);
+    else stamp.textContent = "Datos de ejemplo, sin actualizar";
+
+    var fallas = M.estado ? Object.keys(M.estado).filter(function (k) { return !M.estado[k]; }) : [];
+    if (!M.actualizadoEn) {
+      banner.hidden = false;
+      banner.textContent = "Mostrando datos de ejemplo mientras se cargan los reales.";
+    } else if (fallas.length) {
+      banner.hidden = false;
+      banner.textContent = "No se pudo traer: " + fallas.map(function (k) { return ETIQUETAS[k] || k; }).join(", ") + ". Para eso se muestra el dato de ejemplo.";
+    } else {
+      banner.hidden = true;
+    }
+  }
+
+  /* ---------- Tu plata ---------- */
+
+  function renderMiPlata() {
     var r = factores(perfil);
     var v = variaciones(r);
     var m = mood(r.score);
@@ -213,8 +442,38 @@
       ul.appendChild(li);
     });
 
+    renderPersonal(r.ip);
     renderCotizaciones();
     renderAlertasHoy();
+  }
+
+  function renderPersonal(ip) {
+    var box = $("personal-cuerpo");
+    box.textContent = "";
+    if (!ip) {
+      box.appendChild(el("p", "note__text", plata
+        ? "Todavía no hay índices por rubro para calcularla. Probá actualizar."
+        : "Traé tus gastos desde Plata y te mostramos cuánto subió el costo de vida de tus gastos, no el promedio del país."));
+      var a = el("a", "link", "Traer datos de Plata");
+      a.href = "#perfil";
+      box.appendChild(a);
+      return;
+    }
+    var dif = ip.personal - ip.general;
+    box.appendChild(el("p", "hero__num hero__num--sm", pctPlain(ip.personal, 2)));
+    box.appendChild(el("p", "hero__sub", (dif >= 0 ? "Por encima" : "Por debajo") + " del " + pctPlain(ip.general, 2) +
+      " general de " + new Date(ip.fecha + "T12:00:00").toLocaleDateString("es-AR", { month: "long", year: "numeric" }) + "."));
+
+    var ul = el("ul", "factors");
+    ip.filas.slice(0, 6).forEach(function (f) {
+      var li = el("li");
+      li.appendChild(el("span", "factors__name", f.cat));
+      li.appendChild(el("span", "factors__val", pctPlain(f.v, 1)));
+      li.appendChild(el("span", "factors__note", "Es el " + f.share.toFixed(0) + "% de tu gasto" + (f.propio ? "." : ", con la inflación general porque no hay índice del rubro.")));
+      ul.appendChild(li);
+    });
+    box.appendChild(ul);
+    box.appendChild(el("p", "hint", "El " + ip.cobertura.toFixed(0) + "% de tu gasto tiene índice propio del INDEC. Se usa para ajustar la inflación del mes en tu termómetro."));
   }
 
   function renderCotizaciones() {
@@ -244,14 +503,12 @@
     }).join(" ");
     var svg = $("spark");
     svg.textContent = "";
-    var ns = "http://www.w3.org/2000/svg";
-    var pl = document.createElementNS(ns, "polyline");
+    var pl = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
     pl.setAttribute("points", pts);
     svg.appendChild(pl);
   }
 
   var NOMBRES_ALERTA = { mep: "MEP", ccl: "CCL", blue: "Blue" };
-
   function brechaDe(k) { return (M.dolar[k] / M.dolar.oficial - 1) * 100; }
 
   function renderAlertasHoy() {
@@ -262,23 +519,27 @@
       var vacio = el("li");
       vacio.appendChild(el("p", "alerts__body", "No tenés alertas activas. Prendé alguna en la pestaña Alertas."));
       ul.appendChild(vacio);
-      return;
+    } else {
+      activas.forEach(function (k) {
+        var b = brechaDe(k);
+        var u = alertas[k].umbral;
+        var dispara = b >= u;
+        var li = el("li");
+        li.dataset.on = dispara ? "1" : "0";
+        li.appendChild(el("p", "alerts__title", "Brecha " + NOMBRES_ALERTA[k] + ": " + pctPlain(b, 1)));
+        li.appendChild(el("p", "alerts__body", dispara
+          ? "Superó tu umbral de " + pctPlain(u, 1) + "."
+          : "Tu umbral es " + pctPlain(u, 1) + ". Faltan " + (u - b).toFixed(1).replace(".", ",") + " puntos."));
+        ul.appendChild(li);
+      });
     }
-    activas.forEach(function (k) {
-      var b = brechaDe(k);
-      var u = alertas[k].umbral;
-      var dispara = b >= u;
-      var li = el("li");
-      li.dataset.on = dispara ? "1" : "0";
-      li.appendChild(el("p", "alerts__title", "Brecha " + NOMBRES_ALERTA[k] + ": " + pctPlain(b, 1)));
-      li.appendChild(el("p", "alerts__body", dispara
-        ? "Superó tu umbral de " + pctPlain(u, 1) + "."
-        : "Tu umbral es " + pctPlain(u, 1) + ". Faltan " + (u - b).toFixed(1).replace(".", ",") + " puntos."));
-      ul.appendChild(li);
+    Object.keys(NOMBRES_ALERTA).forEach(function (k) {
+      var now = $("al-" + k + "-now");
+      if (now) now.textContent = "Hoy: " + pctPlain(brechaDe(k), 1) + " sobre el oficial";
     });
   }
 
-  /* ---------- render: Perfil ---------- */
+  /* ---------- Perfil ---------- */
 
   var CAMPOS = { ingreso: "p-ingreso", ahorroARS: "p-ahorroARS", ahorroUSD: "p-ahorroUSD", alquiler: "p-alquiler", gastoUSD: "p-gastoUSD" };
 
@@ -306,9 +567,58 @@
     });
   }
 
+  function refrescarTodoSegunPerfil() {
+    renderExposicion();
+    renderInicio();
+    renderMiPlata();
+    var s = $("s-sueldo");
+    if (!s.dataset.tocado) { s.value = String(perfil.ingreso); calcSueldo(); }
+  }
+
+  function resumirPlata(json) {
+    if (!json || !Array.isArray(json.tx)) throw new Error("No parece un backup de Plata (falta la lista de movimientos).");
+    var hoyMs = Date.now();
+    var corte = new Date(hoyMs - 90 * 86400000).toISOString().slice(0, 10);
+    var gasto = {}, ingresos = 0, n = 0, mesesConDatos = {};
+    json.tx.forEach(function (t) {
+      if (!t || typeof t.date !== "string" || t.date < corte) return;
+      var a = Number(t.amount);
+      if (!isFinite(a) || a <= 0) return;
+      mesesConDatos[t.date.slice(0, 7)] = true;
+      if (t.type === "ingreso") { ingresos += a; n++; }
+      else {
+        var c = typeof t.cat === "string" && t.cat.trim() ? t.cat.trim().slice(0, 40) : "Otros";
+        gasto[c] = (gasto[c] || 0) + a; n++;
+      }
+    });
+    if (!n) throw new Error("No hay movimientos en los últimos 90 días.");
+    var meses = clamp(Object.keys(mesesConDatos).length, 1, 3);
+    var porMes = {}, total = 0;
+    Object.keys(gasto).forEach(function (c) { porMes[c] = Math.round(gasto[c] / meses); total += porMes[c]; });
+    return {
+      importado: new Date().toISOString(), meses: Math.round(meses * 10) / 10, nMov: n,
+      gastoPorCat: porMes, gastoTotalMes: total, ingresoMes: Math.round(ingresos / meses)
+    };
+  }
+
+  function renderPlataEstado() {
+    var st = $("plata-estado");
+    var usar = $("plata-usar-sueldo"), quitar = $("plata-quitar");
+    if (!plata) {
+      st.textContent = "Todavía no importaste nada.";
+      usar.hidden = true; quitar.hidden = true;
+      return;
+    }
+    st.textContent = "Importado " + hace(plata.importado) + ": " + plata.nMov + " movimientos de " + plata.meses + " meses. Gastás " +
+      ars(plata.gastoTotalMes) + " por mes" + (plata.ingresoMes > 0 ? " y cobrás en promedio " + ars(plata.ingresoMes) : "") + ".";
+    usar.hidden = !(plata.ingresoMes > 0);
+    quitar.hidden = false;
+  }
+
   function initPerfil() {
     pintarPerfil();
     renderExposicion();
+    renderPlataEstado();
     $("form-perfil").addEventListener("submit", function (ev) { ev.preventDefault(); });
     $("form-perfil").addEventListener("input", function (ev) {
       var id = ev.target.id;
@@ -317,22 +627,53 @@
       });
       save(KEY_PERFIL, perfil);
       $("perfil-estado").textContent = "Guardado en este dispositivo.";
-      renderExposicion();
-      renderHoy();
-      var s = $("s-sueldo");
-      if (!s.dataset.tocado) { s.value = String(perfil.ingreso); calcSueldo(); }
+      refrescarTodoSegunPerfil();
     });
     $("perfil-reset").addEventListener("click", function () {
       perfil = clone(window.ECONO_PERFIL_DEFAULT);
       save(KEY_PERFIL, perfil);
       pintarPerfil();
-      renderExposicion();
-      renderHoy();
+      refrescarTodoSegunPerfil();
       $("perfil-estado").textContent = "Volviste a los datos de ejemplo.";
+    });
+
+    $("plata-file").addEventListener("change", function (ev) {
+      var f = ev.target.files && ev.target.files[0];
+      if (!f) return;
+      var st = $("plata-estado");
+      if (f.size > 20 * 1024 * 1024) { st.textContent = "El archivo es demasiado grande para ser un backup de Plata."; return; }
+      var rd = new FileReader();
+      rd.onload = function () {
+        try {
+          plata = resumirPlata(JSON.parse(String(rd.result)));
+          save(KEY_PLATA, plata);
+          renderPlataEstado();
+          refrescarTodoSegunPerfil();
+        } catch (e) {
+          st.textContent = "No pude leer el archivo: " + (e && e.message ? e.message : "formato inválido") + ".";
+        }
+        ev.target.value = "";
+      };
+      rd.onerror = function () { st.textContent = "No pude abrir el archivo."; };
+      rd.readAsText(f);
+    });
+    $("plata-usar-sueldo").addEventListener("click", function () {
+      if (!plata || !(plata.ingresoMes > 0)) return;
+      perfil.ingreso = plata.ingresoMes;
+      save(KEY_PERFIL, perfil);
+      pintarPerfil();
+      refrescarTodoSegunPerfil();
+      $("perfil-estado").textContent = "Sueldo actualizado con el promedio de Plata.";
+    });
+    $("plata-quitar").addEventListener("click", function () {
+      plata = null;
+      try { localStorage.removeItem(KEY_PLATA); } catch (e) { /* ignorar */ }
+      renderPlataEstado();
+      refrescarTodoSegunPerfil();
     });
   }
 
-  /* ---------- render: Alertas ---------- */
+  /* ---------- Alertas ---------- */
 
   function initAlertas() {
     var ul = $("alertas-config");
@@ -342,7 +683,9 @@
       var head = el("div", "alert-config__head");
       var left = el("div");
       left.appendChild(el("p", "alert-config__name", "Brecha " + NOMBRES_ALERTA[k]));
-      left.appendChild(el("p", "alert-config__now", "Hoy: " + pctPlain(brechaDe(k), 1) + " sobre el oficial"));
+      var now = el("p", "alert-config__now", "Hoy: " + pctPlain(brechaDe(k), 1) + " sobre el oficial");
+      now.id = "al-" + k + "-now";
+      left.appendChild(now);
       head.appendChild(left);
 
       var sw = el("label", "switch");
@@ -437,9 +780,9 @@
       box.appendChild(el("p", "hint", "Ingresá tu sueldo para ver el resultado."));
       return;
     }
-    var hace = hoy / (1 + aum / 100);
+    var hace12 = hoy / (1 + aum / 100);
     var real = ((1 + aum / 100) / (1 + infl / 100) - 1) * 100;
-    var necesario = hace * (1 + infl / 100);
+    var necesario = hace12 * (1 + infl / 100);
     var dif = necesario - hoy;
 
     box.appendChild(el("p", "result__verdict", real < 0
@@ -447,26 +790,30 @@
       : "Le ganaste a la inflación por " + pctPlain(real, 1) + "."));
 
     var dl = el("dl", "result__rows");
-    dl.appendChild(fila("Tu sueldo hace 12 meses", ars(hace)));
+    dl.appendChild(fila("Tu sueldo hace 12 meses", ars(hace12)));
     dl.appendChild(fila("Para empatar con la inflación", ars(necesario)));
     dl.appendChild(fila(dif > 0 ? "Te faltan" : "Te sobran", ars(Math.abs(dif))));
     box.appendChild(dl);
   }
 
-  function initCalculadoras() {
-    $("pf-tna").value = String(M.tnaPlazoFijo);
-    $("pf-dolar").value = serie().var30.toFixed(1);
-    $("s-sueldo").value = String(perfil.ingreso);
-    $("s-inflacion").value = String(M.inflacionInteranual);
+  function defaultsCalculadoras() {
+    var tna = $("pf-tna"), dol = $("pf-dolar"), inf = $("s-inflacion");
+    if (!tna.dataset.tocado) tna.value = String(M.tnaPlazoFijo);
+    if (!dol.dataset.tocado) dol.value = serie().var30.toFixed(1);
+    if (!inf.dataset.tocado) inf.value = String(M.inflacionInteranual);
+    calcPlazoFijo();
+    calcSueldo();
+  }
 
+  function initCalculadoras() {
+    $("s-sueldo").value = String(perfil.ingreso);
     ["pf-monto", "pf-tna", "pf-dias", "pf-dolar"].forEach(function (id) {
-      $(id).addEventListener("input", calcPlazoFijo);
+      $(id).addEventListener("input", function () { $(id).dataset.tocado = "1"; calcPlazoFijo(); });
     });
     ["s-sueldo", "s-aumento", "s-inflacion"].forEach(function (id) {
       $(id).addEventListener("input", function () { $(id).dataset.tocado = "1"; calcSueldo(); });
     });
-    calcPlazoFijo();
-    calcSueldo();
+    defaultsCalculadoras();
 
     var tabs = [$("tab-pf"), $("tab-sueldo")];
     var panels = [$("panel-pf"), $("panel-sueldo")];
@@ -491,11 +838,11 @@
 
   /* ---------- navegación ---------- */
 
-  var VISTAS = ["hoy", "perfil", "calcular", "alertas"];
+  var VISTAS = ["inicio", "miplata", "calcular", "alertas", "perfil"];
 
   function route() {
-    var h = (location.hash || "#hoy").slice(1);
-    if (VISTAS.indexOf(h) === -1) h = "hoy";
+    var h = (location.hash || "#inicio").slice(1);
+    if (VISTAS.indexOf(h) === -1) h = "inicio";
     VISTAS.forEach(function (v) { $("vista-" + v).hidden = v !== h; });
     Array.prototype.forEach.call(document.querySelectorAll(".nav a"), function (a) {
       if (a.dataset.vista === h) a.setAttribute("aria-current", "page");
@@ -530,20 +877,56 @@
     });
   }
 
+  /* ---------- datos en vivo ---------- */
+
+  function renderTodo() {
+    renderEstado();
+    renderInicio();
+    renderMiPlata();
+    renderExposicion();
+    defaultsCalculadoras();
+  }
+
+  function actualizar() {
+    if (cargando || !window.EconoAPI) return;
+    cargando = true;
+    var b = $("refrescar");
+    b.disabled = true; b.textContent = "Actualizando";
+    window.EconoAPI.cargar().then(function (datos) {
+      M = datos;
+      renderTodo();
+    }).catch(function () {
+      $("banner").hidden = false;
+      $("banner").textContent = "No se pudo actualizar. Se muestran los últimos datos que había.";
+    }).then(function () {
+      cargando = false;
+      b.disabled = false; b.textContent = "Actualizar";
+    });
+  }
+
   /* ---------- arranque ---------- */
 
   function init() {
-    var f = new Date(M.fecha + "T12:00:00");
-    $("fecha").textContent = f.toLocaleDateString("es-AR", { weekday: "long", day: "numeric", month: "long" });
-    $("banner").hidden = !M.esMock;
+    $("fecha").textContent = new Date().toLocaleDateString("es-AR", { weekday: "long", day: "numeric", month: "long" });
+
+    var cache = window.EconoAPI ? window.EconoAPI.desdeCache() : null;
+    if (cache) M = cache.datos;
 
     initTema();
     initPerfil();
     initAlertas();
     initCalculadoras();
-    renderHoy();
+    $("refrescar").addEventListener("click", actualizar);
+    renderTodo();
     route();
     window.addEventListener("hashchange", route);
+
+    if (!cache || !cache.vigente) actualizar();
+    document.addEventListener("visibilitychange", function () {
+      if (document.visibilityState !== "visible") return;
+      var c = window.EconoAPI.desdeCache();
+      if (!c || !c.vigente) actualizar();
+    });
 
     if ("serviceWorker" in navigator && location.protocol.indexOf("http") === 0) {
       navigator.serviceWorker.register("sw.js").catch(function () { /* sin offline, sigue andando */ });

@@ -40,7 +40,7 @@ window.ECONO_PERFIL_DEFAULT = {
 };
 
 window.ECONO_ALERTAS_DEFAULT = {
-  mep: { activa: true, umbral: 5 },
-  ccl: { activa: true, umbral: 10 },
-  blue: { activa: true, umbral: 8 },
+  mep: { activa: true, umbral: 2 },
+  ccl: { activa: true, umbral: 5 },
+  blue: { activa: true, umbral: 3 },
 };

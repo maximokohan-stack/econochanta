@@ -2,7 +2,9 @@
 
 La economía argentina filtrada por lo que vos tenés. Sin chamuyo.
 
-Prototipo de UI/UX, PWA estática (HTML, CSS y JS sin build). Usa **datos de ejemplo** en `data.js`.
+PWA estática (HTML, CSS y JS sin build). El inicio es una tapa de noticias económicas en vivo; el resto mide todo contra tu perfil.
+
+Los datos salen de APIs públicas (sin clave). Si alguna cae, esa parte usa los valores de ejemplo de `data.js` y la app avisa cuál.
 
 ## Probarlo
 
@@ -18,8 +20,9 @@ Abrí `http://localhost:8770`. En el celular, desde la misma red: `http://<ip-de
 
 | Pantalla | Qué hace |
 |---|---|
-| **Hoy** | Variación real de tu plata (desde ayer y 30 días), mensaje del día, termómetro 0-100 ponderado por tu perfil, dólar y brecha, alertas activas |
-| **Perfil** | 5 datos de exposición (sueldo, ahorros en pesos y en USD, alquiler/UVA, gasto en USD). Se guardan en `localStorage` |
+| **Inicio** | Tapa de noticias en vivo: lo último, secciones por tema, filtros por tema y medio, cinta del dólar y resumen de tu plata |
+| **Tu plata** | Variación real de tu plata (desde ayer y 30 días), mensaje del día, termómetro 0-100 ponderado por tu perfil, inflación personal, dólar y brecha, alertas activas |
+| **Perfil** | 5 datos de exposición (sueldo, ahorros en pesos y en USD, alquiler/UVA, gasto en USD) e importación del backup de Plata. Todo en `localStorage` |
 | **Calcular** | Plazo fijo vs dólar, y sueldo vs inflación |
 | **Alertas** | Umbrales de brecha MEP, CCL y blue. Se evalúan al abrir la app |
 
@@ -31,13 +34,34 @@ Abrí `http://localhost:8770`. En el celular, desde la misma red: `http://<ip-de
 
 Es una aproximación para decidir, no asesoramiento financiero.
 
+## De dónde salen los datos
+
+| Dato | Fuente |
+|---|---|
+| Cotizaciones (oficial, MEP, CCL, blue) | DolarAPI |
+| Histórico del dólar, inflación, tasas de plazo fijo | ArgentinaDatos |
+| Reservas | API del BCRA |
+| Inflación por rubro (INDEC) | datos.gob.ar |
+| Noticias | `news.json`, generado por `scripts/fetch_news.py` desde RSS públicos |
+
+### Noticias
+
+`python scripts/fetch_news.py` baja los feeds de Ámbito, Infobae, La Nación, iProfesional y Perfil, se queda con las últimas 48 horas, clasifica por tema según palabras del título y escribe `news.json`. Solo se guarda título, medio, fecha y link. El workflow `.github/workflows/news.yml` lo corre cada hora de 6 a 23 hs (hora de Buenos Aires) cuando el repo esté en GitHub.
+
+### Inflación personal con Plata
+
+En Perfil elegís el backup de Plata. Se procesa en el navegador y solo se guardan totales por categoría (no movimientos ni notas). Cada categoría se cruza con el índice del INDEC de su rubro (transporte, salud, educación, ropa, hogar). Las que no tienen índice propio usan la inflación general. Comida y servicios todavía no tienen serie mensual disponible.
+
 ## Estructura
 
 ```
 index.html   vistas y markup
 styles.css   tokens, tema claro y oscuro
 app.js       modelo, render y navegación por hash
-data.js      datos mock y valores por defecto
+api.js       capa de datos en vivo con respaldo
+data.js      datos de ejemplo y valores por defecto
+news.json    titulares (generado)
+scripts/     fetch_news.py
 sw.js        cache offline del shell
 manifest.webmanifest
 assets/icon.svg
@@ -54,7 +78,7 @@ Una rama por variante visual, y se comparan lado a lado.
 
 ## Siguiente paso
 
-1. Reemplazar `data.js` por datos reales: DolarAPI (cotizaciones), BCRA (reservas, tasas) y ArgentinaDatos (inflación).
-2. Alertas push reales: hace falta un cron (por ejemplo GitHub Actions) que revise y avise.
-3. Inflación personal con los gastos de Plata (`Documents/gastos-app`).
+1. Subir el repo a GitHub (privado) para que el workflow actualice `news.json` solo.
+2. Alertas push reales: hace falta un cron que revise y avise.
+3. Elegir una variante visual (ramas `ui/*`).
 4. Revisar con `design:accessibility-review` y `design:design-critique`.

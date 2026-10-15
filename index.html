@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Econochanta</title>
-  <meta name="description" content="La economía argentina filtrada por lo que vos tenés. Sin chamuyo.">
+  <meta name="description" content="La economía argentina al día, filtrada por lo que vos tenés. Sin chamuyo.">
   <meta name="theme-color" content="#f3f5f7" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0f1317" media="(prefers-color-scheme: dark)">
   <link rel="manifest" href="manifest.webmanifest">
@@ -23,17 +23,43 @@
       </div>
       <button class="icon-btn" id="tema" type="button" aria-label="Cambiar tema claro u oscuro">Tema</button>
     </div>
-    <p class="banner" id="banner" hidden>Datos de ejemplo. Todavía no está conectado al BCRA ni a DolarAPI.</p>
+    <p class="banner" id="banner" hidden></p>
   </header>
 
   <main id="main" tabindex="-1">
 
-    <!-- HOY -->
-    <section id="vista-hoy" class="vista" aria-labelledby="h-hoy">
-      <h1 id="h-hoy" class="sr-only">Hoy</h1>
+    <!-- INICIO: tapa de noticias en vivo -->
+    <section id="vista-inicio" class="vista" aria-labelledby="h-inicio">
+      <h1 id="h-inicio" class="sr-only">Inicio</h1>
+
+      <div class="front-head">
+        <p class="front-head__stamp" id="actualizado" role="status"></p>
+        <button class="btn btn--ghost btn--sm" id="refrescar" type="button">Actualizar</button>
+      </div>
+
+      <a class="strip" href="#miplata" id="strip-plata" aria-label="Ver tu plata">
+        <span class="strip__label">Tu plata, 30 días</span>
+        <span class="strip__num" id="strip-num">-</span>
+        <span class="strip__mood" id="strip-mood"></span>
+      </a>
+
+      <ul class="tape" id="cinta" aria-label="Cotizaciones del dólar"></ul>
+
+      <div class="filters">
+        <div class="chips" id="chips-tema" role="group" aria-label="Filtrar por tema"></div>
+        <div class="chips" id="chips-medio" role="group" aria-label="Filtrar por medio"></div>
+      </div>
+
+      <div id="noticias" aria-live="polite"></div>
+      <p class="hint" id="noticias-nota"></p>
+    </section>
+
+    <!-- MI PLATA -->
+    <section id="vista-miplata" class="vista" aria-labelledby="h-miplata" hidden>
+      <h1 id="h-miplata" class="title">Tu plata</h1>
 
       <article class="card hero" aria-live="polite">
-        <p class="label">Tu plata hoy, en términos reales</p>
+        <p class="label">Tu plata, en términos reales</p>
         <p class="hero__num" id="hero-num">0,00%</p>
         <p class="hero__sub" id="hero-sub"></p>
         <dl class="hero__meta">
@@ -61,6 +87,11 @@
         </div>
         <p class="hint">Sube cuando todo está en calma. Cada factor pesa distinto según lo que cargaste en tu perfil.</p>
         <ul class="factors" id="factores"></ul>
+      </article>
+
+      <article class="card" aria-labelledby="h-personal" id="card-personal">
+        <h2 id="h-personal" class="label">Tu inflación personal</h2>
+        <div id="personal-cuerpo"></div>
       </article>
 
       <article class="card" aria-labelledby="h-dolar">
@@ -115,6 +146,20 @@
         </div>
         <p class="hint" id="perfil-estado" role="status"></p>
       </form>
+
+      <article class="card form" aria-labelledby="h-plata">
+        <h2 id="h-plata" class="label">Traer datos de Plata</h2>
+        <p class="note__text">Exportá un backup desde Plata (Ajustes, Exportar backup) y elegilo acá. Se procesa en este dispositivo y solo se guardan totales por categoría, no tus movimientos ni notas.</p>
+        <div class="field">
+          <label for="plata-file">Archivo de backup de Plata (.json)</label>
+          <input id="plata-file" type="file" accept="application/json,.json" class="file">
+        </div>
+        <div id="plata-estado" class="hint" role="status"></div>
+        <div class="form__actions">
+          <button class="btn" type="button" id="plata-usar-sueldo" hidden>Usar mi sueldo promedio</button>
+          <button class="btn btn--ghost" type="button" id="plata-quitar" hidden>Quitar datos de Plata</button>
+        </div>
+      </article>
 
       <article class="card" aria-labelledby="h-expo">
         <h2 id="h-expo" class="label">Cómo estás expuesto</h2>
@@ -185,13 +230,15 @@
   </main>
 
   <nav class="nav" aria-label="Secciones">
-    <a href="#hoy" data-vista="hoy">Hoy</a>
-    <a href="#perfil" data-vista="perfil">Perfil</a>
+    <a href="#inicio" data-vista="inicio">Inicio</a>
+    <a href="#miplata" data-vista="miplata">Tu plata</a>
     <a href="#calcular" data-vista="calcular">Calcular</a>
     <a href="#alertas" data-vista="alertas">Alertas</a>
+    <a href="#perfil" data-vista="perfil">Perfil</a>
   </nav>
 
   <script src="data.js"></script>
+  <script src="api.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
