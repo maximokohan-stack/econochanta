@@ -578,3 +578,19 @@ body { padding: 0 0 24px; }
 
 /* evita que las listas en una sola linea ensanchen la pagina en celular */
 .vista > *, .head > *, .tools > * { min-width: 0; }
+
+@media (max-width: 760px) {
+  .matriz tbody td, .matriz thead th { padding-left: 6px; padding-right: 6px; }
+  .matriz tbody td { font-size: 14px; }
+  .matriz td.first button { gap: 6px; }
+  .matriz .delta { font-size: 12px; padding: 2px 5px; }
+  .matriz td.n { font-size: 13px; }
+}
+
+@media (max-width: 760px) {
+  .matriz { table-layout: fixed; width: 100%; }
+  .matriz thead th:nth-child(1) { width: 42%; }
+  .matriz thead th:nth-child(2) { width: 27%; }
+  .matriz thead th:nth-child(4) { width: 31%; }
+  .matriz thead th { font-size: 10px; letter-spacing: .04em; }
+}
