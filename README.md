@@ -1,10 +1,8 @@
 # Econochanta
 
-La economía argentina filtrada por lo que vos tenés. Sin chamuyo.
+El tablero de la economía argentina: dólar, inflación, actividad, empleo, cuentas fiscales, comercio exterior, dinero y mercados, con datos oficiales y gráficos propios. Las noticias y las herramientas personales quedan en un segundo plano.
 
-PWA estática (HTML, CSS y JS sin build). El inicio es una tapa de noticias económicas en vivo; el resto mide todo contra tu perfil.
-
-Los datos salen de APIs públicas (sin clave). Si alguna cae, esa parte usa los valores de ejemplo de `data.js` y la app avisa cuál.
+PWA estática (HTML, CSS y JS sin build). Los datos salen de APIs públicas sin clave. Si una serie falla, se avisa y se muestra el último dato o el de ejemplo.
 
 ## Probarlo
 
@@ -18,13 +16,20 @@ Abrí `http://localhost:8770`. En el celular, desde la misma red: `http://<ip-de
 
 ## Qué tiene
 
-| Pantalla | Qué hace |
+| Sección | Contenido |
 |---|---|
-| **Inicio** | Tapa de noticias en vivo: lo último, secciones por tema, filtros por tema y medio, cinta del dólar y resumen de tu plata |
-| **Tu plata** | Variación real de tu plata (desde ayer y 30 días), mensaje del día, termómetro 0-100 ponderado por tu perfil, inflación personal, dólar y brecha, alertas activas |
-| **Perfil** | 5 datos de exposición (sueldo, ahorros en pesos y en USD, alquiler/UVA, gasto en USD) e importación del backup de Plata. Todo en `localStorage` |
-| **Calcular** | Plazo fijo vs dólar, y sueldo vs inflación |
-| **Alertas** | Umbrales de brecha MEP, CCL y blue. Se evalúan al abrir la app |
+| **Tablero** | 16 indicadores con sparkline (dólares, brecha, riesgo país, reservas, tasa, inflación, salarios contra inflación, EMAE, desocupación, resultado primario, saldo comercial, base monetaria), gráfico del dólar, inflación mensual, acciones del día y titulares |
+| **Dólar** | Oficial, MEP, CCL y blue con brechas, gráfico de 1 mes a 5 años, opción **ajustado por inflación** (pesos de hoy) y brecha histórica |
+| **Inflación** | Mensual e interanual, tabla por rubro (INDEC) con mensual e interanual, tasas contra inflación, UVA, CER |
+| **Economía** | Actividad (EMAE, IPI, cemento, PBI), empleo y salarios (desocupación, índices de salarios contra precios, SMVM, haber mínimo, RIPTE), cuentas fiscales (resultado primario, recaudación), comercio exterior (exportaciones, importaciones, saldo) y dinero y tasas (reservas, base monetaria, M2, depósitos, préstamos, BADLAR, TAMAR) |
+| **Mercados** | Riesgo país, acciones y bonos en vivo (con demora) con búsqueda y orden |
+| **Más** | Noticias por tema y medio, Tu plata, calculadoras, alertas, perfil y fuentes |
+
+Cada gráfico se puede descargar en CSV, tiene tabla de datos accesible, muestra su fuente y la fecha de su último dato, y funciona con teclado y lector de pantalla.
+
+### Herramientas personales
+
+**Tu plata** mide todo contra tu perfil: variación real de tu plata, termómetro 0-100, inflación personal con el backup de Plata, alertas de brecha y dos calculadoras.
 
 ## Cómo se calcula (resumen)
 
@@ -38,11 +43,14 @@ Es una aproximación para decidir, no asesoramiento financiero.
 
 | Dato | Fuente |
 |---|---|
-| Cotizaciones (oficial, MEP, CCL, blue) | DolarAPI |
-| Histórico del dólar, inflación, tasas de plazo fijo | ArgentinaDatos |
-| Reservas | API del BCRA |
-| Inflación por rubro (INDEC) | datos.gob.ar |
+| Cotizaciones del dólar | DolarAPI |
+| Histórico del dólar, inflación, UVA, riesgo país, tasas de plazo fijo | ArgentinaDatos |
+| Reservas, base monetaria, depósitos, préstamos, tasas, CER | API del BCRA v4.0 |
+| Inflación por rubro, EMAE, IPI, PBI, salarios, desocupación, comercio, resultado fiscal, recaudación, SMVM, haber mínimo, RIPTE | datos.gob.ar (INDEC, Hacienda, ARCA, Trabajo, ANSES) |
+| Acciones y bonos | data912 (con demora) |
 | Noticias | `news.json`, generado por `scripts/fetch_news.py` desde RSS públicos |
+
+Las series de datos.gob.ar tienen un comportamiento particular: devuelven vacío si el pedido no encaja con el largo de la serie. `series.js` prueba varias formas de pedido hasta que una devuelva datos.
 
 ### Noticias
 
@@ -58,7 +66,10 @@ En Perfil elegís el backup de Plata. Se procesa en el navegador y solo se guard
 index.html   vistas y markup
 styles.css   tokens, tema claro y oscuro
 app.js       modelo, render y navegación por hash
-api.js       capa de datos en vivo con respaldo
+series.js    catálogo de series y carga (47 series)
+charts.js    gráficos SVG: líneas, barras, sparklines, CSV
+dash.js      vistas del tablero
+api.js       dólar y datos para Tu plata, con respaldo
 data.js      datos de ejemplo y valores por defecto
 news.json    titulares (generado)
 scripts/     fetch_news.py

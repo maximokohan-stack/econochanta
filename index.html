@@ -21,35 +21,100 @@
         <p class="brand">econochanta</p>
         <p class="top__date" id="fecha"></p>
       </div>
-      <button class="icon-btn" id="tema" type="button" aria-label="Cambiar tema claro u oscuro">Tema</button>
+      <div class="top__btns">
+        <a class="icon-btn" href="#mas">Más</a>
+        <button class="icon-btn" id="tema" type="button" aria-label="Cambiar tema claro u oscuro">Tema</button>
+      </div>
     </div>
     <p class="banner" id="banner" hidden></p>
   </header>
 
   <main id="main" tabindex="-1">
 
-    <!-- INICIO: tapa de noticias en vivo -->
-    <section id="vista-inicio" class="vista" aria-labelledby="h-inicio">
-      <h1 id="h-inicio" class="sr-only">Inicio</h1>
-
+    <!-- TABLERO -->
+    <section id="vista-tablero" class="vista" aria-labelledby="h-tablero">
+      <h1 id="h-tablero" class="sr-only">Tablero</h1>
       <div class="front-head">
         <p class="front-head__stamp" id="actualizado" role="status"></p>
         <button class="btn btn--ghost btn--sm" id="refrescar" type="button">Actualizar</button>
       </div>
+      <div class="kpis" id="kpis"></div>
+      <div class="grid2" id="tablero-graficos"></div>
+      <div class="grid2">
+        <article class="card"><h2 class="label">Acciones: movimientos del día</h2><div id="tablero-movers"></div></article>
+        <article class="card">
+          <h2 class="label">Titulares</h2>
+          <div id="tablero-titulares"></div>
+          <a class="link" href="#noticias">Ver todas las noticias</a>
+        </article>
+      </div>
+      <a class="kpi kpi--plata" href="#miplata" id="tablero-plata"></a>
+    </section>
 
-      <a class="strip" href="#miplata" id="strip-plata" aria-label="Ver tu plata">
-        <span class="strip__label">Tu plata, 30 días</span>
-        <span class="strip__num" id="strip-num">-</span>
-        <span class="strip__mood" id="strip-mood"></span>
-      </a>
+    <!-- DOLAR -->
+    <section id="vista-dolar" class="vista" aria-labelledby="h-dolar-v" hidden>
+      <h1 id="h-dolar-v" class="title">Dólar</h1>
+      <div id="dolar-contenido" class="vista vista--inner"></div>
+    </section>
 
-      <ul class="tape" id="cinta" aria-label="Cotizaciones del dólar"></ul>
+    <!-- INFLACION -->
+    <section id="vista-inflacion" class="vista" aria-labelledby="h-inflacion" hidden>
+      <h1 id="h-inflacion" class="title">Inflación</h1>
+      <div id="inflacion-contenido" class="vista vista--inner"></div>
+    </section>
 
+    <!-- ECONOMIA -->
+    <section id="vista-economia" class="vista" aria-labelledby="h-economia" hidden>
+      <h1 id="h-economia" class="title">Economía</h1>
+      <div class="chips" id="econ-chips" role="group" aria-label="Secciones de economía"></div>
+      <div id="econ-actividad" class="vista vista--inner"></div>
+      <div id="econ-empleo" class="vista vista--inner" hidden></div>
+      <div id="econ-fiscal" class="vista vista--inner" hidden></div>
+      <div id="econ-comercio" class="vista vista--inner" hidden></div>
+      <div id="econ-dinero" class="vista vista--inner" hidden></div>
+    </section>
+
+    <!-- MERCADOS -->
+    <section id="vista-mercados" class="vista" aria-labelledby="h-mercados" hidden>
+      <h1 id="h-mercados" class="title">Mercados</h1>
+      <div id="mercados-contenido" class="vista vista--inner"></div>
+    </section>
+
+    <!-- MAS -->
+    <section id="vista-mas" class="vista" aria-labelledby="h-mas" hidden>
+      <h1 id="h-mas" class="title">Más</h1>
+      <ul class="menu">
+        <li><a href="#noticias"><strong>Noticias</strong><span>Titulares económicos de varios medios, por tema</span></a></li>
+        <li><a href="#miplata"><strong>Tu plata</strong><span>Cómo te afecta todo esto según tu perfil</span></a></li>
+        <li><a href="#calcular"><strong>Calculadoras</strong><span>Plazo fijo contra dólar, sueldo contra inflación</span></a></li>
+        <li><a href="#alertas"><strong>Alertas</strong><span>Avisos por brecha del dólar</span></a></li>
+        <li><a href="#perfil"><strong>Perfil</strong><span>Tus datos, guardados solo en este dispositivo</span></a></li>
+      </ul>
+      <article class="card">
+        <h2 class="label">De dónde salen los datos</h2>
+        <table class="tabla">
+          <thead><tr><th>Datos</th><th>Fuente</th></tr></thead>
+          <tbody>
+            <tr><td>Dólar, histórico</td><td>DolarAPI, ArgentinaDatos</td></tr>
+            <tr><td>Inflación y rubros, actividad, empleo, salarios, comercio</td><td>INDEC, vía datos.gob.ar y ArgentinaDatos</td></tr>
+            <tr><td>Resultado fiscal, recaudación</td><td>Secretaría de Hacienda, ARCA, vía datos.gob.ar</td></tr>
+            <tr><td>Reservas, base monetaria, depósitos, préstamos, tasas</td><td>BCRA</td></tr>
+            <tr><td>Acciones y bonos (con demora)</td><td>data912</td></tr>
+            <tr><td>Riesgo país</td><td>ArgentinaDatos</td></tr>
+            <tr><td>Noticias</td><td>RSS públicos de Ámbito, Infobae, La Nación, iProfesional y Perfil</td></tr>
+          </tbody>
+        </table>
+        <p class="hint">Cada gráfico muestra su fuente y la fecha de su último dato. Los datos mensuales y trimestrales se publican con rezago. No es asesoramiento financiero.</p>
+      </article>
+    </section>
+
+    <!-- NOTICIAS -->
+    <section id="vista-noticias" class="vista" aria-labelledby="h-noticias" hidden>
+      <h1 id="h-noticias" class="title">Noticias</h1>
       <div class="filters">
         <div class="chips" id="chips-tema" role="group" aria-label="Filtrar por tema"></div>
         <div class="chips" id="chips-medio" role="group" aria-label="Filtrar por medio"></div>
       </div>
-
       <div id="noticias" aria-live="polite"></div>
       <p class="hint" id="noticias-nota"></p>
     </section>
@@ -230,15 +295,18 @@
   </main>
 
   <nav class="nav" aria-label="Secciones">
-    <a href="#inicio" data-vista="inicio">Inicio</a>
-    <a href="#miplata" data-vista="miplata">Tu plata</a>
-    <a href="#calcular" data-vista="calcular">Calcular</a>
-    <a href="#alertas" data-vista="alertas">Alertas</a>
-    <a href="#perfil" data-vista="perfil">Perfil</a>
+    <a href="#tablero" data-vista="tablero">Tablero</a>
+    <a href="#dolar" data-vista="dolar">Dólar</a>
+    <a href="#inflacion" data-vista="inflacion">Inflación</a>
+    <a href="#economia" data-vista="economia">Economía</a>
+    <a href="#mercados" data-vista="mercados">Mercados</a>
   </nav>
 
   <script src="data.js"></script>
   <script src="api.js"></script>
+  <script src="series.js"></script>
+  <script src="charts.js"></script>
+  <script src="dash.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

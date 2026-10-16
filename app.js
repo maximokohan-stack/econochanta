@@ -265,28 +265,6 @@
     return li;
   }
 
-  function renderCinta() {
-    var d = M.dolar;
-    var items = [
-      { n: "Oficial", v: d.oficial, a: d.ayer.oficial },
-      { n: "MEP", v: d.mep, a: d.ayer.mep },
-      { n: "CCL", v: d.ccl, a: d.ayer.ccl },
-      { n: "Blue", v: d.blue, a: d.ayer.blue }
-    ];
-    var ul = $("cinta");
-    ul.textContent = "";
-    items.forEach(function (it) {
-      var li = el("li");
-      li.appendChild(el("span", "tape__name", it.n));
-      li.appendChild(el("span", "tape__val", ars(it.v)));
-      var v = (it.v / it.a - 1) * 100;
-      var c = el("span", "tape__chg", pct(v, 2));
-      c.dataset.signo = v > 0.005 ? "pos" : v < -0.005 ? "neg" : "";
-      li.appendChild(c);
-      ul.appendChild(li);
-    });
-  }
-
   function renderNoticias() {
     var cont = $("noticias");
     var nota = $("noticias-nota");
@@ -367,14 +345,8 @@
   }
 
   function renderInicio() {
-    var r = factores(perfil);
-    var v = variaciones(r);
-    var m = mood(r.score);
-    $("strip-num").textContent = pct(v.mes, 2);
-    $("strip-num").dataset.signo = v.mes < 0 ? "neg" : v.mes > 0 ? "pos" : "";
-    $("strip-mood").textContent = "Termómetro " + r.score + ", " + m.texto;
-    renderCinta();
     renderNoticias();
+    if (window.EconoDash) window.EconoDash.refrescarNoticias();
   }
 
   /* ---------- estado de datos ---------- */
@@ -838,16 +810,23 @@
 
   /* ---------- navegación ---------- */
 
-  var VISTAS = ["inicio", "miplata", "calcular", "alertas", "perfil"];
+  var VISTAS = ["tablero", "dolar", "inflacion", "economia", "mercados", "mas", "noticias", "miplata", "calcular", "alertas", "perfil"];
+  var TITULOS = {
+    tablero: "Tablero", dolar: "Dólar", inflacion: "Inflación", economia: "Economía", mercados: "Mercados",
+    mas: "Más", noticias: "Noticias", miplata: "Tu plata", calcular: "Calculadoras", alertas: "Alertas", perfil: "Perfil"
+  };
 
   function route() {
-    var h = (location.hash || "#inicio").slice(1);
-    if (VISTAS.indexOf(h) === -1) h = "inicio";
+    var partes = (location.hash || "#tablero").slice(1).split(":");
+    var h = partes[0];
+    if (VISTAS.indexOf(h) === -1) h = "tablero";
     VISTAS.forEach(function (v) { $("vista-" + v).hidden = v !== h; });
     Array.prototype.forEach.call(document.querySelectorAll(".nav a"), function (a) {
       if (a.dataset.vista === h) a.setAttribute("aria-current", "page");
       else a.removeAttribute("aria-current");
     });
+    document.title = (h === "tablero" ? "" : TITULOS[h] + " | ") + "Econochanta";
+    if (window.EconoDash) window.EconoDash.mostrar(h, partes[1]);
     window.scrollTo(0, 0);
   }
 
@@ -917,6 +896,15 @@
     initAlertas();
     initCalculadoras();
     $("refrescar").addEventListener("click", actualizar);
+    window.EconoApp = {
+      noticias: function () { return M.noticias; },
+      hace: hace,
+      actualizar: actualizar,
+      resumenPlata: function () {
+        var r = factores(perfil), v = variaciones(r), m = mood(r.score);
+        return { mes: v.mes, score: r.score, mood: m.texto };
+      }
+    };
     renderTodo();
     route();
     window.addEventListener("hashchange", route);
