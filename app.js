@@ -346,7 +346,6 @@
 
   function renderInicio() {
     renderNoticias();
-    if (window.EconoDash) window.EconoDash.refrescarNoticias();
   }
 
   /* ---------- estado de datos ---------- */
@@ -810,24 +809,27 @@
 
   /* ---------- navegación ---------- */
 
-  var VISTAS = ["tablero", "dolar", "inflacion", "economia", "mercados", "mas", "noticias", "miplata", "calcular", "alertas", "perfil"];
+  var VISTAS = ["tablero", "mercados", "mas", "noticias", "miplata", "calcular", "alertas", "perfil"];
   var TITULOS = {
-    tablero: "Tablero", dolar: "Dólar", inflacion: "Inflación", economia: "Economía", mercados: "Mercados",
-    mas: "Más", noticias: "Noticias", miplata: "Tu plata", calcular: "Calculadoras", alertas: "Alertas", perfil: "Perfil"
+    tablero: "Tablero", mercados: "Acciones y bonos", mas: "Más", noticias: "Noticias",
+    miplata: "Tu plata", calcular: "Calculadoras", alertas: "Alertas", perfil: "Perfil"
   };
+  // las pantallas que cuelgan de "Más" dejan marcada esa pestaña
+  var PESTANA = { calcular: "mas", alertas: "mas", perfil: "mas" };
 
   function route() {
     var partes = (location.hash || "#tablero").slice(1).split(":");
     var h = partes[0];
     if (VISTAS.indexOf(h) === -1) h = "tablero";
     VISTAS.forEach(function (v) { $("vista-" + v).hidden = v !== h; });
+    var pestana = PESTANA[h] || h;
     Array.prototype.forEach.call(document.querySelectorAll(".nav a"), function (a) {
-      if (a.dataset.vista === h) a.setAttribute("aria-current", "page");
+      if (a.dataset.vista === pestana) a.setAttribute("aria-current", "page");
       else a.removeAttribute("aria-current");
     });
     document.title = (h === "tablero" ? "" : TITULOS[h] + " | ") + "Econochanta";
-    if (window.EconoDash) window.EconoDash.mostrar(h, partes[1]);
-    window.scrollTo(0, 0);
+    if (window.EconoTablero) window.EconoTablero.mostrar(h, partes[1]);
+    if (!partes[1]) window.scrollTo(0, 0);
   }
 
   /* ---------- tema ---------- */

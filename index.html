@@ -22,61 +22,62 @@
         <p class="top__date" id="fecha"></p>
       </div>
       <div class="top__btns">
-        <a class="icon-btn" href="#mas">Más</a>
         <button class="icon-btn" id="tema" type="button" aria-label="Cambiar tema claro u oscuro">Tema</button>
       </div>
     </div>
     <p class="banner" id="banner" hidden></p>
   </header>
 
+  <nav class="nav" aria-label="Secciones">
+    <a href="#tablero" data-vista="tablero">Tablero</a>
+    <a href="#mercados" data-vista="mercados">Acciones y bonos</a>
+    <a href="#noticias" data-vista="noticias">Noticias</a>
+    <a href="#miplata" data-vista="miplata">Tu plata</a>
+    <a href="#mas" data-vista="mas">Más</a>
+  </nav>
+
   <main id="main" tabindex="-1">
 
-    <!-- TABLERO -->
+    <!-- TABLERO: matriz de indicadores -->
     <section id="vista-tablero" class="vista" aria-labelledby="h-tablero">
-      <h1 id="h-tablero" class="sr-only">Tablero</h1>
-      <div class="front-head">
-        <p class="front-head__stamp" id="actualizado" role="status"></p>
-        <button class="btn btn--ghost btn--sm" id="refrescar" type="button">Actualizar</button>
+      <div class="head">
+        <div>
+          <h1 id="h-tablero" class="title">Tablero de control</h1>
+          <p class="sub" id="sub">Cargando indicadores…</p>
+        </div>
+        <div class="head__side">
+          <div class="summary" id="resumen" aria-live="polite"></div>
+          <div class="head__upd">
+            <p class="front-head__stamp" id="actualizado" role="status"></p>
+            <button class="btn btn--ghost btn--sm" id="refrescar" type="button">Actualizar</button>
+          </div>
+        </div>
       </div>
-      <div class="kpis" id="kpis"></div>
-      <div class="grid2" id="tablero-graficos"></div>
-      <div class="grid2">
-        <article class="card"><h2 class="label">Acciones: movimientos del día</h2><div id="tablero-movers"></div></article>
-        <article class="card">
-          <h2 class="label">Titulares</h2>
-          <div id="tablero-titulares"></div>
-          <a class="link" href="#noticias">Ver todas las noticias</a>
-        </article>
+      <div class="tools">
+        <div class="chips" id="grupos" role="group" aria-label="Grupo de indicadores"></div>
+        <input class="search" id="buscar" type="search" placeholder="Buscar indicador" aria-label="Buscar indicador">
       </div>
-      <a class="kpi kpi--plata" href="#miplata" id="tablero-plata"></a>
-    </section>
-
-    <!-- DOLAR -->
-    <section id="vista-dolar" class="vista" aria-labelledby="h-dolar-v" hidden>
-      <h1 id="h-dolar-v" class="title">Dólar</h1>
-      <div id="dolar-contenido" class="vista vista--inner"></div>
-    </section>
-
-    <!-- INFLACION -->
-    <section id="vista-inflacion" class="vista" aria-labelledby="h-inflacion" hidden>
-      <h1 id="h-inflacion" class="title">Inflación</h1>
-      <div id="inflacion-contenido" class="vista vista--inner"></div>
-    </section>
-
-    <!-- ECONOMIA -->
-    <section id="vista-economia" class="vista" aria-labelledby="h-economia" hidden>
-      <h1 id="h-economia" class="title">Economía</h1>
-      <div class="chips" id="econ-chips" role="group" aria-label="Secciones de economía"></div>
-      <div id="econ-actividad" class="vista vista--inner"></div>
-      <div id="econ-empleo" class="vista vista--inner" hidden></div>
-      <div id="econ-fiscal" class="vista vista--inner" hidden></div>
-      <div id="econ-comercio" class="vista vista--inner" hidden></div>
-      <div id="econ-dinero" class="vista vista--inner" hidden></div>
+      <div class="tablewrap">
+        <table id="matriz" class="matriz">
+          <thead>
+            <tr>
+              <th scope="col">Indicador</th>
+              <th scope="col" class="n">Dato</th>
+              <th scope="col" class="per">Período</th>
+              <th scope="col" class="n"><button data-s="prev" type="button">Vs anterior ▾</button></th>
+              <th scope="col" class="n d12"><button data-s="d12" type="button">Vs 12 meses ▾</button></th>
+              <th scope="col" class="tend">Tendencia</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+      <p class="hint">Azul: sube. Naranja: baja. El color indica dirección, no si es bueno o malo. Los datos mensuales y trimestrales se publican con rezago, cada fila muestra su período.</p>
     </section>
 
     <!-- MERCADOS -->
     <section id="vista-mercados" class="vista" aria-labelledby="h-mercados" hidden>
-      <h1 id="h-mercados" class="title">Mercados</h1>
+      <h1 id="h-mercados" class="title">Acciones y bonos</h1>
       <div id="mercados-contenido" class="vista vista--inner"></div>
     </section>
 
@@ -84,8 +85,6 @@
     <section id="vista-mas" class="vista" aria-labelledby="h-mas" hidden>
       <h1 id="h-mas" class="title">Más</h1>
       <ul class="menu">
-        <li><a href="#noticias"><strong>Noticias</strong><span>Titulares económicos de varios medios, por tema</span></a></li>
-        <li><a href="#miplata"><strong>Tu plata</strong><span>Cómo te afecta todo esto según tu perfil</span></a></li>
         <li><a href="#calcular"><strong>Calculadoras</strong><span>Plazo fijo contra dólar, sueldo contra inflación</span></a></li>
         <li><a href="#alertas"><strong>Alertas</strong><span>Avisos por brecha del dólar</span></a></li>
         <li><a href="#perfil"><strong>Perfil</strong><span>Tus datos, guardados solo en este dispositivo</span></a></li>
@@ -294,19 +293,13 @@
     </section>
   </main>
 
-  <nav class="nav" aria-label="Secciones">
-    <a href="#tablero" data-vista="tablero">Tablero</a>
-    <a href="#dolar" data-vista="dolar">Dólar</a>
-    <a href="#inflacion" data-vista="inflacion">Inflación</a>
-    <a href="#economia" data-vista="economia">Economía</a>
-    <a href="#mercados" data-vista="mercados">Mercados</a>
-  </nav>
+
 
   <script src="data.js"></script>
   <script src="api.js"></script>
   <script src="series.js"></script>
   <script src="charts.js"></script>
-  <script src="dash.js"></script>
+  <script src="tablero.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

@@ -178,19 +178,27 @@
     };
   }
 
-  /* Carga una serie. n = cantidad maxima de puntos que se guardan. */
+  /* Carga una serie. n = cantidad maxima de puntos que se devuelven.
+     Los pedidos en curso se comparten para no bajar dos veces el mismo archivo. */
+  var enCurso = {};
+
   function cargar(key, n) {
     var c = CAT[key];
     if (!c) return Promise.reject(new Error("serie desconocida: " + key));
     var limite = n || 120;
     var cached = leerCache(key, c.ttl);
     if (cached) return Promise.resolve(enriquecer(key, c, cached.slice(-limite)));
-    return pedir(c, 400).then(function (puntos) {
-      if (!puntos.length) throw new Error("sin datos");
-      var recorte = puntos.slice(-800);
-      guardarCache(key, recorte);
-      return enriquecer(key, c, recorte.slice(-limite));
-    });
+    if (!enCurso[key]) {
+      enCurso[key] = pedir(c, 400).then(function (puntos) {
+        if (!puntos.length) throw new Error("sin datos");
+        var recorte = puntos.slice(-1300);
+        guardarCache(key, recorte);
+        return recorte;
+      });
+      var limpiar = function () { delete enCurso[key]; };
+      enCurso[key].then(limpiar, limpiar);
+    }
+    return enCurso[key].then(function (recorte) { return enriquecer(key, c, recorte.slice(-limite)); });
   }
 
   /* Varias series a la vez. Las que fallan quedan en null y se informan en errores. */

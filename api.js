@@ -23,7 +23,7 @@
 
   function getJSON(url, ms) {
     var ctrl = typeof AbortController === "function" ? new AbortController() : null;
-    var timer = ctrl ? setTimeout(function () { ctrl.abort(); }, ms || 12000) : null;
+    var timer = ctrl ? setTimeout(function () { ctrl.abort(); }, ms || 25000) : null;
     return fetch(url, ctrl ? { signal: ctrl.signal } : undefined)
       .then(function (r) {
         if (timer) clearTimeout(timer);
@@ -62,33 +62,25 @@
     });
   }
 
-  function historiaCasa(casa) {
-    return getJSON("https://api.argentinadatos.com/v1/cotizaciones/dolares/" + casa).then(function (h) {
-      return h.filter(function (x) { return num(x.venta) !== null; });
-    });
-  }
-
   function pedirHistoria() {
-    return Promise.all(["oficial", "bolsa", "contadoconliqui", "blue"].map(historiaCasa)).then(function (r) {
-      function ayer(h) {
-        var ult = h[h.length - 1].fecha;
-        for (var i = h.length - 1; i >= 0; i--) if (h[i].fecha < ult) return h[i].venta;
-        return h[h.length - 1].venta;
+    var S = window.EconoSeries;
+    return Promise.all(["dOficial", "dMep", "dCcl", "dBlue"].map(function (k) { return S.cargar(k, 60); })).then(function (r) {
+      function ayer(serie) {
+        var ult = serie.ultimo.d;
+        for (var i = serie.points.length - 1; i >= 0; i--) if (serie.points[i][0] < ult) return serie.points[i][1];
+        return serie.ultimo.v;
       }
       return {
         ayer: { oficial: ayer(r[0]), mep: ayer(r[1]), ccl: ayer(r[2]), blue: ayer(r[3]) },
-        serieMep30d: r[1].slice(-30).map(function (x) { return x.venta; })
+        serieMep30d: r[1].points.slice(-30).map(function (p) { return p[1]; })
       };
     });
   }
 
   function pedirInflacion() {
-    return Promise.all([
-      getJSON("https://api.argentinadatos.com/v1/finanzas/indices/inflacion"),
-      getJSON("https://api.argentinadatos.com/v1/finanzas/indices/inflacionInteranual")
-    ]).then(function (r) {
-      var m = r[0][r[0].length - 1], i = r[1][r[1].length - 1];
-      return { mensual: m.valor, mensualFecha: m.fecha, interanual: i.valor };
+    var S = window.EconoSeries;
+    return Promise.all([S.cargar("infM", 3), S.cargar("infIA", 3)]).then(function (r) {
+      return { mensual: r[0].ultimo.v, mensualFecha: r[0].ultimo.d, interanual: r[1].ultimo.v };
     });
   }
 
@@ -102,17 +94,14 @@
   }
 
   function pedirReservas() {
-    var hoy = new Date();
-    var desde = new Date(hoy.getTime() - 50 * 86400000).toISOString().slice(0, 10);
-    var hasta = hoy.toISOString().slice(0, 10);
-    return getJSON("https://api.bcra.gob.ar/estadisticas/v4.0/monetarias/1?desde=" + desde + "&hasta=" + hasta + "&limit=60")
-      .then(function (r) {
-        var det = r.results[0].detalle.slice().sort(function (a, b) { return a.fecha < b.fecha ? 1 : -1; });
-        var ult = det[0];
-        var objetivo = new Date(new Date(ult.fecha).getTime() - 30 * 86400000).toISOString().slice(0, 10);
-        var previo = det.filter(function (x) { return x.fecha <= objetivo; })[0] || det[det.length - 1];
-        return { valor: ult.valor, fecha: ult.fecha, var30: (ult.valor / previo.valor - 1) * 100 };
-      });
+    return window.EconoSeries.cargar("reservas", 120).then(function (serie) {
+      var ult = serie.ultimo;
+      var objetivo = new Date(new Date(ult.d).getTime() - 30 * 86400000).toISOString().slice(0, 10);
+      var previo = null;
+      for (var i = serie.points.length - 1; i >= 0; i--) if (serie.points[i][0] <= objetivo) { previo = serie.points[i]; break; }
+      if (!previo) previo = serie.points[0];
+      return { valor: ult.v, fecha: ult.d, var30: (ult.v / previo[1] - 1) * 100 };
+    });
   }
 
   function mesesEntre(a, b) {

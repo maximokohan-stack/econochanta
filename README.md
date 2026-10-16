@@ -16,20 +16,17 @@ Abrí `http://localhost:8770`. En el celular, desde la misma red: `http://<ip-de
 
 ## Qué tiene
 
-| Sección | Contenido |
+La pantalla principal es una **matriz**: una tabla con 48 indicadores en 8 grupos. Cada fila muestra el dato, su período, la variación contra el dato anterior y contra hace 12 meses, y una tendencia. Al tocar una fila se abre su gráfico con selector de período, mínimo y máximo, fuente, tabla de datos y descarga en CSV.
+
+| Pestaña | Contenido |
 |---|---|
-| **Tablero** | 16 indicadores con sparkline (dólares, brecha, riesgo país, reservas, tasa, inflación, salarios contra inflación, EMAE, desocupación, resultado primario, saldo comercial, base monetaria), gráfico del dólar, inflación mensual, acciones del día y titulares |
-| **Dólar** | Oficial, MEP, CCL y blue con brechas, gráfico de 1 mes a 5 años, opción **ajustado por inflación** (pesos de hoy) y brecha histórica |
-| **Inflación** | Mensual e interanual, tabla por rubro (INDEC) con mensual e interanual, tasas contra inflación, UVA, CER |
-| **Economía** | Actividad (EMAE, IPI, cemento, PBI), empleo y salarios (desocupación, índices de salarios contra precios, SMVM, haber mínimo, RIPTE), cuentas fiscales (resultado primario, recaudación), comercio exterior (exportaciones, importaciones, saldo) y dinero y tasas (reservas, base monetaria, M2, depósitos, préstamos, BADLAR, TAMAR) |
-| **Mercados** | Riesgo país, acciones y bonos en vivo (con demora) con búsqueda y orden |
-| **Más** | Noticias por tema y medio, Tu plata, calculadoras, alertas, perfil y fuentes |
+| **Tablero** | La matriz. Grupos: Dólar, Precios (inflación, núcleo, regulados, rubros, UVA, CER), Actividad, Empleo y salarios, Fiscal, Comercio exterior, Dinero y tasas, Mercados. Búsqueda, filtro por grupo y orden por variación |
+| **Acciones y bonos** | Acciones y bonos en vivo (con demora) con búsqueda y orden |
+| **Noticias** | Titulares por tema y por medio |
+| **Tu plata** | Variación real de tu plata, termómetro 0-100, inflación personal con el backup de Plata, dólar y alertas activas |
+| **Más** | Calculadoras (plazo fijo contra dólar, sueldo contra inflación), alertas de brecha, perfil y fuentes |
 
-Cada gráfico se puede descargar en CSV, tiene tabla de datos accesible, muestra su fuente y la fecha de su último dato, y funciona con teclado y lector de pantalla.
-
-### Herramientas personales
-
-**Tu plata** mide todo contra tu perfil: variación real de tu plata, termómetro 0-100, inflación personal con el backup de Plata, alertas de brecha y dos calculadoras.
+El color indica dirección (azul sube, naranja baja), no si algo es bueno o malo. Cada fila muestra su período porque los datos mensuales y trimestrales se publican con rezago.
 
 ## Cómo se calcula (resumen)
 
@@ -68,7 +65,7 @@ styles.css   tokens, tema claro y oscuro
 app.js       modelo, render y navegación por hash
 series.js    catálogo de series y carga (47 series)
 charts.js    gráficos SVG: líneas, barras, sparklines, CSV
-dash.js      vistas del tablero
+tablero.js   matriz de indicadores y vista de acciones y bonos
 api.js       dólar y datos para Tu plata, con respaldo
 data.js      datos de ejemplo y valores por defecto
 news.json    titulares (generado)
