@@ -165,17 +165,18 @@
     { id: "credPrendarios", g: "Crédito al sector privado", label: "Prendarios", key: "credPrendarios", t: "level" }
   ];
 
-  /* ---------- matriz (tabla de indicadores) ---------- */
+  /* ---------- mesa (lista de indicadores a la izquierda, detalle a la derecha) ---------- */
 
   function rangosDe(it) {
     return it.mensual ? [["2 años", 730], ["3 años", 1095], ["5 años", 1825]] : [["3 meses", 90], ["1 año", 365], ["3 años", 1095], ["5 años", 1825]];
   }
 
-  /* cfg: { filas, dom: { tbody, resumen, grupos, buscar, sub, tabla }, prefijo } */
-  function crearMatriz(cfg) {
-    var filas = cfg.filas, dom = cfg.dom, pre = cfg.prefijo || "";
+  /* cfg: { filas, raiz, vista } */
+  function crearMesa(cfg) {
+    var filas = cfg.filas, vista = cfg.vista;
     var items = [], porId = {}, pendiente = null;
-    var estado = { grupo: "Todos", orden: "g", q: "", abiertos: {}, rango: {} };
+    var estado = { actual: null, q: "", rango: {}, detalleOk: null };
+    var dom = {};
 
     function armarItem(f, s, extra) {
       var it = f.__it;
@@ -225,46 +226,91 @@
       });
     }
 
-    function filtrados() {
-      var lista = items.filter(function (i) {
-        return (estado.grupo === "Todos" || i.g === estado.grupo) && (!estado.q || i.label.toLowerCase().indexOf(estado.q) !== -1);
-      });
-      if (estado.orden === "prev") lista = lista.slice().sort(function (a, b) { return (b.dPrev === undefined ? -1e9 : b.dPrev) - (a.dPrev === undefined ? -1e9 : a.dPrev); });
-      if (estado.orden === "d12") lista = lista.slice().sort(function (a, b) { return (b.d12 === undefined ? -1e9 : b.d12) - (a.d12 === undefined ? -1e9 : a.d12); });
-      return lista;
+    function armarEsqueleto() {
+      var m = el("div", "mesa"); dom.mesa = m;
+      var lista = el("aside", "mesa__lista"); lista.setAttribute("aria-label", "Indicadores");
+      var top = el("div", "mesa__top");
+      dom.sub = el("p", "mesa__sub", "Cargando indicadores…"); top.appendChild(dom.sub);
+      dom.buscar = el("input", "mesa__buscar"); dom.buscar.type = "search"; dom.buscar.placeholder = "Buscar indicador"; dom.buscar.setAttribute("aria-label", "Buscar indicador");
+      top.appendChild(dom.buscar);
+      lista.appendChild(top);
+      dom.filas = el("div", "mesa__filas"); lista.appendChild(dom.filas);
+      m.appendChild(lista);
+      dom.detalle = el("section", "mesa__detalle"); dom.detalle.tabIndex = -1; dom.detalle.setAttribute("aria-label", "Detalle del indicador");
+      m.appendChild(dom.detalle);
+      cfg.raiz.appendChild(m);
     }
 
-    function detalle(it) {
-      var tr = el("tr", "detail"); var td = el("td"); td.colSpan = 6;
+    function pintarLista() {
+      var box = dom.filas; box.textContent = "";
+      var g = "";
+      items.forEach(function (it) {
+        if (estado.q && it.label.toLowerCase().indexOf(estado.q) === -1) return;
+        if (it.g !== g) { g = it.g; box.appendChild(el("div", "mesa__grupo", g)); }
+        var b = el("button", "fila"); b.type = "button";
+        if (it.id === estado.actual) b.setAttribute("aria-current", "true");
+        b.appendChild(el("span", "fila__nombre", it.label));
+        if (it.ok) {
+          b.appendChild(el("span", "fila__val", it.valor));
+          var sp = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+          sp.setAttribute("class", "fila__spark"); sp.setAttribute("aria-hidden", "true");
+          C.spark(sp, it.spark, it.dPrev > 0 ? "var(--up)" : it.dPrev < 0 ? "var(--down)" : "var(--text-2)");
+          b.appendChild(sp);
+          b.appendChild(el("span", "fila__meta", it.fecha));
+          b.appendChild(el("span", "fila__chg " + dirClase(it.dPrev), it.dPrevTxt ? flecha(it.dPrev) + it.dPrevTxt : ""));
+        } else {
+          b.appendChild(el("span", "fila__val fila__msg", it.error ? "sin dato" : "…"));
+        }
+        b.addEventListener("click", function () { location.hash = "#" + vista + ":" + it.id; });
+        box.appendChild(b);
+      });
+      if (!box.firstChild) box.appendChild(el("p", "mesa__vacio", "Sin resultados."));
+    }
+
+    function pintarDetalle() {
+      var it = porId[estado.actual];
+      var box = dom.detalle; box.textContent = "";
+      if (!it) return;
+      var volver = el("button", "mesa__volver", "← Indicadores"); volver.type = "button";
+      volver.addEventListener("click", function () { location.hash = "#" + vista; });
+      box.appendChild(volver);
+      box.appendChild(el("div", "kicker", it.g));
+      box.appendChild(el("h2", "mesa__titulo", it.label));
+      if (!it.ok) {
+        if (it.error) {
+          var err = el("div", "chart__error"); err.appendChild(el("p", "", "No se pudo cargar este indicador."));
+          var rb = el("button", "btn btn--ghost btn--sm", "Reintentar"); rb.type = "button";
+          rb.addEventListener("click", function () { it.error = false; pintarDetalle(); pintarLista(); iniciarFila(it.__f); });
+          err.appendChild(rb); box.appendChild(err);
+        } else box.appendChild(esqueleto(260));
+        return;
+      }
+      estado.detalleOk = it.id;
+      box.appendChild(el("div", "big", it.valor));
+      var chg = el("div", "pastillas");
+      if (it.dPrevTxt) chg.appendChild(el("span", "pastilla " + dirClase(it.dPrev), flecha(it.dPrev) + it.dPrevTxt + (it.mensual ? " vs período anterior" : " vs día anterior")));
+      if (it.d12Txt) chg.appendChild(el("span", "pastilla " + dirClase(it.d12), flecha(it.d12) + it.d12Txt + (it.t === "flow" ? "" : " en 12 meses")));
+      chg.appendChild(el("span", "pastilla flat", "Dato de " + it.fecha));
+      box.appendChild(chg);
+
       var rs = rangosDe(it);
       var rg = estado.rango[it.id];
       if (!rg || !rs.some(function (r) { return r[1] === rg; })) rg = rs[Math.min(1, rs.length - 1)][1];
+      var rbox = el("div", "chips chips--sm"); rbox.setAttribute("role", "group"); rbox.setAttribute("aria-label", "Período");
+      rs.forEach(function (r) { rbox.appendChild(chip(r[0], r[1] === rg, function () { estado.rango[it.id] = r[1]; pintarDetalle(); })); });
+      box.appendChild(rbox);
 
-      var chips = el("div", "chips chips--sm"); chips.setAttribute("role", "group"); chips.setAttribute("aria-label", "Período de " + it.label);
-      rs.forEach(function (r) {
-        var b = chip(r[0], r[1] === rg, function (e) { e.stopPropagation(); estado.rango[it.id] = r[1]; pintar(); });
-        chips.appendChild(b);
+      var cb = el("div", "mesa__grafico chart"); box.appendChild(cb);
+      var serieRango = recortar(it.s, rg);
+      var vals = serieRango.points.map(function (p) { return p[1]; });
+      var prom = vals.reduce(function (a, b) { return a + b; }, 0) / vals.length;
+
+      var st = el("div", "stats");
+      [["Último", it.valor], ["Mínimo", it.fmt(Math.min.apply(null, vals))], ["Máximo", it.fmt(Math.max.apply(null, vals))], ["Promedio", it.fmt(prom)], ["Puntos", String(vals.length)]].forEach(function (x) {
+        var d = el("div", "stat"); d.appendChild(el("span", "", x[0])); d.appendChild(el("b", "", x[1])); st.appendChild(d);
       });
-      td.appendChild(chips);
+      box.appendChild(st);
 
-      var g = el("div", "detail__grid");
-      var ch = el("div", "chart"); g.appendChild(ch);
-      var facts = el("div", "facts");
-      var enRango = recortar(it.s, rg).points.map(function (p) { return p[1]; });
-      [["Último dato", it.valor + " (" + it.fecha + ")"],
-       ["Mínimo del período", it.fmt(Math.min.apply(null, enRango))],
-       ["Máximo del período", it.fmt(Math.max.apply(null, enRango))],
-       ["Fuente", it.s.fuente || "datos públicos"]].forEach(function (x) {
-        var d = el("div"); d.appendChild(el("span", "", x[0])); d.appendChild(el("b", "", x[1])); facts.appendChild(d);
-      });
-      var csv = el("button", "chip", "Descargar CSV"); csv.type = "button";
-      csv.addEventListener("click", function (e) { e.stopPropagation(); C.csv(it.id, [it.s]); });
-      facts.appendChild(csv);
-      g.appendChild(facts);
-      td.appendChild(g);
-
-      var det = el("details", "datos");
-      det.appendChild(el("summary", "", "Ver datos"));
       var t = el("table", "tabla"); var th = el("thead"), trh = el("tr");
       trh.appendChild(el("th", "", "Fecha")); trh.appendChild(el("th", "num", it.label)); th.appendChild(trh); t.appendChild(th);
       var tb = el("tbody");
@@ -272,89 +318,38 @@
         var r = el("tr"); r.appendChild(el("td", "", C.fechaLarga(p[0], it.mensual))); r.appendChild(el("td", "num", it.fmt(p[1]))); tb.appendChild(r);
       });
       t.appendChild(tb);
-      var w = el("div", "tabla__wrap"); w.appendChild(t); det.appendChild(w);
-      td.appendChild(det);
-      tr.appendChild(td);
+      var w = el("div", "tabla__wrap"); w.appendChild(t); box.appendChild(w);
 
-      var serieRango = recortar(it.s, rg);
-      setTimeout(function () {
-        if (it.bars || it.t === "ipc") {
-          C.bars(ch, { points: serieRango.points, fmt: it.fmt, titulo: it.label, height: 220,
-            color: it.signed ? function (v) { return v >= 0 ? "var(--c1)" : "var(--c2)"; } : undefined,
-            tickFmt: it.s.unit === "M ARS" ? function (v) { return Math.abs(v) >= 1e6 ? num(v / 1e6, 1) + " bill." : num(v, 0); } : undefined });
-        } else {
-          C.line(ch, { series: [serieRango], area: true, fmt: it.fmt, titulo: it.label, height: 220 });
-        }
-      }, 0);
-      return tr;
+      var tools = el("div", "mesa__pie");
+      tools.appendChild(el("span", "hint", "Fuente: " + (it.s.fuente || "datos públicos")));
+      var csv = el("button", "btn btn--ghost btn--xs", "Descargar CSV"); csv.type = "button";
+      csv.addEventListener("click", function () { C.csv(it.id, [it.s]); });
+      tools.appendChild(csv);
+      box.appendChild(tools);
+
+      if (it.bars || it.t === "ipc") {
+        C.bars(cb, { points: serieRango.points, fmt: it.fmt, titulo: it.label, height: 280,
+          color: it.signed ? function (v) { return v >= 0 ? "var(--c1)" : "var(--c2)"; } : undefined,
+          tickFmt: it.s.unit === "M ARS" ? function (v) { return Math.abs(v) >= 1e6 ? num(v / 1e6, 1) + " bill." : num(v, 0); } : undefined });
+      } else {
+        C.line(cb, { series: [serieRango], area: true, fmt: it.fmt, titulo: it.label, height: 280 });
+      }
     }
 
-    function resumen() {
-      var s = dom.resumen; if (!s) return;
-      var ok = items.filter(function (i) { return i.ok; });
-      var suben = ok.filter(function (i) { return i.dPrev > 0.0001; }).length;
-      var bajan = ok.filter(function (i) { return i.dPrev < -0.0001; }).length;
-      s.textContent = "";
-      [[ok.length + " de " + items.length, "indicadores cargados"], [String(suben), "suben vs anterior"], [String(bajan), "bajan vs anterior"]].forEach(function (x) {
-        var d = el("div", "sum"); d.appendChild(el("b", "", x[0])); d.appendChild(el("span", "", x[1])); s.appendChild(d);
-      });
-    }
-
-    function pintar() {
-      var body = dom.tbody; if (!body) return;
-      body.textContent = "";
-      var lista = filtrados();
-      var g = "";
-      lista.forEach(function (it) {
-        if (estado.orden === "g" && it.g !== g) {
-          g = it.g;
-          var gr = el("tr", "g"); var gc = el("td", "", g + " (" + lista.filter(function (x) { return x.g === g; }).length + ")"); gc.colSpan = 6; gr.appendChild(gc); body.appendChild(gr);
-        }
-        var abierta = !!estado.abiertos[it.id];
-        var tr = el("tr", "item" + (abierta ? " open" : "") + (it.ok ? "" : " pend"));
-        tr.id = pre + "fila-" + it.id;
-        var c1 = el("td", "first");
-        var b = el("button"); b.type = "button"; b.setAttribute("aria-expanded", abierta ? "true" : "false");
-        if (!it.ok) b.disabled = true;
-        b.appendChild(el("span", "caret", "▸")); b.appendChild(document.createTextNode(it.label));
-        c1.appendChild(b); tr.appendChild(c1);
-        if (it.ok) {
-          tr.appendChild(el("td", "n", it.valor));
-          tr.appendChild(el("td", "per", it.fecha));
-          var c3 = el("td", "n"); c3.appendChild(delta(it.dPrevTxt, it.dPrev)); tr.appendChild(c3);
-          var c4 = el("td", "n d12"); c4.appendChild(delta(it.d12Txt, it.d12)); tr.appendChild(c4);
-          var c5 = el("td", "tend"); var sp = document.createElementNS("http://www.w3.org/2000/svg", "svg"); sp.setAttribute("class", "spark"); sp.setAttribute("aria-hidden", "true");
-          C.spark(sp, it.spark, "var(--c1)"); c5.appendChild(sp); tr.appendChild(c5);
-          var alternar = function () { estado.abiertos[it.id] = !estado.abiertos[it.id]; pintar(); };
-          b.addEventListener("click", function (e) { e.stopPropagation(); alternar(); });
-          tr.addEventListener("click", alternar);
-        } else {
-          var c = el("td", "n msg", it.error ? "sin dato" : "cargando…"); c.colSpan = 5; tr.appendChild(c);
-          if (it.error) {
-            var rb = el("button", "chip chip--mini", "Reintentar"); rb.type = "button";
-            rb.addEventListener("click", function () { it.error = false; pintar(); iniciarFila(it.__f); });
-            c.appendChild(document.createTextNode(" ")); c.appendChild(rb);
-          }
-        }
-        body.appendChild(tr);
-        if (abierta && it.ok) body.appendChild(detalle(it));
-      });
-      if (!lista.length) { var e = el("tr"); var ec = el("td", "msg", "Sin resultados."); ec.colSpan = 6; e.appendChild(ec); body.appendChild(e); }
-      resumen();
-    }
-
-    function pintarChips() {
-      var box = dom.grupos; if (!box) return;
-      box.textContent = "";
-      var grupos = ["Todos"]; filas.forEach(function (f) { if (grupos.indexOf(f.g) === -1) grupos.push(f.g); });
-      grupos.forEach(function (g) {
-        box.appendChild(chip(g, g === estado.grupo, function () { estado.grupo = g; estado.orden = "g"; pintarChips(); pintar(); }));
-      });
+    function actualizarSub() {
+      var n = items.filter(function (i) { return i.ok; }).length;
+      dom.sub.textContent = n + " de " + items.length + " indicadores · datos al " + new Date().toLocaleDateString("es-AR", { day: "numeric", month: "long" });
     }
 
     function programarPintar() {
       if (pendiente) return;
-      pendiente = setTimeout(function () { pendiente = null; pintar(); }, 120);
+      pendiente = setTimeout(function () {
+        pendiente = null;
+        pintarLista();
+        var it = porId[estado.actual];
+        if (it && it.ok && estado.detalleOk !== it.id) pintarDetalle();
+        actualizarSub();
+      }, 120);
     }
 
     function iniciarFila(f) {
@@ -362,63 +357,34 @@
       return cargarFila(f).then(programarPintar, function () { it.error = true; it.ok = false; programarPintar(); });
     }
 
+    function seleccionar(id) {
+      if (!porId[id]) return;
+      estado.actual = id; estado.detalleOk = null;
+      pintarLista(); pintarDetalle();
+    }
+
     function armar() {
       filas.forEach(function (f) {
         var it = { id: f.id, g: f.g, label: f.label, t: f.t, ok: false, bars: f.bars, signed: f.signed, __f: f };
         f.__it = it; items.push(it); porId[f.id] = it;
       });
-      pintarChips();
-      pintar();
-      dom.buscar.addEventListener("input", function (e) { estado.q = e.target.value.trim().toLowerCase(); pintar(); });
-      Array.prototype.forEach.call(dom.tabla.querySelectorAll("thead button"), function (b) {
-        b.addEventListener("click", function () { estado.orden = estado.orden === b.dataset.s ? "g" : b.dataset.s; pintar(); });
-      });
-      Promise.all(filas.map(iniciarFila)).then(function () {
-        var n = items.filter(function (i) { return i.ok; }).length;
-        if (dom.sub) dom.sub.textContent = n + " de " + items.length + " indicadores con datos al " + new Date().toLocaleDateString("es-AR", { day: "numeric", month: "long" }) + ". Tocá una fila para ver su gráfico.";
-      });
+      armarEsqueleto();
+      seleccionar(filas[0].id);
+      dom.buscar.addEventListener("input", function (e) { estado.q = e.target.value.trim().toLowerCase(); pintarLista(); });
+      filas.forEach(iniciarFila);
     }
 
+    // abrir un indicador desde la URL; en celular muestra el detalle a pantalla completa
     function abrir(id) {
       if (!porId[id]) return;
-      estado.abiertos[id] = true;
-      if (estado.grupo !== "Todos" && estado.grupo !== porId[id].g) estado.grupo = "Todos";
-      pintarChips(); pintar();
-      var f = $(pre + "fila-" + id); if (f) f.scrollIntoView({ block: "center" });
+      dom.mesa.classList.add("showing");
+      if (estado.actual !== id) seleccionar(id);
+      if (window.matchMedia("(max-width: 820px)").matches) window.scrollTo(0, 0);
     }
 
-    return { armar: armar, abrir: abrir };
-  }
+    function cerrar() { if (dom.mesa) dom.mesa.classList.remove("showing"); }
 
-  // arma el HTML de una matriz dentro de un contenedor (la vista Tablero ya trae el suyo)
-  function esqueletoMatriz(raiz, prefijo) {
-    var d = {};
-    var head = el("div", "head");
-    var izq = el("div");
-    d.sub = el("p", "sub", "Cargando indicadores…");
-    izq.appendChild(d.sub);
-    head.appendChild(izq);
-    d.resumen = el("div", "summary"); d.resumen.setAttribute("aria-live", "polite");
-    var lado = el("div", "head__side"); lado.appendChild(d.resumen); head.appendChild(lado);
-    raiz.appendChild(head);
-
-    var tools = el("div", "tools");
-    d.grupos = el("div", "chips"); d.grupos.setAttribute("role", "group"); d.grupos.setAttribute("aria-label", "Grupo de indicadores");
-    tools.appendChild(d.grupos);
-    d.buscar = el("input", "search"); d.buscar.type = "search"; d.buscar.placeholder = "Buscar indicador"; d.buscar.setAttribute("aria-label", "Buscar indicador");
-    tools.appendChild(d.buscar);
-    raiz.appendChild(tools);
-
-    var wrap = el("div", "tablewrap");
-    d.tabla = el("table", "matriz");
-    d.tabla.innerHTML = "<thead><tr><th scope=\"col\">Indicador</th><th scope=\"col\" class=\"n\">Dato</th><th scope=\"col\" class=\"per\">Período</th>" +
-      "<th scope=\"col\" class=\"n\"><button data-s=\"prev\" type=\"button\">Vs anterior ▾</button></th>" +
-      "<th scope=\"col\" class=\"n d12\"><button data-s=\"d12\" type=\"button\">Vs 12 meses ▾</button></th>" +
-      "<th scope=\"col\" class=\"tend\">Tendencia</th></tr></thead>";
-    d.tbody = el("tbody"); d.tabla.appendChild(d.tbody);
-    wrap.appendChild(d.tabla);
-    raiz.appendChild(wrap);
-    return d;
+    return { armar: armar, abrir: abrir, cerrar: cerrar };
   }
 
   /* ---------- tarjeta con grafico ---------- */
@@ -643,13 +609,12 @@
     });
   }
 
-  var bcraMatriz = null;
+  var bcraMesa = null;
 
   function armarBCRA() {
     var raiz = $("bcra-contenido");
-    var dom = esqueletoMatriz(raiz, "bcra-");
-    bcraMatriz = crearMatriz({ filas: FILAS_BCRA, dom: dom, prefijo: "bcra-" });
-    bcraMatriz.armar();
+    bcraMesa = crearMesa({ filas: FILAS_BCRA, raiz: raiz, vista: "bcra" });
+    bcraMesa.armar();
 
     var g = el("div", "grid2"); raiz.appendChild(g);
     var rangosTasa = [["3 meses", 90], ["6 meses", 180], ["1 año", 365]];
@@ -692,21 +657,18 @@
 
   /* ---------- API ---------- */
 
-  var tableroMatriz = null, mercadosListo = false;
+  var tableroMesa = null, mercadosListo = false;
 
   function mostrar(vista, sub) {
     if (vista === "tablero") {
-      if (!tableroMatriz) {
-        tableroMatriz = crearMatriz({
-          filas: FILAS_TABLERO, prefijo: "",
-          dom: { tbody: $("tbody"), resumen: $("resumen"), grupos: $("grupos"), buscar: $("buscar"), sub: $("sub"), tabla: $("matriz") }
-        });
-        tableroMatriz.armar();
+      if (!tableroMesa) {
+        tableroMesa = crearMesa({ filas: FILAS_TABLERO, raiz: $("mesa-tablero"), vista: "tablero" });
+        tableroMesa.armar();
       }
-      if (sub) tableroMatriz.abrir(sub);
+      if (sub) tableroMesa.abrir(sub); else tableroMesa.cerrar();
     } else if (vista === "bcra") {
-      if (!bcraMatriz) armarBCRA();
-      if (sub && bcraMatriz) bcraMatriz.abrir(sub);
+      if (!bcraMesa) armarBCRA();
+      if (sub) bcraMesa.abrir(sub); else bcraMesa.cerrar();
     } else if (vista === "mercados") {
       if (!mercadosListo) { mercadosListo = true; armarMercados(); }
     }

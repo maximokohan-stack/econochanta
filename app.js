@@ -835,9 +835,7 @@
   /* ---------- tema ---------- */
 
   function temaEfectivo() {
-    var t = document.documentElement.dataset.theme;
-    if (t === "light" || t === "dark") return t;
-    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    return document.documentElement.dataset.theme === "light" ? "light" : "dark";
   }
 
   function pintarBotonTema() {

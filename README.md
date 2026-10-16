@@ -16,18 +16,18 @@ Abrí `http://localhost:8770`. En el celular, desde la misma red: `http://<ip-de
 
 ## Qué tiene
 
-La pantalla principal es una **matriz**: una tabla con 48 indicadores en 8 grupos. Cada fila muestra el dato, su período, la variación contra el dato anterior y contra hace 12 meses, y una tendencia. Al tocar una fila se abre su gráfico con selector de período, mínimo y máximo, fuente, tabla de datos y descarga en CSV.
+El diseño es una **mesa**: a la izquierda la lista de indicadores, agrupados y con su tendencia; a la derecha el detalle del indicador elegido (valor grande, variación contra el dato anterior y contra hace 12 meses, gráfico con selector de período, mínimo, máximo y promedio, tabla de datos y descarga en CSV). En celular la lista ocupa toda la pantalla y el detalle se abre aparte, con un botón para volver.
 
 | Pestaña | Contenido |
 |---|---|
-| **Tablero** | La matriz. Grupos: Dólar, Precios (inflación, núcleo, regulados, rubros, UVA, CER), Actividad, Empleo y salarios, Fiscal, Comercio exterior, Dinero y tasas, Mercados. Búsqueda, filtro por grupo y orden por variación |
+| **Tablero** | 48 indicadores en 8 grupos: Dólar, Precios (inflación, núcleo, regulados, rubros, UVA, CER), Actividad, Empleo y salarios, Fiscal, Comercio exterior, Dinero y tasas, Mercados. Cada indicador se puede abrir por URL: `#tablero:infM` |
 | **Banco Central** | 27 indicadores del BCRA en 5 grupos (reservas y tipo de cambio, base monetaria, tasas de interés, depósitos, crédito al sector privado), gráficos de tasas, compras de divisas, tipo de cambio, depósitos y crédito por tipo, tabla de qué movió la base monetaria y cotizaciones de 39 monedas |
 | **Acciones y bonos** | Acciones y bonos en vivo (con demora) con búsqueda y orden |
 | **Noticias** | Titulares por tema y por medio |
 | **Tu plata** | Variación real de tu plata, termómetro 0-100, inflación personal con el backup de Plata, dólar y alertas activas |
 | **Más** | Calculadoras (plazo fijo contra dólar, sueldo contra inflación), alertas de brecha, perfil y fuentes |
 
-El color indica dirección (azul sube, naranja baja), no si algo es bueno o malo. Cada fila muestra su período porque los datos mensuales y trimestrales se publican con rezago.
+Es oscuro por defecto, con una variante clara (botón arriba a la derecha). Verde y rojo indican si el dato subió o bajó, no si es bueno o malo (una suba de la inflación se ve verde). Cada indicador muestra su período porque los datos mensuales y trimestrales se publican con rezago.
 
 ## Cómo se calcula (resumen)
 

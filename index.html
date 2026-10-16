@@ -39,41 +39,14 @@
 
   <main id="main" tabindex="-1">
 
-    <!-- TABLERO: matriz de indicadores -->
+    <!-- TABLERO: mesa de indicadores -->
     <section id="vista-tablero" class="vista" aria-labelledby="h-tablero">
-      <div class="head">
-        <div>
-          <h1 id="h-tablero" class="title">Tablero de control</h1>
-          <p class="sub" id="sub">Cargando indicadores…</p>
-        </div>
-        <div class="head__side">
-          <div class="summary" id="resumen" aria-live="polite"></div>
-          <div class="head__upd">
-            <p class="front-head__stamp" id="actualizado" role="status"></p>
-            <button class="btn btn--ghost btn--sm" id="refrescar" type="button">Actualizar</button>
-          </div>
-        </div>
+      <h1 id="h-tablero" class="sr-only">Tablero de control</h1>
+      <div class="front-head">
+        <p class="front-head__stamp" id="actualizado" role="status"></p>
+        <button class="btn btn--ghost btn--sm" id="refrescar" type="button">Actualizar</button>
       </div>
-      <div class="tools">
-        <div class="chips" id="grupos" role="group" aria-label="Grupo de indicadores"></div>
-        <input class="search" id="buscar" type="search" placeholder="Buscar indicador" aria-label="Buscar indicador">
-      </div>
-      <div class="tablewrap">
-        <table id="matriz" class="matriz">
-          <thead>
-            <tr>
-              <th scope="col">Indicador</th>
-              <th scope="col" class="n">Dato</th>
-              <th scope="col" class="per">Período</th>
-              <th scope="col" class="n"><button data-s="prev" type="button">Vs anterior ▾</button></th>
-              <th scope="col" class="n d12"><button data-s="d12" type="button">Vs 12 meses ▾</button></th>
-              <th scope="col" class="tend">Tendencia</th>
-            </tr>
-          </thead>
-          <tbody id="tbody"></tbody>
-        </table>
-      </div>
-      <p class="hint">Azul: sube. Naranja: baja. El color indica dirección, no si es bueno o malo. Los datos mensuales y trimestrales se publican con rezago, cada fila muestra su período.</p>
+      <div id="mesa-tablero"></div>
     </section>
 
     <!-- BANCO CENTRAL -->
