@@ -21,6 +21,7 @@ La pantalla principal es una **matriz**: una tabla con 48 indicadores en 8 grupo
 | Pestaña | Contenido |
 |---|---|
 | **Tablero** | La matriz. Grupos: Dólar, Precios (inflación, núcleo, regulados, rubros, UVA, CER), Actividad, Empleo y salarios, Fiscal, Comercio exterior, Dinero y tasas, Mercados. Búsqueda, filtro por grupo y orden por variación |
+| **Banco Central** | 27 indicadores del BCRA en 5 grupos (reservas y tipo de cambio, base monetaria, tasas de interés, depósitos, crédito al sector privado), gráficos de tasas, compras de divisas, tipo de cambio, depósitos y crédito por tipo, tabla de qué movió la base monetaria y cotizaciones de 39 monedas |
 | **Acciones y bonos** | Acciones y bonos en vivo (con demora) con búsqueda y orden |
 | **Noticias** | Titulares por tema y por medio |
 | **Tu plata** | Variación real de tu plata, termómetro 0-100, inflación personal con el backup de Plata, dólar y alertas activas |

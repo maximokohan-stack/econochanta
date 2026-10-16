@@ -30,6 +30,7 @@
 
   <nav class="nav" aria-label="Secciones">
     <a href="#tablero" data-vista="tablero">Tablero</a>
+    <a href="#bcra" data-vista="bcra">Banco Central</a>
     <a href="#mercados" data-vista="mercados">Acciones y bonos</a>
     <a href="#noticias" data-vista="noticias">Noticias</a>
     <a href="#miplata" data-vista="miplata">Tu plata</a>
@@ -73,6 +74,13 @@
         </table>
       </div>
       <p class="hint">Azul: sube. Naranja: baja. El color indica dirección, no si es bueno o malo. Los datos mensuales y trimestrales se publican con rezago, cada fila muestra su período.</p>
+    </section>
+
+    <!-- BANCO CENTRAL -->
+    <section id="vista-bcra" class="vista" aria-labelledby="h-bcra" hidden>
+      <h1 id="h-bcra" class="title">Banco Central</h1>
+      <p class="sub">Reservas, base monetaria, tasas, depósitos, crédito y cotizaciones, con los datos de la API del BCRA.</p>
+      <div id="bcra-contenido" class="vista vista--inner"></div>
     </section>
 
     <!-- MERCADOS -->

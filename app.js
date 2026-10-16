@@ -809,9 +809,9 @@
 
   /* ---------- navegación ---------- */
 
-  var VISTAS = ["tablero", "mercados", "mas", "noticias", "miplata", "calcular", "alertas", "perfil"];
+  var VISTAS = ["tablero", "bcra", "mercados", "mas", "noticias", "miplata", "calcular", "alertas", "perfil"];
   var TITULOS = {
-    tablero: "Tablero", mercados: "Acciones y bonos", mas: "Más", noticias: "Noticias",
+    tablero: "Tablero", bcra: "Banco Central", mercados: "Acciones y bonos", mas: "Más", noticias: "Noticias",
     miplata: "Tu plata", calcular: "Calculadoras", alertas: "Alertas", perfil: "Perfil"
   };
   // las pantallas que cuelgan de "Más" dejan marcada esa pestaña

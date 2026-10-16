@@ -594,3 +594,16 @@ body { padding: 0 0 24px; }
   .matriz thead th:nth-child(4) { width: 31%; }
   .matriz thead th { font-size: 10px; letter-spacing: .04em; }
 }
+
+/* Banco Central */
+.tabla__wrap--alto { max-height: 440px; overflow-y: auto; }
+.tabla tr.total td { font-weight: 700; border-top: 2px solid var(--head); }
+#vista-bcra .sub { margin: -4px 0 4px; }
+#bcra-contenido .head { padding-top: 0; }
+
+.tabla--factores td, .tabla--factores th { padding-left: 4px; padding-right: 4px; }
+.tabla--factores td:first-child { min-width: 110px; }
+.tabla--factores .delta { font-size: 11px; padding: 2px 4px; }
+@media (max-width: 760px) {
+  .tabla--factores th:nth-child(4), .tabla--factores td:nth-child(4) { display: none; }
+}

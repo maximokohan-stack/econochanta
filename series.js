@@ -81,6 +81,29 @@
     tasaPers: { src: "bcra", id: 14, label: "Tasa de préstamos personales", unit: "%", dec: 1, fuente: "BCRA", ttl: 30 * MIN },
     cer: { src: "bcra", id: 30, label: "CER", unit: "índice", dec: 2, fuente: "BCRA", ttl: 30 * MIN },
 
+    // Banco Central: mas series de la API de estadisticas
+    reservasSinDEG: { src: "bcra", id: 74, label: "Reservas, sin DEG 2009", unit: "M USD", dec: 0, fuente: "BCRA", ttl: 30 * MIN },
+    tcMin: { src: "bcra", id: 4, label: "Tipo de cambio minorista", unit: "ARS", dec: 2, fuente: "BCRA", ttl: 30 * MIN },
+    tcMay: { src: "bcra", id: 5, label: "Tipo de cambio mayorista de referencia", unit: "ARS", dec: 2, fuente: "BCRA", ttl: 30 * MIN },
+    comprasDivisas: { src: "bcra", id: 78, label: "Compras de divisas, variación diaria de reservas", unit: "M USD", dec: 0, fuente: "BCRA", ttl: 30 * MIN },
+    factTotal: { src: "bcra", id: 46, label: "Total de factores de la base monetaria", unit: "M ARS", dec: 0, fuente: "BCRA", ttl: 30 * MIN },
+    factCompras: { src: "bcra", id: 47, label: "Compras netas de divisas al sector privado", unit: "M ARS", dec: 0, fuente: "BCRA", ttl: 30 * MIN },
+    factTesoro: { src: "bcra", id: 48, label: "Compras netas de divisas al Tesoro", unit: "M ARS", dec: 0, fuente: "BCRA", ttl: 30 * MIN },
+    factPases: { src: "bcra", id: 52, label: "Operaciones de pases", unit: "M ARS", dec: 0, fuente: "BCRA", ttl: 30 * MIN },
+    factLeliq: { src: "bcra", id: 53, label: "LELIQ y NOTALQ", unit: "M ARS", dec: 0, fuente: "BCRA", ttl: 30 * MIN },
+    factIntereses: { src: "bcra", id: 55, label: "Intereses, primas y remuneración de cuentas", unit: "M ARS", dec: 0, fuente: "BCRA", ttl: 30 * MIN },
+    factOtras: { src: "bcra", id: 59, label: "Otras operaciones", unit: "M ARS", dec: 0, fuente: "BCRA", ttl: 30 * MIN },
+    tasaPases: { src: "bcra", id: 150, label: "Tasa de pases entre terceros a 1 día", unit: "%", dec: 1, fuente: "BCRA", ttl: 30 * MIN },
+    tasaAdelantos: { src: "bcra", id: 13, label: "Tasa de adelantos en cuenta corriente", unit: "%", dec: 1, fuente: "BCRA", ttl: 30 * MIN },
+    tasaBaibar: { src: "bcra", id: 11, label: "Tasa BAIBAR entre bancos", unit: "%", dec: 1, fuente: "BCRA", ttl: 30 * MIN },
+    depCC: { src: "bcra", id: 22, label: "Depósitos en cuenta corriente", unit: "M ARS", dec: 0, fuente: "BCRA", ttl: 30 * MIN },
+    depCA: { src: "bcra", id: 23, label: "Depósitos en caja de ahorro", unit: "M ARS", dec: 0, fuente: "BCRA", ttl: 30 * MIN },
+    depPlazo: { src: "bcra", id: 24, label: "Depósitos a plazo", unit: "M ARS", dec: 0, fuente: "BCRA", ttl: 30 * MIN },
+    credAdelantos: { src: "bcra", id: 110, label: "Préstamos: adelantos", unit: "M ARS", dec: 0, fuente: "BCRA", ttl: 30 * MIN },
+    credDocumentos: { src: "bcra", id: 111, label: "Préstamos: documentos", unit: "M ARS", dec: 0, fuente: "BCRA", ttl: 30 * MIN },
+    credHipotecarios: { src: "bcra", id: 112, label: "Préstamos: hipotecarios", unit: "M ARS", dec: 0, fuente: "BCRA", ttl: 30 * MIN },
+    credPrendarios: { src: "bcra", id: 113, label: "Préstamos: prendarios", unit: "M ARS", dec: 0, fuente: "BCRA", ttl: 30 * MIN },
+
     // Mercados
     riesgo: { src: "ad", path: "finanzas/indices/riesgo-pais", label: "Riesgo país", unit: "pb", dec: 0, fuente: "ArgentinaDatos", ttl: 15 * MIN }
   };
@@ -222,6 +245,20 @@
     });
   }
 
+  /* ---------- cotizaciones de monedas (BCRA, estadisticas cambiarias) ---------- */
+
+  var monedasMem = null;
+  function monedas() {
+    if (monedasMem && Date.now() - monedasMem.t < 30 * MIN) return Promise.resolve(monedasMem.v);
+    return getJSON("https://api.bcra.gob.ar/estadisticascambiarias/v1.0/Cotizaciones", 20000).then(function (r) {
+      var det = r.results && r.results.detalle;
+      if (!Array.isArray(det) || !det.length) throw new Error("sin cotizaciones");
+      var v = { fecha: r.results.fecha, detalle: det };
+      monedasMem = { t: Date.now(), v: v };
+      return v;
+    });
+  }
+
   /* ---------- derivadas ---------- */
 
   // a - b alineando por fecha
@@ -263,7 +300,7 @@
   }
 
   window.EconoSeries = {
-    CAT: CAT, cargar: cargar, cargarVarias: cargarVarias, live: live,
+    CAT: CAT, cargar: cargar, cargarVarias: cargarVarias, live: live, monedas: monedas,
     restar: restar, variacion: variacion, variacionesMensuales: variacionesMensuales
   };
 })();
