@@ -30,24 +30,77 @@
   </header>
 
   <nav class="nav" aria-label="Secciones">
-    <a href="#tablero" data-vista="tablero">Tablero</a>
-    <a href="#bcra" data-vista="bcra">Banco Central</a>
-    <a href="#mercados" data-vista="mercados">Acciones y bonos</a>
+    <a href="#inicio" data-vista="inicio">Inicio</a>
+    <a href="#argentina" data-vista="argentina">Argentina</a>
     <a href="#noticias" data-vista="noticias">Noticias</a>
+    <a href="#calcular" data-vista="calcular">Calculadoras</a>
     <a href="#miplata" data-vista="miplata">Tu plata</a>
     <a href="#mas" data-vista="mas">Más</a>
+  </nav>
+  <nav class="subnav" id="subnav" aria-label="Secciones de Argentina" hidden>
+    <a href="#dolares" data-vista="dolares">Dólares</a>
+    <a href="#inflacion" data-vista="inflacion">Inflación y reservas</a>
+    <a href="#tasas" data-vista="tasas">Tasas y pesos</a>
+    <a href="#estado" data-vista="estado">Cuentas del Estado</a>
+    <a href="#actividad" data-vista="actividad">Actividad y empleo</a>
+    <a href="#bcra" data-vista="bcra">Banco Central</a>
+    <a href="#mercados" data-vista="mercados">Acciones y bonos</a>
   </nav>
 
   <main id="main" tabindex="-1">
 
-    <!-- TABLERO: mesa de indicadores -->
-    <section id="vista-tablero" class="vista" aria-labelledby="h-tablero">
-      <h1 id="h-tablero" class="sr-only">Tablero de control</h1>
+    <!-- INICIO -->
+    <section id="vista-inicio" class="vista" aria-labelledby="h-inicio">
       <div class="front-head">
-        <p class="front-head__stamp" id="actualizado" role="status"></p>
-        <button class="btn btn--ghost btn--sm" id="refrescar" type="button">Actualizar</button>
+        <div>
+          <h1 id="h-inicio" class="title">La economía, clara y al día</h1>
+          <p class="sub">Dólar, inflación, tasas, cuentas del Estado, actividad y mercados de Argentina, con datos oficiales. Se actualiza solo.</p>
+        </div>
+        <div class="front-head__acc">
+          <p class="front-head__stamp" id="actualizado" role="status"></p>
+          <button class="btn btn--ghost btn--sm" id="refrescar" type="button">Actualizar</button>
+        </div>
       </div>
-      <div id="mesa-tablero"></div>
+      <h2 class="resumen__sub">Dólares hoy</h2>
+      <div class="tarjetas" id="inicio-dolares"></div>
+      <h2 class="resumen__sub">Los datos del día</h2>
+      <ul class="resumen__frases" id="inicio-frases"></ul>
+      <div class="tarjetas" id="inicio-datos"></div>
+      <div id="inicio-favs-bloque" hidden>
+        <h2 class="resumen__sub">★ Tus favoritos</h2>
+        <div class="tarjetas" id="inicio-favs"></div>
+      </div>
+      <h2 class="resumen__sub">¿Qué querés ver?</h2>
+      <div id="inicio-tiles"></div>
+    </section>
+
+    <!-- ARGENTINA: menu de secciones -->
+    <section id="vista-argentina" class="vista" aria-labelledby="h-argentina" hidden>
+      <h1 id="h-argentina" class="title">Argentina</h1>
+      <p class="sub">Elegí un tema. Cada uno abre una lista de indicadores con su gráfico.</p>
+      <div id="argentina-tiles"></div>
+    </section>
+
+    <!-- SECCIONES DE ARGENTINA: cada una abre su mesa de indicadores -->
+    <section id="vista-dolares" class="vista" aria-labelledby="h-dolares" hidden>
+      <h1 id="h-dolares" class="title">Dólares</h1>
+      <div id="mesa-dolares"></div>
+    </section>
+    <section id="vista-inflacion" class="vista" aria-labelledby="h-inflacion" hidden>
+      <h1 id="h-inflacion" class="title">Inflación y reservas</h1>
+      <div id="mesa-inflacion"></div>
+    </section>
+    <section id="vista-tasas" class="vista" aria-labelledby="h-tasas" hidden>
+      <h1 id="h-tasas" class="title">Tasas y pesos</h1>
+      <div id="mesa-tasas"></div>
+    </section>
+    <section id="vista-estado" class="vista" aria-labelledby="h-estado" hidden>
+      <h1 id="h-estado" class="title">Cuentas del Estado</h1>
+      <div id="mesa-estado"></div>
+    </section>
+    <section id="vista-actividad" class="vista" aria-labelledby="h-actividad" hidden>
+      <h1 id="h-actividad" class="title">Actividad y empleo</h1>
+      <div id="mesa-actividad"></div>
     </section>
 
     <!-- BANCO CENTRAL -->
@@ -67,7 +120,6 @@
     <section id="vista-mas" class="vista" aria-labelledby="h-mas" hidden>
       <h1 id="h-mas" class="title">Más</h1>
       <ul class="menu">
-        <li><a href="#calcular"><strong>Calculadoras</strong><span>Plazo fijo contra dólar, sueldo contra inflación</span></a></li>
         <li><a href="#alertas"><strong>Alertas</strong><span>Avisos por brecha del dólar</span></a></li>
         <li><a href="#perfil"><strong>Perfil</strong><span>Tus datos, guardados solo en este dispositivo</span></a></li>
       </ul>

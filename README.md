@@ -20,14 +20,27 @@ Abrí `http://localhost:8770`. En el celular, desde la misma red: `http://<ip-de
 
 El diseño es una **mesa**: a la izquierda la lista de indicadores, agrupados y con su tendencia; a la derecha el detalle del indicador elegido (valor grande, variación contra el dato anterior y contra hace 12 meses, gráfico con selector de período, mínimo, máximo y promedio, tabla de datos y descarga en CSV). En celular la lista ocupa toda la pantalla y el detalle se abre aparte, con un botón para volver.
 
-| Pestaña | Contenido |
+La estructura sigue la de pulsomacro.com.ar: una portada, un menú de Argentina con sus temas, noticias y calculadoras. Cada tema de Argentina abre su propia mesa.
+
+| Sección | Contenido |
 |---|---|
-| **Tablero** | 48 indicadores en 8 grupos: Dólar, Precios (inflación, núcleo, regulados, rubros, UVA, CER), Actividad, Empleo y salarios, Fiscal, Comercio exterior, Dinero y tasas, Mercados. Cada indicador se puede abrir por URL: `#tablero:infM` |
-| **Banco Central** | 27 indicadores del BCRA en 5 grupos (reservas y tipo de cambio, base monetaria, tasas de interés, depósitos, crédito al sector privado), gráficos de tasas, compras de divisas, tipo de cambio, depósitos y crédito por tipo, tabla de qué movió la base monetaria y cotizaciones de 39 monedas |
-| **Acciones y bonos** | Acciones y bonos en vivo (con demora) con búsqueda y orden |
+| **Inicio** | Dólares hoy, los datos del día (inflación, riesgo país, reservas, actividad, desocupación, resultado fiscal, saldo comercial), tus favoritos y un menú de "¿Qué querés ver?" |
+| **Argentina** | Menú de temas, con un submenú que queda a la vista en cada uno |
+| &nbsp;&nbsp;Dólares | Oficial, MEP, CCL, blue, mayorista, brecha y compras de divisas del BCRA. `#dolares` |
+| &nbsp;&nbsp;Inflación y reservas | Inflación mensual e interanual, núcleo, regulados y estacionales, 7 rubros, UVA, CER, reservas y riesgo país. `#inflacion` |
+| &nbsp;&nbsp;Tasas y pesos | BADLAR, TAMAR, tasas de depósitos y préstamos, base monetaria, circulación, M2, depósitos y préstamos. `#tasas` |
+| &nbsp;&nbsp;Cuentas del Estado | Resultado primario, recaudación, exportaciones, importaciones y saldo comercial. `#estado` |
+| &nbsp;&nbsp;Actividad y empleo | EMAE, industria, construcción, PBI, desocupación, salarios, salario mínimo y haber mínimo. `#actividad` |
+| &nbsp;&nbsp;Banco Central | 27 indicadores del BCRA en 5 grupos, gráficos de tasas, compras de divisas, tipo de cambio, depósitos y crédito, factores de la base monetaria y 39 monedas. `#bcra` |
+| &nbsp;&nbsp;Acciones y bonos | Acciones y bonos en vivo (con demora) con búsqueda y orden. `#mercados` |
 | **Noticias** | Titulares por tema y por medio |
+| **Calculadoras** | Plazo fijo contra dólar, sueldo contra inflación |
 | **Tu plata** | Variación real de tu plata, termómetro 0-100, inflación personal con el backup de Plata, dólar y alertas activas |
-| **Más** | Calculadoras (plazo fijo contra dólar, sueldo contra inflación), alertas de brecha, perfil y fuentes |
+| **Más** | Alertas de brecha, perfil y fuentes |
+
+Cada indicador se puede abrir por URL: `#inflacion:infM`. Los links viejos `#tablero:id` siguen andando y llevan al tema que corresponde.
+
+Lo que pulsomacro tiene y Econochanta todavía no: Ganadería (Cañuelas, hacienda, carne, granos) y El mundo (EE. UU. y otros países). Las fuentes abiertas son difíciles o piden clave.
 
 Es oscuro por defecto, con una variante clara (botón arriba a la derecha).
 
@@ -79,8 +92,8 @@ En Perfil elegís el backup de Plata. Se procesa en el navegador y solo se guard
 ```
 index.html   vistas y markup
 styles.css   tokens, componentes y, al final, adaptación a pantallas chicas
-app.js       Tu plata, perfil, alertas, calculadoras, noticias y navegación por hash
-tablero.js   mesa de indicadores (Tablero y Banco Central) y acciones y bonos
+app.js       Tu plata, perfil, alertas, calculadoras, noticias y navegación por hash (menú y submenú)
+tablero.js   portada, secciones de Argentina (cada una con su mesa de indicadores), Banco Central y acciones y bonos
 series.js    catálogo de series y carga (69 series de 5 fuentes)
 charts.js    gráficos SVG: líneas, barras, sparklines, CSV
 api.js       dólar y datos para Tu plata, con respaldo
@@ -96,6 +109,6 @@ assets/icon.svg
 ## Siguiente paso
 
 1. Alertas push reales: hace falta un cron que revise y avise.
-2. Sección Mundo y EE. UU. (las fuentes abiertas son más difíciles).
+2. Secciones El mundo y Ganadería, como en pulsomacro (las fuentes abiertas son más difíciles).
 3. Revisar con `design:accessibility-review` y `design:design-critique`.
 4. Publicar el sitio (hoy el repo es privado; GitHub Pages en un repo privado hace público el sitio).

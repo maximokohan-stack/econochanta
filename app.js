@@ -810,20 +810,32 @@
 
   /* ---------- navegación ---------- */
 
-  var VISTAS = ["tablero", "bcra", "mercados", "mas", "noticias", "miplata", "calcular", "alertas", "perfil"];
+  var VISTAS = ["inicio", "argentina", "dolares", "inflacion", "tasas", "estado", "actividad", "bcra", "mercados",
+    "mas", "noticias", "miplata", "calcular", "alertas", "perfil"];
   var TITULOS = {
-    tablero: "Tablero", bcra: "Banco Central", mercados: "Acciones y bonos", mas: "Más", noticias: "Noticias",
-    miplata: "Tu plata", calcular: "Calculadoras", alertas: "Alertas", perfil: "Perfil"
+    inicio: "Inicio", argentina: "Argentina", dolares: "Dólares", inflacion: "Inflación y reservas", tasas: "Tasas y pesos",
+    estado: "Cuentas del Estado", actividad: "Actividad y empleo", bcra: "Banco Central", mercados: "Acciones y bonos",
+    mas: "Más", noticias: "Noticias", miplata: "Tu plata", calcular: "Calculadoras", alertas: "Alertas", perfil: "Perfil"
   };
-  // las pantallas que cuelgan de "Más" dejan marcada esa pestaña
-  var PESTANA = { calcular: "mas", alertas: "mas", perfil: "mas" };
+  // las secciones de Argentina dejan marcada esa pestaña y muestran su propio submenu; alertas y perfil cuelgan de "Más"
+  var ARGENTINA = ["argentina", "dolares", "inflacion", "tasas", "estado", "actividad", "bcra", "mercados"];
+  var PESTANA = { alertas: "mas", perfil: "mas" };
 
   var vistaAnterior = null;
 
+  function marcar(selector, activa) {
+    Array.prototype.forEach.call(document.querySelectorAll(selector), function (a) {
+      if (a.dataset.vista === activa) a.setAttribute("aria-current", "page");
+      else a.removeAttribute("aria-current");
+    });
+  }
+
   function route() {
-    var partes = (location.hash || "#tablero").slice(1).split(":");
+    var partes = (location.hash || "#inicio").slice(1).split(":");
     var h = partes[0];
-    if (VISTAS.indexOf(h) === -1) h = "tablero";
+    // los links viejos #tablero:id pasan a la seccion que corresponde
+    if (h === "tablero" && window.EconoTablero) { location.replace("#" + window.EconoTablero.migrar(partes[1])); return; }
+    if (VISTAS.indexOf(h) === -1) h = "inicio";
     // avisa a lectores de pantalla cuando cambia la seccion (no la primera vez)
     if (vistaAnterior !== null && vistaAnterior !== h) {
       var anuncio = $("anuncio");
@@ -832,12 +844,11 @@
     }
     vistaAnterior = h;
     VISTAS.forEach(function (v) { $("vista-" + v).hidden = v !== h; });
-    var pestana = PESTANA[h] || h;
-    Array.prototype.forEach.call(document.querySelectorAll(".nav a"), function (a) {
-      if (a.dataset.vista === pestana) a.setAttribute("aria-current", "page");
-      else a.removeAttribute("aria-current");
-    });
-    document.title = (h === "tablero" ? "" : TITULOS[h] + " | ") + "Econochanta";
+    var enArgentina = ARGENTINA.indexOf(h) !== -1;
+    $("subnav").hidden = !enArgentina;
+    marcar(".nav a", enArgentina ? "argentina" : PESTANA[h] || h);
+    marcar(".subnav a", h);
+    document.title = (h === "inicio" ? "" : TITULOS[h] + " | ") + "Econochanta";
     if (window.EconoTablero) window.EconoTablero.mostrar(h, partes[1]);
     if (!partes[1]) window.scrollTo(0, 0);
   }

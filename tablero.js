@@ -1,6 +1,7 @@
 /*
- * Tablero: tablas de indicadores ("matrices") con filas que se expanden y muestran su grafico.
- * Se usan en dos vistas: Tablero (todo) y Banco Central. Mas la vista Acciones y bonos.
+ * Mesas de indicadores (lista a la izquierda, detalle a la derecha). Hay una por seccion de Argentina
+ * (Dolares, Inflacion y reservas, Tasas y pesos, Cuentas del Estado, Actividad y empleo) y otra del Banco Central,
+ * mas la portada y la vista Acciones y bonos.
  * Cada fila carga su serie por separado y se completa cuando llega.
  */
 (function () {
@@ -165,6 +166,53 @@
     { id: "credPrendarios", g: "Crédito al sector privado", label: "Prendarios", key: "credPrendarios", t: "level" }
   ];
 
+  /* ---------- secciones de Argentina (la estructura sigue a la de pulsomacro) ---------- */
+
+  var DEFS = {};
+  FILAS_TABLERO.concat(FILAS_BCRA).forEach(function (f) { if (!DEFS[f.id]) DEFS[f.id] = f; });
+
+  // cada seccion abre su propia mesa; los grupos de abajo son los filtros de esa mesa
+  var SECCIONES = [
+    { id: "dolares", nombre: "Dólares", desc: "Oficial, MEP, CCL y blue, la brecha y las compras del BCRA",
+      titulo: "Dólares de un vistazo", clave: ["oficial", "mep", "ccl", "blue", "brecha", "tcMay", "compras"],
+      grupos: [["Cotizaciones", ["oficial", "mep", "ccl", "blue", "tcMay"]], ["Brecha", ["brecha"]], ["Compras del BCRA", ["compras"]]] },
+    { id: "inflacion", nombre: "Inflación y reservas", desc: "Precios, núcleo y regulados, rubros, UVA y CER, reservas y riesgo país",
+      titulo: "Inflación y reservas de un vistazo", clave: ["infM", "infIA", "nucleo", "regulados", "reservas", "riesgo"],
+      grupos: [["Inflación", ["infM", "infIA", "nucleo", "regulados", "estacionales"]],
+        ["Inflación por rubro", ["transporte", "salud", "educacion", "prendas", "equipamiento", "comunicaciones", "bebidas"]],
+        ["Índices de ajuste", ["uva", "cer"]], ["Reservas y riesgo país", ["reservas", "reservasSinDEG", "riesgo"]]] },
+    { id: "tasas", nombre: "Tasas y pesos", desc: "Tasas en pesos, base monetaria, depósitos y préstamos",
+      titulo: "Tasas y pesos de un vistazo", clave: ["badlar", "tamar", "tasaDep", "base", "depositos", "prestamos"],
+      grupos: [["Tasas en pesos", ["badlar", "tamar", "tasaDep", "tasaPers"]], ["Base monetaria y agregados", ["base", "circ", "m2", "depositos", "prestamos"]]] },
+    { id: "estado", nombre: "Cuentas del Estado", desc: "Resultado fiscal, recaudación, exportaciones, importaciones y saldo comercial",
+      titulo: "Cuentas del Estado de un vistazo", clave: ["resPrim", "recaud", "recaudIA", "expo", "impo", "saldo"],
+      grupos: [["Resultado fiscal y recaudación", ["resPrim", "recaud", "recaudIA"]], ["Comercio exterior", ["expo", "impo", "saldo"]]] },
+    { id: "actividad", nombre: "Actividad y empleo", desc: "EMAE, industria, construcción, PBI, desocupación y salarios",
+      titulo: "Actividad y empleo de un vistazo", clave: ["emae", "ipi", "cemento", "pbi", "desoc", "salarios", "smvm"],
+      grupos: [["Actividad", ["emae", "ipi", "cemento", "pbi"]], ["Empleo", ["desoc"]],
+        ["Salarios y haberes", ["salarios", "salPriv", "salNoReg", "salPub", "ripte", "smvm", "haber"]]] }
+  ];
+  var SEC_OTRAS = [
+    { id: "bcra", nombre: "Banco Central", desc: "Reservas, base monetaria, tasas, depósitos, crédito y 39 monedas" },
+    { id: "mercados", nombre: "Acciones y bonos", desc: "Acciones líderes y bonos soberanos en vivo, con búsqueda" }
+  ];
+
+  function filasDe(sec) {
+    var out = [];
+    sec.grupos.forEach(function (gr) {
+      gr[1].forEach(function (id) {
+        var d = DEFS[id], c = {};
+        Object.keys(d).forEach(function (k) { c[k] = d[k]; });
+        c.g = gr[0]; out.push(c);
+      });
+    });
+    return out;
+  }
+
+  // a que seccion pertenece cada indicador (para los links de la portada y los links viejos #tablero:id)
+  var SEC_DE = {};
+  SECCIONES.forEach(function (s) { s.grupos.forEach(function (g) { g[1].forEach(function (id) { if (!SEC_DE[id]) SEC_DE[id] = s.id; }); }); });
+
   /* ---------- mesa (lista de indicadores a la izquierda, detalle a la derecha) ---------- */
 
   // Hacia que lado esta "lo bueno" de cada indicador. Lo que no figura se muestra neutro.
@@ -247,6 +295,7 @@
     var items = [], porId = {}, pendiente = null;
     var estado = { actual: "resumen", q: "", grupo: "Todos", rango: {}, detalleOk: null };
     var dom = {};
+    var hashDe = cfg.hashDe || function (it) { return "#" + vista + ":" + it.id; };
 
     function armarItem(f, s, extra) {
       var it = f.__it;
@@ -362,7 +411,7 @@
       } else {
         b.appendChild(el("span", "fila__val fila__msg", it.error ? "sin dato" : "…"));
       }
-      b.addEventListener("click", function () { location.hash = "#" + vista + ":" + it.id; });
+      b.addEventListener("click", function () { location.hash = hashDe(it); });
       return b;
     }
 
@@ -409,7 +458,7 @@
         C.spark(sp, it.spark, colorSpark(it.tonoPrev));
         b.appendChild(sp);
       } else b.appendChild(el("span", "tarjeta__val tarjeta__val--msg", it.error ? "sin dato" : "…"));
-      b.addEventListener("click", function () { location.hash = "#" + vista + ":" + it.id; });
+      b.addEventListener("click", function () { location.hash = hashDe(it); });
       return b;
     }
 
@@ -556,6 +605,7 @@
         if (estado.actual === "resumen") pintarResumen();
         else { var it = porId[estado.actual]; if (it && it.ok && estado.detalleOk !== it.id) pintarDetalle(); }
         actualizarSub();
+        if (cfg.alCambiar) cfg.alCambiar();
       }, 120);
     }
 
@@ -595,7 +645,7 @@
       dom.buscar.addEventListener("input", function (e) { estado.q = e.target.value.trim().toLowerCase(); pintarLista(); });
       dom.buscar.addEventListener("keydown", teclado);
       dom.filas.addEventListener("keydown", teclado);
-      mesas.push({ refrescarFavs: function () { if (estado.grupo === "★ Favoritos" && !Object.keys(favs).some(function (id) { return porId[id]; })) estado.grupo = "Todos"; pintarChips(); pintarLista(); if (estado.actual === "resumen") pintarResumen(); } });
+      if (!cfg.sinRegistro) mesas.push({ refrescarFavs: function () { if (estado.grupo === "★ Favoritos" && !Object.keys(favs).some(function (id) { return porId[id]; })) estado.grupo = "Todos"; pintarChips(); pintarLista(); if (estado.actual === "resumen") pintarResumen(); } });
       filas.forEach(iniciarFila);
     }
 
@@ -620,13 +670,12 @@
       if (fila && esMovil()) fila.focus({ preventScroll: true });
     }
 
-    return { armar: armar, abrir: abrir, cerrar: cerrar };
+    return { armar: armar, abrir: abrir, cerrar: cerrar, tarjeta: tarjeta, items: items, porId: porId };
   }
 
 
   /* ---------- textos del resumen ---------- */
 
-  var CLAVE_TABLERO = ["oficial", "ccl", "brecha", "riesgo", "infM", "infIA", "emae", "desoc", "reservas", "resPrim", "saldo", "badlar"];
   var CLAVE_BCRA = ["reservas", "tcMay", "base", "badlar", "tamar", "depositos", "prestamos", "m2"];
 
   function frasesTablero(P) {
@@ -871,8 +920,6 @@
     });
   }
 
-  var bcraMesa = null;
-
   function armarBCRA() {
     var raiz = $("bcra-contenido");
     bcraMesa = crearMesa({ filas: FILAS_BCRA, raiz: raiz, vista: "bcra", titulo: "Banco Central de un vistazo", clave: CLAVE_BCRA, frases: frasesBCRA });
@@ -917,17 +964,128 @@
     tablaMonedas(g2);
   }
 
+  /* ---------- frases de cada seccion ---------- */
+
+  var FRASES = {
+    dolares: function (P) {
+      var ok = function (id) { return P[id] && P[id].ok; };
+      var out = [];
+      if (ok("oficial") && ok("mep") && ok("ccl") && ok("blue")) out.push("El oficial cotiza a " + P.oficial.valor + ", el MEP a " + P.mep.valor + ", el CCL a " + P.ccl.valor + " y el blue a " + P.blue.valor + ".");
+      if (ok("brecha")) out.push("La brecha del CCL con el oficial es de " + P.brecha.valor + ".");
+      if (ok("compras")) out.push("En los últimos 30 días el BCRA " + (P.compras.d12 >= 0 ? "compró " : "vendió ") + P.compras.fmt(Math.abs(P.compras.d12)) + " en divisas.");
+      return out;
+    },
+    inflacion: function (P) {
+      var ok = function (id) { return P[id] && P[id].ok; };
+      var out = [];
+      if (ok("infM") && ok("infIA")) out.push("La inflación de " + mesDe(P.infM) + " fue de " + P.infM.valor + " y acumula " + P.infIA.valor + " en doce meses.");
+      if (ok("nucleo") && ok("regulados")) out.push("El núcleo subió " + P.nucleo.valor + " en el mes y los regulados " + P.regulados.valor + ".");
+      if (ok("riesgo") && ok("reservas")) out.push("El riesgo país está en " + P.riesgo.valor + " y las reservas suman " + P.reservas.valor + ".");
+      return out;
+    },
+    tasas: function (P) {
+      var ok = function (id) { return P[id] && P[id].ok; };
+      var out = [];
+      if (ok("badlar") && ok("tamar")) out.push("La tasa BADLAR está en " + P.badlar.valor + " y la TAMAR en " + P.tamar.valor + ".");
+      if (ok("base") && ok("circ")) out.push("La base monetaria es de " + P.base.valor + " y la circulación de " + P.circ.valor + ".");
+      if (ok("depositos") && ok("prestamos")) out.push("Los depósitos en efectivo suman " + P.depositos.valor + " y los préstamos al sector privado " + P.prestamos.valor + ".");
+      return out;
+    },
+    estado: function (P) {
+      var ok = function (id) { return P[id] && P[id].ok; };
+      var out = [];
+      if (ok("resPrim")) out.push("El resultado primario de " + mesDe(P.resPrim) + " fue de " + P.resPrim.valor + ".");
+      if (ok("recaudIA")) out.push("La recaudación tributaria de " + mesDe(P.recaudIA) + " varió " + P.recaudIA.valor + " frente a un año atrás.");
+      if (ok("expo") && ok("impo") && ok("saldo")) out.push("En " + mesDe(P.saldo) + " se exportó " + P.expo.valor + " y se importó " + P.impo.valor + ": saldo comercial de " + P.saldo.valor + ".");
+      return out;
+    },
+    actividad: function (P) {
+      var ok = function (id) { return P[id] && P[id].ok; };
+      var out = [];
+      if (ok("emae") && P.emae.d12Txt) out.push("La actividad (EMAE) de " + mesDe(P.emae) + " " + (P.emae.d12 >= 0 ? "creció " : "cayó ") + sinSigno(P.emae.d12Txt) + " frente a un año atrás.");
+      if (ok("desoc")) out.push("La desocupación es de " + P.desoc.valor + ".");
+      if (ok("salarios") && P.salarios.d12Txt) out.push("El índice de salarios de " + mesDe(P.salarios) + " varió " + P.salarios.d12Txt + " en doce meses.");
+      if (ok("smvm")) out.push("El salario mínimo es de " + P.smvm.valor + ".");
+      return out;
+    }
+  };
+
+  /* ---------- portada y menu de secciones ---------- */
+
+  function tiles(raiz, extra) {
+    var ul = el("ul", "menu menu--grid");
+    SECCIONES.concat(SEC_OTRAS, extra || []).forEach(function (s) {
+      var li = el("li"), a = el("a"); a.href = "#" + s.id;
+      a.appendChild(el("strong", "", s.nombre)); a.appendChild(el("span", "", s.desc));
+      li.appendChild(a); ul.appendChild(li);
+    });
+    raiz.appendChild(ul);
+  }
+
+  var OTRAS_INICIO = [
+    { id: "noticias", nombre: "Noticias", desc: "Titulares de la economía por tema y por medio" },
+    { id: "calcular", nombre: "Calculadoras", desc: "Plazo fijo contra dólar, sueldo contra inflación" },
+    { id: "miplata", nombre: "Tu plata", desc: "Cómo te afecta todo esto, según tu perfil" }
+  ];
+  var IDS_DOLARES = ["oficial", "blue", "mep", "ccl", "brecha"];
+  var IDS_DATOS = ["infM", "infIA", "riesgo", "reservas", "emae", "desoc", "resPrim", "saldo"];
+
+  var inicio = null;
+
+  function firmaFavs() { return Object.keys(favs).sort().join(","); }
+
+  function armarInicio() {
+    var ids = IDS_DOLARES.concat(IDS_DATOS);
+    Object.keys(favs).forEach(function (id) { if (DEFS[id] && ids.indexOf(id) === -1) ids.push(id); });
+    var filas = ids.map(function (id) { var c = {}; Object.keys(DEFS[id]).forEach(function (k) { c[k] = DEFS[id][k]; }); c.g = "Inicio"; return c; });
+    var cajas = { dolares: $("inicio-dolares"), datos: $("inicio-datos"), frases: $("inicio-frases"), favs: $("inicio-favs") };
+
+    var m = crearMesa({
+      filas: filas, raiz: document.createElement("div"), vista: "inicio", titulo: "", clave: [], frases: frasesTablero, sinRegistro: true,
+      hashDe: function (it) { return "#" + (SEC_DE[it.id] || "bcra") + ":" + it.id; },
+      alCambiar: pintar
+    });
+    function grupo(caja, lista) {
+      caja.textContent = "";
+      lista.forEach(function (id) { if (m.porId[id]) caja.appendChild(m.tarjeta(m.porId[id])); });
+    }
+    function pintar() {
+      grupo(cajas.dolares, IDS_DOLARES);
+      grupo(cajas.datos, IDS_DATOS);
+      cajas.frases.textContent = "";
+      frasesTablero(m.porId).forEach(function (t) { cajas.frases.appendChild(el("li", "", t)); });
+      var mis = Object.keys(favs).filter(function (id) { return m.porId[id]; });
+      $("inicio-favs-bloque").hidden = !mis.length;
+      grupo(cajas.favs, mis);
+    }
+    inicio = { firma: firmaFavs(), pintar: pintar };
+    m.armar();
+    pintar();
+  }
+
   /* ---------- API ---------- */
 
-  var tableroMesa = null, mercadosListo = false;
+  var secPorId = {}, mesasSec = {};
+  SECCIONES.forEach(function (s) { secPorId[s.id] = s; });
+
+  var bcraMesa = null, mercadosListo = false, hubListo = false, tilesInicio = false;
+
+  // un link viejo #tablero:id pasa a la seccion que corresponde
+  function migrar(sub) { return sub && SEC_DE[sub] ? SEC_DE[sub] + ":" + sub : "inicio"; }
 
   function mostrar(vista, sub) {
-    if (vista === "tablero") {
-      if (!tableroMesa) {
-        tableroMesa = crearMesa({ filas: FILAS_TABLERO, raiz: $("mesa-tablero"), vista: "tablero", titulo: "Resumen del día", clave: CLAVE_TABLERO, frases: frasesTablero });
-        tableroMesa.armar();
+    if (vista === "inicio") {
+      if (!tilesInicio) { tilesInicio = true; tiles($("inicio-tiles"), OTRAS_INICIO); }
+      if (!inicio || inicio.firma !== firmaFavs()) armarInicio();
+    } else if (vista === "argentina") {
+      if (!hubListo) { hubListo = true; tiles($("argentina-tiles")); }
+    } else if (secPorId[vista]) {
+      var sec = secPorId[vista];
+      if (!mesasSec[vista]) {
+        mesasSec[vista] = crearMesa({ filas: filasDe(sec), raiz: $("mesa-" + vista), vista: vista, titulo: sec.titulo, clave: sec.clave, frases: FRASES[vista] });
+        mesasSec[vista].armar();
       }
-      if (sub) tableroMesa.abrir(sub); else tableroMesa.cerrar();
+      if (sub) mesasSec[vista].abrir(sub); else mesasSec[vista].cerrar();
     } else if (vista === "bcra") {
       if (!bcraMesa) armarBCRA();
       if (sub) bcraMesa.abrir(sub); else bcraMesa.cerrar();
@@ -936,5 +1094,5 @@
     }
   }
 
-  window.EconoTablero = { mostrar: mostrar };
+  window.EconoTablero = { mostrar: mostrar, migrar: migrar };
 })();
