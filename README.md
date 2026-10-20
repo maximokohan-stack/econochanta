@@ -44,6 +44,8 @@ Lo que pulsomacro tiene y Econochanta todavía no: Ganadería (Cañuelas, hacien
 
 Es oscuro por defecto, con una variante clara (botón arriba a la derecha).
 
+**Look Mosaico.** Azul noche con acento azul violáceo, esquinas redondeadas y navegación en pastillas. Los indicadores clave se muestran como recuadros con calor: el color dice si el último movimiento mejora (verde) o empeora (rojo) la situación, y es más intenso cuanto más se movió el dato; los que no se califican quedan en azul. El brillo de los recuadros sigue al puntero. En Cuentas del Estado, ingresos y gastos se pueden ver como torta o como mosaico, donde el tamaño de cada recuadro es su parte del total.
+
 ### Ingresos y gastos del Estado
 
 Al pie de Cuentas del Estado hay dos tortas: de dónde sale la plata (IVA, Ganancias, aportes, retenciones, impuesto al cheque y otros) y en qué se gasta (jubilaciones, sueldos, subsidios, asignaciones, PAMI, transferencias a provincias y otros). Se pueden ver por último trimestre, acumulado del año, últimos 4 trimestres y año anterior, con la lista completa de rubros debajo de cada torta.
@@ -63,7 +65,7 @@ Cada indicador muestra su período porque los datos mensuales y trimestrales se 
 
 ### Accesibilidad
 
-Se revisó contra WCAG 2.1 AA con contrastes calculados. Los bordes de campos y botones tienen al menos 3:1 y el texto 4,5:1 en ambos temas (en el claro el ámbar es más oscuro por eso). Los gráficos usan trazos distintos además del color y tienen una tabla de datos equivalente; las filas y tarjetas tienen una etiqueta completa para lectores de pantalla; los cambios de sección y de favoritos se anuncian; y en celular el foco pasa al detalle al abrirlo y vuelve a la fila al regresar.
+Se revisó contra WCAG 2.1 AA con contrastes calculados. Los bordes de campos y botones tienen al menos 3:1 y el texto 4,5:1 en ambos temas (en el claro los colores del acento son más oscuros por eso). Los gráficos usan trazos distintos además del color y tienen una tabla de datos equivalente; las filas y tarjetas tienen una etiqueta completa para lectores de pantalla; los cambios de sección y de favoritos se anuncian; y en celular el foco pasa al detalle al abrirlo y vuelve a la fila al regresar.
 
 ## Cómo se calcula (resumen)
 

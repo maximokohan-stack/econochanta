@@ -302,6 +302,61 @@
     el.appendChild(wrap);
   }
 
+  /* ---------- mosaico (treemap) ---------- */
+
+  function squarify(data, x, y, w, h) {
+    var total = data.reduce(function (a, d) { return a + d.value; }, 0), out = [];
+    var items = data.map(function (d) { return { d: d, area: d.value / total * w * h }; }), row = [], i = 0;
+    function suma(r) { return r.reduce(function (a, q) { return a + q.area; }, 0); }
+    function peor(r, side) {
+      var sm = suma(r), mx = Math.max.apply(null, r.map(function (q) { return q.area; })), mn = Math.min.apply(null, r.map(function (q) { return q.area; }));
+      return Math.max(side * side * mx / (sm * sm), sm * sm / (side * side * mn));
+    }
+    function colocar(r) {
+      var sm = suma(r);
+      if (w >= h) { var rw = sm / h, yy = y; r.forEach(function (q) { var rh = q.area / rw; out.push({ d: q.d, x: x, y: yy, w: rw, h: rh }); yy += rh; }); x += rw; w -= rw; }
+      else { var rh2 = sm / w, xx = x; r.forEach(function (q) { var rw2 = q.area / rh2; out.push({ d: q.d, x: xx, y: y, w: rw2, h: rh2 }); xx += rw2; }); y += rh2; h -= rh2; }
+    }
+    while (i < items.length) {
+      var side = Math.min(w, h);
+      if (!row.length || peor(row.concat([items[i]]), side) <= peor(row, side)) { row.push(items[i]); i++; }
+      else { colocar(row); row = []; }
+    }
+    if (row.length) colocar(row);
+    return out;
+  }
+
+  // items: [{ label, value }] de mayor a menor. o: { fmt, titulo }. El tamaño de cada recuadro es su parte del total.
+  function treemap(el, o) {
+    el.textContent = "";
+    var items = (o.items || []).filter(function (x) { return x.value > 0; });
+    var total = items.reduce(function (a, x) { return a + x.value; }, 0);
+    var fmt = o.fmt || function (v) { return String(Math.round(v)); };
+    if (!items.length || total <= 0) { el.appendChild(h("p", "chart__empty", "No hay datos disponibles.")); return; }
+    var caja = h("div", "tmap"); caja.setAttribute("role", "img");
+    caja.setAttribute("aria-label", (o.titulo || "Mosaico") + ". Total " + fmt(total) + ". Mayores: " + items.slice(0, 3).map(function (x) { return x.label + " " + num1(x.value / total * 100) + "%"; }).join(", ") + ". El detalle está en la lista de abajo.");
+    var celdas = items.map(function (x, i) {
+      var c = h("div", "tmap__celda"); c.style.background = "var(--p" + (i % 9 + 1) + ")";
+      c.appendChild(h("div", "tmap__c1", x.label)); c.appendChild(h("div", "tmap__c2", num1(x.value / total * 100) + "%")); c.appendChild(h("div", "tmap__c3", fmt(x.value)));
+      c.title = x.label + ": " + fmt(x.value) + " (" + num1(x.value / total * 100) + "%)";
+      caja.appendChild(c); return c;
+    });
+    el.appendChild(caja);
+    var ancho = 0;
+    function acomodar() {
+      var W = caja.clientWidth, H = caja.clientHeight;
+      if (!W || W === ancho) return;
+      ancho = W;
+      squarify(items, 0, 0, W, H).forEach(function (r, i) {
+        var c = celdas[i];
+        c.style.left = r.x + "px"; c.style.top = r.y + "px"; c.style.width = Math.max(0, r.w) + "px"; c.style.height = Math.max(0, r.h) + "px";
+        c.classList.toggle("tmap__celda--chica", r.w < 96 || r.h < 62);
+      });
+    }
+    acomodar();
+    if (typeof ResizeObserver === "function") new ResizeObserver(acomodar).observe(caja);
+  }
+
   function num1(v) { return v.toLocaleString("es-AR", { minimumFractionDigits: 1, maximumFractionDigits: 1 }); }
 
   /* ---------- sparkline ---------- */
@@ -339,5 +394,5 @@
     setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
   }
 
-  window.EconoCharts = { line: line, bars: bars, pie: pie, spark: spark, csv: csv, fechaLarga: fechaLarga, mensual: mensual };
+  window.EconoCharts = { line: line, bars: bars, pie: pie, treemap: treemap, spark: spark, csv: csv, fechaLarga: fechaLarga, mensual: mensual };
 })();

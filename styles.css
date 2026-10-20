@@ -5,41 +5,44 @@
  *
  * Reglas del sistema:
  * - Oscuro por defecto, con variante clara (data-theme="light"). Sin blanco ni negro puros.
- * - Un solo acento (ámbar). Verde y rojo solo indican si un dato subió o bajó.
- * - Esquinas rectas. Los números van en tipografía monoespaciada.
+ * - Look Mosaico: azul noche, acento azul violáceo, esquinas redondeadas y recuadros con calor.
+ * - Verde y rojo indican si un dato mejora o empeora. Los números van en tipografía monoespaciada.
  * - Movimiento mínimo, apagado con prefers-reduced-motion.
  */
 
 /* ---------- Tokens ---------- */
 
 :root {
-  --bg: #0a0c0f;
-  --surface: #11151a;
-  --surface-2: #171c22;
-  --text: #e6ebf0;
-  --text-2: #8b97a3;
-  --line: #232a32;
-  --control: #6f7b88;
-  --head: #e6ebf0;
-  --accent: #ffb000;
-  --accent-ink: #111111;
-  --ring: #3cc8e8;
-  --up: #3ddc97;
-  --upbg: rgb(61 220 151 / .12);
-  --down: #ff6b6b;
-  --downbg: rgb(255 107 107 / .12);
-  --ok: #3ddc97;
-  --warn: #e0b44a;
-  --bad: #ff6b6b;
-  --crit: #ff6b7d;
-  --c1: #ffb000;
-  --c2: #3cc8e8;
-  --c3: #3ddc97;
-  --c4: #a8b3bf;
-  /* paleta de tortas: 8 categorias y un gris para "otros" */
-  --p1: #ffb000; --p2: #3cc8e8; --p3: #3ddc97; --p4: #b392f0; --p5: #ff8a65; --p6: #6ea8ff; --p7: #f78fb3; --p8: #c3d94e; --p9: #8b97a3;
+  --bg: #090d1a;
+  --surface: #101731;
+  --surface-2: #18224a;
+  --text: #eaf0ff;
+  --text-2: #9aa9cf;
+  --line: #25335f;
+  --control: #5f74ad;
+  --head: #eaf0ff;
+  --accent: #7c9cff;
+  --accent-ink: #0a1030;
+  --ring: #5ad7c1;
+  --up: #4ee0a1;
+  --upbg: rgb(78 224 161 / .14);
+  --down: #ff7b72;
+  --downbg: rgb(255 123 114 / .14);
+  --ok: #4ee0a1;
+  --warn: #f0c05a;
+  --bad: #ff7b72;
+  --crit: #ff8a9a;
+  --c1: #7c9cff;
+  --c2: #5ad7c1;
+  --c3: #ffb54a;
+  --c4: #ff8fa3;
+  /* paleta de tortas y mosaicos: 8 categorias y un gris azulado para "otros" */
+  --p1: #ffb54a; --p2: #5ad7c1; --p3: #7c9cff; --p4: #ff8fa3; --p5: #b392f0; --p6: #9be564; --p7: #ffd166; --p8: #6ec5ff; --p9: #8ea0c9;
+  --tmap-ink: #0a1030;
+  --glow: rgb(124 156 255 / .2);
+  --sombra: 0 18px 44px rgb(0 0 0 / .35);
 
-  --r: 0px;
+  --r: 16px;
   --font: ui-sans-serif, "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, sans-serif;
   --mono: ui-monospace, "Cascadia Mono", "SF Mono", Consolas, "Liberation Mono", monospace;
   --ancho: 1400px;
@@ -47,30 +50,33 @@
 }
 
 :root[data-theme="light"] {
-  --bg: #eceff2;
+  --bg: #e8edfa;
   --surface: #ffffff;
-  --surface-2: #f3f5f7;
-  --text: #11161b;
-  --text-2: #56626e;
-  --line: #d3d9df;
-  --control: #737f8b;
-  --head: #11161b;
-  --accent: #8f5500;
+  --surface-2: #f0f3fc;
+  --text: #0f1733;
+  --text-2: #4d5a82;
+  --line: #cdd6ee;
+  --control: #6a7aa8;
+  --head: #0f1733;
+  --accent: #3452d6;
   --accent-ink: #ffffff;
-  --ring: #00718f;
-  --up: #0d7a4f;
-  --upbg: rgb(13 122 79 / .12);
-  --down: #b3261e;
-  --downbg: rgb(179 38 30 / .1);
-  --ok: #0d7a4f;
-  --warn: #9a6200;
-  --bad: #b3261e;
+  --ring: #0b7a6e;
+  --up: #0f7a52;
+  --upbg: rgb(15 122 82 / .12);
+  --down: #b8322a;
+  --downbg: rgb(184 50 42 / .1);
+  --ok: #0f7a52;
+  --warn: #8a5a00;
+  --bad: #b8322a;
   --crit: #8f1d2c;
-  --c1: #8f5500;
-  --c2: #00718f;
-  --c3: #0d7a4f;
-  --c4: #56626e;
-  --p1: #8f5500; --p2: #00718f; --p3: #0d7a4f; --p4: #6b3fb5; --p5: #b84a1f; --p6: #1f5fc4; --p7: #b02a6b; --p8: #667a00; --p9: #56626e;
+  --c1: #3452d6;
+  --c2: #0b7a6e;
+  --c3: #a35a00;
+  --c4: #b02a6b;
+  --p1: #a35a00; --p2: #0b7a6e; --p3: #3452d6; --p4: #b02a6b; --p5: #6b3fb5; --p6: #4d7a00; --p7: #8a6a00; --p8: #1b6fa8; --p9: #56648c;
+  --tmap-ink: #ffffff;
+  --glow: rgb(52 82 214 / .12);
+  --sombra: 0 18px 44px rgb(15 23 51 / .14);
   color-scheme: light;
 }
 
@@ -496,6 +502,115 @@ a.news:hover .news__title { text-decoration: underline; text-underline-offset: 3
 .menu a:hover { border-color: var(--accent); }
 .menu span { color: var(--text-2); font-size: 14px; }
 .menu--grid { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
+
+/* ======================================================================
+   Look Mosaico: fondo con brillo, esquinas redondeadas, pastillas y recuadros con calor.
+   Solo cambia la apariencia; la estructura de la app es la misma.
+   ====================================================================== */
+
+body {
+  background: radial-gradient(1100px 560px at 82% -8%, var(--glow), transparent 62%), var(--bg);
+  background-attachment: fixed;
+}
+
+.brand { font-family: var(--font); font-size: 22px; letter-spacing: -0.03em; color: var(--text); }
+.brand::before { content: none; }
+.brand span { color: var(--accent); }
+
+/* navegación en pastillas */
+.nav { background: color-mix(in srgb, var(--bg) 84%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); gap: 6px; }
+.nav a { margin: 5px 0; min-height: 38px; border-bottom: 0; border-radius: 999px; transition: background .2s, color .2s; }
+.nav a:hover { background: var(--surface); }
+.nav a[aria-current="page"] { background: var(--accent); color: var(--accent-ink); }
+.subnav a { border-radius: 999px; border-color: var(--line); transition: border-color .2s, background .2s; }
+.subnav a:hover { background: var(--surface); }
+.subnav a[aria-current="page"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+
+/* formas */
+.card, .guia, .alert-config li, .alerts li, .quotes li, .stats, .mesa__grafico, .banner { border-radius: var(--r); }
+.card { box-shadow: var(--sombra); }
+.btn, .icon-btn, .chip, .tab, .pastilla { border-radius: 999px; }
+.mesa__volver { border-radius: 999px; }
+.btn--ghost { border-color: var(--control); }
+.btn--ghost:hover, .icon-btn:hover { background: var(--surface-2); }
+input[type="number"], .mkt__search, .mesa__buscar, .file { border-radius: 12px; }
+.buscador__input { border-radius: 14px; border-color: var(--control); }
+.buscador__lista { border-radius: 14px; box-shadow: var(--sombra); }
+.chart__tip { border-radius: 10px; }
+.tabs { border-radius: 999px; }
+.stats { overflow: hidden; }
+.skip { border-radius: 10px; }
+
+/* mesa */
+.mesa { border-radius: 22px; overflow: clip; box-shadow: var(--sombra); border-color: var(--line); }
+.mesa__grupo { background: var(--surface-2); }
+.fila { transition: background .2s; }
+.fila[aria-current="true"] { box-shadow: inset 4px 0 0 var(--accent); }
+.mesa__grafico { border-color: var(--line); }
+.pastilla.tono-bien { background: var(--upbg); border-color: transparent; }
+.pastilla.tono-mal { background: var(--downbg); border-color: transparent; }
+.pastilla.tono-neutro, .pastilla.flat { background: var(--surface-2); border-color: transparent; }
+.delta { border-radius: 999px; }
+.resumen__frases li { border-left-width: 4px; border-radius: 2px; }
+
+/* recuadros con calor: el color dice si el ultimo movimiento ayuda o complica, y es mas intenso cuanto mas se movio */
+.tarjetas { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 12px; }
+.tarjeta {
+  --k: 0;
+  position: relative; overflow: hidden; min-height: 128px; padding: 14px 16px; color: #fff;
+  border: 1px solid rgb(255 255 255 / .08); border-radius: 18px;
+  background: hsl(222 calc(30% + 8% * var(--k)) calc(27% + 5% * var(--k)));
+  transition: transform .25s cubic-bezier(.2, .8, .2, 1), box-shadow .25s, filter .25s;
+}
+.tarjeta.calor-bien { background: hsl(156 calc(48% + 24% * var(--k)) calc(18% + 12% * var(--k))); }
+.tarjeta.calor-mal { background: hsl(6 calc(52% + 28% * var(--k)) calc(26% + 12% * var(--k))); }
+.tarjeta:hover { transform: translateY(-3px); box-shadow: 0 16px 34px rgb(0 0 0 / .4); filter: brightness(1.12); border-color: rgb(255 255 255 / .22); }
+.tarjeta::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity .25s;
+  background: radial-gradient(circle at var(--mx, 50%) var(--my, 0%), rgb(255 255 255 / .22), transparent 55%);
+}
+.tarjeta:hover::after { opacity: 1; }
+.tarjeta > * { position: relative; z-index: 1; }
+.tarjeta__nombre { color: #fff; opacity: .88; }
+.tarjeta__val { color: #fff; font-size: 24px; }
+.tarjeta__val--msg { color: rgb(255 255 255 / .8); }
+.tarjeta .tarjeta__chg { color: #fff; }
+.tarjeta__spark { opacity: .6; }
+.tarjeta__spark path, .tarjeta__spark polyline { stroke: #fff !important; }
+
+/* menus de secciones como recuadros */
+.menu a {
+  position: relative; overflow: hidden; border-radius: 18px; border-color: var(--line); min-height: 78px; padding: 16px 18px;
+  background: linear-gradient(140deg, var(--surface-2), color-mix(in srgb, var(--accent) 16%, var(--surface)));
+  transition: transform .25s cubic-bezier(.2, .8, .2, 1), box-shadow .25s, border-color .25s;
+}
+.menu a:hover { transform: translateY(-3px); box-shadow: var(--sombra); border-color: var(--accent); }
+.menu a strong { font-size: 16px; letter-spacing: -0.01em; }
+.menu a::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity .25s;
+  background: radial-gradient(circle at var(--mx, 50%) var(--my, 0%), color-mix(in srgb, var(--accent) 30%, transparent), transparent 60%);
+}
+.menu a:hover::after { opacity: 1; }
+
+/* mosaico de gastos e ingresos (alternativa a la torta) */
+.estado-extras { gap: 8px; }
+.estado-extras .chips { margin-bottom: 0; }
+.tmap { position: relative; width: 100%; height: 340px; border-radius: 14px; overflow: hidden; background: var(--bg); }
+.tmap__celda {
+  position: absolute; overflow: hidden; padding: 8px 10px; border: 2px solid var(--surface); border-radius: 10px; color: var(--tmap-ink); font-weight: 700;
+  transition: left .7s cubic-bezier(.2, .8, .2, 1), top .7s cubic-bezier(.2, .8, .2, 1), width .7s cubic-bezier(.2, .8, .2, 1), height .7s cubic-bezier(.2, .8, .2, 1), filter .2s;
+}
+.tmap__celda:hover { filter: brightness(1.12); }
+.tmap__c1 { font-size: 12px; line-height: 1.2; }
+.tmap__c2 { font: 700 14px var(--mono); margin-top: 3px; }
+.tmap__c3 { font: 11px var(--mono); opacity: .8; }
+.tmap__celda--chica .tmap__c1, .tmap__celda--chica .tmap__c3 { display: none; }
+.tmap__celda--chica .tmap__c2 { font-size: 11px; margin: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .tarjeta, .menu a, .tmap__celda { transition: none; }
+  .tarjeta:hover, .menu a:hover { transform: none; }
+}
 
 /* ======================================================================
    Adaptación a pantallas más chicas (el diseño base es el de escritorio)

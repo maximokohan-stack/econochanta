@@ -566,6 +566,10 @@
       b.setAttribute("aria-label", etiqueta(it));
       b.appendChild(el("span", "tarjeta__nombre", it.label));
       if (it.ok) {
+        // el recuadro se pinta segun si el ultimo movimiento mejora o empeora, y mas intenso cuanto mas se movio
+        var esc = it.t === "rate" ? 1.5 : it.t === "level" ? 2 : (Math.abs(it.s.ultimo.v) || 1) * 0.8;
+        b.classList.add(it.tonoPrev === "tono-bien" ? "calor-bien" : it.tonoPrev === "tono-mal" ? "calor-mal" : "calor-neutro");
+        b.style.setProperty("--k", Math.min(1, Math.abs(it.dPrev || 0) / esc).toFixed(2));
         b.appendChild(el("span", "tarjeta__val", it.valor));
         b.appendChild(el("span", "tarjeta__chg " + it.tonoPrev, it.dPrevTxt ? flechaDe(it.dPrevTxt, it.dPrev) + it.dPrevTxt : "sin variación"));
         var sp = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -1322,10 +1326,20 @@
     var chipsBox = el("div", "chips chips--sm"); chipsBox.setAttribute("role", "group"); chipsBox.setAttribute("aria-label", "Período de las tortas");
     cab.appendChild(chipsBox);
     raiz.appendChild(cab);
+    // la misma informacion se puede ver como torta o como mosaico (el tamaño de cada recuadro es su parte)
+    var formaBox = el("div", "chips chips--sm forma"); formaBox.setAttribute("role", "group"); formaBox.setAttribute("aria-label", "Forma del gráfico");
+    raiz.appendChild(formaBox);
     var cuerpo = el("div"); raiz.appendChild(cuerpo);
     cuerpo.appendChild(esqueleto(260));
 
-    var datos = null, periodos = [], actual = "ult";
+    var datos = null, periodos = [], actual = "ult", forma = "torta";
+    function pintarForma() {
+      formaBox.textContent = "";
+      [["torta", "Torta"], ["mosaico", "Mosaico"]].forEach(function (f) {
+        formaBox.appendChild(chip(f[1], f[0] === forma, function () { forma = f[0]; pintarForma(); if (datos) pintar(); }));
+      });
+    }
+    pintarForma();
 
     function armarPeriodos() {
       var fechas = datos.resPrim.map(function (p) { return p[0]; });
@@ -1369,7 +1383,8 @@
       card.appendChild(el("h3", "label", titulo));
       var cb = el("div"); card.appendChild(cb);
       var p = porciones(defs, fechas);
-      C.pie(cb, { items: p.grafico, fmt: fm, titulo: titulo, centro: ["Total de los rubros", fm(p.total)] });
+      if (forma === "mosaico") C.treemap(cb, { items: p.lista, fmt: fm, titulo: titulo });
+      else C.pie(cb, { items: p.grafico, fmt: fm, titulo: titulo, centro: ["Total de los rubros", fm(p.total)] });
       var det = el("details", "torta__detalle");
       det.appendChild(el("summary", "", "Ver todos los rubros (" + p.lista.length + ")"));
       var t = el("table", "tabla"), th = el("thead"), trh = el("tr");
@@ -1502,6 +1517,15 @@
       if (!mercadosListo) { mercadosListo = true; armarMercados(); }
     }
   }
+
+  // el brillo de los recuadros sigue al puntero
+  document.addEventListener("pointermove", function (ev) {
+    var t = ev.target && ev.target.closest ? ev.target.closest(".tarjeta, .menu a") : null;
+    if (!t) return;
+    var r = t.getBoundingClientRect();
+    t.style.setProperty("--mx", ((ev.clientX - r.left) / r.width * 100).toFixed(1) + "%");
+    t.style.setProperty("--my", ((ev.clientY - r.top) / r.height * 100).toFixed(1) + "%");
+  }, { passive: true });
 
   window.EconoTablero = { mostrar: mostrar, migrar: migrar };
 })();
