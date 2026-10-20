@@ -3,7 +3,7 @@
   "short_name": "Econochanta",
   "description": "La economía argentina filtrada por lo que vos tenés. Sin chamuyo.",
   "lang": "es-AR",
-  "start_url": "./index.html#hoy",
+  "start_url": "./index.html#tablero",
   "scope": "./",
   "display": "standalone",
   "background_color": "#0f1317",
