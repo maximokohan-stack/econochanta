@@ -23,6 +23,7 @@
         <p class="top__date" id="fecha"></p>
       </div>
       <div class="top__btns">
+        <button class="icon-btn" id="abrir-buscar" type="button" aria-label="Buscar (Ctrl+K)" title="Buscar (Ctrl+K)"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
         <a class="icon-btn solo-movil" href="#mas" data-vista="mas">Más</a>
         <button class="icon-btn" id="tema" type="button" aria-label="Cambiar tema claro u oscuro">Tema</button>
       </div>
@@ -62,8 +63,8 @@
     <section id="vista-inicio" class="vista" aria-labelledby="h-inicio">
       <div class="front-head">
         <div>
-          <h1 id="h-inicio" class="title">La economía, clara y al día</h1>
-          <p class="sub">Dólar, inflación, tasas, cuentas del Estado, actividad y mercados de Argentina, con datos oficiales. Se actualiza solo.</p>
+          <h1 id="h-inicio" class="title">Cada número de la economía, explicado</h1>
+          <p class="sub">Dólar, inflación, tasas, cuentas del Estado y actividad de Argentina, con datos oficiales y una explicación en criollo de qué significa cada uno.</p>
         </div>
         <div class="front-head__acc">
           <p class="front-head__stamp" id="actualizado" role="status"></p>
@@ -78,8 +79,8 @@
       </div>
       <aside class="primera" id="primera" role="note" hidden>
         <div>
-          <strong>¿Primera vez en Econochanta?</strong>
-          <p>Tocá cualquier número para ver su gráfico, qué mide y cómo se lee. Si buscás algo puntual, escribilo en el buscador.</p>
+          <strong>¿Es tu primera vez acá?</strong>
+          <p>Tocá cualquier número: te mostramos su gráfico y te explicamos qué mide y cómo se lee. Si buscás algo puntual, usá el buscador.</p>
         </div>
         <div class="primera__acc">
           <a class="btn btn--ghost btn--sm" href="#glosario">Ver el glosario</a>
@@ -88,14 +89,14 @@
       </aside>
       <h2 class="resumen__sub">Dólares hoy</h2>
       <div class="tarjetas" id="inicio-dolares"></div>
-      <h2 class="resumen__sub">Los datos del día</h2>
+      <h2 class="resumen__sub">Lo que hay que mirar hoy</h2>
       <ul class="resumen__frases" id="inicio-frases"></ul>
       <div class="tarjetas" id="inicio-datos"></div>
       <div id="inicio-favs-bloque" hidden>
         <h2 class="resumen__sub">★ Tus favoritos</h2>
         <div class="tarjetas" id="inicio-favs"></div>
       </div>
-      <h2 class="resumen__sub">¿Qué querés ver?</h2>
+      <h2 class="resumen__sub">Entrá por tema</h2>
       <div id="inicio-tiles"></div>
     </section>
 
@@ -153,6 +154,7 @@
     <section id="vista-mas" class="vista" aria-labelledby="h-mas" hidden>
       <h1 id="h-mas" class="title">Más</h1>
       <ul class="menu">
+        <li><a href="#metodologia"><strong>Cómo se calcula</strong><span>Fuentes, frecuencia, cálculos propios y cómo citar</span></a></li>
         <li><a href="#glosario"><strong>Glosario</strong><span>Qué mide cada indicador y cómo leerlo</span></a></li>
         <li><a href="#alertas"><strong>Alertas</strong><span>Avisos por brecha del dólar</span></a></li>
         <li><a href="#perfil"><strong>Perfil</strong><span>Tus datos, guardados solo en este dispositivo</span></a></li>
@@ -172,6 +174,64 @@
           </tbody>
         </table>
         <p class="hint">Cada gráfico muestra su fuente y la fecha de su último dato. Los datos mensuales y trimestrales se publican con rezago. No es asesoramiento financiero.</p>
+      </article>
+    </section>
+
+    <!-- COMO SE CALCULA -->
+    <section id="vista-metodologia" class="vista" aria-labelledby="h-metodologia" hidden>
+      <h1 id="h-metodologia" class="title">Cómo se calcula</h1>
+      <p class="lead">De dónde sale cada dato, cada cuánto se actualiza, qué cuentas hacemos nosotros y qué tener en cuenta antes de usarlo.</p>
+
+      <article class="card">
+        <h2 class="label">Fuentes y frecuencia</h2>
+        <div class="tabla__wrap">
+          <table class="tabla">
+            <thead><tr><th scope="col">Dato</th><th scope="col">Fuente</th><th scope="col">Frecuencia</th></tr></thead>
+            <tbody>
+              <tr><td>Cotizaciones del dólar (compra y venta)</td><td>DolarAPI</td><td>Durante el día</td></tr>
+              <tr><td>Histórico del dólar y riesgo país</td><td>ArgentinaDatos</td><td>Diaria</td></tr>
+              <tr><td>Inflación y rubros, empleo, salarios, comercio exterior</td><td>INDEC, vía datos.gob.ar y ArgentinaDatos</td><td>Mensual o trimestral, con rezago</td></tr>
+              <tr><td>Actividad (EMAE) y PBI</td><td>INDEC</td><td>Mensual (unos 2 meses de demora) y trimestral</td></tr>
+              <tr><td>Balance de pagos (cuenta corriente y financiera)</td><td>INDEC</td><td>Trimestral</td></tr>
+              <tr><td>Resultado fiscal, ingresos y gastos por rubro</td><td>Secretaría de Hacienda (informe mensual IMIG), vía datos.gob.ar</td><td>Mensual; el detalle por rubro, trimestral</td></tr>
+              <tr><td>Recaudación</td><td>ARCA, vía datos.gob.ar</td><td>Mensual</td></tr>
+              <tr><td>Reservas, base monetaria, tasas, depósitos, crédito, CER, ICL y expectativas</td><td>BCRA (API de estadísticas)</td><td>Diaria o mensual según la serie</td></tr>
+              <tr><td>Acciones y bonos</td><td>data912</td><td>En vivo, con demora</td></tr>
+              <tr><td>Noticias</td><td>RSS públicos de Ámbito, Infobae, La Nación, iProfesional y Perfil</td><td>Cada hora, de 6 a 23 hs</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="hint">Cada indicador muestra su fuente, su frecuencia y la fecha de su último dato. Los datos mensuales y trimestrales se publican con rezago, y los organismos pueden revisarlos después.</p>
+      </article>
+
+      <article class="card">
+        <h2 class="label">Las cuentas que hacemos nosotros</h2>
+        <ul class="metodo">
+          <li><b>Brecha.</b> Dólar CCL dividido por el dólar oficial, menos 1.</li>
+          <li><b>Resultado financiero.</b> Resultado primario menos intereses netos de la deuda.</li>
+          <li><b>Acumulado del año y últimos 12 meses.</b> Suma de los resultados mensuales desde enero, o de los 12 más recientes.</li>
+          <li><b>Ingresos primarios y secundarios.</b> Cuenta corriente menos el balance de bienes y de servicios.</li>
+          <li><b>Torta y mosaico de ingresos y gastos.</b> Agrupamos los rubros del informe de Hacienda. La suma de rubros puede diferir hasta alrededor de 1% del total oficial, y el período es el último trimestre publicado.</li>
+          <li><b>Inflación a un año con el ritmo de un mes.</b> (1 + inflación mensual) elevado a 12, menos 1.</li>
+          <li><b>Tasa por 30 días.</b> Tasa nominal anual por 30, dividida por 365.</li>
+          <li><b>Inflación personal.</b> Cada categoría de tu backup de Plata se cruza con el índice del INDEC de ese rubro; las que no tienen índice propio usan la inflación general.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2 class="label">Cómo leer los colores y las explicaciones</h2>
+        <p class="note__text">▲ y ▼ indican la dirección frente al dato anterior: <b>verde si sube, rojo si baja</b>. El color no dice si el cambio es bueno o malo: una suba de la inflación y una suba de las reservas se ven igual. Para saber cómo leer cada dato, abrí el indicador y mirá "Qué mide y cómo se lee".</p>
+      </article>
+
+      <article class="card">
+        <h2 class="label">Qué pasa si una fuente falla</h2>
+        <p class="note__text">Si una fuente no responde, esa parte muestra el último dato guardado en tu dispositivo o un dato de ejemplo, y la app lo avisa arriba. Cuando una serie se deja de publicar, se marca como desactualizada.</p>
+      </article>
+
+      <article class="card">
+        <h2 class="label">Cómo citar</h2>
+        <p class="note__text">Citá siempre la fuente original (INDEC, BCRA, Hacienda…). Si usás un gráfico de acá, podés agregar: <i>Econochanta, "nombre del indicador", con datos de la fuente, consultado el día/mes/año</i>. Cada indicador tiene un botón "Copiar cita" que lo arma por vos.</p>
+        <p class="hint">Econochanta es informativa y no es asesoramiento financiero. Las cuentas propias son aproximaciones para entender, no cifras oficiales.</p>
       </article>
     </section>
 

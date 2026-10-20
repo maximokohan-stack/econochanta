@@ -81,10 +81,36 @@
   }
 
   // cada tipo de dolar tiene su color, el mismo en la lista, en las tarjetas y en el grafico
-  var PUNTO = { oficial: "var(--c1)", mep: "var(--c2)", ccl: "var(--c3)", blue: "var(--c4)" };
+  var PUNTO = { oficial: "var(--celeste)", mep: "var(--p1)", ccl: "var(--p5)", blue: "var(--p4)", tarjeta: "var(--p9)", cripto: "var(--p2)" };
   function punto(id) { if (!PUNTO[id]) return null; var i = el("i", "punto"); i.style.background = PUNTO[id]; i.setAttribute("aria-hidden", "true"); return i; }
   function fuenteCorta(f) { return String(f || "datos públicos").replace(/\s*\(.*\)/, "").split(",")[0].trim(); }
   function hora(iso) { var d = new Date(iso); return isNaN(d) ? "" : d.toLocaleTimeString("es-AR", { hour: "2-digit", minute: "2-digit" }); }
+
+  // la unidad se escribe en palabras: "50.043" no dice nada si no se sabe que son millones de dolares
+  var UNIDAD_ID = {
+    infM: "variación mensual de los precios", infIA: "variación de los precios en 12 meses", riesgo: "puntos básicos (100 = 1 punto)",
+    brecha: "% de diferencia con el oficial", desoc: "% de la población activa", emae: "índice, base 2004 = 100", ipi: "índice, base 2004 = 100",
+    cemento: "índice de despachos", pbi: "millones de pesos de 2004", salarios: "índice, base oct. 2016 = 100", salPriv: "índice, base oct. 2016 = 100",
+    salNoReg: "índice, base oct. 2016 = 100", salPub: "índice, base oct. 2016 = 100", ripte: "pesos por mes", smvm: "pesos por mes", haber: "pesos por mes",
+    uva: "pesos por UVA", cer: "índice, 1 = feb. 2002", badlar: "tasa nominal anual", tamar: "tasa nominal anual", tasaDep: "tasa nominal anual",
+    tasaPers: "tasa nominal anual", tasaPases: "tasa nominal anual", tasaBaibar: "tasa nominal anual", tasaAdelantos: "tasa nominal anual",
+    m2: "% frente a un año atrás", recaudIA: "% frente a un año atrás", compras: "millones de dólares por día", tcMay: "pesos por dólar", tcMin: "pesos por dólar"
+  };
+  function unidadDe(it) {
+    if (UNIDAD_ID[it.id]) return UNIDAD_ID[it.id];
+    if (it.t === "ipc") return "variación del mes";
+    if (PUNTO[it.id]) return "pesos por dólar";
+    var u = it.s ? it.s.unit : "";
+    if (u === "M USD") return "millones de dólares";
+    if (u === "M ARS") return it.s && Math.abs(it.s.ultimo.v) >= 1e6 ? "billones de pesos" : "millones de pesos";
+    if (u === "ARS") return "pesos";
+    if (u === "pb") return "puntos básicos";
+    return "";
+  }
+  function frecuenciaDe(it) {
+    var p = pasoDias(it.s);
+    return p <= 3 ? "diaria" : p <= 40 ? "mensual" : p <= 120 ? "trimestral" : "anual";
+  }
 
   function dirClase(v) { return v === undefined || v === null ? "flat" : v > 0.0001 ? "up" : v < -0.0001 ? "down" : "flat"; }
   function flecha(v) { return v > 0.0001 ? "▲ " : v < -0.0001 ? "▼ " : "■ "; }
@@ -102,6 +128,8 @@
     { id: "mep", g: "Dólar", label: "Dólar MEP", key: "dMep", t: "level" },
     { id: "ccl", g: "Dólar", label: "Dólar CCL", key: "dCcl", t: "level" },
     { id: "blue", g: "Dólar", label: "Dólar blue", key: "dBlue", t: "level" },
+    { id: "tarjeta", g: "Dólar", label: "Dólar tarjeta", key: "dTarjeta", t: "level" },
+    { id: "cripto", g: "Dólar", label: "Dólar cripto", key: "dCripto", t: "level" },
     { id: "brecha", g: "Dólar", label: "Brecha CCL contra oficial", derive: "brecha", t: "rate" },
 
     { id: "infM", g: "Precios", label: "Inflación mensual", key: "infM", t: "rate", bars: true },
@@ -222,9 +250,9 @@
 
   // cada seccion abre su propia mesa; los grupos de abajo son los filtros de esa mesa
   var SECCIONES = [
-    { id: "dolares", nombre: "Dólares", desc: "Oficial, MEP, CCL y blue, la brecha y las compras del BCRA",
-      titulo: "Dólares de un vistazo", clave: ["oficial", "mep", "ccl", "blue", "brecha", "tcMay", "compras"],
-      grupos: [["Cotizaciones", ["oficial", "mep", "ccl", "blue", "tcMay"]], ["Brecha", ["brecha"]], ["Compras del BCRA", ["compras"]]] },
+    { id: "dolares", nombre: "Dólares", desc: "Oficial, MEP, CCL, blue, tarjeta y cripto, la brecha y las compras del BCRA",
+      titulo: "Dólares de un vistazo", clave: ["oficial", "mep", "ccl", "blue", "tarjeta", "brecha", "tcMay", "compras"],
+      grupos: [["Cotizaciones", ["oficial", "mep", "ccl", "blue", "tarjeta", "cripto", "tcMay"]], ["Brecha", ["brecha"]], ["Compras del BCRA", ["compras"]]] },
     { id: "inflacion", nombre: "Inflación y reservas", desc: "Precios, núcleo y regulados, rubros, UVA y CER, reservas y riesgo país",
       titulo: "Inflación y reservas de un vistazo", clave: ["infM", "infIA", "nucleo", "regulados", "reservas", "riesgo"],
       grupos: [["Inflación", ["infM", "infIA", "nucleo", "regulados", "estacionales"]],
@@ -572,6 +600,7 @@
         b.classList.add(it.tonoPrev === "tono-bien" ? "calor-bien" : it.tonoPrev === "tono-mal" ? "calor-mal" : "calor-neutro");
         b.style.setProperty("--k", Math.min(1, Math.abs(it.dPrev || 0) / esc).toFixed(2));
         b.appendChild(el("span", "tarjeta__val", it.valor));
+        var un = unidadDe(it); if (un) b.appendChild(el("span", "tarjeta__unidad", un));
         b.appendChild(el("span", "tarjeta__chg " + it.tonoPrev, it.dPrevTxt ? flechaDe(it.dPrevTxt, it.dPrev) + it.dPrevTxt : "sin variación"));
         var sp = document.createElementNS("http://www.w3.org/2000/svg", "svg");
         sp.setAttribute("class", "tarjeta__spark"); sp.setAttribute("aria-hidden", "true");
@@ -579,7 +608,9 @@
         b.appendChild(sp);
         var c = cot && it.__f && cot[it.__f.key];
         if (c) {
-          b.appendChild(el("span", "tarjeta__cv", "C $ " + num(c.compra, 0) + " · V $ " + num(c.venta, 0)));
+          var cv = el("span", "tarjeta__cv");
+          cv.appendChild(el("span", "", "Compra $ " + num(c.compra, 0))); cv.appendChild(el("span", "", "Venta $ " + num(c.venta, 0)));
+          b.appendChild(cv);
           b.appendChild(el("span", "tarjeta__fuente", "DolarAPI · " + (hora(c.fecha) || it.fecha)));
         } else b.appendChild(el("span", "tarjeta__fuente", fuenteCorta(it.s.fuente) + " · " + it.fecha));
       } else b.appendChild(el("span", "tarjeta__val tarjeta__val--msg", it.error ? "sin dato" : "…"));
@@ -661,6 +692,7 @@
       }
       estado.detalleOk = it.id;
       box.appendChild(el("div", "big", it.valor));
+      var unD = unidadDe(it); if (unD) box.appendChild(el("div", "big__unidad", unD));
       box.appendChild(el("p", "mesa__frase", frase(it)));
       var chg = el("div", "pastillas");
       if (it.dPrevTxt) chg.appendChild(el("span", "pastilla " + it.tonoPrev, flechaDe(it.dPrevTxt, it.dPrev) + it.dPrevTxt + (it.mensual ? " vs período anterior" : " vs día anterior")));
@@ -669,10 +701,13 @@
       chg.appendChild(el("span", "pastilla " + (it.viejo ? "viejo" : "flat"), "Dato de " + it.fecha + (it.viejo ? " (hace " + dias + " días, desactualizado)" : "")));
       box.appendChild(chg);
 
+      // en pantallas anchas el grafico va a la izquierda y la explicacion a la derecha
       var guia = guiaDe(it);
+      var rejilla = el("div", "mesa__rejilla"), princ = el("div", "mesa__principal"), lado = el("div", "mesa__lado");
+      rejilla.appendChild(princ); rejilla.appendChild(lado); box.appendChild(rejilla);
       if (guia) {
         guia.addEventListener("toggle", function () { guardarGuia(!guia.open); });
-        box.appendChild(guia);
+        lado.appendChild(guia);
       }
 
       var rs = rangosDe(it);
@@ -680,9 +715,9 @@
       if (!rg || !rs.some(function (r) { return r[1] === rg; })) rg = rs[Math.min(1, rs.length - 1)][1];
       var rbox = el("div", "chips chips--sm"); rbox.setAttribute("role", "group"); rbox.setAttribute("aria-label", "Período");
       rs.forEach(function (r) { rbox.appendChild(chip(r[0], r[1] === rg, function () { estado.rango[it.id] = r[1]; pintarDetalle(); var b = dom.detalle.querySelector('.chips[aria-label="Período"] .chip[aria-pressed="true"]'); if (b) b.focus(); })); });
-      box.appendChild(rbox);
+      princ.appendChild(rbox);
 
-      var cb = el("div", "mesa__grafico chart"); box.appendChild(cb);
+      var cb = el("div", "mesa__grafico chart"); princ.appendChild(cb);
       var serieRango = recortar(it.s, rg);
       if (PUNTO[it.id]) serieRango.color = PUNTO[it.id];
       var vals = serieRango.points.map(function (p) { return p[1]; });
@@ -692,7 +727,7 @@
       [["Último", it.valor], ["Mínimo", it.fmt(Math.min.apply(null, vals))], ["Máximo", it.fmt(Math.max.apply(null, vals))], ["Promedio", it.fmt(prom)], ["Puntos", String(vals.length)]].forEach(function (x) {
         var d = el("div", "stat"); d.appendChild(el("span", "", x[0])); d.appendChild(el("b", "", x[1])); st.appendChild(d);
       });
-      box.appendChild(st);
+      princ.appendChild(st);
 
       var t = el("table", "tabla"); var th = el("thead"), trh = el("tr");
       var c1 = el("th", "", "Fecha"); c1.scope = "col"; var c2 = el("th", "num", it.label); c2.scope = "col";
@@ -707,10 +742,21 @@
       var w = el("div", "tabla__wrap"); w.appendChild(t); box.appendChild(w);
 
       var tools = el("div", "mesa__pie");
-      tools.appendChild(el("span", "hint", "Fuente: " + (it.s.fuente || "datos públicos") + ""));
+      tools.appendChild(el("span", "hint", "Fuente: " + (it.s.fuente || "datos públicos") + " · Frecuencia: " + frecuenciaDe(it) + " · Último dato: " + it.fecha + "."));
+      var acciones = el("div", "mesa__acciones");
+      var met = el("a", "link", "Cómo se calcula"); met.href = "#metodologia"; acciones.appendChild(met);
+      var cita = el("button", "btn btn--ghost btn--xs", "Copiar cita"); cita.type = "button";
+      cita.addEventListener("click", function () {
+        var hoy = new Date().toLocaleDateString("es-AR", { day: "numeric", month: "long", year: "numeric" });
+        var txt = "Econochanta, \"" + it.label + "\", con datos de " + fuenteCorta(it.s.fuente) + ", consultado el " + hoy + ". " + location.href;
+        if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(function () { anunciar("Cita copiada"); cita.textContent = "Cita copiada"; setTimeout(function () { cita.textContent = "Copiar cita"; }, 1800); }, function () { anunciar("No se pudo copiar la cita"); });
+        else anunciar("Tu navegador no permite copiar automáticamente");
+      });
+      acciones.appendChild(cita);
       var csv = el("button", "btn btn--ghost btn--xs", "Descargar CSV"); csv.type = "button";
       csv.addEventListener("click", function () { C.csv(it.id, [it.s]); });
-      tools.appendChild(csv);
+      acciones.appendChild(csv);
+      tools.appendChild(acciones);
       box.appendChild(tools);
 
       if (it.bars || it.t === "ipc") {
@@ -1163,7 +1209,7 @@
     { id: "miplata", nombre: "Tu plata", desc: "Cómo te afecta todo esto, según tu perfil" },
     { id: "glosario", nombre: "Glosario", desc: "Qué mide cada indicador, cómo se calcula y cómo leerlo" }
   ];
-  var IDS_DOLARES = ["oficial", "blue", "mep", "ccl", "brecha"];
+  var IDS_DOLARES = ["oficial", "blue", "mep", "ccl", "tarjeta", "brecha"];
   var IDS_DATOS = ["infM", "infIA", "riesgo", "reservas", "emae", "desoc", "resPrim", "saldo"];
 
   /* ---------- buscador de la portada ---------- */
@@ -1183,64 +1229,76 @@
     expo: "comercio exterior ventas al exterior", impo: "comercio exterior compras al exterior", saldo: "balanza comercial superavit",
     bpCC: "ccte cta cte cuenta corriente balance de pagos", bpCC12: "ccte cta cte cuenta corriente balance de pagos", bpCF: "financiera cuenta financiera balance de pagos",
     bpCap: "balance de pagos", bpBienes: "balanza comercial balance de pagos", bpServicios: "turismo balance de pagos", bpIngresos: "intereses utilidades remesas balance de pagos",
-    bpEyO: "balance de pagos", bpReservas: "balance de pagos"
+    bpEyO: "balance de pagos", bpReservas: "balance de pagos",
+    tarjeta: "dolar tarjeta turista exterior consumos", cripto: "dolar cripto usdt stablecoin criptomoneda"
   };
 
   function norm(t) { return String(t).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, ""); }
 
-  function armarBuscador() {
-    var input = $("buscador-input"), lista = $("buscador-lista"), estado = $("buscador-estado");
-    if (!input) return;
-    var corpus = [];
+  var corpus = null;
+  function secPorIdTemp(id) { return SECCIONES.some(function (x) { return x.id === id; }); }
+  function getCorpus() {
+    if (corpus) return corpus;
+    corpus = [];
+    var esArg = function (id) { return id === "bcra" || id === "mercados" || id === "tabla" || secPorIdTemp(id); };
     SECCIONES.concat(SEC_OTRAS, OTRAS_INICIO).forEach(function (s) {
-      corpus.push({ tipo: "seccion", nombre: s.nombre, donde: s.id === "bcra" || s.id === "mercados" || secPorIdTemp(s.id) ? "Argentina" : "Sección", desc: s.desc, href: "#" + s.id, n: norm(s.nombre), x: norm(s.desc) });
+      corpus.push({ sec: true, nombre: s.nombre, donde: esArg(s.id) ? "Argentina" : "Sección", desc: s.desc, href: "#" + s.id, n: norm(s.nombre), x: norm(s.desc) });
     });
     Object.keys(DEFS).forEach(function (id) {
       var d = DEFS[id], g = window.EconoGlosario && window.EconoGlosario[id];
       var sec = SEC_DE[id] ? (SECCIONES.filter(function (x) { return x.id === SEC_DE[id]; })[0] || {}).nombre : "Banco Central";
-      corpus.push({ tipo: "indicador", nombre: d.label, donde: "Argentina › " + sec, desc: g ? g.q : "", href: "#" + (SEC_DE[id] || "bcra") + ":" + id,
+      corpus.push({ nombre: d.label, donde: "Argentina › " + sec, desc: g ? g.q : "", href: "#" + (SEC_DE[id] || "bcra") + ":" + id,
         n: norm(d.label), x: norm((ALIAS[id] || "") + " " + (g ? g.q + " " + g.c : "")) });
     });
-    function secPorIdTemp(id) { return SECCIONES.some(function (x) { return x.id === id; }); }
+    return corpus;
+  }
 
-    var activo = -1;
-    function cerrar() { lista.hidden = true; lista.textContent = ""; activo = -1; }
-
-    function buscar() {
-      var q = norm(input.value.trim());
-      if (q.length < 2) { cerrar(); estado.textContent = ""; return; }
-      var pal = q.split(/\s+/);
-      var res = [];
-      corpus.forEach(function (c) {
-        var enNombre = 0, enTexto = 0, ok = true;
-        pal.forEach(function (w) {
-          if (c.n.indexOf(w) !== -1) enNombre++;
-          else if (c.x.indexOf(w) !== -1) enTexto++;
-          else ok = false;
-        });
-        if (!ok) return;
-        res.push({ c: c, p: enNombre * 10 + enTexto + (c.tipo === "seccion" ? 5 : 0) + (c.n.indexOf(q) === 0 ? 8 : 0) });
+  // devuelve { vistos, total } o null si el texto es muy corto
+  function consultar(texto) {
+    var q = norm(texto.trim());
+    if (q.length < 2) return null;
+    var pal = q.split(/\s+/), res = [];
+    getCorpus().forEach(function (c) {
+      var enNombre = 0, enTexto = 0, ok = true;
+      pal.forEach(function (w) {
+        if (c.n.indexOf(w) !== -1) enNombre++;
+        else if (c.x.indexOf(w) !== -1) enTexto++;
+        else ok = false;
       });
-      res.sort(function (a, b) { return b.p - a.p; });
-      var vistos = res.slice(0, 10);
-      lista.textContent = "";
-      lista.hidden = false;
-      if (!vistos.length) {
+      if (!ok) return;
+      res.push({ c: c, p: enNombre * 10 + enTexto + (c.sec ? 5 : 0) + (c.n.indexOf(q) === 0 ? 8 : 0) });
+    });
+    res.sort(function (a, b) { return b.p - a.p; });
+    return { vistos: res.slice(0, 10), total: res.length };
+  }
+
+  function filaResultado(r, alElegir) {
+    var li = el("li"), a = el("a"); a.href = r.c.href;
+    a.appendChild(el("span", "buscador__nombre", r.c.nombre));
+    a.appendChild(el("span", "buscador__donde", r.c.donde));
+    if (r.c.desc) a.appendChild(el("span", "buscador__desc", r.c.desc));
+    a.addEventListener("click", alElegir);
+    li.appendChild(a);
+    return li;
+  }
+  function textoEstado(r) { return r.vistos.length + (r.vistos.length === 1 ? " resultado" : " resultados") + (r.total > r.vistos.length ? " de " + r.total : ""); }
+
+  function armarBuscador() {
+    var input = $("buscador-input"), lista = $("buscador-lista"), estado = $("buscador-estado");
+    if (!input) return;
+    function cerrar() { lista.hidden = true; lista.textContent = ""; }
+    function buscar() {
+      var r = consultar(input.value);
+      if (!r) { cerrar(); estado.textContent = ""; return; }
+      lista.textContent = ""; lista.hidden = false;
+      if (!r.vistos.length) {
         lista.appendChild(el("li", "buscador__vacio", "No encontré nada para \"" + input.value.trim() + "\". Probá con otra palabra, por ejemplo dólar, inflación o jubilaciones."));
         estado.textContent = "Sin resultados";
         return;
       }
-      vistos.forEach(function (r) {
-        var li = el("li"), a = el("a"); a.href = r.c.href;
-        a.appendChild(el("span", "buscador__nombre", r.c.nombre));
-        a.appendChild(el("span", "buscador__donde", r.c.donde));
-        if (r.c.desc) a.appendChild(el("span", "buscador__desc", r.c.desc));
-        a.addEventListener("click", function () { input.value = ""; cerrar(); });
-        li.appendChild(a); lista.appendChild(li);
-      });
-      estado.textContent = vistos.length + (vistos.length === 1 ? " resultado" : " resultados") + (res.length > vistos.length ? " de " + res.length : "");
+      r.vistos.forEach(function (x) { lista.appendChild(filaResultado(x, function () { input.value = ""; cerrar(); })); });
+      estado.textContent = textoEstado(r);
     }
-
     function mover(delta) {
       var enlaces = [].slice.call(lista.querySelectorAll("a"));
       if (!enlaces.length) return;
@@ -1250,7 +1308,6 @@
       if (i >= enlaces.length) i = enlaces.length - 1;
       enlaces[i].focus();
     }
-
     input.addEventListener("input", buscar);
     input.addEventListener("keydown", function (ev) {
       if (ev.key === "ArrowDown") { ev.preventDefault(); mover(1); }
@@ -1260,6 +1317,60 @@
       if (ev.key === "ArrowDown") { ev.preventDefault(); mover(1); }
       else if (ev.key === "ArrowUp") { ev.preventDefault(); mover(-1); }
       else if (ev.key === "Escape") { input.focus(); input.value = ""; cerrar(); estado.textContent = ""; }
+    });
+  }
+
+  /* ---------- buscador en cualquier pantalla (Ctrl+K o la lupa del encabezado) ---------- */
+
+  var paleta = null, previoFoco = null;
+  function crearPaleta() {
+    var fondo = el("div", "paleta-fondo"); fondo.hidden = true;
+    var caja = el("div", "paleta"); caja.setAttribute("role", "dialog"); caja.setAttribute("aria-modal", "true"); caja.setAttribute("aria-label", "Buscar");
+    var input = el("input", "paleta__input"); input.type = "search"; input.placeholder = "Buscar un indicador o una sección…"; input.setAttribute("aria-label", "Buscar un indicador o una sección"); input.autocomplete = "off";
+    var lista = el("ul", "paleta__lista");
+    var estado = el("p", "sr-only"); estado.setAttribute("role", "status");
+    var pie = el("p", "paleta__pie", "↑↓ para moverte · Enter para ir · Esc para cerrar");
+    caja.appendChild(input); caja.appendChild(estado); caja.appendChild(lista); caja.appendChild(pie);
+    fondo.appendChild(caja); document.body.appendChild(fondo);
+
+    function enlaces() { return [].slice.call(lista.querySelectorAll("a")); }
+    function pintar() {
+      var r = consultar(input.value);
+      lista.textContent = "";
+      if (!r) { estado.textContent = ""; lista.appendChild(el("li", "buscador__vacio", "Escribí al menos dos letras. Por ejemplo: dólar, inflación, jubilaciones o cuenta corriente.")); return; }
+      if (!r.vistos.length) { estado.textContent = "Sin resultados"; lista.appendChild(el("li", "buscador__vacio", "No encontré nada. Probá con otra palabra.")); return; }
+      r.vistos.forEach(function (x) { lista.appendChild(filaResultado(x, cerrarPaleta)); });
+      estado.textContent = textoEstado(r);
+    }
+    input.addEventListener("input", pintar);
+    caja.addEventListener("keydown", function (ev) {
+      var en = enlaces(), todos = [input].concat(en), i = todos.indexOf(document.activeElement);
+      if (ev.key === "Escape") { ev.preventDefault(); cerrarPaleta(); }
+      else if (ev.key === "ArrowDown") { ev.preventDefault(); if (todos.length > 1) todos[Math.min(todos.length - 1, i + 1)].focus(); }
+      else if (ev.key === "ArrowUp") { ev.preventDefault(); todos[Math.max(0, i - 1)].focus(); }
+      else if (ev.key === "Enter" && document.activeElement === input && en.length) { ev.preventDefault(); en[0].click(); location.hash = en[0].getAttribute("href"); }
+      else if (ev.key === "Tab") { ev.preventDefault(); todos[(i + (ev.shiftKey ? todos.length - 1 : 1)) % todos.length].focus(); }
+    });
+    fondo.addEventListener("click", function (ev) { if (ev.target === fondo) cerrarPaleta(); });
+    paleta = { fondo: fondo, input: input, pintar: pintar };
+  }
+  function abrirPaleta() {
+    if (!paleta) crearPaleta();
+    previoFoco = document.activeElement;
+    paleta.fondo.hidden = false; paleta.input.value = ""; paleta.pintar(); paleta.input.focus();
+  }
+  function cerrarPaleta() {
+    if (!paleta || paleta.fondo.hidden) return;
+    paleta.fondo.hidden = true;
+    if (previoFoco && previoFoco.focus) { try { previoFoco.focus(); } catch (e) { /* sin foco */ } }
+  }
+  function iniciarPaleta() {
+    var btn = $("abrir-buscar");
+    if (btn) btn.addEventListener("click", abrirPaleta);
+    document.addEventListener("keydown", function (ev) {
+      var tag = ev.target && ev.target.tagName, escribiendo = tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT" || (ev.target && ev.target.isContentEditable);
+      if ((ev.ctrlKey || ev.metaKey) && ev.key.toLowerCase() === "k") { ev.preventDefault(); if (paleta && !paleta.fondo.hidden) cerrarPaleta(); else abrirPaleta(); }
+      else if (ev.key === "/" && !escribiendo && !ev.ctrlKey && !ev.metaKey && !ev.altKey) { ev.preventDefault(); abrirPaleta(); }
     });
   }
 
@@ -1616,6 +1727,8 @@
     t.style.setProperty("--mx", ((ev.clientX - r.left) / r.width * 100).toFixed(1) + "%");
     t.style.setProperty("--my", ((ev.clientY - r.top) / r.height * 100).toFixed(1) + "%");
   }, { passive: true });
+
+  iniciarPaleta();
 
   window.EconoTablero = { mostrar: mostrar, migrar: migrar };
 })();
