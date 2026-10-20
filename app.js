@@ -811,11 +811,11 @@
   /* ---------- navegación ---------- */
 
   var VISTAS = ["inicio", "argentina", "dolares", "inflacion", "tasas", "estado", "actividad", "bcra", "mercados",
-    "mas", "noticias", "miplata", "calcular", "alertas", "perfil", "glosario", "tabla", "metodologia"];
+    "mas", "noticias", "miplata", "calcular", "alertas", "perfil", "glosario", "tabla", "metodologia", "analisis"];
   var TITULOS = {
     inicio: "Inicio", argentina: "Argentina", dolares: "Dólares", inflacion: "Inflación y reservas", tasas: "Tasas y pesos",
     estado: "Cuentas del Estado", actividad: "Actividad y empleo", bcra: "Banco Central", mercados: "Acciones y bonos",
-    mas: "Más", noticias: "Noticias", miplata: "Tu plata", calcular: "Calculadoras", alertas: "Alertas", perfil: "Perfil", glosario: "Glosario", tabla: "Tabla de indicadores", metodologia: "Cómo se calcula"
+    mas: "Más", noticias: "Noticias", miplata: "Tu plata", calcular: "Calculadoras", alertas: "Alertas", perfil: "Perfil", glosario: "Glosario", tabla: "Tabla de indicadores", metodologia: "Cómo se calcula", analisis: "Análisis"
   };
   // las secciones de Argentina dejan marcada esa pestaña y muestran su propio submenu; alertas y perfil cuelgan de "Más"
   var ARGENTINA = ["argentina", "dolares", "inflacion", "tasas", "estado", "actividad", "bcra", "mercados", "tabla"];
@@ -852,7 +852,7 @@
     marcar(".subnav a", h);
     document.title = (h === "inicio" ? "" : TITULOS[h] + " | ") + "Econochanta";
     if (window.EconoTablero) window.EconoTablero.mostrar(h, partes[1]);
-    if (!partes[1]) window.scrollTo(0, 0);
+    if (!partes[1] || h === "analisis") window.scrollTo(0, 0);
   }
 
   /* ---------- tema ---------- */
