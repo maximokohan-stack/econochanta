@@ -34,6 +34,7 @@ La estructura sigue la de pulsomacro.com.ar: una portada, un menú de Argentina 
 | &nbsp;&nbsp;Banco Central | 27 indicadores del BCRA en 5 grupos, gráficos de tasas, compras de divisas, tipo de cambio, depósitos y crédito, factores de la base monetaria y 39 monedas. `#bcra` |
 | &nbsp;&nbsp;Acciones y bonos | Acciones y bonos en vivo (con demora) con búsqueda y orden. `#mercados` |
 | &nbsp;&nbsp;Tabla de indicadores | Los 93 indicadores juntos: último, anterior, cambio, máximo y mínimo de 12 meses, con filtro por nombre. `#tabla` |
+| **Análisis** | Notas con contexto: qué pasó (con fecha y fuente), qué dicen los indicadores de la app en vivo, quién puede salir beneficiado o perjudicado y qué mirar ahora. Hoy hay 3 notas en borrador (precios, dólares y cuentas del Estado). `#analisis` |
 | **Noticias** | Titulares por tema y por medio |
 | **Calculadoras** | Plazo fijo contra dólar, sueldo contra inflación |
 | **Tu plata** | Variación real de tu plata, termómetro 0-100, inflación personal con el backup de Plata, dólar y alertas activas |
@@ -62,6 +63,12 @@ Es oscuro por defecto, con una variante clara (botón arriba a la derecha).
 Al pie de Cuentas del Estado hay dos tortas: de dónde sale la plata (IVA, Ganancias, aportes, retenciones, impuesto al cheque y otros) y en qué se gasta (jubilaciones, sueldos, subsidios, asignaciones, PAMI, transferencias a provincias y otros). Se pueden ver por último trimestre, acumulado del año, últimos 4 trimestres y año anterior, con la lista completa de rubros debajo de cada torta.
 
 Los datos son del informe mensual de ingresos y gastos del Estado nacional de la Secretaría de Hacienda (IMIG), vía datos.gob.ar. El detalle por rubro solo está completo por trimestre, así que las tortas usan datos trimestrales; los indicadores de la lista usan los mensuales disponibles. Los montos están en pesos de cada período, sin ajustar por inflación, y los rubros detallados pueden no sumar exactamente el total oficial.
+
+### Análisis
+
+Las notas viven en `analisis.js`. Cada una tiene bloques: párrafos, indicadores en vivo, "quién se ve beneficiado y perjudicado", "qué mirar ahora" y fuentes con enlace. La regla es separar los hechos (con fecha y fuente) de la interpretación, mostrar costos y ventajas de cada situación sin tomar partido ni recomendar inversiones, y no escribir cifras que cambian: para eso están los indicadores en vivo dentro de la nota.
+
+Mientras una nota tenga `publicado: false` es un borrador: solo se ve en la computadora local o agregando `?borradores` a la dirección. Para publicarla hay que revisarla y cambiar ese valor a `true`.
 
 ### Cómo se lee
 

@@ -1207,6 +1207,7 @@
     { id: "noticias", nombre: "Noticias", desc: "Titulares de la economía por tema y por medio" },
     { id: "calcular", nombre: "Calculadoras", desc: "Plazo fijo contra dólar, sueldo contra inflación" },
     { id: "miplata", nombre: "Tu plata", desc: "Cómo te afecta todo esto, según tu perfil" },
+    { id: "analisis", nombre: "Análisis", desc: "Qué pasó, qué dicen los datos y a quién le pega o le conviene" },
     { id: "glosario", nombre: "Glosario", desc: "Qué mide cada indicador, cómo se calcula y cómo leerlo" }
   ];
   var IDS_DOLARES = ["oficial", "blue", "mep", "ccl", "tarjeta", "brecha"];
@@ -1243,6 +1244,9 @@
     var esArg = function (id) { return id === "bcra" || id === "mercados" || id === "tabla" || secPorIdTemp(id); };
     SECCIONES.concat(SEC_OTRAS, OTRAS_INICIO).forEach(function (s) {
       corpus.push({ sec: true, nombre: s.nombre, donde: esArg(s.id) ? "Argentina" : "Sección", desc: s.desc, href: "#" + s.id, n: norm(s.nombre), x: norm(s.desc) });
+    });
+    analisisVisibles().forEach(function (a) {
+      corpus.push({ sec: true, nombre: a.titulo, donde: "Análisis", desc: a.bajada, href: "#analisis:" + a.id, n: norm(a.titulo), x: norm(a.bajada + " " + a.tema) });
     });
     Object.keys(DEFS).forEach(function (id) {
       var d = DEFS[id], g = window.EconoGlosario && window.EconoGlosario[id];
@@ -1639,6 +1643,139 @@
     });
   }
 
+  /* ---------- analisis ---------- */
+
+  function analisisVisibles() {
+    var todos = window.EconoAnalisis || [];
+    // los borradores solo se ven en la computadora local o con ?borradores
+    var ver = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) || /borradores/.test(location.search);
+    return todos.filter(function (a) { return a.publicado || ver; }).sort(function (x, y) { return x.fecha < y.fecha ? 1 : x.fecha > y.fecha ? -1 : 0; });
+  }
+  function fechaNota(f) { var d = new Date(f + "T12:00:00"); return d.getDate() + " de " + MESES_L[d.getMonth()] + " de " + d.getFullYear(); }
+  function conNegrita(padre, texto) {
+    String(texto).split("**").forEach(function (parte, i) { if (parte) padre.appendChild(i % 2 ? el("b", "", parte) : document.createTextNode(parte)); });
+  }
+
+  function tarjetaNota(a) {
+    var l = el("a", "nota-card"); l.href = "#analisis:" + a.id;
+    var cab = el("span", "nota-card__cab");
+    cab.appendChild(el("span", "nota-card__tema", a.tema));
+    cab.appendChild(el("span", "nota-card__fecha", fechaNota(a.fecha) + " · " + a.minutos + " min de lectura"));
+    if (!a.publicado) cab.appendChild(el("span", "nota-card__borrador", "Borrador"));
+    l.appendChild(cab);
+    l.appendChild(el("span", "nota-card__titulo", a.titulo));
+    l.appendChild(el("span", "nota-card__bajada", a.bajada));
+    return l;
+  }
+
+  // indicadores en vivo dentro de una nota
+  function bloqueDatos(b) {
+    var cont = el("section", "nota__datos");
+    if (b.titulo) cont.appendChild(el("h3", "nota__sub", b.titulo));
+    var grid = el("div", "tarjetas");
+    cont.appendChild(grid);
+    var ids = b.ids.filter(function (id) { return DEFS[id]; });
+    var filas = ids.map(function (id) { var c = {}; Object.keys(DEFS[id]).forEach(function (k) { c[k] = DEFS[id][k]; }); c.g = "Análisis"; return c; });
+    var m = crearMesa({ filas: filas, raiz: document.createElement("div"), vista: "analisis", titulo: "", clave: [], frases: null, sinRegistro: true,
+      hashDe: function (it) { return "#" + (SEC_DE[it.id] || "bcra") + ":" + it.id; }, alCambiar: pintar });
+    function pintar() {
+      grid.textContent = "";
+      ids.forEach(function (id) { if (m.porId[id]) grid.appendChild(m.tarjeta(m.porId[id])); });
+    }
+    m.armar();
+    pintar();
+    if (b.nota) cont.appendChild(el("p", "hint", b.nota));
+    return cont;
+  }
+
+  function bloqueQuien(b) {
+    var cont = el("section", "quien");
+    cont.appendChild(el("h3", "nota__sub", b.titulo));
+    var g = el("div", "quien__grupos");
+    b.grupos.forEach(function (gr, i) {
+      var c = el("div", "quien__grupo quien__grupo--" + i);
+      c.appendChild(el("h4", "", gr.t));
+      var ul = el("ul");
+      gr.l.forEach(function (x) { ul.appendChild(el("li", "", x)); });
+      c.appendChild(ul); g.appendChild(c);
+    });
+    cont.appendChild(g);
+    if (b.matiz) { var p = el("p", "quien__matiz"); p.appendChild(el("b", "", "Matiz. ")); p.appendChild(document.createTextNode(b.matiz)); cont.appendChild(p); }
+    return cont;
+  }
+
+  function pintarNota(raiz, a) {
+    var art = el("article", "nota");
+    var volver = el("a", "link", "← Todos los análisis"); volver.href = "#analisis"; art.appendChild(volver);
+    var cab = el("div", "nota__cab");
+    cab.appendChild(el("span", "nota-card__tema", a.tema));
+    cab.appendChild(el("span", "nota-card__fecha", fechaNota(a.fecha) + " · " + a.minutos + " min de lectura"));
+    if (!a.publicado) cab.appendChild(el("span", "nota-card__borrador", "Borrador sin revisar"));
+    art.appendChild(cab);
+    var h = el("h2", "nota__titulo", a.titulo); h.tabIndex = -1; art.appendChild(h);
+    art.appendChild(el("p", "nota__bajada", a.bajada));
+    a.bloques.forEach(function (b) {
+      if (b.t === "p") { var p = el("p", "nota__p"); conNegrita(p, b.x); art.appendChild(p); }
+      else if (b.t === "h") art.appendChild(el("h3", "nota__sub", b.x));
+      else if (b.t === "datos") art.appendChild(bloqueDatos(b));
+      else if (b.t === "quien") art.appendChild(bloqueQuien(b));
+      else if (b.t === "mirar") {
+        var s1 = el("section", "nota__lista"); s1.appendChild(el("h3", "nota__sub", "Qué mirar ahora"));
+        var ul = el("ul"); b.l.forEach(function (x) { ul.appendChild(el("li", "", x)); }); s1.appendChild(ul); art.appendChild(s1);
+      } else if (b.t === "fuentes") {
+        var s2 = el("section", "nota__lista nota__fuentes"); s2.appendChild(el("h3", "nota__sub", "Fuentes"));
+        var ul2 = el("ul");
+        b.l.forEach(function (f) { var li = el("li"), a2 = el("a", "", f.n); a2.href = f.u; a2.target = "_blank"; a2.rel = "noopener noreferrer"; li.appendChild(a2); ul2.appendChild(li); });
+        s2.appendChild(ul2); art.appendChild(s2);
+      } else if (b.t === "aviso") art.appendChild(el("p", "hint nota__aviso", b.x));
+    });
+    var pie = el("aside", "nota__pie");
+    pie.appendChild(el("h3", "nota__sub", "Cómo leer esta nota"));
+    pie.appendChild(el("p", "", "Es una lectura de los datos para entender el contexto: no es una recomendación de inversión ni una posición política. Los hechos citados llevan fecha y fuente, y la interpretación está separada y puede discutirse. Las notas se preparan con ayuda de inteligencia artificial a partir de los datos de la app y de las fuentes citadas."));
+    var met = el("a", "link", "Cómo se calcula cada indicador"); met.href = "#metodologia"; pie.appendChild(met);
+    art.appendChild(pie);
+    raiz.appendChild(art);
+    document.title = a.titulo + " | Econochanta";
+    h.focus({ preventScroll: true });
+  }
+
+  function pintarPortadaAnalisis(raiz, lista) {
+    raiz.appendChild(el("p", "lead", "Qué pasó, qué dicen los indicadores y a quién le pega o le conviene. Cada nota separa los hechos, con fecha y fuente, de la interpretación, y muestra los indicadores de la app en vivo."));
+    if (!lista.length) raiz.appendChild(el("p", "hint", "Todavía no hay análisis publicados."));
+    var grid = el("div", "notas");
+    lista.forEach(function (a) { grid.appendChild(tarjetaNota(a)); });
+    raiz.appendChild(grid);
+    var pr = el("article", "card principios");
+    pr.appendChild(el("h2", "label", "Cómo hacemos los análisis"));
+    var ul = el("ul", "metodo");
+    ["Primero los hechos, con fecha y fuente. Después, qué dicen los datos, con los indicadores de la app en vivo.",
+      "Después, quién puede salir beneficiado o perjudicado, siempre con matices y mostrando costos y ventajas de cada situación.",
+      "No recomendamos inversiones ni tomamos partido.",
+      "Si un dato cambia, la nota se actualiza con la fecha.",
+      "Las notas se redactan con ayuda de inteligencia artificial a partir de los datos de la app y de las fuentes citadas."].forEach(function (t) { ul.appendChild(el("li", "", t)); });
+    pr.appendChild(ul); raiz.appendChild(pr);
+  }
+
+  var analisisSub = null, analisisArmado = false;
+  function armarAnalisis(sub) {
+    if (analisisArmado && sub === analisisSub) return;
+    analisisArmado = true; analisisSub = sub;
+    var raiz = $("analisis-contenido"); raiz.textContent = "";
+    var lista = analisisVisibles();
+    var nota = sub ? lista.filter(function (a) { return a.id === sub; })[0] : null;
+    if (nota) pintarNota(raiz, nota); else pintarPortadaAnalisis(raiz, lista);
+  }
+
+  function pintarInicioAnalisis() {
+    var caja = $("inicio-analisis"); if (!caja) return;
+    var lista = analisisVisibles();
+    caja.textContent = "";
+    if (!lista.length) return;
+    caja.appendChild(el("h2", "resumen__sub", "Para entender el contexto"));
+    caja.appendChild(tarjetaNota(lista[0]));
+    var mas = el("a", "link", "Ver todos los análisis"); mas.href = "#analisis"; caja.appendChild(mas);
+  }
+
   /* ---------- glosario ---------- */
 
   function armarGlosario() {
@@ -1696,6 +1833,7 @@
     if (vista === "inicio") {
       if (!tilesInicio) { tilesInicio = true; tiles($("inicio-tiles"), OTRAS_INICIO); }
       if (!buscadorListo) { buscadorListo = true; armarBuscador(); iniciarPrimera(); }
+      pintarInicioAnalisis();
       if (!inicio || inicio.firma !== firmaFavs()) armarInicio();
     } else if (vista === "argentina") {
       if (!hubListo) { hubListo = true; tiles($("argentina-tiles")); }
@@ -1710,6 +1848,8 @@
     } else if (vista === "bcra") {
       if (!bcraMesa) armarBCRA();
       if (sub) bcraMesa.abrir(sub); else bcraMesa.cerrar();
+    } else if (vista === "analisis") {
+      armarAnalisis(sub);
     } else if (vista === "tabla") {
       if (!tablaLista) { tablaLista = true; armarTabla(); }
     } else if (vista === "glosario") {
