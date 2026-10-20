@@ -29,7 +29,21 @@ El diseño es una **mesa**: a la izquierda la lista de indicadores, agrupados y 
 | **Tu plata** | Variación real de tu plata, termómetro 0-100, inflación personal con el backup de Plata, dólar y alertas activas |
 | **Más** | Calculadoras (plazo fijo contra dólar, sueldo contra inflación), alertas de brecha, perfil y fuentes |
 
-Es oscuro por defecto, con una variante clara (botón arriba a la derecha). Verde y rojo indican si el dato subió o bajó, no si es bueno o malo (una suba de la inflación se ve verde). Cada indicador muestra su período porque los datos mensuales y trimestrales se publican con rezago.
+Es oscuro por defecto, con una variante clara (botón arriba a la derecha).
+
+### Cómo se lee
+
+- **Resumen del día.** Al entrar se ve un resumen con cuatro frases generadas desde los datos y las tarjetas de los indicadores clave. Cada tarjeta lleva al gráfico.
+- **Colores con sentido.** ▲ y ▼ indican la dirección. El color indica si es mejor o peor para la economía: verde mejora, rojo empeora, gris no se califica. Por ejemplo, una suba de la inflación es roja y una suba de las reservas es verde. El dólar, las tasas y los agregados monetarios no se califican, porque depende de quién los mire. Las acciones y bonos usan verde y rojo solo por precio.
+- **Favoritos.** Cada indicador se puede marcar con ★. Los favoritos quedan arriba de la lista y en el resumen, y se guardan en el navegador.
+- **Datos desactualizados.** Si el último dato de una serie es más viejo de lo normal para su frecuencia, la fila lo avisa.
+- **Teclado.** Las flechas arriba y abajo (y Inicio y Fin) recorren la lista, Enter abre el indicador, y "Saltar al contenido" va directo al contenido sin cambiar de sección.
+
+Cada indicador muestra su período porque los datos mensuales y trimestrales se publican con rezago.
+
+### Accesibilidad
+
+Se revisó contra WCAG 2.1 AA con contrastes calculados. Los bordes de campos y botones tienen al menos 3:1 y el texto 4,5:1 en ambos temas (en el claro el ámbar es más oscuro por eso). Los gráficos usan trazos distintos además del color y tienen una tabla de datos equivalente; las filas y tarjetas tienen una etiqueta completa para lectores de pantalla; los cambios de sección y de favoritos se anuncian; y en celular el foco pasa al detalle al abrirlo y vuelve a la fila al regresar.
 
 ## Cómo se calcula (resumen)
 

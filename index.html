@@ -14,6 +14,7 @@
 </head>
 <body>
   <a class="skip" href="#main">Saltar al contenido</a>
+  <div class="sr-only" id="anuncio" role="status" aria-live="polite"></div>
 
   <header class="top">
     <div class="top__row">
@@ -95,7 +96,8 @@
         <div class="chips" id="chips-tema" role="group" aria-label="Filtrar por tema"></div>
         <div class="chips" id="chips-medio" role="group" aria-label="Filtrar por medio"></div>
       </div>
-      <div id="noticias" aria-live="polite"></div>
+      <p class="sr-only" id="noticias-estado" role="status"></p>
+      <div id="noticias"></div>
       <p class="hint" id="noticias-nota"></p>
     </section>
 

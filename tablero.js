@@ -167,24 +167,96 @@
 
   /* ---------- mesa (lista de indicadores a la izquierda, detalle a la derecha) ---------- */
 
+  // Hacia que lado esta "lo bueno" de cada indicador. Lo que no figura se muestra neutro.
+  var MAL_SI_SUBE = ["brecha", "infM", "infIA", "nucleo", "regulados", "estacionales", "transporte", "salud", "educacion", "prendas",
+    "equipamiento", "comunicaciones", "bebidas", "desoc", "riesgo"];
+  var BIEN_SI_SUBE = ["emae", "ipi", "cemento", "pbi", "salarios", "salPriv", "salNoReg", "salPub", "ripte", "smvm", "haber",
+    "resPrim", "recaud", "expo", "saldo", "reservas", "reservasSinDEG", "compras"];
+
+  function sentidoDe(id) { return MAL_SI_SUBE.indexOf(id) !== -1 ? "mal" : BIEN_SI_SUBE.indexOf(id) !== -1 ? "bien" : "neutro"; }
+
+  // clase de color de una variacion segun el sentido del indicador
+  function tonoDe(sentido, v) {
+    if (v === undefined || v === null || Math.abs(v) < 0.0001) return "flat";
+    if (sentido === "neutro") return "tono-neutro";
+    return (v > 0) === (sentido === "bien") ? "tono-bien" : "tono-mal";
+  }
+  // una variacion que se muestra como cero (por ejemplo -0,0 pp) no es una suba ni una baja
+  function esNulo(txt) {
+    if (txt === undefined) return false;
+    var n = parseFloat(String(txt).replace(/[^0-9,.\-]/g, "").replace(",", "."));
+    return n === 0;
+  }
+  function flechaDe(txt, v) { return esNulo(txt) ? "■ " : flecha(v); }
+  function colorSpark(clase) { return clase === "tono-bien" ? "var(--up)" : clase === "tono-mal" ? "var(--down)" : "var(--text-2)"; }
+
+  var FAVS_KEY = "econochanta:v1:favoritos";
+  var favs = {};
+  try { favs = JSON.parse(localStorage.getItem(FAVS_KEY) || "{}") || {}; } catch (e) { favs = {}; }
+  function guardarFavs() { try { localStorage.setItem(FAVS_KEY, JSON.stringify(favs)); } catch (e) { /* sin storage */ } }
+  var mesas = [];
+
+  function anunciar(texto) { var a = $("anuncio"); if (a) { a.textContent = ""; setTimeout(function () { a.textContent = texto; }, 30); } }
+
+  // dias entre un punto y el siguiente, para saber si la serie es diaria, mensual o trimestral
+  function pasoDias(s) {
+    var n = s.points.length;
+    if (n < 3) return 1;
+    return (new Date(s.points[n - 1][0]).getTime() - new Date(s.points[0][0]).getTime()) / 86400000 / (n - 1);
+  }
+  // dias desde el fin del periodo que cubre el ultimo dato (un dato mensual fechado el dia 1 cubre todo el mes)
+  function rezagoDias(s) {
+    var paso = pasoDias(s);
+    var fin = new Date(s.ultimo.d + "T12:00:00").getTime() + (paso > 3 ? paso * 86400000 : 0);
+    return Math.max(0, Math.round((Date.now() - fin) / 86400000));
+  }
+  function esViejo(it) {
+    var paso = pasoDias(it.s);
+    var limite = paso <= 3 ? 6 : paso <= 40 ? 75 : 150;
+    return rezagoDias(it.s) > limite;
+  }
+
+  var MESES_LARGO = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+  function mesDe(it) { return MESES_LARGO[new Date(it.s.ultimo.d + "T12:00:00").getMonth()]; }
+  function sinSigno(t) { return String(t).replace(/^[+\-−]\s?/, ""); }
+
+  // una frase que resume el ultimo movimiento del indicador
+  function frase(it) {
+    var ref = it.mensual ? "del período anterior" : "de ayer";
+    var partes = [];
+    if (it.t === "flow") {
+      partes.push("El último dato fue de " + it.valor + ".");
+      if (it.d12Txt) partes.push("En los últimos 30 días acumula " + it.d12Txt.replace("30 d: ", "") + ".");
+      return partes.join(" ");
+    }
+    if (it.dPrevTxt !== undefined) {
+      if (esNulo(it.dPrevTxt)) partes.push("No cambió respecto " + ref + ".");
+      else partes.push((it.dPrev > 0 ? "Subió " : "Bajó ") + sinSigno(it.dPrevTxt) + " respecto " + ref + ".");
+    }
+    if (it.d12Txt) partes.push(/acum/.test(it.d12Txt) ? "Acumula " + sinSigno(it.d12Txt.replace(" acum.", "")) + " en 12 meses." : "Frente a hace 12 meses: " + it.d12Txt + ".");
+    return partes.join(" ");
+  }
+
   function rangosDe(it) {
     return it.mensual ? [["2 años", 730], ["3 años", 1095], ["5 años", 1825]] : [["3 meses", 90], ["1 año", 365], ["3 años", 1095], ["5 años", 1825]];
   }
 
-  /* cfg: { filas, raiz, vista } */
+  /* cfg: { filas, raiz, vista, titulo, clave: [ids de los indicadores del resumen], frases(porId) -> [texto] } */
   function crearMesa(cfg) {
     var filas = cfg.filas, vista = cfg.vista;
     var items = [], porId = {}, pendiente = null;
-    var estado = { actual: null, q: "", rango: {}, detalleOk: null };
+    var estado = { actual: "resumen", q: "", grupo: "Todos", rango: {}, detalleOk: null };
     var dom = {};
 
     function armarItem(f, s, extra) {
       var it = f.__it;
       it.s = s; it.ok = true; it.error = false;
+      it.sentido = sentidoDe(f.id);
       it.fmt = function (v) { return fmtUnit(s.unit, v, s.dec); };
       it.valor = it.fmt(s.ultimo.v);
       it.fecha = fechaDato(s);
       it.mensual = esMensual(s);
+      it.viejo = esViejo(it);
       if (f.t === "flow") {
         if (s.previo) { it.dPrev = s.ultimo.v - s.previo.v; it.dPrevTxt = (it.dPrev > 0 ? "+" : "") + it.fmt(it.dPrev); }
         var acum = suma(s, 30);
@@ -204,6 +276,8 @@
           }
         }
       }
+      it.tonoPrev = esNulo(it.dPrevTxt) ? "flat" : tonoDe(it.sentido, it.dPrev);
+      it.tono12 = esNulo(it.d12Txt) ? "flat" : f.t === "flow" ? tonoDe("neutro", it.d12) : tonoDe(it.sentido, it.d12);
       it.spark = s.points.slice(it.mensual ? -24 : -30);
     }
 
@@ -226,6 +300,15 @@
       });
     }
 
+    function etiqueta(it) {
+      if (!it.ok) return it.label + ", " + (it.error ? "sin dato" : "cargando");
+      var t = it.label + ", " + it.valor;
+      if (it.dPrevTxt !== undefined) t += ", " + (esNulo(it.dPrevTxt) ? "sin cambios" : (it.dPrev > 0 ? "sube " : "baja ") + sinSigno(it.dPrevTxt)) + " respecto " + (it.mensual ? "del período anterior" : "de ayer");
+      t += ", dato de " + it.fecha;
+      if (it.viejo) t += ", desactualizado";
+      return t;
+    }
+
     function armarEsqueleto() {
       var m = el("div", "mesa"); dom.mesa = m;
       var lista = el("aside", "mesa__lista"); lista.setAttribute("aria-label", "Indicadores");
@@ -233,39 +316,130 @@
       dom.sub = el("p", "mesa__sub", "Cargando indicadores…"); top.appendChild(dom.sub);
       dom.buscar = el("input", "mesa__buscar"); dom.buscar.type = "search"; dom.buscar.placeholder = "Buscar indicador"; dom.buscar.setAttribute("aria-label", "Buscar indicador");
       top.appendChild(dom.buscar);
+      dom.chips = el("div", "chips chips--sm mesa__grupos"); dom.chips.setAttribute("role", "group"); dom.chips.setAttribute("aria-label", "Filtrar por grupo");
+      top.appendChild(dom.chips);
       lista.appendChild(top);
       dom.filas = el("div", "mesa__filas"); lista.appendChild(dom.filas);
       m.appendChild(lista);
-      dom.detalle = el("section", "mesa__detalle"); dom.detalle.tabIndex = -1; dom.detalle.setAttribute("aria-label", "Detalle del indicador");
+      dom.detalle = el("section", "mesa__detalle"); dom.detalle.setAttribute("aria-label", "Detalle");
       m.appendChild(dom.detalle);
       cfg.raiz.appendChild(m);
+      // los titulos de grupo se pegan justo debajo del buscador, que cambia de alto con el ancho
+      var ajustar = function () { lista.style.setProperty("--top-h", top.offsetHeight + "px"); };
+      ajustar();
+      if (typeof ResizeObserver === "function") new ResizeObserver(ajustar).observe(top);
+    }
+
+    function gruposDisponibles() {
+      var g = ["Todos"];
+      if (Object.keys(favs).some(function (id) { return porId[id]; })) g.push("★ Favoritos");
+      filas.forEach(function (f) { if (g.indexOf(f.g) === -1) g.push(f.g); });
+      return g;
+    }
+
+    function pintarChips() {
+      dom.chips.textContent = "";
+      gruposDisponibles().forEach(function (g) {
+        var n = g === "★ Favoritos" ? Object.keys(favs).filter(function (id) { return porId[id]; }).length : null;
+        dom.chips.appendChild(chip(n === null ? g : g + " (" + n + ")", g === estado.grupo, function () { estado.grupo = g; pintarChips(); pintarLista(); }));
+      });
+    }
+
+    function filaDe(it, esFav) {
+      var b = el("button", "fila"); b.type = "button"; b.dataset.id = it.id;
+      if (it.id === estado.actual) b.setAttribute("aria-current", "true");
+      b.setAttribute("aria-label", etiqueta(it));
+      var nombre = el("span", "fila__nombre", (favs[it.id] ? "★ " : "") + it.label);
+      b.appendChild(nombre);
+      if (it.ok) {
+        b.appendChild(el("span", "fila__val", it.valor));
+        var sp = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+        sp.setAttribute("class", "fila__spark"); sp.setAttribute("aria-hidden", "true");
+        C.spark(sp, it.spark, colorSpark(it.tonoPrev));
+        b.appendChild(sp);
+        b.appendChild(el("span", "fila__meta" + (it.viejo ? " fila__meta--viejo" : ""), it.fecha + (it.viejo ? " · desactualizado" : "")));
+        b.appendChild(el("span", "fila__chg " + it.tonoPrev, it.dPrevTxt ? flechaDe(it.dPrevTxt, it.dPrev) + it.dPrevTxt : ""));
+      } else {
+        b.appendChild(el("span", "fila__val fila__msg", it.error ? "sin dato" : "…"));
+      }
+      b.addEventListener("click", function () { location.hash = "#" + vista + ":" + it.id; });
+      return b;
     }
 
     function pintarLista() {
       var box = dom.filas; box.textContent = "";
-      var g = "";
-      items.forEach(function (it) {
-        if (estado.q && it.label.toLowerCase().indexOf(estado.q) === -1) return;
-        if (it.g !== g) { g = it.g; box.appendChild(el("div", "mesa__grupo", g)); }
-        var b = el("button", "fila"); b.type = "button";
-        if (it.id === estado.actual) b.setAttribute("aria-current", "true");
-        b.appendChild(el("span", "fila__nombre", it.label));
-        if (it.ok) {
-          b.appendChild(el("span", "fila__val", it.valor));
-          var sp = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-          sp.setAttribute("class", "fila__spark"); sp.setAttribute("aria-hidden", "true");
-          C.spark(sp, it.spark, it.dPrev > 0 ? "var(--up)" : it.dPrev < 0 ? "var(--down)" : "var(--text-2)");
-          b.appendChild(sp);
-          b.appendChild(el("span", "fila__meta", it.fecha));
-          b.appendChild(el("span", "fila__chg " + dirClase(it.dPrev), it.dPrevTxt ? flecha(it.dPrev) + it.dPrevTxt : ""));
-        } else {
-          b.appendChild(el("span", "fila__val fila__msg", it.error ? "sin dato" : "…"));
-        }
-        b.addEventListener("click", function () { location.hash = "#" + vista + ":" + it.id; });
-        box.appendChild(b);
+      var resumen = el("button", "fila fila--resumen"); resumen.type = "button"; resumen.dataset.id = "resumen";
+      if (estado.actual === "resumen") resumen.setAttribute("aria-current", "true");
+      resumen.appendChild(el("span", "fila__nombre", "Resumen del día"));
+      resumen.appendChild(el("span", "fila__meta", "Los indicadores clave de un vistazo"));
+      resumen.addEventListener("click", function () { location.hash = "#" + vista + ":resumen"; });
+      box.appendChild(resumen);
+
+      var lista = items.filter(function (it) {
+        if (estado.q && it.label.toLowerCase().indexOf(estado.q) === -1) return false;
+        if (estado.grupo === "★ Favoritos") return !!favs[it.id];
+        return estado.grupo === "Todos" || it.g === estado.grupo;
       });
-      if (!box.firstChild) box.appendChild(el("p", "mesa__vacio", "Sin resultados."));
+      if (estado.grupo === "Todos" && !estado.q) {
+        var misFavs = items.filter(function (it) { return favs[it.id]; });
+        if (misFavs.length) {
+          box.appendChild(el("h3", "mesa__grupo", "★ Favoritos"));
+          misFavs.forEach(function (it) { box.appendChild(filaDe(it, true)); });
+        }
+      }
+      var g = "";
+      lista.forEach(function (it) {
+        if (estado.grupo !== "★ Favoritos" && it.g !== g) { g = it.g; box.appendChild(el("h3", "mesa__grupo", g)); }
+        box.appendChild(filaDe(it, false));
+      });
+      if (!lista.length) box.appendChild(el("p", "mesa__vacio", "Sin resultados."));
     }
+
+    /* ---- resumen ---- */
+
+    function tarjeta(it) {
+      var b = el("button", "tarjeta"); b.type = "button";
+      b.setAttribute("aria-label", etiqueta(it));
+      b.appendChild(el("span", "tarjeta__nombre", it.label));
+      if (it.ok) {
+        b.appendChild(el("span", "tarjeta__val", it.valor));
+        b.appendChild(el("span", "tarjeta__chg " + it.tonoPrev, it.dPrevTxt ? flechaDe(it.dPrevTxt, it.dPrev) + it.dPrevTxt : "sin variación"));
+        var sp = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+        sp.setAttribute("class", "tarjeta__spark"); sp.setAttribute("aria-hidden", "true");
+        C.spark(sp, it.spark, colorSpark(it.tonoPrev));
+        b.appendChild(sp);
+      } else b.appendChild(el("span", "tarjeta__val tarjeta__val--msg", it.error ? "sin dato" : "…"));
+      b.addEventListener("click", function () { location.hash = "#" + vista + ":" + it.id; });
+      return b;
+    }
+
+    function pintarResumen() {
+      var box = dom.detalle; box.textContent = "";
+      var volver = el("button", "mesa__volver", "← Indicadores"); volver.type = "button";
+      volver.addEventListener("click", function () { location.hash = "#" + vista; });
+      box.appendChild(volver);
+      box.appendChild(el("div", "kicker", "Resumen"));
+      var h = el("h2", "mesa__titulo", cfg.titulo); h.tabIndex = -1; box.appendChild(h);
+      var frases = (cfg.frases ? cfg.frases(porId) : []).filter(Boolean);
+      if (frases.length) {
+        var ul = el("ul", "resumen__frases");
+        frases.forEach(function (t) { ul.appendChild(el("li", "", t)); });
+        box.appendChild(ul);
+      } else box.appendChild(el("p", "hint", "Cargando datos…"));
+
+      var misFavs = items.filter(function (it) { return favs[it.id]; });
+      if (misFavs.length) {
+        box.appendChild(el("h3", "resumen__sub", "★ Tus favoritos"));
+        var gf = el("div", "tarjetas"); misFavs.forEach(function (it) { gf.appendChild(tarjeta(it)); }); box.appendChild(gf);
+      }
+      box.appendChild(el("h3", "resumen__sub", "Indicadores clave"));
+      var gc = el("div", "tarjetas");
+      cfg.clave.forEach(function (id) { if (porId[id]) gc.appendChild(tarjeta(porId[id])); });
+      box.appendChild(gc);
+      box.appendChild(el("p", "leyenda", "▲ sube · ▼ baja. Verde: mejora para la economía. Rojo: empeora. Gris: no se califica (el dólar, las tasas o los agregados monetarios, por ejemplo). Tocá un indicador para ver su gráfico y marcarlo como favorito."));
+    }
+
+    /* ---- detalle ---- */
 
     function pintarDetalle() {
       var it = porId[estado.actual];
@@ -274,8 +448,34 @@
       var volver = el("button", "mesa__volver", "← Indicadores"); volver.type = "button";
       volver.addEventListener("click", function () { location.hash = "#" + vista; });
       box.appendChild(volver);
-      box.appendChild(el("div", "kicker", it.g));
-      box.appendChild(el("h2", "mesa__titulo", it.label));
+
+      var cab = el("div", "mesa__cab");
+      var tit = el("div");
+      tit.appendChild(el("div", "kicker", it.g));
+      var h = el("h2", "mesa__titulo", it.label); h.tabIndex = -1; tit.appendChild(h);
+      cab.appendChild(tit);
+      var acc = el("div", "mesa__acciones");
+      var fav = el("button", "btn btn--ghost btn--xs", favs[it.id] ? "★ Favorito" : "☆ Marcar favorito"); fav.type = "button";
+      fav.setAttribute("aria-pressed", favs[it.id] ? "true" : "false");
+      fav.addEventListener("click", function () {
+        if (favs[it.id]) delete favs[it.id]; else favs[it.id] = true;
+        guardarFavs();
+        anunciar(favs[it.id] ? it.label + " agregado a favoritos" : it.label + " quitado de favoritos");
+        mesas.forEach(function (m) { m.refrescarFavs(); });
+        pintarDetalle();
+        var b = box.querySelector(".mesa__acciones .btn"); if (b) b.focus();
+      });
+      acc.appendChild(fav);
+      var cp = el("button", "btn btn--ghost btn--xs", "Copiar link"); cp.type = "button";
+      cp.addEventListener("click", function () {
+        var url = location.href;
+        if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(function () { anunciar("Link copiado"); cp.textContent = "Link copiado"; setTimeout(function () { cp.textContent = "Copiar link"; }, 1800); }, function () { anunciar("No se pudo copiar el link"); });
+        else anunciar("Tu navegador no permite copiar automáticamente");
+      });
+      acc.appendChild(cp);
+      cab.appendChild(acc);
+      box.appendChild(cab);
+
       if (!it.ok) {
         if (it.error) {
           var err = el("div", "chart__error"); err.appendChild(el("p", "", "No se pudo cargar este indicador."));
@@ -287,17 +487,19 @@
       }
       estado.detalleOk = it.id;
       box.appendChild(el("div", "big", it.valor));
+      box.appendChild(el("p", "mesa__frase", frase(it)));
       var chg = el("div", "pastillas");
-      if (it.dPrevTxt) chg.appendChild(el("span", "pastilla " + dirClase(it.dPrev), flecha(it.dPrev) + it.dPrevTxt + (it.mensual ? " vs período anterior" : " vs día anterior")));
-      if (it.d12Txt) chg.appendChild(el("span", "pastilla " + dirClase(it.d12), flecha(it.d12) + it.d12Txt + (it.t === "flow" ? "" : " en 12 meses")));
-      chg.appendChild(el("span", "pastilla flat", "Dato de " + it.fecha));
+      if (it.dPrevTxt) chg.appendChild(el("span", "pastilla " + it.tonoPrev, flechaDe(it.dPrevTxt, it.dPrev) + it.dPrevTxt + (it.mensual ? " vs período anterior" : " vs día anterior")));
+      if (it.d12Txt) chg.appendChild(el("span", "pastilla " + it.tono12, flechaDe(it.d12Txt, it.d12) + it.d12Txt + (it.t === "flow" ? "" : " en 12 meses")));
+      var dias = rezagoDias(it.s);
+      chg.appendChild(el("span", "pastilla " + (it.viejo ? "viejo" : "flat"), "Dato de " + it.fecha + (it.viejo ? " (hace " + dias + " días, desactualizado)" : "")));
       box.appendChild(chg);
 
       var rs = rangosDe(it);
       var rg = estado.rango[it.id];
       if (!rg || !rs.some(function (r) { return r[1] === rg; })) rg = rs[Math.min(1, rs.length - 1)][1];
       var rbox = el("div", "chips chips--sm"); rbox.setAttribute("role", "group"); rbox.setAttribute("aria-label", "Período");
-      rs.forEach(function (r) { rbox.appendChild(chip(r[0], r[1] === rg, function () { estado.rango[it.id] = r[1]; pintarDetalle(); })); });
+      rs.forEach(function (r) { rbox.appendChild(chip(r[0], r[1] === rg, function () { estado.rango[it.id] = r[1]; pintarDetalle(); var b = dom.detalle.querySelector('.chips[aria-label="Período"] .chip[aria-pressed="true"]'); if (b) b.focus(); })); });
       box.appendChild(rbox);
 
       var cb = el("div", "mesa__grafico chart"); box.appendChild(cb);
@@ -312,7 +514,10 @@
       box.appendChild(st);
 
       var t = el("table", "tabla"); var th = el("thead"), trh = el("tr");
-      trh.appendChild(el("th", "", "Fecha")); trh.appendChild(el("th", "num", it.label)); th.appendChild(trh); t.appendChild(th);
+      var c1 = el("th", "", "Fecha"); c1.scope = "col"; var c2 = el("th", "num", it.label); c2.scope = "col";
+      trh.appendChild(c1); trh.appendChild(c2); th.appendChild(trh);
+      t.appendChild(el("caption", "sr-only", "Últimos 12 datos de " + it.label));
+      t.appendChild(th);
       var tb = el("tbody");
       it.s.points.slice(-12).reverse().forEach(function (p) {
         var r = el("tr"); r.appendChild(el("td", "", C.fechaLarga(p[0], it.mensual))); r.appendChild(el("td", "num", it.fmt(p[1]))); tb.appendChild(r);
@@ -321,7 +526,7 @@
       var w = el("div", "tabla__wrap"); w.appendChild(t); box.appendChild(w);
 
       var tools = el("div", "mesa__pie");
-      tools.appendChild(el("span", "hint", "Fuente: " + (it.s.fuente || "datos públicos")));
+      tools.appendChild(el("span", "hint", "Fuente: " + (it.s.fuente || "datos públicos") + (it.sentido === "neutro" ? ". Este indicador no se califica con colores." : "")));
       var csv = el("button", "btn btn--ghost btn--xs", "Descargar CSV"); csv.type = "button";
       csv.addEventListener("click", function () { C.csv(it.id, [it.s]); });
       tools.appendChild(csv);
@@ -336,6 +541,8 @@
       }
     }
 
+    function pintarVista() { if (estado.actual === "resumen") pintarResumen(); else pintarDetalle(); }
+
     function actualizarSub() {
       var n = items.filter(function (i) { return i.ok; }).length;
       dom.sub.textContent = n + " de " + items.length + " indicadores · datos al " + new Date().toLocaleDateString("es-AR", { day: "numeric", month: "long" });
@@ -346,8 +553,8 @@
       pendiente = setTimeout(function () {
         pendiente = null;
         pintarLista();
-        var it = porId[estado.actual];
-        if (it && it.ok && estado.detalleOk !== it.id) pintarDetalle();
+        if (estado.actual === "resumen") pintarResumen();
+        else { var it = porId[estado.actual]; if (it && it.ok && estado.detalleOk !== it.id) pintarDetalle(); }
         actualizarSub();
       }, 120);
     }
@@ -358,33 +565,88 @@
     }
 
     function seleccionar(id) {
-      if (!porId[id]) return;
+      if (id !== "resumen" && !porId[id]) return;
       estado.actual = id; estado.detalleOk = null;
-      pintarLista(); pintarDetalle();
+      pintarLista(); pintarVista();
+    }
+
+    // flechas arriba y abajo recorren la lista sin salir de ella
+    function teclado(ev) {
+      var k = ev.key;
+      if (k !== "ArrowDown" && k !== "ArrowUp" && k !== "Home" && k !== "End") return;
+      var filasDom = [].slice.call(dom.filas.querySelectorAll(".fila"));
+      if (!filasDom.length) return;
+      var i = filasDom.indexOf(document.activeElement);
+      if (ev.target === dom.buscar) { if (k !== "ArrowDown") return; i = -1; }
+      else if (i === -1) return;
+      ev.preventDefault();
+      var n = k === "ArrowDown" ? Math.min(filasDom.length - 1, i + 1) : k === "ArrowUp" ? Math.max(0, i - 1) : k === "Home" ? 0 : filasDom.length - 1;
+      filasDom[n].focus();
     }
 
     function armar() {
       filas.forEach(function (f) {
-        var it = { id: f.id, g: f.g, label: f.label, t: f.t, ok: false, bars: f.bars, signed: f.signed, __f: f };
+        var it = { id: f.id, g: f.g, label: f.label, t: f.t, ok: false, bars: f.bars, signed: f.signed, sentido: sentidoDe(f.id), __f: f };
         f.__it = it; items.push(it); porId[f.id] = it;
       });
       armarEsqueleto();
-      seleccionar(filas[0].id);
+      pintarChips();
+      seleccionar("resumen");
       dom.buscar.addEventListener("input", function (e) { estado.q = e.target.value.trim().toLowerCase(); pintarLista(); });
+      dom.buscar.addEventListener("keydown", teclado);
+      dom.filas.addEventListener("keydown", teclado);
+      mesas.push({ refrescarFavs: function () { if (estado.grupo === "★ Favoritos" && !Object.keys(favs).some(function (id) { return porId[id]; })) estado.grupo = "Todos"; pintarChips(); pintarLista(); if (estado.actual === "resumen") pintarResumen(); } });
       filas.forEach(iniciarFila);
     }
 
-    // abrir un indicador desde la URL; en celular muestra el detalle a pantalla completa
+    function esMovil() { return window.matchMedia("(max-width: 820px)").matches; }
+
+    // abrir un indicador (o el resumen) desde la URL; en celular ocupa toda la pantalla
     function abrir(id) {
-      if (!porId[id]) return;
+      if (id !== "resumen" && !porId[id]) return;
       dom.mesa.classList.add("showing");
       if (estado.actual !== id) seleccionar(id);
-      if (window.matchMedia("(max-width: 820px)").matches) window.scrollTo(0, 0);
+      if (esMovil()) {
+        window.scrollTo(0, 0);
+        var h = dom.detalle.querySelector(".mesa__titulo"); if (h) h.focus({ preventScroll: true });
+      }
     }
 
-    function cerrar() { if (dom.mesa) dom.mesa.classList.remove("showing"); }
+    // volver a la lista; devuelve el foco a la fila que se estaba mirando
+    function cerrar() {
+      if (!dom.mesa || !dom.mesa.classList.contains("showing")) return;
+      dom.mesa.classList.remove("showing");
+      var fila = dom.filas.querySelector('.fila[aria-current="true"]');
+      if (fila && esMovil()) fila.focus({ preventScroll: true });
+    }
 
     return { armar: armar, abrir: abrir, cerrar: cerrar };
+  }
+
+
+  /* ---------- textos del resumen ---------- */
+
+  var CLAVE_TABLERO = ["oficial", "ccl", "brecha", "riesgo", "infM", "infIA", "emae", "desoc", "reservas", "resPrim", "saldo", "badlar"];
+  var CLAVE_BCRA = ["reservas", "tcMay", "base", "badlar", "tamar", "depositos", "prestamos", "m2"];
+
+  function frasesTablero(P) {
+    var ok = function (id) { return P[id] && P[id].ok; };
+    var out = [];
+    if (ok("oficial") && ok("brecha")) out.push("El dólar oficial cotiza a " + P.oficial.valor + (P.oficial.dPrevTxt ? " (" + P.oficial.dPrevTxt + " respecto de ayer)" : "") + " y la brecha del CCL es de " + P.brecha.valor + ".");
+    if (ok("infM") && ok("infIA")) out.push("La inflación de " + mesDe(P.infM) + " fue de " + P.infM.valor + " y acumula " + P.infIA.valor + " en doce meses.");
+    if (ok("riesgo") && ok("reservas")) out.push("El riesgo país está en " + P.riesgo.valor + " y las reservas suman " + P.reservas.valor + ".");
+    if (ok("emae") && ok("desoc")) out.push("La actividad (EMAE) de " + mesDe(P.emae) + " " + (P.emae.d12 >= 0 ? "creció " : "cayó ") + sinSigno(P.emae.d12Txt) + " frente a un año atrás y la desocupación es de " + P.desoc.valor + ".");
+    return out;
+  }
+
+  function frasesBCRA(P) {
+    var ok = function (id) { return P[id] && P[id].ok; };
+    var out = [];
+    if (ok("reservas") && ok("tcMay")) out.push("Las reservas suman " + P.reservas.valor + " y el tipo de cambio mayorista de referencia está en " + P.tcMay.valor + ".");
+    if (ok("badlar") && ok("tamar")) out.push("La tasa BADLAR está en " + P.badlar.valor + " y la TAMAR en " + P.tamar.valor + ".");
+    if (ok("depositos") && ok("prestamos")) out.push("Los depósitos en efectivo suman " + P.depositos.valor + " y los préstamos al sector privado " + P.prestamos.valor + ".");
+    if (ok("compras")) out.push("En los últimos 30 días el BCRA " + (P.compras.d12 >= 0 ? "compró " : "vendió ") + P.compras.fmt(Math.abs(P.compras.d12)) + " en divisas.");
+    return out;
   }
 
   /* ---------- tarjeta con grafico ---------- */
@@ -613,7 +875,7 @@
 
   function armarBCRA() {
     var raiz = $("bcra-contenido");
-    bcraMesa = crearMesa({ filas: FILAS_BCRA, raiz: raiz, vista: "bcra" });
+    bcraMesa = crearMesa({ filas: FILAS_BCRA, raiz: raiz, vista: "bcra", titulo: "Banco Central de un vistazo", clave: CLAVE_BCRA, frases: frasesBCRA });
     bcraMesa.armar();
 
     var g = el("div", "grid2"); raiz.appendChild(g);
@@ -662,7 +924,7 @@
   function mostrar(vista, sub) {
     if (vista === "tablero") {
       if (!tableroMesa) {
-        tableroMesa = crearMesa({ filas: FILAS_TABLERO, raiz: $("mesa-tablero"), vista: "tablero" });
+        tableroMesa = crearMesa({ filas: FILAS_TABLERO, raiz: $("mesa-tablero"), vista: "tablero", titulo: "Resumen del día", clave: CLAVE_TABLERO, frases: frasesTablero });
         tableroMesa.armar();
       }
       if (sub) tableroMesa.abrir(sub); else tableroMesa.cerrar();

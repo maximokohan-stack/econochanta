@@ -301,6 +301,7 @@
     var filtrados = items.filter(function (it) {
       return (filtro.tema === "todos" || it.tema === filtro.tema) && (filtro.medio === "todos" || it.medio === filtro.medio);
     });
+    $("noticias-estado").textContent = "Mostrando " + filtrados.length + " titulares";
 
     function seccion(titulo, lista, verMas) {
       var sec = el("section", "card news-sec");
@@ -817,10 +818,19 @@
   // las pantallas que cuelgan de "Más" dejan marcada esa pestaña
   var PESTANA = { calcular: "mas", alertas: "mas", perfil: "mas" };
 
+  var vistaAnterior = null;
+
   function route() {
     var partes = (location.hash || "#tablero").slice(1).split(":");
     var h = partes[0];
     if (VISTAS.indexOf(h) === -1) h = "tablero";
+    // avisa a lectores de pantalla cuando cambia la seccion (no la primera vez)
+    if (vistaAnterior !== null && vistaAnterior !== h) {
+      var anuncio = $("anuncio");
+      anuncio.textContent = "";
+      setTimeout(function () { anuncio.textContent = TITULOS[h]; }, 30);
+    }
+    vistaAnterior = h;
     VISTAS.forEach(function (v) { $("vista-" + v).hidden = v !== h; });
     var pestana = PESTANA[h] || h;
     Array.prototype.forEach.call(document.querySelectorAll(".nav a"), function (a) {
@@ -906,6 +916,13 @@
       }
     };
     renderTodo();
+    var salto = document.querySelector(".skip");
+    if (salto) salto.addEventListener("click", function (ev) {
+      ev.preventDefault();
+      var principal = $("main");
+      principal.focus();
+      principal.scrollIntoView();
+    });
     route();
     window.addEventListener("hashchange", route);
 
