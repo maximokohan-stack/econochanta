@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-20T13:56:01.438070Z",
+ "actualizado": "2026-10-20T18:12:59.838537Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 20
+   "n": 22
   },
   {
    "medio": "Infobae",
@@ -60,32 +60,410 @@
  ],
  "items": [
   {
-   "titulo": "El riesgo país superó la línea de los 700 puntos básicos tras una nueva caída de los bonos argentinos",
+   "titulo": "“El consumidor ya no se va a ningún lado”: la fuerte advertencia de los supermercados sobre la caída de las ventas",
    "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/20/el-riesgo-pais-supero-la-linea-de-los-700-puntos-basicos-tras-una-nueva-caida-de-los-bonos-argentinos/",
-   "fecha": "2026-10-20T13:52:31Z",
-   "tema": "mercados"
+   "url": "https://www.infobae.com/economia/2026/10/20/el-consumidor-ya-no-se-va-a-ningun-lado-la-fuerte-advertencia-de-los-supermercados-sobre-la-caida-de-las-ventas/",
+   "fecha": "2026-10-20T18:00:40Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "La peperina, la popular hierba nativa argentina, logró el sello de Indicación Geográfica",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/de-uso-medicinal-y-culinario-la-peperina-la-popular-hierba-nativa-argentina-logro-el-sello-de-nid20102026/",
+   "fecha": "2026-10-20T17:54:34Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El Estado donde hay megaempresas con más de 230.000 vacas y sorprende al mundo",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/el-estado-donde-hay-megaempresas-con-mas-de-230000-vacas-y-sorprende-al-mundo-nid20102026/",
+   "fecha": "2026-10-20T17:53:39Z",
+   "tema": "otros"
   },
   {
    "titulo": "Dólar hoy y dólar blue, EN VIVO: a cuánto cotiza el oficial y cuál es el precio del paralelo este martes 20 de octubre, minuto a minuto",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/dolar/dolar-hoy-y-dolar-blue-en-vivo-a-cuanto-cotiza-el-oficial-y-cual-es-el-precio-del-paralelo-este-nid20102026/",
-   "fecha": "2026-10-20T13:50:18Z",
+   "fecha": "2026-10-20T17:52:37Z",
    "tema": "dolar"
   },
   {
-   "titulo": "El Gobierno postergó hasta diciembre la puesta en marcha de los Fondos de Asistencia Laboral",
+   "titulo": "El riesgo país llegó a superar la línea de los 700 puntos básicos tras una nueva caída de los bonos argentinos",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/20/el-riesgo-pais-supero-la-linea-de-los-700-puntos-basicos-tras-una-nueva-caida-de-los-bonos-argentinos/",
+   "fecha": "2026-10-20T17:48:36Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Cachanosky: \"Si existe el riesgo kuka es porque no es cierto que todo marche de acuerdo al plan\"",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/nea/cachanosky-si-existe-el-riesgo-kuka-es-porque-no-es-cierto-que-todo-marche-de-acuerdo-al-plan.phtml",
+   "fecha": "2026-10-20T17:47:28Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Una automotriz estadounidense pone la mira en la Argentina para desembarcar con Cadillac, su marca de autos de lujo",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/20/una-automotriz-estadounidense-pone-la-mira-en-la-argentina-para-desembarcar-con-cadillac-su-marca-de-autos-de-lujo/",
+   "fecha": "2026-10-20T17:47:18Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Rebill levantó US$5,4 millones y busca multiplicar por 10 su negocio en los próximos 12 meses",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/rebill-levanto-us54-millones-y-busca-multiplicar-por-10-su-negocio-en-los-proximos-12-meses-nid20102026/",
+   "fecha": "2026-10-20T17:43:28Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Javier Milei volvió a negar que la gente no llega a fin de mes y criticó a los periodistas: \"Están ardidos\"",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/economia/javier-milei-critico-a-periodistas-por-los-argentinos-que-no-llegan-a-fin-de-mes-estan-ardidos-a40.phtml",
+   "fecha": "2026-10-20T17:29:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "RDI: Argentina alcanzó 56 años de historia con el FMI y el récord del préstamo “más grande”",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/masperfil/rdi-argentina-tiene-56-anos-de-historia-con-el-fmi-y-cuenta-con-el-record-del-prestamo-mas-grande-de-la-historia.phtml",
+   "fecha": "2026-10-20T17:26:36Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Fue a uno de los bodegones más destacados de Palermo, pidió un almuerzo para 6 y mostró cuánto gastó",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/20/fue-a-uno-de-los-bodegones-mas-destacados-de-palermo-pidio-un-almuerzo-para-6-y-mostro-cuanto-gasto/",
+   "fecha": "2026-10-20T17:18:49Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Tiene 78 años, le bloqueó el paso a un robot de delivery en Filadelfia a modo de protesta, y la arrestaron",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/tecnologia/tiene-78-anos-le-bloqueo-el-paso-a-un-robot-de-delivery-en-filadelfia-a-modo-de-protesta-y-la-nid20102026/",
+   "fecha": "2026-10-20T17:17:25Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Cottani: “No se puede tratar de bajar a la fuerza la inflación”",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/nea/cottani-no-se-puede-tratar-de-bajar-a-la-fuerza-la-inflacion.phtml",
+   "fecha": "2026-10-20T17:09:26Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Advierten que el boleto de colectivo podría llegar a $2.500 sin subsidios: “Tenemos una de las tarifas más caras en relación al salario mínimo”",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/20/advierten-que-el-boleto-de-colectivo-podria-llegar-a-2500-sin-subsidios-tenemos-una-de-las-tarifas-mas-caras-en-relacion-al-salario-minimo/",
+   "fecha": "2026-10-20T16:56:59Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "“Supera la lógica”: tres economistas intentaron descifrar las razones de la suba del riesgo país argentino",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/20/supera-la-logica-tres-economistas-intentaron-descifrar-las-razones-de-la-suba-del-riesgo-pais-argentino/",
+   "fecha": "2026-10-20T16:55:57Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Ricardo Delgado: \"Estamos exportando como nunca, pero no hay dólares suficientes para atender los vencimientos de deuda\"",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/modo-fontevecchia/ricardo-delgado-estamos-exportando-como-nunca-pero-no-hay-dolares-suficientes-para-atender-los-vencimientos-de-deuda-modof.phtml",
+   "fecha": "2026-10-20T16:54:41Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "El Gobierno prometió mejorar los subsidios a colectivos del AMBA tras la amenaza de recortes de frecuencias nocturnas",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/20/el-gobierno-prometio-mejorar-los-subsidios-a-colectivos-del-amba-tras-la-amenaza-de-recortes-de-frecuencias-nocturnas/",
+   "fecha": "2026-10-20T16:43:11Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Cómo ver gratis a los más de 4000 especialistas que se reúnen en el congreso de informática e innovación del Hospital Italiano",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/tecnologia/como-ver-gratis-a-los-mas-de-4000-especialistas-que-se-reunen-en-el-congreso-de-informatica-e-nid20102026/",
+   "fecha": "2026-10-20T16:37:53Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La diferencia entre pagar y financiar",
+   "medio": "Perfil",
+   "url": "https://noticias.perfil.com/noticias/empresas/la-diferencia-entre-pagar-y-financiar.phtml",
+   "fecha": "2026-10-20T16:31:58Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "“La gente tiene miedo de que la estafen”: la advertencia de Ricardo Arriazu por la incertidumbre financiera global y su impacto local",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/la-gente-tiene-miedo-de-que-la-estafen-la-advertencia-de-ricardo-arriazu-por-la-incertidumbre-nid20102026/",
+   "fecha": "2026-10-20T16:25:41Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Argentina tiene superávit fiscal, pero el riesgo país se dispara por encima de los 700 puntos: qué está viendo el mercado",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/economia/argentina-tiene-superavit-fiscal-pero-el-riesgo-pais-se-dispara-por-encima-de-los-700-puntos-que-esta-viendo-el-mercado.phtml",
+   "fecha": "2026-10-20T16:22:00Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Saqueos en Francia: las marcas de lujo temen por las ventas y la imagen del país",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/economia/saqueos-en-francia-las-marcas-de-lujo-temen-por-las-ventas-y-la-imagen-del-pais-a40.phtml",
+   "fecha": "2026-10-20T16:21:00Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Argentina lleva 34 meses consecutivos de superávit comercial: “Las exportaciones superaron los USD 10.000 millones por primera vez”",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/canal-e/argentina-lleva-34-meses-consecutivos-de-superavit-comercial-las-exportaciones-superaron-los-usd-10000-millones-por-primera-vez.phtml",
+   "fecha": "2026-10-20T16:05:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Una búsqueda de 40 puestos de trabajo generó más de 10 cuadras de fila en Ezeiza",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/20/una-busqueda-de-40-puestos-de-trabajo-genero-mas-de-10-cuadras-de-fila-en-ezeiza/",
+   "fecha": "2026-10-20T16:00:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El riesgo país vuelve a subir y alcanza el valor más alto en casi un año",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/el-riesgo-pais-salta-hasta-los-710-puntos-y-alcanza-el-valor-mas-alto-en-casi-un-ano-nid20102026/",
+   "fecha": "2026-10-20T15:55:08Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Francia se prepara para nuevas protestas y el Gobierno responde con toques de queda en varias ciudades",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/economia/francia-prepara-nuevas-protestas-gobierno-responde-toques-queda-varias-ciudades-a40.phtml",
+   "fecha": "2026-10-20T15:54:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Emergencia en el Paraná: un estudio del INTA reveló el millonario gasto de los productores para retirar el ganado de las islas",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/emergencia-en-el-parana-un-estudio-del-inta-revelo-el-millonario-gasto-de-los-ganaderos-para-retirar-nid20102026/",
+   "fecha": "2026-10-20T15:51:57Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Cuáles son los motivos que llevaron al riesgo país por encima de los 700 puntos",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/cuales-son-los-motivos-que-llevaron-al-riesgo-pais-por-encima-de-los-700-puntos-nid20102026/",
+   "fecha": "2026-10-20T15:46:26Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "La suba del riesgo país castiga a la Argentina más que a otros mercados emergentes",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/dolar/la-suba-del-riesgo-pais-castiga-a-la-argentina-mas-que-a-otros-mercados-emergentes-nid20102026/",
+   "fecha": "2026-10-20T15:45:03Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "La Unión Europea endurece los requisitos vinculados a la deforestación en el sector cárnico",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/canal-e/la-union-europea-endurece-los-requisitos-vinculados-a-la-deforestacion-en-el-sector-carnico-es-una-norma-un-tanto-perversa.phtml",
+   "fecha": "2026-10-20T15:41:43Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El riesgo país vuela y sube a 710 puntos básicos: qué está pasando",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/economia/el-riesgo-pais-vuela-y-sube-a-710-puntos-basicos-que-esta-pasando.phtml",
+   "fecha": "2026-10-20T15:41:00Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Plazo fijo: cuál es la tasa de interés banco por banco este martes 20 de octubre",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/plazo-fijo-cual-es-la-tasa-de-interes-banco-por-banco-este-martes-20-de-octubre-nid20102026/",
+   "fecha": "2026-10-20T15:34:37Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Brasil detectó la enfermedad de Newcastle en una granja comercial de pavos",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/america/america-latina/2026/10/20/brasil-detecto-la-enfermedad-de-newcastle-en-una-granja-comercial-de-pavos/",
+   "fecha": "2026-10-20T15:34:05Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Brutal ataque a una yegua: entraron a un campo, le cortaron la cara y le fracturaron el hocico",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/brutal-ataque-a-una-yegua-en-un-campo-bonaerense-le-cortaron-la-cara-y-le-fracturaron-el-hocico-nid19102026/",
+   "fecha": "2026-10-20T15:31:57Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Juan Capozzolo, productor de Reconquista, evacúa vacas de las islas: “El peligro es que empiece a llover tal cual habían pronosticado”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/juan-capozzolo-productor-de-reconquista-evacua-vacas-de-las-islas-si-empieza-a-llover-va-a-ser-muy-nid19102026/",
+   "fecha": "2026-10-20T15:31:29Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Para Sturzenegger, la Argentina “tiene una oportunidad de ponerse delante del mundo” en inteligencia artificial",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/IA/para-sturzenegger-la-argentina-tiene-una-oportunidad-de-ponerse-delante-del-mundo-en-inteligencia-nid20102026/",
+   "fecha": "2026-10-20T15:31:06Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Ordenan a Fate pagar $1.200 millones a 200 trabajadores por deuda salarial",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/467019-ordenan-a-fate-pagar-1200-millones-de-pesos-a-200-trabajadores-por-deuda-salarial",
+   "fecha": "2026-10-20T15:30:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Suben las acciones argentinas con el sostén de las renovadas alzas de Wall Street",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/20/suben-las-acciones-argentinas-con-el-sosten-de-las-renovadas-alzas-de-wall-street/",
+   "fecha": "2026-10-20T15:29:40Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Una empresa agropecuaria de la familia Brito pagó US$22,8 millones por un campo y anticipó un futuro con más accionistas",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/una-empresa-agropecuaria-de-la-familia-brito-pago-us228-millones-por-un-campo-y-anticipo-un-futuro-nid19102026/",
+   "fecha": "2026-10-20T15:29:34Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Cuáles son las oportunidades comerciales que podrían llegar al sector avícola",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/canal-e/cuales-son-las-oportunidades-comerciales-que-podrian-llegar-al-sector-avicola.phtml",
+   "fecha": "2026-10-20T15:24:43Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El Gobierno autorizó una nueva aerolínea y Sturzenegger aseguró que será un “hub jujeño”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/el-gobierno-autorizo-una-nueva-aerolinea-y-sturzenegger-aseguro-que-sera-un-hub-jujeno-nid20102026/",
+   "fecha": "2026-10-20T15:22:05Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "El Super Niño amenaza con inundar las costas: el mar podría subir hasta 30 cm y crece la tensión en América Latina",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/economia/super-nino-amenaza-inundar-costas-mar-podria-subir-hasta-30cm-crece-tension-america-latina-a40.phtml",
+   "fecha": "2026-10-20T15:20:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Por qué no baja el riesgo país: las cuatro razones que explican la desconfianza de los mercados, según un economista",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/20/por-que-no-baja-el-riesgo-pais-las-cuatro-razones-que-explican-la-desconfianza-de-los-mercados-segun-un-economista/",
+   "fecha": "2026-10-20T15:18:17Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "A cuánto llega la PUAM en noviembre de 2026 con el aumento confirmado",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/a-cuanto-llega-la-puam-en-noviembre-de-2026-con-el-aumento-confirmado-nid20102026/",
+   "fecha": "2026-10-20T15:11:32Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "El celular barato, en peligro: qué va a pasar con la gama de entrada en 2027",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/tecnologia/el-celular-barato-en-peligro-que-va-a-pasar-con-la-gama-de-entrada-en-2027-nid20102026/",
+   "fecha": "2026-10-20T15:06:30Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Dólar: Alberto Ades explicó por qué la Argentina necesita un tipo de cambio más alto y qué puede pasar en 2027",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/dolar-alberto-ades-explico-que-la-argentina-necesita-un-tipo-cambio-mas-alto-y-que-puede-pasar-2027-n6335752",
+   "fecha": "2026-10-20T15:04:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Por qué los inversores empiezan a acortar plazos ante un 2027 que se anticipa más volátil",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/canal-e/por-que-los-inversores-empiezan-a-acortar-plazos-ante-un-2027-que-se-anticipa-mas-volatil.phtml",
+   "fecha": "2026-10-20T14:42:36Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Levantaron US$28 millones y ahora buscan expandirse en la Argentina y otros países de Latinoamérica",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/tecnologia/levantaron-us28-millones-y-ahora-buscan-expandirse-en-la-argentina-y-otros-paises-de-latinoamerica-nid20102026/",
+   "fecha": "2026-10-20T14:30:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "\"Este cultivo se ha perdido\": El Niño provoca una crisis mundial del azúcar",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/este-cultivo-se-ha-perdido-el-nino-provoca-una-crisis-mundial-del-azucar-n6335743",
+   "fecha": "2026-10-20T14:24:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Más vuelos a la Argentina: negocian con tres aerolíneas y buscan abrir una nueva ruta a Estados Unidos",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/mas-vuelos-a-la-argentina-negocian-con-tres-aerolineas-y-buscan-abrir-una-nueva-ruta-a-estados-nid20102026/",
+   "fecha": "2026-10-20T14:22:15Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La Justicia busca interesados en adquirir Pandanés tras rechazar el pedido de quiebra: qué se exige",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/20/la-justicia-busca-interesados-en-adquirir-pandanes-tras-rechazar-el-pedido-de-quiebra-que-se-exige/",
+   "fecha": "2026-10-20T14:20:33Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Postergación del FAL: la razón oculta que ayudará a Luis Caputo a evitar una mayor tensión financiera electoral",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/postergacion-del-fal-la-razon-oculta-que-ayudara-luis-caputo-evitar-una-mayor-tension-financiera-electoral-n6335628",
+   "fecha": "2026-10-20T14:20:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Uno de los economistas más escuchados por Milei explicó por qué Argentina crece poco: “Demasiadas divisas”",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/20/uno-de-los-economistas-mas-escuchados-por-milei-explico-por-que-argentina-tiene-poco-crecimiento-demasiadas-divisas/",
+   "fecha": "2026-10-20T14:17:15Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "El dólar en Córdoba: a cuánto cotiza este martes 20 de octubre",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/cordoba/cordoba-dolar-hoy-dolar-blue-hoy-cotizacion-20-de-octubre-201026.phtml",
+   "fecha": "2026-10-20T14:12:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "China vuelve a aumentar sus importaciones de soja estadounidense por la tregua comercial",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/china-vuelve-aumentar-sus-importaciones-soja-estadounidense-la-tregua-comercial-n6335732",
+   "fecha": "2026-10-20T14:05:00Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Cuánto cuesta criar un hijo en la Ciudad de Buenos Aires",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/20/cuanto-cuesta-criar-un-hijo-en-la-ciudad-de-buenos-aires/",
+   "fecha": "2026-10-20T14:01:17Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Cómo conseguir un crucero barato: 5 trucos de ahorro que las navieras no te cuentan",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/como-conseguir-un-crucero-barato-5-trucos-ahorro-que-las-navieras-no-te-cuentan-n6335431",
+   "fecha": "2026-10-20T14:00:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El Gobierno postergó a diciembre el debut del FAL y duplicó el período mínimo de aportes del fondo que pagará indemnizaciones",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/sociedad/el-gobierno-postergo-hasta-diciembre-la-puesta-en-marcha-de-los-fondos-de-asistencia-laboral-nid20102026/",
    "fecha": "2026-10-20T13:48:48Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "El riesgo país salta hasta los 710 puntos y alcanza el valor más alto en casi un año",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/el-riesgo-pais-salta-hasta-los-710-puntos-y-alcanza-el-valor-mas-alto-en-casi-un-ano-nid20102026/",
-   "fecha": "2026-10-20T13:47:04Z",
-   "tema": "mercados"
   },
   {
    "titulo": "El titular de ARBA reclamó que Caputo no autoriza créditos para obras contra las inundaciones: “Discrimina a la provincia”",
@@ -102,11 +480,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "El riesgo país vuela y sube a 710 puntos básicos: qué está pasando",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/el-riesgo-pais-vuela-y-sube-a-710-puntos-basicos-que-esta-pasando.phtml",
-   "fecha": "2026-10-20T13:33:52Z",
-   "tema": "mercados"
+   "titulo": "La Suipachense ya produce leche y quesos y suma cuatro meses de recuperación de empleos",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/negocios/466999-la-suipachense-reactiva-la-produccion-de-lacteos-y-recupera-empleo",
+   "fecha": "2026-10-20T13:04:00Z",
+   "tema": "otros"
   },
   {
    "titulo": "La increíble predicción que hizo Elon Musk sobre “Volver al futuro” y su auto volador hace 8 años: “Hará algo así”",
@@ -121,20 +499,6 @@
    "url": "https://www.lanacion.com.ar/economia/como-funciona-el-millonario-negocio-de-la-nba-y-su-estrategia-para-crecer-en-argentina-nid20102026/",
    "fecha": "2026-10-20T13:02:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Brutal ataque a una yegua: entraron a un campo, le cortaron la cara y le fracturaron el hocico",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/brutal-ataque-a-una-yegua-en-un-campo-bonaerense-le-cortaron-la-cara-y-le-fracturaron-el-hocico-nid19102026/",
-   "fecha": "2026-10-20T12:55:22Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Una empresa agropecuaria de la familia Brito pagó US$22,8 millones por un campo y anticipó un futuro con más accionistas",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/una-empresa-agropecuaria-de-la-familia-brito-pago-us228-millones-por-un-campo-y-anticipo-un-futuro-nid19102026/",
-   "fecha": "2026-10-20T12:52:51Z",
-   "tema": "empresas"
   },
   {
    "titulo": "El Gobierno postergó hasta diciembre la entrada en vigencia de los Fondos de Asistencia Laboral",
@@ -235,6 +599,13 @@
    "tema": "politica"
   },
   {
+   "titulo": "La industria petrolera anticipa un inédito suparávit de dólares para este año",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/energia/466990-vaca-muerta-preven-un-superavit-energetico-de-us10000-millones",
+   "fecha": "2026-10-20T11:19:00Z",
+   "tema": "actividad"
+  },
+  {
    "titulo": "Quiénes pueden pedir la ayuda económica de Anses para personas sin trabajo y cómo se hace el trámite",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/20/quienes-pueden-pedir-la-ayuda-economica-de-anses-para-personas-sin-trabajo-y-como-se-hace-el-tramite/",
@@ -284,123 +655,11 @@
    "tema": "actividad"
   },
   {
-   "titulo": "PNC de Anses: cuál es el monto de las Pensiones No Contributivas en noviembre de 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/pnc-de-anses-cual-es-el-monto-de-las-pensiones-no-contributivas-en-noviembre-de-2026-nid19102026/",
-   "fecha": "2026-10-20T10:19:24Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Monto de la Asignación Universal por Hijo: de cuánto es la AUH en noviembre 2026, con el aumento oficial",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/monto-de-la-asignacion-universal-por-hijo-de-cuanto-es-la-auh-en-noviembre-2026-con-el-aumento-nid15102026/",
-   "fecha": "2026-10-20T10:19:21Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Jubilaciones de Anses: cuánto cobro en noviembre 2026, con el bono oficial y el aumento confirmado",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/jubilaciones-de-anses-cuanto-cobro-en-noviembre-2026-con-el-bono-oficial-y-el-aumento-confirmado-nid14102026/",
-   "fecha": "2026-10-20T10:19:18Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Cuándo cobro Anses: el calendario completo de octubre 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/cuando-cobro-anses-el-calendario-completo-de-octubre-2026-nid30092026/",
-   "fecha": "2026-10-20T10:19:15Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Cuánto gana el personal de Gendarmería Nacional Argentina en octubre de 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/cuanto-gana-el-personal-de-gendarmeria-nacional-argentina-en-octubre-de-2026-nid19102026/",
-   "fecha": "2026-10-20T10:18:50Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Paritaria con aumento: cuánto cobran las niñeras y cuidadores de adultos en octubre de 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/paritaria-con-aumento-cuanto-cobran-las-nineras-y-cuidadores-de-adultos-en-octubre-de-2026-nid14102026/",
-   "fecha": "2026-10-20T10:18:47Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Paritaria para vigiladores: cuánto ganan los trabajadores de seguridad privada en octubre 2026 con el aumento confirmado",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/paritaria-para-vigiladores-cuanto-ganan-los-trabajadores-de-seguridad-privada-en-octubre-2026-con-el-nid13102026/",
-   "fecha": "2026-10-20T10:18:37Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Sueldo oficial: cuánto ganan los miembros de las Fuerzas Armadas en octubre de 2026 con el aumento confirmado",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/sueldo-oficial-cuanto-ganan-los-miembros-de-las-fuerzas-armadas-en-octubre-de-2026-con-el-aumento-nid08102026/",
-   "fecha": "2026-10-20T10:18:35Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Paritaria oficial: cuánto ganan los camioneros en octubre 2026 tras el aumento confirmado",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/paritaria-oficial-cuanto-ganan-los-camioneros-en-octubre-2026-tras-el-aumento-confirmado-nid07102026/",
-   "fecha": "2026-10-20T10:18:31Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Paritaria con aumento: cuánto gana el personal de la Policía Federal Argentina en octubre 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/paritaria-con-aumento-cuanto-gana-el-personal-de-la-policia-federal-argentina-en-octubre-2026-nid07102026/",
-   "fecha": "2026-10-20T10:18:29Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Paritaria confirmada: cuánto cobran las empleadas domésticas en octubre de 2026 con el aumento oficial",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/paritaria-confirmada-cuanto-cobran-las-empleadas-domesticas-en-octubre-de-2026-con-el-aumento-nid06102026/",
-   "fecha": "2026-10-20T10:18:27Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Nueva paritaria de la construcción: cuánto cobra un albañil en octubre 2026 con el aumento confirmado por la Uocra",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/nueva-paritaria-de-la-construccion-cuanto-cobra-un-albanil-en-octubre-2026-con-el-aumento-confirmado-nid01102026/",
-   "fecha": "2026-10-20T10:18:12Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "El Gobierno postergó hasta diciembre la puesta en marcha de los FAL",
+   "titulo": "El Gobierno postergó hasta diciembre la puesta en marcha del FAL",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/el-gobierno-postergo-diciembre-la-puesta-marcha-los-fal-n6335607",
    "fecha": "2026-10-20T10:17:00Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "Cyber Monday 2026 en la Argentina: fechas y marcas que participan en esta edición",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/cyber-monday-2026-en-la-argentina-fechas-y-marcas-que-participan-en-esta-edicion-nid14102026/",
-   "fecha": "2026-10-20T10:16:50Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Cuándo es el Cyber Monday 2026 en la Argentina",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/cuando-es-el-cyber-monday-2026-en-la-argentina-nid14102026/",
-   "fecha": "2026-10-20T10:16:44Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El dólar en Córdoba: a cuánto cotiza este martes 20 de octubre",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/cordoba/cordoba-dolar-hoy-dolar-blue-hoy-cotizacion-20-de-octubre-201026.phtml",
-   "fecha": "2026-10-20T10:07:53Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "Fecha de cobro de Anses: el cronograma de pagos para este martes 20 de octubre",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/fecha-de-cobro-de-anses-el-cronograma-de-pagos-para-este-martes-20-de-octubre-nid20102026/",
-   "fecha": "2026-10-20T10:02:27Z",
-   "tema": "otros"
   },
   {
    "titulo": "A cuánto cotiza el euro blue hoy, martes 20 de octubre",
@@ -417,25 +676,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "La peperina, la popular hierba nativa argentina, logró el sello de Indicación Geográfica",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/de-uso-medicinal-y-culinario-la-peperina-la-popular-hierba-nativa-argentina-logro-el-sello-de-nid20102026/",
-   "fecha": "2026-10-20T10:00:00Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "La City recalcula hasta dónde llegará el riesgo país y prevé bajón en emisiones de deuda",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/finanzas/466976-cual-sera-el-proximo-techo-que-rompera-el-riesgo-pais-segun-la-city",
    "fecha": "2026-10-20T10:00:00Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "A cuánto cotiza el dólar blue hoy, martes 20 de octubre",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/a-cuanto-cotiza-el-dolar-blue-hoy-martes-20-de-octubre-a50-bgd.phtml",
-   "fecha": "2026-10-20T10:00:00Z",
-   "tema": "dolar"
   },
   {
    "titulo": "Aprobaron proyectos del RIGI de TGS por u$s 3.200 millones",
@@ -449,13 +694,6 @@
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/20/anses-quienes-cobran-hoy-martes-20-de-octubre-de-2026/",
    "fecha": "2026-10-20T09:24:52Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Cuánto cobran albañiles y trabajadores de UOCRA en octubre 2026",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/20/cuanto-cobran-albaniles-y-trabajadores-de-uocra-en-octubre-2026/",
-   "fecha": "2026-10-20T09:21:36Z",
    "tema": "otros"
   },
   {
@@ -480,67 +718,11 @@
    "tema": "inflacion"
   },
   {
-   "titulo": "La triste realidad del ahorrista conservador en dólares: cómo dejar de perder sin arriesgar de más",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/la-triste-realidad-del-ahorrista-conservador-en-dolares-como-dejar-de-perder-sin-arriesgar-de-mas-nid20102026/",
-   "fecha": "2026-10-20T09:00:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Con exportaciones récord, la balanza comercial marcó un superávit de US$ 2.976 millones en septiembre",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/la-balanza-comercial-marco-un-superavit-de-us-2976-millones-en-septiembre-y-encadeno-34-meses-en-positivo-a40.phtml",
-   "fecha": "2026-10-20T08:30:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Contratar pensando en el futuro: qué cambia en la selección y el liderazgo con la IA en el mercado silver",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/generacion-silver/2026/10/20/contratar-pensando-en-el-futuro-que-cambia-en-la-seleccion-y-el-liderazgo-con-la-ia-en-el-mercado-silver/",
-   "fecha": "2026-10-20T06:23:10Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Con elogios al gobernador Figueroa y a Horacio Marín, el presidente Milei aseguró: “Podemos hacer que florezcan 1.000 Vaca Muerta”",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/20/con-elogios-al-gobernador-figueroa-y-a-horacio-marin-el-presidente-milei-aseguro-podemos-hacer-que-florezcan-1000-vaca-muerta/",
-   "fecha": "2026-10-20T05:54:35Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "“En torno al 20% anual”: qué es la inflación núcleo y por qué el Gobierno la usó para defender la gestión económica",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/20/en-torno-al-20-anual-que-es-la-inflacion-nucleo-y-por-que-el-gobierno-la-uso-para-defender-la-gestion-economica/",
-   "fecha": "2026-10-20T05:54:26Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Paso por paso, cómo funcionará el plan de retiros voluntarios en la administración pública nacional",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/20/paso-por-paso-como-funcionara-el-plan-de-retiros-voluntarios-en-la-administracion-publica-nacional/",
-   "fecha": "2026-10-20T05:53:59Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Estas son las ocho razones que explican la fuerte suba del riesgo país",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/20/estas-son-las-ocho-razones-que-explican-la-fuerte-suba-del-riesgo-pais/",
-   "fecha": "2026-10-20T05:53:52Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "La recuperación económica depende de la credibilidad en la marcha de la actividad",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/opinion/2026/10/20/la-recuperacion-economica-depende-de-la-credibilidad-en-la-marcha-de-la-actividad/",
-   "fecha": "2026-10-20T05:53:45Z",
+   "titulo": "Jubilaciones de ANSES: cuánto se cobraría en noviembre y cómo influye tener 30 años de aportes",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/466559-jubilacion-noviembre-cuanto-cobraria-30-anos-de-aportes-y-como-se-calcula",
+   "fecha": "2026-10-20T03:01:00Z",
    "tema": "actividad"
-  },
-  {
-   "titulo": "Juicio por YPF: la jueza Preska cerró formalmente el caso y la Corte Suprema deberá definir el pedido de Burford",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/20/juicio-por-ypf-la-jueza-preska-cerro-formalmente-el-caso-y-la-corte-suprema-debera-definir-el-pedido-de-burford/",
-   "fecha": "2026-10-20T04:47:08Z",
-   "tema": "empresas"
   },
   {
    "titulo": "Dubái, hub del comercio global: cómo opera la zona franca líder en el mundo que busca atraer a la carne argentina",
@@ -548,20 +730,6 @@
    "url": "https://www.ambito.com/economia/dubai-hub-del-comercio-global-como-opera-la-principal-zona-franca-del-mundo-que-busca-atraer-la-carne-argentina-n6334804",
    "fecha": "2026-10-20T03:00:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Matías Battista advirtió en QR! que el riesgo país podría superar los 1000 puntos en 2027 y explicó por qué desconfía el mercado",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/masperfil/matias-battista-advirtio-en-qr-que-el-riesgo-pais-podria-superar-los-1000-puntos-en-2027-y-explico-por-que-desconfia-el-mercado.phtml",
-   "fecha": "2026-10-20T02:24:22Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Las empresas de colectivos del AMBA reducirán a la mitad los servicios nocturnos",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/20/las-empresas-de-colectivos-del-amba-reduciran-a-la-mitad-los-servicios-nocturnos/",
-   "fecha": "2026-10-20T01:18:35Z",
-   "tema": "empresas"
   },
   {
    "titulo": "Con la inyección de fondos de ANSES: cómo quedaron las tasas de los créditos hipotecarios UVA",
@@ -592,109 +760,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "Jorge Colina: “Lo único que crece en la Argentina es el cuentapropismo informal”",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/nea/jorge-colina-lo-unico-que-crece-en-la-argentina-es-el-cuentapropismo-informal.phtml",
-   "fecha": "2026-10-19T23:06:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Encuesta: 2 de cada 3 argentinos agotan sus ingresos 10 días antes de fin de mes",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/nea/encuesta-2-de-cada-3-argentinos-agotan-sus-ingresos-10-dias-antes-de-fin-de-mes.phtml",
-   "fecha": "2026-10-19T23:05:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "“La inflación también nos está demostrando que no resuelve por sí sola todo”: en RDEco analizaron los límites del plan económico de Milei",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/masperfil/en-rdeco-analizamos-por-que-la-inflacion-nos-esta-demostrando-que-no-resuelve-por-si-sola-todo.phtml",
-   "fecha": "2026-10-19T22:41:17Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Exviceministro de Caputo pidió liberar el cepo cambiario y tolerar una inflación de hasta el 4%",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/un-exviceministro-de-caputo-pidio-liberar-el-cepo-cambiario-y-tolerar-una-inflacion-de-hasta-el-4-a40.phtml",
-   "fecha": "2026-10-19T22:37:00Z",
-   "tema": "dolar"
-  },
-  {
    "titulo": "Cómo funciona la retención de Ingresos Brutos en las billeteras virtuales",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/466964-como-funciona-la-retencion-de-ingresos-brutos-en-las-billeteras-virtuales",
    "fecha": "2026-10-19T22:31:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "RDEco: qué hay que revisar antes de comprar un auto chino y cómo evaluar el respaldo de la marca",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/masperfil/en-rdeco-analizamos-el-boom-de-los-autos-chinos-hay-que-enfrentar-a-estas-nuevas-tecnologias.phtml",
-   "fecha": "2026-10-19T22:29:56Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Elon Musk prometió regalar una acción de SpaceX a cada niño de EE.UU.",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/bloomberg/bc-musk-dice-que-regalara-una-accion-de-spacex-a-cada-nino-de-eeuu.phtml",
-   "fecha": "2026-10-19T22:20:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Vaca Muerta, cabeza del récord: más de la mitad del superávit comercial del país ya se explica por las exportaciones de energía",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/19/vaca-muerta-cabeza-del-record-mas-de-la-mitad-del-superavit-comercial-del-pais-ya-se-explica-por-las-exportaciones-de-energia/",
-   "fecha": "2026-10-19T22:19:25Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "RDEco: cómo puede Argentina convertir el RIGI en más empleo, tecnología nacional y desarrollo productivo",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/masperfil/en-rdeco-analizamos-por-que-la-sostenibilidad-del-modelo-economico-necesita-de-un-crecimiento-que-hoy-esta-en-duda.phtml",
-   "fecha": "2026-10-19T22:18:59Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "RDEco: qué incentivos reclama la industria para competir con las importaciones",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/masperfil/en-rde-analizamos-una-economia-de-senales-mixtas-casi-no-tiene-mensajes.phtml",
-   "fecha": "2026-10-19T22:09:05Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Córdoba Welcome: Con casi 540 mil trabajadores, los shows apuntan a los beneficios de otras industria",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/cordoba/cordoba-welcome-con-casi-540-mil-trabajadores-los-shows-apuntan-a-los-beneficios-como-la-industria.phtml",
-   "fecha": "2026-10-19T22:03:14Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Bajo sospecha: investigan evasión impositiva en publicidad digital",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/bajo-sospecha-investigan-evasion-impositiva-en-publicidad-digital.phtml",
-   "fecha": "2026-10-19T21:55:27Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Grandes supermercados le reclaman a Caputo que dos provincias y CABA cobren Ingresos Brutos a las billeteras virtuales",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/grandes-supermercados-le-reclaman-a-caputo-que-dos-provincias-y-caba-cobren-ingresos-brutos-a-las-billeteras-virtuales-a40.phtml",
-   "fecha": "2026-10-19T21:49:48Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Las exportaciones superaron los USD 10.000 millones en un solo mes por primera vez en la historia",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/19/con-exportaciones-en-niveles-record-la-balanza-comercial-marco-un-superavit-de-usd-2976-millones-en-septiembre/",
-   "fecha": "2026-10-19T21:44:27Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Jornada financiera: las acciones argentinas cayeron hasta 5% y el riesgo país subió por séptimo día consecutivo",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/19/jornada-financiera-las-acciones-argentinas-cayeron-hasta-5-y-el-riesgo-pais-subio-por-septimo-dia-consecutivo/",
-   "fecha": "2026-10-19T21:38:41Z",
-   "tema": "mercados"
   },
   {
    "titulo": "El grupo financiero de Costantini apuesta por estos bonos para ganarle a la inflación",
@@ -709,13 +779,6 @@
    "url": "https://www.iprofesional.com/economia/466950-record-exportador-de-septiembre-anticipa-lluvia-de-dolares-en-2027",
    "fecha": "2026-10-19T21:04:00Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "Un laboratorio del partido bonaerense de Ituzaingó desvinculó a la mitad de sus trabajadores",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/19/un-laboratorio-del-partido-bonaerense-ituzaingo-desvinculo-a-la-mitad-de-sus-trabajadores/",
-   "fecha": "2026-10-19T21:00:52Z",
-   "tema": "otros"
   },
   {
    "titulo": "Milei celebró el superávit y aseguró: \"No paramos de comprar dólares a lo bestia\"",
@@ -765,69 +828,6 @@
    "url": "https://www.ambito.com/economia/las-exportaciones-las-pymes-alcanzaron-su-mayor-valor-13-anos-n6335392",
    "fecha": "2026-10-19T16:46:00Z",
    "tema": "empresas"
-  },
-  {
-   "titulo": "Embargan terrenos de ex fabricante de New Balance y Diadora para indemnizar a despedidos",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/negocios/466920-por-deudas-embargan-terrenos-de-ex-fabricante-de-new-balance",
-   "fecha": "2026-10-19T16:21:00Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "El BCRA compra dólares, pero un nuevo fenómeno preocupa al mercado",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/466731-el-bcra-compra-dolares-pero-un-nuevo-fenomeno-preocupa-al-mercado",
-   "fecha": "2026-10-19T16:15:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "El mercado duda si alcanzarán las reservas para pagar la deuda y evitar un salto del dólar",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/466833-el-mercado-duda-si-alcanzaran-reservas-para-pagar-deuda-y-evitar-salto-del-dolar",
-   "fecha": "2026-10-19T16:11:00Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "Nuevo plan de retiro de Javier Milei para empleados públicos nacionales",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/management/466890-nuevo-plan-de-retiro-de-javier-milei-para-empleados-publicos-nacionales",
-   "fecha": "2026-10-19T16:00:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Fondos FAL: cómo invertir los recursos para pagar indemnizaciones",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/466822-fondos-fal-como-invertir-recursos-para-pagar-indemnizaciones",
-   "fecha": "2026-10-19T15:13:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "La advertencia del mercado a Milei sobre la \"súper bazuka\" de 125.000 millones de dólares",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/466866-que-advierte-la-city-sobre-la-super-bazuca-de-dolares-de-milei",
-   "fecha": "2026-10-19T14:30:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "YPF abre más estaciones de su marca low cost y la opción premium en el interior del país",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/negocios/466910-ypf-abre-mas-estaciones-de-sus-marcas-low-cost-y-premium",
-   "fecha": "2026-10-19T14:29:00Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "La industria metalúrgica volvió a caer y tuvo el septiembre con más máquinas paradas desde 2016",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/la-industria-metalurgica-volvio-caer-y-tuvo-el-septiembre-mas-maquinas-paradas-2016-n6335225",
-   "fecha": "2026-10-19T12:49:00Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "La economía de China creció 4,5% en el tercer trimestre y superó las proyecciones del mercado",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/la-china-crecio-45-el-tercer-trimestre-y-supero-las-proyecciones-del-mercado-n6335189",
-   "fecha": "2026-10-19T12:24:00Z",
-   "tema": "otros"
   }
  ]
 }
