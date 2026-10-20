@@ -54,14 +54,7 @@ Las series de datos.gob.ar tienen un comportamiento particular: devuelven vacío
 
 ### Noticias
 
-`python scripts/fetch_news.py` baja los feeds de Ámbito, Infobae, La Nación, iProfesional y Perfil, se queda con las últimas 48 horas, clasifica por tema según palabras del título y escribe `news.json`. Solo se guarda título, medio, fecha y link. Para que se actualice solo hay un workflow de GitHub Actions listo (corre cada hora de 6 a 23 hs, hora de Buenos Aires, y hace commit de `news.json`). **Todavía no está subido**: GitHub exige que el token con el que se hace el push tenga el permiso `workflow`. Para activarlo:
-
-```bash
-gh auth refresh -h github.com -s workflow
-# copiar .github/workflows/news.yml al repo, commitear y pushear
-```
-
-Mientras tanto, las noticias se actualizan a mano con `python scripts/fetch_news.py`.
+`python scripts/fetch_news.py` baja los feeds de Ámbito, Infobae, La Nación, iProfesional y Perfil, se queda con las últimas 48 horas, clasifica por tema según palabras del título y escribe `news.json`. Solo se guarda título, medio, fecha y link. El workflow `.github/workflows/news.yml` de GitHub Actions lo corre cada hora de 6 a 23 hs (hora de Buenos Aires) y hace commit de `news.json`. También se puede disparar a mano desde la pestaña Actions o con `gh workflow run news.yml`. Para subir workflows, el token de `gh` necesita el permiso `workflow` (`gh auth refresh -h github.com -s workflow`).
 
 ### Inflación personal con Plata
 
@@ -78,8 +71,9 @@ series.js    catálogo de series y carga (69 series de 5 fuentes)
 charts.js    gráficos SVG: líneas, barras, sparklines, CSV
 api.js       dólar y datos para Tu plata, con respaldo
 data.js      datos de ejemplo y valores por defecto
-news.json    titulares (los genera scripts/fetch_news.py)
+news.json    titulares (los actualiza el workflow cada hora)
 scripts/     fetch_news.py
+.github/     workflow que actualiza news.json
 sw.js        cache offline del shell
 manifest.webmanifest
 assets/icon.svg
