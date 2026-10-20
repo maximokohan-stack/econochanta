@@ -4,6 +4,8 @@ El tablero de la economía argentina: dólar, inflación, actividad, empleo, cue
 
 PWA estática (HTML, CSS y JS sin build). Los datos salen de APIs públicas sin clave. Si una serie falla, se avisa y se muestra el último dato o el de ejemplo.
 
+**Diseño desktop first.** La interfaz está pensada primero para escritorio (dos paneles: lista y detalle) y se adapta después a tablet y celular. En `styles.css` el diseño base es el de escritorio y las adaptaciones están al final con `max-width` (1100, 820 y 560 px); en pantallas táctiles los controles pasan a 44 px.
+
 ## Probarlo
 
 Con el servidor del proyecto (puerto 8770) o con cualquier servidor estático:
@@ -62,32 +64,24 @@ En Perfil elegís el backup de Plata. Se procesa en el navegador y solo se guard
 
 ```
 index.html   vistas y markup
-styles.css   tokens, tema claro y oscuro
-app.js       modelo, render y navegación por hash
-series.js    catálogo de series y carga (47 series)
+styles.css   tokens, componentes y, al final, adaptación a pantallas chicas
+app.js       Tu plata, perfil, alertas, calculadoras, noticias y navegación por hash
+tablero.js   mesa de indicadores (Tablero y Banco Central) y acciones y bonos
+series.js    catálogo de series y carga (69 series de 5 fuentes)
 charts.js    gráficos SVG: líneas, barras, sparklines, CSV
-tablero.js   matriz de indicadores y vista de acciones y bonos
 api.js       dólar y datos para Tu plata, con respaldo
 data.js      datos de ejemplo y valores por defecto
-news.json    titulares (generado)
+news.json    titulares (lo genera el workflow cada hora)
 scripts/     fetch_news.py
+.github/     workflow que actualiza news.json
 sw.js        cache offline del shell
 manifest.webmanifest
 assets/icon.svg
 ```
 
-## Iterar el diseño con ramas
-
-```bash
-git switch -c ui/bento      # probar una variante
-git switch main             # volver
-```
-
-Una rama por variante visual, y se comparan lado a lado.
-
 ## Siguiente paso
 
-1. Subir el repo a GitHub (privado) para que el workflow actualice `news.json` solo.
-2. Alertas push reales: hace falta un cron que revise y avise.
-3. Elegir una variante visual (ramas `ui/*`).
-4. Revisar con `design:accessibility-review` y `design:design-critique`.
+1. Alertas push reales: hace falta un cron que revise y avise.
+2. Sección Mundo y EE. UU. (las fuentes abiertas son más difíciles).
+3. Revisar con `design:accessibility-review` y `design:design-critique`.
+4. Publicar el sitio (hoy el repo es privado; GitHub Pages en un repo privado hace público el sitio).
