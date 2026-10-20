@@ -378,6 +378,162 @@
       c: "Es exportaciones menos importaciones del mismo mes.",
       l: "Positivo (superávit): entran más dólares por comercio de los que salen. Negativo (déficit): salen más de los que entran.",
       o: "No incluye servicios, turismo ni pagos de deuda."
+    },
+    resFin: {
+      q: "Lo que le queda (o le falta) al Estado nacional después de pagar los intereses de la deuda.",
+      c: "Es el resultado primario menos los intereses netos de la deuda. Lo publica la Secretaría de Hacienda en millones de pesos.",
+      l: "Positivo (superávit financiero): el Estado cobra más de lo que gasta incluyendo intereses, y puede bajar deuda. Negativo (déficit): tiene que financiarse con más deuda o con emisión de pesos. Es la medida más completa del equilibrio fiscal.",
+      o: "Un mes puntual puede dar muy distinto por el calendario de pagos de intereses. Mirá el acumulado del año o los últimos 12 meses."
+    },
+    intereses: {
+      q: "Lo que el Estado nacional paga por mes por los intereses de su deuda, descontando lo que cobra como intereses.",
+      c: "Hacienda suma los intereses pagados en pesos y en dólares y les resta las rentas de la propiedad que cobra. Se expresa en millones de pesos.",
+      l: "Cuanto más pesan los intereses, menos plata queda del superávit primario. Si superan al resultado primario, el resultado financiero da negativo.",
+      o: "Los pagos de deuda en dólares se concentran en enero y julio, así que el mes a mes es muy irregular."
+    },
+    resPrimAcum: {
+      q: "La suma de los resultados primarios de cada mes desde enero del año en curso.",
+      c: "Se acumulan los resultados mensuales y la cuenta vuelve a cero cada enero.",
+      l: "Es la forma más simple de ver cómo va el año fiscal. Si viene subiendo mes a mes, el Estado mantiene el superávit.",
+      o: "Un mes con aguinaldo o pagos grandes puede bajar mucho el acumulado y recuperarse después."
+    },
+    resFinAcum: {
+      q: "La suma de los resultados financieros (con intereses) desde enero del año en curso.",
+      c: "Es el resultado primario menos los intereses, acumulado mes a mes. Vuelve a cero cada enero.",
+      l: "Muestra si, después de pagar la deuda, lo que va del año cierra con superávit o con déficit.",
+      o: "Los meses con pagos de deuda (enero y julio) lo mueven fuerte."
+    },
+    resPrim12: {
+      q: "La suma del resultado primario de los últimos 12 meses.",
+      c: "Se suman los 12 últimos resultados mensuales. Así se compara con el año anterior sin que importe el calendario.",
+      l: "Es la medida que se usa para comparar con metas anuales. Si sube, la tendencia fiscal mejora.",
+      o: "Está en pesos de cada momento: con inflación alta, los números nuevos son mayores casi siempre."
+    },
+    resFin12: {
+      q: "La suma del resultado financiero (con intereses) de los últimos 12 meses.",
+      c: "Se suman los 12 últimos resultados financieros mensuales.",
+      l: "Es la forma más completa de ver si el Estado cerró el último año con superávit o déficit.",
+      o: "Está en pesos de cada momento, sin ajuste por inflación."
+    },
+    iva: {
+      q: "Lo que el Estado nacional cobra por el Impuesto al Valor Agregado, descontando los reintegros.",
+      c: "ARCA recauda el IVA sobre ventas, importaciones y servicios. Hacienda lo informa neto de reintegros, en millones de pesos.",
+      l: "Es el impuesto que mejor refleja el consumo y la actividad. Si crece más que la inflación, hay más ventas en términos reales.",
+      o: "Está en pesos de cada momento: comparalo con la inflación."
+    },
+    ganancias: {
+      q: "Lo que cobra el Estado nacional por el impuesto a las ganancias de personas y empresas.",
+      c: "ARCA lo recauda (incluye retenciones a trabajadores y pagos de sociedades). Se informa en millones de pesos.",
+      l: "Refleja los resultados de las empresas y los sueldos más altos. Suele tener picos en los meses de vencimiento anual.",
+      o: "Los meses de vencimientos grandes distorsionan el mes a mes."
+    },
+    aportes: {
+      q: "Lo que ingresa al sistema por los aportes y contribuciones de los trabajadores y las empresas a la seguridad social.",
+      c: "Se calculan como un porcentaje de los sueldos en blanco (aportes del trabajador y contribuciones patronales). Se informan en millones de pesos.",
+      l: "Se mueve con el empleo registrado y los sueldos. Financia en buena parte las jubilaciones.",
+      o: "Si aumenta menos que la inflación, los sueldos registrados pierden frente a los precios."
+    },
+    derExp: {
+      q: "Lo que cobra el Estado nacional por las exportaciones, las \"retenciones\".",
+      c: "Es un porcentaje del valor exportado (sobre todo del agro), que cobra la Aduana. Se informa en millones de pesos.",
+      l: "Depende de los precios internacionales, del tipo de cambio y de la alícuota que fije el gobierno. Si baja una alícuota, baja la recaudación aunque se exporte lo mismo.",
+      o: "Es muy estacional: en los meses de cosecha gruesa suele ser mayor."
+    },
+    debCred: {
+      q: "Lo que cobra el Estado por el impuesto a los débitos y créditos bancarios (el \"impuesto al cheque\").",
+      c: "Es un porcentaje sobre cada movimiento en cuentas bancarias. Se informa en millones de pesos.",
+      l: "Crece con el movimiento de plata en el sistema bancario. Sube cuando se mueve más plata, aunque no necesariamente haya más actividad real.",
+      o: "Parte de este impuesto se puede computar como pago a cuenta de Ganancias."
+    },
+    bienesPers: {
+      q: "Lo que cobra el Estado por el impuesto sobre el patrimonio de las personas.",
+      c: "ARCA lo recauda cada año sobre bienes en el país y en el exterior. Se informa en millones de pesos.",
+      l: "Es poco en el total, pero muy visible. Se concentra en pocos meses del año.",
+      o: "Depende de los cambios de alícuotas, valuaciones y regímenes especiales."
+    },
+    jubil: {
+      q: "Lo que el Estado nacional gasta por mes en jubilaciones y pensiones del sistema contributivo (con aportes).",
+      c: "Hacienda suma lo pagado por ANSES. Se informa en millones de pesos.",
+      l: "Es el gasto más grande del Estado nacional. Crece con la cantidad de jubilados y con la movilidad (los aumentos automáticos).",
+      o: "En junio y diciembre sube por el aguinaldo."
+    },
+    pami: {
+      q: "Lo que el Estado nacional transfiere al PAMI (INSSJP), la obra social de los jubilados.",
+      c: "Es la prestación del Instituto Nacional de Servicios Sociales para Jubilados y Pensionados, en millones de pesos.",
+      l: "Financia atención médica y medicamentos de jubilados. Es uno de los rubros grandes de la seguridad social.",
+      o: "Parte de su financiamiento viene de aportes y no de transferencias directas."
+    },
+    asig: {
+      q: "Lo que el Estado nacional paga en asignaciones familiares y universales, como la AUH.",
+      c: "Es el gasto de ANSES por asignaciones familiares y la Asignación Universal por Hijo, en millones de pesos.",
+      l: "Es una de las principales ayudas a familias con hijos. Se ajusta por movilidad.",
+      o: "Se actualiza por una fórmula; su poder de compra depende de la inflación."
+    },
+    pensNC: {
+      q: "Lo que el Estado nacional paga en pensiones no contributivas (sin aportes previos): invalidez, vejez, madres de siete hijos y otras.",
+      c: "Hacienda suma las pensiones pagadas por ANSES a personas que no tienen aportes, en millones de pesos.",
+      l: "Mide la asistencia a personas en situación de vulnerabilidad. Cuando cambian los requisitos, cambia la cantidad de beneficiarios.",
+      o: "No incluye las jubilaciones comunes."
+    },
+    salEstado: {
+      q: "Lo que el Estado nacional gasta por mes en sueldos de su personal.",
+      c: "Hacienda suma las remuneraciones de la administración nacional, organismos y fuerzas, en millones de pesos.",
+      l: "Compará su variación con la inflación para ver si los sueldos públicos le ganan o pierden. Es un gasto que no se puede recortar de un día para otro.",
+      o: "No incluye los empleados provinciales ni municipales."
+    },
+    bpCC: {
+      q: "Si el país gana o pierde dólares en sus intercambios con el resto del mundo, sin contar préstamos ni inversiones.",
+      c: "El INDEC suma exportaciones menos importaciones de bienes y servicios, más los intereses y utilidades que cobramos o pagamos y las transferencias (como remesas). Se expresa en millones de dólares por trimestre.",
+      l: "Superávit (positivo): entran más dólares de los que salen. Déficit (negativo): el país necesita financiarse con deuda o inversión extranjera. Cuando el déficit es grande y sostenido, aumenta la presión sobre el dólar.",
+      o: "Un trimestre puntual puede ser engañoso por la cosecha, que concentra exportaciones. Mirá los últimos 4 trimestres."
+    },
+    bpCC12: {
+      q: "La cuenta corriente sumada de los últimos 4 trimestres.",
+      c: "Se suman los últimos cuatro resultados trimestrales de la cuenta corriente, en millones de dólares.",
+      l: "Quita la estacionalidad de la cosecha y muestra la tendencia del último año.",
+      o: "Es un dato con rezago: sale unos tres meses después de cerrar el trimestre."
+    },
+    bpCF: {
+      q: "Cómo se financió el resto: la plata que entra y sale del país por préstamos, inversiones, compra de activos y reservas.",
+      c: "El INDEC suma la inversión directa, de cartera, otra inversión (préstamos, depósitos), derivados y la variación de reservas. Se expresa en millones de dólares por trimestre.",
+      l: "Con el signo del INDEC, un valor positivo indica que el país prestó o invirtió afuera más de lo que recibió (va de la mano de un superávit de cuenta corriente). Negativo, que se financió con dinero del exterior. En teoría, cuenta corriente y cuenta financiera tienden a compensarse.",
+      o: "Es la que más confunde: positivo no significa \"entraron dólares\"."
+    },
+    bpCap: {
+      q: "Transferencias de capital y compra o venta de activos no financieros, como patentes o derechos.",
+      c: "El INDEC lo informa en millones de dólares por trimestre. Es una cuenta chica.",
+      l: "Rara vez cambia el panorama. Se suma a la cuenta corriente para ver el resultado total de lo que el país ahorra o pide al exterior.",
+      o: "Es un valor muy chico en comparación con las otras cuentas."
+    },
+    bpBienes: {
+      q: "La diferencia entre lo que Argentina exporta y lo que importa en bienes, según el balance de pagos.",
+      c: "El INDEC resta importaciones a exportaciones de bienes (valores FOB), en millones de dólares por trimestre.",
+      l: "Es el componente más fuerte de la cuenta corriente: el superávit de bienes compensa el déficit de servicios y de rentas.",
+      o: "Es trimestral. El saldo comercial mensual puede diferir levemente por criterios de valuación."
+    },
+    bpServicios: {
+      q: "La diferencia entre lo que el país cobra y paga por servicios con el exterior: turismo, transporte, fletes, software, etc.",
+      c: "El INDEC resta los egresos a los ingresos por servicios, en millones de dólares por trimestre.",
+      l: "Suele ser negativo, sobre todo por el turismo de argentinos en el exterior. Es un rubro que se mueve con el tipo de cambio.",
+      o: "Un valor muy negativo en verano o vacaciones de invierno es normal."
+    },
+    bpIngresos: {
+      q: "Lo que pagamos o cobramos en intereses, utilidades de empresas y transferencias con el exterior.",
+      c: "Se calcula como la cuenta corriente menos el balance de bienes y de servicios. Incluye los intereses de la deuda externa, las utilidades que giran las empresas extranjeras y las remesas.",
+      l: "Suele ser negativo: el país paga más intereses y utilidades de los que cobra.",
+      o: "Es un cálculo propio a partir de datos del INDEC."
+    },
+    bpEyO: {
+      q: "La diferencia que queda cuando las cuentas del balance de pagos no cierran exactamente.",
+      c: "Se calcula para que la suma sea cero. Se expresa en millones de dólares por trimestre.",
+      l: "Un valor grande puede indicar dólares que salen o entran sin registro, o fallas de medición.",
+      o: "Es un dato técnico, no una cuenta con un sentido propio."
+    },
+    bpReservas: {
+      q: "Cuánto cambiaron las reservas internacionales en el trimestre, por todas las operaciones del balance de pagos.",
+      c: "Es parte de la cuenta financiera. Se expresa en millones de dólares por trimestre.",
+      l: "Positivo: subieron las reservas. Negativo: bajaron. Mide el cambio, no el nivel.",
+      o: "Puede diferir del cambio de reservas del BCRA por valuaciones y otros movimientos."
     }
   };
 

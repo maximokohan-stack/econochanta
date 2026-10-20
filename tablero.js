@@ -32,6 +32,8 @@
   function esMensual(s) { return C.mensual(s.points); }
   function fechaDato(s) {
     var d = new Date(s.ultimo.d + "T12:00:00");
+    var n = s.points.length, paso = n > 2 ? (new Date(s.points[n - 1][0]).getTime() - new Date(s.points[0][0]).getTime()) / 86400000 / (n - 1) : 0;
+    if (paso > 70 && paso < 120) return (Math.floor(d.getMonth() / 3) + 1) + "º trim " + d.getFullYear();
     return esMensual(s) ? MESES[d.getMonth()] + " " + d.getFullYear() : d.getDate() + " " + MESES[d.getMonth()];
   }
 
@@ -61,6 +63,21 @@
     var n = pts.length;
     return { key: key, label: label, unit: unit, dec: dec, fuente: fuente || "", points: pts,
       ultimo: { d: pts[n - 1][0], v: pts[n - 1][1] }, previo: n > 1 ? { d: pts[n - 2][0], v: pts[n - 2][1] } : null };
+  }
+
+  // suma que se reinicia cada enero
+  function acumAnual(pts) {
+    var anio = "", acc = 0;
+    return pts.map(function (p) { var a = p[0].slice(0, 4); if (a !== anio) { anio = a; acc = 0; } acc += p[1]; return [p[0], acc]; });
+  }
+  // suma de los ultimos n datos (12 por defecto)
+  function movil12(pts, n) {
+    var k = n || 12, out = [];
+    for (var i = k - 1; i < pts.length; i++) {
+      var t = 0; for (var j = i - k + 1; j <= i; j++) t += pts[j][1];
+      out.push([pts[i][0], t]);
+    }
+    return out;
   }
 
   function dirClase(v) { return v === undefined || v === null ? "flat" : v > 0.0001 ? "up" : v < -0.0001 ? "down" : "flat"; }
@@ -110,13 +127,39 @@
     { id: "smvm", g: "Empleo y salarios", label: "Salario mínimo", key: "smvm", t: "level" },
     { id: "haber", g: "Empleo y salarios", label: "Haber mínimo jubilatorio", key: "haberMin", t: "level" },
 
-    { id: "resPrim", g: "Fiscal", label: "Resultado primario", key: "resPrimario", t: "level", bars: true, signed: true },
+    { id: "resPrim", g: "Fiscal", label: "Resultado primario", key: "resPrimario", t: "abs", bars: true, signed: true },
+    { id: "resFin", g: "Fiscal", label: "Resultado financiero", derive: "resFin", t: "abs", bars: true, signed: true },
+    { id: "intereses", g: "Fiscal", label: "Intereses netos de la deuda", key: "fIntereses", t: "level", bars: true },
+    { id: "resPrimAcum", g: "Fiscal", label: "Resultado primario, acumulado del año", derive: "resPrimAcum", t: "abs", signed: true },
+    { id: "resFinAcum", g: "Fiscal", label: "Resultado financiero, acumulado del año", derive: "resFinAcum", t: "abs", signed: true },
+    { id: "resPrim12", g: "Fiscal", label: "Resultado primario, últimos 12 meses", derive: "resPrim12", t: "abs", signed: true },
+    { id: "resFin12", g: "Fiscal", label: "Resultado financiero, últimos 12 meses", derive: "resFin12", t: "abs", signed: true },
     { id: "recaud", g: "Fiscal", label: "Recaudación tributaria", key: "recaudacion", t: "level" },
     { id: "recaudIA", g: "Fiscal", label: "Recaudación, variación interanual", key: "recaudacionIA", t: "rate" },
+    { id: "iva", g: "Fiscal", label: "IVA, neto de reintegros", key: "fIva", t: "level" },
+    { id: "ganancias", g: "Fiscal", label: "Impuesto a las Ganancias", key: "fGanancias", t: "level" },
+    { id: "aportes", g: "Fiscal", label: "Aportes y contribuciones a la seguridad social", key: "fAportes", t: "level" },
+    { id: "derExp", g: "Fiscal", label: "Derechos de exportación", key: "fDerExp", t: "level" },
+    { id: "debCred", g: "Fiscal", label: "Impuesto a los débitos y créditos bancarios", key: "fDebCred", t: "level" },
+    { id: "bienesPers", g: "Fiscal", label: "Bienes personales", key: "fBienesPers", t: "level" },
+    { id: "jubil", g: "Fiscal", label: "Jubilaciones y pensiones contributivas", key: "fJubil", t: "level" },
+    { id: "pami", g: "Fiscal", label: "Prestaciones del PAMI (INSSJP)", key: "fPami", t: "level" },
+    { id: "asig", g: "Fiscal", label: "Asignaciones familiares y universales", key: "fAsig", t: "level" },
+    { id: "pensNC", g: "Fiscal", label: "Pensiones no contributivas", key: "fPensNC", t: "level" },
+    { id: "salEstado", g: "Fiscal", label: "Salarios del Estado nacional", key: "fSalarios", t: "level" },
 
+    { id: "bpCC", g: "Balance de pagos", label: "Cuenta corriente", key: "bpCC", t: "abs", bars: true, signed: true },
+    { id: "bpCC12", g: "Balance de pagos", label: "Cuenta corriente, últimos 4 trimestres", derive: "bpCC12", t: "abs", signed: true },
+    { id: "bpCF", g: "Balance de pagos", label: "Cuenta financiera", key: "bpCF", t: "abs", bars: true, signed: true },
+    { id: "bpCap", g: "Balance de pagos", label: "Cuenta capital", key: "bpCap", t: "abs", bars: true, signed: true },
+    { id: "bpBienes", g: "Balance de pagos", label: "Balance de bienes", key: "bpBienes", t: "abs", bars: true, signed: true },
+    { id: "bpServicios", g: "Balance de pagos", label: "Balance de servicios", key: "bpServicios", t: "abs", bars: true, signed: true },
+    { id: "bpIngresos", g: "Balance de pagos", label: "Ingresos primarios y secundarios", derive: "bpIngresos", t: "abs", bars: true, signed: true },
+    { id: "bpEyO", g: "Balance de pagos", label: "Errores y omisiones netos", key: "bpEyO", t: "abs", bars: true, signed: true },
+    { id: "bpReservas", g: "Balance de pagos", label: "Activos de reserva (variación)", key: "bpReservas", t: "abs", bars: true, signed: true },
     { id: "expo", g: "Comercio exterior", label: "Exportaciones", key: "expo", t: "level" },
     { id: "impo", g: "Comercio exterior", label: "Importaciones", key: "impo", t: "level" },
-    { id: "saldo", g: "Comercio exterior", label: "Saldo comercial", derive: "saldo", t: "level", bars: true, signed: true },
+    { id: "saldo", g: "Comercio exterior", label: "Saldo comercial", derive: "saldo", t: "abs", bars: true, signed: true },
 
     { id: "reservas", g: "Dinero y tasas", label: "Reservas internacionales", key: "reservas", t: "level" },
     { id: "base", g: "Dinero y tasas", label: "Base monetaria", key: "baseMon", t: "level" },
@@ -184,9 +227,13 @@
     { id: "tasas", nombre: "Tasas y pesos", desc: "Tasas en pesos, base monetaria, depósitos y préstamos",
       titulo: "Tasas y pesos de un vistazo", clave: ["badlar", "tamar", "tasaDep", "base", "depositos", "prestamos"],
       grupos: [["Tasas en pesos", ["badlar", "tamar", "tasaDep", "tasaPers"]], ["Base monetaria y agregados", ["base", "circ", "m2", "depositos", "prestamos"]]] },
-    { id: "estado", nombre: "Cuentas del Estado", desc: "Resultado fiscal, recaudación, exportaciones, importaciones y saldo comercial",
-      titulo: "Cuentas del Estado de un vistazo", clave: ["resPrim", "recaud", "recaudIA", "expo", "impo", "saldo"],
-      grupos: [["Resultado fiscal y recaudación", ["resPrim", "recaud", "recaudIA"]], ["Comercio exterior", ["expo", "impo", "saldo"]]] },
+    { id: "estado", nombre: "Cuentas del Estado", desc: "Resultado fiscal, ingresos y gastos en tortas, comercio exterior y balance de pagos (cuenta corriente y financiera)",
+      titulo: "Cuentas del Estado de un vistazo", clave: ["resPrim", "resFin", "resPrim12", "recaud", "iva", "jubil", "saldo"],
+      grupos: [["Resultado fiscal", ["resPrim", "resFin", "intereses", "resPrimAcum", "resFinAcum", "resPrim12", "resFin12"]],
+        ["Ingresos", ["recaud", "recaudIA", "iva", "ganancias", "aportes", "derExp", "debCred", "bienesPers"]],
+        ["Gastos", ["jubil", "pami", "asig", "pensNC", "salEstado"]],
+        ["Comercio exterior", ["expo", "impo", "saldo"]],
+        ["Balance de pagos", ["bpCC", "bpCC12", "bpCF", "bpCap", "bpBienes", "bpServicios", "bpIngresos", "bpEyO", "bpReservas"]]] },
     { id: "actividad", nombre: "Actividad y empleo", desc: "EMAE, industria, construcción, PBI, desocupación y salarios",
       titulo: "Actividad y empleo de un vistazo", clave: ["emae", "ipi", "cemento", "pbi", "desoc", "salarios", "smvm"],
       grupos: [["Actividad", ["emae", "ipi", "cemento", "pbi"]], ["Empleo", ["desoc"]],
@@ -217,9 +264,9 @@
 
   // Hacia que lado esta "lo bueno" de cada indicador. Lo que no figura se muestra neutro.
   var MAL_SI_SUBE = ["brecha", "infM", "infIA", "nucleo", "regulados", "estacionales", "transporte", "salud", "educacion", "prendas",
-    "equipamiento", "comunicaciones", "bebidas", "desoc", "riesgo"];
+    "equipamiento", "comunicaciones", "bebidas", "desoc", "riesgo", "intereses"];
   var BIEN_SI_SUBE = ["emae", "ipi", "cemento", "pbi", "salarios", "salPriv", "salNoReg", "salPub", "ripte", "smvm", "haber",
-    "resPrim", "recaud", "expo", "saldo", "reservas", "reservasSinDEG", "compras"];
+    "bpCC", "bpCC12", "bpBienes", "resPrim", "resFin", "resPrimAcum", "resFinAcum", "resPrim12", "resFin12", "bpCC", "bpCC12", "bpBienes", "recaud", "expo", "saldo", "reservas", "reservasSinDEG", "compras"];
 
   function sentidoDe(id) { return MAL_SI_SUBE.indexOf(id) !== -1 ? "mal" : BIEN_SI_SUBE.indexOf(id) !== -1 ? "bien" : "neutro"; }
 
@@ -346,6 +393,12 @@
         if (s.previo) { it.dPrev = s.ultimo.v - s.previo.v; it.dPrevTxt = (it.dPrev > 0 ? "+" : "") + it.fmt(it.dPrev); }
         var acum = suma(s, 30);
         it.d12 = acum; it.d12Txt = "30 d: " + (acum > 0 ? "+" : "") + it.fmt(acum);
+      } else if (f.t === "abs") {
+        // una diferencia en las mismas unidades (para resultados que pueden ser negativos, donde un porcentaje no tiene sentido)
+        var conSigno = function (d) { return (d > 0 ? "+" : "") + it.fmt(d); };
+        if (s.previo) { it.dPrev = s.ultimo.v - s.previo.v; it.dPrevTxt = conSigno(it.dPrev); }
+        var h0 = valorHace(s, 12);
+        if (h0 !== null) { it.d12 = s.ultimo.v - h0; it.d12Txt = conSigno(it.d12); }
       } else {
         if (s.previo) {
           if (f.t === "level") { it.dPrev = (s.ultimo.v / s.previo.v - 1) * 100; it.dPrevTxt = signo(it.dPrev, 2) + "%"; }
@@ -372,6 +425,32 @@
           var of = {}; r[1].points.forEach(function (p) { of[p[0]] = p[1]; });
           var pts = r[0].points.filter(function (p) { return of[p[0]]; }).map(function (p) { return [p[0], (p[1] / of[p[0]] - 1) * 100]; });
           armarItem(f, mk("brecha", "%", 1, f.label, pts, "ArgentinaDatos"));
+        });
+      }
+      if (f.derive === "resFin" || f.derive === "resFinAcum" || f.derive === "resFin12") {
+        return Promise.all([S.cargar("resPrimario", 1300), S.cargar("fIntereses", 1300)]).then(function (r) {
+          var fin = S.restar(r[0], r[1], f.label);
+          var pts = f.derive === "resFinAcum" ? acumAnual(fin.points) : f.derive === "resFin12" ? movil12(fin.points) : fin.points;
+          armarItem(f, mk(f.id, "M ARS", 0, f.label, pts, "Secretaría de Hacienda (IMIG)"));
+        });
+      }
+      if (f.derive === "resPrimAcum" || f.derive === "resPrim12") {
+        return S.cargar("resPrimario", 1300).then(function (r) {
+          var pts = f.derive === "resPrimAcum" ? acumAnual(r.points) : movil12(r.points);
+          armarItem(f, mk(f.id, "M ARS", 0, f.label, pts, "Secretaría de Hacienda (IMIG)"));
+        });
+      }
+      if (f.derive === "bpCC12") {
+        return S.cargar("bpCC", 1300).then(function (r) { armarItem(f, mk(f.id, "M USD", 0, f.label, movil12(r.points, 4), "INDEC, balance de pagos")); });
+      }
+      if (f.derive === "bpIngresos") {
+        // lo que queda de la cuenta corriente al restar bienes y servicios: intereses, utilidades y transferencias
+        return Promise.all([S.cargar("bpCC", 1300), S.cargar("bpBienes", 1300), S.cargar("bpServicios", 1300)]).then(function (r) {
+          var b = {}, sv = {};
+          r[1].points.forEach(function (p) { b[p[0]] = p[1]; });
+          r[2].points.forEach(function (p) { sv[p[0]] = p[1]; });
+          var pts = r[0].points.filter(function (p) { return b[p[0]] !== undefined && sv[p[0]] !== undefined; }).map(function (p) { return [p[0], p[1] - b[p[0]] - sv[p[0]]]; });
+          armarItem(f, mk(f.id, "M USD", 0, f.label, pts, "INDEC, balance de pagos"));
         });
       }
       if (f.derive === "saldo") {
@@ -1036,7 +1115,9 @@
     estado: function (P) {
       var ok = function (id) { return P[id] && P[id].ok; };
       var out = [];
-      if (ok("resPrim")) out.push("El resultado primario de " + mesDe(P.resPrim) + " fue de " + P.resPrim.valor + ".");
+      if (ok("resPrim") && ok("resFin")) out.push("En " + mesDe(P.resPrim) + " el resultado primario fue de " + P.resPrim.valor + " y el financiero, de " + P.resFin.valor + ".");
+      else if (ok("resPrim")) out.push("El resultado primario de " + mesDe(P.resPrim) + " fue de " + P.resPrim.valor + ".");
+      if (ok("resPrimAcum")) out.push("En lo que va del año, el resultado primario acumula " + P.resPrimAcum.valor + ".");
       if (ok("recaudIA")) out.push("La recaudación tributaria de " + mesDe(P.recaudIA) + " varió " + P.recaudIA.valor + " frente a un año atrás.");
       if (ok("expo") && ok("impo") && ok("saldo")) out.push("En " + mesDe(P.saldo) + " se exportó " + P.expo.valor + " y se importó " + P.impo.valor + ": saldo comercial de " + P.saldo.valor + ".");
       return out;
@@ -1073,7 +1154,104 @@
   var IDS_DOLARES = ["oficial", "blue", "mep", "ccl", "brecha"];
   var IDS_DATOS = ["infM", "infIA", "riesgo", "reservas", "emae", "desoc", "resPrim", "saldo"];
 
-  var inicio = null;
+  /* ---------- buscador de la portada ---------- */
+
+  // palabras que la gente usa y no estan en el nombre del indicador
+  var ALIAS = {
+    oficial: "dolar banco nacion cotizacion", mep: "dolar bolsa", ccl: "dolar contado con liqui liquidacion", blue: "dolar paralelo informal cueva",
+    brecha: "diferencia dolar cepo", tcMay: "dolar mayorista", compras: "bcra compra dolares divisas reservas",
+    infM: "precios ipc suben aumentos costo de vida", infIA: "precios ipc anual aumentos costo de vida", nucleo: "precios ipc", regulados: "tarifas combustibles precios ipc",
+    uva: "credito hipotecario alquiler cuota", cer: "ajuste por inflacion indexacion", reservas: "dolares bcra caja", riesgo: "embi bonos deuda confianza",
+    badlar: "plazo fijo tasa interes", tamar: "plazo fijo tasa interes", tasaDep: "plazo fijo tasa interes", tasaPers: "prestamo credito tasa interes",
+    base: "emision pesos", circ: "billetes efectivo", emae: "actividad pbi economia crece", pbi: "actividad economia crecimiento", desoc: "desempleo trabajo empleo",
+    salarios: "sueldos paritarias", ripte: "sueldos", smvm: "sueldo minimo salario minimo", haber: "jubilacion minima jubilados",
+    resPrim: "superavit deficit fiscal ahorro gasto", resFin: "superavit deficit fiscal", intereses: "deuda pagos", recaud: "impuestos afip arca",
+    iva: "impuesto", ganancias: "impuesto", derExp: "retenciones campo agro impuesto", debCred: "impuesto al cheque", jubil: "jubilados anses gasto",
+    pami: "jubilados obra social", asig: "auh hijos anses", pensNC: "pensiones asistencia", salEstado: "empleados publicos sueldos",
+    expo: "comercio exterior ventas al exterior", impo: "comercio exterior compras al exterior", saldo: "balanza comercial superavit",
+    bpCC: "ccte cta cte cuenta corriente balance de pagos", bpCC12: "ccte cta cte cuenta corriente balance de pagos", bpCF: "financiera cuenta financiera balance de pagos",
+    bpCap: "balance de pagos", bpBienes: "balanza comercial balance de pagos", bpServicios: "turismo balance de pagos", bpIngresos: "intereses utilidades remesas balance de pagos",
+    bpEyO: "balance de pagos", bpReservas: "balance de pagos"
+  };
+
+  function norm(t) { return String(t).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, ""); }
+
+  function armarBuscador() {
+    var input = $("buscador-input"), lista = $("buscador-lista"), estado = $("buscador-estado");
+    if (!input) return;
+    var corpus = [];
+    SECCIONES.concat(SEC_OTRAS, OTRAS_INICIO).forEach(function (s) {
+      corpus.push({ tipo: "seccion", nombre: s.nombre, donde: s.id === "bcra" || s.id === "mercados" || secPorIdTemp(s.id) ? "Argentina" : "Sección", desc: s.desc, href: "#" + s.id, n: norm(s.nombre), x: norm(s.desc) });
+    });
+    Object.keys(DEFS).forEach(function (id) {
+      var d = DEFS[id], g = window.EconoGlosario && window.EconoGlosario[id];
+      var sec = SEC_DE[id] ? (SECCIONES.filter(function (x) { return x.id === SEC_DE[id]; })[0] || {}).nombre : "Banco Central";
+      corpus.push({ tipo: "indicador", nombre: d.label, donde: "Argentina › " + sec, desc: g ? g.q : "", href: "#" + (SEC_DE[id] || "bcra") + ":" + id,
+        n: norm(d.label), x: norm((ALIAS[id] || "") + " " + (g ? g.q + " " + g.c : "")) });
+    });
+    function secPorIdTemp(id) { return SECCIONES.some(function (x) { return x.id === id; }); }
+
+    var activo = -1;
+    function cerrar() { lista.hidden = true; lista.textContent = ""; activo = -1; }
+
+    function buscar() {
+      var q = norm(input.value.trim());
+      if (q.length < 2) { cerrar(); estado.textContent = ""; return; }
+      var pal = q.split(/\s+/);
+      var res = [];
+      corpus.forEach(function (c) {
+        var enNombre = 0, enTexto = 0, ok = true;
+        pal.forEach(function (w) {
+          if (c.n.indexOf(w) !== -1) enNombre++;
+          else if (c.x.indexOf(w) !== -1) enTexto++;
+          else ok = false;
+        });
+        if (!ok) return;
+        res.push({ c: c, p: enNombre * 10 + enTexto + (c.tipo === "seccion" ? 5 : 0) + (c.n.indexOf(q) === 0 ? 8 : 0) });
+      });
+      res.sort(function (a, b) { return b.p - a.p; });
+      var vistos = res.slice(0, 10);
+      lista.textContent = "";
+      lista.hidden = false;
+      if (!vistos.length) {
+        lista.appendChild(el("li", "buscador__vacio", "No encontré nada para \"" + input.value.trim() + "\". Probá con otra palabra, por ejemplo dólar, inflación o jubilaciones."));
+        estado.textContent = "Sin resultados";
+        return;
+      }
+      vistos.forEach(function (r) {
+        var li = el("li"), a = el("a"); a.href = r.c.href;
+        a.appendChild(el("span", "buscador__nombre", r.c.nombre));
+        a.appendChild(el("span", "buscador__donde", r.c.donde));
+        if (r.c.desc) a.appendChild(el("span", "buscador__desc", r.c.desc));
+        a.addEventListener("click", function () { input.value = ""; cerrar(); });
+        li.appendChild(a); lista.appendChild(li);
+      });
+      estado.textContent = vistos.length + (vistos.length === 1 ? " resultado" : " resultados") + (res.length > vistos.length ? " de " + res.length : "");
+    }
+
+    function mover(delta) {
+      var enlaces = [].slice.call(lista.querySelectorAll("a"));
+      if (!enlaces.length) return;
+      var i = enlaces.indexOf(document.activeElement);
+      i = i === -1 ? (delta > 0 ? 0 : enlaces.length - 1) : i + delta;
+      if (i < 0) { input.focus(); return; }
+      if (i >= enlaces.length) i = enlaces.length - 1;
+      enlaces[i].focus();
+    }
+
+    input.addEventListener("input", buscar);
+    input.addEventListener("keydown", function (ev) {
+      if (ev.key === "ArrowDown") { ev.preventDefault(); mover(1); }
+      else if (ev.key === "Escape") { input.value = ""; cerrar(); estado.textContent = ""; }
+    });
+    lista.addEventListener("keydown", function (ev) {
+      if (ev.key === "ArrowDown") { ev.preventDefault(); mover(1); }
+      else if (ev.key === "ArrowUp") { ev.preventDefault(); mover(-1); }
+      else if (ev.key === "Escape") { input.focus(); input.value = ""; cerrar(); estado.textContent = ""; }
+    });
+  }
+
+  var inicio = null, buscadorListo = false;
 
   function firmaFavs() { return Object.keys(favs).sort().join(","); }
 
@@ -1104,6 +1282,147 @@
     inicio = { firma: firmaFavs(), pintar: pintar };
     m.armar();
     pintar();
+  }
+
+  /* ---------- tortas de ingresos y gastos (Cuentas del Estado) ---------- */
+
+  // cada porcion suma varios rubros del informe de Hacienda (claves de FISCAL_Q en series.js)
+  var TORTA_ING = [
+    ["IVA", ["iva"]], ["Ganancias", ["ganancias"]], ["Aportes y contribuciones a la seguridad social", ["aportes"]],
+    ["Derechos de exportación", ["derExp"]], ["Débitos y créditos bancarios", ["debCred"]], ["Combustibles", ["combust"]],
+    ["Bienes personales", ["bienesPers"]], ["Derechos de importación", ["derImp"]],
+    ["Otros impuestos", ["impInternos", "restoTrib"]], ["Ingresos no tributarios y otros", ["noTrib", "restoCorr", "transfCorrIng"]],
+    ["Rentas de la propiedad", ["rentasFGS", "rentasResto"]], ["Ingresos de capital", ["ingCapital"]]
+  ];
+  var TORTA_GAS = [
+    ["Jubilaciones y pensiones contributivas", ["jubil"]], ["PAMI (INSSJP)", ["pami"]], ["Asignaciones familiares y AUH", ["asignaciones"]],
+    ["Pensiones no contributivas", ["pensNC"]], ["Otros programas sociales", ["otrosProg"]],
+    ["Subsidios económicos (energía, transporte y otros)", ["subsEnergia", "subsTransp", "subsOtras"]], ["Salarios", ["salarios"]],
+    ["Transferencias a provincias", ["tpDesarrollo", "tpEduc", "tpOtras", "tpSalud", "tpSegSocial", "capAguaP", "capEducP", "capEnergP", "capOtrosP", "capTranspP", "capViviP", "ffs"]],
+    ["Universidades", ["univ"]], ["Obras y gastos de capital de la Nación", ["capAguaN", "capEducN", "capEnergN", "capOtrosN", "capTranspN", "capViviN"]],
+    ["Otros gastos de funcionamiento y corrientes", ["otrosFunc", "defEmpresas", "otrosCorr"]]
+  ];
+  var MAX_PORCIONES = 8;
+  var MESES_L = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+
+  function rangoTexto(desde, hasta) {
+    var a = new Date(desde + "T12:00:00"), b = new Date(hasta + "T12:00:00");
+    b.setMonth(b.getMonth() + 2);
+    return MESES_L[a.getMonth()] + (a.getFullYear() !== b.getFullYear() ? " de " + a.getFullYear() : "") + " a " + MESES_L[b.getMonth()] + " de " + b.getFullYear();
+  }
+
+  function armarEstado() {
+    var raiz = $("estado-extras");
+    var cab = el("div", "estado-extras__cab");
+    var tit = el("div");
+    var h = el("h2", "title", "Ingresos y gastos del Estado nacional");
+    tit.appendChild(h);
+    tit.appendChild(el("p", "sub", "En qué se gasta y de dónde sale la plata, por rubro, según el informe mensual de Hacienda."));
+    cab.appendChild(tit);
+    var chipsBox = el("div", "chips chips--sm"); chipsBox.setAttribute("role", "group"); chipsBox.setAttribute("aria-label", "Período de las tortas");
+    cab.appendChild(chipsBox);
+    raiz.appendChild(cab);
+    var cuerpo = el("div"); raiz.appendChild(cuerpo);
+    cuerpo.appendChild(esqueleto(260));
+
+    var datos = null, periodos = [], actual = "ult";
+
+    function armarPeriodos() {
+      var fechas = datos.resPrim.map(function (p) { return p[0]; });
+      var ult = fechas[fechas.length - 1], anio = ult.slice(0, 4);
+      var ytd = fechas.filter(function (f) { return f.slice(0, 4) === anio; });
+      var ultimos4 = fechas.slice(-4);
+      var anioAnt = String(Number(anio) - 1);
+      var previo = fechas.filter(function (f) { return f.slice(0, 4) === anioAnt; });
+      periodos = [{ id: "ult", nombre: "Último trimestre", fechas: [ult] }];
+      if (ytd.length > 1) periodos.push({ id: "ytd", nombre: "Acumulado de " + anio, fechas: ytd });
+      if (ultimos4.length === 4) periodos.push({ id: "12m", nombre: "Últimos 4 trimestres", fechas: ultimos4 });
+      if (previo.length === 4) periodos.push({ id: "ant", nombre: "Año " + anioAnt, fechas: previo });
+      periodos.forEach(function (p) { p.texto = rangoTexto(p.fechas[0], p.fechas[p.fechas.length - 1]); });
+    }
+
+    function suma(clave, fechas) {
+      var set = {}; fechas.forEach(function (f) { set[f] = true; });
+      return (datos[clave] || []).reduce(function (a, p) { return set[p[0]] && p[1] !== null ? a + p[1] : a; }, 0);
+    }
+
+    function porciones(defs, fechas) {
+      var l = defs.map(function (d) {
+        return { label: d[0], value: d[1].reduce(function (a, k) { return a + suma(k, fechas); }, 0) };
+      }).filter(function (x) { return x.value > 0; }).sort(function (a, b) { return b.value - a.value; });
+      var total = l.reduce(function (a, x) { return a + x.value; }, 0);
+      var grafico = l;
+      if (l.length > MAX_PORCIONES) {
+        var resto = l.slice(MAX_PORCIONES - 1);
+        grafico = l.slice(0, MAX_PORCIONES - 1).concat([{
+          label: "Otros (" + resto.length + " rubros)", value: resto.reduce(function (a, x) { return a + x.value; }, 0), otros: true,
+          nota: resto.map(function (x) { return x.label; }).join(", ")
+        }]);
+      }
+      return { lista: l, grafico: grafico, total: total };
+    }
+
+    function fm(v) { return fmtUnit("M ARS", v); }
+
+    function tarjetaTorta(titulo, defs, fechas, pie) {
+      var card = el("article", "card");
+      card.appendChild(el("h3", "label", titulo));
+      var cb = el("div"); card.appendChild(cb);
+      var p = porciones(defs, fechas);
+      C.pie(cb, { items: p.grafico, fmt: fm, titulo: titulo, centro: ["Total de los rubros", fm(p.total)] });
+      var det = el("details", "torta__detalle");
+      det.appendChild(el("summary", "", "Ver todos los rubros (" + p.lista.length + ")"));
+      var t = el("table", "tabla"), th = el("thead"), trh = el("tr");
+      [["Rubro", ""], ["Monto", "num"], ["Parte", "num"]].forEach(function (c) { var x = el("th", c[1], c[0]); x.scope = "col"; trh.appendChild(x); });
+      th.appendChild(trh); t.appendChild(th);
+      t.appendChild(el("caption", "sr-only", titulo + ", todos los rubros"));
+      var tb = el("tbody");
+      p.lista.forEach(function (x) {
+        var r = el("tr"); r.appendChild(el("td", "", x.label)); r.appendChild(el("td", "num", fm(x.value))); r.appendChild(el("td", "num", num(x.value / p.total * 100, 1) + "%")); tb.appendChild(r);
+      });
+      t.appendChild(tb);
+      var w = el("div", "tabla__wrap"); w.appendChild(t); det.appendChild(w);
+      card.appendChild(det);
+      if (pie) card.appendChild(el("p", "torta__pie", pie));
+      return { card: card, total: p.total };
+    }
+
+    function pintar() {
+      var per = periodos.filter(function (x) { return x.id === actual; })[0] || periodos[0];
+      chipsBox.textContent = "";
+      periodos.forEach(function (x) { chipsBox.appendChild(chip(x.nombre, x.id === per.id, function () { actual = x.id; pintar(); })); });
+      cuerpo.textContent = "";
+      cuerpo.appendChild(el("p", "hint", "Período: " + per.texto + ". Montos en pesos corrientes de cada momento, sin ajustar por inflación."));
+      var g = el("div", "tortas");
+      var ing = tarjetaTorta("De dónde sale la plata (ingresos)", TORTA_ING, per.fechas);
+      var gas = tarjetaTorta("En qué se gasta (gastos primarios)", TORTA_GAS, per.fechas, "No incluye los intereses de la deuda, que se muestran aparte.");
+      g.appendChild(ing.card); g.appendChild(gas.card);
+      cuerpo.appendChild(g);
+
+      var rp = suma("resPrim", per.fechas), it = suma("intereses", per.fechas), rf = suma("resFin", per.fechas);
+      var res = el("article", "card");
+      res.appendChild(el("h3", "label", "Cómo cierra la cuenta"));
+      var st = el("div", "stats");
+      [["Ingresos (suma de rubros)", fm(ing.total)], ["Gastos primarios (suma de rubros)", fm(gas.total)], ["Resultado primario oficial", fm(rp)],
+        ["Intereses netos de la deuda", fm(it)], ["Resultado financiero oficial", fm(rf)]].forEach(function (x) {
+        var d = el("div", "stat"); d.appendChild(el("span", "", x[0])); d.appendChild(el("b", "", x[1])); st.appendChild(d);
+      });
+      res.appendChild(st);
+      res.appendChild(el("p", "torta__pie", "Resultado primario: ingresos menos gastos, sin contar intereses. Resultado financiero: el primario menos los intereses. Los rubros detallados que publica Hacienda pueden no sumar exactamente el total oficial. Es el Estado nacional no financiero: no incluye a las provincias."));
+      cuerpo.appendChild(res);
+      cuerpo.appendChild(el("p", "hint", "Fuente: Secretaría de Hacienda, Informe Mensual de Ingresos y Gastos del Sector Público Nacional (IMIG), vía datos.gob.ar."));
+    }
+
+    function cargar() {
+      cuerpo.textContent = ""; cuerpo.appendChild(esqueleto(260));
+      S.fiscalTrimestral().then(function (d) { datos = d; armarPeriodos(); pintar(); }, function () {
+        cuerpo.textContent = "";
+        var err = el("div", "chart__error"); err.appendChild(el("p", "", "No se pudieron cargar los ingresos y gastos."));
+        var b = el("button", "btn btn--ghost btn--sm", "Reintentar"); b.type = "button"; b.addEventListener("click", cargar);
+        err.appendChild(b); cuerpo.appendChild(err);
+      });
+    }
+    cargar();
   }
 
   /* ---------- glosario ---------- */
@@ -1162,6 +1481,7 @@
   function mostrar(vista, sub) {
     if (vista === "inicio") {
       if (!tilesInicio) { tilesInicio = true; tiles($("inicio-tiles"), OTRAS_INICIO); }
+      if (!buscadorListo) { buscadorListo = true; armarBuscador(); }
       if (!inicio || inicio.firma !== firmaFavs()) armarInicio();
     } else if (vista === "argentina") {
       if (!hubListo) { hubListo = true; tiles($("argentina-tiles")); }
@@ -1170,6 +1490,7 @@
       if (!mesasSec[vista]) {
         mesasSec[vista] = crearMesa({ filas: filasDe(sec), raiz: $("mesa-" + vista), vista: vista, titulo: sec.titulo, clave: sec.clave, frases: FRASES[vista] });
         mesasSec[vista].armar();
+        if (vista === "estado") armarEstado();
       }
       if (sub) mesasSec[vista].abrir(sub); else mesasSec[vista].cerrar();
     } else if (vista === "bcra") {

@@ -24,12 +24,12 @@ La estructura sigue la de pulsomacro.com.ar: una portada, un menú de Argentina 
 
 | Sección | Contenido |
 |---|---|
-| **Inicio** | Dólares hoy, los datos del día (inflación, riesgo país, reservas, actividad, desocupación, resultado fiscal, saldo comercial), tus favoritos y un menú de "¿Qué querés ver?" |
+| **Inicio** | Buscador de indicadores y secciones, dólares hoy, los datos del día (inflación, riesgo país, reservas, actividad, desocupación, resultado fiscal, saldo comercial), tus favoritos y un menú de "¿Qué querés ver?" |
 | **Argentina** | Menú de temas, con un submenú que queda a la vista en cada uno |
 | &nbsp;&nbsp;Dólares | Oficial, MEP, CCL, blue, mayorista, brecha y compras de divisas del BCRA. `#dolares` |
 | &nbsp;&nbsp;Inflación y reservas | Inflación mensual e interanual, núcleo, regulados y estacionales, 7 rubros, UVA, CER, reservas y riesgo país. `#inflacion` |
 | &nbsp;&nbsp;Tasas y pesos | BADLAR, TAMAR, tasas de depósitos y préstamos, base monetaria, circulación, M2, depósitos y préstamos. `#tasas` |
-| &nbsp;&nbsp;Cuentas del Estado | Resultado primario, recaudación, exportaciones, importaciones y saldo comercial. `#estado` |
+| &nbsp;&nbsp;Cuentas del Estado | Resultado fiscal (primario y financiero, mensual, acumulado del año y últimos 12 meses), intereses, impuestos y gastos por rubro, tortas de ingresos y gastos, comercio exterior y balance de pagos (cuenta corriente, financiera y capital). `#estado` |
 | &nbsp;&nbsp;Actividad y empleo | EMAE, industria, construcción, PBI, desocupación, salarios, salario mínimo y haber mínimo. `#actividad` |
 | &nbsp;&nbsp;Banco Central | 27 indicadores del BCRA en 5 grupos, gráficos de tasas, compras de divisas, tipo de cambio, depósitos y crédito, factores de la base monetaria y 39 monedas. `#bcra` |
 | &nbsp;&nbsp;Acciones y bonos | Acciones y bonos en vivo (con demora) con búsqueda y orden. `#mercados` |
@@ -43,6 +43,12 @@ Cada indicador se puede abrir por URL: `#inflacion:infM`. Los links viejos `#tab
 Lo que pulsomacro tiene y Econochanta todavía no: Ganadería (Cañuelas, hacienda, carne, granos) y El mundo (EE. UU. y otros países). Las fuentes abiertas son difíciles o piden clave.
 
 Es oscuro por defecto, con una variante clara (botón arriba a la derecha).
+
+### Ingresos y gastos del Estado
+
+Al pie de Cuentas del Estado hay dos tortas: de dónde sale la plata (IVA, Ganancias, aportes, retenciones, impuesto al cheque y otros) y en qué se gasta (jubilaciones, sueldos, subsidios, asignaciones, PAMI, transferencias a provincias y otros). Se pueden ver por último trimestre, acumulado del año, últimos 4 trimestres y año anterior, con la lista completa de rubros debajo de cada torta.
+
+Los datos son del informe mensual de ingresos y gastos del Estado nacional de la Secretaría de Hacienda (IMIG), vía datos.gob.ar. El detalle por rubro solo está completo por trimestre, así que las tortas usan datos trimestrales; los indicadores de la lista usan los mensuales disponibles. Los montos están en pesos de cada período, sin ajustar por inflación, y los rubros detallados pueden no sumar exactamente el total oficial.
 
 ### Cómo se lee
 
@@ -74,7 +80,7 @@ Es una aproximación para decidir, no asesoramiento financiero.
 | Cotizaciones del dólar | DolarAPI |
 | Histórico del dólar, inflación, UVA, riesgo país, tasas de plazo fijo | ArgentinaDatos |
 | Reservas, base monetaria, depósitos, préstamos, tasas, CER | API del BCRA v4.0 |
-| Inflación por rubro, EMAE, IPI, PBI, salarios, desocupación, comercio, resultado fiscal, recaudación, SMVM, haber mínimo, RIPTE | datos.gob.ar (INDEC, Hacienda, ARCA, Trabajo, ANSES) |
+| Inflación por rubro, EMAE, IPI, PBI, salarios, desocupación, comercio, balance de pagos, resultado fiscal, ingresos y gastos por rubro, recaudación, SMVM, haber mínimo, RIPTE | datos.gob.ar (INDEC, Hacienda, ARCA, Trabajo, ANSES) |
 | Acciones y bonos | data912 (con demora) |
 | Noticias | `news.json`, generado por `scripts/fetch_news.py` desde RSS públicos |
 

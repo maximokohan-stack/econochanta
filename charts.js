@@ -2,6 +2,7 @@
  * Graficos SVG propios, sin dependencias.
  *   line(el, opts)   lineas con ejes, leyenda, valor final y tooltip
  *   bars(el, opts)   barras con signo (positivas y negativas)
+ *   pie(el, opts)    torta (dona) con leyenda de valores y porcentajes
  *   spark(el, pts)   sparkline para tarjetas
  *   csv(nombre, series)  descarga de datos
  * Las series no dependen solo del color: cada linea usa un trazo distinto y lleva rotulo.
@@ -237,6 +238,72 @@
     observar(el, function () { bars(el, o); });
   }
 
+  /* ---------- torta (dona) ---------- */
+
+  // items: [{ label, value, nota }] en el orden en que se quieren mostrar (se descartan los que no son positivos).
+  // o: { items, fmt, titulo, centro: [rotulo, valor] }. La leyenda con valores y porcentajes es la version accesible.
+  function pie(el, o) {
+    el.textContent = "";
+    var items = (o.items || []).filter(function (x) { return x.value > 0; });
+    var total = items.reduce(function (a, x) { return a + x.value; }, 0);
+    var fmt = o.fmt || function (v) { return String(Math.round(v)); };
+    if (!items.length || total <= 0) { el.appendChild(h("p", "chart__empty", "No hay datos disponibles.")); return; }
+
+    var wrap = h("div", "pie");
+    var size = 220, cx = size / 2, cy = size / 2, R = 100, r = 62;
+    var svg = s("svg", { viewBox: "0 0 " + size + " " + size, class: "pie__svg", role: "img" });
+    var resumen = items.slice(0, 3).map(function (x) { return x.label + " " + num1(x.value / total * 100) + "%"; }).join(", ");
+    svg.setAttribute("aria-label", (o.titulo || "Gráfico de torta") + ". Total " + fmt(total) + ". Mayores: " + resumen + ". El detalle está en la lista de al lado.");
+
+    var ang = -Math.PI / 2;
+    var piezas = [];
+    items.forEach(function (x, i) {
+      var frac = x.value / total, fin = ang + frac * Math.PI * 2;
+      var color = "var(--p" + (i % 9 + 1) + ")";
+      if (x.otros) color = "var(--p9)";
+      var path;
+      if (frac > 0.9999) {
+        path = s("circle", { cx: cx, cy: cy, r: (R + r) / 2, fill: "none", stroke: color, "stroke-width": R - r });
+      } else {
+        var p = function (rad, a) { return (cx + rad * Math.cos(a)).toFixed(2) + " " + (cy + rad * Math.sin(a)).toFixed(2); };
+        var grande = frac > 0.5 ? 1 : 0;
+        path = s("path", {
+          d: "M" + p(R, ang) + " A" + R + " " + R + " 0 " + grande + " 1 " + p(R, fin) + " L" + p(r, fin) + " A" + r + " " + r + " 0 " + grande + " 0 " + p(r, ang) + " Z",
+          fill: color, stroke: "var(--surface)", "stroke-width": 2
+        });
+      }
+      path.setAttribute("class", "pie__pieza");
+      path.appendChild(s("title", null, x.label + ": " + fmt(x.value) + " (" + num1(frac * 100) + "%)"));
+      svg.appendChild(path);
+      piezas.push(path);
+      ang = fin;
+    });
+    if (o.centro) {
+      svg.appendChild(s("text", { x: cx, y: cy - 6, class: "pie__c1", "text-anchor": "middle" }, o.centro[0]));
+      svg.appendChild(s("text", { x: cx, y: cy + 16, class: "pie__c2", "text-anchor": "middle" }, o.centro[1]));
+    }
+    wrap.appendChild(svg);
+
+    var ul = h("ul", "pie__leyenda");
+    items.forEach(function (x, i) {
+      var li = h("li", "pie__item");
+      var sw = h("span", "pie__color"); sw.style.background = x.otros ? "var(--p9)" : "var(--p" + (i % 9 + 1) + ")"; sw.setAttribute("aria-hidden", "true");
+      li.appendChild(sw);
+      li.appendChild(h("span", "pie__nombre", x.label));
+      li.appendChild(h("span", "pie__valor", fmt(x.value)));
+      li.appendChild(h("span", "pie__pct", num1(x.value / total * 100) + "%"));
+      if (x.nota) li.title = x.nota;
+      var resaltar = function (on) { piezas.forEach(function (pz, j) { pz.classList.toggle("pie__pieza--tenue", on && j !== i); }); };
+      li.addEventListener("mouseenter", function () { resaltar(true); });
+      li.addEventListener("mouseleave", function () { resaltar(false); });
+      ul.appendChild(li);
+    });
+    wrap.appendChild(ul);
+    el.appendChild(wrap);
+  }
+
+  function num1(v) { return v.toLocaleString("es-AR", { minimumFractionDigits: 1, maximumFractionDigits: 1 }); }
+
   /* ---------- sparkline ---------- */
 
   function spark(svg, pts, color) {
@@ -272,5 +339,5 @@
     setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
   }
 
-  window.EconoCharts = { line: line, bars: bars, spark: spark, csv: csv, fechaLarga: fechaLarga, mensual: mensual };
+  window.EconoCharts = { line: line, bars: bars, pie: pie, spark: spark, csv: csv, fechaLarga: fechaLarga, mensual: mensual };
 })();

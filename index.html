@@ -61,6 +61,12 @@
           <button class="btn btn--ghost btn--sm" id="refrescar" type="button">Actualizar</button>
         </div>
       </div>
+      <div class="buscador" role="search">
+        <label class="sr-only" for="buscador-input">Buscar un indicador o una sección</label>
+        <input id="buscador-input" class="buscador__input" type="search" placeholder="Buscar: dólar, inflación, jubilaciones, cuenta corriente…" autocomplete="off" aria-controls="buscador-lista">
+        <p class="sr-only" id="buscador-estado" role="status"></p>
+        <ul class="buscador__lista" id="buscador-lista" hidden></ul>
+      </div>
       <h2 class="resumen__sub">Dólares hoy</h2>
       <div class="tarjetas" id="inicio-dolares"></div>
       <h2 class="resumen__sub">Los datos del día</h2>
@@ -97,6 +103,7 @@
     <section id="vista-estado" class="vista" aria-labelledby="h-estado" hidden>
       <h1 id="h-estado" class="title">Cuentas del Estado</h1>
       <div id="mesa-estado"></div>
+      <div id="estado-extras" class="estado-extras"></div>
     </section>
     <section id="vista-actividad" class="vista" aria-labelledby="h-actividad" hidden>
       <h1 id="h-actividad" class="title">Actividad y empleo</h1>

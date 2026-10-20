@@ -64,6 +64,30 @@
     recaudacion: { src: "dg", id: "172.3_TL_RECAION_M_0_0_17", label: "Recaudación tributaria total", unit: "M ARS", dec: 0, fuente: "ARCA", ttl: 6 * HORA },
     recaudacionIA: { src: "dg", id: "172.3_TL_RECA_IA_M_0_0_24", mult: 100, label: "Recaudación, variación interanual", unit: "%", dec: 1, fuente: "ARCA", ttl: 6 * HORA },
 
+
+    // Ingresos y gastos del Estado nacional (IMIG, mensual)
+    fIva: { src: "dg", id: "452.2_IVA_NETO_RROS_0_T_19_67", label: "IVA, neto de reintegros", unit: "M ARS", dec: 0, fuente: "Secretaría de Hacienda (IMIG)", ttl: 6 * HORA },
+    fGanancias: { src: "dg", id: "452.2_GANANCIASIAS_0_T_9_51", label: "Impuesto a las Ganancias", unit: "M ARS", dec: 0, fuente: "Secretaría de Hacienda (IMIG)", ttl: 6 * HORA },
+    fAportes: { src: "dg", id: "452.2_APORTES_COIAL_0_T_39_29", label: "Aportes y contribuciones a la seguridad social", unit: "M ARS", dec: 0, fuente: "Secretaría de Hacienda (IMIG)", ttl: 6 * HORA },
+    fDerExp: { src: "dg", id: "452.2_DERECHOS_EION_0_T_20_42", label: "Derechos de exportación", unit: "M ARS", dec: 0, fuente: "Secretaría de Hacienda (IMIG)", ttl: 6 * HORA },
+    fDebCred: { src: "dg", id: "452.2_DEBITOS_CRTOS_0_T_16_22", label: "Impuesto a los débitos y créditos bancarios", unit: "M ARS", dec: 0, fuente: "Secretaría de Hacienda (IMIG)", ttl: 6 * HORA },
+    fBienesPers: { src: "dg", id: "452.2_BIENES_PERLES_0_T_17_26", label: "Bienes personales", unit: "M ARS", dec: 0, fuente: "Secretaría de Hacienda (IMIG)", ttl: 6 * HORA },
+    fJubil: { src: "dg", id: "452.2_JUBILACIONVAS_0_T_36_18", label: "Jubilaciones y pensiones contributivas", unit: "M ARS", dec: 0, fuente: "Secretaría de Hacienda (IMIG)", ttl: 6 * HORA },
+    fPami: { src: "dg", id: "452.2_PRESTACIONSJP_0_T_19_86", label: "Prestaciones del PAMI (INSSJP)", unit: "M ARS", dec: 0, fuente: "Secretaría de Hacienda (IMIG)", ttl: 6 * HORA },
+    fAsig: { src: "dg", id: "452.2_ASIGNACIONIJO_0_T_26_67", label: "Asignaciones familiares y universales", unit: "M ARS", dec: 0, fuente: "Secretaría de Hacienda (IMIG)", ttl: 6 * HORA },
+    fPensNC: { src: "dg", id: "452.2_PENSIONES_VAS_0_T_26_164", label: "Pensiones no contributivas", unit: "M ARS", dec: 0, fuente: "Secretaría de Hacienda (IMIG)", ttl: 6 * HORA },
+    fSalarios: { src: "dg", id: "452.2_SALARIOSIOS_0_T_8_22", label: "Salarios del Estado nacional", unit: "M ARS", dec: 0, fuente: "Secretaría de Hacienda (IMIG)", ttl: 6 * HORA },
+    fIntereses: { src: "dg", id: "452.3_INTERESES_TOS_0_M_15_62", label: "Intereses netos de la deuda", unit: "M ARS", dec: 0, fuente: "Secretaría de Hacienda (IMIG)", ttl: 6 * HORA },
+
+    // Balance de pagos (INDEC, trimestral, millones de dolares)
+    bpCC: { src: "dg", id: "160.2_TL_CUENNTE_0_T_22", label: "Cuenta corriente", unit: "M USD", dec: 0, fuente: "INDEC, balance de pagos", ttl: 6 * HORA },
+    bpCF: { src: "dg", id: "160.2_TL_CUENERA_0_T_23", label: "Cuenta financiera", unit: "M USD", dec: 0, fuente: "INDEC, balance de pagos", ttl: 6 * HORA },
+    bpCap: { src: "dg", id: "160.2_TL_CUENTAL_0_T_20", label: "Cuenta capital", unit: "M USD", dec: 0, fuente: "INDEC, balance de pagos", ttl: 6 * HORA },
+    bpBienes: { src: "dg", id: "160.2_CTA_CORNES_0_T_46", label: "Balance de bienes", unit: "M USD", dec: 0, fuente: "INDEC, balance de pagos", ttl: 6 * HORA },
+    bpServicios: { src: "dg", id: "160.2_CTA_CORIOS_0_T_49", label: "Balance de servicios", unit: "M USD", dec: 0, fuente: "INDEC, balance de pagos", ttl: 6 * HORA },
+    bpEyO: { src: "dg", id: "160.2_ERES_OMTOS_0_T_23", label: "Errores y omisiones netos", unit: "M USD", dec: 0, fuente: "INDEC, balance de pagos", ttl: 6 * HORA },
+    bpReservas: { src: "dg", id: "160.2_AVOS_RERVA_0_T_15", label: "Activos de reserva", unit: "M USD", dec: 0, fuente: "INDEC, balance de pagos", ttl: 6 * HORA },
+
     // Comercio exterior
     expo: { src: "dg", id: "74.3_IET_0_M_16", label: "Exportaciones", unit: "M USD", dec: 0, fuente: "INDEC", ttl: 6 * HORA },
     impo: { src: "dg", id: "74.3_IIT_0_M_25", label: "Importaciones", unit: "M USD", dec: 0, fuente: "INDEC", ttl: 6 * HORA },
@@ -232,6 +256,103 @@
     })).then(function () { return { series: out, errores: errores }; });
   }
 
+  var FISCAL_Q = {
+    iva: "452.1_IVA_NETO_RROS_0_A_19_89",
+    ganancias: "452.1_GANANCIASIAS_0_A_9_40",
+    aportes: "452.1_APORTES_COIAL_0_A_39_80",
+    derExp: "452.1_DERECHOS_EION_0_A_20_86",
+    derImp: "452.1_DERECHOS_IION_0_A_20_41",
+    debCred: "452.1_DEBITOS_CRTOS_0_A_16_94",
+    combust: "452.1_COMBUSTIBLLES_0_A_12_22",
+    bienesPers: "452.1_BIENES_PERLES_0_A_17_92",
+    impInternos: "452.1_IMPUESTOS_NOS_0_A_18_32",
+    restoTrib: "452.1_RESTO_TRIBIOS_0_A_17_88",
+    ingCapital: "452.1_INGRESOS_CTAL_0_A_16_68",
+    noTrib: "452.1_INGRESOS_NIOS_0_A_23_61",
+    restoCorr: "452.1_RESTO_INGRTES_0_A_25_63",
+    transfCorrIng: "452.1_TRANSFERENTES_0_A_25_23",
+    rentasFGS: "452.1_FGS_COBRADERO_0_A_53_62",
+    rentasResto: "452.1_RESTO_RENTDAD_0_A_22_48",
+    otrosFunc: "452.2_OTROS_GASTNTO_0_T_27_58",
+    salarios: "452.2_SALARIOSIOS_0_T_8_28",
+    defEmpresas: "452.2_OTROS_CORRCAS_0_T_52_21",
+    otrosCorr: "452.2_OTROS_CORRSTO_0_T_22_15",
+    univ: "452.2_OTROS_CORRDES_0_T_45_20",
+    asignaciones: "452.2_ASIGNACIONIJO_0_T_26_195",
+    jubil: "452.1_JUBILACIONVAS_0_A_36_30",
+    otrosProg: "452.2_OTROS_PROGMAS_0_T_15_7",
+    pensNC: "452.2_PENSIONES_VAS_0_T_26_93",
+    pami: "452.2_PRESTACIONSJP_0_T_19_19",
+    subsEnergia: "452.2_ENERGIAGIA_0_T_7_79",
+    subsOtras: "452.2_OTRAS_FUNCNES_0_T_15_27",
+    subsTransp: "452.2_TRANSPORTERTE_0_T_10_81",
+    tpDesarrollo: "452.2_TRANSFERENIAL_0_T_54_18",
+    tpEduc: "452.2_TRANSFERENION_0_T_46_39",
+    tpOtras: "452.2_TRANSFERENRAS_0_T_42_54",
+    tpSalud: "452.2_TRANSFERENLUD_0_T_42_99",
+    tpSegSocial: "452.2_TRANSFERENIAL_0_T_53_76",
+    capAguaN: "452.2_CAPITAL_AGION_0_T_41_79",
+    capAguaP: "452.2_CAPITAL_AGIAS_0_T_59_85",
+    capEducN: "452.2_CAPITAL_EDION_0_T_24_98",
+    capEducP: "452.2_CAPITAL_EDIAS_0_T_42_72",
+    capEnergN: "452.2_CAPITAL_ENION_0_T_22_25",
+    capEnergP: "452.2_CAPITAL_ENIAS_0_T_40_14",
+    ffs: "452.2_FONDO_FEDERIO_0_T_23_1",
+    capOtrosN: "452.2_CAPITAL_OTION_0_T_20_97",
+    capOtrosP: "452.2_CAPITAL_OTIAS_0_T_38_17",
+    capTranspN: "452.2_CAPITAL_TRION_0_T_25_18",
+    capTranspP: "452.2_CAPITAL_TRIAS_0_T_43_2",
+    capViviN: "452.2_CAPITAL_VIION_0_T_23_91",
+    capViviP: "452.2_CAPITAL_VIIAS_0_T_41_33",
+    resPrim: "452.2_RESULTADO_RIO_0_T_18_21",
+    intereses: "452.2_INTERESES_TOS_0_T_15_4",
+    resFin: "452.2_RESULTADO_ERO_0_T_20_32"
+  };
+
+  /* Ingresos y gastos por rubro: el informe de Hacienda (IMIG) solo trae el detalle completo por trimestre.
+     Se piden de a 25 series (el limite de la API es 40) y se devuelven como { clave: [[fecha, valor], ...] }.
+     La fecha es el inicio del trimestre (2026-04-01 es abril a junio). */
+  var fiscalMem = null, fiscalEnCurso = null;
+
+  function fiscalTrimestral() {
+    if (fiscalMem && Date.now() - fiscalMem.t < 6 * HORA) return Promise.resolve(fiscalMem.v);
+    try {
+      var raw = localStorage.getItem("econochanta:v2:fiscalq");
+      if (raw) { var o = JSON.parse(raw); if (Date.now() - o.t < 6 * HORA) { fiscalMem = o; return Promise.resolve(o.v); } }
+    } catch (e) { /* sin storage */ }
+    if (fiscalEnCurso) return fiscalEnCurso;
+    var claves = Object.keys(FISCAL_Q), lotes = [];
+    for (var i = 0; i < claves.length; i += 25) lotes.push(claves.slice(i, i + 25));
+    var hoy = iso(new Date());
+    var pedirLote = function (lote) {
+      var ids = lote.map(function (k) { return FISCAL_Q[k]; }).join(",");
+      var intentar = function (limites, j) {
+        return getJSON(DG0 + "&ids=" + ids + "&sort=desc&limit=" + limites[j]).then(function (r) {
+          if ((!r.data || !r.data.length) && j + 1 < limites.length) return intentar(limites, j + 1);
+          return r.data || [];
+        });
+      };
+      return intentar([40, 32, 24, 16], 0);
+    };
+    fiscalEnCurso = Promise.all(lotes.map(pedirLote)).then(function (res) {
+      var out = {};
+      res.forEach(function (filas, li) {
+        lotes[li].forEach(function (k, ci) {
+          out[k] = filas.filter(function (f) { return f[0] <= hoy; })
+            .map(function (f) { return [f[0], f[ci + 1] === null || f[ci + 1] === undefined ? null : Number(f[ci + 1])]; })
+            .sort(function (a, b) { return a[0] < b[0] ? -1 : 1; });
+        });
+      });
+      if (!out.resPrim || !out.resPrim.length) throw new Error("sin datos fiscales");
+      fiscalMem = { t: Date.now(), v: out };
+      try { localStorage.setItem("econochanta:v2:fiscalq", JSON.stringify(fiscalMem)); } catch (e) { /* cuota */ }
+      return out;
+    });
+    var limpiar = function () { fiscalEnCurso = null; };
+    fiscalEnCurso.then(limpiar, limpiar);
+    return fiscalEnCurso;
+  }
+
   /* ---------- mercado en vivo ---------- */
 
   var liveMem = {};
@@ -300,7 +421,7 @@
   }
 
   window.EconoSeries = {
-    CAT: CAT, cargar: cargar, cargarVarias: cargarVarias, live: live, monedas: monedas,
+    CAT: CAT, fiscalTrimestral: fiscalTrimestral, cargar: cargar, cargarVarias: cargarVarias, live: live, monedas: monedas,
     restar: restar, variacion: variacion, variacionesMensuales: variacionesMensuales
   };
 })();
