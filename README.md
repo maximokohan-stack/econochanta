@@ -24,15 +24,16 @@ La estructura sigue la de pulsomacro.com.ar: una portada, un menú de Argentina 
 
 | Sección | Contenido |
 |---|---|
-| **Inicio** | Buscador de indicadores y secciones, dólares hoy, los datos del día (inflación, riesgo país, reservas, actividad, desocupación, resultado fiscal, saldo comercial), tus favoritos y un menú de "¿Qué querés ver?" |
+| **Inicio** | "Cada número de la economía, explicado": buscador de indicadores y secciones, dólares hoy (oficial, blue, MEP, CCL, tarjeta y brecha), "Lo que hay que mirar hoy" (inflación, riesgo país, reservas, actividad, desocupación, resultado fiscal, saldo comercial), tus favoritos y un menú para entrar por tema |
 | **Argentina** | Menú de temas, con un submenú que queda a la vista en cada uno |
-| &nbsp;&nbsp;Dólares | Oficial, MEP, CCL, blue, mayorista, brecha y compras de divisas del BCRA. `#dolares` |
+| &nbsp;&nbsp;Dólares | Oficial, MEP, CCL, blue, tarjeta, cripto, mayorista, brecha y compras de divisas del BCRA. `#dolares` |
 | &nbsp;&nbsp;Inflación y reservas | Inflación mensual e interanual, núcleo, regulados y estacionales, 7 rubros, UVA, CER, reservas y riesgo país. `#inflacion` |
 | &nbsp;&nbsp;Tasas y pesos | BADLAR, TAMAR, tasas de depósitos y préstamos, base monetaria, circulación, M2, depósitos y préstamos. `#tasas` |
 | &nbsp;&nbsp;Cuentas del Estado | Resultado fiscal (primario y financiero, mensual, acumulado del año y últimos 12 meses), intereses, impuestos y gastos por rubro, tortas de ingresos y gastos, comercio exterior y balance de pagos (cuenta corriente, financiera y capital). `#estado` |
 | &nbsp;&nbsp;Actividad y empleo | EMAE, industria, construcción, PBI, desocupación, salarios, salario mínimo y haber mínimo. `#actividad` |
 | &nbsp;&nbsp;Banco Central | 27 indicadores del BCRA en 5 grupos, gráficos de tasas, compras de divisas, tipo de cambio, depósitos y crédito, factores de la base monetaria y 39 monedas. `#bcra` |
 | &nbsp;&nbsp;Acciones y bonos | Acciones y bonos en vivo (con demora) con búsqueda y orden. `#mercados` |
+| &nbsp;&nbsp;Tabla de indicadores | Los 93 indicadores juntos: último, anterior, cambio, máximo y mínimo de 12 meses, con filtro por nombre. `#tabla` |
 | **Noticias** | Titulares por tema y por medio |
 | **Calculadoras** | Plazo fijo contra dólar, sueldo contra inflación |
 | **Tu plata** | Variación real de tu plata, termómetro 0-100, inflación personal con el backup de Plata, dólar y alertas activas |
@@ -44,6 +45,18 @@ Lo que pulsomacro tiene y Econochanta todavía no: Ganadería (Cañuelas, hacien
 
 Es oscuro por defecto, con una variante clara (botón arriba a la derecha).
 
+**Búsqueda en cualquier pantalla.** La lupa del encabezado, o Ctrl+K (también la tecla /), abre un buscador que entiende palabras de uso común como "ccte", "jubilados" o "plazo fijo".
+
+**Detalle de cada indicador.** En pantallas anchas el gráfico va a la izquierda y "Qué mide y cómo se lee" a la derecha. Al pie están la fuente, la frecuencia y el último dato, un enlace a "Cómo se calcula", el botón "Copiar cita" y la descarga en CSV.
+
+**Cómo se calcula** (`#metodologia`, desde Más): fuentes y frecuencia de cada dato, las cuentas propias, cómo leer los colores, qué pasa si una fuente falla y cómo citar.
+
+**En celular** la navegación pasa a una barra inferior con cinco accesos (Inicio, Argentina, Noticias, Calcular y Tu plata) y "Más" queda arriba, junto al botón de tema; el submenú de Argentina queda fijo arriba. En escritorio se mantiene la barra superior.
+
+**Detalles de las tarjetas.** Cada una muestra la fuente y el período del dato y, debajo del número, la unidad en palabras ("millones de dólares", "pesos por dólar", "puntos básicos"). Las del dólar suman compra y venta con la hora de DolarAPI. Cada tipo de dólar tiene su color (oficial celeste, MEP ámbar, CCL violeta, blue rosa, tarjeta gris azulado, cripto turquesa), el mismo en la lista, las tarjetas y el gráfico. La primera vez que se entra aparece un aviso que se puede cerrar y que lleva al glosario.
+
+**Look Mosaico.** Azul noche con acento azul violáceo y un celeste secundario (el del cielo de la bandera), esquinas redondeadas y navegación en pastillas. Los indicadores clave se muestran como recuadros con calor: el color dice si el último dato subió (verde) o bajó (rojo), y es más intenso cuanto más se movió; si no cambió queda en azul. El brillo de los recuadros sigue al puntero. En Cuentas del Estado, ingresos y gastos se pueden ver como torta o como mosaico, donde el tamaño de cada recuadro es su parte del total.
+
 ### Ingresos y gastos del Estado
 
 Al pie de Cuentas del Estado hay dos tortas: de dónde sale la plata (IVA, Ganancias, aportes, retenciones, impuesto al cheque y otros) y en qué se gasta (jubilaciones, sueldos, subsidios, asignaciones, PAMI, transferencias a provincias y otros). Se pueden ver por último trimestre, acumulado del año, últimos 4 trimestres y año anterior, con la lista completa de rubros debajo de cada torta.
@@ -54,7 +67,7 @@ Los datos son del informe mensual de ingresos y gastos del Estado nacional de la
 
 - **Qué mide y cómo se lee.** Cada indicador trae un bloque que explica en lenguaje común qué es, cómo se mide, cómo leerlo y qué tener en cuenta, con una cuenta en números de hoy para algunos (por ejemplo, la inflación del mes llevada a un año). Las 65 explicaciones están en `glosario.js` y también se leen juntas, con buscador, en Más, Glosario (`#glosario`). No llevan cifras que envejezcan: eso lo da el dato en vivo.
 - **Resumen del día.** Al entrar se ve un resumen con cuatro frases generadas desde los datos y las tarjetas de los indicadores clave. Cada tarjeta lleva al gráfico.
-- **Colores con sentido.** ▲ y ▼ indican la dirección. El color indica si es mejor o peor para la economía: verde mejora, rojo empeora, gris no se califica. Por ejemplo, una suba de la inflación es roja y una suba de las reservas es verde. El dólar, las tasas y los agregados monetarios no se califican, porque depende de quién los mire. Las acciones y bonos usan verde y rojo solo por precio.
+- **Colores.** ▲ y ▼ indican la dirección frente al dato anterior: verde si sube, rojo si baja. El color no dice si es bueno o malo: una suba de la inflación o una suba de las reservas se ven igual de verdes. Cómo leer cada dato está en la explicación de cada indicador.
 - **Favoritos.** Cada indicador se puede marcar con ★. Los favoritos quedan arriba de la lista y en el resumen, y se guardan en el navegador.
 - **Datos desactualizados.** Si el último dato de una serie es más viejo de lo normal para su frecuencia, la fila lo avisa.
 - **Teclado.** Las flechas arriba y abajo (y Inicio y Fin) recorren la lista, Enter abre el indicador, y "Saltar al contenido" va directo al contenido sin cambiar de sección.
@@ -63,7 +76,7 @@ Cada indicador muestra su período porque los datos mensuales y trimestrales se 
 
 ### Accesibilidad
 
-Se revisó contra WCAG 2.1 AA con contrastes calculados. Los bordes de campos y botones tienen al menos 3:1 y el texto 4,5:1 en ambos temas (en el claro el ámbar es más oscuro por eso). Los gráficos usan trazos distintos además del color y tienen una tabla de datos equivalente; las filas y tarjetas tienen una etiqueta completa para lectores de pantalla; los cambios de sección y de favoritos se anuncian; y en celular el foco pasa al detalle al abrirlo y vuelve a la fila al regresar.
+Se revisó contra WCAG 2.1 AA con contrastes calculados. Los bordes de campos y botones tienen al menos 3:1 y el texto 4,5:1 en ambos temas (en el claro los colores del acento son más oscuros por eso). Los gráficos usan trazos distintos además del color y tienen una tabla de datos equivalente; las filas y tarjetas tienen una etiqueta completa para lectores de pantalla; los cambios de sección y de favoritos se anuncian; y en celular el foco pasa al detalle al abrirlo y vuelve a la fila al regresar.
 
 ## Cómo se calcula (resumen)
 

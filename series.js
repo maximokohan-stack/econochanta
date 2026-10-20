@@ -25,6 +25,8 @@
     dMep: { src: "adc", path: "bolsa", label: "Dólar MEP", unit: "ARS", dec: 0, fuente: "ArgentinaDatos", ttl: 10 * MIN },
     dCcl: { src: "adc", path: "contadoconliqui", label: "Dólar CCL", unit: "ARS", dec: 0, fuente: "ArgentinaDatos", ttl: 10 * MIN },
     dBlue: { src: "adc", path: "blue", label: "Dólar blue", unit: "ARS", dec: 0, fuente: "ArgentinaDatos", ttl: 10 * MIN },
+    dTarjeta: { src: "adc", path: "tarjeta", label: "Dólar tarjeta", unit: "ARS", dec: 0, fuente: "ArgentinaDatos", ttl: 10 * MIN },
+    dCripto: { src: "adc", path: "cripto", label: "Dólar cripto", unit: "ARS", dec: 0, fuente: "ArgentinaDatos", ttl: 10 * MIN },
 
     // Inflacion
     infM: { src: "ad", path: "finanzas/indices/inflacion", label: "Inflación mensual", unit: "%", dec: 1, fuente: "INDEC, vía ArgentinaDatos", ttl: 6 * HORA },
@@ -353,6 +355,27 @@
     return fiscalEnCurso;
   }
 
+  /* Compra y venta del dolar (DolarAPI), con la hora de la ultima actualizacion. Clave = clave de la serie. */
+  var cotMem = null, cotEnCurso = null;
+  function cotizacionesDolar() {
+    if (cotMem && Date.now() - cotMem.t < 10 * MIN) return Promise.resolve(cotMem.v);
+    if (cotEnCurso) return cotEnCurso;
+    var casas = { dOficial: "oficial", dMep: "bolsa", dCcl: "contadoconliqui", dBlue: "blue", dTarjeta: "tarjeta", dCripto: "cripto" };
+    cotEnCurso = getJSON("https://dolarapi.com/v1/dolares", 15000).then(function (lista) {
+      var por = {}, out = {};
+      lista.forEach(function (d) { por[d.casa] = d; });
+      Object.keys(casas).forEach(function (k) {
+        var d = por[casas[k]];
+        if (d && isFinite(Number(d.compra)) && isFinite(Number(d.venta))) out[k] = { compra: Number(d.compra), venta: Number(d.venta), fecha: d.fechaActualizacion };
+      });
+      cotMem = { t: Date.now(), v: out };
+      return out;
+    });
+    var limpiar = function () { cotEnCurso = null; };
+    cotEnCurso.then(limpiar, limpiar);
+    return cotEnCurso;
+  }
+
   /* ---------- mercado en vivo ---------- */
 
   var liveMem = {};
@@ -421,7 +444,7 @@
   }
 
   window.EconoSeries = {
-    CAT: CAT, fiscalTrimestral: fiscalTrimestral, cargar: cargar, cargarVarias: cargarVarias, live: live, monedas: monedas,
+    CAT: CAT, fiscalTrimestral: fiscalTrimestral, cotizacionesDolar: cotizacionesDolar, cargar: cargar, cargarVarias: cargarVarias, live: live, monedas: monedas,
     restar: restar, variacion: variacion, variacionesMensuales: variacionesMensuales
   };
 })();

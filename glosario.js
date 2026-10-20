@@ -40,6 +40,18 @@
       l: "Sirve de referencia de cuánto vale el dólar fuera del circuito formal. Cuando se aleja mucho del oficial, suele haber restricciones o desconfianza.",
       o: "Es un mercado sin control ni registro. No es una cotización oficial."
     },
+    tarjeta: {
+      q: "El dólar con el que se valúan los consumos en dólares con tarjeta, en el exterior y en servicios del exterior.",
+      c: "Es el dólar oficial más los recargos de impuestos que se aplican a esos pagos. DolarAPI informa su cotización de venta.",
+      l: "Cuando la diferencia con el oficial cambia, suele ser por impuestos y no porque se mueva el mercado. Sirve para saber cuánto te cuesta pagar en dólares con tarjeta.",
+      o: "Los recargos dependen de la norma vigente y pueden cambiar. Mirá siempre la fecha del dato."
+    },
+    cripto: {
+      q: "El precio del dólar que se consigue comprando dólares digitales (como USDT) con pesos en plataformas de intercambio.",
+      c: "Se toma la cotización de venta que informan esas plataformas. Es un mercado que opera todo el día y todos los días.",
+      l: "Suele moverse parecido al MEP y al CCL. Si se aleja de ellos, algo se está tensando en ese mercado.",
+      o: "Es un dólar digital: tiene riesgos propios (de la plataforma y del activo) y no es lo mismo que tener dólares en una cuenta bancaria."
+    },
     brecha: {
       q: "Cuánto más caro es el dólar CCL que el oficial, en porcentaje.",
       c: "Se divide el dólar CCL por el oficial y se le resta 1. Una brecha del 10% significa que por cada $100 del dólar oficial, el CCL cuesta $110.",
