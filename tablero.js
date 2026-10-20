@@ -262,19 +262,11 @@
 
   /* ---------- mesa (lista de indicadores a la izquierda, detalle a la derecha) ---------- */
 
-  // Hacia que lado esta "lo bueno" de cada indicador. Lo que no figura se muestra neutro.
-  var MAL_SI_SUBE = ["brecha", "infM", "infIA", "nucleo", "regulados", "estacionales", "transporte", "salud", "educacion", "prendas",
-    "equipamiento", "comunicaciones", "bebidas", "desoc", "riesgo", "intereses"];
-  var BIEN_SI_SUBE = ["emae", "ipi", "cemento", "pbi", "salarios", "salPriv", "salNoReg", "salPub", "ripte", "smvm", "haber",
-    "bpCC", "bpCC12", "bpBienes", "resPrim", "resFin", "resPrimAcum", "resFinAcum", "resPrim12", "resFin12", "bpCC", "bpCC12", "bpBienes", "recaud", "expo", "saldo", "reservas", "reservasSinDEG", "compras"];
-
-  function sentidoDe(id) { return MAL_SI_SUBE.indexOf(id) !== -1 ? "mal" : BIEN_SI_SUBE.indexOf(id) !== -1 ? "bien" : "neutro"; }
-
-  // clase de color de una variacion segun el sentido del indicador
-  function tonoDe(sentido, v) {
+  // color de una variacion segun su direccion: verde si sube, rojo si baja, gris si no cambia
+  // (las clases se llaman tono-bien y tono-mal por historia: ahora significan sube y baja)
+  function tonoDe(v) {
     if (v === undefined || v === null || Math.abs(v) < 0.0001) return "flat";
-    if (sentido === "neutro") return "tono-neutro";
-    return (v > 0) === (sentido === "bien") ? "tono-bien" : "tono-mal";
+    return v > 0 ? "tono-bien" : "tono-mal";
   }
   // una variacion que se muestra como cero (por ejemplo -0,0 pp) no es una suba ni una baja
   function esNulo(txt) {
@@ -383,7 +375,6 @@
     function armarItem(f, s, extra) {
       var it = f.__it;
       it.s = s; it.ok = true; it.error = false;
-      it.sentido = sentidoDe(f.id);
       it.fmt = function (v) { return fmtUnit(s.unit, v, s.dec); };
       it.valor = it.fmt(s.ultimo.v);
       it.fecha = fechaDato(s);
@@ -414,8 +405,8 @@
           }
         }
       }
-      it.tonoPrev = esNulo(it.dPrevTxt) ? "flat" : tonoDe(it.sentido, it.dPrev);
-      it.tono12 = esNulo(it.d12Txt) ? "flat" : f.t === "flow" ? tonoDe("neutro", it.d12) : tonoDe(it.sentido, it.d12);
+      it.tonoPrev = esNulo(it.dPrevTxt) ? "flat" : tonoDe(it.dPrev);
+      it.tono12 = esNulo(it.d12Txt) ? "flat" : tonoDe(it.d12);
       it.spark = s.points.slice(it.mensual ? -24 : -30);
     }
 
@@ -566,7 +557,7 @@
       b.setAttribute("aria-label", etiqueta(it));
       b.appendChild(el("span", "tarjeta__nombre", it.label));
       if (it.ok) {
-        // el recuadro se pinta segun si el ultimo movimiento mejora o empeora, y mas intenso cuanto mas se movio
+        // el recuadro se pinta de verde si el ultimo dato subio y de rojo si bajo, y mas intenso cuanto mas se movio
         var esc = it.t === "rate" ? 1.5 : it.t === "level" ? 2 : (Math.abs(it.s.ultimo.v) || 1) * 0.8;
         b.classList.add(it.tonoPrev === "tono-bien" ? "calor-bien" : it.tonoPrev === "tono-mal" ? "calor-mal" : "calor-neutro");
         b.style.setProperty("--k", Math.min(1, Math.abs(it.dPrev || 0) / esc).toFixed(2));
@@ -604,7 +595,7 @@
       var gc = el("div", "tarjetas");
       cfg.clave.forEach(function (id) { if (porId[id]) gc.appendChild(tarjeta(porId[id])); });
       box.appendChild(gc);
-      box.appendChild(el("p", "leyenda", "▲ sube · ▼ baja. Verde: mejora para la economía. Rojo: empeora. Gris: no se califica (el dólar, las tasas o los agregados monetarios, por ejemplo). Tocá un indicador para ver su gráfico, qué mide y cómo se lee, y para marcarlo como favorito."));
+      box.appendChild(el("p", "leyenda", "▲ sube (verde) · ▼ baja (rojo), frente al dato anterior. Que suba o baje no dice si es bueno o malo: eso depende del indicador y de quién lo mire. Tocá un indicador para ver su gráfico, qué mide y cómo se lee, y para marcarlo como favorito."));
     }
 
     /* ---- detalle ---- */
@@ -700,7 +691,7 @@
       var w = el("div", "tabla__wrap"); w.appendChild(t); box.appendChild(w);
 
       var tools = el("div", "mesa__pie");
-      tools.appendChild(el("span", "hint", "Fuente: " + (it.s.fuente || "datos públicos") + (it.sentido === "neutro" ? ". Este indicador no se califica con colores." : "")));
+      tools.appendChild(el("span", "hint", "Fuente: " + (it.s.fuente || "datos públicos") + ""));
       var csv = el("button", "btn btn--ghost btn--xs", "Descargar CSV"); csv.type = "button";
       csv.addEventListener("click", function () { C.csv(it.id, [it.s]); });
       tools.appendChild(csv);
@@ -761,7 +752,7 @@
 
     function armar() {
       filas.forEach(function (f) {
-        var it = { id: f.id, g: f.g, label: f.label, t: f.t, ok: false, bars: f.bars, signed: f.signed, sentido: sentidoDe(f.id), __f: f };
+        var it = { id: f.id, g: f.g, label: f.label, t: f.t, ok: false, bars: f.bars, signed: f.signed, __f: f };
         f.__it = it; items.push(it); porId[f.id] = it;
       });
       armarEsqueleto();

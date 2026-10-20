@@ -44,7 +44,7 @@ Lo que pulsomacro tiene y Econochanta todavía no: Ganadería (Cañuelas, hacien
 
 Es oscuro por defecto, con una variante clara (botón arriba a la derecha).
 
-**Look Mosaico.** Azul noche con acento azul violáceo, esquinas redondeadas y navegación en pastillas. Los indicadores clave se muestran como recuadros con calor: el color dice si el último movimiento mejora (verde) o empeora (rojo) la situación, y es más intenso cuanto más se movió el dato; los que no se califican quedan en azul. El brillo de los recuadros sigue al puntero. En Cuentas del Estado, ingresos y gastos se pueden ver como torta o como mosaico, donde el tamaño de cada recuadro es su parte del total.
+**Look Mosaico.** Azul noche con acento azul violáceo, esquinas redondeadas y navegación en pastillas. Los indicadores clave se muestran como recuadros con calor: el color dice si el último dato subió (verde) o bajó (rojo), y es más intenso cuanto más se movió; si no cambió queda en azul. El brillo de los recuadros sigue al puntero. En Cuentas del Estado, ingresos y gastos se pueden ver como torta o como mosaico, donde el tamaño de cada recuadro es su parte del total.
 
 ### Ingresos y gastos del Estado
 
@@ -56,7 +56,7 @@ Los datos son del informe mensual de ingresos y gastos del Estado nacional de la
 
 - **Qué mide y cómo se lee.** Cada indicador trae un bloque que explica en lenguaje común qué es, cómo se mide, cómo leerlo y qué tener en cuenta, con una cuenta en números de hoy para algunos (por ejemplo, la inflación del mes llevada a un año). Las 65 explicaciones están en `glosario.js` y también se leen juntas, con buscador, en Más, Glosario (`#glosario`). No llevan cifras que envejezcan: eso lo da el dato en vivo.
 - **Resumen del día.** Al entrar se ve un resumen con cuatro frases generadas desde los datos y las tarjetas de los indicadores clave. Cada tarjeta lleva al gráfico.
-- **Colores con sentido.** ▲ y ▼ indican la dirección. El color indica si es mejor o peor para la economía: verde mejora, rojo empeora, gris no se califica. Por ejemplo, una suba de la inflación es roja y una suba de las reservas es verde. El dólar, las tasas y los agregados monetarios no se califican, porque depende de quién los mire. Las acciones y bonos usan verde y rojo solo por precio.
+- **Colores.** ▲ y ▼ indican la dirección frente al dato anterior: verde si sube, rojo si baja. El color no dice si es bueno o malo: una suba de la inflación o una suba de las reservas se ven igual de verdes. Cómo leer cada dato está en la explicación de cada indicador.
 - **Favoritos.** Cada indicador se puede marcar con ★. Los favoritos quedan arriba de la lista y en el resumen, y se guardan en el navegador.
 - **Datos desactualizados.** Si el último dato de una serie es más viejo de lo normal para su frecuencia, la fila lo avisa.
 - **Teclado.** Las flechas arriba y abajo (y Inicio y Fin) recorren la lista, Enter abre el indicador, y "Saltar al contenido" va directo al contenido sin cambiar de sección.
