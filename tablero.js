@@ -1647,9 +1647,17 @@
 
   function analisisVisibles() {
     var todos = window.EconoAnalisis || [];
-    // los borradores solo se ven en la computadora local o con ?borradores
-    var ver = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) || /borradores/.test(location.search);
-    return todos.filter(function (a) { return a.publicado || ver; }).sort(function (x, y) { return x.fecha < y.fecha ? 1 : x.fecha > y.fecha ? -1 : 0; });
+    // los borradores y las notas programadas solo se ven en la computadora local o con ?borradores
+    var ver = (/^(localhost|127\.0\.0\.1)$/.test(location.hostname) || /borradores/.test(location.search)) && !/publico/.test(location.search);
+    var hoy = hoyISO();
+    return todos.filter(function (a) { return ver || (a.publicado && (!a.desde || a.desde <= hoy)); }).sort(function (x, y) { return x.fecha < y.fecha ? 1 : x.fecha > y.fecha ? -1 : 0; });
+  }
+  function hoyISO() { var d = new Date(); return d.getFullYear() + "-" + ("0" + (d.getMonth() + 1)).slice(-2) + "-" + ("0" + d.getDate()).slice(-2); }
+  // etiqueta para el que prepara las notas: borrador o programada (el publico nunca las ve)
+  function estadoNota(a) {
+    if (!a.publicado) return "Borrador sin revisar";
+    if (a.desde && a.desde > hoyISO()) return "Se publica el " + fechaNota(a.desde);
+    return "";
   }
   function fechaNota(f) { var d = new Date(f + "T12:00:00"); return d.getDate() + " de " + MESES_L[d.getMonth()] + " de " + d.getFullYear(); }
   function conNegrita(padre, texto) {
@@ -1661,7 +1669,7 @@
     var cab = el("span", "nota-card__cab");
     cab.appendChild(el("span", "nota-card__tema", a.tema));
     cab.appendChild(el("span", "nota-card__fecha", fechaNota(a.fecha) + " · " + a.minutos + " min de lectura"));
-    if (!a.publicado) cab.appendChild(el("span", "nota-card__borrador", "Borrador"));
+    if (estadoNota(a)) cab.appendChild(el("span", "nota-card__borrador", estadoNota(a)));
     l.appendChild(cab);
     l.appendChild(el("span", "nota-card__titulo", a.titulo));
     l.appendChild(el("span", "nota-card__bajada", a.bajada));
@@ -1710,7 +1718,7 @@
     var cab = el("div", "nota__cab");
     cab.appendChild(el("span", "nota-card__tema", a.tema));
     cab.appendChild(el("span", "nota-card__fecha", fechaNota(a.fecha) + " · " + a.minutos + " min de lectura"));
-    if (!a.publicado) cab.appendChild(el("span", "nota-card__borrador", "Borrador sin revisar"));
+    if (estadoNota(a)) cab.appendChild(el("span", "nota-card__borrador", estadoNota(a)));
     art.appendChild(cab);
     var h = el("h2", "nota__titulo", a.titulo); h.tabIndex = -1; art.appendChild(h);
     art.appendChild(el("p", "nota__bajada", a.bajada));

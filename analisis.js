@@ -7,6 +7,8 @@
  *  - Sin recomendaciones de inversion y sin tomar partido: se muestran ventajas y costos de cada situacion.
  *  - Las cifras que cambian se muestran con indicadores en vivo (bloque "datos"), no escritas en el texto.
  *  - publicado: false deja la nota como borrador: solo se ve en la computadora local o con ?borradores.
+ *  - desde: "AAAA-MM-DD" programa la publicacion: la nota aparece sola ese dia (sin servidor ni costo).
+ *  - En la computadora local se ven todas; agregar ?publico a la direccion muestra lo que ve el publico.
  *
  * Marcado de los textos: **negrita**. Bloques: h (subtitulo), p (parrafo), datos (indicadores en vivo),
  * quien (beneficiados y perjudicados), mirar (que mirar ahora), fuentes (enlaces).
@@ -17,7 +19,8 @@ window.EconoAnalisis = [
     fecha: "2026-10-20",
     tema: "Precios",
     minutos: 4,
-    publicado: false,
+    publicado: true,
+    desde: "2026-10-20",
     titulo: "Inflación de septiembre: qué subió y a quién le pega más",
     bajada: "Los precios subieron 1,9% en septiembre. El promedio esconde diferencias grandes según en qué gaste cada hogar.",
     bloques: [
@@ -65,10 +68,11 @@ window.EconoAnalisis = [
   },
   {
     id: "dolar-brecha-reservas-2026",
-    fecha: "2026-10-20",
+    fecha: "2026-10-21",
     tema: "Dólar",
     minutos: 4,
-    publicado: false,
+    publicado: true,
+    desde: "2026-10-21",
     titulo: "Los dólares y la brecha: qué cuenta cada uno y a quién le conviene qué",
     bajada: "Oficial, MEP, CCL, blue y tarjeta no son el mismo dólar. Entender la diferencia ayuda a leer qué está pasando con el peso.",
     bloques: [
@@ -112,10 +116,11 @@ window.EconoAnalisis = [
   },
   {
     id: "cuentas-estado-superavit-2026",
-    fecha: "2026-10-20",
+    fecha: "2026-10-22",
     tema: "Cuentas del Estado",
     minutos: 5,
-    publicado: false,
+    publicado: true,
+    desde: "2026-10-22",
     titulo: "Superávit, intereses y gasto: qué significa que las cuentas del Estado cierren",
     bajada: "Que el Estado recaude más de lo que gasta es un dato. Lo que importa para cada uno es de dónde sale ese resultado y quién lo siente.",
     bloques: [
