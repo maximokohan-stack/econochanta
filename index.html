@@ -23,6 +23,7 @@
         <p class="top__date" id="fecha"></p>
       </div>
       <div class="top__btns">
+        <a class="icon-btn solo-movil" href="#mas" data-vista="mas">Más</a>
         <button class="icon-btn" id="tema" type="button" aria-label="Cambiar tema claro u oscuro">Tema</button>
       </div>
     </div>
@@ -45,6 +46,14 @@
     <a href="#actividad" data-vista="actividad">Actividad y empleo</a>
     <a href="#bcra" data-vista="bcra">Banco Central</a>
     <a href="#mercados" data-vista="mercados">Acciones y bonos</a>
+    <a href="#tabla" data-vista="tabla">Tabla</a>
+  </nav>
+  <nav class="tabbar" aria-label="Secciones principales">
+    <a href="#inicio" data-vista="inicio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg><span>Inicio</span></a>
+    <a href="#argentina" data-vista="argentina"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V11M10 20V4M16 20v-6M22 20H2"/></svg><span>Argentina</span></a>
+    <a href="#noticias" data-vista="noticias"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h13v14H5a1 1 0 0 1-1-1zM17 8h3v10a1 1 0 0 1-2 0M7 9h7M7 13h7M7 16h4"/></svg><span>Noticias</span></a>
+    <a href="#calcular" data-vista="calcular"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h2M14 12h2M8 16h2M14 16h2"/></svg><span>Calcular</span></a>
+    <a href="#miplata" data-vista="miplata"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5C9.5 8.5 10.5 8 12 8s2.5.5 2.5 1.5-1 1.4-2.5 1.7-2.5.7-2.5 1.8S10.5 16 12 16s2.5-.5 2.5-1.5"/></svg><span>Tu plata</span></a>
   </nav>
 
   <main id="main" tabindex="-1">
@@ -67,6 +76,16 @@
         <p class="sr-only" id="buscador-estado" role="status"></p>
         <ul class="buscador__lista" id="buscador-lista" hidden></ul>
       </div>
+      <aside class="primera" id="primera" role="note" hidden>
+        <div>
+          <strong>¿Primera vez en Econochanta?</strong>
+          <p>Tocá cualquier número para ver su gráfico, qué mide y cómo se lee. Si buscás algo puntual, escribilo en el buscador.</p>
+        </div>
+        <div class="primera__acc">
+          <a class="btn btn--ghost btn--sm" href="#glosario">Ver el glosario</a>
+          <button class="btn btn--sm" id="primera-ok" type="button">Entendido</button>
+        </div>
+      </aside>
       <h2 class="resumen__sub">Dólares hoy</h2>
       <div class="tarjetas" id="inicio-dolares"></div>
       <h2 class="resumen__sub">Los datos del día</h2>
@@ -121,6 +140,13 @@
     <section id="vista-mercados" class="vista" aria-labelledby="h-mercados" hidden>
       <h1 id="h-mercados" class="title">Acciones y bonos</h1>
       <div id="mercados-contenido" class="vista vista--inner"></div>
+    </section>
+
+    <!-- TABLA DE INDICADORES -->
+    <section id="vista-tabla" class="vista" aria-labelledby="h-tabla" hidden>
+      <h1 id="h-tabla" class="title">Tabla de indicadores</h1>
+      <p class="sub">Todos los indicadores juntos, con su último dato, el anterior, el cambio y el máximo y mínimo de los últimos 12 meses.</p>
+      <div id="tabla-contenido" class="vista vista--inner"></div>
     </section>
 
     <!-- MAS -->

@@ -80,6 +80,12 @@
     return out;
   }
 
+  // cada tipo de dolar tiene su color, el mismo en la lista, en las tarjetas y en el grafico
+  var PUNTO = { oficial: "var(--c1)", mep: "var(--c2)", ccl: "var(--c3)", blue: "var(--c4)" };
+  function punto(id) { if (!PUNTO[id]) return null; var i = el("i", "punto"); i.style.background = PUNTO[id]; i.setAttribute("aria-hidden", "true"); return i; }
+  function fuenteCorta(f) { return String(f || "datos públicos").replace(/\s*\(.*\)/, "").split(",")[0].trim(); }
+  function hora(iso) { var d = new Date(iso); return isNaN(d) ? "" : d.toLocaleTimeString("es-AR", { hour: "2-digit", minute: "2-digit" }); }
+
   function dirClase(v) { return v === undefined || v === null ? "flat" : v > 0.0001 ? "up" : v < -0.0001 ? "down" : "flat"; }
   function flecha(v) { return v > 0.0001 ? "▲ " : v < -0.0001 ? "▼ " : "■ "; }
   function delta(txt, v) { return el("span", "delta " + dirClase(v), txt ? flecha(v) + txt : "-"); }
@@ -241,7 +247,8 @@
   ];
   var SEC_OTRAS = [
     { id: "bcra", nombre: "Banco Central", desc: "Reservas, base monetaria, tasas, depósitos, crédito y 39 monedas" },
-    { id: "mercados", nombre: "Acciones y bonos", desc: "Acciones líderes y bonos soberanos en vivo, con búsqueda" }
+    { id: "mercados", nombre: "Acciones y bonos", desc: "Acciones líderes y bonos soberanos en vivo, con búsqueda" },
+    { id: "tabla", nombre: "Tabla de indicadores", desc: "Todos los indicadores juntos: último, anterior, variación, máximo y mínimo de 12 meses" }
   ];
 
   function filasDe(sec) {
@@ -369,7 +376,7 @@
     var filas = cfg.filas, vista = cfg.vista;
     var items = [], porId = {}, pendiente = null;
     var estado = { actual: "resumen", q: "", grupo: "Todos", rango: {}, detalleOk: null };
-    var dom = {};
+    var dom = {}, cot = null;
     var hashDe = cfg.hashDe || function (it) { return "#" + vista + ":" + it.id; };
 
     function armarItem(f, s, extra) {
@@ -504,7 +511,9 @@
       var b = el("button", "fila"); b.type = "button"; b.dataset.id = it.id;
       if (it.id === estado.actual) b.setAttribute("aria-current", "true");
       b.setAttribute("aria-label", etiqueta(it));
-      var nombre = el("span", "fila__nombre", (favs[it.id] ? "★ " : "") + it.label);
+      var nombre = el("span", "fila__nombre");
+      var pt = punto(it.id); if (pt) nombre.appendChild(pt);
+      nombre.appendChild(document.createTextNode((favs[it.id] ? "★ " : "") + it.label));
       b.appendChild(nombre);
       if (it.ok) {
         b.appendChild(el("span", "fila__val", it.valor));
@@ -555,7 +564,8 @@
     function tarjeta(it) {
       var b = el("button", "tarjeta"); b.type = "button";
       b.setAttribute("aria-label", etiqueta(it));
-      b.appendChild(el("span", "tarjeta__nombre", it.label));
+      var nom = el("span", "tarjeta__nombre"); var pt = punto(it.id); if (pt) nom.appendChild(pt); nom.appendChild(document.createTextNode(it.label));
+      b.appendChild(nom);
       if (it.ok) {
         // el recuadro se pinta de verde si el ultimo dato subio y de rojo si bajo, y mas intenso cuanto mas se movio
         var esc = it.t === "rate" ? 1.5 : it.t === "level" ? 2 : (Math.abs(it.s.ultimo.v) || 1) * 0.8;
@@ -567,6 +577,11 @@
         sp.setAttribute("class", "tarjeta__spark"); sp.setAttribute("aria-hidden", "true");
         C.spark(sp, it.spark, colorSpark(it.tonoPrev));
         b.appendChild(sp);
+        var c = cot && it.__f && cot[it.__f.key];
+        if (c) {
+          b.appendChild(el("span", "tarjeta__cv", "C $ " + num(c.compra, 0) + " · V $ " + num(c.venta, 0)));
+          b.appendChild(el("span", "tarjeta__fuente", "DolarAPI · " + (hora(c.fecha) || it.fecha)));
+        } else b.appendChild(el("span", "tarjeta__fuente", fuenteCorta(it.s.fuente) + " · " + it.fecha));
       } else b.appendChild(el("span", "tarjeta__val tarjeta__val--msg", it.error ? "sin dato" : "…"));
       b.addEventListener("click", function () { location.hash = hashDe(it); });
       return b;
@@ -669,6 +684,7 @@
 
       var cb = el("div", "mesa__grafico chart"); box.appendChild(cb);
       var serieRango = recortar(it.s, rg);
+      if (PUNTO[it.id]) serieRango.color = PUNTO[it.id];
       var vals = serieRango.points.map(function (p) { return p[1]; });
       var prom = vals.reduce(function (a, b) { return a + b; }, 0) / vals.length;
 
@@ -763,6 +779,7 @@
       dom.filas.addEventListener("keydown", teclado);
       if (!cfg.sinRegistro) mesas.push({ refrescarFavs: function () { if (estado.grupo === "★ Favoritos" && !Object.keys(favs).some(function (id) { return porId[id]; })) estado.grupo = "Todos"; pintarChips(); pintarLista(); if (estado.actual === "resumen") pintarResumen(); } });
       filas.forEach(iniciarFila);
+      if (filas.some(function (f) { return PUNTO[f.id]; })) S.cotizacionesDolar().then(function (m) { cot = m; programarPintar(); }, function () { /* sin compra y venta */ });
     }
 
     function esMovil() { return window.matchMedia("(max-width: 820px)").matches; }
@@ -1431,6 +1448,86 @@
     cargar();
   }
 
+  /* ---------- tabla de todos los indicadores ---------- */
+
+  function armarTabla() {
+    var raiz = $("tabla-contenido");
+    var lista = [], vistos = {};
+    SECCIONES.forEach(function (sec) {
+      sec.grupos.forEach(function (gr) { gr[1].forEach(function (id) { if (!vistos[id]) { vistos[id] = 1; lista.push({ id: id, sec: sec.nombre, g: gr[0] }); } }); });
+    });
+    Object.keys(DEFS).forEach(function (id) { if (!vistos[id]) { vistos[id] = 1; lista.push({ id: id, sec: "Banco Central", g: DEFS[id].g }); } });
+    var filas = lista.map(function (x) { var c = {}; Object.keys(DEFS[x.id]).forEach(function (k) { c[k] = DEFS[x.id][k]; }); c.g = x.g; return c; });
+    var hd = function (it) { return "#" + (SEC_DE[it.id] || "bcra") + ":" + it.id; };
+    var m = crearMesa({ filas: filas, raiz: document.createElement("div"), vista: "tabla", titulo: "", clave: [], frases: null, sinRegistro: true, hashDe: hd, alCambiar: pintar });
+
+    var buscar = el("input", "mesa__buscar"); buscar.type = "search"; buscar.placeholder = "Filtrar la tabla"; buscar.setAttribute("aria-label", "Filtrar la tabla por nombre");
+    var estado = el("p", "hint", "Cargando indicadores…");
+    var wrap = el("div", "tabla__wrap tabla__wrap--tabla");
+    var t = el("table", "tabla tabla--ind");
+    t.appendChild(el("caption", "sr-only", "Todos los indicadores: último dato, anterior, variación, máximo y mínimo de los últimos 12 meses"));
+    var th = el("thead"), trh = el("tr");
+    [["Indicador", ""], ["Último", "num"], ["Anterior", "num"], ["Cambio", "num"], ["Máx. 12 m", "num"], ["Mín. 12 m", "num"], ["Dato de", ""]].forEach(function (c) { var x = el("th", c[1], c[0]); x.scope = "col"; trh.appendChild(x); });
+    th.appendChild(trh); t.appendChild(th);
+    var tb = el("tbody"); t.appendChild(tb);
+    wrap.appendChild(t);
+    raiz.appendChild(buscar); raiz.appendChild(estado); raiz.appendChild(wrap);
+    var q = "";
+    buscar.addEventListener("input", function () { q = norm(buscar.value.trim()); pintar(); });
+
+    function rango12(it) {
+      var fin = new Date(it.s.ultimo.d + "T12:00:00").getTime(), corte = new Date(fin - 365 * 86400000).toISOString().slice(0, 10);
+      var v = it.s.points.filter(function (p) { return p[0] >= corte; }).map(function (p) { return p[1]; });
+      if (!v.length) v = [it.s.ultimo.v];
+      return [Math.min.apply(null, v), Math.max.apply(null, v)];
+    }
+    function pintar() {
+      tb.textContent = "";
+      var n = 0, listos = 0, grupo = "";
+      lista.forEach(function (x) {
+        var it = m.porId[x.id]; if (!it) return;
+        if (it.ok) listos++;
+        if (q && norm(it.label).indexOf(q) === -1) return;
+        var nombreG = x.sec + " › " + x.g;
+        if (nombreG !== grupo) { grupo = nombreG; var rg = el("tr", "tabla__grupo"); var cg = el("th", "", nombreG); cg.colSpan = 7; cg.scope = "colgroup"; rg.appendChild(cg); tb.appendChild(rg); }
+        var tr = el("tr");
+        var c1 = el("td"); var a = el("a", "tabla__link"); a.href = hd(it); var pt = punto(it.id); if (pt) a.appendChild(pt); a.appendChild(document.createTextNode(it.label)); c1.appendChild(a); tr.appendChild(c1);
+        if (it.ok) {
+          var r = rango12(it);
+          tr.appendChild(el("td", "num", it.valor));
+          tr.appendChild(el("td", "num", it.s.previo ? it.fmt(it.s.previo.v) : "—"));
+          tr.appendChild(el("td", "num " + it.tonoPrev, it.dPrevTxt ? flechaDe(it.dPrevTxt, it.dPrev) + it.dPrevTxt : "—"));
+          tr.appendChild(el("td", "num", it.fmt(r[1])));
+          tr.appendChild(el("td", "num", it.fmt(r[0])));
+          tr.appendChild(el("td", it.viejo ? "tono-viejo" : "", it.fecha + (it.viejo ? " (desactualizado)" : "")));
+        } else {
+          var cm = el("td", "tabla__msg", it.error ? "sin dato" : "cargando…"); cm.colSpan = 6; tr.appendChild(cm);
+        }
+        tb.appendChild(tr); n++;
+      });
+      estado.textContent = listos + " de " + lista.length + " indicadores cargados" + (q ? ". Mostrando " + n + " que coinciden." : ". Cada nombre lleva a su gráfico.");
+    }
+    m.armar();
+    pintar();
+  }
+
+  /* ---------- aviso de primera vez ---------- */
+
+  var PRIMERA_KEY = "econochanta:v1:primera";
+  function iniciarPrimera() {
+    var caja = $("primera"), ok = $("primera-ok");
+    if (!caja || !ok) return;
+    var visto = false;
+    try { visto = localStorage.getItem(PRIMERA_KEY) === "1"; } catch (e) { visto = false; }
+    caja.hidden = visto;
+    ok.addEventListener("click", function () {
+      try { localStorage.setItem(PRIMERA_KEY, "1"); } catch (e) { /* sin storage */ }
+      caja.hidden = true;
+      anunciar("Aviso cerrado");
+      var b = $("buscador-input"); if (b) b.focus();
+    });
+  }
+
   /* ---------- glosario ---------- */
 
   function armarGlosario() {
@@ -1479,7 +1576,7 @@
   var secPorId = {}, mesasSec = {};
   SECCIONES.forEach(function (s) { secPorId[s.id] = s; });
 
-  var bcraMesa = null, mercadosListo = false, hubListo = false, tilesInicio = false, glosarioListo = false;
+  var bcraMesa = null, mercadosListo = false, hubListo = false, tilesInicio = false, glosarioListo = false, tablaLista = false;
 
   // un link viejo #tablero:id pasa a la seccion que corresponde
   function migrar(sub) { return sub && SEC_DE[sub] ? SEC_DE[sub] + ":" + sub : "inicio"; }
@@ -1487,7 +1584,7 @@
   function mostrar(vista, sub) {
     if (vista === "inicio") {
       if (!tilesInicio) { tilesInicio = true; tiles($("inicio-tiles"), OTRAS_INICIO); }
-      if (!buscadorListo) { buscadorListo = true; armarBuscador(); }
+      if (!buscadorListo) { buscadorListo = true; armarBuscador(); iniciarPrimera(); }
       if (!inicio || inicio.firma !== firmaFavs()) armarInicio();
     } else if (vista === "argentina") {
       if (!hubListo) { hubListo = true; tiles($("argentina-tiles")); }
@@ -1502,6 +1599,8 @@
     } else if (vista === "bcra") {
       if (!bcraMesa) armarBCRA();
       if (sub) bcraMesa.abrir(sub); else bcraMesa.cerrar();
+    } else if (vista === "tabla") {
+      if (!tablaLista) { tablaLista = true; armarTabla(); }
     } else if (vista === "glosario") {
       if (!glosarioListo) { glosarioListo = true; armarGlosario(); }
     } else if (vista === "mercados") {

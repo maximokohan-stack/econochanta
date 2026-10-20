@@ -33,6 +33,7 @@ La estructura sigue la de pulsomacro.com.ar: una portada, un menú de Argentina 
 | &nbsp;&nbsp;Actividad y empleo | EMAE, industria, construcción, PBI, desocupación, salarios, salario mínimo y haber mínimo. `#actividad` |
 | &nbsp;&nbsp;Banco Central | 27 indicadores del BCRA en 5 grupos, gráficos de tasas, compras de divisas, tipo de cambio, depósitos y crédito, factores de la base monetaria y 39 monedas. `#bcra` |
 | &nbsp;&nbsp;Acciones y bonos | Acciones y bonos en vivo (con demora) con búsqueda y orden. `#mercados` |
+| &nbsp;&nbsp;Tabla de indicadores | Los 91 indicadores juntos: último, anterior, cambio, máximo y mínimo de 12 meses, con filtro por nombre. `#tabla` |
 | **Noticias** | Titulares por tema y por medio |
 | **Calculadoras** | Plazo fijo contra dólar, sueldo contra inflación |
 | **Tu plata** | Variación real de tu plata, termómetro 0-100, inflación personal con el backup de Plata, dólar y alertas activas |
@@ -44,7 +45,11 @@ Lo que pulsomacro tiene y Econochanta todavía no: Ganadería (Cañuelas, hacien
 
 Es oscuro por defecto, con una variante clara (botón arriba a la derecha).
 
-**Look Mosaico.** Azul noche con acento azul violáceo, esquinas redondeadas y navegación en pastillas. Los indicadores clave se muestran como recuadros con calor: el color dice si el último dato subió (verde) o bajó (rojo), y es más intenso cuanto más se movió; si no cambió queda en azul. El brillo de los recuadros sigue al puntero. En Cuentas del Estado, ingresos y gastos se pueden ver como torta o como mosaico, donde el tamaño de cada recuadro es su parte del total.
+**En celular** la navegación pasa a una barra inferior con cinco accesos (Inicio, Argentina, Noticias, Calcular y Tu plata) y "Más" queda arriba, junto al botón de tema; el submenú de Argentina queda fijo arriba. En escritorio se mantiene la barra superior.
+
+**Detalles de las tarjetas.** Cada una muestra la fuente y el período del dato; las del dólar suman compra y venta con la hora de DolarAPI. Cada tipo de dólar tiene su color (oficial violeta, MEP celeste, CCL ámbar, blue rosa), el mismo en la lista, las tarjetas y el gráfico. La primera vez que se entra aparece un aviso que se puede cerrar y que lleva al glosario.
+
+**Look Mosaico.** Azul noche con acento azul violáceo y un celeste secundario (el del cielo de la bandera), esquinas redondeadas y navegación en pastillas. Los indicadores clave se muestran como recuadros con calor: el color dice si el último dato subió (verde) o bajó (rojo), y es más intenso cuanto más se movió; si no cambió queda en azul. El brillo de los recuadros sigue al puntero. En Cuentas del Estado, ingresos y gastos se pueden ver como torta o como mosaico, donde el tamaño de cada recuadro es su parte del total.
 
 ### Ingresos y gastos del Estado
 
