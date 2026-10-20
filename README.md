@@ -36,7 +36,7 @@ La estructura sigue la de pulsomacro.com.ar: una portada, un menú de Argentina 
 | **Noticias** | Titulares por tema y por medio |
 | **Calculadoras** | Plazo fijo contra dólar, sueldo contra inflación |
 | **Tu plata** | Variación real de tu plata, termómetro 0-100, inflación personal con el backup de Plata, dólar y alertas activas |
-| **Más** | Alertas de brecha, perfil y fuentes |
+| **Más** | Glosario, alertas de brecha, perfil y fuentes |
 
 Cada indicador se puede abrir por URL: `#inflacion:infM`. Los links viejos `#tablero:id` siguen andando y llevan al tema que corresponde.
 
@@ -46,6 +46,7 @@ Es oscuro por defecto, con una variante clara (botón arriba a la derecha).
 
 ### Cómo se lee
 
+- **Qué mide y cómo se lee.** Cada indicador trae un bloque que explica en lenguaje común qué es, cómo se mide, cómo leerlo y qué tener en cuenta, con una cuenta en números de hoy para algunos (por ejemplo, la inflación del mes llevada a un año). Las 65 explicaciones están en `glosario.js` y también se leen juntas, con buscador, en Más, Glosario (`#glosario`). No llevan cifras que envejezcan: eso lo da el dato en vivo.
 - **Resumen del día.** Al entrar se ve un resumen con cuatro frases generadas desde los datos y las tarjetas de los indicadores clave. Cada tarjeta lleva al gráfico.
 - **Colores con sentido.** ▲ y ▼ indican la dirección. El color indica si es mejor o peor para la economía: verde mejora, rojo empeora, gris no se califica. Por ejemplo, una suba de la inflación es roja y una suba de las reservas es verde. El dólar, las tasas y los agregados monetarios no se califican, porque depende de quién los mire. Las acciones y bonos usan verde y rojo solo por precio.
 - **Favoritos.** Cada indicador se puede marcar con ★. Los favoritos quedan arriba de la lista y en el resumen, y se guardan en el navegador.
@@ -92,6 +93,7 @@ En Perfil elegís el backup de Plata. Se procesa en el navegador y solo se guard
 ```
 index.html   vistas y markup
 styles.css   tokens, componentes y, al final, adaptación a pantallas chicas
+glosario.js  qué mide cada indicador, cómo se mide y cómo leerlo
 app.js       Tu plata, perfil, alertas, calculadoras, noticias y navegación por hash (menú y submenú)
 tablero.js   portada, secciones de Argentina (cada una con su mesa de indicadores), Banco Central y acciones y bonos
 series.js    catálogo de series y carga (69 series de 5 fuentes)

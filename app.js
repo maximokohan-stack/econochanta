@@ -811,15 +811,15 @@
   /* ---------- navegación ---------- */
 
   var VISTAS = ["inicio", "argentina", "dolares", "inflacion", "tasas", "estado", "actividad", "bcra", "mercados",
-    "mas", "noticias", "miplata", "calcular", "alertas", "perfil"];
+    "mas", "noticias", "miplata", "calcular", "alertas", "perfil", "glosario"];
   var TITULOS = {
     inicio: "Inicio", argentina: "Argentina", dolares: "Dólares", inflacion: "Inflación y reservas", tasas: "Tasas y pesos",
     estado: "Cuentas del Estado", actividad: "Actividad y empleo", bcra: "Banco Central", mercados: "Acciones y bonos",
-    mas: "Más", noticias: "Noticias", miplata: "Tu plata", calcular: "Calculadoras", alertas: "Alertas", perfil: "Perfil"
+    mas: "Más", noticias: "Noticias", miplata: "Tu plata", calcular: "Calculadoras", alertas: "Alertas", perfil: "Perfil", glosario: "Glosario"
   };
   // las secciones de Argentina dejan marcada esa pestaña y muestran su propio submenu; alertas y perfil cuelgan de "Más"
   var ARGENTINA = ["argentina", "dolares", "inflacion", "tasas", "estado", "actividad", "bcra", "mercados"];
-  var PESTANA = { alertas: "mas", perfil: "mas" };
+  var PESTANA = { alertas: "mas", perfil: "mas", glosario: "mas" };
 
   var vistaAnterior = null;
 

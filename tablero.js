@@ -289,6 +289,42 @@
     return it.mensual ? [["2 años", 730], ["3 años", 1095], ["5 años", 1825]] : [["3 meses", 90], ["1 año", 365], ["3 años", 1095], ["5 años", 1825]];
   }
 
+  /* ---------- "que mide y como se lee" ---------- */
+
+  var GUIA_KEY = "econochanta:v1:guia-cerrada";
+  function guiaCerrada() { try { return localStorage.getItem(GUIA_KEY) === "1"; } catch (e) { return false; } }
+  function guardarGuia(cerrada) { try { localStorage.setItem(GUIA_KEY, cerrada ? "1" : "0"); } catch (e) { /* sin storage */ } }
+
+  // una cuenta con el ultimo dato para que el numero se entienda
+  function enNumeros(it) {
+    if (!it.s) return null;
+    var v = it.s.ultimo.v;
+    switch (it.id) {
+      case "infM": return "Si la inflación de " + mesDe(it) + " (" + it.valor + ") se repitiera todos los meses, los precios subirían " + num((Math.pow(1 + v / 100, 12) - 1) * 100, 0) + "% en un año.";
+      case "infIA": return "Lo que hace un año costaba $100 hoy cuesta, en promedio, $" + num(100 + v, 0) + ".";
+      case "riesgo": return "Hoy son " + num(v, 0) + " puntos: Argentina pagaría " + num(v / 100, 2) + " puntos porcentuales por año más que EE. UU.";
+      case "brecha": return "Hoy, por cada $100 que cuesta un dólar oficial, el dólar CCL cuesta $" + num(100 + v, 0) + ".";
+      case "badlar": case "tamar": case "tasaDep": case "tasaPers":
+        return "Una tasa nominal anual de " + it.valor + " equivale a unos " + num(v * 30 / 365, 1) + "% por cada 30 días. Compará ese número con la inflación mensual.";
+      default: return null;
+    }
+  }
+
+  function guiaDe(it, abierta) {
+    var g = window.EconoGlosario && window.EconoGlosario[it.id];
+    if (!g) return null;
+    var d = el("details", "guia");
+    d.open = abierta !== undefined ? abierta : !guiaCerrada();
+    d.appendChild(el("summary", "guia__titulo", "¿Qué mide y cómo se lee?"));
+    [["Qué es", g.q], ["Cómo se mide", g.c], ["Cómo leerlo", g.l]].forEach(function (x) {
+      var p = el("p", "guia__p"); p.appendChild(el("b", "", x[0] + ". ")); p.appendChild(document.createTextNode(x[1])); d.appendChild(p);
+    });
+    var n = enNumeros(it);
+    if (n) { var pn = el("p", "guia__p guia__num"); pn.appendChild(el("b", "", "En números de hoy. ")); pn.appendChild(document.createTextNode(n)); d.appendChild(pn); }
+    if (g.o) { var po = el("p", "guia__p guia__ojo"); po.appendChild(el("b", "", "Ojo. ")); po.appendChild(document.createTextNode(g.o)); d.appendChild(po); }
+    return d;
+  }
+
   /* cfg: { filas, raiz, vista, titulo, clave: [ids de los indicadores del resumen], frases(porId) -> [texto] } */
   function crearMesa(cfg) {
     var filas = cfg.filas, vista = cfg.vista;
@@ -485,7 +521,7 @@
       var gc = el("div", "tarjetas");
       cfg.clave.forEach(function (id) { if (porId[id]) gc.appendChild(tarjeta(porId[id])); });
       box.appendChild(gc);
-      box.appendChild(el("p", "leyenda", "▲ sube · ▼ baja. Verde: mejora para la economía. Rojo: empeora. Gris: no se califica (el dólar, las tasas o los agregados monetarios, por ejemplo). Tocá un indicador para ver su gráfico y marcarlo como favorito."));
+      box.appendChild(el("p", "leyenda", "▲ sube · ▼ baja. Verde: mejora para la economía. Rojo: empeora. Gris: no se califica (el dólar, las tasas o los agregados monetarios, por ejemplo). Tocá un indicador para ver su gráfico, qué mide y cómo se lee, y para marcarlo como favorito."));
     }
 
     /* ---- detalle ---- */
@@ -543,6 +579,12 @@
       var dias = rezagoDias(it.s);
       chg.appendChild(el("span", "pastilla " + (it.viejo ? "viejo" : "flat"), "Dato de " + it.fecha + (it.viejo ? " (hace " + dias + " días, desactualizado)" : "")));
       box.appendChild(chg);
+
+      var guia = guiaDe(it);
+      if (guia) {
+        guia.addEventListener("toggle", function () { guardarGuia(!guia.open); });
+        box.appendChild(guia);
+      }
 
       var rs = rangosDe(it);
       var rg = estado.rango[it.id];
@@ -1025,7 +1067,8 @@
   var OTRAS_INICIO = [
     { id: "noticias", nombre: "Noticias", desc: "Titulares de la economía por tema y por medio" },
     { id: "calcular", nombre: "Calculadoras", desc: "Plazo fijo contra dólar, sueldo contra inflación" },
-    { id: "miplata", nombre: "Tu plata", desc: "Cómo te afecta todo esto, según tu perfil" }
+    { id: "miplata", nombre: "Tu plata", desc: "Cómo te afecta todo esto, según tu perfil" },
+    { id: "glosario", nombre: "Glosario", desc: "Qué mide cada indicador, cómo se calcula y cómo leerlo" }
   ];
   var IDS_DOLARES = ["oficial", "blue", "mep", "ccl", "brecha"];
   var IDS_DATOS = ["infM", "infIA", "riesgo", "reservas", "emae", "desoc", "resPrim", "saldo"];
@@ -1063,12 +1106,55 @@
     pintar();
   }
 
+  /* ---------- glosario ---------- */
+
+  function armarGlosario() {
+    var raiz = $("glosario-contenido");
+    var buscar = el("input", "mesa__buscar"); buscar.type = "search"; buscar.placeholder = "Buscar indicador"; buscar.setAttribute("aria-label", "Buscar indicador");
+    raiz.appendChild(buscar);
+    var lista = el("div", "glosario"); raiz.appendChild(lista);
+    var vacio = el("p", "mesa__vacio", "Sin resultados."); vacio.hidden = true; raiz.appendChild(vacio);
+
+    var bloques = [];
+    SECCIONES.forEach(function (sec) {
+      var ids = [];
+      sec.grupos.forEach(function (gr) { gr[1].forEach(function (id) { ids.push(id); }); });
+      bloques.push([sec.nombre, ids]);
+    });
+    bloques.push(["Banco Central", Object.keys(DEFS).filter(function (id) { return !SEC_DE[id]; })]);
+
+    var grupos = [];
+    bloques.forEach(function (b) {
+      var h = el("h2", "resumen__sub", b[0]); lista.appendChild(h);
+      var items = []; grupos.push({ h: h, items: items });
+      b[1].forEach(function (id) {
+        if (!(window.EconoGlosario && window.EconoGlosario[id])) return;
+        var d = guiaDe({ id: id }, false);
+        d.querySelector("summary").textContent = DEFS[id].label;
+        var ir = el("a", "link", "Ver el gráfico"); ir.href = "#" + (SEC_DE[id] || "bcra") + ":" + id;
+        d.appendChild(ir);
+        d.dataset.nombre = DEFS[id].label.toLowerCase();
+        lista.appendChild(d); items.push(d);
+      });
+    });
+    buscar.addEventListener("input", function () {
+      var q = buscar.value.trim().toLowerCase(), hay = false;
+      grupos.forEach(function (t) {
+        var n = 0;
+        t.items.forEach(function (d) { var ok = !q || d.textContent.toLowerCase().indexOf(q) !== -1; d.hidden = !ok; if (ok) n++; });
+        t.h.hidden = n === 0;
+        if (n) hay = true;
+      });
+      vacio.hidden = hay;
+    });
+  }
+
   /* ---------- API ---------- */
 
   var secPorId = {}, mesasSec = {};
   SECCIONES.forEach(function (s) { secPorId[s.id] = s; });
 
-  var bcraMesa = null, mercadosListo = false, hubListo = false, tilesInicio = false;
+  var bcraMesa = null, mercadosListo = false, hubListo = false, tilesInicio = false, glosarioListo = false;
 
   // un link viejo #tablero:id pasa a la seccion que corresponde
   function migrar(sub) { return sub && SEC_DE[sub] ? SEC_DE[sub] + ":" + sub : "inicio"; }
@@ -1089,6 +1175,8 @@
     } else if (vista === "bcra") {
       if (!bcraMesa) armarBCRA();
       if (sub) bcraMesa.abrir(sub); else bcraMesa.cerrar();
+    } else if (vista === "glosario") {
+      if (!glosarioListo) { glosarioListo = true; armarGlosario(); }
     } else if (vista === "mercados") {
       if (!mercadosListo) { mercadosListo = true; armarMercados(); }
     }

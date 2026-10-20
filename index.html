@@ -120,6 +120,7 @@
     <section id="vista-mas" class="vista" aria-labelledby="h-mas" hidden>
       <h1 id="h-mas" class="title">Más</h1>
       <ul class="menu">
+        <li><a href="#glosario"><strong>Glosario</strong><span>Qué mide cada indicador y cómo leerlo</span></a></li>
         <li><a href="#alertas"><strong>Alertas</strong><span>Avisos por brecha del dólar</span></a></li>
         <li><a href="#perfil"><strong>Perfil</strong><span>Tus datos, guardados solo en este dispositivo</span></a></li>
       </ul>
@@ -139,6 +140,13 @@
         </table>
         <p class="hint">Cada gráfico muestra su fuente y la fecha de su último dato. Los datos mensuales y trimestrales se publican con rezago. No es asesoramiento financiero.</p>
       </article>
+    </section>
+
+    <!-- GLOSARIO -->
+    <section id="vista-glosario" class="vista" aria-labelledby="h-glosario" hidden>
+      <h1 id="h-glosario" class="title">Glosario</h1>
+      <p class="lead">Qué mide cada indicador, cómo se calcula y cómo leerlo para ponerlo en contexto. Tocá un indicador para ver la explicación.</p>
+      <div id="glosario-contenido" class="vista vista--inner"></div>
     </section>
 
     <!-- NOTICIAS -->
@@ -334,6 +342,7 @@
   <script src="api.js"></script>
   <script src="series.js"></script>
   <script src="charts.js"></script>
+  <script src="glosario.js"></script>
   <script src="tablero.js"></script>
   <script src="app.js"></script>
 </body>
