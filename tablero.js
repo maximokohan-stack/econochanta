@@ -614,7 +614,7 @@
           b.appendChild(el("span", "tarjeta__fuente", "DolarAPI · " + (hora(c.fecha) || it.fecha)));
         } else b.appendChild(el("span", "tarjeta__fuente", fuenteCorta(it.s.fuente) + " · " + it.fecha));
       } else b.appendChild(el("span", "tarjeta__val tarjeta__val--msg", it.error ? "sin dato" : "…"));
-      b.addEventListener("click", function () { location.hash = hashDe(it); });
+      b.addEventListener("click", function () { if (cfg.alTocar) cfg.alTocar(it); else location.hash = hashDe(it); });
       return b;
     }
 
@@ -849,7 +849,7 @@
       if (fila && esMovil()) fila.focus({ preventScroll: true });
     }
 
-    return { armar: armar, abrir: abrir, cerrar: cerrar, tarjeta: tarjeta, items: items, porId: porId };
+    return { armar: armar, abrir: abrir, cerrar: cerrar, tarjeta: tarjeta, items: items, porId: porId, cot: function () { return cot; } };
   }
 
 
@@ -1211,7 +1211,6 @@
     { id: "glosario", nombre: "Glosario", desc: "Qué mide cada indicador, cómo se calcula y cómo leerlo" }
   ];
   var IDS_DOLARES = ["oficial", "blue", "mep", "ccl", "tarjeta", "brecha"];
-  var IDS_DATOS = ["infM", "infIA", "riesgo", "reservas", "emae", "desoc", "resPrim", "saldo"];
 
   /* ---------- buscador de la portada ---------- */
 
@@ -1382,33 +1381,356 @@
 
   function firmaFavs() { return Object.keys(favs).sort().join(","); }
 
+  /* ---------- Inicio: pulso de hoy, desde tu ultima visita, lo que mas se movio y cajon de detalle ---------- */
+
+  var REDUCE = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+  var IDS_PULSO = ["oficial", "infM", "riesgo"];
+  var IDS_VISITA = ["oficial", "blue", "mep", "ccl", "brecha", "riesgo", "reservas", "infM", "badlar"];
+  var IDS_MOV = ["oficial", "blue", "mep", "ccl", "tarjeta", "brecha", "riesgo", "reservas", "badlar", "tamar", "infM", "infIA", "emae", "desoc", "resPrim", "saldo", "recaudIA", "salarios"];
+  var PERIODOS = [
+    { id: "hoy", nombre: "Hoy", dias: 0, rango: 90, txt: "frente al dato anterior", soloDiarias: true },
+    { id: "sem", nombre: "Semana", dias: 7, rango: 90, txt: "en 7 días", soloDiarias: true },
+    { id: "mes", nombre: "Mes", dias: 30, rango: 365, txt: "en 30 días" },
+    { id: "anio", nombre: "Año", dias: 365, rango: 1095, txt: "en 12 meses" }
+  ];
+  var ESCALA = { pct: { 0: 1.5, 7: 3, 30: 6, 365: 40 }, pp: { 0: 0.5, 7: 1, 30: 2, 365: 6 }, pb: { 0: 15, 7: 40, 30: 100, 365: 350 } };
+  var VISITA_KEY = "econochanta:v1:visita";
+  var movPer = "hoy", movMesa = null, valoresPrevios = {}, contados = {}, ultimaCarga = 0, refrescoListo = false, visitaCalculada = false;
+
+  function periodoDe(id) { return PERIODOS.filter(function (p) { return p.id === id; })[0] || PERIODOS[0]; }
+
+  // cambio de un indicador en un periodo: porcentaje, puntos porcentuales o puntos basicos
+  function cambioPeriodo(it, per) {
+    var s = it.s; if (!it.ok || !s || !s.points || s.points.length < 2) return null;
+    var pts = s.points, ult = pts[pts.length - 1], ref = null, i;
+    if (per.soloDiarias && pasoDias(s) > 3) return null;
+    if (per.dias === 0) ref = pts[pts.length - 2];
+    else {
+      var objetivo = new Date(new Date(ult[0] + "T12:00:00").getTime() - per.dias * 86400000).toISOString().slice(0, 10);
+      for (i = pts.length - 1; i >= 0; i--) if (pts[i][0] <= objetivo) { ref = pts[i]; break; }
+      if (!ref) return null;
+    }
+    var tipo = s.unit === "pb" ? "pb" : (it.t === "rate" ? "pp" : "pct"), c;
+    if (tipo === "pct") c = ref[1] ? (ult[1] - ref[1]) / Math.abs(ref[1]) * 100 : null;
+    else c = ult[1] - ref[1];
+    if (c === null || !isFinite(c)) return null;
+    var txt = tipo === "pct" ? signo(c, Math.abs(c) < 10 ? 2 : 1) + "%" : tipo === "pp" ? signo(c, 1) + " pp" : signo(c, 0) + " pb";
+    var tramo = pts.filter(function (p) { return p[0] >= ref[0]; });
+    return { c: c, tipo: tipo, txt: txt, esc: ESCALA[tipo][per.dias], ref: ref, tramo: tramo.length > 1 ? tramo : pts.slice(-2) };
+  }
+
+  function tonoCambio(c) { return Math.abs(c) < 0.0001 ? "flat" : c > 0 ? "tono-bien" : "tono-mal"; }
+  function claseCalor(c) { return Math.abs(c) < 0.0001 ? "calor-neutro" : c > 0 ? "calor-bien" : "calor-mal"; }
+
+  function ordenarMov(per) {
+    var out = [];
+    IDS_MOV.forEach(function (id) {
+      var it = movMesa && movMesa.porId[id]; if (!it) return;
+      var ch = cambioPeriodo(it, per); if (!ch) return;
+      out.push({ it: it, ch: ch, mag: Math.abs(ch.c) / ch.esc });
+    });
+    out.sort(function (a, b) { return b.mag - a.mag; });
+    return out;
+  }
+
+  // los numeros cuentan hasta su valor la primera vez que aparecen
+  function contar(elem, texto, id) {
+    if (REDUCE || contados[id]) return;
+    contados[id] = true;
+    var mt = String(texto).match(/-?[\d.]+(?:,\d+)?/); if (!mt) return;
+    var n = parseFloat(mt[0].replace(/\./g, "").replace(",", "."));
+    if (!isFinite(n)) return;
+    var dec = (mt[0].split(",")[1] || "").length, pre = texto.slice(0, mt.index), suf = texto.slice(mt.index + mt[0].length), t0 = null, dur = 900;
+    function f(v) { return pre + v.toLocaleString("es-AR", { minimumFractionDigits: dec, maximumFractionDigits: dec }) + suf; }
+    setTimeout(function () { elem.textContent = texto; }, dur + 250);
+    function paso(t) { if (t0 === null) t0 = t; var k = Math.min(1, (t - t0) / dur); elem.textContent = f(n * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(paso); }
+    requestAnimationFrame(paso);
+  }
+  // un destello breve cuando un dato cambia respecto de la vez anterior que se pintó
+  function destello(tile, it) {
+    if (valoresPrevios[it.id] !== undefined && valoresPrevios[it.id] !== it.valor) tile.classList.add("flash");
+  }
+
+  // tarjeta de "lo que mas se movio": el recuadro cuenta el cambio del periodo elegido
+  function tarjetaMov(x, per, grande) {
+    var it = x.it, ch = x.ch;
+    var b = el("button", "tarjeta mov " + claseCalor(ch.c) + (grande ? " mov--grande" : "")); b.type = "button"; b.dataset.id = it.id;
+    b.style.setProperty("--k", Math.min(1, x.mag).toFixed(2));
+    b.setAttribute("aria-label", it.label + ", " + it.valor + ", " + (ch.c > 0 ? "sube " : ch.c < 0 ? "baja " : "sin cambios ") + ch.txt.replace(/^[+\-−]/, "") + " " + per.txt);
+    var nom = el("span", "tarjeta__nombre"); var pt = punto(it.id); if (pt) nom.appendChild(pt); nom.appendChild(document.createTextNode(it.label)); b.appendChild(nom);
+    b.appendChild(el("span", "tarjeta__val", it.valor));
+    var un = unidadDe(it); if (un) b.appendChild(el("span", "tarjeta__unidad", un));
+    b.appendChild(el("span", "tarjeta__chg", (Math.abs(ch.c) < 0.0001 ? "■ " : ch.c > 0 ? "▲ " : "▼ ") + ch.txt + " · " + per.txt));
+    var sp = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    sp.setAttribute("class", "tarjeta__spark"); sp.setAttribute("aria-hidden", "true");
+    C.spark(sp, ch.tramo, "#fff"); b.appendChild(sp);
+    b.addEventListener("click", function () { abrirCajon(it, per.id); });
+    destello(b, it);
+    return b;
+  }
+
+  function pintarMovers(animar) {
+    var caja = $("movers"); if (!caja) return;
+    var per = periodoDe(movPer);
+    var antes = {};
+    if (animar) [].forEach.call(caja.children, function (c) { antes[c.dataset.id] = c.getBoundingClientRect(); });
+    var lista = ordenarMov(per).slice(0, 8);
+    caja.textContent = "";
+    lista.forEach(function (x, i) { caja.appendChild(tarjetaMov(x, per, i === 0)); });
+    if (lista.length && (animar || !caja.__pintada)) {
+      caja.__pintada = true; caja.classList.add("anima");
+      clearTimeout(caja.__t); caja.__t = setTimeout(function () { caja.classList.remove("anima"); }, 1600);
+    }
+    var nota = $("mov-nota");
+    if (nota) nota.textContent = per.soloDiarias ? "En Hoy y Semana solo se comparan los datos que se publican todos los días. Para ver también los mensuales, elegí Mes o Año." : "";
+    if (!lista.length) caja.appendChild(el("p", "hint", "Cargando indicadores…"));
+    if (animar && !REDUCE) {
+      [].forEach.call(caja.children, function (c) {
+        var a = antes[c.dataset.id], d = c.getBoundingClientRect();
+        if (a && c.animate) { var dx = a.left - d.left, dy = a.top - d.top; if (dx || dy) c.animate([{ transform: "translate(" + dx + "px," + dy + "px)" }, { transform: "none" }], { duration: 600, easing: "cubic-bezier(.2,.8,.2,1)" }); }
+        else if (c.animate) c.animate([{ opacity: 0, transform: "scale(.94)" }, { opacity: 1, transform: "none" }], { duration: 450, easing: "ease-out" });
+      });
+    }
+  }
+
+  function pintarPeriodos() {
+    var caja = $("mov-periodos"); if (!caja) return;
+    caja.textContent = "";
+    PERIODOS.forEach(function (p) {
+      caja.appendChild(chip(p.nombre, p.id === movPer, function () { movPer = p.id; pintarPeriodos(); pintarMovers(true); anunciar("Mostrando lo que más se movió: " + p.nombre.toLowerCase()); }));
+    });
+  }
+
+  /* ---- desde tu ultima visita ---- */
+
+  function haceTexto(t) {
+    var min = Math.round((Date.now() - t) / 60000);
+    if (min < 2) return "hace un momento";
+    if (min < 60) return "hace " + min + " min";
+    var d = new Date(t), hoy = new Date(), hh = ("0" + d.getHours()).slice(-2) + ":" + ("0" + d.getMinutes()).slice(-2);
+    if (d.toDateString() === hoy.toDateString()) return "hoy a las " + hh;
+    var ayer = new Date(hoy.getTime() - 86400000);
+    if (d.toDateString() === ayer.toDateString()) return "ayer a las " + hh;
+    return "el " + d.getDate() + " de " + MESES_L[d.getMonth()];
+  }
+
+  function calcularVisita(m) {
+    var ids = IDS_VISITA.filter(function (id) { return m.porId[id] && m.porId[id].ok; });
+    if (ids.length < 6 || !IDS_PULSO.every(function (id) { return m.porId[id] && m.porId[id].ok; })) return null;
+    var ahora = { t: Date.now(), v: {} };
+    ids.forEach(function (id) { ahora.v[id] = m.porId[id].s.ultimo.v; });
+    var d = null;
+    try { d = JSON.parse(localStorage.getItem(VISITA_KEY) || "null"); } catch (e) { d = null; }
+    if (!d) d = { base: null, actual: null };
+    if (!d.actual || Date.now() - d.actual.t > 30 * 60000) { d.base = d.actual; d.actual = ahora; }
+    else d.actual = { t: d.actual.t, v: ahora.v };
+    try { localStorage.setItem(VISITA_KEY, JSON.stringify(d)); } catch (e) { /* sin storage */ }
+    return { base: d.base, ahora: ahora };
+  }
+
+  function pintarVisita(caja, info) {
+    caja.textContent = "";
+    caja.appendChild(el("h3", "pulso__tit", "Desde tu última visita"));
+    if (!info) { caja.appendChild(el("p", "hint", "Cargando…")); return; }
+    if (!info.base) {
+      caja.appendChild(el("p", "pulso__vacio", "Es tu primera visita. La próxima vez te mostramos acá qué cambió desde hoy."));
+      return;
+    }
+    caja.appendChild(el("p", "pulso__sub", haceTexto(info.base.t)));
+    var cambios = [];
+    IDS_VISITA.forEach(function (id) {
+      var a = info.base.v[id], b = info.ahora.v[id], it = movMesa.porId[id];
+      if (a === undefined || b === undefined || !it || !it.ok) return;
+      var tipo = it.s.unit === "pb" ? "pb" : (it.t === "rate" ? "pp" : "pct"), c = tipo === "pct" ? (a ? (b - a) / Math.abs(a) * 100 : 0) : b - a;
+      if (Math.abs(c) < 0.0001) return;
+      var esc = tipo === "pct" ? 1.5 : tipo === "pp" ? 0.5 : 15;
+      cambios.push({ it: it, c: c, tipo: tipo, mag: Math.abs(c) / esc });
+    });
+    cambios.sort(function (x, y) { return y.mag - x.mag; });
+    var ul = el("ul", "pulso__cambios");
+    cambios.slice(0, 5).forEach(function (x) {
+      var li = el("li"), b = el("button", "pulso__cambio"); b.type = "button";
+      var txt = x.tipo === "pct" ? signo(x.c, Math.abs(x.c) < 10 ? 2 : 1) + "%" : x.tipo === "pp" ? signo(x.c, 1) + " pp" : signo(x.c, 0) + " pb";
+      b.appendChild(el("span", "pulso__cambio-n", x.it.label));
+      b.appendChild(el("span", "pulso__cambio-v " + tonoCambio(x.c), (x.c > 0 ? "▲ " : "▼ ") + txt));
+      b.addEventListener("click", function () { abrirCajon(x.it, "mes"); });
+      li.appendChild(b); ul.appendChild(li);
+    });
+    if (!cambios.length) ul.appendChild(el("li", "pulso__vacio", "Sin cambios desde entonces."));
+    caja.appendChild(ul);
+    var notas = analisisVisibles().filter(function (a) { return a.fecha > new Date(info.base.t).toISOString().slice(0, 10); });
+    if (notas.length) { var l = el("a", "link", notas.length + (notas.length === 1 ? " nota nueva en Análisis" : " notas nuevas en Análisis")); l.href = "#analisis"; caja.appendChild(l); }
+  }
+
+  function pintarPulso(m) {
+    var raiz = $("pulso"); if (!raiz) return;
+    var tiles = raiz.querySelector(".pulso__tiles"), visita = raiz.querySelector(".pulso__visita"), linea = raiz.querySelector(".pulso__linea");
+    if (!tiles) {
+      raiz.textContent = "";
+      tiles = el("div", "pulso__tiles"); linea = el("p", "pulso__linea"); visita = el("div", "pulso__visita");
+      var izq = el("div", "pulso__izq"); izq.appendChild(tiles); izq.appendChild(linea);
+      raiz.appendChild(izq); raiz.appendChild(visita);
+    }
+    // los recuadros grandes solo se rehacen si cambió algún dato (así no se corta la animación de los números)
+    var firma = IDS_PULSO.map(function (id) { var it = m.porId[id]; return it ? (it.ok ? it.valor : it.error ? "e" : "…") : ""; }).join("|") + (m.cot() ? "c" : "");
+    if (raiz.__firma !== firma) {
+      raiz.__firma = firma;
+      tiles.textContent = "";
+      IDS_PULSO.forEach(function (id) {
+        var it = m.porId[id]; if (!it) return;
+        var t = m.tarjeta(it); t.classList.add("pulso__tile");
+        tiles.appendChild(t);
+        if (it.ok) { contar(t.querySelector(".tarjeta__val"), it.valor, id); destello(t, it); }
+      });
+    }
+    // lo que mas se movio hoy, en una linea
+    var top = ordenarMov(PERIODOS[0]).slice(0, 3);
+    linea.textContent = "";
+    if (top.length) {
+      linea.appendChild(el("b", "", "Lo más movido hoy: "));
+      top.forEach(function (x, i) {
+        if (i) linea.appendChild(document.createTextNode("  ·  "));
+        var b = el("button", "pulso__link", x.it.label + " "); b.type = "button";
+        b.appendChild(el("span", tonoCambio(x.ch.c), (x.ch.c > 0 ? "▲ " : "▼ ") + x.ch.txt));
+        b.addEventListener("click", function () { abrirCajon(x.it, "hoy"); });
+        linea.appendChild(b);
+      });
+    }
+    var act = el("span", "pulso__act", ""); act.id = "pulso-act"; linea.appendChild(act);
+    actualizarHace();
+    if (!visitaCalculada) {
+      var info = calcularVisita(m);
+      if (info) { visitaCalculada = true; ultimaCarga = Date.now(); pintarVisita(visita, info); visita.__info = info; }
+      else pintarVisita(visita, null);
+    } else if (visita.__info) pintarVisita(visita, visita.__info);
+  }
+  function actualizarHace() {
+    var a = $("pulso-act"); if (!a || !ultimaCarga) return;
+    var min = Math.floor((Date.now() - ultimaCarga) / 60000);
+    a.textContent = "  ·  Actualizado " + (min < 1 ? "hace un momento" : "hace " + min + " min");
+  }
+
+  /* ---- cajon de detalle: se abre sobre el Inicio, sin salir de la pagina ---- */
+
+  var cajon = null, cajonFoco = null;
+  function crearCajon() {
+    var fondo = el("div", "cajon-fondo"); fondo.hidden = true;
+    var caja = el("aside", "cajon"); caja.setAttribute("role", "dialog"); caja.setAttribute("aria-modal", "true"); caja.setAttribute("aria-label", "Detalle del indicador");
+    var cierra = el("button", "btn btn--ghost btn--xs cajon__cerrar", "Cerrar ✕"); cierra.type = "button";
+    var cuerpo = el("div", "cajon__cuerpo");
+    caja.appendChild(cierra); caja.appendChild(cuerpo); fondo.appendChild(caja); document.body.appendChild(fondo);
+    cierra.addEventListener("click", cerrarCajon);
+    fondo.addEventListener("click", function (ev) { if (ev.target === fondo) cerrarCajon(); });
+    caja.addEventListener("keydown", function (ev) {
+      if (ev.key === "Escape") { ev.preventDefault(); cerrarCajon(); return; }
+      if (ev.key !== "Tab") return;
+      var f = [].slice.call(caja.querySelectorAll("a[href], button:not([disabled])")).filter(function (e) { return e.offsetParent !== null; });
+      if (!f.length) return;
+      var i = f.indexOf(document.activeElement);
+      if (ev.shiftKey && i <= 0) { ev.preventDefault(); f[f.length - 1].focus(); }
+      else if (!ev.shiftKey && i === f.length - 1) { ev.preventDefault(); f[0].focus(); }
+    });
+    cajon = { fondo: fondo, caja: caja, cuerpo: cuerpo, cierra: cierra };
+  }
+  function cerrarCajon() {
+    if (!cajon || cajon.fondo.hidden) return;
+    cajon.fondo.classList.remove("on");
+    setTimeout(function () { cajon.fondo.hidden = true; }, REDUCE ? 0 : 300);
+    if (cajonFoco && cajonFoco.focus) { try { cajonFoco.focus({ preventScroll: true }); } catch (e) { /* sin foco */ } }
+  }
+  function abrirCajon(it, perId) {
+    if (!it || !it.ok) return;
+    if (!cajon) crearCajon();
+    var per = periodoDe(perId || movPer), ch = cambioPeriodo(it, per);
+    cajonFoco = document.activeElement;
+    var c = cajon.cuerpo; c.textContent = "";
+    var sec = SEC_DE[it.id] ? (SECCIONES.filter(function (x) { return x.id === SEC_DE[it.id]; })[0] || {}).nombre : "Banco Central";
+    c.appendChild(el("div", "kicker", sec));
+    var h = el("h2", "mesa__titulo", it.label);
+    var pt = punto(it.id); if (pt) h.insertBefore(pt, h.firstChild);
+    c.appendChild(h);
+    c.appendChild(el("div", "big", it.valor));
+    var un = unidadDe(it); if (un) c.appendChild(el("div", "big__unidad", un));
+    var pil = el("div", "pastillas");
+    if (ch) pil.appendChild(el("span", "pastilla " + tonoCambio(ch.c), (ch.c > 0 ? "▲ " : ch.c < 0 ? "▼ " : "■ ") + ch.txt + " " + per.txt));
+    pil.appendChild(el("span", "pastilla flat", "Dato de " + it.fecha));
+    c.appendChild(pil);
+    var cb = el("div", "cajon__grafico chart"); c.appendChild(cb);
+    var G = window.EconoGlosario && window.EconoGlosario[it.id];
+    if (G) {
+      var gd = el("div", "cajon__guia");
+      [["Qué es", G.q], ["Cómo leerlo", G.l]].forEach(function (x) { var p = el("p", "guia__p"); p.appendChild(el("b", "", x[0] + ". ")); p.appendChild(document.createTextNode(x[1])); gd.appendChild(p); });
+      c.appendChild(gd);
+    }
+    var acc = el("div", "mesa__acciones");
+    var ver = el("a", "btn btn--sm", "Ver todo el detalle"); ver.href = "#" + (SEC_DE[it.id] || "bcra") + ":" + it.id; ver.style.textDecoration = "none"; ver.style.display = "inline-flex"; ver.style.alignItems = "center";
+    ver.addEventListener("click", function () { cerrarCajon(); });
+    acc.appendChild(ver);
+    var fav = el("button", "btn btn--ghost btn--sm", favs[it.id] ? "★ Favorito" : "☆ Marcar favorito"); fav.type = "button"; fav.setAttribute("aria-pressed", favs[it.id] ? "true" : "false");
+    fav.addEventListener("click", function () {
+      if (favs[it.id]) delete favs[it.id]; else favs[it.id] = true;
+      guardarFavs(); fav.textContent = favs[it.id] ? "★ Favorito" : "☆ Marcar favorito"; fav.setAttribute("aria-pressed", favs[it.id] ? "true" : "false");
+      anunciar(favs[it.id] ? it.label + " agregado a favoritos" : it.label + " quitado de favoritos");
+    });
+    acc.appendChild(fav);
+    c.appendChild(acc);
+    cajon.fondo.hidden = false;
+    setTimeout(function () {
+      cajon.fondo.classList.add("on");
+      var serie = recortar(it.s, per.rango);
+      if (PUNTO[it.id]) serie.color = PUNTO[it.id];
+      if (it.bars || it.t === "ipc") C.bars(cb, { points: serie.points, fmt: it.fmt, titulo: it.label, height: 220, color: it.signed ? function (v) { return v >= 0 ? "var(--c1)" : "var(--c2)"; } : undefined });
+      else C.line(cb, { series: [serie], area: true, fmt: it.fmt, titulo: it.label, height: 220 });
+      cajon.cierra.focus();
+    }, 30);
+  }
+
+  /* ---- armado del Inicio ---- */
+
   function armarInicio() {
-    var ids = IDS_DOLARES.concat(IDS_DATOS);
-    Object.keys(favs).forEach(function (id) { if (DEFS[id] && ids.indexOf(id) === -1) ids.push(id); });
+    var ids = IDS_DOLARES.concat(IDS_PULSO, IDS_MOV, IDS_VISITA);
+    Object.keys(favs).forEach(function (id) { ids.push(id); });
+    ids = ids.filter(function (id, i) { return DEFS[id] && ids.indexOf(id) === i; });
     var filas = ids.map(function (id) { var c = {}; Object.keys(DEFS[id]).forEach(function (k) { c[k] = DEFS[id][k]; }); c.g = "Inicio"; return c; });
-    var cajas = { dolares: $("inicio-dolares"), datos: $("inicio-datos"), frases: $("inicio-frases"), favs: $("inicio-favs") };
+    var cajas = { dolares: $("inicio-dolares"), favs: $("inicio-favs") };
 
     var m = crearMesa({
-      filas: filas, raiz: document.createElement("div"), vista: "inicio", titulo: "", clave: [], frases: frasesTablero, sinRegistro: true,
+      filas: filas, raiz: document.createElement("div"), vista: "inicio", titulo: "", clave: [], frases: null, sinRegistro: true,
       hashDe: function (it) { return "#" + (SEC_DE[it.id] || "bcra") + ":" + it.id; },
+      alTocar: function (it) { abrirCajon(it, "hoy"); },
       alCambiar: pintar
     });
+    movMesa = m;
     function grupo(caja, lista) {
       caja.textContent = "";
-      lista.forEach(function (id) { if (m.porId[id]) caja.appendChild(m.tarjeta(m.porId[id])); });
+      lista.forEach(function (id) { var it = m.porId[id]; if (!it) return; var t = m.tarjeta(it); caja.appendChild(t); if (it.ok) destello(t, it); });
     }
     function pintar() {
+      pintarPulso(m);
+      pintarMovers(false);
       grupo(cajas.dolares, IDS_DOLARES);
-      grupo(cajas.datos, IDS_DATOS);
-      cajas.frases.textContent = "";
-      frasesTablero(m.porId).forEach(function (t) { cajas.frases.appendChild(el("li", "", t)); });
       var mis = Object.keys(favs).filter(function (id) { return m.porId[id]; });
       $("inicio-favs-bloque").hidden = !mis.length;
       grupo(cajas.favs, mis);
+      Object.keys(m.porId).forEach(function (id) { if (m.porId[id].ok) valoresPrevios[id] = m.porId[id].valor; });
     }
     inicio = { firma: firmaFavs(), pintar: pintar };
     m.armar();
+    pintarPeriodos();
     pintar();
+  }
+
+  // el Inicio se actualiza solo y avisa cuando algo cambia
+  function iniciarRefresco() {
+    if (refrescoListo) return;
+    refrescoListo = true;
+    setInterval(function () { actualizarHace(); }, 30000);
+    setInterval(function () {
+      var v = $("vista-inicio");
+      if (document.visibilityState !== "visible" || !v || v.hidden) return;
+      visitaCalculada = true;
+      armarInicio();
+    }, 5 * 60000);
   }
 
   /* ---------- tortas de ingresos y gastos (Cuentas del Estado) ---------- */
@@ -1842,6 +2164,7 @@
       if (!tilesInicio) { tilesInicio = true; tiles($("inicio-tiles"), OTRAS_INICIO); }
       if (!buscadorListo) { buscadorListo = true; armarBuscador(); iniciarPrimera(); }
       pintarInicioAnalisis();
+      iniciarRefresco();
       if (!inicio || inicio.firma !== firmaFavs()) armarInicio();
     } else if (vista === "argentina") {
       if (!hubListo) { hubListo = true; tiles($("argentina-tiles")); }
