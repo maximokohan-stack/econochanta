@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-21T00:23:30.398836Z",
+ "actualizado": "2026-10-21T04:03:21.881681Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -59,6 +59,13 @@
   }
  ],
  "items": [
+  {
+   "titulo": "A Francisco Franco le mataron 34 animales en un mes, perdió $40 millones y abandonó el campo: “No me dejan trabajar”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/a-francisco-franco-le-faenaron-34-animales-en-un-mes-perdio-40-millones-y-decidio-abandonar-el-campo-nid20102026/",
+   "fecha": "2026-10-21T03:24:45Z",
+   "tema": "otros"
+  },
   {
    "titulo": "Polémica por una ley que permite usar fondos de los caminos rurales para obras contra las inundaciones",
    "medio": "La Nación",
@@ -121,6 +128,13 @@
    "url": "https://www.lanacion.com.ar/economia/campo/biocombustibles-las-pymes-pidieron-elevar-el-corte-del-biodiesel-y-las-aceiteras-reclamaron-aprobar-nid20102026/",
    "fecha": "2026-10-20T22:38:45Z",
    "tema": "politica"
+  },
+  {
+   "titulo": "Lamelas anunció hasta US$ 20.000 millones en inversiones y condicionó el apoyo de EE.UU. al rumbo político después de 2027",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/politica/lamelas-anuncio-us-20000-millones-inversiones-apoyo-eeuu-2027.phtml",
+   "fecha": "2026-10-20T22:33:32Z",
+   "tema": "empresas"
   },
   {
    "titulo": "RDEco: Aldo Elías advirtió que los costos son el principal problema del turismo argentino",
@@ -204,13 +218,6 @@
    "medio": "Perfil",
    "url": "https://www.perfil.com/noticias/cordoba/credito-para-sobrevivir-como-se-endeudan-los-hogares-segun-su-nivel-de-ingresos.phtml",
    "fecha": "2026-10-20T21:43:06Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "A Francisco Franco le mataron 34 animales en un mes, perdió $40 millones y abandonó el campo: “No me dejan trabajar”",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/a-francisco-franco-le-faenaron-34-animales-en-un-mes-perdio-40-millones-y-decidio-abandonar-el-campo-nid20102026/",
-   "fecha": "2026-10-20T21:43:02Z",
    "tema": "otros"
   },
   {
@@ -646,13 +653,6 @@
    "url": "https://www.infobae.com/economia/2026/10/20/supera-la-logica-tres-economistas-intentaron-descifrar-las-razones-de-la-suba-del-riesgo-pais-argentino/",
    "fecha": "2026-10-20T16:55:57Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "Ricardo Delgado: \"Estamos exportando como nunca, pero no hay dólares suficientes para atender los vencimientos de deuda\"",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/modo-fontevecchia/ricardo-delgado-estamos-exportando-como-nunca-pero-no-hay-dolares-suficientes-para-atender-los-vencimientos-de-deuda-modof.phtml",
-   "fecha": "2026-10-20T16:54:41Z",
-   "tema": "politica"
   },
   {
    "titulo": "El Gobierno prometió mejorar los subsidios a colectivos del AMBA tras la amenaza de recortes de frecuencias nocturnas",
