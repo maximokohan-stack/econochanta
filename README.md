@@ -24,7 +24,7 @@ La estructura sigue la de pulsomacro.com.ar: una portada, un menú de Argentina 
 
 | Sección | Contenido |
 |---|---|
-| **Inicio** | "Cada número de la economía, explicado": buscador de indicadores y secciones, dólares hoy (oficial, blue, MEP, CCL, tarjeta y brecha), "Lo que hay que mirar hoy" (inflación, riesgo país, reservas, actividad, desocupación, resultado fiscal, saldo comercial), tus favoritos y un menú para entrar por tema |
+| **Inicio** | "Cada número de la economía, explicado": el **pulso de hoy** (dólar oficial, inflación y riesgo país en grande), **qué cambió desde tu última visita**, **lo que más se movió** por período (hoy, semana, mes y año), dólares hoy (oficial, blue, MEP, CCL, tarjeta y brecha), la última nota de Análisis, tus favoritos y un menú para entrar por tema |
 | **Argentina** | Menú de temas, con un submenú que queda a la vista en cada uno |
 | &nbsp;&nbsp;Dólares | Oficial, MEP, CCL, blue, tarjeta, cripto, mayorista, brecha y compras de divisas del BCRA. `#dolares` |
 | &nbsp;&nbsp;Inflación y reservas | Inflación mensual e interanual, núcleo, regulados y estacionales, 7 rubros, UVA, CER, reservas y riesgo país. `#inflacion` |
@@ -53,6 +53,8 @@ Es oscuro por defecto, con una variante clara (botón arriba a la derecha).
 **Cómo se calcula** (`#metodologia`, desde Más): fuentes y frecuencia de cada dato, las cuentas propias, cómo leer los colores, qué pasa si una fuente falla y cómo citar.
 
 **En celular** la navegación pasa a una barra inferior con cinco accesos (Inicio, Argentina, Noticias, Calcular y Tu plata) y "Más" queda arriba, junto al botón de tema; el submenú de Argentina queda fijo arriba. En escritorio se mantiene la barra superior.
+
+**Inicio vivo.** Los números cuentan hasta su valor y las líneas se dibujan al entrar, y cuando un dato cambia al actualizarse el recuadro destella. El Inicio se actualiza solo cada 5 minutos y dice hace cuánto. "Desde tu última visita" compara los datos de hoy con los de la última vez que entraste (se guarda solo en tu navegador, sin servidor) y avisa si hay notas nuevas. "Lo que más se movió" ordena los recuadros por cuánto cambiaron en el período elegido y se reacomodan con animación; Hoy y Semana comparan solo los datos diarios. Tocar cualquier recuadro abre un panel con el gráfico y la explicación, sin salir del Inicio (a la derecha en escritorio y como hoja desde abajo en celular). Las animaciones se apagan con la opción de reducir movimiento del sistema.
 
 **Detalles de las tarjetas.** Cada una muestra la fuente y el período del dato y, debajo del número, la unidad en palabras ("millones de dólares", "pesos por dólar", "puntos básicos"). Las del dólar suman compra y venta con la hora de DolarAPI. Cada tipo de dólar tiene su color (oficial celeste, MEP ámbar, CCL violeta, blue rosa, tarjeta gris azulado, cripto turquesa), el mismo en la lista, las tarjetas y el gráfico. La primera vez que se entra aparece un aviso que se puede cerrar y que lleva al glosario.
 
