@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-20T21:59:03.112548Z",
+ "actualizado": "2026-10-21T00:23:30.398836Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -60,11 +60,151 @@
  ],
  "items": [
   {
+   "titulo": "Polémica por una ley que permite usar fondos de los caminos rurales para obras contra las inundaciones",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/polemica-por-una-ley-que-permite-usar-fondos-de-los-caminos-rurales-para-obras-contra-las-nid20102026/",
+   "fecha": "2026-10-20T23:59:18Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "“Veremos qué pasa después”: el embajador de Estados Unidos anticipó USD 20.000 millones en inversiones hasta 2027",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/20/el-embajador-de-estados-unidos-respaldo-al-gobierno-y-anticipo-usd-20000-millones-en-inversiones-hasta-2027/",
+   "fecha": "2026-10-20T23:38:04Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Arriazu le echó la culpa al BCRA de frenar la economía con sus compras de dólares",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/467077-economista-arriazu-le-tira-dardos-al-bcra-y-lo-culpa-por-enfriar-la-economia",
+   "fecha": "2026-10-20T23:19:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Un tipo de plazo fijo lidera el ranking de inversiones más elegidas por los argentinos",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/466832-que-plazo-fijo-lidera-el-ranking-de-inversiones-mas-elegidas-por-argentinos",
+   "fecha": "2026-10-20T23:17:00Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Joaquín Cottani, exviceministro de Caputo: “El programa económico está agotado, pero hay tiempo de revisarlo”",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/20/joaquin-cottani-exviceministro-de-caputo-el-programa-economico-esta-agotado-pero-hay-tiempo-de-revisarlo/",
+   "fecha": "2026-10-20T23:06:56Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Mariano Flores Vidal analizó el riesgo país en RDEco: “La mayor parte de lo que nos está pasando tiene que ver con temas internos”",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/masperfil/mariano-flores-vidal-la-incertidumbre-politica-explica-gran-parte-de-la-suba-del-riesgo-pais.phtml",
+   "fecha": "2026-10-20T23:01:42Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "RDEco: las señales de alerta detrás de la estabilidad cambiaria",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/masperfil/santiago-llull-el-problema-no-va-a-venir-desde-lo-cambiario-sino-desde-la-productividad.phtml",
+   "fecha": "2026-10-20T22:53:13Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El Banco Central sumó otros USD 100 millones y ya compró más del doble que en septiembre",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/20/el-banco-central-sumo-otros-usd-100-millones-y-ya-compro-mas-del-doble-que-en-septiembre/",
+   "fecha": "2026-10-20T22:48:19Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Biocombustibles: las pymes pidieron elevar el corte del biodiésel y las aceiteras reclamaron aprobar la ley sin cambios",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/biocombustibles-las-pymes-pidieron-elevar-el-corte-del-biodiesel-y-las-aceiteras-reclamaron-aprobar-nid20102026/",
+   "fecha": "2026-10-20T22:38:45Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "RDEco: Aldo Elías advirtió que los costos son el principal problema del turismo argentino",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/masperfil/aldo-elias-el-verdadero-problema-del-turismo-son-los-costos-no-el-tipo-de-cambio.phtml",
+   "fecha": "2026-10-20T22:31:45Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Mariano Flores Vidal en RDEco: “La principal enfermedad que tiene la Argentina es fiscal”",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/masperfil/mariano-flores-vidal-con-tipo-de-cambio-flotante-la-desinflacion-tarda-pero-viene.phtml",
+   "fecha": "2026-10-20T22:23:29Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El riesgo país vuelve a subir y el mercado mira las reservas: el análisis de Carlos Pérez en RDEco",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/masperfil/rdeco-advierten-sobre-el-atraso-cambiario-y-pidio-priorizar-la-acumulacion-de-reservas.phtml",
+   "fecha": "2026-10-20T22:15:52Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Un empresario del sector textil entró en concurso preventivo junto a la empresa Hilado",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/economia/un-referente-del-sector-textil-entro-en-concurso-preventivo-junto-a-la-empresa-hilado-a40.phtml",
+   "fecha": "2026-10-20T22:10:00Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "GM cae en bolsa tras advertencia de Barra sobre desafíos que se intensifican",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/bloomberg/bc-gm-cae-en-bolsa-tras-advertencia-de-barra-sobre-desafios-que-se-intensifican.phtml",
+   "fecha": "2026-10-20T22:03:00Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "El Gobierno calificó de “privilegio” los salarios docentes y dos diputados casi terminan a las piñas",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/politica/el-gobierno-califico-de-privilegio-los-salarios-docentes-y-dos-diputados-casi-terminan-a-las-pinas.phtml",
+   "fecha": "2026-10-20T21:59:00Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Carlos Pérez en RDEco: “Es muy importante que la Argentina priorice la acumulación de reservas”",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/masperfil/carlos-perez-la-argentina-debe-priorizar-la-acumulacion-de-reservas-y-la-actividad-economica.phtml",
+   "fecha": "2026-10-20T21:57:41Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Emergencia sanitaria: Brasil detectó un brote de Newcastle en una granja de pavos y México suspendió las compras de pollo",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/emergencia-sanitaria-brasil-detecto-un-brote-de-newcastle-en-una-granja-de-pavos-y-mexico-suspendio-nid20102026/",
+   "fecha": "2026-10-20T21:56:11Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Riesgo de bonos franceses supera nivel clave tras protestas en Francia",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/bloomberg/bc-riesgo-de-bonos-franceses-supera-nivel-clave-tras-protestas-en-francia.phtml",
+   "fecha": "2026-10-20T21:56:00Z",
+   "tema": "mercados"
+  },
+  {
    "titulo": "El nuevo índice MSCI Merval debutó con el pie izquierdo y acumuló una caída del 2%",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/finanzas/467064-nuevo-indice-msci-merval-debuto-con-pie-izquierdo-y-pierde-2-por-ciento",
    "fecha": "2026-10-20T21:53:00Z",
    "tema": "mercados"
+  },
+  {
+   "titulo": "Arriazu explicó por qué la compra de dólares del BCRA limita el crecimiento",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/467068-ricardo-arriazu-explico-por-que-compras-de-dolares-del-banco-central-argentino-limitan-crecimiento-economico",
+   "fecha": "2026-10-20T21:49:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Crédito para sobrevivir: cómo se endeudan los hogares según su nivel de ingresos",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/cordoba/credito-para-sobrevivir-como-se-endeudan-los-hogares-segun-su-nivel-de-ingresos.phtml",
+   "fecha": "2026-10-20T21:43:06Z",
+   "tema": "otros"
   },
   {
    "titulo": "A Francisco Franco le mataron 34 animales en un mes, perdió $40 millones y abandonó el campo: “No me dejan trabajar”",
@@ -529,13 +669,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "La diferencia entre pagar y financiar",
-   "medio": "Perfil",
-   "url": "https://noticias.perfil.com/noticias/empresas/la-diferencia-entre-pagar-y-financiar.phtml",
-   "fecha": "2026-10-20T16:31:58Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "5 aplicaciones que organizan tus gastos de viaje para ahorrar plata",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/5-aplicaciones-que-organizan-tus-gastos-viaje-ahorrar-plata-n6335751",
@@ -550,20 +683,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Saqueos en Francia: las marcas de lujo temen por las ventas y la imagen del país",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/saqueos-en-francia-las-marcas-de-lujo-temen-por-las-ventas-y-la-imagen-del-pais-a40.phtml",
-   "fecha": "2026-10-20T16:21:00Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Argentina lleva 34 meses consecutivos de superávit comercial: “Las exportaciones superaron los USD 10.000 millones por primera vez”",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/canal-e/argentina-lleva-34-meses-consecutivos-de-superavit-comercial-las-exportaciones-superaron-los-usd-10000-millones-por-primera-vez.phtml",
-   "fecha": "2026-10-20T16:05:00Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "Una búsqueda de 40 puestos de trabajo generó más de 10 cuadras de fila en Ezeiza",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/20/una-busqueda-de-40-puestos-de-trabajo-genero-mas-de-10-cuadras-de-fila-en-ezeiza/",
@@ -575,48 +694,6 @@
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/el-riesgo-pais-salta-hasta-los-710-puntos-y-alcanza-el-valor-mas-alto-en-casi-un-ano-nid20102026/",
    "fecha": "2026-10-20T15:55:08Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Francia se prepara para nuevas protestas y el Gobierno responde con toques de queda en varias ciudades",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/francia-prepara-nuevas-protestas-gobierno-responde-toques-queda-varias-ciudades-a40.phtml",
-   "fecha": "2026-10-20T15:54:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Emergencia en el Paraná: un estudio del INTA reveló el millonario gasto de los productores para retirar el ganado de las islas",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/emergencia-en-el-parana-un-estudio-del-inta-revelo-el-millonario-gasto-de-los-ganaderos-para-retirar-nid20102026/",
-   "fecha": "2026-10-20T15:51:57Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Cuáles son los motivos que llevaron al riesgo país por encima de los 700 puntos",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/cuales-son-los-motivos-que-llevaron-al-riesgo-pais-por-encima-de-los-700-puntos-nid20102026/",
-   "fecha": "2026-10-20T15:46:26Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "La suba del riesgo país castiga a la Argentina más que a otros mercados emergentes",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/dolar/la-suba-del-riesgo-pais-castiga-a-la-argentina-mas-que-a-otros-mercados-emergentes-nid20102026/",
-   "fecha": "2026-10-20T15:45:03Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "La Unión Europea endurece los requisitos vinculados a la deforestación en el sector cárnico",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/canal-e/la-union-europea-endurece-los-requisitos-vinculados-a-la-deforestacion-en-el-sector-carnico-es-una-norma-un-tanto-perversa.phtml",
-   "fecha": "2026-10-20T15:41:43Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El riesgo país vuela y sube a 710 puntos básicos, el registro más alto del año: qué pasa con los bonos",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/el-riesgo-pais-vuela-y-sube-a-710-puntos-basicos-que-esta-pasando.phtml",
-   "fecha": "2026-10-20T15:41:00Z",
    "tema": "mercados"
   },
   {
@@ -634,20 +711,6 @@
    "tema": "politica"
   },
   {
-   "titulo": "Cuáles son las oportunidades comerciales que podrían llegar al sector avícola",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/canal-e/cuales-son-las-oportunidades-comerciales-que-podrian-llegar-al-sector-avicola.phtml",
-   "fecha": "2026-10-20T15:24:43Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El Super Niño amenaza con inundar las costas: el mar podría subir hasta 30 cm y crece la tensión en América Latina",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/super-nino-amenaza-inundar-costas-mar-podria-subir-hasta-30cm-crece-tension-america-latina-a40.phtml",
-   "fecha": "2026-10-20T15:20:00Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Por qué no baja el riesgo país: las cuatro razones que explican la desconfianza de los mercados, según un economista",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/20/por-que-no-baja-el-riesgo-pais-las-cuatro-razones-que-explican-la-desconfianza-de-los-mercados-segun-un-economista/",
@@ -660,13 +723,6 @@
    "url": "https://www.ambito.com/economia/dolar-alberto-ades-explico-que-la-argentina-necesita-un-tipo-cambio-mas-alto-y-que-puede-pasar-2027-n6335752",
    "fecha": "2026-10-20T15:04:00Z",
    "tema": "dolar"
-  },
-  {
-   "titulo": "Por qué los inversores empiezan a acortar plazos ante un 2027 que se anticipa más volátil",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/canal-e/por-que-los-inversores-empiezan-a-acortar-plazos-ante-un-2027-que-se-anticipa-mas-volatil.phtml",
-   "fecha": "2026-10-20T14:42:36Z",
-   "tema": "otros"
   },
   {
    "titulo": "\"Este cultivo se ha perdido\": El Niño provoca una crisis mundial del azúcar",
@@ -695,13 +751,6 @@
    "url": "https://www.infobae.com/economia/2026/10/20/uno-de-los-economistas-mas-escuchados-por-milei-explico-por-que-argentina-tiene-poco-crecimiento-demasiadas-divisas/",
    "fecha": "2026-10-20T14:17:15Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "El dólar en Córdoba: a cuánto cotiza este martes 20 de octubre",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/cordoba/cordoba-dolar-hoy-dolar-blue-hoy-cotizacion-20-de-octubre-201026.phtml",
-   "fecha": "2026-10-20T14:12:00Z",
-   "tema": "dolar"
   },
   {
    "titulo": "China vuelve a aumentar sus importaciones de soja estadounidense por la tregua comercial",
@@ -746,13 +795,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "El Gobierno postergó hasta diciembre la entrada en vigencia de los Fondos de Asistencia Laboral",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/el-gobierno-postergo-hasta-diciembre-la-entrada-en-vigencia-de-los-fondos-de-asistencia-laboral.phtml",
-   "fecha": "2026-10-20T12:45:00Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "Brasil volverá al top 10 de las economías más grandes del mundo: en qué puesto quedó, según el FMI",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/brasil-volvera-al-top-10-las-s-mas-grandes-del-mundo-que-puesto-quedara-segun-el-fmi-n6335662",
@@ -760,32 +802,11 @@
    "tema": "politica"
   },
   {
-   "titulo": "El riesgo país se acerca a los 700 puntos: ¿es un castigo exagerado a un año de las elecciones?",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/20/el-riesgo-pais-se-acerca-a-los-700-puntos-es-un-castigo-exagerado-a-un-ano-para-las-elecciones/",
-   "fecha": "2026-10-20T12:35:31Z",
-   "tema": "mercados"
-  },
-  {
    "titulo": "El superávit energético superó los u$s1.600 millones en septiembre por Vaca Muerta",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/energia/466977-el-superavit-energetico-supero-us1600-millones-por-vaca-muerta",
    "fecha": "2026-10-20T12:03:00Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "El superávit comercial de 2026 podría superar los USD 26.000 millones y duplicar el resultado de 2025",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/20/el-superavit-comercial-de-2026-podria-superar-los-usd-26000-millones-y-duplicar-el-resultado-de-2025/",
-   "fecha": "2026-10-20T11:47:05Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Ya no viajamos igual: cómo cambió la forma de descansar",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/opinion/2026/10/20/ya-no-viajamos-igual-como-cambio-la-forma-de-descansar/",
-   "fecha": "2026-10-20T11:40:44Z",
-   "tema": "dolar"
   },
   {
    "titulo": "Plazo fijo: cuánto rinden $2.000.000 a 60 días",
@@ -807,27 +828,6 @@
    "url": "https://www.iprofesional.com/energia/466990-vaca-muerta-preven-un-superavit-energetico-de-us10000-millones",
    "fecha": "2026-10-20T11:19:00Z",
    "tema": "actividad"
-  },
-  {
-   "titulo": "El Gobierno postergó hasta diciembre la puesta en marcha del FAL",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/el-gobierno-postergo-diciembre-la-puesta-marcha-los-fal-n6335607",
-   "fecha": "2026-10-20T10:17:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "El Súper Niño pone a prueba al agro: prevén mejores rindes, pero las lluvias pueden demorar y encarecer la cosecha",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/el-super-nino-pone-prueba-al-agro-preven-mejores-rindes-pero-las-lluvias-pueden-demorar-y-encarecer-la-cosecha-n6335325",
-   "fecha": "2026-10-20T10:00:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "La City recalcula hasta dónde llegará el riesgo país y prevé bajón en emisiones de deuda",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/466976-cual-sera-el-proximo-techo-que-rompera-el-riesgo-pais-segun-la-city",
-   "fecha": "2026-10-20T10:00:00Z",
-   "tema": "mercados"
   }
  ]
 }
