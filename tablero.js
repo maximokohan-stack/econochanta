@@ -274,6 +274,7 @@
         ["Salarios y haberes", ["salarios", "salPriv", "salNoReg", "salPub", "ripte", "smvm", "haber"]]] }
   ];
   var SEC_OTRAS = [
+    { id: "recientes", nombre: "Datos recientes", desc: "Lo último de cada indicador clave, con una lectura de qué significa en contexto" },
     { id: "bcra", nombre: "Banco Central", desc: "Reservas, base monetaria, tasas, depósitos, crédito y 39 monedas" },
     { id: "mercados", nombre: "Acciones y bonos", desc: "Acciones líderes y bonos soberanos en vivo, con búsqueda" },
     { id: "tabla", nombre: "Tabla de indicadores", desc: "Todos los indicadores juntos: último, anterior, variación, máximo y mínimo de 12 meses" }
@@ -1240,7 +1241,7 @@
   function getCorpus() {
     if (corpus) return corpus;
     corpus = [];
-    var esArg = function (id) { return id === "bcra" || id === "mercados" || id === "tabla" || secPorIdTemp(id); };
+    var esArg = function (id) { return id === "bcra" || id === "mercados" || id === "tabla" || id === "recientes" || secPorIdTemp(id); };
     SECCIONES.concat(SEC_OTRAS, OTRAS_INICIO).forEach(function (s) {
       corpus.push({ sec: true, nombre: s.nombre, donde: esArg(s.id) ? "Argentina" : "Sección", desc: s.desc, href: "#" + s.id, n: norm(s.nombre), x: norm(s.desc) });
     });
@@ -2106,6 +2107,96 @@
     var mas = el("a", "link", "Ver todos los análisis"); mas.href = "#analisis"; caja.appendChild(mas);
   }
 
+  /* ---------- datos recientes con lectura ---------- */
+
+  var LECT_ETIQUETA = {
+    bien: { icono: "✓", nombre: "Buena señal" },
+    mal: { icono: "!", nombre: "Señal de alerta" },
+    mixto: { icono: "⇄", nombre: "Mixto" },
+    neutro: { icono: "=", nombre: "Neutral" }
+  };
+  var recientesTema = "Todos";
+
+  function armarRecientes() {
+    var raiz = $("recientes-contenido"); raiz.textContent = "";
+    var L = window.EconoLectura;
+    if (!L) { raiz.appendChild(el("p", "hint", "No se pudieron cargar las lecturas.")); return; }
+    var ids = L.ids.concat(L.contexto).filter(function (id, i, a) { return DEFS[id] && a.indexOf(id) === i; });
+    var filas = ids.map(function (id) { var c = {}; Object.keys(DEFS[id]).forEach(function (k) { c[k] = DEFS[id][k]; }); c.g = "Recientes"; return c; });
+
+    var aviso = el("p", "rec__aviso");
+    aviso.appendChild(document.createTextNode("Lo último que se publicó de cada indicador clave, con una lectura automática de qué significa. No es una opinión: compara cada dato con el anterior, con hace un año, con su propia historia o con otro indicador (por ejemplo, salarios contra inflación). Lo que es bueno para unos puede ser malo para otros: cuando hay dos lados, los mostramos. "));
+    var mt = el("a", "link", "Cómo se hacen las lecturas"); mt.href = "#metodologia"; aviso.appendChild(mt);
+    raiz.appendChild(aviso);
+    var resumen = el("div", "rec__resumen"); raiz.appendChild(resumen);
+    var chipsBox = el("div", "chips chips--sm"); chipsBox.setAttribute("role", "group"); chipsBox.setAttribute("aria-label", "Tema"); raiz.appendChild(chipsBox);
+    var estado = el("p", "hint"); raiz.appendChild(estado);
+    var lista = el("div", "rec__lista"); raiz.appendChild(lista);
+
+    var m = crearMesa({ filas: filas, raiz: document.createElement("div"), vista: "recientes", titulo: "", clave: [], frases: null, sinRegistro: true,
+      hashDe: function (it) { return "#" + (SEC_DE[it.id] || "bcra") + ":" + it.id; }, alCambiar: pintar });
+
+    function pintarChips() {
+      chipsBox.textContent = "";
+      ["Todos"].concat(L.temas).forEach(function (t) { chipsBox.appendChild(chip(t, t === recientesTema, function () { recientesTema = t; pintarChips(); pintar(); })); });
+    }
+
+    function tarjetaRec(x) {
+      var it = x.it, r = x.r;
+      var card = el("article", "rec");
+      var izq = el("div", "rec__izq");
+      izq.appendChild(el("span", "rec__tema", L.tema(x.id)));
+      var h = el("h3", "rec__nom"); var pt = punto(it.id); if (pt) h.appendChild(pt); h.appendChild(document.createTextNode(it.label)); izq.appendChild(h);
+      izq.appendChild(el("div", "rec__val", it.valor));
+      var un = unidadDe(it); if (un) izq.appendChild(el("div", "rec__un", un));
+      var pil = el("div", "pastillas");
+      if (it.dPrevTxt) pil.appendChild(el("span", "pastilla " + it.tonoPrev, flechaDe(it.dPrevTxt, it.dPrev) + it.dPrevTxt + (it.mensual ? " vs período anterior" : " vs día anterior")));
+      if (it.d12Txt) pil.appendChild(el("span", "pastilla " + it.tono12, flechaDe(it.d12Txt, it.d12) + it.d12Txt + " en 12 meses"));
+      pil.appendChild(el("span", "pastilla flat", "Dato de " + it.fecha));
+      izq.appendChild(pil);
+      card.appendChild(izq);
+
+      var der = el("div", "rec__der");
+      if (r) {
+        var e = LECT_ETIQUETA[r.v];
+        var tag = el("span", "lect lect--" + r.v); tag.appendChild(el("span", "lect__icono", e.icono)); tag.appendChild(document.createTextNode(" " + e.nombre));
+        der.appendChild(tag);
+        der.appendChild(el("p", "rec__texto", r.t));
+        if (r.lados) {
+          var ul = el("ul", "rec__lados");
+          r.lados.forEach(function (l) { var li = el("li"); li.appendChild(el("b", "", l[0] + " ")); li.appendChild(document.createTextNode(l[1])); ul.appendChild(li); });
+          der.appendChild(ul);
+        }
+        if (r.por && r.por.length) {
+          var d = el("details", "rec__por"); d.appendChild(el("summary", "", "Por qué"));
+          var up = el("ul"); r.por.forEach(function (t) { up.appendChild(el("li", "", t)); }); d.appendChild(up);
+          der.appendChild(d);
+        }
+      } else der.appendChild(el("p", "hint", "Todavía no hay lectura para este indicador."));
+      var ver = el("a", "link", "Ver el indicador"); ver.href = "#" + (SEC_DE[it.id] || "bcra") + ":" + it.id; der.appendChild(ver);
+      card.appendChild(der);
+      return card;
+    }
+
+    function pintar() {
+      var items = L.ids.map(function (id) { return { id: id, it: m.porId[id], r: L.leer(id, m.porId) }; }).filter(function (x) { return x.it && x.it.ok; });
+      var cuenta = { bien: 0, mal: 0, mixto: 0, neutro: 0 };
+      items.forEach(function (x) { if (x.r) cuenta[x.r.v]++; });
+      resumen.textContent = "";
+      ["bien", "mal", "mixto", "neutro"].forEach(function (k) {
+        var c = el("span", "rec__cuenta lect lect--" + k); c.appendChild(el("span", "lect__icono", LECT_ETIQUETA[k].icono)); c.appendChild(document.createTextNode(" " + LECT_ETIQUETA[k].nombre + ": " + cuenta[k]));
+        resumen.appendChild(c);
+      });
+      estado.textContent = items.length < L.ids.length ? "Cargando indicadores… " + items.length + " de " + L.ids.length : "Ordenados del dato más reciente al más viejo.";
+      items.sort(function (a, b) { return a.it.s.ultimo.d < b.it.s.ultimo.d ? 1 : a.it.s.ultimo.d > b.it.s.ultimo.d ? -1 : 0; });
+      lista.textContent = "";
+      items.filter(function (x) { return recientesTema === "Todos" || L.tema(x.id) === recientesTema; }).forEach(function (x) { lista.appendChild(tarjetaRec(x)); });
+    }
+    pintarChips();
+    m.armar();
+    pintar();
+  }
+
   /* ---------- glosario ---------- */
 
   function armarGlosario() {
@@ -2154,7 +2245,7 @@
   var secPorId = {}, mesasSec = {};
   SECCIONES.forEach(function (s) { secPorId[s.id] = s; });
 
-  var bcraMesa = null, mercadosListo = false, hubListo = false, tilesInicio = false, glosarioListo = false, tablaLista = false;
+  var bcraMesa = null, mercadosListo = false, hubListo = false, tilesInicio = false, glosarioListo = false, tablaLista = false, recientesListo = false;
 
   // un link viejo #tablero:id pasa a la seccion que corresponde
   function migrar(sub) { return sub && SEC_DE[sub] ? SEC_DE[sub] + ":" + sub : "inicio"; }
@@ -2179,6 +2270,8 @@
     } else if (vista === "bcra") {
       if (!bcraMesa) armarBCRA();
       if (sub) bcraMesa.abrir(sub); else bcraMesa.cerrar();
+    } else if (vista === "recientes") {
+      if (!recientesListo) { recientesListo = true; armarRecientes(); }
     } else if (vista === "analisis") {
       armarAnalisis(sub);
     } else if (vista === "tabla") {

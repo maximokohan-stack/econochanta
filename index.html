@@ -41,6 +41,7 @@
     <a href="#mas" data-vista="mas">Más</a>
   </nav>
   <nav class="subnav" id="subnav" aria-label="Secciones de Argentina" hidden>
+    <a href="#recientes" data-vista="recientes">Recientes</a>
     <a href="#dolares" data-vista="dolares">Dólares</a>
     <a href="#inflacion" data-vista="inflacion">Inflación y reservas</a>
     <a href="#tasas" data-vista="tasas">Tasas y pesos</a>
@@ -95,6 +96,7 @@
       </div>
       <div class="movers" id="movers" aria-live="polite"></div>
       <p class="hint" id="mov-nota"></p>
+      <a class="link" href="#recientes">Ver los datos más recientes, con su lectura →</a>
       <h2 class="resumen__sub">Dólares hoy</h2>
       <div class="tarjetas" id="inicio-dolares"></div>
       <div id="inicio-analisis"></div>
@@ -184,6 +186,12 @@
       </article>
     </section>
 
+    <!-- DATOS RECIENTES -->
+    <section id="vista-recientes" class="vista" aria-labelledby="h-recientes" hidden>
+      <h1 id="h-recientes" class="title">Datos recientes</h1>
+      <div id="recientes-contenido" class="vista vista--inner"></div>
+    </section>
+
     <!-- ANALISIS -->
     <section id="vista-analisis" class="vista" aria-labelledby="h-analisis" hidden>
       <h1 id="h-analisis" class="title">Análisis</h1>
@@ -229,6 +237,25 @@
           <li><b>Tasa por 30 días.</b> Tasa nominal anual por 30, dividida por 365.</li>
           <li><b>Inflación personal.</b> Cada categoría de tu backup de Plata se cruza con el índice del INDEC de ese rubro; las que no tienen índice propio usan la inflación general.</li>
         </ul>
+      </article>
+
+      <article class="card" id="lecturas">
+        <h2 class="label">Cómo se hacen las lecturas de "Datos recientes"</h2>
+        <p class="note__text">Cada lectura es automática y usa una regla simple y visible. No es una opinión ni una recomendación. Cuando una situación es buena para unos y mala para otros, la lectura es <b>Mixto</b> y muestra los dos lados. En cada tarjeta, "Por qué" muestra los números que se compararon.</p>
+        <ul class="metodo">
+          <li><b>Inflación mensual y de 12 meses.</b> Buena señal si bajó contra el dato anterior; alerta si subió. Si el mes se aceleró pero a ese ritmo el año daría menos que lo acumulado, es mixto.</li>
+          <li><b>Brecha y riesgo país.</b> Se compara con los últimos 12 meses: de lo más bajo es buena señal y de lo más alto, alerta. En la brecha, además, se usa una referencia absoluta (menos de 10% es baja) para no dar alerta por un nivel que en realidad es bajo.</li>
+          <li><b>Reservas.</b> Buena señal si subieron más de 1% en 30 días; alerta si bajaron más de 1%.</li>
+          <li><b>Dólar oficial.</b> Mixto: se compara su variación en 12 meses con la inflación y se muestra a quién favorece y a quién complica.</li>
+          <li><b>Actividad.</b> Combina el cambio contra el mes anterior y contra hace 12 meses.</li>
+          <li><b>Desocupación.</b> Buena señal si bajó más de 0,2 puntos contra hace un año; alerta si subió más de 0,2.</li>
+          <li><b>Salarios, salario mínimo y haber mínimo.</b> Se comparan con la inflación de 12 meses: ganar o perder más de 1% de poder de compra es buena señal o alerta; menos que eso, empate.</li>
+          <li><b>Tasa de plazo fijo.</b> Mixto: se compara lo que rinde por 30 días con la inflación del último mes, y se muestra el lado de los ahorristas y el de los deudores.</li>
+          <li><b>Resultado fiscal.</b> Se mira el mes, el año acumulado y si los intereses se llevan el superávit.</li>
+          <li><b>Recaudación.</b> Se compara su variación con la inflación de 12 meses.</li>
+          <li><b>Saldo comercial y cuenta corriente.</b> Superávit es buena señal; déficit, alerta.</li>
+        </ul>
+        <p class="hint">Los umbrales son criterios simples elegidos para ordenar la lectura, no cifras oficiales. Un dato puede ser alerta para una cosa y buena señal para otra.</p>
       </article>
 
       <article class="card">
@@ -450,6 +477,7 @@
   <script src="charts.js"></script>
   <script src="glosario.js"></script>
   <script src="analisis.js"></script>
+  <script src="lectura.js"></script>
   <script src="tablero.js"></script>
   <script src="app.js"></script>
 </body>

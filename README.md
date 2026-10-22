@@ -26,6 +26,7 @@ La estructura sigue la de pulsomacro.com.ar: una portada, un menú de Argentina 
 |---|---|
 | **Inicio** | "Cada número de la economía, explicado": el **pulso de hoy** (dólar oficial, inflación y riesgo país en grande), **qué cambió desde tu última visita**, **lo que más se movió** por período (hoy, semana, mes y año), dólares hoy (oficial, blue, MEP, CCL, tarjeta y brecha), la última nota de Análisis, tus favoritos y un menú para entrar por tema |
 | **Argentina** | Menú de temas, con un submenú que queda a la vista en cada uno |
+| &nbsp;&nbsp;Datos recientes | Lo último de 16 indicadores clave, ordenado del dato más reciente al más viejo, con una **lectura automática** de qué significa en contexto: buena señal, señal de alerta, mixto o neutral. `#recientes` |
 | &nbsp;&nbsp;Dólares | Oficial, MEP, CCL, blue, tarjeta, cripto, mayorista, brecha y compras de divisas del BCRA. `#dolares` |
 | &nbsp;&nbsp;Inflación y reservas | Inflación mensual e interanual, núcleo, regulados y estacionales, 7 rubros, UVA, CER, reservas y riesgo país. `#inflacion` |
 | &nbsp;&nbsp;Tasas y pesos | BADLAR, TAMAR, tasas de depósitos y préstamos, base monetaria, circulación, M2, depósitos y préstamos. `#tasas` |
@@ -65,6 +66,10 @@ Es oscuro por defecto, con una variante clara (botón arriba a la derecha).
 Al pie de Cuentas del Estado hay dos tortas: de dónde sale la plata (IVA, Ganancias, aportes, retenciones, impuesto al cheque y otros) y en qué se gasta (jubilaciones, sueldos, subsidios, asignaciones, PAMI, transferencias a provincias y otros). Se pueden ver por último trimestre, acumulado del año, últimos 4 trimestres y año anterior, con la lista completa de rubros debajo de cada torta.
 
 Los datos son del informe mensual de ingresos y gastos del Estado nacional de la Secretaría de Hacienda (IMIG), vía datos.gob.ar. El detalle por rubro solo está completo por trimestre, así que las tortas usan datos trimestrales; los indicadores de la lista usan los mensuales disponibles. Los montos están en pesos de cada período, sin ajustar por inflación, y los rubros detallados pueden no sumar exactamente el total oficial.
+
+### Datos recientes y sus lecturas
+
+Cada lectura la genera `lectura.js` con una regla simple y visible, y la tarjeta tiene un "Por qué" con los números que se compararon. Las reglas comparan el dato con el anterior, con hace 12 meses, con su historia del último año o con otro indicador (por ejemplo, salarios y haber mínimo contra la inflación, recaudación contra la inflación, tasa de plazo fijo contra la inflación del mes). Cuando una situación es buena para unos y mala para otros (dólar, tasas), la lectura es "Mixto" y muestra los dos lados. Las etiquetas usan ícono, texto y un color distinto del verde y rojo de subir y bajar, para no mezclar dirección con interpretación. Los umbrales son criterios simples, no cifras oficiales, y están explicados en "Cómo se calcula".
 
 ### Análisis
 
