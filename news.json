@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-21T22:51:55.679566Z",
+ "actualizado": "2026-10-22T01:04:02.295201Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -60,10 +60,87 @@
  ],
  "items": [
   {
+   "titulo": "“Octubre tan extraño”: anticipan que la cosecha de trigo será la segunda de mayor importancia de la historia, pero acecha un temor",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/octubre-tan-extrano-anticipan-que-la-cosecha-de-trigo-sera-la-segunda-de-mayor-importancia-de-la-nid21102026/",
+   "fecha": "2026-10-21T23:57:06Z",
+   "tema": "otros"
+  },
+  {
    "titulo": "Hay 40.000 hectáreas: el “cultivo estratégico” conectado con el mundo que promete un boom como combustible",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/campo/hay-40000-hectareas-el-cultivo-estrategico-conectado-con-el-mundo-que-promete-un-boom-como-nid21102026/",
-   "fecha": "2026-10-21T22:13:29Z",
+   "fecha": "2026-10-21T23:49:48Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Rachael Sharp. La abogada que cambió la empresa de su padre de 78 años: “Esta granja no existiría sin ella”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/rachael-sharp-la-abogada-que-volvio-al-campo-familiar-y-ayudo-a-su-padre-de-78-anos-a-sostener-el-nid21102026/",
+   "fecha": "2026-10-21T23:47:54Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Lucas Maglio, ingeniero en acuicultura, sobre un negocio en auge: “Quizás haya llegado el momento de comenzar a mirar también hacia el agua”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/lucas-maglio-ingeniero-en-acuicultura-sobre-un-negocio-en-auge-quizas-haya-llegado-el-momento-de-nid21102026/",
+   "fecha": "2026-10-21T23:47:24Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Vaca Muerta: el gobernador Figueroa anunció que eliminará Ingresos Brutos a las empresas que contraten trabajadores de Neuquén",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/21/vaca-muerta-el-gobernador-figueroa-anuncio-que-eliminara-ingresos-brutos-a-las-empresas-que-contraten-trabajadores-de-neuquen/",
+   "fecha": "2026-10-21T23:30:01Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Cuáles son los grandes fondos de inversión que le dan pelean a los plazos fijos",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/467156-cuales-son-los-grandes-fondos-de-inversion-que-le-dan-pelean-a-los-plazos-fijos",
+   "fecha": "2026-10-21T23:09:00Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Líderes financieros rechazan temores de burbuja de IA tras dichos de Griffin",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/bloomberg/bc-lideres-financieros-rechazan-temores-de-burbuja-de-ia-tras-dichos-de-griffin.phtml",
+   "fecha": "2026-10-21T22:36:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "RDEco: cómo impactaría una corrección del dólar en la industria textil y el precio de la ropa",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/masperfil/rdeco-el-dolar-el-consumo-y-las-importaciones-en-el-centro-del-debate-industrial.phtml",
+   "fecha": "2026-10-21T22:35:47Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "El riesgo país volvió a subir y se acerca a los 700 puntos, pese al avance de las acciones",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/economia/el-riesgo-pais-volvio-a-subir-y-se-acerca-a-los-700-puntos-pese-al-avance-de-las-acciones-a40.phtml",
+   "fecha": "2026-10-21T22:27:00Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Hugo Vasques en RDEco: “Lo que necesita la industria y el comercio es un tipo de cambio más competitivo”",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/masperfil/hugo-vasques-la-industria-y-el-comercio-necesitan-un-tipo-de-cambio-mas-competitivo.phtml",
+   "fecha": "2026-10-21T22:26:06Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "“La economía funciona a dos velocidades muy marcadas”: Hugo Vasques analizó la brecha entre la minería y la industria",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/masperfil/mineria-y-energia-crecen-pero-la-economia-interna-sigue-en-retroceso-el-desafio-de-conectar-ambos-sectores.phtml",
+   "fecha": "2026-10-21T22:12:27Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "RDEco: los desafíos de la reconversión industrial frente a la apertura económica",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/masperfil/industria-argentina-cuales-son-las-claves-de-la-reconversion-de-las-pymes.phtml",
+   "fecha": "2026-10-21T22:03:29Z",
    "tema": "otros"
   },
   {
@@ -81,6 +158,27 @@
    "tema": "mercados"
   },
   {
+   "titulo": "Irán exige a EE.UU. levantar bloqueo para demostrar que busca la paz",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/bloomberg/bc-iran-exige-a-eeuu-levantar-bloqueo-para-demostrar-que-busca-la-paz.phtml",
+   "fecha": "2026-10-21T21:56:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Putin ofrece retomar conversaciones de paz con EE.UU. y Ucrania",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/bloomberg/bc-putin-ofrece-retomar-conversaciones-de-paz-con-eeuu-y-ucrania.phtml",
+   "fecha": "2026-10-21T21:54:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "“No hay empleo para todos, no hay contratos para todos”: Daniel Bosque advirtió en RDEco sobre los límites del boom minero",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/masperfil/rdeco-la-mineria-crece-en-argentina-pero-las-pymes-enfrentan-limites-para-participar-del-rigi.phtml",
+   "fecha": "2026-10-21T21:53:47Z",
+   "tema": "actividad"
+  },
+  {
    "titulo": "Acciones de Nike se desploman 40% y analistas del mercado avisan si es momento de comprar",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/finanzas/466962-acciones-de-nike-se-desploman-40-por-ciento-y-analistas-avisan-si-conviene-comprar",
@@ -88,11 +186,25 @@
    "tema": "mercados"
   },
   {
+   "titulo": "Meta deberá pagar US$25.000 millones a Nuevo México por engañar a consumidores",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/bloomberg/bc-meta-debera-pagar-us25000-millones-a-nuevo-mexico-por-enganar-a-consumidores.phtml",
+   "fecha": "2026-10-21T21:46:00Z",
+   "tema": "otros"
+  },
+  {
    "titulo": "Jornada financiera: las acciones argentinas avanzaron hasta 5% en Wall Street, pero el riesgo país volvió a subir",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/21/jornada-financiera-las-acciones-argentinas-avanzaron-hasta-5-en-wall-street-pero-el-riesgo-pais-volvio-a-subir/",
    "fecha": "2026-10-21T21:44:34Z",
    "tema": "mercados"
+  },
+  {
+   "titulo": "RDEco: Marco Meloni advirtió sobre la crisis de las pymes y el deterioro de la industria argentina",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/masperfil/alerta-por-la-crisis-industrial-caida-del-consumo-importaciones-y-costos-en-dolares.phtml",
+   "fecha": "2026-10-21T21:36:40Z",
+   "tema": "actividad"
   },
   {
    "titulo": "Grupo financiero de Costantini cambia estrategia y revela qué bonos prefiere comprar",
@@ -142,13 +254,6 @@
    "url": "https://www.iprofesional.com/economia/467161-preocupacion-por-el-dato-que-deja-a-la-economia-al-borde-de-la-recesion",
    "fecha": "2026-10-21T21:15:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Rachael Sharp. La abogada que cambió la empresa de su padre de 78 años: “Esta granja no existiría sin ella”",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/rachael-sharp-la-abogada-que-volvio-al-campo-familiar-y-ayudo-a-su-padre-de-78-anos-a-sostener-el-nid21102026/",
-   "fecha": "2026-10-21T21:13:31Z",
-   "tema": "dolar"
   },
   {
    "titulo": "\"Muy malo, preocupante\": la reacción de economistas al dato de actividad del INDEC",
@@ -347,13 +452,6 @@
    "tema": "dolar"
   },
   {
-   "titulo": "Lucas Maglio, ingeniero en acuicultura, sobre un negocio en auge: “Quizás haya llegado el momento de comenzar a mirar también hacia el agua”",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/lucas-maglio-ingeniero-en-acuicultura-sobre-un-negocio-en-auge-quizas-haya-llegado-el-momento-de-nid21102026/",
-   "fecha": "2026-10-21T19:15:49Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Oro del Banco Central: investigan a Luis Caputo y Santiago Bausili por operaciones que habrían generado pérdidas millonarias",
    "medio": "Perfil",
    "url": "https://www.perfil.com/noticias/economia/oro-del-banco-central-investigan-a-luis-caputo-y-santiago-bausili-por-operaciones-que-habrian-generado-perdidas-millonarias.phtml",
@@ -508,13 +606,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Financiamiento sostenible: qué hacen la Argentina, Brasil y Bolivia para impulsar la producción agropecuaria",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/financiamiento-sostenible-que-hacen-la-argentina-brasil-y-bolivia-para-impulsar-la-produccion-nid21102026/",
-   "fecha": "2026-10-21T17:29:02Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Salarios de bancarios: cuánto cobrarán en noviembre de 2026 tras el nuevo aumento",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/salarios-bancarios-cuanto-cobraran-noviembre-2026-el-nuevo-aumento-n6336292",
@@ -578,13 +669,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Palmar cumple 100 años y apuesta a la robotización con una inversión de US$ 15 millones",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/cordoba/palmar-cumple-100-anos-y-apuesta-a-la-robotizacion-con-una-inversion-de-us-15-millones.phtml",
-   "fecha": "2026-10-21T16:13:18Z",
-   "tema": "empresas"
-  },
-  {
    "titulo": "Alpine subasta una pieza exclusiva de su auto de Fórmula 1: precio y cómo participar",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/alpine-subasta-una-pieza-exclusiva-su-auto-formula-1-precio-y-como-participar-n6335667",
@@ -597,13 +681,6 @@
    "url": "https://www.ambito.com/economia/confirmaron-las-fechas-del-black-friday-y-cyber-monday-2026-n6326087",
    "fecha": "2026-10-21T15:56:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "El nuevo MSCI Merval arrancó con dos jornadas en baja y un rebote en tercera rueda: cómo le va a la empresa incorporada",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/nuevo-msci-merval-arranco-dos-jornadas-baja-rebote-del-1-tercera-rueda-a40.phtml",
-   "fecha": "2026-10-21T15:55:00Z",
-   "tema": "mercados"
   },
   {
    "titulo": "Por qué las acciones de SpaceX se dispararon 10% y qué proyecciones hacen los analistas",
@@ -624,20 +701,6 @@
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/21/privatizacion-del-belgrano-cargas-el-unico-oferente-extranjero-abandono-la-licitacion-a-tres-semanas-de-que-se-defina/",
    "fecha": "2026-10-21T15:37:08Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "La encuesta que enfureció a Milei: el 65% no llega al día 20 del mes y más del 80% pierde contra la inflación",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/la-encuesta-que-enfurecio-a-milei-el-65-no-llega-al-dia-20-del-mes-y-mas-del-80-pierde-contra-la-inflacion.phtml",
-   "fecha": "2026-10-21T15:27:00Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Privatización del Belgrano Cargas: se bajó el grupo que prometía US$ 3.000 millones y dan de baja obras clave",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/privatizacion-del-belgrano-cargas-se-bajo-el-grupo-que-prometia-us-3000-millones-y-dan-de-baja-obras-clave-a40.phtml",
-   "fecha": "2026-10-21T15:22:37Z",
    "tema": "otros"
   },
   {
@@ -669,32 +732,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "Los tres factores a los que atribuyó Javier Milei el nivel actual del riesgo país y cuándo bajaría",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/javier-milei-hablo-desde-espana-del-riesgo-pais-y-lo-vinculo-al-mundo-convulsionado-al-historial-argentino-y-a-la-oposición.phtml",
-   "fecha": "2026-10-21T14:45:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "El desembarco motor chino",
-   "medio": "Perfil",
-   "url": "https://noticias.perfil.com/noticias/empresas/el-desembarco-motor-chino.phtml",
-   "fecha": "2026-10-21T14:42:28Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Bajo secreto militar, estas son las opciones de submarinos que evalúa el Gobierno",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/negocios/467117-bajo-secreto-las-opciones-de-submarinos-que-evalua-el-gobierno",
    "fecha": "2026-10-21T14:34:00Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "Carrefour se desploma mas de 13% en la Bolsa de París tras los saqueos en Francia y advierte por pérdidas millonarias",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/carrefour-se-desploma-mas-de-13-en-la-bolsa-de-paris-tras-los-saqueos-en-francia-y-advierte-por-perdidas-millonarias-a40.phtml",
-   "fecha": "2026-10-21T14:33:13Z",
-   "tema": "mercados"
   },
   {
    "titulo": "Caputo desactivó una rueda de gran presión sobre el dólar y logró alargar la paz cambiaria",
@@ -711,13 +753,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Miércoles de marchas contra Milei: ATE va a Olivos, discapacidad se planta en el Congreso y los jubilados redoblan sus reclamos",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/politica/miercoles-de-marchas-contra-milei-ate-va-a-olivos-discapacidad-se-planta-en-el-congreso-y-los-jubilados-redoblan-sus-reclamos.phtml",
-   "fecha": "2026-10-21T13:57:29Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "“La gente no llega a fin de mes”: qué dijo el autor de la encuesta que irritó al Presidente Milei",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/21/la-gente-no-llega-a-fin-de-mes-que-dijo-el-autor-de-la-encuesta-que-irrito-al-presidente-milei/",
@@ -725,32 +760,11 @@
    "tema": "politica"
   },
   {
-   "titulo": "El dólar en Córdoba: a cuánto cotiza este miércoles 21 de octubre",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/cordoba/cordoba-dolar-hoy-dolar-blue-hoy-cotizacion-21-de-octubre-211026.phtml",
-   "fecha": "2026-10-21T13:53:00Z",
-   "tema": "dolar"
-  },
-  {
    "titulo": "Coto lanzó un \"combo\" de pequeños electrodomésticos con hasta 50% de descuento",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/actualidad/467027-coto-vende-combo-de-dos-electrodomesticos-con-50-por-ciento-de-descuento",
    "fecha": "2026-10-21T13:25:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Paritaria de las telecomunicaciones: de cuánto es el salario de los empleados de Claro, Telecom y Telefónica en octubre",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/paritaria-telecomunicaciones-cuanto-salario-empleados-claro-telecom-y-telefonica-octubre-a35.phtml",
-   "fecha": "2026-10-21T13:25:00Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Riesgo país cerca 700 puntos: Los ejecutivos de finanzas lo leen como un problema político, no económico",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/cordoba/riesgo-pais-cerca-700-puntos-los-ejecutivos-de-finanzas-lo-leen-como-un-problema-politico-no-economico.phtml",
-   "fecha": "2026-10-21T13:22:01Z",
-   "tema": "mercados"
   },
   {
    "titulo": "Cuáles son las cinco ciudades en las que el boleto mínimo de colectivo ya supera los 2.000 pesos",
@@ -809,25 +823,11 @@
    "tema": "actividad"
   },
   {
-   "titulo": "Es estadounidense, se mudó a uno de los barrios más buscados de Buenos Aires y mostró cuánto gasta por mes",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/21/es-estadounidense-se-mudo-a-uno-de-los-barrios-mas-buscados-de-buenos-aires-y-mostro-cuanto-gasta-por-mes/",
-   "fecha": "2026-10-21T11:53:02Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Cuánto cobrarán los recolectores de residuos y barrenderos en noviembre",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/467082-cuanto-cobraran-los-recolectores-de-residuos-y-barrenderos-en-noviembre",
    "fecha": "2026-10-21T10:38:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Dólar, inflación y PBI: cuánto variaron las proyecciones a lo largo del año y qué expectativas quedaron desancladas",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/dolar-inflacion-y-pbi-cuanto-variaron-las-proyecciones-lo-largo-del-ano-y-que-expectativas-quedaron-desancladas-n6335875",
-   "fecha": "2026-10-21T10:00:00Z",
-   "tema": "dolar"
   }
  ]
 }
