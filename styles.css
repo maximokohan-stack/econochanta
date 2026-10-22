@@ -930,3 +930,17 @@ input[type="number"], .mkt__search, .mesa__buscar, .file { border-radius: 12px; 
 #lecturas { scroll-margin-top: 70px; }
 
 @media (max-width: 820px) { .rec { grid-template-columns: 1fr; gap: 12px; } .rec__val { font-size: 30px; } }
+
+/* lo ultimo, con su lectura (Inicio) */
+.lec-lista { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.lec { display: grid; gap: 6px; align-content: start; text-align: left; padding: 16px 18px; border-radius: 18px; border: 1px solid var(--line); background: var(--surface); color: inherit; font: inherit; cursor: pointer; transition: transform .25s cubic-bezier(.2, .8, .2, 1), box-shadow .25s, border-color .25s; }
+.lec:hover { transform: translateY(-3px); box-shadow: var(--sombra); border-color: var(--celeste); }
+.lec__nom { font-weight: 700; font-size: 16px; }
+.lec__val { font-family: var(--mono); font-weight: 700; font-size: 26px; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.lec__val small { font-family: var(--font); font-weight: 400; font-size: 13px; letter-spacing: 0; color: var(--text-2); }
+.lec__texto { color: var(--text); line-height: 1.45; font-size: 15px; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+.lec__fecha { font-size: 13px; color: var(--text-2); }
+.cajon__lectura { display: grid; gap: 6px; margin-top: 10px; padding: 12px 14px; border-radius: var(--r); border: 1px solid var(--line); background: var(--surface-2); }
+@media (max-width: 1100px) { .lec-lista { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .lec-lista { grid-template-columns: minmax(0, 1fr); } }
+@media (prefers-reduced-motion: reduce) { .lec { transition: none; } .lec:hover { transform: none; } }

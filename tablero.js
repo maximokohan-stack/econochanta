@@ -1386,6 +1386,7 @@
 
   var REDUCE = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
   var IDS_PULSO = ["oficial", "infM", "riesgo"];
+  var IDS_LECTURA_INICIO = ["infM", "riesgo", "salarios", "resPrim", "saldo", "badlar"];
   var IDS_VISITA = ["oficial", "blue", "mep", "ccl", "brecha", "riesgo", "reservas", "infM", "badlar"];
   var IDS_MOV = ["oficial", "blue", "mep", "ccl", "tarjeta", "brecha", "riesgo", "reservas", "badlar", "tamar", "infM", "infIA", "emae", "desoc", "resPrim", "saldo", "recaudIA", "salarios"];
   var PERIODOS = [
@@ -1611,6 +1612,35 @@
     a.textContent = "  ·  Actualizado " + (min < 1 ? "hace un momento" : "hace " + min + " min");
   }
 
+  // bloque "lo ultimo, con su lectura": una lectura por tema, la mas util de cada uno
+  function bloqueLectura(r, ordenados) {
+    var e = LECT_ETIQUETA[r.v];
+    var tag = el("span", "lect lect--" + r.v); tag.appendChild(el("span", "lect__icono", e.icono)); tag.appendChild(document.createTextNode(" " + e.nombre));
+    return tag;
+  }
+  function pintarLecturaInicio(m, caja) {
+    var L = window.EconoLectura; if (!caja || !L) return;
+    var items = L.ids.map(function (id) { return { id: id, it: m.porId[id], r: L.leer(id, m.porId) }; }).filter(function (x) { return x.it && x.it.ok && x.r; });
+    // una lectura por tema, elegida a mano por ser la mas informativa de cada uno (las demas estan en "Datos recientes")
+    var porId = {};
+    items.forEach(function (x) { porId[x.id] = x; });
+    var elegidos = IDS_LECTURA_INICIO.map(function (id) { return porId[id]; }).filter(Boolean);
+    caja.textContent = "";
+    elegidos.forEach(function (x) {
+      var b = el("button", "lec"); b.type = "button";
+      b.appendChild(el("span", "rec__tema", L.tema(x.id)));
+      var n = el("span", "lec__nom"); var pt = punto(x.it.id); if (pt) n.appendChild(pt); n.appendChild(document.createTextNode(x.it.label)); b.appendChild(n);
+      var v = el("span", "lec__val"); v.appendChild(document.createTextNode(x.it.valor));
+      var un = unidadDe(x.it); if (un) v.appendChild(el("small", "", " " + un));
+      b.appendChild(v);
+      b.appendChild(bloqueLectura(x.r));
+      b.appendChild(el("span", "lec__texto", x.r.t));
+      b.appendChild(el("span", "lec__fecha", "Dato de " + x.it.fecha));
+      b.addEventListener("click", function () { abrirCajon(x.it, "mes"); });
+      caja.appendChild(b);
+    });
+  }
+
   /* ---- cajon de detalle: se abre sobre el Inicio, sin salir de la pagina ---- */
 
   var cajon = null, cajonFoco = null;
@@ -1656,6 +1686,15 @@
     if (ch) pil.appendChild(el("span", "pastilla " + tonoCambio(ch.c), (ch.c > 0 ? "▲ " : ch.c < 0 ? "▼ " : "■ ") + ch.txt + " " + per.txt));
     pil.appendChild(el("span", "pastilla flat", "Dato de " + it.fecha));
     c.appendChild(pil);
+    var lec = window.EconoLectura && movMesa ? window.EconoLectura.leer(it.id, movMesa.porId) : null;
+    if (lec) {
+      var cl = el("div", "cajon__lectura");
+      cl.appendChild(bloqueLectura(lec));
+      cl.appendChild(el("p", "rec__texto", lec.t));
+      if (lec.lados) { var ul = el("ul", "rec__lados"); lec.lados.forEach(function (l) { var li = el("li"); li.appendChild(el("b", "", l[0] + " ")); li.appendChild(document.createTextNode(l[1])); ul.appendChild(li); }); cl.appendChild(ul); }
+      if (lec.por && lec.por.length) { var dp = el("details", "rec__por"); dp.appendChild(el("summary", "", "Por qué")); var up = el("ul"); lec.por.forEach(function (t) { up.appendChild(el("li", "", t)); }); dp.appendChild(up); cl.appendChild(dp); }
+      c.appendChild(cl);
+    }
     var cb = el("div", "cajon__grafico chart"); c.appendChild(cb);
     var G = window.EconoGlosario && window.EconoGlosario[it.id];
     if (G) {
@@ -1689,11 +1728,11 @@
   /* ---- armado del Inicio ---- */
 
   function armarInicio() {
-    var ids = IDS_DOLARES.concat(IDS_PULSO, IDS_MOV, IDS_VISITA);
+    var ids = IDS_DOLARES.concat(IDS_PULSO, IDS_MOV, IDS_VISITA, window.EconoLectura ? window.EconoLectura.ids.concat(window.EconoLectura.contexto) : []);
     Object.keys(favs).forEach(function (id) { ids.push(id); });
     ids = ids.filter(function (id, i) { return DEFS[id] && ids.indexOf(id) === i; });
     var filas = ids.map(function (id) { var c = {}; Object.keys(DEFS[id]).forEach(function (k) { c[k] = DEFS[id][k]; }); c.g = "Inicio"; return c; });
-    var cajas = { dolares: $("inicio-dolares"), favs: $("inicio-favs") };
+    var cajas = { dolares: $("inicio-dolares"), favs: $("inicio-favs"), lectura: $("inicio-lectura") };
 
     var m = crearMesa({
       filas: filas, raiz: document.createElement("div"), vista: "inicio", titulo: "", clave: [], frases: null, sinRegistro: true,
@@ -1709,6 +1748,7 @@
     function pintar() {
       pintarPulso(m);
       pintarMovers(false);
+      pintarLecturaInicio(m, cajas.lectura);
       grupo(cajas.dolares, IDS_DOLARES);
       var mis = Object.keys(favs).filter(function (id) { return m.porId[id]; });
       $("inicio-favs-bloque").hidden = !mis.length;

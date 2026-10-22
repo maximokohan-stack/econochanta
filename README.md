@@ -24,7 +24,7 @@ La estructura sigue la de pulsomacro.com.ar: una portada, un menú de Argentina 
 
 | Sección | Contenido |
 |---|---|
-| **Inicio** | "Cada número de la economía, explicado": el **pulso de hoy** (dólar oficial, inflación y riesgo país en grande), **qué cambió desde tu última visita**, **lo que más se movió** por período (hoy, semana, mes y año), dólares hoy (oficial, blue, MEP, CCL, tarjeta y brecha), la última nota de Análisis, tus favoritos y un menú para entrar por tema |
+| **Inicio** | "Cada número de la economía, explicado": el **pulso de hoy** (dólar oficial, inflación y riesgo país en grande), **qué cambió desde tu última visita**, **lo que más se movió** por período (hoy, semana, mes y año), dólares hoy (oficial, blue, MEP, CCL, tarjeta y brecha), **lo último con su lectura** (una por tema), la última nota de Análisis, tus favoritos y un menú para entrar por tema |
 | **Argentina** | Menú de temas, con un submenú que queda a la vista en cada uno |
 | &nbsp;&nbsp;Datos recientes | Lo último de 16 indicadores clave, ordenado del dato más reciente al más viejo, con una **lectura automática** de qué significa en contexto: buena señal, señal de alerta, mixto o neutral. `#recientes` |
 | &nbsp;&nbsp;Dólares | Oficial, MEP, CCL, blue, tarjeta, cripto, mayorista, brecha y compras de divisas del BCRA. `#dolares` |
