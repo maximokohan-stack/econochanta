@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-22T21:59:53.726972Z",
+ "actualizado": "2026-10-23T00:26:10.700267Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -60,6 +60,111 @@
  ],
  "items": [
   {
+   "titulo": "Renunció Daniel González, el funcionario clave que coordinaba las áreas de Energía y Minería",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/22/renuncio-daniel-gonzalez-el-funcionario-clave-que-coordinaba-las-areas-de-energia-y-mineria/",
+   "fecha": "2026-10-23T00:00:11Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Privatización del Belgrano Cargas: el Gobierno rechaza los cuestionamientos de Grupo México a la licitación",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/privatizacion-del-belgrano-cargas-el-gobierno-rechaza-los-cuestionamientos-grupo-mexico-la-licitacion-n6336996",
+   "fecha": "2026-10-22T23:54:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Renunció Daniel González a la Secretaría de Coordinación de Energía y Minería",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/renuncio-daniel-gonzalez-a-la-secretaria-de-coordinacion-de-energia-y-mineria-nid22102026/",
+   "fecha": "2026-10-22T23:47:15Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El Banco Ciudad bajó la tasa para créditos hipotecarios",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/el-banco-ciudad-la-tasa-creditos-hipotecarios-n6336997",
+   "fecha": "2026-10-22T23:40:00Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Un violento fenómeno con mucho granizo mató a decenas de animales y dejó graves daños",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/una-violenta-caida-de-mucho-granizo-mato-a-decenas-de-animales-y-dejo-graves-danos-nid22102026/",
+   "fecha": "2026-10-22T23:33:41Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Bancos y billeteras deberán informar el rendimiento de sus cuentas remuneradas a 7 días",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/467265-bancos-y-billeteras-deberan-informar-el-rendimiento-de-sus-cuentas-remuneradas-a-7-dias",
+   "fecha": "2026-10-22T23:25:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El otro “riesgo país”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/el-otro-riesgo-pais-nid22102026/",
+   "fecha": "2026-10-22T23:21:03Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Economía desafía a la City y advierte que el castigo del riesgo país es \"exagerado\"",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/467274-economia-desafia-a-la-city-advierte-que-el-riesgo-pais-esta-exagerado",
+   "fecha": "2026-10-22T23:18:00Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Cada vez es más difícil independizarse: 140.000 jóvenes volvieron al hogar familiar entre 2023 y 2026",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/cada-vez-es-mas-dificil-independizarse-140000-jovenes-volvieron-al-hogar-familiar-2023-y-2026-n6336015",
+   "fecha": "2026-10-22T23:05:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Industriales presionan por un RIGI pyme y se enfocan en las exportaciones para esquivar la crisis",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/economia/industriales-presionan-por-un-rigi-pyme-y-se-enfocan-en-las-exportaciones-para-esquivar-la-crisis-a40.phtml",
+   "fecha": "2026-10-22T23:04:14Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Caputo se reunió con un hombre clave de Trump tras el anuncio de inversiones por USD 20.000 millones hasta 2027",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/22/caputo-se-reunio-con-un-hombre-clave-de-trump-tras-el-anuncio-de-inversiones-por-usd-20000-millones-hasta-2027/",
+   "fecha": "2026-10-22T23:04:02Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "El riesgo país volvió a saltar y superó los 700 puntos en una jornada caliente para el dólar",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/economia/el-riesgo-pais-volvio-a-saltar-y-supero-los-700-puntos-en-una-jornada-caliente-para-el-dolar-a40.phtml",
+   "fecha": "2026-10-22T22:49:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Privatización del Belgrano Cargas: el Gobierno está a un paso de posponer el proceso de licitación",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/22/privatizacion-del-belgrano-cargas-el-gobierno-esta-a-un-paso-de-posponer-el-proceso-de-licitacion/",
+   "fecha": "2026-10-22T22:36:50Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Millones en juego: una jueza de Estados Unidos le abrió una puerta a Bioceres Crop Solutions en una dura disputa con un poderoso fondo",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/millones-en-juego-una-jueza-de-estados-unidos-le-abrio-una-puerta-a-bioceres-crop-solutions-en-una-nid22102026/",
+   "fecha": "2026-10-22T22:30:39Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "“No hay atajos”: el economista que invitó Milei a la reunión de Gabinete se metió en el debate sobre si la gente llega a fin de mes",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/22/no-hay-atajos-el-economista-que-invito-milei-a-la-reunion-de-gabinete-se-metio-en-el-debate-sobre-si-la-gente-llega-a-fin-de-mes/",
+   "fecha": "2026-10-22T22:08:26Z",
+   "tema": "politica"
+  },
+  {
    "titulo": "“Año extraordinario”: Brasil prevé la mayor importación de trigo en 30 años y abre una oportunidad para la Argentina",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/campo/ano-extraordinario-brasil-preve-la-mayor-importacion-de-trigo-en-30-anos-y-abre-una-oportunidad-para-nid22102026/",
@@ -71,13 +176,6 @@
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/el-gobierno-evalua-prorrogar-el-plazo-para-recibir-ofertas-por-la-privatizacion-del-belgrano-cargas-nid22102026/",
    "fecha": "2026-10-22T21:46:49Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Privatización del Belgrano Cargas: el Gobierno está a un paso de posponer el proceso de licitación",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/22/privatizacion-del-belgrano-cargas-el-gobierno-esta-a-un-paso-de-posponer-el-proceso-de-licitacion/",
-   "fecha": "2026-10-22T21:42:31Z",
    "tema": "politica"
   },
   {
@@ -410,13 +508,6 @@
    "tema": "actividad"
   },
   {
-   "titulo": "Furiase dijo que tienen más de US$125.000 millones para atravesar las elecciones del año que viene",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/furiase-dijo-que-tienen-mas-de-us125000-millones-para-atravesar-las-elecciones-del-ano-que-viene-nid22102026/",
-   "fecha": "2026-10-22T18:13:50Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Cuánto hay que invertir para poner una franquicia de la cadena de heladerías Lucciano's",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/actualidad/467131-franquicia-de-luccianos-cuanto-cuesta-poner-una-heladeria",
@@ -436,20 +527,6 @@
    "url": "https://www.perfil.com/noticias/economia/a-cuanto-cotiza-el-euro-blue-hoy-jueves-22-de-octubre-a50-bgd.phtml",
    "fecha": "2026-10-22T17:52:00Z",
    "tema": "dolar"
-  },
-  {
-   "titulo": "Tras la quiebra: la Justicia busca posibles compradores para una reconocida algodonera",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/tras-la-quiebra-la-justicia-busca-posibles-compradores-para-una-reconocida-algodonera-nid22102026/",
-   "fecha": "2026-10-22T17:48:57Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Empresas y gobiernos del mundo se apuran a corregir una vulnerabilidad que los expone a millones de intentos de ataque",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/tecnologia/empresas-y-gobiernos-del-mundo-se-apuran-a-corregir-una-vulnerabilidad-que-los-expone-a-millones-de-nid22102026/",
-   "fecha": "2026-10-22T17:36:38Z",
-   "tema": "empresas"
   },
   {
    "titulo": "Privatización de AySA: el Gobierno fijó para el 13 de noviembre la firma del contrato de venta",
@@ -515,13 +592,6 @@
    "tema": "politica"
   },
   {
-   "titulo": "Economía argentina: cuánto debería crecer la actividad para no caer en recesión",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/economia-argentina-cuanto-deberia-crecer-la-actividad-para-no-caer-en-recesion-nid22102026/",
-   "fecha": "2026-10-22T16:42:53Z",
-   "tema": "actividad"
-  },
-  {
    "titulo": "Para Furiase hay \"castigo de más\" con el riesgo país y aseguró que \"no habrá pesos para correr al dólar\"",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/para-furiase-hay-castigo-mas-el-riesgo-pais-y-aseguro-que-no-habra-pesos-correr-al-dolar-n6336777",
@@ -578,7 +648,7 @@
    "tema": "otros"
   },
   {
-   "titulo": "\"El Gobierno está pagando el costo político de no cumplir la Ley de Financiamiento Universitario\"",
+   "titulo": "\"El Gobierno no está pagando el costo político de no cumplir la Ley de Financiamiento Universitario\"",
    "medio": "Perfil",
    "url": "https://www.perfil.com/noticias/modo-fontevecchia/el-gobierno-esta-pagando-el-costo-politico-de-no-cumplir-la-ley-de-financiamiento-universitario-modof.phtml",
    "fecha": "2026-10-22T15:46:52Z",
@@ -634,20 +704,6 @@
    "tema": "dolar"
   },
   {
-   "titulo": "El transporte público en Cuba cae a mínimos históricos con un desplome del 90% en sus servicios",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/cuba/2026/10/22/el-transporte-publico-en-cuba-cae-a-minimos-historicos-con-un-desplome-del-90-en-sus-servicios/",
-   "fecha": "2026-10-22T14:42:56Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El dólar en Córdoba: a cuánto cotiza este jueves 22 de octubre",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/cordoba/cordoba-dolar-hoy-dolar-blue-hoy-cotizacion-22-de-octubre-221026.phtml",
-   "fecha": "2026-10-22T14:22:00Z",
-   "tema": "dolar"
-  },
-  {
    "titulo": "Los salarios subieron 2,7% en agosto según el INDEC, ¿por qué no se notó en el consumo?",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/management/467203-salarios-subieron-casi-un-3-por-ciento-segun-indec-por-que-no-se-nota-en-el-consum",
@@ -662,25 +718,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "La carne argentina es hasta un 82% más barata que en Estados Unidos, pero cuesta más que en Brasil y Paraguay",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/carne-argentina-hasta-82-mas-barata-estados-unidos-pero-cuesta-mas-brasil-paraguay-a40.phtml",
-   "fecha": "2026-10-22T13:54:00Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "La confianza del consumidor volvió a subir en octubre, pero aún no alcanza el nivel de 2025",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/la-confianza-del-consumidor-volvio-subir-octubre-pero-aun-no-alcanza-el-nivel-2025-n6336720",
    "fecha": "2026-10-22T13:51:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Dura advertencia de un economista: “Si el consumo y la inversión no arrancan, vamos a terminar votando en recesión”",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/22/dura-advertencia-de-un-economista-si-el-consumo-y-la-inversion-no-arrancan-vamos-a-terminar-votando-en-recesion/",
-   "fecha": "2026-10-22T13:40:54Z",
-   "tema": "actividad"
   },
   {
    "titulo": "Xi Jinping pide impulsar un crecimiento \"de alta calidad\" para la economía china sin perder la estabilidad",
@@ -694,13 +736,6 @@
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/la-carne-esta-cara-o-barata-argentina-cuanto-cuesta-el-kilo-frente-brasil-uruguay-y-eeuu-n6336679",
    "fecha": "2026-10-22T13:36:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Desalojo “exprés”: qué cambiará para inquilinos y dueños con el proyecto que tuvo media sanción en Diputados",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/22/desalojo-expres-que-cambiara-para-inquilinos-y-duenos-con-el-proyecto-que-tuvo-media-sancion-en-diputados/",
-   "fecha": "2026-10-22T13:21:21Z",
    "tema": "otros"
   },
   {
@@ -793,41 +828,6 @@
    "url": "https://www.ambito.com/economia/el-gobierno-aprobo-el-ingreso-toyota-al-rigi-fabricar-una-pick-up-hibrida-zarate-n6336597",
    "fecha": "2026-10-22T11:14:00Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "Créditos hipotecarios del IAF: preguntas frecuentes y respuestas",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/creditos-hipotecarios-del-iaf-preguntas-frecuentes-y-respuestas-n6335948",
-   "fecha": "2026-10-22T11:00:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Avanzan las privatizaciones: el gobierno de Javier Milei adjudicó la venta de AySA por u$s340 millones",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/avanzan-las-privatizaciones-el-gobierno-javier-milei-adjudico-la-venta-aysa-us340-millones-n6336599",
-   "fecha": "2026-10-22T10:29:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Hush Puppies, Merrell y Caterpillar con descuentos de hasta 50% en el outlet de Grimoldi",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/467192-grimoldi-ofrece-rebajas-de-hasta-50-por-ciento-zapatillas-y-botas-de-hush-puppies-y-merrell",
-   "fecha": "2026-10-22T10:28:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Caputo y gobernadores apuran obras por hasta u$s4.000 millones para levantar la economía",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/467182-el-inedito-plan-de-caputo-con-los-gobernadores-para-levantar-la-economia",
-   "fecha": "2026-10-22T10:00:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Cuáles son los grandes fondos de inversión que le dan pelean a los plazos fijos",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/467156-cuales-son-los-grandes-fondos-de-inversion-que-le-dan-pelean-a-los-plazos-fijos",
-   "fecha": "2026-10-21T23:09:00Z",
-   "tema": "empresas"
   }
  ]
 }
