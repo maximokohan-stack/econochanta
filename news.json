@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-23T00:26:10.700267Z",
+ "actualizado": "2026-10-23T04:07:55.332537Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -100,6 +100,13 @@
    "url": "https://www.iprofesional.com/finanzas/467265-bancos-y-billeteras-deberan-informar-el-rendimiento-de-sus-cuentas-remuneradas-a-7-dias",
    "fecha": "2026-10-22T23:25:00Z",
    "tema": "otros"
+  },
+  {
+   "titulo": "El Gobierno, la UIA y Mercado Libre lanzan un plan anti contrabando",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/467277-gobierno-javier-milei-uia-y-mercado-libre-lanzan-plan-anti-contrabando",
+   "fecha": "2026-10-22T23:23:00Z",
+   "tema": "politica"
   },
   {
    "titulo": "El otro “riesgo país”",
@@ -331,6 +338,13 @@
    "url": "https://www.infobae.com/economia/2026/10/22/es-argentina-vive-en-uno-de-los-destinos-mas-buscados-de-brasil-y-sorprendio-al-mostrar-los-precios-del-supermercado/",
    "fecha": "2026-10-22T19:46:35Z",
    "tema": "inflacion"
+  },
+  {
+   "titulo": "Aluar inaguró el parque eólico más grande de la Argentina, con una inversiónd e US$ 740 millones",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/economia/aluar-inaguro-el-parque-eolico-mas-grande-de-la-argentina-con-una-inversiond-e-us-740-millones-a40.phtml",
+   "fecha": "2026-10-22T19:45:29Z",
+   "tema": "otros"
   },
   {
    "titulo": "La City estima a cuánto puede llegar el riesgo país y a qué inversiones castigará más",
@@ -662,13 +676,6 @@
    "tema": "mercados"
   },
   {
-   "titulo": "La confianza del consumidor subió por segundo mes consecutivo en octubre",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/la-confianza-del-consumidor-subio-por-segundo-mes-consecutivo-en-octubre-a40.phtml",
-   "fecha": "2026-10-22T15:22:14Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Arriazu volvió a criticar la forma en que acumula reservas el BCRA: “No debería comprar tanto a costa del crédito interno”",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/22/arriazu-volvio-a-criticar-la-forma-en-que-acumula-reservas-el-bcra-no-deberia-comprar-tanto-a-costa-del-credito-interno/",
@@ -821,13 +828,6 @@
    "url": "https://www.ambito.com/economia/fal-ya-hay-121-fondos-y-2-fideicomisos-anotados-recibir-fondos-empresas-n6336607",
    "fecha": "2026-10-22T11:24:00Z",
    "tema": "empresas"
-  },
-  {
-   "titulo": "El Gobierno aprobó el ingreso de Toyota al RIGI para fabricar una pick up híbrida en Zárate",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/el-gobierno-aprobo-el-ingreso-toyota-al-rigi-fabricar-una-pick-up-hibrida-zarate-n6336597",
-   "fecha": "2026-10-22T11:14:00Z",
-   "tema": "politica"
   }
  ]
 }
