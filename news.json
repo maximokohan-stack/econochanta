@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-24T19:07:48.948993Z",
+ "actualizado": "2026-10-24T22:04:28.340485Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -59,6 +59,41 @@
   }
  ],
  "items": [
+  {
+   "titulo": "¿Relación de dependencia o cuentapropismo?",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/relacion-de-dependencia-o-cuentapropismo-nid24102026/",
+   "fecha": "2026-10-24T22:00:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Milei, confiado de cara a la reelección y consciente de que la inflación baja más lento",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/politica/467404-milei-confiado-de-cara-a-la-reeleccion-y-consciente-de-que-la-inflacion-baja-mas-lento",
+   "fecha": "2026-10-24T21:44:00Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "La Campagnola frena la producción en una planta de conservas de pescado en Mar del Plata y suspende temporalmente a 60 operarios",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/24/la-campagnola-cierra-una-planta-de-conservas-de-pescado-en-mar-del-plata-y-suspende-temporalmente-a-60-operarios/",
+   "fecha": "2026-10-24T21:36:01Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La informalidad laboral le cuesta $3,3 billones al año al sistema previsional",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/24/la-informalidad-laboral-le-cuesta-33-billones-al-ano-al-sistema-previsional/",
+   "fecha": "2026-10-24T21:00:43Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Desde el lunes se podrá acceder a la moratoria impositiva bonaerense: qué deudas entran y cuáles son las facilidades de pago",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/24/desde-el-lunes-se-podra-acceder-a-la-moratoria-impositiva-bonaerense-que-deudas-entran-y-cuales-son-las-facilidades-de-pago/",
+   "fecha": "2026-10-24T19:34:44Z",
+   "tema": "otros"
+  },
   {
    "titulo": "Créditos hipotecarios: Banco Nación otorgó más de 210 préstamos con fondos de ANSES y recibió otros $40.000 millones",
    "medio": "Ámbito",
@@ -676,13 +711,6 @@
    "tema": "empresas"
   },
   {
-   "titulo": "Mercado Libre suma a Mendoza a su red aérea y amplía su operación logística",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/negocios/mercado-libre-suma-a-mendoza-a-su-red-aerea-y-amplia-su-operacion-logistica-nid23102026/",
-   "fecha": "2026-10-23T19:40:17Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Le pedimos a ChatGPT, Gemini y Claude que inviertan $1 millón y esta IA hizo ganar más",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/finanzas/466437-le-pedimos-a-chatgpt-gemini-y-claude-que-inviertan-1-millon-de-pesos-y-esta-ia-gano",
@@ -774,20 +802,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "La industria fintech invertirá USD 2.200 millones y aumentará su facturación casi 30% durante 2027",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/23/la-industria-fintech-invertira-usd-2200-millones-y-aumentara-su-facturacion-casi-30-durante-2027/",
-   "fecha": "2026-10-23T16:54:37Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Estiman que la Argentina es el único productor agrícola del mundo que mejoraría su cosecha pese a El Niño",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/23/estiman-que-la-argentina-es-el-unico-productor-agricola-del-mundo-que-mejoraria-su-cosecha-pese-a-el-nino/",
-   "fecha": "2026-10-23T16:51:19Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "El sector nuclear refuerza la prevención ante las amenazas de El Niño",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/energia/467314-el-sector-nuclear-refuerza-la-prevencion-ante-las-amenazas-de-el-nino",
@@ -802,13 +816,6 @@
    "tema": "mercados"
   },
   {
-   "titulo": "Vinos, whiskys y tecnología a precios de remate: cómo participar de las nuevas subastas de ARCA",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/23/vinos-whiskys-y-tecnologia-a-precios-de-remate-como-participar-de-las-nuevas-subastas-de-arca/",
-   "fecha": "2026-10-23T16:01:28Z",
-   "tema": "inflacion"
-  },
-  {
    "titulo": "La UE busca ampliar la negociación comercial con China a nuevos rubros tras el acuerdo por los autos híbridos",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/la-ue-busca-ampliar-la-negociacion-comercial-china-nuevos-rubros-el-acuerdo-los-autos-hibridos-n6337192",
@@ -820,13 +827,6 @@
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/ganancias-contadores-estiman-nueva-postergacion-las-declaraciones-juradas-y-pocos-dolares-del-colchon-n6337202",
    "fecha": "2026-10-23T15:07:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El mercado alerta que solo un repunte extraordinario salvará a la economía de la recesión",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/467174-por-que-solo-un-repunte-extraordinario-salvara-a-la-economia-de-la-recesion",
-   "fecha": "2026-10-23T14:30:00Z",
    "tema": "otros"
   }
  ]
