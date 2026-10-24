@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-24T04:00:30.051684Z",
+ "actualizado": "2026-10-24T12:59:02.930121Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -60,10 +60,206 @@
  ],
  "items": [
   {
+   "titulo": "El problema no es cómo construimos, sino cómo vivimos",
+   "medio": "Perfil",
+   "url": "https://noticias.perfil.com/noticias/empresas/el-problema-no-es-como-construimos-sino-como-vivimos.phtml",
+   "fecha": "2026-10-24T12:30:47Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Los perfiles que más buscan las empresas",
+   "medio": "Perfil",
+   "url": "https://noticias.perfil.com/noticias/empresas/los-perfiles-que-mas-buscan-las-empresas.phtml",
+   "fecha": "2026-10-24T12:28:53Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Es argentino, vive en Europa hace siete años y mostró cuánto gastó en un mes de visita en Buenos Aires",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/24/es-argentino-vive-en-europa-hace-siete-anos-y-mostro-cuanto-gasto-en-un-mes-de-visita-en-buenos-aires/",
+   "fecha": "2026-10-24T12:03:27Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Dólar hoy y dólar blue hoy: a cuánto cotiza este sábado 24 de octubre",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/dolar/dolar-hoy-y-dolar-blue-hoy-a-cuanto-cotiza-este-sabado-24-de-octubre-nid24102026/",
+   "fecha": "2026-10-24T11:54:08Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Cuánto gana una empleada doméstica por 4 horas semanales en noviembre 2026",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/management/467006-cuanto-gana-una-empleada-domestica-por-4-horas-semanales-en-noviembre-2026",
+   "fecha": "2026-10-24T11:46:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Tres carteras de bonos con riesgo bajo, medio y alto para invertir rumbo a las elecciones",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/467357-3-carteras-de-inversion-con-riesgo-bajo-y-alto-del-guru-de-la-city",
+   "fecha": "2026-10-24T11:00:00Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Introducido por un escocés y discutido en sus comienzos, el alambrado marcó un antes y un después en el campo argentino",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/introducido-por-un-escoces-y-discutido-en-sus-comienzos-el-alambrado-marco-un-antes-y-un-despues-en-nid24102026/",
+   "fecha": "2026-10-24T10:09:08Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Avanza la cosecha estadounidense y achata los precios del maíz y de la soja",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/avanza-la-cosecha-estadounidense-y-achata-los-precios-del-maiz-y-de-la-soja-nid24102026/",
+   "fecha": "2026-10-24T10:01:04Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Palmar cumplió 100 años: María Pía Astori reivindicó el legado familiar y reclamó reglas claras para producir",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/cordoba/palmar-cumplio-100-anos-maria-pia-astori-reivindico-el-legado-familiar-y-reclamo-reglas-claras-para-producir.phtml",
+   "fecha": "2026-10-24T10:00:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Cambio de hábitos: creció un 6% la demanda de pastas y las familias eligen las variedades más económicas",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/cambio-de-habitos-crecio-un-6-la-demanda-de-pastas-y-las-familias-eligen-las-variedades-mas-nid23102026/",
+   "fecha": "2026-10-24T09:56:55Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "De las grandes estancias a los puestos patagónicos: la fábrica de 128 años que mantiene vivo el fuego de la cocina a leña",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/de-las-grandes-estancias-a-los-puestos-patagonicos-la-fabrica-de-128-anos-que-mantiene-vivo-el-fuego-nid24102026/",
+   "fecha": "2026-10-24T09:56:10Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El costo de delegar el cerebro",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/ventrilocuos-de-la-maquina-el-costo-de-delegar-el-cerebro-nid24102026/",
+   "fecha": "2026-10-24T09:49:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Creadores en busca de su propio rating",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/negocios/creadores-en-busca-de-rating-nid24102026/",
+   "fecha": "2026-10-24T09:39:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La paradoja que vive la hotelería argentina",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/negocios/la-paradoja-que-vive-la-hoteleria-argentina-nid24102026/",
+   "fecha": "2026-10-24T09:36:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El riesgo de quedar a la intemperie en un escenario volátil",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/el-riesgo-de-quedar-a-la-intemperie-en-un-escenario-volatil-nid24102026/",
+   "fecha": "2026-10-24T09:00:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Una exigencia que obliga a decidir entre los principios y el pragmatismo",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/una-exigencia-que-obliga-a-decidir-entre-los-principios-y-el-pragmatismo-nid24102026/",
+   "fecha": "2026-10-24T09:00:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Los analistas prevén más presión del dólar hacia finales del año",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/economia/los-analistas-preven-mas-presion-del-dolar-hacia-finales-del-ano.phtml",
+   "fecha": "2026-10-24T05:44:04Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Cayeron todos los índices desde el anuncio de los “mejores meses”",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/economia/cayeron-todos-los-indices-desde-el-anuncio-de-los-mejores-meses.phtml",
+   "fecha": "2026-10-24T05:42:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "¿Qué va a pasar con el dólar en 2027?: los movimientos del peso que pueden poner a prueba la “bazuca” del Gobierno",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/24/que-va-a-pasar-con-el-dolar-en-2027-los-movimientos-del-peso-que-pueden-poner-a-prueba-la-bazuca-del-gobierno/",
+   "fecha": "2026-10-24T05:20:32Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "La inflación se resiste a bajar del 2%: qué espera el mercado para el resto del año y cuáles son los riesgos para el año que viene",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/24/la-inflacion-se-resiste-a-bajar-del-2-que-espera-el-mercado-para-el-resto-del-ano-y-cuales-son-los-riesgos-para-el-ano-que-viene/",
+   "fecha": "2026-10-24T05:20:13Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "El billete de $200 cumple diez años: qué se podía comprar cuando salió y para qué alcanza hoy",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/24/el-billete-de-200-cumple-diez-anos-que-se-podia-comprar-cuando-salio-y-para-que-alcanza-hoy/",
+   "fecha": "2026-10-24T05:19:54Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "¿Golpe a los autos chinos?: qué puede pasar tras el acuerdo del gobierno con EEUU para combatir ciertas prácticas comerciales",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/24/golpe-a-los-autos-chinos-que-puede-pasar-tras-el-acuerdo-del-gobierno-con-eeuu-para-combatir-ciertas-practicas-comerciales/",
+   "fecha": "2026-10-24T05:19:13Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "El riesgo país volvió a superar los 700 puntos y la volatilidad internacional golpeó a los bonos argentinos",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/24/el-riesgo-pais-volvio-a-superar-los-700-puntos-y-la-volatilidad-internacional-golpeo-a-los-bonos-argentinos/",
+   "fecha": "2026-10-24T05:18:49Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Por qué el entusiasmo por la inteligencia artificial empieza a mostrar grietas en Wall Street",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/10/24/por-que-el-entusiasmo-por-la-inteligencia-artificial-empieza-a-mostrar-grietas-en-wall-street/",
+   "fecha": "2026-10-24T05:18:30Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "¿Hacia dónde vamos con la economía y las elecciones presidenciales de 2027?",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/10/24/hacia-donde-vamos-con-la-economia-y-las-elecciones-presidenciales-de-2027/",
+   "fecha": "2026-10-24T05:18:13Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El camino hacia una economía de mercado (libre) es otro",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/10/24/el-camino-hacia-una-economia-de-mercado-libre-es-otro/",
+   "fecha": "2026-10-24T05:17:44Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La actividad económica no repuntó en agosto y quedó al borde de una recesión técnica",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/columnistas/la-actividad-economica-no-repunto-en-agosto-y-quedo-al-borde-de-una-recesion-tecnica.phtml",
+   "fecha": "2026-10-24T05:03:38Z",
+   "tema": "actividad"
+  },
+  {
    "titulo": "Emilio García-Ruiz: “Si fundara hoy un medio, empezaría por el audio y el video, no por los artículos”",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/negocios/emilio-garcia-ruiz-si-fundara-hoy-un-medio-empezaria-por-el-audio-y-el-video-no-por-los-articulos-nid24102026/",
    "fecha": "2026-10-24T03:01:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Comedores comunitarios: la demanda crece de manera sostenida, especialmente en la segunda quincena de cada mes",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/economia/comedores-comunitarios-la-demanda-crece-de-manera-sostenida-especialmente-en-la-segunda-quincena-de-cada-mes.phtml",
+   "fecha": "2026-10-24T02:55:00Z",
    "tema": "otros"
   },
   {
@@ -107,13 +303,6 @@
    "url": "https://www.perfil.com/noticias/economia/salen-venta-departamentos-villa-olimpica-juegos-suramericanos-creditos-uva-a40.phtml",
    "fecha": "2026-10-23T22:34:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Cambio de hábitos: creció un 6% la demanda de pastas y las familias eligen las variedades más económicas",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/cambio-de-habitos-crecio-un-6-la-demanda-de-pastas-y-las-familias-eligen-las-variedades-mas-nid23102026/",
-   "fecha": "2026-10-23T22:25:41Z",
-   "tema": "dolar"
   },
   {
    "titulo": "Calzado chino por menos de US$ 2 el par: en RDEco analizaron el riesgo para los fabricantes argentinos",
@@ -403,13 +592,6 @@
    "tema": "dolar"
   },
   {
-   "titulo": "Comedores comunitarios: la demanda crece de manera sostenida, especialmente en la segunda quincena de cada mes",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/comedores-comunitarios-la-demanda-crece-de-manera-sostenida-especialmente-en-la-segunda-quincena-de-cada-mes.phtml",
-   "fecha": "2026-10-23T19:12:37Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Tras aplicar despidos por goteo, ChangoMás cierra sucursal y confirma la crisis del sector",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/negocios/467329-tras-despidos-por-goteo-supermercado-changomas-cierra-sucursal-en-chaco",
@@ -473,20 +655,6 @@
    "tema": "dolar"
   },
   {
-   "titulo": "Un megaproyecto de cobre en Salta pedirá entrar al RIGI con una inversión inicial de US$4200 millones",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/un-megaproyecto-de-cobre-en-salta-pedira-entrar-al-rigi-con-una-inversion-inicial-de-us4200-millones-nid23102026/",
-   "fecha": "2026-10-23T18:05:16Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Manaos: la Justicia confirmó el procesamiento por evasión de su dueño y se complica su situación",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/manaos-la-justicia-confirmo-el-procesamiento-por-evasion-de-su-dueno-y-se-complica-su-situacion-nid23102026/",
-   "fecha": "2026-10-23T18:04:06Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "¿Gastás de más sin darte cuenta? Los costos ocultos que arruinan el presupuesto de tu viaje",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/gastas-mas-darte-cuenta-los-costos-ocultos-que-arruinan-el-presupuesto-tu-viaje-n6336177",
@@ -499,27 +667,6 @@
    "url": "https://www.ambito.com/economia/la-confianza-del-consumidor-eeuu-volvio-caer-y-aumento-el-malestar-un-grupo-votantes-clave-n6337275",
    "fecha": "2026-10-23T17:42:00Z",
    "tema": "inflacion"
-  },
-  {
-   "titulo": "Fuerte contraste: la carne de cerdo dio un batacazo de ventas y los chacinados no repuntan",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/fuerte-contraste-la-carne-de-cerdo-dio-un-batacazo-de-ventas-y-los-chacinados-no-repuntan-nid23102026/",
-   "fecha": "2026-10-23T17:32:01Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "El riesgo país se consolidó por encima de los 700 puntos y las acciones argentinas treparon hasta 6% en Wall Street",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/el-riesgo-pais-vuelve-a-subir-y-se-acerca-a-los-720-puntos-con-un-nuevo-valor-maximo-del-ano-nid23102026/",
-   "fecha": "2026-10-23T17:32:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "A examen: probamos la tableta Huawei MatePad Air, con pantalla de 12″ y teclado desmontable",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/tecnologia/a-examen-probamos-la-tableta-huawei-matepad-air-con-pantalla-de-12-y-teclado-desmontable-nid23102026/",
-   "fecha": "2026-10-23T17:26:00Z",
-   "tema": "otros"
   },
   {
    "titulo": "Christian Asinelli, vicepresidente de CAF: “Las provincias que antes eran inviables hoy están en la escena mundial”",
@@ -557,13 +704,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Apple puso en venta este viernes una cantidad “limitada” de su smartphone plegable, el iPhone Duo",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/tecnologia/apple-puso-en-venta-este-viernes-una-cantidad-limitada-de-su-smartphone-plegable-el-iphone-duo-nid23102026/",
-   "fecha": "2026-10-23T16:45:59Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Plazo fijo en dólares en octubre de 2026 cuánto pagan los bancos por u$s10.000",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/finanzas/467332-plazo-fijo-en-dolares-en-octubre-de-2026-cuanto-pagan-los-bancos-por-us10-000",
@@ -571,25 +711,11 @@
    "tema": "mercados"
   },
   {
-   "titulo": "“Influye mucho o algo”: una encuesta señala que la incertidumbre electoral para 2027 es el mayor freno a las inversiones de los productores",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/influye-mucho-o-algo-una-encuesta-senala-que-la-incertidumbre-electoral-para-2027-es-el-mayor-freno-nid23102026/",
-   "fecha": "2026-10-23T16:18:57Z",
-   "tema": "empresas"
-  },
-  {
    "titulo": "Vinos, whiskys y tecnología a precios de remate: cómo participar de las nuevas subastas de ARCA",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/23/vinos-whiskys-y-tecnologia-a-precios-de-remate-como-participar-de-las-nuevas-subastas-de-arca/",
    "fecha": "2026-10-23T16:01:28Z",
    "tema": "inflacion"
-  },
-  {
-   "titulo": "Brasil va a las urnas: el mercado parece tener un favorito, pero su victoria podría no alcanzar para otro rally",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/brasil-va-a-las-urnas-el-mercado-parece-tener-un-favorito-pero-una-victoria-podria-no-alcanzar-para-otro-rally.phtml",
-   "fecha": "2026-10-23T15:56:00Z",
-   "tema": "otros"
   },
   {
    "titulo": "Apple y Nvidia no ceden en su pelea por ser la compañía más valiosa de Wall Street",
@@ -613,52 +739,10 @@
    "tema": "otros"
   },
   {
-   "titulo": "Tras la prórroga de la concesión, Aeropuertos Argentina consiguió US$400 millones para avanzar con su millonario plan de obras",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/tras-la-prorroga-de-la-concesion-aeropuertos-argentina-consiguio-us400-millones-para-avanzar-con-su-nid23102026/",
-   "fecha": "2026-10-23T15:33:28Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Un grupo de empresas se alió para crear la Cámara Argentina de los centros de datos",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/tecnologia/un-grupo-de-empresas-se-alio-para-crear-la-camara-argentina-de-los-centros-de-datos-nid23102026/",
-   "fecha": "2026-10-23T15:28:45Z",
-   "tema": "empresas"
-  },
-  {
    "titulo": "Ganancias: contadores estiman nueva postergación para las declaraciones juradas y pocos dólares del colchón",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/ganancias-contadores-estiman-nueva-postergacion-las-declaraciones-juradas-y-pocos-dolares-del-colchon-n6337202",
    "fecha": "2026-10-23T15:07:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "La Justicia ratificó el procesamiento del dueño de Manaos: investigan un préstamo de $650 millones y facturas irregulares",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/justicia-ratifico-procesamiento-dueno-manaos-investigan-prestamo-650-millones-facturas-irregulares-a40.phtml",
-   "fecha": "2026-10-23T15:06:25Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Menos trabajadores aportan y más jubilados dependen del Estado",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/menos-trabajadores-aportan-jubilados-dependen-estado-crisis-previsional-amenaza-cuentas-publicas-a40.phtml",
-   "fecha": "2026-10-23T14:55:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "La historia del petrolero ruso con diésel que navega hacia Nueva York",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/la-historia-del-petrolero-ruso-con-diesel-que-navega-hacia-nueva-york.phtml",
-   "fecha": "2026-10-23T14:45:30Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Pami habilitó un canal donde se pueden reportar fallas técnicas en la aplicación y en el registro",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/reclamos-mi-pami-cuales-fallas-tecnicas-inconvenientes-sistema-reportan-usuarios-a40.phtml",
-   "fecha": "2026-10-23T14:45:00Z",
    "tema": "otros"
   },
   {
@@ -669,32 +753,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "El riesgo país no encuentra techo: trepó a 717 puntos y los bonos argentinos vuelven a caer",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/el-riesgo-pais-no-encuentra-techo-trepo-a-717-puntos-y-los-bonos-argentinos-vuelven-a-caer.phtml",
-   "fecha": "2026-10-23T14:33:00Z",
-   "tema": "mercados"
-  },
-  {
    "titulo": "El mercado alerta que solo un repunte extraordinario salvará a la economía de la recesión",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/467174-por-que-solo-un-repunte-extraordinario-salvara-a-la-economia-de-la-recesion",
    "fecha": "2026-10-23T14:30:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Escándalo con Manaos: la Justicia confirmó el procesamiento del dueño de la marca de gaseosas por evasión fiscal",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/23/escandalo-con-manaos-la-justicia-confirmo-el-procesamiento-del-dueno-de-la-marca-de-gaseosas-por-evasion-fiscal/",
-   "fecha": "2026-10-23T14:26:19Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Alerta en las pymes industriales: la producción cayó casi 12%, se redujo el empleo y no hay señales de recuperación",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/23/alerta-en-las-pymes-industriales-la-produccion-cayo-casi-12-se-redujo-el-empleo-y-no-hay-senales-de-recuperacion/",
-   "fecha": "2026-10-23T13:51:55Z",
-   "tema": "actividad"
   },
   {
    "titulo": "Se aceleró la inflación de Japón y aumenta la presión para que su banco central suba la tasa",
@@ -732,32 +795,11 @@
    "tema": "inflacion"
   },
   {
-   "titulo": "La asignación por hijo de los empleados en blanco vale casi la mitad que en 2016, según la UCA",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/23/la-asignacion-por-hijo-de-los-empleados-formales-vale-casi-la-mitad-que-en-2016-segun-la-uca/",
-   "fecha": "2026-10-23T12:58:52Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El Gobierno reglamentó Inocencia Fiscal II: los cambios clave y los pasos administrativos que faltan",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/23/el-gobierno-reglamento-inocencia-fiscal-ii-los-cambios-clave-y-los-pasos-administrativos-que-faltan/",
-   "fecha": "2026-10-23T12:57:15Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "Electrolux cerró por completo su planta en Rosario y formalizó 200 despidos",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/negocios/467309-electrolux-cerro-su-planta-en-rosario-y-formalizo-200-despidos",
    "fecha": "2026-10-23T12:57:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "El BCRA dispuso cambios en las cuentas remuneradas de bancos y billeteras virtuales: qué deben informar a sus clientes",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/23/el-bcra-dispuso-cambios-en-las-cuentas-remuneradas-de-bancos-y-billeteras-virtuales-que-deben-informar-a-sus-clientes/",
-   "fecha": "2026-10-23T12:30:36Z",
-   "tema": "politica"
   },
   {
    "titulo": "Licencias parentales modernas: los países que ya ofrecen más días a padres",
@@ -774,31 +816,10 @@
    "tema": "actividad"
   },
   {
-   "titulo": "De los recursos naturales al conocimiento: la oportunidad de una nueva Argentina productiva",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/opinion/2026/10/23/de-los-recursos-naturales-al-conocimiento-la-oportunidad-de-una-nueva-argentina-productiva/",
-   "fecha": "2026-10-23T11:34:29Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "ARBA habilita de hasta 40% para ponerse al día con impuestos provinciales",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/arba-habilita-40-ponerse-al-dia-impuestos-provinciales-n6337056",
    "fecha": "2026-10-23T11:24:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "El Banco Ciudad lanzó nuevos créditos hipotecarios: quiénes pueden acceder y a qué tasa",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/23/el-banco-ciudad-lanzo-nuevos-creditos-hipotecarios-quienes-pueden-acceder-y-a-que-tasa/",
-   "fecha": "2026-10-23T11:20:45Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Radiografía del Financial Times: el plan económico de Milei está bajo presión",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/23/radiografia-del-financial-times-el-plan-economico-de-milei-esta-bajo-presion/",
-   "fecha": "2026-10-23T11:16:00Z",
    "tema": "politica"
   },
   {
@@ -807,27 +828,6 @@
    "url": "https://www.iprofesional.com/actualidad/467297-nike-liquida-zapatillas-y-ropa-deportiva-con-descuentos-de-hasta-50-por-ciento",
    "fecha": "2026-10-23T11:13:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Con nombre que remite a superhéroes y ChatGPT a bordo, se lanzó el nuevo modelo de una dinastía de SUV clásicos",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/23/con-nombre-que-remite-a-superheroes-y-chatgpt-a-bordo-se-lanzo-el-nuevo-modelo-de-una-dinastia-de-suv-clasicos/",
-   "fecha": "2026-10-23T10:55:09Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Ganancias: reglamentan cambios en la declaración jurada simplificada y fijan cuándo ARCA puede impugnarla",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/ganancias-reglamentan-cambios-la-declaracion-jurada-simplificada-y-fijan-cuando-arca-puede-impugnarla-n6337054",
-   "fecha": "2026-10-23T10:32:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Tras el mal dato de la actividad económica en agosto, la city volvió a ajustar a la baja sus proyecciones para 2026",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/tras-el-mal-dato-la-actividad-economica-agosto-la-city-volvio-ajustar-la-baja-sus-proyecciones-2026-n6336742",
-   "fecha": "2026-10-23T10:00:00Z",
-   "tema": "actividad"
   }
  ]
 }
