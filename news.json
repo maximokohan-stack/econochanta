@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-24T00:07:30.740334Z",
+ "actualizado": "2026-10-24T04:00:30.051684Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -60,7 +60,21 @@
  ],
  "items": [
   {
-   "titulo": "¿Más presión para el dólar?: caen los precios internacionales del agro y la colocación de deuda privada",
+   "titulo": "Emilio García-Ruiz: “Si fundara hoy un medio, empezaría por el audio y el video, no por los artículos”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/negocios/emilio-garcia-ruiz-si-fundara-hoy-un-medio-empezaria-por-el-audio-y-el-video-no-por-los-articulos-nid24102026/",
+   "fecha": "2026-10-24T03:01:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El Banco Nación otorgó 210 créditos hipotecarios con los fondos de la primera licitación del FGS",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/24/el-banco-nacion-otorgo-210-creditos-hipotecarios-con-los-fondos-de-la-primera-licitacion-del-fgs/",
+   "fecha": "2026-10-24T00:44:38Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "¿Más presión para el dólar?: Caen los precios internacionales del agro y la colocación de deuda privada",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/mas-presion-el-dolar-caen-los-precios-internacionales-del-agro-y-la-colocacion-deuda-privada-n6337397",
    "fecha": "2026-10-23T23:44:00Z",
@@ -71,6 +85,13 @@
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/endeudamiento-8-cada-10-argentinos-llegan-margen-fin-mes-y-usan-tarjeta-credito-financiarse-n6337360",
    "fecha": "2026-10-23T23:04:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La venta de combustibles repuntó en septiembre y cortó siete meses de caídas",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/economia/la-venta-de-combustibles-repunto-en-septiembre-y-corto-siete-meses-de-caidas.phtml",
+   "fecha": "2026-10-23T22:43:59Z",
    "tema": "otros"
   },
   {
@@ -162,6 +183,13 @@
    "medio": "Perfil",
    "url": "https://www.perfil.com/noticias/masperfil/carga-impositiva-en-argentina-las-medidas-fiscales-que-pueden-beneficiar-a-las-pymes.phtml",
    "fecha": "2026-10-23T21:52:18Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Industriales bonaerenses denuncian una “aduana interna” en Ramallo y advierten que podrían cerrar fábricas",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/economia/industriales-bonaerenses-denuncian-una-aduana-interna-en-ramallo-y-advierten-que-podrian-cerrar-fabricas-a40.phtml",
+   "fecha": "2026-10-23T21:46:21Z",
    "tema": "otros"
   },
   {
@@ -373,6 +401,13 @@
    "url": "https://www.lanacion.com.ar/economia/dolar/dolar-hoy-y-dolar-blue-en-vivo-y-cual-es-el-precio-del-paralelo-este-viernes-23-de-octubre-minuto-a-nid23102026/",
    "fecha": "2026-10-23T19:20:00Z",
    "tema": "dolar"
+  },
+  {
+   "titulo": "Comedores comunitarios: la demanda crece de manera sostenida, especialmente en la segunda quincena de cada mes",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/economia/comedores-comunitarios-la-demanda-crece-de-manera-sostenida-especialmente-en-la-segunda-quincena-de-cada-mes.phtml",
+   "fecha": "2026-10-23T19:12:37Z",
+   "tema": "otros"
   },
   {
    "titulo": "Tras aplicar despidos por goteo, ChangoMás cierra sucursal y confirma la crisis del sector",
@@ -606,13 +641,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "“Prioridad central”: un exjefe de Seguridad de OpenAI vuelve a la compañía ante la creciente preocupación por el avance de la IA",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/IA/prioridad-central-un-exjefe-de-seguridad-de-openai-vuelve-a-la-compania-ante-la-creciente-nid23102026/",
-   "fecha": "2026-10-23T14:56:45Z",
-   "tema": "empresas"
-  },
-  {
    "titulo": "Menos trabajadores aportan y más jubilados dependen del Estado",
    "medio": "Perfil",
    "url": "https://www.perfil.com/noticias/economia/menos-trabajadores-aportan-jubilados-dependen-estado-crisis-previsional-amenaza-cuentas-publicas-a40.phtml",
@@ -662,13 +690,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "El dólar en Córdoba: a cuánto cotiza este viernes 23 de octubre",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/cordoba/cordoba-dolar-hoy-dolar-blue-hoy-cotizacion-23-de-octubre-231026.phtml",
-   "fecha": "2026-10-23T14:04:00Z",
-   "tema": "dolar"
-  },
-  {
    "titulo": "Alerta en las pymes industriales: la producción cayó casi 12%, se redujo el empleo y no hay señales de recuperación",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/23/alerta-en-las-pymes-industriales-la-produccion-cayo-casi-12-se-redujo-el-empleo-y-no-hay-senales-de-recuperacion/",
@@ -681,13 +702,6 @@
    "url": "https://www.ambito.com/economia/se-acelero-la-inflacion-japon-y-aumenta-la-presion-que-su-banco-central-suba-la-tasa-n6337146",
    "fecha": "2026-10-23T13:40:00Z",
    "tema": "inflacion"
-  },
-  {
-   "titulo": "Crisis de la industria en Córdoba: los 5 caminos que toman las empresas y cuál es el más elegido",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/cordoba/crisis-de-la-industria-en-cordoba-los-5-caminos-que-toman-las-empresas-y-cual-es-el-mas-elegido.phtml",
-   "fecha": "2026-10-23T13:29:54Z",
-   "tema": "actividad"
   },
   {
    "titulo": "Cómo la IA cambió lo que busca el capital de riesgo al invertir en startups",
@@ -709,13 +723,6 @@
    "url": "https://www.ambito.com/economia/dura-advertencia-del-financial-times-las-reformas-economicas-javier-milei-estan-presion-n6337138",
    "fecha": "2026-10-23T13:14:00Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "Educación financiera: el Banco de Corrientes se sumó a un programa nacional impulsado por Capital Humano",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/nea/educacion-financiera-el-banco-de-corrientes-se-sumo-a-un-programa-nacional-impulsado-por-capital-humano.phtml",
-   "fecha": "2026-10-23T13:05:57Z",
-   "tema": "otros"
   },
   {
    "titulo": "Plan económico de Milei, bajo presión por inflación, empleo y consumo, según Financial Times",
@@ -806,13 +813,6 @@
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/23/con-nombre-que-remite-a-superheroes-y-chatgpt-a-bordo-se-lanzo-el-nuevo-modelo-de-una-dinastia-de-suv-clasicos/",
    "fecha": "2026-10-23T10:55:09Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "La compraventa de inmuebles en CABA se recuperó en septiembre pero cayó la cantidad de hipotecas",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/23/la-compraventa-de-inmuebles-en-caba-se-recupero-en-septiembre-pero-cayo-la-cantidad-de-hipotecas/",
-   "fecha": "2026-10-23T10:52:59Z",
    "tema": "otros"
   },
   {
