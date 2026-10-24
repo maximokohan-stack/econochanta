@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-24T16:26:52.865049Z",
+ "actualizado": "2026-10-24T19:07:48.948993Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -60,10 +60,66 @@
  ],
  "items": [
   {
+   "titulo": "Créditos hipotecarios: Banco Nación otorgó más de 210 préstamos con fondos de ANSES y recibió otros $40.000 millones",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/creditos-hipotecarios-banco-nacion-otorgo-mas-210-prestamos-fondos-anses-y-recibio-otros-40000-millones-n6337529",
+   "fecha": "2026-10-24T18:44:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "De las grandes estancias a los puestos patagónicos: la fábrica de 128 años que mantiene vivo el fuego de la cocina a leña",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/de-las-grandes-estancias-a-los-puestos-patagonicos-la-fabrica-de-128-anos-que-mantiene-vivo-el-fuego-nid24102026/",
+   "fecha": "2026-10-24T18:34:35Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Introducido por un escocés y discutido en sus comienzos, el alambrado marcó un antes y un después en el campo argentino",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/introducido-por-un-escoces-y-discutido-en-sus-comienzos-el-alambrado-marco-un-antes-y-un-despues-en-nid24102026/",
+   "fecha": "2026-10-24T18:34:11Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Los Cedears más comprados por los argentinos: apuestas en inteligencia artificial, Brasil y Bitcoin",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/los-cedears-mas-comprados-por-los-argentinos-apuestas-en-inteligencia-artificial-brasil-y-bitcoin-nid24102026/",
+   "fecha": "2026-10-24T18:12:02Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Cuidado de personas: 48 de 50 políticas nacionales fueron desactivadas y las familias cubren el vacío",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/cordoba/cuidado-de-personas-48-de-50-politicas-nacionales-fueron-desactivadas-y-las-familias-cubren-el-vacio.phtml",
+   "fecha": "2026-10-24T18:00:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "A cuánto abre el dólar el lunes 26 de octubre",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/dolar/a-cuanto-abre-el-dolar-el-lunes-26-de-octubre-nid24102026/",
+   "fecha": "2026-10-24T17:11:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Milei aún no logró revertir cuatro décadas de caída de participación de la Argentina en el PBI mundial",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/24/milei-aun-no-logro-revertir-cuatro-decadas-de-caida-de-participacion-de-la-argentina-en-el-pbi-mundial/",
+   "fecha": "2026-10-24T16:21:21Z",
+   "tema": "actividad"
+  },
+  {
    "titulo": "El Niño: nadie puede impedir que ocurra, pero sí evitar buena parte de sus daños",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/campo/el-nino-nadie-puede-impedir-que-ocurra-pero-si-evitar-buena-parte-de-sus-danos-nid23102026/",
    "fecha": "2026-10-24T16:19:12Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Los CEDEARs que prometen mayor recorrido alcista tras las elecciones en Brasil",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/467373-que-cedears-prometen-mayor-recorrido-alcista-tras-elecciones-en-brasil",
+   "fecha": "2026-10-24T16:11:00Z",
    "tema": "otros"
   },
   {
@@ -74,17 +130,17 @@
    "tema": "otros"
   },
   {
-   "titulo": "De las grandes estancias a los puestos patagónicos: la fábrica de 128 años que mantiene vivo el fuego de la cocina a leña",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/de-las-grandes-estancias-a-los-puestos-patagonicos-la-fabrica-de-128-anos-que-mantiene-vivo-el-fuego-nid24102026/",
-   "fecha": "2026-10-24T16:08:38Z",
+   "titulo": "El mercado ya votó por Bolsonaro y la City palpita un \"efecto contagio\" en Argentina",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/politica/467366-en-la-city-esperan-triunfo-de-bolsonaro-y-un-contagio-financiero-en-argentina",
+   "fecha": "2026-10-24T16:00:00Z",
    "tema": "otros"
   },
   {
-   "titulo": "Introducido por un escocés y discutido en sus comienzos, el alambrado marcó un antes y un después en el campo argentino",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/introducido-por-un-escoces-y-discutido-en-sus-comienzos-el-alambrado-marco-un-antes-y-un-despues-en-nid24102026/",
-   "fecha": "2026-10-24T16:08:13Z",
+   "titulo": "El programa económico que tienen Lula y Bolsonaro y que definirá el futuro de Brasil",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/impuestos/467352-elecciones-brasil-programas-economicos-lula-bolsonaro",
+   "fecha": "2026-10-24T15:46:00Z",
    "tema": "otros"
   },
   {
@@ -92,6 +148,13 @@
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/la-relacion-comercial-que-impacto-en-la-argentina-puede-dejar-la-eleccion-en-brasil-nid24102026/",
    "fecha": "2026-10-24T15:03:03Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "¿Qué pasa si no podés pagar una cuota del crédito UVA?",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/que-pasa-si-no-podes-pagar-una-cuota-del-credito-uva-n6336920",
+   "fecha": "2026-10-24T15:00:00Z",
    "tema": "otros"
   },
   {
@@ -113,6 +176,13 @@
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/energia/467390-hasta-cuanto-podes-consumir-electricidad-para-acceder-subsidio-75-por-ciento",
    "fecha": "2026-10-24T14:03:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "¿Tenés un crédito hipotecario y querés vender tu casa? Este es el trámite que tenés que hacer",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/tenes-un-credito-hipotecario-y-queres-vender-tu-casa-este-es-el-tramite-que-tenes-que-hacer-n6336851",
+   "fecha": "2026-10-24T14:00:00Z",
    "tema": "otros"
   },
   {
@@ -170,6 +240,13 @@
    "url": "https://www.lanacion.com.ar/economia/campo/avanza-la-cosecha-estadounidense-y-achata-los-precios-del-maiz-y-de-la-soja-nid24102026/",
    "fecha": "2026-10-24T10:01:04Z",
    "tema": "inflacion"
+  },
+  {
+   "titulo": "Ministerio de la Felicidad: cómo funciona la apuesta de Dubái para mejorar la satisfacción de sus ciudadanos",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/ministerio-la-felicidad-como-funciona-la-apuesta-dubai-mejorar-la-satisfaccion-sus-ciudadanos-n6337428",
+   "fecha": "2026-10-24T10:00:00Z",
+   "tema": "otros"
   },
   {
    "titulo": "Palmar cumplió 100 años: María Pía Astori reivindicó el legado familiar y reclamó reglas claras para producir",
@@ -303,6 +380,13 @@
    "url": "https://www.lanacion.com.ar/economia/negocios/emilio-garcia-ruiz-si-fundara-hoy-un-medio-empezaria-por-el-audio-y-el-video-no-por-los-articulos-nid24102026/",
    "fecha": "2026-10-24T03:01:00Z",
    "tema": "otros"
+  },
+  {
+   "titulo": "Compras hormiga, segundas marcas y el regreso del fiado, los almacenes de barrio se adaptan a la caída de consumo",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/compras-hormiga-segundas-marcas-y-el-regreso-del-fiado-los-almacenes-barrio-se-adaptan-la-caida-consumo-n6337141",
+   "fecha": "2026-10-24T03:00:00Z",
+   "tema": "actividad"
   },
   {
    "titulo": "Comedores comunitarios: la demanda crece de manera sostenida, especialmente en la segunda quincena de cada mes",
@@ -627,13 +711,6 @@
    "tema": "mercados"
   },
   {
-   "titulo": "Dólar hoy y dólar blue, EN VIVO:  y cuál es el precio del paralelo este viernes 23 de octubre, minuto a minuto",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/dolar/dolar-hoy-y-dolar-blue-en-vivo-y-cual-es-el-precio-del-paralelo-este-viernes-23-de-octubre-minuto-a-nid23102026/",
-   "fecha": "2026-10-23T19:20:00Z",
-   "tema": "dolar"
-  },
-  {
    "titulo": "Tras aplicar despidos por goteo, ChangoMás cierra sucursal y confirma la crisis del sector",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/negocios/467329-tras-despidos-por-goteo-supermercado-changomas-cierra-sucursal-en-chaco",
@@ -646,13 +723,6 @@
    "url": "https://www.iprofesional.com/economia/467343-encuesta-revela-que-preocupa-mas-al-campo-entre-elecciones-2027-el-nino",
    "fecha": "2026-10-23T18:50:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Dólares del colchón: el Gobierno reglamentó en qué casos se cae el régimen simplificado de Ganancias",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/dolar/dolares-del-colchon-el-gobierno-reglamento-en-que-casos-se-cae-el-regimen-simplificado-de-ganancias-nid23102026/",
-   "fecha": "2026-10-23T18:46:54Z",
-   "tema": "politica"
   },
   {
    "titulo": "El Gobierno destraba el acuerdo automotriz con México: qué vehículos podrán volver a importarse sin arancel",
@@ -673,13 +743,6 @@
    "medio": "Perfil",
    "url": "https://www.perfil.com/noticias/economia/a-cuanto-cotiza-el-dolar-blue-hoy-viernes-23-de-octubre-a50-bgd.phtml",
    "fecha": "2026-10-23T18:15:00Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "Euro blue hoy: se estabilizó en los $1.861,75 este viernes 22 de octubre",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/a-cuanto-cotiza-el-euro-blue-hoy-viernes-23-de-octubre-a50-bgd.phtml",
-   "fecha": "2026-10-23T18:10:00Z",
    "tema": "dolar"
   },
   {
@@ -746,13 +809,6 @@
    "tema": "inflacion"
   },
   {
-   "titulo": "Apple y Nvidia no ceden en su pelea por ser la compañía más valiosa de Wall Street",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/23/apple-y-nvidia-no-ceden-en-su-pelea-por-ser-la-compania-mas-valiosa-de-wall-street/",
-   "fecha": "2026-10-23T15:54:08Z",
-   "tema": "mercados"
-  },
-  {
    "titulo": "La UE busca ampliar la negociación comercial con China a nuevos rubros tras el acuerdo por los autos híbridos",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/la-ue-busca-ampliar-la-negociacion-comercial-china-nuevos-rubros-el-acuerdo-los-autos-hibridos-n6337192",
@@ -772,62 +828,6 @@
    "url": "https://www.iprofesional.com/economia/467174-por-que-solo-un-repunte-extraordinario-salvara-a-la-economia-de-la-recesion",
    "fecha": "2026-10-23T14:30:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Se aceleró la inflación de Japón y aumenta la presión para que su banco central suba la tasa",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/se-acelero-la-inflacion-japon-y-aumenta-la-presion-que-su-banco-central-suba-la-tasa-n6337146",
-   "fecha": "2026-10-23T13:40:00Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Cómo la IA cambió lo que busca el capital de riesgo al invertir en startups",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/management/467232-como-la-ia-cambio-lo-que-busca-el-capital-de-riesgo-en-startups",
-   "fecha": "2026-10-23T13:20:00Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "Crece el interés de las mineras canadienses en la Argentina y aspiran a construir un \"corredor financiero andino\"",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/energia/crece-el-interes-las-mineras-canadienses-la-argentina-y-aspiran-construir-un-corredor-financiero-andino-n6336877",
-   "fecha": "2026-10-23T13:19:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Dura advertencia del Financial Times: \"Las reformas económicas de Javier Milei están bajo presión\"",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/dura-advertencia-del-financial-times-las-reformas-economicas-javier-milei-estan-presion-n6337138",
-   "fecha": "2026-10-23T13:14:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Plan económico de Milei, bajo presión por inflación, empleo y consumo, según Financial Times",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/467308-el-plan-economico-de-milei-bajo-presion-segun-el-duro-analisis-del-financial-times",
-   "fecha": "2026-10-23T13:00:00Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Electrolux cerró por completo su planta en Rosario y formalizó 200 despidos",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/negocios/467309-electrolux-cerro-su-planta-en-rosario-y-formalizo-200-despidos",
-   "fecha": "2026-10-23T12:57:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Licencias parentales modernas: los países que ya ofrecen más días a padres",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/management/467216-licencias-parentales-modernas-los-paises-que-ya-ofrecen-mas-dias-a-padres",
-   "fecha": "2026-10-23T12:25:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "ARBA habilita de hasta 40% para ponerse al día con impuestos provinciales",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/arba-habilita-40-ponerse-al-dia-impuestos-provinciales-n6337056",
-   "fecha": "2026-10-23T11:24:00Z",
-   "tema": "politica"
   }
  ]
 }
