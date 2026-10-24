@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-24T12:59:02.930121Z",
+ "actualizado": "2026-10-24T16:26:52.865049Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -60,6 +60,69 @@
  ],
  "items": [
   {
+   "titulo": "El Niño: nadie puede impedir que ocurra, pero sí evitar buena parte de sus daños",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/el-nino-nadie-puede-impedir-que-ocurra-pero-si-evitar-buena-parte-de-sus-danos-nid23102026/",
+   "fecha": "2026-10-24T16:19:12Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Quería ser el “unicornio del agro”, llegó a valer más de US$1000 millones y ahora aprobaron su liquidación con el 98,4% de los votos",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/queria-ser-el-unicornio-del-agro-llego-a-valer-mas-de-us1000-millones-y-ahora-aprobaron-su-nid24102026/",
+   "fecha": "2026-10-24T16:09:35Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "De las grandes estancias a los puestos patagónicos: la fábrica de 128 años que mantiene vivo el fuego de la cocina a leña",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/de-las-grandes-estancias-a-los-puestos-patagonicos-la-fabrica-de-128-anos-que-mantiene-vivo-el-fuego-nid24102026/",
+   "fecha": "2026-10-24T16:08:38Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Introducido por un escocés y discutido en sus comienzos, el alambrado marcó un antes y un después en el campo argentino",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/introducido-por-un-escoces-y-discutido-en-sus-comienzos-el-alambrado-marco-un-antes-y-un-despues-en-nid24102026/",
+   "fecha": "2026-10-24T16:08:13Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La relación comercial: qué impacto en la Argentina puede dejar la elección en Brasil",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/la-relacion-comercial-que-impacto-en-la-argentina-puede-dejar-la-eleccion-en-brasil-nid24102026/",
+   "fecha": "2026-10-24T15:03:03Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "De Mar del Plata a Puerto Vallarta: se vendieron los “pingüinos saltarines” que quedaban en el Aquarium marplatense",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/24/de-mar-del-plata-a-puerto-vallarta-se-vendieron-los-pinguinos-saltarines-que-quedaban-en-el-aquarium-de-mar-del-plata-clone/",
+   "fecha": "2026-10-24T14:41:06Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Ezeiza operará con restricciones durante 18 días: qué pasará con los vuelos y qué deben saber los pasajeros",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/24/ezeiza-operara-con-restricciones-durante-18-dias-que-pasara-con-los-vuelos-y-que-deben-saber-los-pasajeros/",
+   "fecha": "2026-10-24T14:37:26Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Hasta cuánto podés consumir de electricidad para acceder al subsidio del 75%",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/energia/467390-hasta-cuanto-podes-consumir-electricidad-para-acceder-subsidio-75-por-ciento",
+   "fecha": "2026-10-24T14:03:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Cuánto cobra una empleada doméstica en noviembre y qué pasa con el bono",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/467389-cuanto-cobra-empleada-domestica-noviembre-2026-que-pasa-con-bono",
+   "fecha": "2026-10-24T13:24:00Z",
+   "tema": "mercados"
+  },
+  {
    "titulo": "El problema no es cómo construimos, sino cómo vivimos",
    "medio": "Perfil",
    "url": "https://noticias.perfil.com/noticias/empresas/el-problema-no-es-como-construimos-sino-como-vivimos.phtml",
@@ -102,13 +165,6 @@
    "tema": "mercados"
   },
   {
-   "titulo": "Introducido por un escocés y discutido en sus comienzos, el alambrado marcó un antes y un después en el campo argentino",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/introducido-por-un-escoces-y-discutido-en-sus-comienzos-el-alambrado-marco-un-antes-y-un-despues-en-nid24102026/",
-   "fecha": "2026-10-24T10:09:08Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Avanza la cosecha estadounidense y achata los precios del maíz y de la soja",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/campo/avanza-la-cosecha-estadounidense-y-achata-los-precios-del-maiz-y-de-la-soja-nid24102026/",
@@ -128,13 +184,6 @@
    "url": "https://www.lanacion.com.ar/economia/campo/cambio-de-habitos-crecio-un-6-la-demanda-de-pastas-y-las-familias-eligen-las-variedades-mas-nid23102026/",
    "fecha": "2026-10-24T09:56:55Z",
    "tema": "dolar"
-  },
-  {
-   "titulo": "De las grandes estancias a los puestos patagónicos: la fábrica de 128 años que mantiene vivo el fuego de la cocina a leña",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/de-las-grandes-estancias-a-los-puestos-patagonicos-la-fabrica-de-128-anos-que-mantiene-vivo-el-fuego-nid24102026/",
-   "fecha": "2026-10-24T09:56:10Z",
-   "tema": "otros"
   },
   {
    "titulo": "El costo de delegar el cerebro",
@@ -431,13 +480,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "El Niño: nadie puede impedir que ocurra, pero sí evitar buena parte de sus daños",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/el-nino-nadie-puede-impedir-que-ocurra-pero-si-evitar-buena-parte-de-sus-danos-nid23102026/",
-   "fecha": "2026-10-23T21:19:11Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Jornada financiera: las acciones argentinas rebotaron hasta 6% en Wall Street, pero el riesgo país volvió a subir",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/23/jornada-financiera-las-acciones-argentinas-rebotaron-hasta-6-en-wall-street-pero-el-riesgo-pais-volvio-a-subir/",
@@ -613,20 +655,6 @@
    "tema": "politica"
   },
   {
-   "titulo": "Un municipio kirchnerista cobra hasta $62.000 a los camiones por circular 5 kilómetros y ahora les exige un registro",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/un-municipio-kirchnerista-cobra-hasta-62000-a-los-camiones-por-circular-5-kilometros-y-ahora-les-nid23102026/",
-   "fecha": "2026-10-23T18:44:52Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "“Cambia la lógica”: una nueva tecnología busca transformar la plantación de caña de azúcar y reducir hasta un 90% la semilla utilizada",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/cambia-la-logica-una-nueva-tecnologia-busca-transformar-la-plantacion-de-cana-de-azucar-y-reducir-nid23102026/",
-   "fecha": "2026-10-23T18:42:40Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "El Gobierno destraba el acuerdo automotriz con México: qué vehículos podrán volver a importarse sin arancel",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/23/el-gobierno-destraba-el-acuerdo-automotriz-con-mexico-que-autos-podran-volver-a-importarse-sin-arancel/",
@@ -725,13 +753,6 @@
    "tema": "mercados"
   },
   {
-   "titulo": "Cuánto cobrarán los cuidadores de adultos por hora en noviembre 2026",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/23/cuanto-cobraran-los-cuidadores-de-adultos-por-hora-en-noviembre-2026/",
-   "fecha": "2026-10-23T15:45:47Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "La UE busca ampliar la negociación comercial con China a nuevos rubros tras el acuerdo por los autos híbridos",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/la-ue-busca-ampliar-la-negociacion-comercial-china-nuevos-rubros-el-acuerdo-los-autos-hibridos-n6337192",
@@ -743,13 +764,6 @@
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/ganancias-contadores-estiman-nueva-postergacion-las-declaraciones-juradas-y-pocos-dolares-del-colchon-n6337202",
    "fecha": "2026-10-23T15:07:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Industriales denuncian que un municipio bonaerense crea una “aduana interior” y pone en riesgo a las fábricas",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/23/industriales-denuncian-que-un-municipio-bonaerense-cobra-un-peaje-ilegal-y-amenaza-con-clausurar-fabricas/",
-   "fecha": "2026-10-23T14:36:50Z",
    "tema": "otros"
   },
   {
@@ -809,25 +823,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "Trabajadores de la Alimentación cerraron paritaria: a cuánto se fue el sueldo inicial",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/467284-trabajadores-de-la-alimentacion-cerraron-paritaria-a-cuanto-se-fue-el-sueldo-inicial",
-   "fecha": "2026-10-23T11:45:00Z",
-   "tema": "actividad"
-  },
-  {
    "titulo": "ARBA habilita de hasta 40% para ponerse al día con impuestos provinciales",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/arba-habilita-40-ponerse-al-dia-impuestos-provinciales-n6337056",
    "fecha": "2026-10-23T11:24:00Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "Cómo comprar zapatillas Nike más baratas y acceder a descuentos de hasta 50%",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/actualidad/467297-nike-liquida-zapatillas-y-ropa-deportiva-con-descuentos-de-hasta-50-por-ciento",
-   "fecha": "2026-10-23T11:13:00Z",
-   "tema": "otros"
   }
  ]
 }
