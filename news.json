@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-23T21:44:41.266840Z",
+ "actualizado": "2026-10-24T00:07:30.740334Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -60,6 +60,118 @@
  ],
  "items": [
   {
+   "titulo": "¿Más presión para el dólar?: caen los precios internacionales del agro y la colocación de deuda privada",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/mas-presion-el-dolar-caen-los-precios-internacionales-del-agro-y-la-colocacion-deuda-privada-n6337397",
+   "fecha": "2026-10-23T23:44:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Endeudamiento: 8 de cada 10 argentinos llegan sin margen a fin de mes y usan la tarjeta de crédito para financiarse",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/endeudamiento-8-cada-10-argentinos-llegan-margen-fin-mes-y-usan-tarjeta-credito-financiarse-n6337360",
+   "fecha": "2026-10-23T23:04:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "YPF presenta sus resultados ante inversores: Horacio Marín anticipa un diciembre “histórico” en exportaciones",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/ypf-presenta-sus-resultados-inversores-horacio-marin-anticipa-un-diciembre-historico-exportaciones-n6337346",
+   "fecha": "2026-10-23T22:39:00Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Salen a la venta los departamentos de la ex Villa Olímpica de los Juegos Suramericanos con créditos blandos",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/economia/salen-venta-departamentos-villa-olimpica-juegos-suramericanos-creditos-uva-a40.phtml",
+   "fecha": "2026-10-23T22:34:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Cambio de hábitos: creció un 6% la demanda de pastas y las familias eligen las variedades más económicas",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/cambio-de-habitos-crecio-un-6-la-demanda-de-pastas-y-las-familias-eligen-las-variedades-mas-nid23102026/",
+   "fecha": "2026-10-23T22:25:41Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Calzado chino por menos de US$ 2 el par: en RDEco analizaron el riesgo para los fabricantes argentinos",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/masperfil/alerta-por-el-futuro-de-la-industria-del-calzado-dumping-chino-contrabando-y-caida-del-mercado-interno.phtml",
+   "fecha": "2026-10-23T22:22:27Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Los subsidios energéticos caen a su mínimo anual y le dan un respiro a Caputo",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/energia/467371-los-subsidios-energeticos-caen-a-su-minimo-anual-y-le-dan-un-respiro-a-caputo",
+   "fecha": "2026-10-23T22:21:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "RDEco: por qué la recuperación ferroviaria requiere inversión estatal y planificación a largo plazo",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/masperfil/ferrocarriles-en-argentina-cual-es-el-rol-del-estado-y-el-proyecto-privado-para-vaca-muerta.phtml",
+   "fecha": "2026-10-23T22:14:39Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Argentina mantiene un extenso historial de presupuestos incumplidos: en RDI se analizaron las última proyecciones económicas",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/masperfil/argentina-mantiene-un-extenso-historial-de-presupuestos-incumplidos-en-rdi-se-analizaron-las-ultima-proyecciones-economicas.phtml",
+   "fecha": "2026-10-23T22:08:43Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Soja Visec: habilitan una modalidad para negociar el “premio” sobre la soja tradicional",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/soja-visec-habilitan-una-modalidad-para-negociar-el-premio-sobre-la-soja-tradicional-nid23102026/",
+   "fecha": "2026-10-23T22:05:47Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "“Para las empresas argentinas no fue una buena noticia”: Juan Pablo Perojo cuestionó la postergación del FAL",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/masperfil/fal-y-reforma-laboral-las-criticas-de-las-pymes-por-la-postergacion-del-fondo-para-indemnizaciones.phtml",
+   "fecha": "2026-10-23T22:02:05Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Un referente de la poderosa industria alimentaria de Brasil sobre las medidas de Milei: “Son muy duras y perjudican principalmente a los más pobres”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/un-referente-de-la-poderosa-industria-alimentaria-de-brasil-sobre-las-medidas-de-milei-son-muy-duras-nid23102026/",
+   "fecha": "2026-10-23T21:58:09Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Altos precios y tasas de interés reducen la confianza del consumidor de EE.UU.",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/bloomberg/bc-altos-precios-y-tasas-de-interes-reducen-la-confianza-del-consumidor-de-eeuu.phtml",
+   "fecha": "2026-10-23T21:56:00Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "El Banco Nación ya otorgó 210 créditos hipotecarios con los fondos de ANSES",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/realestate/467368-el-banco-nacion-ya-otorgo-210-creditos-hipotecarios-con-los-fondos-de-anses",
+   "fecha": "2026-10-23T21:55:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "RDEco: Juan Pablo Perojo explicó las medidas fiscales y laborales que pueden aliviar los costos de las PyMEs",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/masperfil/carga-impositiva-en-argentina-las-medidas-fiscales-que-pueden-beneficiar-a-las-pymes.phtml",
+   "fecha": "2026-10-23T21:52:18Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "YPF y Pampa Energía, entre las acciones con mayor potencial de suba para Wall Street",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/467013-ypf-y-pampa-energia-entre-acciones-argentinas-con-mayor-potencial-de-suba-para-wall-street",
+   "fecha": "2026-10-23T21:43:00Z",
+   "tema": "mercados"
+  },
+  {
    "titulo": "FAL: qué cambia para las empresas con la postergación del debut y cuándo podrán financiar indemnizaciones",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/fal-que-cambia-para-las-empresas-con-la-postergacion-del-debut-y-cuando-podran-financiar-nid23102026/",
@@ -69,7 +181,7 @@
   {
    "titulo": "Vaca Muerta ya suma anuncios de inversión por u$s200.000 millones en la próxima década",
    "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/energia/467358-inversiones-en-vaca-muerta-superaran-los-us200-000-millones-a-10-anos",
+   "url": "https://www.iprofesional.com/energia/467358-inversiones-en-vaca-muerta-superaran-los-us200000-millones-a-10-anos",
    "fecha": "2026-10-23T21:39:00Z",
    "tema": "empresas"
   },
@@ -81,11 +193,18 @@
    "tema": "otros"
   },
   {
-   "titulo": "Un referente de la poderosa industria alimentaria de Brasil sobre las medidas de Milei: “Son muy duras y perjudican principalmente a los más pobres”",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/un-referente-de-la-poderosa-industria-alimentaria-de-brasil-sobre-las-medidas-de-milei-son-muy-duras-nid23102026/",
-   "fecha": "2026-10-23T21:21:12Z",
-   "tema": "actividad"
+   "titulo": "OpenAI rebaja su valoración en nueva ronda de financiamiento a US$1,25 billones",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/bloomberg/bc-openai-rebaja-su-valoracion-en-nueva-ronda-de-financiamiento-a-us125-billones.phtml",
+   "fecha": "2026-10-23T21:31:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Las fintech argentinas planean invertir más de US$ 2.200 millones en 2027",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/economia/las-fintech-argentinas-planean-invertir-us-2200-millones-en-2027-a40.phtml",
+   "fecha": "2026-10-23T21:20:00Z",
+   "tema": "otros"
   },
   {
    "titulo": "Un violento fenómeno con mucho granizo mató a decenas de animales y dejó graves daños",
@@ -107,6 +226,13 @@
    "url": "https://www.infobae.com/economia/2026/10/23/jornada-financiera-las-acciones-argentinas-rebotaron-hasta-6-en-wall-street-pero-el-riesgo-pais-volvio-a-subir/",
    "fecha": "2026-10-23T21:16:50Z",
    "tema": "mercados"
+  },
+  {
+   "titulo": "Pablo Martorelli alertó en RDEco sobre la crisis ferroviaria: “Hoy tenemos un 60% de la red inactiva”",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/masperfil/pablo-martorelli-el-sistema-ferroviario-en-la-argentina-sigue-estando-bastante-disminuido-respecto-de-sus-posibilidades-y-necesidades-real.phtml",
+   "fecha": "2026-10-23T21:10:17Z",
+   "tema": "otros"
   },
   {
    "titulo": "La incertidumbre política y El Niño ponen en duda las inversiones del campo",
@@ -183,6 +309,13 @@
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/los-bancos-esperan-un-leve-repunte-en-la-demanda-para-este-cierre-de-ano-nid23102026/",
    "fecha": "2026-10-23T20:18:29Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Lluvias interminables: qué tipos de secarropas hay y cuánto valen",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/lluvias-interminables-que-tipos-secarropas-hay-y-cuanto-valen-n6336705",
+   "fecha": "2026-10-23T20:00:00Z",
    "tema": "otros"
   },
   {
@@ -284,7 +417,7 @@
    "tema": "politica"
   },
   {
-   "titulo": "Milei recarga su \"bazooka de dólares\" y los economistas ven riesgo de crisis autogenerada",
+   "titulo": "Milei recarga su \"bazuka de dólares\" y los economistas ven riesgo de crisis autogenerada",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/466509-milei-carga-bazooka-de-dolares-y-en-la-city-temen-efecto-bumeran",
    "fecha": "2026-10-23T18:20:00Z",
@@ -487,13 +620,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Inversiones: qué opciones recomiendan los analistas ante la volatilidad global",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/inversiones-que-opciones-recomiendan-los-analistas-ante-la-volatilidad-global-nid23102026/",
-   "fecha": "2026-10-23T14:54:25Z",
-   "tema": "empresas"
-  },
-  {
    "titulo": "La historia del petrolero ruso con diésel que navega hacia Nueva York",
    "medio": "Perfil",
    "url": "https://www.perfil.com/noticias/economia/la-historia-del-petrolero-ruso-con-diesel-que-navega-hacia-nueva-york.phtml",
@@ -506,13 +632,6 @@
    "url": "https://www.perfil.com/noticias/economia/reclamos-mi-pami-cuales-fallas-tecnicas-inconvenientes-sistema-reportan-usuarios-a40.phtml",
    "fecha": "2026-10-23T14:45:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Plazo fijo: cuál es la tasa de interés banco por banco este viernes 23 de octubre",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/plazo-fijo-cual-es-la-tasa-de-interes-banco-por-banco-este-viernes-23-de-octubre-nid23102026/",
-   "fecha": "2026-10-23T14:41:24Z",
-   "tema": "mercados"
   },
   {
    "titulo": "Industriales denuncian que un municipio bonaerense crea una “aduana interior” y pone en riesgo a las fábricas",
@@ -627,20 +746,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "El Financial Times analizó el plan Milei y alertó por una economía estancada rumbo a elecciones de 2027",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/financial-times-puso-lupa-sobre-plan-milei-alerto-por-una-economia-estancada-cara-elecciones-2027-a40.phtml",
-   "fecha": "2026-10-23T12:35:18Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "El petróleo llega a los 115 dólares el barril y toca su precio máximo en cinco meses",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/el-petroleo-llega-a-los-115-dolares-el-barril-y-toca-su-precio-maximo-en-cinco-meses.phtml",
-   "fecha": "2026-10-23T12:32:12Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "El BCRA dispuso cambios en las cuentas remuneradas de bancos y billeteras virtuales: qué deben informar a sus clientes",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/23/el-bcra-dispuso-cambios-en-las-cuentas-remuneradas-de-bancos-y-billeteras-virtuales-que-deben-informar-a-sus-clientes/",
@@ -652,20 +757,6 @@
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/management/467216-licencias-parentales-modernas-los-paises-que-ya-ofrecen-mas-dias-a-padres",
    "fecha": "2026-10-23T12:25:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Los alimentos acumulan siete semanas consecutivas de aumentos: su impacto en la inflación mensual",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/alimentos-acumulan-siete-semanas-consecutivas-aumentos-a40.phtml",
-   "fecha": "2026-10-23T12:23:00Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Sueldos de octubre en Corrientes: confirman el cronograma de pago para estatales",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/nea/sueldos-de-octubre-en-corrientes-confirman-el-cronograma-de-pago-para-estatales.phtml",
-   "fecha": "2026-10-23T12:05:48Z",
    "tema": "otros"
   },
   {
@@ -732,102 +823,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "Escala salarial de encargados de edificios en octubre: cuál es el sueldo de los empleados de SUTERH",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/escala-salarial-encargados-edificios-octubre-cual-sueldo-empleados-suterh-a40.phtml",
-   "fecha": "2026-10-23T10:25:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "ANSES confirmó el calendario de cobro de noviembre: cuándo perciben sus haberes jubilados y PNC",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/anses-confirmo-calendario-cobro-noviembre-cuando-perciben-haberes-jubilados-pnc-a40.phtml",
-   "fecha": "2026-10-23T10:15:00Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Tras el mal dato de la actividad económica en agosto, la city volvió a ajustar a la baja sus proyecciones para 2026",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/tras-el-mal-dato-la-actividad-economica-agosto-la-city-volvio-ajustar-la-baja-sus-proyecciones-2026-n6336742",
    "fecha": "2026-10-23T10:00:00Z",
    "tema": "actividad"
-  },
-  {
-   "titulo": "Los cuatro factores que transforman a los Emiratos Árabes en el principal destino de inmigrantes millonarios",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/los-4-factores-que-transforman-los-emiratos-arabes-el-principal-destino-inmigrantes-millonarios-n6336062",
-   "fecha": "2026-10-23T10:00:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Cómo funciona un crédito hipotecario y cuáles son los pasos para solicitarlo",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/como-funciona-un-credito-hipotecario-y-cuales-son-los-pasos-solicitarlo-n6336382",
-   "fecha": "2026-10-23T10:00:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Bonos argentinos lideran el ranking de caídas entre emergentes y la City pide cautela",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/467273-bonos-argentinos-lideran-el-ranking-de-caidas-entre-emergentes-y-la-city-pide-cautela",
-   "fecha": "2026-10-23T10:00:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Coloquio de la UIC: Entre el pedido de un RIGI para pymes y una nueva ley de autopartes para el sector",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/cordoba/vivo-congreso-de-la-uic-en-cordoba-la-industria-en-el-nuevo-mapa-mundial.phtml",
-   "fecha": "2026-10-23T10:00:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Hush Puppies, Merrell y Caterpillar con descuentos de hasta 50% en el outlet de Grimoldi",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/467192-grimoldi-ofrece-rebajas-de-hasta-50-por-ciento-zapatillas-y-botas-de-hush-puppies-y-merrell",
-   "fecha": "2026-10-23T09:28:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El consumo sigue en caída libre y explica parte del proceso recesivo de la economía argentina",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/el-consumo-sigue-en-caida-libre-y-explica-parte-del-proceso-recesivo-de-la-economia-argentina-a40.phtml",
-   "fecha": "2026-10-23T08:30:00Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "El economista que Milei invitó al Gabinete sostuvo que parte del bienestar de años anteriores era insostenible",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/el-economista-que-milei-invito-al-gabinete-sostuvo-que-parte-del-bienestar-de-anos-anteriores-era-insostenible.phtml",
-   "fecha": "2026-10-23T04:49:09Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Privatización del Belgrano Cargas: el Gobierno rechaza los cuestionamientos de Grupo México a la licitación",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/privatizacion-del-belgrano-cargas-el-gobierno-rechaza-los-cuestionamientos-grupo-mexico-la-licitacion-n6336996",
-   "fecha": "2026-10-22T23:54:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "El Banco Ciudad bajó la tasa para créditos hipotecarios",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/el-banco-ciudad-la-tasa-creditos-hipotecarios-n6336997",
-   "fecha": "2026-10-22T23:40:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Bancos y billeteras deberán informar el rendimiento de sus cuentas remuneradas a 7 días",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/467265-bancos-y-billeteras-deberan-informar-el-rendimiento-de-sus-cuentas-remuneradas-a-7-dias",
-   "fecha": "2026-10-22T23:25:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El Gobierno, la UIA y Mercado Libre lanzan un plan anti contrabando",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/467277-gobierno-javier-milei-uia-y-mercado-libre-lanzan-plan-anti-contrabando",
-   "fecha": "2026-10-22T23:23:00Z",
-   "tema": "politica"
   }
  ]
 }
