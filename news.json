@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-24T22:04:28.340485Z",
+ "actualizado": "2026-10-25T00:39:15.175452Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -60,10 +60,45 @@
  ],
  "items": [
   {
+   "titulo": "Por qué, pese al “gusano cogollero” y la “chicharrita”, la Argentina pasó a dominar el mercado mundial de maíz",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/24/por-que-pese-al-gusano-cogollero-y-la-chicharrita-la-argentina-paso-a-dominar-el-mercado-mundial-de-maiz/",
+   "fecha": "2026-10-24T23:24:31Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La industria volvió a caer en septiembre y continúa en terreno negativo en 2026, según estimaciones privadas",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/24/la-industria-volvio-a-caer-en-septiembre-y-continua-en-terreno-negativo-en-2026-segun-estimaciones-privadas/",
+   "fecha": "2026-10-24T22:14:56Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "A cuánto abre el dólar el lunes 26 de octubre",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/dolar/a-cuanto-abre-el-dolar-el-lunes-26-de-octubre-nid24102026/",
+   "fecha": "2026-10-24T22:08:25Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "La industria cordobesa pide bajar el “costo argentino” y destrabar la reforma tributaria",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/cordoba/la-industria-cordobesa-pide-bajar-el-costo-argentino-y-destrabar-la-reforma-tributaria.phtml",
+   "fecha": "2026-10-24T22:04:00Z",
+   "tema": "actividad"
+  },
+  {
    "titulo": "¿Relación de dependencia o cuentapropismo?",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/relacion-de-dependencia-o-cuentapropismo-nid24102026/",
    "fecha": "2026-10-24T22:00:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Christian Buteler: “No alcanza con energía, campo y minería para romper la dinámica de la economía”",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/cordoba/christian-buteler-no-alcanza-con-energia-campo-y-mineria-para-romper-la-dinamica-de-la-economia.phtml",
+   "fecha": "2026-10-24T21:59:00Z",
    "tema": "otros"
   },
   {
@@ -128,13 +163,6 @@
    "url": "https://www.perfil.com/noticias/cordoba/cuidado-de-personas-48-de-50-politicas-nacionales-fueron-desactivadas-y-las-familias-cubren-el-vacio.phtml",
    "fecha": "2026-10-24T18:00:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "A cuánto abre el dólar el lunes 26 de octubre",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/dolar/a-cuanto-abre-el-dolar-el-lunes-26-de-octubre-nid24102026/",
-   "fecha": "2026-10-24T17:11:00Z",
-   "tema": "dolar"
   },
   {
    "titulo": "Milei aún no logró revertir cuatro décadas de caída de participación de la Argentina en el PBI mundial",
@@ -697,13 +725,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Necto Strategy: El puente para que Sistemas y Negocio hablen el mismo idioma",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/cordoba/necto-strategy-el-puente-para-que-sistemas-y-negocio-hablen-el-mismo-idioma.phtml",
-   "fecha": "2026-10-23T19:55:21Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Camino a un récord: la Argentina vive un veranito de exportaciones de maíz por los problemas de Ucrania con la guerra",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/campo/camino-a-un-record-la-argentina-vive-un-veranito-de-exportaciones-de-maiz-por-los-problemas-de-nid23102026/",
@@ -767,13 +788,6 @@
    "tema": "politica"
   },
   {
-   "titulo": "El dólar blue se estabiliza en los $1.565 este viernes 23 de octubre",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/a-cuanto-cotiza-el-dolar-blue-hoy-viernes-23-de-octubre-a50-bgd.phtml",
-   "fecha": "2026-10-23T18:15:00Z",
-   "tema": "dolar"
-  },
-  {
    "titulo": "¿Gastás de más sin darte cuenta? Los costos ocultos que arruinan el presupuesto de tu viaje",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/gastas-mas-darte-cuenta-los-costos-ocultos-que-arruinan-el-presupuesto-tu-viaje-n6336177",
@@ -786,20 +800,6 @@
    "url": "https://www.ambito.com/economia/la-confianza-del-consumidor-eeuu-volvio-caer-y-aumento-el-malestar-un-grupo-votantes-clave-n6337275",
    "fecha": "2026-10-23T17:42:00Z",
    "tema": "inflacion"
-  },
-  {
-   "titulo": "Christian Asinelli, vicepresidente de CAF: “Las provincias que antes eran inviables hoy están en la escena mundial”",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/23/christian-asinelli-vicepresidente-de-caf-las-provincias-que-antes-eran-inviables-hoy-estan-en-la-escena-mundial/",
-   "fecha": "2026-10-23T17:03:42Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El barril de petróleo Brent superó los 116 dólares por primera vez en casi seis meses por la escalada en Medio Oriente",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/america/mundo/2026/10/23/el-barril-de-petroleo-brent-supero-los-116-dolares-por-primera-vez-en-casi-seis-meses-por-la-escalada-en-medio-oriente/",
-   "fecha": "2026-10-23T16:55:03Z",
-   "tema": "otros"
   },
   {
    "titulo": "El sector nuclear refuerza la prevención ante las amenazas de El Niño",
