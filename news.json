@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-25T20:06:20.719431Z",
+ "actualizado": "2026-10-25T22:53:45.511951Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 18
+   "n": 17
   },
   {
    "medio": "Infobae",
@@ -50,15 +50,22 @@
   {
    "medio": "iProfesional",
    "ok": true,
-   "n": 17
+   "n": 12
   },
   {
    "medio": "Perfil",
    "ok": true,
-   "n": 25
+   "n": 15
   }
  ],
  "items": [
+  {
+   "titulo": "Cheques, garantías y blockchain, el nuevo mapa financiero que exploran las pyme argentinas",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/25/cheques-garantias-y-blockchain-el-nuevo-mapa-financiero-que-exploran-las-pyme-argentinas/",
+   "fecha": "2026-10-25T21:16:46Z",
+   "tema": "actividad"
+  },
   {
    "titulo": "El Banco Central pone a punto una de las herramientas que usará para contener el dólar en 2027",
    "medio": "Infobae",
@@ -340,11 +347,11 @@
    "tema": "inflacion"
   },
   {
-   "titulo": "¿El plan económico debe ser reemplazado, recalibrado o mantenido?",
+   "titulo": "¿Es más fácil hoy crear una empresa en la Argentina? Las señales a favor y los obstáculos que persisten",
    "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/el-plan-economico-debe-ser-reemplazado-recalibrado-o-mantenido-nid25102026/",
+   "url": "https://www.lanacion.com.ar/economia/es-mas-facil-hoy-crear-una-empresa-en-la-argentina-las-senales-a-favor-y-los-obstaculos-que-nid25102026/",
    "fecha": "2026-10-25T03:01:00Z",
-   "tema": "otros"
+   "tema": "empresas"
   },
   {
    "titulo": "Gonzalo Luchetti: “A pesar de todas las disrupciones, la resiliencia de la economía global ha sido muy fuerte”",
@@ -361,11 +368,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "¿Es más fácil hoy crear una empresa en la Argentina? Las señales a favor y los obstáculos que persisten",
+   "titulo": "¿El plan económico debe ser reemplazado, recalibrado o mantenido?",
    "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/es-mas-facil-hoy-crear-una-empresa-en-la-argentina-las-senales-a-favor-y-los-obstaculos-que-nid25102026/",
+   "url": "https://www.lanacion.com.ar/economia/el-plan-economico-debe-ser-reemplazado-recalibrado-o-mantenido-nid25102026/",
    "fecha": "2026-10-25T03:01:00Z",
-   "tema": "empresas"
+   "tema": "otros"
   },
   {
    "titulo": "La inteligencia de no saber y el aprendizaje en tiempos de la IA",
@@ -620,13 +627,6 @@
    "tema": "empresas"
   },
   {
-   "titulo": "Es argentino, vive en Europa hace siete años y mostró cuánto gastó en un mes de visita en Buenos Aires",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/24/es-argentino-vive-en-europa-hace-siete-anos-y-mostro-cuanto-gasto-en-un-mes-de-visita-en-buenos-aires/",
-   "fecha": "2026-10-24T12:03:27Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Dólar hoy y dólar blue hoy: a cuánto cotiza este sábado 24 de octubre",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/dolar/dolar-hoy-y-dolar-blue-hoy-a-cuanto-cotiza-este-sabado-24-de-octubre-nid24102026/",
@@ -715,118 +715,6 @@
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/endeudamiento-8-cada-10-argentinos-llegan-margen-fin-mes-y-usan-tarjeta-credito-financiarse-n6337360",
    "fecha": "2026-10-23T23:04:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "La venta de combustibles repuntó en septiembre y cortó siete meses de caídas",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/la-venta-de-combustibles-repunto-en-septiembre-y-corto-siete-meses-de-caidas.phtml",
-   "fecha": "2026-10-23T22:43:59Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "YPF presenta sus resultados ante inversores: Horacio Marín anticipa un diciembre “histórico” en exportaciones",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/ypf-presenta-sus-resultados-inversores-horacio-marin-anticipa-un-diciembre-historico-exportaciones-n6337346",
-   "fecha": "2026-10-23T22:39:00Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Salen a la venta los departamentos de la ex Villa Olímpica de los Juegos Suramericanos con créditos blandos",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/salen-venta-departamentos-villa-olimpica-juegos-suramericanos-creditos-uva-a40.phtml",
-   "fecha": "2026-10-23T22:34:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Calzado chino por menos de US$ 2 el par: en RDEco analizaron el riesgo para los fabricantes argentinos",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/masperfil/alerta-por-el-futuro-de-la-industria-del-calzado-dumping-chino-contrabando-y-caida-del-mercado-interno.phtml",
-   "fecha": "2026-10-23T22:22:27Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Los subsidios energéticos caen a su mínimo anual y le dan un respiro a Caputo",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/energia/467371-los-subsidios-energeticos-caen-a-su-minimo-anual-y-le-dan-un-respiro-a-caputo",
-   "fecha": "2026-10-23T22:21:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "RDEco: por qué la recuperación ferroviaria requiere inversión estatal y planificación a largo plazo",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/masperfil/ferrocarriles-en-argentina-cual-es-el-rol-del-estado-y-el-proyecto-privado-para-vaca-muerta.phtml",
-   "fecha": "2026-10-23T22:14:39Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Argentina mantiene un extenso historial de presupuestos incumplidos: en RDI se analizaron las última proyecciones económicas",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/masperfil/argentina-mantiene-un-extenso-historial-de-presupuestos-incumplidos-en-rdi-se-analizaron-las-ultima-proyecciones-economicas.phtml",
-   "fecha": "2026-10-23T22:08:43Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "“Para las empresas argentinas no fue una buena noticia”: Juan Pablo Perojo cuestionó la postergación del FAL",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/masperfil/fal-y-reforma-laboral-las-criticas-de-las-pymes-por-la-postergacion-del-fondo-para-indemnizaciones.phtml",
-   "fecha": "2026-10-23T22:02:05Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Altos precios y tasas de interés reducen la confianza del consumidor de EE.UU.",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/bloomberg/bc-altos-precios-y-tasas-de-interes-reducen-la-confianza-del-consumidor-de-eeuu.phtml",
-   "fecha": "2026-10-23T21:56:00Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "El Banco Nación ya otorgó 210 créditos hipotecarios con los fondos de ANSES",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/realestate/467368-el-banco-nacion-ya-otorgo-210-creditos-hipotecarios-con-los-fondos-de-anses",
-   "fecha": "2026-10-23T21:55:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "RDEco: Juan Pablo Perojo explicó las medidas fiscales y laborales que pueden aliviar los costos de las PyMEs",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/masperfil/carga-impositiva-en-argentina-las-medidas-fiscales-que-pueden-beneficiar-a-las-pymes.phtml",
-   "fecha": "2026-10-23T21:52:18Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Industriales bonaerenses denuncian una “aduana interna” en Ramallo y advierten que podrían cerrar fábricas",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/industriales-bonaerenses-denuncian-una-aduana-interna-en-ramallo-y-advierten-que-podrian-cerrar-fabricas-a40.phtml",
-   "fecha": "2026-10-23T21:46:21Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "YPF y Pampa Energía, entre las acciones con mayor potencial de suba para Wall Street",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/467013-ypf-y-pampa-energia-entre-acciones-argentinas-con-mayor-potencial-de-suba-para-wall-street",
-   "fecha": "2026-10-23T21:43:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Vaca Muerta ya suma anuncios de inversión por u$s200.000 millones en la próxima década",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/energia/467358-inversiones-en-vaca-muerta-superaran-los-us200000-millones-a-10-anos",
-   "fecha": "2026-10-23T21:39:00Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "OpenAI rebaja su valoración en nueva ronda de financiamiento a US$1,25 billones",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/bloomberg/bc-openai-rebaja-su-valoracion-en-nueva-ronda-de-financiamiento-a-us125-billones.phtml",
-   "fecha": "2026-10-23T21:31:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Cuántos feriados bancarios habrá en noviembre con la visita del Papa",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/467345-cuantos-feriados-bancarios-habra-en-noviembre-2026-con-la-visita-del-papa",
-   "fecha": "2026-10-23T20:41:00Z",
    "tema": "otros"
   }
  ]
