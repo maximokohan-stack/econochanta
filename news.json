@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-25T17:18:52.216967Z",
+ "actualizado": "2026-10-25T20:06:20.719431Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 16
+   "n": 18
   },
   {
    "medio": "Infobae",
@@ -50,7 +50,7 @@
   {
    "medio": "iProfesional",
    "ok": true,
-   "n": 22
+   "n": 17
   },
   {
    "medio": "Perfil",
@@ -59,6 +59,90 @@
   }
  ],
  "items": [
+  {
+   "titulo": "El Banco Central pone a punto una de las herramientas que usará para contener el dólar en 2027",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/25/el-banco-central-pone-a-punto-una-de-las-herramientas-clave-que-usara-para-contener-el-dolar-en-2027/",
+   "fecha": "2026-10-25T19:58:51Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Un historiador global calificó de “masacre” la motosierra y la política económica de Javier Milei",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/25/un-historiador-global-califico-de-masacre-la-motosierra-y-la-politica-economica-de-javier-milei/",
+   "fecha": "2026-10-25T19:51:40Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Moratoria de ARBA: desde el lunes se podrán regularizar deudas con bonificaciones de hasta el 40%",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/moratoria-arba-el-lunes-se-podran-regularizar-deudas-bonificaciones-el-40-n6337690",
+   "fecha": "2026-10-25T19:03:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Exportaciones récord: Argentina superó los u$s100.000 millones y alcanzó un superávit comercial histórico",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/exportaciones-record-argentina-supero-los-us100000-millones-y-alcanzo-un-superavit-comercial-historico-n6337688",
+   "fecha": "2026-10-25T19:00:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Llega el último Black Week Mayorista del año: 200 comercios ofrecerán descuentos en alimentos, bebidas y productos de limpieza",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/llega-el-ultimo-black-week-mayorista-del-ano-200-comercios-ofreceran-descuentos-alimentos-bebidas-y-productos-limpieza-n6337680",
+   "fecha": "2026-10-25T18:43:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La venta de combustibles subió tras siete meses en rojo, pero la nafta todavía no da señales de recuperación",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/25/la-venta-de-combustibles-subio-tras-siete-meses-en-rojo-pero-la-nafta-todavia-no-da-senales-de-recuperacion/",
+   "fecha": "2026-10-25T18:40:33Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Hugo Lattanzi, productor que invirtió en un campo en Río Negro: “Siempre vi a la zona con mucho potencial”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/hugo-lattanzi-productor-que-invirtio-en-un-campo-en-rio-negro-siempre-vi-a-la-zona-con-mucho-nid25102026/",
+   "fecha": "2026-10-25T18:02:24Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Cuánto cuesta la camiseta alternativa de Boca que utilizó en el Maracanazo contra Vasco Da Gama",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/cuanto-cuesta-la-camiseta-alternativa-boca-que-utilizo-el-maracanazo-contra-vasco-da-gama-n6337183",
+   "fecha": "2026-10-25T18:00:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Visec Carne: así funciona el mundo de los negocios, guste o no",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/visec-carne-asi-funciona-el-mundo-de-los-negocios-guste-o-no-nid25102026/",
+   "fecha": "2026-10-25T17:59:20Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Desde diciembre de 2023, el boleto mínimo de colectivo en la provincia de Buenos Aires aumentó seis veces más que la inflación",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/25/desde-diciembre-de-2023-el-boleto-minimo-de-colectivo-en-la-provincia-de-buenos-aires-aumento-seis-veces-mas-que-la-inflacion/",
+   "fecha": "2026-10-25T17:43:58Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Presión tributaria: las pymes argentinas enfrentan al menos 62 obligaciones entre impuestos, retenciones y trámites fiscales",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/presion-tributaria-las-pymes-argentinas-enfrentan-al-menos-62-obligaciones-impuestos-retenciones-y-tramites-fiscales-n6337677",
+   "fecha": "2026-10-25T17:31:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Los 5 errores más comunes al viajar a Brasil desde Argentina y cómo prevenirlos",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/los-5-errores-mas-comunes-al-viajar-brasil-argentina-y-como-prevenirlos-n6336911",
+   "fecha": "2026-10-25T17:00:00Z",
+   "tema": "otros"
+  },
   {
    "titulo": "Balotaje en Brasil 2026: las apuestas dan un 80% de probabilidades de triunfo a Flávio Bolsonaro sobre Lula da Silva",
    "medio": "Ámbito",
@@ -113,20 +197,6 @@
    "medio": "Perfil",
    "url": "https://noticias.perfil.com/noticias/economia/amenaza-de-mas-gasto.phtml",
    "fecha": "2026-10-25T12:26:26Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Visec Carne: así funciona el mundo de los negocios, guste o no",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/visec-carne-asi-funciona-el-mundo-de-los-negocios-guste-o-no-nid25102026/",
-   "fecha": "2026-10-25T12:06:07Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Hugo Lattanzi, productor que invirtió en un campo en Río Negro: “Siempre vi a la zona con mucho potencial”",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/hugo-lattanzi-productor-que-invirtio-en-un-campo-en-rio-negro-siempre-vi-a-la-zona-con-mucho-nid25102026/",
-   "fecha": "2026-10-25T12:00:00Z",
    "tema": "otros"
   },
   {
@@ -270,11 +340,11 @@
    "tema": "inflacion"
   },
   {
-   "titulo": "¿Es más fácil hoy crear una empresa en la Argentina? Las señales a favor y los obstáculos que persisten",
+   "titulo": "¿El plan económico debe ser reemplazado, recalibrado o mantenido?",
    "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/es-mas-facil-hoy-crear-una-empresa-en-la-argentina-las-senales-a-favor-y-los-obstaculos-que-nid25102026/",
+   "url": "https://www.lanacion.com.ar/economia/el-plan-economico-debe-ser-reemplazado-recalibrado-o-mantenido-nid25102026/",
    "fecha": "2026-10-25T03:01:00Z",
-   "tema": "empresas"
+   "tema": "otros"
   },
   {
    "titulo": "Gonzalo Luchetti: “A pesar de todas las disrupciones, la resiliencia de la economía global ha sido muy fuerte”",
@@ -291,11 +361,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "¿El plan económico debe ser reemplazado, recalibrado o mantenido?",
+   "titulo": "¿Es más fácil hoy crear una empresa en la Argentina? Las señales a favor y los obstáculos que persisten",
    "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/el-plan-economico-debe-ser-reemplazado-recalibrado-o-mantenido-nid25102026/",
+   "url": "https://www.lanacion.com.ar/economia/es-mas-facil-hoy-crear-una-empresa-en-la-argentina-las-senales-a-favor-y-los-obstaculos-que-nid25102026/",
    "fecha": "2026-10-25T03:01:00Z",
-   "tema": "otros"
+   "tema": "empresas"
   },
   {
    "titulo": "La inteligencia de no saber y el aprendizaje en tiempos de la IA",
@@ -613,34 +683,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "¿Qué va a pasar con el dólar en 2027?: los movimientos del peso que pueden poner a prueba la “bazuca” del Gobierno",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/24/que-va-a-pasar-con-el-dolar-en-2027-los-movimientos-del-peso-que-pueden-poner-a-prueba-la-bazuca-del-gobierno/",
-   "fecha": "2026-10-24T05:20:32Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "La inflación se resiste a bajar del 2%: qué espera el mercado para el resto del año y cuáles son los riesgos para el año que viene",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/24/la-inflacion-se-resiste-a-bajar-del-2-que-espera-el-mercado-para-el-resto-del-ano-y-cuales-son-los-riesgos-para-el-ano-que-viene/",
-   "fecha": "2026-10-24T05:20:13Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "El billete de $200 cumple diez años: qué se podía comprar cuando salió y para qué alcanza hoy",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/24/el-billete-de-200-cumple-diez-anos-que-se-podia-comprar-cuando-salio-y-para-que-alcanza-hoy/",
-   "fecha": "2026-10-24T05:19:54Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "¿Golpe a los autos chinos?: qué puede pasar tras el acuerdo del gobierno con EEUU para combatir ciertas prácticas comerciales",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/24/golpe-a-los-autos-chinos-que-puede-pasar-tras-el-acuerdo-del-gobierno-con-eeuu-para-combatir-ciertas-practicas-comerciales/",
-   "fecha": "2026-10-24T05:19:13Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "La actividad económica no repuntó en agosto y quedó al borde de una recesión técnica",
    "medio": "Perfil",
    "url": "https://www.perfil.com/noticias/columnistas/la-actividad-economica-no-repunto-en-agosto-y-quedo-al-borde-de-una-recesion-tecnica.phtml",
@@ -785,48 +827,6 @@
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/finanzas/467345-cuantos-feriados-bancarios-habra-en-noviembre-2026-con-la-visita-del-papa",
    "fecha": "2026-10-23T20:41:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Lluvias interminables: qué tipos de secarropas hay y cuánto valen",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/lluvias-interminables-que-tipos-secarropas-hay-y-cuanto-valen-n6336705",
-   "fecha": "2026-10-23T20:00:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Le pedimos a ChatGPT, Gemini y Claude que inviertan $1 millón y esta IA hizo ganar más",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/466437-le-pedimos-a-chatgpt-gemini-y-claude-que-inviertan-1-millon-de-pesos-y-esta-ia-gano",
-   "fecha": "2026-10-23T19:39:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "China alerta a organismos gubernamentales por el impacto de la inteligencia artificial en el empleo",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/china-alerta-organismos-gubernamentales-el-impacto-la-inteligencia-artificial-el-empleo-n6337294",
-   "fecha": "2026-10-23T19:29:00Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Riesgo país sube y Wall Street anticipa qué pasará con bonos si no hay reelección de Milei",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/466848-wall-street-calcula-cuanto-podrian-caer-los-bonos-si-milei-no-es-reelegido",
-   "fecha": "2026-10-23T19:23:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Economía desafía a la City y advierte que el castigo del riesgo país es \"exagerado\"",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/467274-economia-desafia-a-la-city-advierte-que-el-riesgo-pais-esta-exagerado",
-   "fecha": "2026-10-23T19:23:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Tras aplicar despidos por goteo, ChangoMás cierra sucursal y confirma la crisis del sector",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/negocios/467329-tras-despidos-por-goteo-supermercado-changomas-cierra-sucursal-en-chaco",
-   "fecha": "2026-10-23T18:54:00Z",
    "tema": "otros"
   }
  ]
