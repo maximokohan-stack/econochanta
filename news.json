@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-25T00:39:15.175452Z",
+ "actualizado": "2026-10-25T04:01:18.277447Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -60,6 +60,83 @@
  ],
  "items": [
   {
+   "titulo": "El efecto Vaca Muerta: una provincia prepara beneficios fiscales para atraer empresas e inversiones",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/el-efecto-vaca-muerta-una-provincia-prepara-beneficios-fiscales-para-atraer-empresas-e-inversiones-nid25102026/",
+   "fecha": "2026-10-25T03:05:53Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Avanza la cosecha estadounidense y achata los precios del maíz y de la soja",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/avanza-la-cosecha-estadounidense-y-achata-los-precios-del-maiz-y-de-la-soja-nid24102026/",
+   "fecha": "2026-10-25T03:02:40Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "¿El plan económico debe ser reemplazado, recalibrado o mantenido?",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/el-plan-economico-debe-ser-reemplazado-recalibrado-o-mantenido-nid25102026/",
+   "fecha": "2026-10-25T03:01:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "¿Es más fácil hoy crear una empresa en la Argentina? Las señales a favor y los obstáculos que persisten",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/es-mas-facil-hoy-crear-una-empresa-en-la-argentina-las-senales-a-favor-y-los-obstaculos-que-nid25102026/",
+   "fecha": "2026-10-25T03:01:00Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Gonzalo Luchetti: “A pesar de todas las disrupciones, la resiliencia de la economía global ha sido muy fuerte”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/gonzalo-luchetti-a-pesar-de-todas-las-disrupciones-la-resiliencia-de-la-economia-global-ha-sido-muy-nid25102026/",
+   "fecha": "2026-10-25T03:01:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Tres exámenes para los mercados en el cierre de octubre",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/tres-examenes-para-los-mercados-en-el-cierre-de-octubre-nid25102026/",
+   "fecha": "2026-10-25T03:01:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La inteligencia de no saber y el aprendizaje en tiempos de la IA",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/la-inteligencia-de-no-saber-nid25102026/",
+   "fecha": "2026-10-25T03:01:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Economía del conocimiento: más de la mitad de los centros de servicios aumentó sus exportaciones",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/economia-del-conocimiento-mas-de-la-mitad-de-los-centros-de-servicios-aumento-sus-exportaciones-nid25102026/",
+   "fecha": "2026-10-25T03:01:00Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Alejandro Guerrero, de Lockton Argentina: “Hay que permitir una competencia más sana en el mercado”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/alejandro-guerrero-de-lockton-argentina-hay-que-permitir-una-competencia-mas-sana-en-el-mercado-nid25102026/",
+   "fecha": "2026-10-25T03:01:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Argentina tiene el peor cierre de empresas en 24 años y las fábricas medianas son el corazón de la crisis",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/economia/argentina-tiene-el-peor-cierre-de-empresas-en-24-anos-y-las-fabricas-medianas-son-el-corazon-de-la-crisis-a40.phtml",
+   "fecha": "2026-10-25T02:00:00Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "La informalidad laboral le cuesta $3,3 billones al año al sistema previsional",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/24/la-informalidad-laboral-le-cuesta-33-billones-al-ano-al-sistema-previsional/",
+   "fecha": "2026-10-25T01:01:42Z",
+   "tema": "otros"
+  },
+  {
    "titulo": "Por qué, pese al “gusano cogollero” y la “chicharrita”, la Argentina pasó a dominar el mercado mundial de maíz",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/24/por-que-pese-al-gusano-cogollero-y-la-chicharrita-la-argentina-paso-a-dominar-el-mercado-mundial-de-maiz/",
@@ -113,13 +190,6 @@
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/24/la-campagnola-cierra-una-planta-de-conservas-de-pescado-en-mar-del-plata-y-suspende-temporalmente-a-60-operarios/",
    "fecha": "2026-10-24T21:36:01Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "La informalidad laboral le cuesta $3,3 billones al año al sistema previsional",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/24/la-informalidad-laboral-le-cuesta-33-billones-al-ano-al-sistema-previsional/",
-   "fecha": "2026-10-24T21:00:43Z",
    "tema": "otros"
   },
   {
@@ -296,13 +366,6 @@
    "url": "https://www.iprofesional.com/finanzas/467357-3-carteras-de-inversion-con-riesgo-bajo-y-alto-del-guru-de-la-city",
    "fecha": "2026-10-24T11:00:00Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "Avanza la cosecha estadounidense y achata los precios del maíz y de la soja",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/avanza-la-cosecha-estadounidense-y-achata-los-precios-del-maiz-y-de-la-soja-nid24102026/",
-   "fecha": "2026-10-24T10:01:04Z",
-   "tema": "inflacion"
   },
   {
    "titulo": "Ministerio de la Felicidad: cómo funciona la apuesta de Dubái para mejorar la satisfacción de sus ciudadanos",
@@ -529,25 +592,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "Soja Visec: habilitan una modalidad para negociar el “premio” sobre la soja tradicional",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/soja-visec-habilitan-una-modalidad-para-negociar-el-premio-sobre-la-soja-tradicional-nid23102026/",
-   "fecha": "2026-10-23T22:05:47Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "“Para las empresas argentinas no fue una buena noticia”: Juan Pablo Perojo cuestionó la postergación del FAL",
    "medio": "Perfil",
    "url": "https://www.perfil.com/noticias/masperfil/fal-y-reforma-laboral-las-criticas-de-las-pymes-por-la-postergacion-del-fondo-para-indemnizaciones.phtml",
    "fecha": "2026-10-23T22:02:05Z",
    "tema": "empresas"
-  },
-  {
-   "titulo": "Un referente de la poderosa industria alimentaria de Brasil sobre las medidas de Milei: “Son muy duras y perjudican principalmente a los más pobres”",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/un-referente-de-la-poderosa-industria-alimentaria-de-brasil-sobre-las-medidas-de-milei-son-muy-duras-nid23102026/",
-   "fecha": "2026-10-23T21:58:09Z",
-   "tema": "actividad"
   },
   {
    "titulo": "Altos precios y tasas de interés reducen la confianza del consumidor de EE.UU.",
@@ -585,13 +634,6 @@
    "tema": "mercados"
   },
   {
-   "titulo": "FAL: qué cambia para las empresas con la postergación del debut y cuándo podrán financiar indemnizaciones",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/fal-que-cambia-para-las-empresas-con-la-postergacion-del-debut-y-cuando-podran-financiar-nid23102026/",
-   "fecha": "2026-10-23T21:39:40Z",
-   "tema": "empresas"
-  },
-  {
    "titulo": "Vaca Muerta ya suma anuncios de inversión por u$s200.000 millones en la próxima década",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/energia/467358-inversiones-en-vaca-muerta-superaran-los-us200000-millones-a-10-anos",
@@ -617,13 +659,6 @@
    "medio": "Perfil",
    "url": "https://www.perfil.com/noticias/economia/las-fintech-argentinas-planean-invertir-us-2200-millones-en-2027-a40.phtml",
    "fecha": "2026-10-23T21:20:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Un violento fenómeno con mucho granizo mató a decenas de animales y dejó graves daños",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/una-violenta-caida-de-mucho-granizo-mato-a-decenas-de-animales-y-dejo-graves-danos-nid22102026/",
-   "fecha": "2026-10-23T21:19:39Z",
    "tema": "otros"
   },
   {
@@ -655,25 +690,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "El dólar se mantiene al alza y alcanzó un nuevo récord nominal en el cierre de la semana",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/el-dolar-se-mantiene-al-alza-y-alcanzo-un-nuevo-record-nominal-a40.phtml",
-   "fecha": "2026-10-23T20:51:00Z",
-   "tema": "dolar"
-  },
-  {
    "titulo": "Bajaron los bonos argentinos y el riesgo país tocó un nuevo máximo en el último año",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/23/bajan-los-bonos-argentinos-y-el-riesgo-pais-sube-a-un-nuevo-maximo-en-el-ultimo-ano/",
    "fecha": "2026-10-23T20:45:15Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "A 25 años del iPod: el dispositivo que salvó a Apple y cambió para siempre la forma de escuchar música",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/tecnologia/a-25-anos-del-ipod-el-dispositivo-que-salvo-a-apple-y-cambio-para-siempre-la-forma-de-escuchar-nid23102026/",
-   "fecha": "2026-10-23T20:44:29Z",
-   "tema": "dolar"
   },
   {
    "titulo": "Cuántos feriados bancarios habrá en noviembre con la visita del Papa",
@@ -687,13 +708,6 @@
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/23/menos-demanda-la-automotriz-que-vende-las-marcas-fiat-peugeot-y-citroen-parara-su-planta-de-cordoba-por-siete-semanas/",
    "fecha": "2026-10-23T20:38:04Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Vacunos: escasa oferta en el Mercado Agroganadero de Cañuelas",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/vacunos-escasa-oferta-en-el-mercado-agroganadero-de-canuelas-nid23102026/",
-   "fecha": "2026-10-23T20:28:00Z",
    "tema": "otros"
   },
   {
@@ -711,25 +725,11 @@
    "tema": "politica"
   },
   {
-   "titulo": "Los bancos esperan un leve repunte en la demanda para este cierre de año",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/los-bancos-esperan-un-leve-repunte-en-la-demanda-para-este-cierre-de-ano-nid23102026/",
-   "fecha": "2026-10-23T20:18:29Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Lluvias interminables: qué tipos de secarropas hay y cuánto valen",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/lluvias-interminables-que-tipos-secarropas-hay-y-cuanto-valen-n6336705",
    "fecha": "2026-10-23T20:00:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Camino a un récord: la Argentina vive un veranito de exportaciones de maíz por los problemas de Ucrania con la guerra",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/camino-a-un-record-la-argentina-vive-un-veranito-de-exportaciones-de-maiz-por-los-problemas-de-nid23102026/",
-   "fecha": "2026-10-23T19:49:45Z",
-   "tema": "empresas"
   },
   {
    "titulo": "Le pedimos a ChatGPT, Gemini y Claude que inviertan $1 millón y esta IA hizo ganar más",
