@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-25T22:53:45.511951Z",
+ "actualizado": "2026-10-26T00:49:44.288442Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -50,7 +50,7 @@
   {
    "medio": "iProfesional",
    "ok": true,
-   "n": 12
+   "n": 13
   },
   {
    "medio": "Perfil",
@@ -60,11 +60,53 @@
  ],
  "items": [
   {
+   "titulo": "Ganó Lula en Brasil: cómo impactará en los mercados, las exportaciones argentinas y las vacaciones de verano",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/gano-lula-en-brasil-como-impactara-en-los-mercados-las-exportaciones-argentinas-y-las-vacaciones-de-nid25102026/",
+   "fecha": "2026-10-26T00:35:27Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Qué puede pasar con el dólar y la Bolsa tras el triunfo de Lula en Brasil",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/467426-que-puede-pasar-con-el-dolar-y-la-bolsa-tras-el-triunfo-de-lula-en-brasil",
+   "fecha": "2026-10-26T00:20:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Dudas en una de las locomotoras de la economía: la incertidumbre electoral es el principal freno a las inversiones del campo",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/25/dudas-en-una-de-las-locomotoras-de-la-economia-la-incertidumbre-electoral-es-el-principal-freno-a-las-inversiones-del-campo/",
+   "fecha": "2026-10-25T23:23:14Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Balotaje en Brasil 2026: las apuestas dan un 80% de probabilidades de triunfo a Flávio Bolsonaro sobre Lula da Silva",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/balotaje-brasil-2026-las-apuestas-dan-un-80-probabilidades-triunfo-flavio-bolsonaro-lula-da-silva-n6337654",
+   "fecha": "2026-10-25T22:45:00Z",
+   "tema": "otros"
+  },
+  {
    "titulo": "Cheques, garantías y blockchain, el nuevo mapa financiero que exploran las pyme argentinas",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/25/cheques-garantias-y-blockchain-el-nuevo-mapa-financiero-que-exploran-las-pyme-argentinas/",
    "fecha": "2026-10-25T21:16:46Z",
    "tema": "actividad"
+  },
+  {
+   "titulo": "¿Cuánto cuesta ir a ver a Boca en la final de la Copa Sudamericana en Barranquilla?",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/cuanto-cuesta-ir-ver-boca-la-final-la-copa-sudamericana-barranquilla-n6337175",
+   "fecha": "2026-10-25T21:00:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Qué plazo fijo lidera el ranking de inversiones más elegidas por los argentinos",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/que-plazo-fijo-lidera-el-ranking-inversiones-mas-elegidas-los-argentinos-n6337286",
+   "fecha": "2026-10-25T20:00:00Z",
+   "tema": "mercados"
   },
   {
    "titulo": "El Banco Central pone a punto una de las herramientas que usará para contener el dólar en 2027",
@@ -148,13 +190,6 @@
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/los-5-errores-mas-comunes-al-viajar-brasil-argentina-y-como-prevenirlos-n6336911",
    "fecha": "2026-10-25T17:00:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Balotaje en Brasil 2026: las apuestas dan un 80% de probabilidades de triunfo a Flávio Bolsonaro sobre Lula da Silva",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/balotaje-brasil-2026-las-apuestas-dan-un-80-probabilidades-triunfo-flavio-bolsonaro-lula-da-silva-n6337654",
-   "fecha": "2026-10-25T15:57:00Z",
    "tema": "otros"
   },
   {
@@ -347,11 +382,11 @@
    "tema": "inflacion"
   },
   {
-   "titulo": "¿Es más fácil hoy crear una empresa en la Argentina? Las señales a favor y los obstáculos que persisten",
+   "titulo": "¿El plan económico debe ser reemplazado, recalibrado o mantenido?",
    "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/es-mas-facil-hoy-crear-una-empresa-en-la-argentina-las-senales-a-favor-y-los-obstaculos-que-nid25102026/",
+   "url": "https://www.lanacion.com.ar/economia/el-plan-economico-debe-ser-reemplazado-recalibrado-o-mantenido-nid25102026/",
    "fecha": "2026-10-25T03:01:00Z",
-   "tema": "empresas"
+   "tema": "otros"
   },
   {
    "titulo": "Gonzalo Luchetti: “A pesar de todas las disrupciones, la resiliencia de la economía global ha sido muy fuerte”",
@@ -368,11 +403,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "¿El plan económico debe ser reemplazado, recalibrado o mantenido?",
+   "titulo": "¿Es más fácil hoy crear una empresa en la Argentina? Las señales a favor y los obstáculos que persisten",
    "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/el-plan-economico-debe-ser-reemplazado-recalibrado-o-mantenido-nid25102026/",
+   "url": "https://www.lanacion.com.ar/economia/es-mas-facil-hoy-crear-una-empresa-en-la-argentina-las-senales-a-favor-y-los-obstaculos-que-nid25102026/",
    "fecha": "2026-10-25T03:01:00Z",
-   "tema": "otros"
+   "tema": "empresas"
   },
   {
    "titulo": "La inteligencia de no saber y el aprendizaje en tiempos de la IA",
@@ -585,13 +620,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Ezeiza operará con restricciones durante 18 días: qué pasará con los vuelos y qué deben saber los pasajeros",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/24/ezeiza-operara-con-restricciones-durante-18-dias-que-pasara-con-los-vuelos-y-que-deben-saber-los-pasajeros/",
-   "fecha": "2026-10-24T14:37:26Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Hasta cuánto podés consumir de electricidad para acceder al subsidio del 75%",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/energia/467390-hasta-cuanto-podes-consumir-electricidad-para-acceder-subsidio-75-por-ciento",
@@ -662,13 +690,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Cambio de hábitos: creció un 6% la demanda de pastas y las familias eligen las variedades más económicas",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/cambio-de-habitos-crecio-un-6-la-demanda-de-pastas-y-las-familias-eligen-las-variedades-mas-nid23102026/",
-   "fecha": "2026-10-24T09:56:55Z",
-   "tema": "dolar"
-  },
-  {
    "titulo": "Los analistas prevén más presión del dólar hacia finales del año",
    "medio": "Perfil",
    "url": "https://www.perfil.com/noticias/economia/los-analistas-preven-mas-presion-del-dolar-hacia-finales-del-ano.phtml",
@@ -701,20 +722,6 @@
    "medio": "Perfil",
    "url": "https://www.perfil.com/noticias/economia/comedores-comunitarios-la-demanda-crece-de-manera-sostenida-especialmente-en-la-segunda-quincena-de-cada-mes.phtml",
    "fecha": "2026-10-24T02:55:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "¿Más presión para el dólar?: Caen los precios internacionales del agro y la colocación de deuda privada",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/mas-presion-el-dolar-caen-los-precios-internacionales-del-agro-y-la-colocacion-deuda-privada-n6337397",
-   "fecha": "2026-10-23T23:44:00Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "Endeudamiento: 8 de cada 10 argentinos llegan sin margen a fin de mes y usan la tarjeta de crédito para financiarse",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/endeudamiento-8-cada-10-argentinos-llegan-margen-fin-mes-y-usan-tarjeta-credito-financiarse-n6337360",
-   "fecha": "2026-10-23T23:04:00Z",
    "tema": "otros"
   }
  ]
