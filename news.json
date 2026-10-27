@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-26T20:47:55.297256Z",
+ "actualizado": "2026-10-27T00:07:53.916577Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -55,15 +55,239 @@
   {
    "medio": "Perfil",
    "ok": true,
-   "n": 24
+   "n": 25
   }
  ],
  "items": [
+  {
+   "titulo": "El Gobierno declaró la emergencia agropecuaria por inundaciones en dos partidos bonaerenses",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/el-gobierno-declaro-la-emergencia-agropecuaria-por-inundaciones-en-dos-partidos-bonaerenses-nid26102026/",
+   "fecha": "2026-10-26T23:58:45Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Introducido por un escocés y discutido en sus comienzos, el alambrado marcó un antes y un después en el campo argentino",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/introducido-por-un-escoces-y-discutido-en-sus-comienzos-el-alambrado-marco-un-antes-y-un-despues-en-nid24102026/",
+   "fecha": "2026-10-26T23:56:31Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Aliados indispensables: los animales que conocen el camino y guían a miles de vacas para escapar de la inundación",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/todos-tienen-sus-sinuelos-los-animales-que-conocen-el-camino-y-guian-a-miles-de-vacas-para-escapar-nid26102026/",
+   "fecha": "2026-10-26T23:40:04Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Dura reacción de los mercados por el triunfo de Lula en Brasil: las acciones que más se desplomaron y el impacto en el real",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/dura-reaccion-de-los-mercados-por-el-triunfo-de-lula-en-brasil-las-acciones-que-mas-se-desplomaron-y-nid26102026/",
+   "fecha": "2026-10-26T23:27:33Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "La confianza en el Gobierno de Javier Milei creció 0,9% en octubre, pero el promedio es el más bajo de la gestión",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/economia/la-confianza-en-el-gobierno-de-javier-milei-crecio-09-en-octubre-pero-el-promedio-es-el-mas-bajo-de-la-gestion.phtml",
+   "fecha": "2026-10-26T23:22:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "El dólar avanzó a precios récord en todas las franjas del mercado de cambios",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/26/el-dolar-avanzo-a-precios-record-en-todas-las-franjas-del-mercado-de-cambios-por-la-suba-del-real-brasileno/",
+   "fecha": "2026-10-26T23:16:25Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "RDEco: por qué el aumento del petróleo puede beneficiar al comercio exterior y complicar los precios",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/masperfil/petroleo-riesgo-pais-y-deuda-argentina-las-alertas-del-mercado-y-las-claves-para-invertir-en-pesos.phtml",
+   "fecha": "2026-10-26T23:08:45Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "RDEco: qué necesita Argentina para bajar el riesgo país y recuperar la confianza de los inversores",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/masperfil/riesgo-pais-en-argentina-deuda-elecciones-en-estados-unidos-y-las-alertas-del-mercado.phtml",
+   "fecha": "2026-10-26T22:59:30Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "La confianza en el Gobierno se mantuvo casi estancada en octubre: desde fines de 2025 se hundió más de 20%",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/la-confianza-el-gobierno-se-mantuvo-casi-estancada-octubre-fines-2025-se-hundio-mas-20-n6338153",
+   "fecha": "2026-10-26T22:54:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "El dólar contado con liquidación llegó a $1.682: en RDEco analizaron las señales de alerta del mercado",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/masperfil/dolar-riesgo-pais-y-bonos-argentinos-que-impacto-tuvo-la-eleccion-en-brasil-sobre-los-mercados.phtml",
+   "fecha": "2026-10-26T22:50:49Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "RDEco: cómo la tensión entre Milei y Lula puede afectar el comercio entre Argentina y Brasil",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/masperfil/argentina-y-brasil-advierten-sobre-el-impacto-de-la-tension-entre-milei-y-lula-en-el-comercio-bilateral.phtml",
+   "fecha": "2026-10-26T22:42:31Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Una empresa agropecuaria con una historia desde 1885 y otra que viene de 1930 entraron a la red de Bayer",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/una-empresa-agropecuaria-con-una-historia-desde-1885-y-otra-que-viene-de-1930-entraron-a-la-red-de-nid26102026/",
+   "fecha": "2026-10-26T22:37:26Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Apple investiga grietas en pantallas del iPhone Duo tras quejas de usuarios",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/bloomberg/bc-apple-investiga-grietas-en-pantallas-del-iphone-duo-tras-quejas-de-usuarios.phtml",
+   "fecha": "2026-10-26T22:26:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Brasil sacude a la City y hace saltar la brecha entre dólar oficial y el que usan empresas",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/467526-brecha-dolar-ccl-salto-brasil-alerta-oficial-octubre-2026",
+   "fecha": "2026-10-26T22:15:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "El riesgo país de Argentina: por qué es un círculo vicioso entre financiamiento y crecimiento",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/26/el-riesgo-pais-de-argentina-por-que-es-un-circulo-vicioso-entre-financiamiento-y-crecimiento/",
+   "fecha": "2026-10-26T22:12:50Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Cuánto gana un cajero de Coto y Carrefour en noviembre y qué adicionales pueden sumar",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/467528-cuanto-gana-un-cajero-de-coto-y-carrefour-en-noviembre-2026",
+   "fecha": "2026-10-26T22:07:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El Gobierno firmó un acuerdo con plataformas digitales para combatir el contrabando",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/economia/el-gobierno-firmo-un-acuerdo-con-plataformas-digitales-para-combatir-el-contrabando.phtml",
+   "fecha": "2026-10-26T22:00:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Turismo: la llegada de extranjeros creció 15% en septiembre, pero con estadías más cortas y desigualdad en los destinos",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/turismo-la-llegada-extranjeros-crecio-15-septiembre-pero-estadias-mas-cortas-y-desigualdad-los-destinos-n6338104",
+   "fecha": "2026-10-26T21:57:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "“Con Bolsonaro, Mercosur iba a ser más difícil”: Carlos Balmelli explicó en RDEco qué puede cambiar con la victoria de Lula da Silva",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/masperfil/carlos-balmelli-con-lula-es-mas-facil-el-mercosur.phtml",
+   "fecha": "2026-10-26T21:53:53Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Vuelan el gas y el petróleo, avanzan los fertilizantes y se demora el cobre: cuáles son las caras argentinas del RIGI",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/vuelan-el-gas-y-el-petroleo-avanzan-los-fertilizantes-y-se-demora-el-cobre-cuales-son-las-caras-nid26102026/",
+   "fecha": "2026-10-26T21:52:18Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El Banco Central no compró dólares en una rueda marcada por la volatilidad cambiaria",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/economia/el-banco-central-no-compro-dolares-en-una-rueda-marcada-por-la-volatilidad-cambiaria-a40.phtml",
+   "fecha": "2026-10-26T21:45:08Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Pablo Zurro, intendente de Pehuajó, prohibió la circulación por 48 horas y lanzó una advertencia a tamberos: “No me rompan los caminos”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/pablo-zurro-intendente-de-pehuajo-prohibio-la-circulacion-por-48-horas-y-lanzo-una-advertencia-a-nid26102026/",
+   "fecha": "2026-10-26T21:44:11Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Contrabando: el Gobierno, las empresas y las plataformas sellaron un acuerdo para controlar el comercio digital",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/contrabando-el-gobierno-la-uia-y-mercado-libre-sellaron-un-acuerdo-para-controlar-el-comercio-nid26102026/",
+   "fecha": "2026-10-26T21:38:26Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "RDEco: por qué cayeron los mercados brasileños tras el resultado electoral y qué puede pasar con Argentina",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/masperfil/elecciones-en-brasil-la-reaccion-de-los-mercados-y-el-impacto-economico-en-argentina.phtml",
+   "fecha": "2026-10-26T21:37:44Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Viajaron menos argentinos: el rojo por turismo fue de US$918 millones en el tercer trimestre del año",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/viajaron-menos-argentinos-el-rojo-por-turismo-fue-de-us918-millones-en-el-tercer-trimestre-del-ano-nid26102026/",
+   "fecha": "2026-10-26T21:32:30Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "“Silencio estatal”: productores bonaerenses fueron a la Justicia contra el ministerio de Katopodis por las obras hidráulicas",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/silencio-estatal-productores-bonaerenses-fueron-a-la-justicia-contra-el-ministerio-de-katopodis-por-nid26102026/",
+   "fecha": "2026-10-26T21:24:37Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Dólar, riesgo país y acciones: uno por uno, cuáles fueron los efectos del ballotage de Brasil en el mercado financiero argentino",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/26/dolar-riesgo-pais-y-acciones-uno-por-uno-cuales-fueron-los-efectos-del-ballotage-de-brasil-en-el-mercado-financiero-argentino/",
+   "fecha": "2026-10-26T21:09:23Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "El Banco Nación ya otorgó 210 créditos hipotecarios con los fondos de ANSES",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/realestate/467368-el-banco-nacion-ya-otorgo-210-creditos-hipotecarios-con-los-fondos-de-anses",
+   "fecha": "2026-10-26T20:55:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Efecto Brasil: el riesgo país de Argentina subió 8% y superó los 760 puntos",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/26/efecto-brasil-las-acciones-argentinas-se-desploman-hasta-12-en-wall-street-y-suben-el-dolar-y-el-riesgo-pais/",
+   "fecha": "2026-10-26T20:53:30Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "El Banco Central no compró reservas y el Tesoro habría vendido dólares",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/el-banco-central-no-compro-reservas-y-el-tesoro-habria-vendido-dolares-nid26102026/",
+   "fecha": "2026-10-26T20:48:39Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Ley de semillas: la industria dijo que amplió una propuesta para exceptuar del pago por el uso propio a más productores",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/ley-de-semillas-la-industria-dijo-que-amplio-una-propuesta-para-exceptuar-del-pago-por-el-uso-propio-nid26102026/",
+   "fecha": "2026-10-26T20:44:21Z",
+   "tema": "actividad"
+  },
   {
    "titulo": "La Bolsa de San Pablo se desplomó 14%, la caída más amplia desde marzo de 2020",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/26/la-bolsa-de-san-pablo-suspendio-sus-operaciones-tras-una-drastica-caida-de-las-acciones-lideres/",
    "fecha": "2026-10-26T20:38:57Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Más allá del efecto Brasil, el riesgo país se dispara por las dudas sobre el futuro de la economía argentina",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/economia/el-riesgo-pais-siente-el-impacto-de-brasil-y-se-suma-a-las-dudas-por-el-financiamiento-y-el-rumbo-economico-a40.phtml",
+   "fecha": "2026-10-26T20:30:24Z",
    "tema": "mercados"
   },
   {
@@ -88,11 +312,11 @@
    "tema": "actividad"
   },
   {
-   "titulo": "Efecto Brasil: el riesgo país de Argentina subió 8% y superó los 760 puntos",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/26/efecto-brasil-las-acciones-argentinas-se-desploman-hasta-12-en-wall-street-y-suben-el-dolar-y-el-riesgo-pais/",
-   "fecha": "2026-10-26T20:21:54Z",
-   "tema": "mercados"
+   "titulo": "A cuánto cerró el dólar blue hoy, lunes 26 de octubre",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/economia/el-dolar-blue-se-estabiliza-en-los-1565-este-viernes-23-de-octubre.phtml",
+   "fecha": "2026-10-26T20:23:00Z",
+   "tema": "dolar"
   },
   {
    "titulo": "A cuánto cerró el euro blue hoy, lunes 26 de octubre",
@@ -102,25 +326,18 @@
    "tema": "dolar"
   },
   {
-   "titulo": "Aliados indispensables: los animales que conocen el camino y guían a miles de vacas para escapar de la inundación",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/todos-tienen-sus-sinuelos-los-animales-que-conocen-el-camino-y-guian-a-miles-de-vacas-para-escapar-nid26102026/",
-   "fecha": "2026-10-26T20:05:51Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El dólar avanzó a precios récord en todas las franjas del mercado de cambios por la suba del real brasileño",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/26/el-dolar-avanzo-a-precios-record-en-todas-las-franjas-del-mercado-de-cambios-por-la-suba-del-real-brasileno/",
-   "fecha": "2026-10-26T20:03:03Z",
-   "tema": "dolar"
-  },
-  {
    "titulo": "El gas de Vaca Muerta ya abastece a la Patagonia: se inauguró una obra de USD 40 millones que se licitó en 2017 y estuvo parada cuatro años",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/26/el-gas-de-vaca-muerta-ya-abastece-a-la-patagonia-se-inauguro-una-obra-de-usd-40-millones-que-se-licito-en-2017-y-estuvo-parada-cuatro-anos/",
    "fecha": "2026-10-26T20:01:49Z",
    "tema": "empresas"
+  },
+  {
+   "titulo": "Camuzzi completó una obra de u$s40 millones para abastecer de gas a 25 localidades",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/energia/467515-camuzzi-completo-una-obra-de-40-millones-dolares-para-abastecer-de-gas-a-25-localidades",
+   "fecha": "2026-10-26T19:50:00Z",
+   "tema": "otros"
   },
   {
    "titulo": "Aliados y opositores piden a Milei que reconozca a Lula y arregle la relación bilateral",
@@ -163,13 +380,6 @@
    "url": "https://www.iprofesional.com/finanzas/467504-por-que-riesgo-pais-sube-en-argentina-pero-no-en-brasil-tras-victoria-de-lula",
    "fecha": "2026-10-26T19:20:00Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "A cuánto cerró el dólar blue hoy, lunes 26 de octubre",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/el-dolar-blue-se-estabiliza-en-los-1565-este-viernes-23-de-octubre.phtml",
-   "fecha": "2026-10-26T19:19:00Z",
-   "tema": "dolar"
   },
   {
    "titulo": "Cuál es la empresa argentina más golpeada por la victoria de Lula en Brasil",
@@ -242,7 +452,7 @@
    "tema": "inflacion"
   },
   {
-   "titulo": "Tras el triunfo de Lula, sube el riesgo país y caen las acciones argentinas en Wall Street",
+   "titulo": "Tras el triunfo de Lula, el riesgo país subió a 765 puntos y cayeron las acciones argentinas en Wall Street",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/el-triunfo-sorpresivo-de-lula-en-brasil-presiona-al-riesgo-pais-argentino-y-mercado-libre-se-nid26102026/",
    "fecha": "2026-10-26T17:37:24Z",
@@ -282,13 +492,6 @@
    "url": "https://www.infobae.com/economia/2026/10/26/el-gobierno-reglamento-inocencia-fiscal-ii-que-dicen-los-expertos-sobre-el-uso-de-los-dolares-del-colchon/",
    "fecha": "2026-10-26T16:57:31Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "Dura reacción de los mercados por el triunfo de Lula en Brasil: las acciones que más se desplomaron y el impacto en el real",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/dura-reaccion-de-los-mercados-por-el-triunfo-de-lula-en-brasil-las-acciones-que-mas-se-desplomaron-y-nid26102026/",
-   "fecha": "2026-10-26T16:40:18Z",
-   "tema": "mercados"
   },
   {
    "titulo": "Ya está disponible el plan de pagos de ARBA para cancelar deudas: cómo acceder al 40% de descuento",
@@ -424,20 +627,6 @@
    "tema": "actividad"
   },
   {
-   "titulo": "Punto por punto: los cinco frentes que abre el triunfo de Lula para Milei y la economía argentina",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/punto-por-punto-los-cinco-frentes-que-abre-el-triunfo-de-lula-para-milei-y-la-economia-argentina-nid26102026/",
-   "fecha": "2026-10-26T14:19:11Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Real, dólar y vacaciones en Brasil: cuánto cuesta viajar este verano",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/real-dolar-y-vacaciones-en-brasil-cuanto-cuesta-viajar-este-verano-nid26102026/",
-   "fecha": "2026-10-26T14:09:34Z",
-   "tema": "dolar"
-  },
-  {
    "titulo": "¿Cuánto cuesta jugar al fútbol 5 con amigos hoy? El presupuesto completo entre cancha y \"tercer tiempo\"",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/cuanto-cuesta-jugar-al-futbol-5-amigos-hoy-el-presupuesto-completo-cancha-y-tercer-tiempo-n6337853",
@@ -466,13 +655,6 @@
    "tema": "politica"
   },
   {
-   "titulo": "Real, dólar y vacaciones en Brasil: cuánto cuesta viajar este verano, precios de vuelos y formas de pago",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/real-dolar-y-vacaciones-en-brasil-cuanto-cuesta-viajar-este-verano-precios-de-vuelos-y-formas-de-nid26102026/",
-   "fecha": "2026-10-26T13:37:19Z",
-   "tema": "dolar"
-  },
-  {
    "titulo": "Aumento para trabajadores de Claro, Movistar y Telecom: a cuánto se fue el salario básico",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/467471-aumento-para-trabajadores-de-claro-movistar-y-telecom-a-cuanto-se-fue-el-salario-basico",
@@ -487,25 +669,11 @@
    "tema": "dolar"
   },
   {
-   "titulo": "Fitosanitarios: empieza una capacitación gratuita",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/fitosanitarios-empieza-una-capacitacion-gratuita-nid26102026/",
-   "fecha": "2026-10-26T13:30:24Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Granja Tres Arroyos: $62.400 millones de deuda laboral y un tendal de cheques sin fondos",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/negocios/467468-granja-tres-arroyos-pidio-concurso-debe-62400-millones-en-sueldos",
    "fecha": "2026-10-26T13:27:00Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "La reacción de las acciones de Mercado Libre tras la victoria de Lula da Silva sobre Flavio Bolsonaro en el balotaje",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/la-reaccion-de-las-acciones-de-mercado-libre-tras-la-victoria-de-lula-da-silva-sobre-flavio-nid26102026/",
-   "fecha": "2026-10-26T13:21:40Z",
-   "tema": "mercados"
   },
   {
    "titulo": "Con el consumo en caída, los mayoristas lanzan un Black Week con descuentos en 200 locales",
@@ -520,41 +688,6 @@
    "url": "https://www.infobae.com/economia/2026/10/26/rige-desde-hoy-el-plan-de-pagos-de-arba-con-descuentos-de-hasta-40-para-cancelar-deudas-como-acceder/",
    "fecha": "2026-10-26T13:17:18Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "SUAF de Anses: el monto de las asignaciones familiares en noviembre de 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/suaf-de-anses-el-monto-de-las-asignaciones-familiares-en-noviembre-de-2026-nid21102026/",
-   "fecha": "2026-10-26T13:04:02Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "A cuánto llega la PUAM en noviembre de 2026 con el aumento confirmado",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/a-cuanto-llega-la-puam-en-noviembre-de-2026-con-el-aumento-confirmado-nid20102026/",
-   "fecha": "2026-10-26T13:04:00Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "PNC de Anses: cuál es el monto de las Pensiones No Contributivas en noviembre de 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/pnc-de-anses-cual-es-el-monto-de-las-pensiones-no-contributivas-en-noviembre-de-2026-nid19102026/",
-   "fecha": "2026-10-26T13:03:58Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Monto de la Asignación Universal por Hijo: de cuánto es la AUH en noviembre 2026, con el aumento oficial",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/monto-de-la-asignacion-universal-por-hijo-de-cuanto-es-la-auh-en-noviembre-2026-con-el-aumento-nid15102026/",
-   "fecha": "2026-10-26T13:03:55Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Jubilaciones de Anses: cuánto cobro en noviembre 2026, con el bono oficial y el aumento confirmado",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/jubilaciones-de-anses-cuanto-cobro-en-noviembre-2026-con-el-bono-oficial-y-el-aumento-confirmado-nid14102026/",
-   "fecha": "2026-10-26T13:03:53Z",
-   "tema": "inflacion"
   },
   {
    "titulo": "El 28% de los trabajadores destina el total del sueldo a pagar deudas",
@@ -683,27 +816,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Sueldos en el Sindicato Perfumista: los valores oficiales que rigen en octubre",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/sueldos-sindicato-perfumista-valores-oficiales-que-rigen-octubre-a40.phtml",
-   "fecha": "2026-10-26T10:44:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Casi 9 de cada 10 argentinos consideran que su salario es insuficiente para cubrir sus necesidades básicas",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/26/casi-9-de-cada-10-argentinos-consideran-que-su-salario-es-insuficiente-para-cubrir-sus-necesidades-basicas/",
-   "fecha": "2026-10-26T10:43:27Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "PAMI explicó el sistema para elegir médico de cabecera: cuáles son las opciones de asignación y los plazos para el cambio",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/pami-explico-sistema-para-elegir-medico-cabecera-cuales-son-opciones-asignacion-plazos-para-cambio-a40.phtml",
-   "fecha": "2026-10-26T10:40:00Z",
-   "tema": "dolar"
-  },
-  {
    "titulo": "Cuánto ganan un director, un gerente y un jefe hoy en Argentina y la región",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/management/467443-cuanto-ganan-directores-gerentes-y-jefes-en-argentina-y-la-region",
@@ -715,118 +827,6 @@
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/467444-black-week-mayorista-2026-cuando-empieza-y-que-productos-estaran-en-oferta",
    "fecha": "2026-10-26T10:31:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Jubilaciones, desempleo y asignaciones: a quiénes corresponde el cobro de ANSES del lunes 26 de octubre",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/jubilaciones-desempleo-asignaciones-quienes-corresponde-cobro-anses-lunes-26-octubre-a40.phtml",
-   "fecha": "2026-10-26T10:30:00Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Derrumbe de la bolsa en Brasil sumará presión al riesgo país y al dólar en Argentina",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/467436-alertan-por-mas-preson-al-riesgo-pais-y-al-dolar-en-argentina-por-brasil",
-   "fecha": "2026-10-26T10:00:00Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "La Asociación Bancaria incorporó al convenio colectivo al personal de BICE Fideicomisos",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/467438-la-asociacion-bancaria-incorporo-al-convenio-colectivo-al-personal-de-bice-fideicomisos",
-   "fecha": "2026-10-26T09:46:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "ANSES: quiénes cobran hoy, lunes 26 de octubre de 2026",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/26/anses-quienes-cobran-hoy-lunes-26-de-octubre-de-2026/",
-   "fecha": "2026-10-26T09:41:17Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El Súper Niño ya pega en precios de alimentos y amenaza con complicar el plan Caputo",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/466954-como-el-super-nino-y-las-inundaciones-pueden-complicar-e-plan-caputo",
-   "fecha": "2026-10-26T09:30:00Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Las tasas largas siguen bajando y le facilitan la tarea a la Fed",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/las-tasas-largas-siguen-bajando-y-le-facilitan-la-tarea-la-fed-n6337713",
-   "fecha": "2026-10-26T03:00:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Primeras señales financieras hacen prever un \"efecto contagio\" negativo sobre Argentina",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/467430-mercado-brasileno-reacciona-con-bajas-y-genera-temor-en-argentina",
-   "fecha": "2026-10-26T01:11:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Tras la sorpresa de Lula, el mercado anticipa un lunes de tensión, caída de activos y mayor presión cambiaria",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/tras-la-sorpresa-de-lula-el-mercado-anticipa-un-lunes-de-tension-caida-de-activos-y-mayor-presion-cambiaria-a40.phtml",
-   "fecha": "2026-10-26T00:45:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Qué puede pasar en el mercado tras el triunfo de Lula y las repersusiones en Argentina",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/467426-que-puede-pasar-con-el-dolar-y-la-bolsa-tras-el-triunfo-de-lula-en-brasil",
-   "fecha": "2026-10-26T00:20:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Balotaje en Brasil 2026: las apuestas dan un 80% de probabilidades de triunfo a Flávio Bolsonaro sobre Lula da Silva",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/balotaje-brasil-2026-las-apuestas-dan-un-80-probabilidades-triunfo-flavio-bolsonaro-lula-da-silva-n6337654",
-   "fecha": "2026-10-25T22:45:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "¿Cuánto cuesta ir a ver a Boca en la final de la Copa Sudamericana en Barranquilla?",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/cuanto-cuesta-ir-ver-boca-la-final-la-copa-sudamericana-barranquilla-n6337175",
-   "fecha": "2026-10-25T21:00:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Qué plazo fijo lidera el ranking de inversiones más elegidas por los argentinos",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/que-plazo-fijo-lidera-el-ranking-inversiones-mas-elegidas-los-argentinos-n6337286",
-   "fecha": "2026-10-25T20:00:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Moratoria de ARBA: desde el lunes se podrán regularizar deudas con bonificaciones de hasta el 40%",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/moratoria-arba-el-lunes-se-podran-regularizar-deudas-bonificaciones-el-40-n6337690",
-   "fecha": "2026-10-25T19:03:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Exportaciones récord: Argentina superó los u$s100.000 millones y alcanzó un superávit comercial histórico",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/exportaciones-record-argentina-supero-los-us100000-millones-y-alcanzo-un-superavit-comercial-historico-n6337688",
-   "fecha": "2026-10-25T19:00:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Llega el último Black Week Mayorista del año: 200 comercios ofrecerán descuentos en alimentos, bebidas y productos de limpieza",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/llega-el-ultimo-black-week-mayorista-del-ano-200-comercios-ofreceran-descuentos-alimentos-bebidas-y-productos-limpieza-n6337680",
-   "fecha": "2026-10-25T18:43:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Cuánto cuesta la camiseta alternativa de Boca que utilizó en el Maracanazo contra Vasco Da Gama",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/cuanto-cuesta-la-camiseta-alternativa-boca-que-utilizo-el-maracanazo-contra-vasco-da-gama-n6337183",
-   "fecha": "2026-10-25T18:00:00Z",
    "tema": "otros"
   }
  ]
