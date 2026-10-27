@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-27T00:07:53.916577Z",
+ "actualizado": "2026-10-27T04:25:49.525296Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -74,10 +74,31 @@
    "tema": "otros"
   },
   {
+   "titulo": "Según un economista, “el mercado veía con euforia una victoria de Bolsonaro y la sociedad no lo tenía tan claro”",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/canal-e/segun-un-economista-el-mercado-veia-con-euforia-una-victoria-de-bolsonaro-y-la-sociedad-no-lo-tenia-tan-claro.phtml",
+   "fecha": "2026-10-26T23:49:32Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Advierten por una caída en el mercado de granos tras las elecciones en Brasil: “Es una patada en la cara para el productor argentino”",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/canal-e/advierten-por-una-caida-en-el-mercado-de-granos-tras-las-elecciones-en-brasil-es-una-patada-en-la-cara-para-el-productor-argentino.phtml",
+   "fecha": "2026-10-26T23:43:30Z",
+   "tema": "otros"
+  },
+  {
    "titulo": "Aliados indispensables: los animales que conocen el camino y guían a miles de vacas para escapar de la inundación",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/campo/todos-tienen-sus-sinuelos-los-animales-que-conocen-el-camino-y-guian-a-miles-de-vacas-para-escapar-nid26102026/",
    "fecha": "2026-10-26T23:40:04Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Carlos Castagnani advirtió que si un productor no está en la plataforma VISEC “va a tener un descuento a lo que nosotros llamamos castigo”",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/canal-e/castagnani-advirtio-que-si-un-productor-no-esta-en-la-plataforma-bicec-va-a-tener-un-descuento-a-lo-que-nosotros-llamamos-castigo.phtml",
+   "fecha": "2026-10-26T23:37:22Z",
    "tema": "otros"
   },
   {
@@ -191,6 +212,13 @@
    "url": "https://www.perfil.com/noticias/masperfil/carlos-balmelli-con-lula-es-mas-facil-el-mercosur.phtml",
    "fecha": "2026-10-26T21:53:53Z",
    "tema": "otros"
+  },
+  {
+   "titulo": "Licitación de deuda: el Tesoro enfrenta vencimientos por $10,83 billones",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/noticias/economia/licitacion-de-deuda-el-tesoro-enfrenta-vencimientos-por-1083-billones-a40.phtml",
+   "fecha": "2026-10-26T21:53:18Z",
+   "tema": "politica"
   },
   {
    "titulo": "Vuelan el gas y el petróleo, avanzan los fertilizantes y se demora el cobre: cuáles son las caras argentinas del RIGI",
@@ -676,13 +704,6 @@
    "tema": "politica"
   },
   {
-   "titulo": "Con el consumo en caída, los mayoristas lanzan un Black Week con descuentos en 200 locales",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/con-el-consumo-en-caida-los-mayoristas-lanzan-un-black-week-con-descuentos-en-200-locales.phtml",
-   "fecha": "2026-10-26T13:20:00Z",
-   "tema": "actividad"
-  },
-  {
    "titulo": "Rige desde hoy el plan de pagos de ARBA con descuentos de hasta 40% para cancelar deudas: cómo acceder",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/26/rige-desde-hoy-el-plan-de-pagos-de-arba-con-descuentos-de-hasta-40-para-cancelar-deudas-como-acceder/",
@@ -702,13 +723,6 @@
    "url": "https://www.ambito.com/economia/el-empleo-privado-acumula-14-meses-consecutivos-caida-y-ya-se-perdieron-266000-puestos-noviembre-2023-n6337854",
    "fecha": "2026-10-26T12:51:00Z",
    "tema": "actividad"
-  },
-  {
-   "titulo": "Las acciones de empresas brasileñas se hunden más de 23% en las primeras operaciones del premarket",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/las-acciones-de-empresas-brasilenas-se-hunden-mas-de-23-en-las-primeras-operaciones-del-premarket.phtml",
-   "fecha": "2026-10-26T12:45:00Z",
-   "tema": "mercados"
   },
   {
    "titulo": "Emergencia agropecuaria por inundaciones: el Gobierno la declaró para Nueve de Julio y parte de Necochea",
@@ -737,13 +751,6 @@
    "url": "https://www.infobae.com/economia/2026/10/26/por-que-lula-no-podra-usar-la-motosierra-que-necesita-brasil-segun-un-economista-cercano-a-milei/",
    "fecha": "2026-10-26T12:10:09Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "AySA propone nuevos aumentos en las tarifas del agua: cuánto pagarían los usuarios y qué pasará con los subsidios",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/aysa-propone-nuevos-aumentos-tarifas-agua-cuanto-pagarian-usuarios-pasara-subsidios-a40.phtml",
-   "fecha": "2026-10-26T12:10:00Z",
-   "tema": "inflacion"
   },
   {
    "titulo": "ARCA reglamentó Inocencia Fiscal II: quiénes pueden adherir y qué cambia desde ahora",
@@ -806,13 +813,6 @@
    "medio": "Infobae",
    "url": "https://www.infobae.com/america/america-latina/2026/10/26/los-mercados-brasilenos-se-preparan-para-fuertes-perdidas-tras-la-victoria-de-lula-va-a-ser-un-dia-dificil/",
    "fecha": "2026-10-26T11:05:28Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "ARCA reglamentó la Inocencia Fiscal II: quiénes pueden adherir y qué cambia desde ahora",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/noticias/economia/arca-reglamento-la-inocencia-fiscal-ii-quienes-pueden-adherir-y-que-cambia-desde-ahora.phtml",
-   "fecha": "2026-10-26T11:05:00Z",
    "tema": "otros"
   },
   {
