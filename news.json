@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-27T23:18:50.298110Z",
+ "actualizado": "2026-10-28T04:56:38.218924Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 20
+   "n": 25
   },
   {
    "medio": "Infobae",
@@ -61,6 +61,55 @@
  ],
  "items": [
   {
+   "titulo": "Los barrios populares se expandieron 57 km2 en la última década y juntos ya son más grandes que ciudades como Rosario",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/28/los-barrios-populares-se-expandieron-57-km2-en-la-ultima-decada-y-juntos-ya-son-mas-grandes-que-ciudades-como-rosario/",
+   "fecha": "2026-10-28T04:48:56Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El Gobierno debe afrontar un pago de USD 800 millones al FMI y analiza dos caminos: usar dólares propios o comprarlos al BCRA",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/28/el-gobierno-debe-afrontar-un-pago-de-usd-800-millones-al-fmi-y-analiza-dos-caminos-usar-dolares-propios-o-comprarlos-al-bcra/",
+   "fecha": "2026-10-28T04:48:16Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Argentina Fintech Forum reunirá a más de 5.000 participantes para debatir la digitalización financiera",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/28/argentina-fintech-forum-reunira-a-mas-de-5000-participantes-para-debatir-la-digitalizacion-financiera/",
+   "fecha": "2026-10-28T04:46:15Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Bajó el riesgo país y el dólar se estabilizó pero sigue el viento de frente: vuelven a subir las tasas en EEUU",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/28/bajo-el-riesgo-pais-y-el-dolar-se-estabilizo-pero-sigue-el-viento-de-frente-vuelven-a-subir-las-tasas-en-eeuu/",
+   "fecha": "2026-10-28T04:44:35Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Calendario Anses: cuándo cobro la AUH en octubre 2026 si mi DNI termina en 9",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/calendario-anses-cuando-cobro-la-auh-en-octubre-2026-si-mi-dni-termina-en-9-nid27102026/",
+   "fecha": "2026-10-28T00:21:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La morosidad en microempresas es de casi 18% y quintuplica a la de las grandes compañías",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/la-morosidad-microempresas-es-casi-18-y-quintuplica-la-las-grandes-companias-n6338580",
+   "fecha": "2026-10-28T00:18:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Domingo Cavallo criticó a Javier Milei y pidió liberar la compra y venta de dólares",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/domingo-cavallo-critico-javier-milei-y-pidio-liberar-la-compra-y-venta-dolares-n6338608",
+   "fecha": "2026-10-27T23:50:00Z",
+   "tema": "politica"
+  },
+  {
    "titulo": "AmCham pidió adherir a un tratado internacional por semillas y alertó sobre el posible impacto de incumplir un acuerdo con Estados Unidos",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/campo/amcham-pidio-adherir-a-un-tratado-internacional-por-semillas-y-alerto-sobre-el-posible-impacto-de-nid27102026/",
@@ -71,7 +120,21 @@
    "titulo": "Una tradicional marca de trajes de baño argentina entró en concurso preventivo",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/27/una-tradicional-marca-de-trajes-de-bano-argentina-entro-en-consurso-preventivo/",
-   "fecha": "2026-10-27T23:13:27Z",
+   "fecha": "2026-10-27T23:13:46Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Precio de la leche en Buenos Aires: ¿cuánto se destina hoy del sueldo para llenar la heladera?",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/precio-la-leche-buenos-aires-cuanto-se-destina-hoy-del-sueldo-llenar-la-heladera-n6338347",
+   "fecha": "2026-10-27T23:00:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Cómo serán los aumentos de sueldo para empleados de comercio en los próximos meses",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/actualidad/467619-empleados-de-comercio-con-aumento-de-sueldo-y-bono-confirmados",
+   "fecha": "2026-10-27T23:00:00Z",
    "tema": "otros"
   },
   {
@@ -215,7 +278,7 @@
    "tema": "actividad"
   },
   {
-   "titulo": "María Tettamanti ratificó el rumbo tras de la renuncia de Daniel González: “No vamos a cambiar nada de lo que estamos haciendo”",
+   "titulo": "María Tettamanti ratificó el rumbo tras la renuncia de Daniel González: “No vamos a cambiar nada de lo que estamos haciendo”",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/maria-tettamanti-ratifico-el-rumbo-tras-de-la-renuncia-de-daniel-gonzalez-no-vamos-a-cambiar-nada-de-nid27102026/",
    "fecha": "2026-10-27T20:45:28Z",
@@ -362,13 +425,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Cómo serán los aumentos de sueldo para empleados de comercio en los próximos meses",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/actualidad/467619-nuevo-aumento-de-sueldo-para-empleados-de-comercio-con-bono-incluido",
-   "fecha": "2026-10-27T19:24:00Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "El primero del país: un feedlot logró una certificación internacional de bienestar animal",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/campo/el-primero-del-pais-un-feedlot-logro-una-certificacion-internacional-de-bienestar-animal-nid27102026/",
@@ -464,13 +520,6 @@
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/tecnologia/demandan-a-anthropic-por-usar-sin-autorizacion-las-canciones-de-elvis-presley-para-entrenar-a-claude-nid27102026/",
    "fecha": "2026-10-27T17:23:13Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Grupo Pilar Innova adquirió Vitalcan y se convirtió en su principal accionista",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/negocios/grupo-pilar-innova-adquirio-vitalcan-y-se-convirtio-en-su-principal-accionista-nid27102026/",
-   "fecha": "2026-10-27T17:18:14Z",
    "tema": "otros"
   },
   {
@@ -614,13 +663,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Efecto Lula: los dólares financieros se acercan a los $1.700 y la brecha cambiaria subió a 7,5 por ciento",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/27/efecto-lula-los-dolares-financieros-se-acercan-a-los-1700-y-la-brecha-cambiaria-subio-a-75-por-ciento/",
-   "fecha": "2026-10-27T12:17:20Z",
-   "tema": "dolar"
-  },
-  {
    "titulo": "Paritarias: qué gremios negociaron aumentos de sueldo para noviembre 2026",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/management/467489-paritarias-que-gremios-negociaron-aumentos-de-sueldo-para-noviembre-2026",
@@ -633,27 +675,6 @@
    "url": "https://www.iprofesional.com/economia/467495-black-week-mayorista-como-encontrar-ofertas-en-alimentos-y-limpieza",
    "fecha": "2026-10-27T12:17:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "El Gobierno aprobó el ingreso al RIGI de un proyecto minero en Catamarca que prevé inversiones por USD 6.394 millones",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/27/el-gobierno-aprobo-el-ingreso-al-rigi-de-un-proyecto-minero-en-catamarca-que-preve-inversiones-por-usd-6394-millones/",
-   "fecha": "2026-10-27T11:33:55Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "La magia de un presidente sin margen",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/opinion/2026/10/27/la-magia-de-un-presidente-sin-margen/",
-   "fecha": "2026-10-27T11:30:08Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "A cuánto llegará el índice de inflación de octubre según las consultoras privadas",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/27/a-cuanto-llegara-el-indice-de-inflacion-de-octubre-segun-las-consultoras-privadas/",
-   "fecha": "2026-10-27T11:26:50Z",
-   "tema": "inflacion"
   },
   {
    "titulo": "Boom de los chips: la economía de Corea del Sur creció tres veces más rápido de lo esperado en el tercer trimestre",
@@ -703,6 +724,20 @@
    "url": "https://www.ambito.com/economia/ya-esta-disponible-el-plan-pagos-arba-cancelar-deudas-como-acceder-al-40-descuento-n6337995",
    "fecha": "2026-10-26T16:40:00Z",
    "tema": "otros"
+  },
+  {
+   "titulo": "Boom de deuda corporativa en la Argentina: las empresas emitieron más de u$s2.700 millones en un mes",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/boom-deuda-corporativa-argentina-las-empresas-emitieron-mas-us2700-millones-un-mes-n6337913",
+   "fecha": "2026-10-26T16:26:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "AySA busca subir las tarifas de agua a 2 millones de usuarios en medio de la privatización: ¿de cuánto sería el aumento?",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/aysa-busca-subir-las-tarifas-agua-2-millones-usuarios-medio-la-privatizacion-de-cuanto-seria-el-aumento-n6337924",
+   "fecha": "2026-10-26T14:30:00Z",
+   "tema": "inflacion"
   }
  ]
 }
