@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-29T00:30:23.247874Z",
+ "actualizado": "2026-10-29T05:08:13.825223Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -61,6 +61,41 @@
  ],
  "items": [
   {
+   "titulo": "Se fue a México, quebró dos veces y creó uno de los mejores bares del mundo",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/se-fue-a-mexico-quebro-dos-veces-y-creo-uno-de-los-mejores-bares-del-mundo-nid29102026/",
+   "fecha": "2026-10-29T03:01:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El Macro busca captar los dólares que los argentinos invierten en el exterior",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/negocios/el-macro-busca-captar-los-dolares-que-los-argentinos-invierten-en-el-exterior-nid29102026/",
+   "fecha": "2026-10-29T03:00:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "“No creo que lo entiendan”: Ricardo Arriazu explicó su visión sobre la compra de reservas y reclamó cambios en la política del BCRA",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/no-creo-que-lo-entiendan-ricardo-arriazu-explico-su-vision-sobre-la-compra-de-reservas-y-reclamo-nid28102026/",
+   "fecha": "2026-10-29T02:07:53Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Acelera el negocio de agro de YPF: facturó US$826 millones en lo que va del año, un salto del 23,1%",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/el-negocio-de-agro-de-ypf-facturo-us344-millones-y-acumula-us826-millones-en-el-ano-un-salto-del-231-nid28102026/",
+   "fecha": "2026-10-29T01:51:19Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Gerardo Bartolomé, de crear un gigante en el negocio de la soja a construir una escuela para 225 chicos: “Tenemos dos países”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/gerardo-bartolome-de-crear-un-gigante-en-el-negocio-de-la-soja-a-construir-una-escuela-para-225-nid28102026/",
+   "fecha": "2026-10-29T01:45:56Z",
+   "tema": "otros"
+  },
+  {
    "titulo": "El riesgo país quedó al borde de su máximo del año y las acciones argentinas cayeron por tercera rueda seguida",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/29/el-riesgo-pais-quedo-al-borde-de-su-maximo-del-ano-y-las-acciones-argentinas-cayeron-por-tercera-rueda-seguida/",
@@ -82,13 +117,6 @@
    "tema": "actividad"
   },
   {
-   "titulo": "“No creo que lo entiendan”: Ricardo Arriazu explicó su visión sobre la compra de reservas y reclamó cambios en la política del BCRA",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/no-creo-que-lo-entiendan-ricardo-arriazu-explico-su-vision-sobre-la-compra-de-reservas-y-reclamo-nid28102026/",
-   "fecha": "2026-10-28T22:58:41Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "Don Pascual, de 82 años, recuperó casi 60 chivas extraviadas gracias a un dron: “Ahí van todas”",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/campo/don-pascual-de-82-anos-recupero-casi-60-chivas-extraviadas-gracias-a-un-dron-ahi-van-todas-nid28102026/",
@@ -107,13 +135,6 @@
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/28/grupo-octubre-compro-la-productora-mandarina-contenidos-y-el-canal-de-streaming-bondi/",
    "fecha": "2026-10-28T22:38:40Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Gerardo Bartolomé, de crear un gigante en el negocio de la soja a construir una escuela para 225 chicos: “Tenemos dos países”",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/gerardo-bartolome-de-crear-un-gigante-en-el-negocio-de-la-soja-a-construir-una-escuela-para-225-nid28102026/",
-   "fecha": "2026-10-28T22:27:46Z",
    "tema": "otros"
   },
   {
@@ -380,27 +401,6 @@
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/campo/vacunos-otra-oferta-acotada-y-nuevas-bajas-en-el-mercado-agroganadero-de-canuelas-nid28102026/",
    "fecha": "2026-10-28T18:42:08Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Mal momento para el ministro de Economía en su visita a una mina de litio con Milei en Catamarca",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/mal-momento-para-el-ministro-de-economia-en-su-visita-oficial-con-milei-en-catamarca-nid28102026/",
-   "fecha": "2026-10-28T18:32:03Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "N5 invirtió US$34 millones para adquirir tres empresas de inteligencia artificial",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/negocios/n5-invirtio-us34-millones-para-adquirir-tres-empresas-de-inteligencia-artificial-nid28102026/",
-   "fecha": "2026-10-28T18:24:41Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Apple rompe su propio tabú y presenta la primera MacBook Pro con pantalla táctil",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/tecnologia/apple-rompe-su-propio-tabu-y-presenta-la-primera-macbook-pro-con-pantalla-tactil-nid28102026/",
-   "fecha": "2026-10-28T18:23:59Z",
    "tema": "otros"
   },
   {
