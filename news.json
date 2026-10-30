@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-30T00:29:16.771006Z",
+ "actualizado": "2026-10-30T05:07:40.287144Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -60,24 +60,122 @@
  ],
  "items": [
   {
-   "titulo": "Binance investiga posible hackeo de más de USD 5.000 millones: bloqueos, retiros suspendidos y fuerte caída del precio de bitcoin",
+   "titulo": "Radiografía de Galperin, el argentino más rico: radicalización tuitera, apoyo a Milei y su rol como tecno magnate latino",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/23/radiografia-de-galperin-el-argentino-mas-rico-radicalizacion-tuitera-apoyo-a-milei-y-su-rol-como-tecno-magnate-latino/",
+   "fecha": "2026-10-30T04:47:59Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Cuántas onzas hay, dónde están y la estrategia “zero cost collar”: 20 frases de Santiago Bausili sobre el polémico oro del BCRA",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/30/cuantas-onzas-hay-donde-estan-y-la-estrategia-zero-cost-collar-20-frases-de-santiago-bausili-sobre-el-polemico-oro-del-bcra/",
+   "fecha": "2026-10-30T04:47:48Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "La consultora que más sigue la City porteña alertó por el esquema cambiario: la contradicción entre el dólar bajo y el riesgo país alto",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/30/la-consultora-que-mas-sigue-la-city-portena-alerto-por-el-esquema-cambiario-la-contradiccion-entre-el-dolar-bajo-y-el-riesgo-pais-alto/",
+   "fecha": "2026-10-30T04:47:38Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "La otra cara del boom minero: las provincias que buscan quedarse con una parte del negocio sin tener grandes yacimientos",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/30/la-otra-cara-del-boom-minero-las-provincias-que-buscan-quedarse-con-una-parte-del-negocio-sin-tener-grandes-yacimientos/",
+   "fecha": "2026-10-30T04:47:28Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El impacto del contrabando: el 60% de las empresas están afectadas y las pérdidas fiscales suman USD 2.300 millones al año",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/30/el-impacto-del-contrabando-el-60-de-las-empresas-estan-afectadas-y-las-perdidas-fiscales-suman-usd-2300-millones-al-ano/",
+   "fecha": "2026-10-30T04:47:19Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Los bonos revivieron y bajó el riesgo país en medio de otra caída del real, una crisis cripto por un hackeo y el balance de una bigtech",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/30/los-bonos-revivieron-y-bajo-el-riesgo-pais-en-medio-de-otra-caida-del-real-una-crisis-cripto-por-un-hackeo-y-el-balance-de-una-bigtech/",
+   "fecha": "2026-10-30T04:47:06Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Oficializaron la renuncia de Daniel González como secretario de Coordinación de Energía y Minería",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/30/oficializaron-la-renuncia-de-daniel-gonzalez-como-secretario-de-coordinacion-de-energia-y-mineria/",
+   "fecha": "2026-10-30T04:43:39Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El Gobierno postergó hasta diciembre la suba de los impuestos a los combustibles",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/el-gobierno-postergo-hasta-diciembre-la-suba-de-los-impuestos-a-los-combustibles-nid30102026/",
+   "fecha": "2026-10-30T04:42:11Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "El mercado de criptomonedas cayó tras el informe de Binance sobre el hackeo a la plataforma: bitcoin y BNB se deprecian",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/30/el-mercado-de-criptomonedas-cayo-tras-el-informe-de-binance-sobre-el-hackeo-a-la-plataforma-el-bitcoin-y-bnb-se-deprecian/",
+   "fecha": "2026-10-30T03:40:43Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Binance investiga un hackeo que podría superar los USD 6.000 millones: retiros suspendidos y fuerte caída del bitcoin",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/30/binance-investiga-posible-hackeo-de-mas-de-usd-5000-millones-bloqueos-retiros-suspendidos-y-fuerte-caida-del-precio-de-bitcoin/",
-   "fecha": "2026-10-30T00:23:23Z",
+   "fecha": "2026-10-30T03:34:51Z",
    "tema": "mercados"
+  },
+  {
+   "titulo": "Informe oficial: ya se evacuaron 147.500 vacunos y búfalos de las zonas inundadas del Litoral",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/informe-oficial-ya-se-evacuaron-147500-bovinos-y-bufalos-de-las-zonas-inundadas-del-litoral-nid29102026/",
+   "fecha": "2026-10-30T03:13:40Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La desesperación de un productor que perdió casi todas sus ovejas por un ataque de perros",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/llore-grite-y-me-frustre-los-perros-atacaron-su-campo-y-perdio-casi-todas-sus-ovejas-nid29102026/",
+   "fecha": "2026-10-30T03:12:49Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Una empresa vinculada a Vicentin, al borde de quedarse sin luz por una deuda de más de $4600 millones",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/una-empresa-vinculada-a-vicentin-al-borde-de-quedarse-sin-luz-por-una-deuda-de-mas-de-4600-millones-nid29102026/",
+   "fecha": "2026-10-30T03:11:50Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Binance investiga un posible hackeo tras la salida de miles de millones de dólares: “Problema de seguridad”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/binance-investiga-un-posible-hackeo-tras-la-salida-de-casi-3000-millones-de-dolares-problema-de-nid29102026/",
+   "fecha": "2026-10-30T03:08:38Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Cómo fue el robo por US$6300 millones a Binance que puso patas arriba a todo el mundo cripto",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/tecnologia/como-fue-el-robo-por-us6300-millones-a-binance-que-puso-patas-arriba-a-todo-el-mundo-cripto-nid29102026/",
+   "fecha": "2026-10-30T02:44:04Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Daniel González, a días de renunciar a su cargo en el Gobierno: “El RIGI no puede  solucionar todos los problemas de los argentinos”",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/30/daniel-gonzalez-a-dias-de-renunciar-a-su-cargo-en-el-gobierno-el-rigi-no-puede-solucionar-todos-los-problemas-de-los-argentinos/",
+   "fecha": "2026-10-30T01:41:15Z",
+   "tema": "politica"
   },
   {
    "titulo": "Ronda RIGI: la UIA pidió trabajar para que toda la cadena de valor sea competitiva",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/29/ronda-rigi-la-uia-advirtio-que-las-grandes-inversiones-no-alcanzan-y-pidio-fortalecer-a-los-proveedores-locales/",
    "fecha": "2026-10-30T00:15:46Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Binance investiga un posible hackeo tras la salida de miles de millones de dólares: “Problema de seguridad”",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/binance-investiga-un-posible-hackeo-tras-la-salida-de-casi-3000-millones-de-dolares-problema-de-nid29102026/",
-   "fecha": "2026-10-29T23:57:51Z",
    "tema": "otros"
   },
   {
@@ -137,18 +235,18 @@
    "tema": "mercados"
   },
   {
-   "titulo": "Una empresa vinculada a Vicentin, al borde de quedarse sin luz por una deuda de más de $4600 millones",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/una-empresa-vinculada-a-vicentin-al-borde-de-quedarse-sin-luz-por-una-deuda-de-mas-de-4600-millones-nid29102026/",
-   "fecha": "2026-10-29T22:35:40Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "Ante la recesión, Caputo se anima a una herejía",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/ante-la-recesion-caputo-se-anima-a-una-herejia-nid29102026/",
    "fecha": "2026-10-29T22:32:12Z",
    "tema": "politica"
+  },
+  {
+   "titulo": "ARCA controla las transferencias en noviembre: desde qué monto y qué pasa si lo superás",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/467865-arca-vigila-transferencias-noviembre-2026-a-partir-de-que-monto",
+   "fecha": "2026-10-29T22:30:00Z",
+   "tema": "otros"
   },
   {
    "titulo": "El gobierno de Trump anticipó a empresas estadounidenses que habrá más financiamiento para proyectos en la Argentina",
@@ -158,25 +256,11 @@
    "tema": "politica"
   },
   {
-   "titulo": "ARCA controla las transferencias en noviembre: desde qué monto y qué pasa si lo superás",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/467865-a-partir-de-que-monto-arca-vigila-las-transferencias-en-noviembre-2026",
-   "fecha": "2026-10-29T22:05:00Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "El presidente del BCRA explicó como podría usar los swap con China y EEUU en 2027 y volvió a hablar del oro: “No tenemos nada en Inglaterra”",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/29/el-presidente-del-bcra-explico-como-podria-usar-los-swap-con-china-y-eeuu-y-volvio-a-hablar-del-oro-no-tenemos-nada-en-inglaterra/",
    "fecha": "2026-10-29T22:04:05Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "Informe oficial: ya se evacuaron 147.500 vacunos y búfalos de las zonas inundadas del Litoral",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/informe-oficial-ya-se-evacuaron-147500-bovinos-y-bufalos-de-las-zonas-inundadas-del-litoral-nid29102026/",
-   "fecha": "2026-10-29T22:00:48Z",
-   "tema": "otros"
   },
   {
    "titulo": "Bausili dijo que no tiene una \"proyección de corrida\" para 2027 y habló del oro del BCRA",
@@ -212,13 +296,6 @@
    "url": "https://www.infobae.com/economia/2026/10/29/el-dolar-bajo-en-el-mercado-local-mientras-que-en-brasil-volvio-a-subir-frente-al-real/",
    "fecha": "2026-10-29T20:48:33Z",
    "tema": "dolar"
-  },
-  {
-   "titulo": "La desesperación de un productor que perdió casi todas sus ovejas por un ataque de perros",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/llore-grite-y-me-frustre-los-perros-atacaron-su-campo-y-perdio-casi-todas-sus-ovejas-nid29102026/",
-   "fecha": "2026-10-29T20:44:51Z",
-   "tema": "otros"
   },
   {
    "titulo": "Cómo invertir desde $25.000 en Mercado Pago para apostar a su crecimiento en el país",
@@ -473,39 +550,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "IA contra la violencia digital: nace alIAda, la plataforma que busca proteger y potenciar a las políticas mujeres en Argentina",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/tecnologia/ia-contra-la-violencia-digital-nace-aliada-la-plataforma-que-busca-proteger-y-potenciar-a-las-nid29102026/",
-   "fecha": "2026-10-29T16:35:55Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Los dos escenarios de Dante Sica para 2027: 70% de chances de crecimiento y 30% de probabilidad de caída del PBI",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/los-dos-escenarios-dante-sica-2027-70-chances-crecimiento-y-30-probabilidad-caida-del-pbi-n6339341",
    "fecha": "2026-10-29T16:10:00Z",
    "tema": "actividad"
-  },
-  {
-   "titulo": "El CEO de YPF les anticipó a los inversores que se llevarán una “sorpresa” en 2027",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/el-ceo-de-ypf-les-anticipo-a-los-inversores-que-se-llevaran-una-sorpresa-en-2027-nid29102026/",
-   "fecha": "2026-10-29T16:09:13Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Las fintech apuntan al negocio del crédito y personalizan al máximo sus servicios gracias a la IA",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/29/las-fintech-apuntan-al-negocio-del-credito-y-personalizan-al-maximo-sus-servicios-gracias-a-la-ia/",
-   "fecha": "2026-10-29T16:07:42Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Comenzó la primera ronda de negocios del RIGI: los sectores “estrella” de la economía buscan sumar proveedores locales",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/29/comenzo-la-primera-ronda-de-negocios-del-rigi-los-sectores-estrella-de-la-economia-buscan-sumar-proveedores-locales/",
-   "fecha": "2026-10-29T16:05:45Z",
-   "tema": "otros"
   },
   {
    "titulo": "Millones en el banco y discurso de odio: el alto costo de la nueva faceta política de Nicki Minaj",
@@ -515,39 +564,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "Crisis en una reconocida fábrica de tractores: deuda por $1.000 millones, sueldos impagos y la búsqueda de un inversor",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/29/crisis-en-una-reconocida-fabrica-de-tractores-deuda-por-1000-millones-sueldos-impagos-y-la-busqueda-de-un-inversor/",
-   "fecha": "2026-10-29T15:44:33Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Vaca Muerta: un puerto que exportó hierro y estuvo 30 años abandonado ahora renace como la gran puerta de salida del petróleo argentino",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/29/vaca-muerta-un-puerto-que-exporto-hierro-y-estuvo-30-anos-abandonado-ahora-renace-como-la-gran-puerta-de-salida-del-petroleo-argentino/",
-   "fecha": "2026-10-29T15:31:51Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Por que se desploman 12% las acciones de Google en Wall Street",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/29/por-que-se-desploman-12-las-acciones-de-google-en-wall-street/",
-   "fecha": "2026-10-29T15:28:44Z",
-   "tema": "mercados"
-  },
-  {
    "titulo": "Furor por Halloween en Argentina: cuánto cuesta decorar la casa y armar un disfraz",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/furor-halloween-argentina-cuanto-cuesta-decorar-la-casa-y-armar-un-disfraz-n6339335",
    "fecha": "2026-10-29T15:26:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Dante Sica: “Toyota no va a dejar de vender Hilux ni hacer una inversión en Argentina porque Milei no se hable con Lula”",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/29/dante-sica-toyota-no-va-a-dejar-de-vender-hilux-ni-hacer-una-inversion-en-argentina-porque-milei-no-se-hable-con-lula/",
-   "fecha": "2026-10-29T15:21:23Z",
-   "tema": "politica"
   },
   {
    "titulo": "El consumo de carne vacuna cayó al nivel más bajo de la historia: cuáles son las causas del retroceso",
@@ -576,27 +597,6 @@
    "url": "https://www.iprofesional.com/negocios/467808-argentina-completa-la-compra-de-helicopteros-militares-clave",
    "fecha": "2026-10-29T15:06:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "El FMI se mostró confiado en que las reformas de la Argentina permitirán transformar la estabilización en crecimiento y empleo",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/29/el-fmi-se-mostro-confiado-en-que-las-reformas-de-la-argentina-permitiran-transformar-la-estabilizacion-en-crecimiento-y-empleo/",
-   "fecha": "2026-10-29T15:02:43Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "La economía de Estados Unidos creció un 3,4 % interanual en el tercer trimestre, su mayor avance en un año",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/estados-unidos/2026/10/29/la-economia-de-estados-unidos-crecio-un-34-interanual-en-el-tercer-trimestre-su-mayor-avance-en-un-ano/",
-   "fecha": "2026-10-29T14:45:37Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Caputo: “Apuntamos a que para 2031 hayamos devuelto al sector privado USD 500.000 millones por baja de impuestos”",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/29/caputo-apuntamos-a-que-para-2031-hayamos-devuelto-al-sector-privado-usd-500000-millones-por-baja-de-impuestos/",
-   "fecha": "2026-10-29T14:38:27Z",
-   "tema": "politica"
   },
   {
    "titulo": "El BCRA lleva 3 días sin comprar dólares y el mercado identificó 4 factores",
