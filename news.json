@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-31T04:54:03.711177Z",
+ "actualizado": "2026-10-31T14:53:27.060466Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -61,6 +61,195 @@
  ],
  "items": [
   {
+   "titulo": "Elecciones en Estados Unidos: qué espera Wall Street y en qué Cedears invertir antes de los comicios de medio término",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/elecciones-en-estados-unidos-que-espera-wall-street-y-en-que-cedears-invertir-antes-de-los-comicios-nid31102026/",
+   "fecha": "2026-10-31T14:52:05Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Santos Vega: el mítico payador que enfrentó al diablo",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/santos-vega-el-mitico-payador-admirado-por-escritores-y-gauchos-que-enfrento-al-diablo-nid31102026/",
+   "fecha": "2026-10-31T14:51:22Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El Niño no tendrá un desarrollo parejo en todo el país",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/el-nino-no-tendra-un-desarrollo-parejo-en-todo-el-territorio-nid31102026/",
+   "fecha": "2026-10-31T14:46:08Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Plantium-Gentec, un ícono de la innovación en el agro, despidió a casi 100 empleados y se achica",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/no-puedo-mas-una-reconocida-empresa-de-innovacion-del-agro-despidio-a-casi-100-empleados-y-se-achica-nid30102026/",
+   "fecha": "2026-10-31T14:26:53Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Dura crítica de Melconian a Milei: del “cada vez que habla le creen poco” al problema del consumo",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/dura-critica-de-melconian-a-milei-del-cada-vez-que-habla-le-creen-poco-al-problema-del-consumo-nid31102026/",
+   "fecha": "2026-10-31T14:22:58Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Una violenta tormenta con granizo sorprendió en una región golpeada por otro fenómeno: la falta de sol",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/una-violenta-tormenta-con-granizo-sorprendio-en-una-region-golpeada-por-otro-fenomeno-la-falta-de-nid30102026/",
+   "fecha": "2026-10-31T14:22:31Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Calabazas de Halloween para niños: cuánto salen y dónde conseguirlas en la Argentina",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/calabazas-de-halloween-para-ninos-cuanto-salen-y-donde-conseguirlas-en-la-argentina-nid27102026/",
+   "fecha": "2026-10-31T13:36:50Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "“Ya no puedo seguir”: una reconocida empresa de tecnología para el agro cerró su planta y despidió a casi 100 empleados",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/31/ya-no-puedo-seguir-una-reconocida-empresa-de-tecnologia-para-el-agro-cerro-su-planta-y-despidio-a-casi-100-empleados/",
+   "fecha": "2026-10-31T13:31:41Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "La demanda de dólares sigue elevada: los argentinos compraron US$3410 millones en septiembre",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/la-demanda-de-dolares-sigue-elevada-los-argentinos-compraron-us3410-millones-en-septiembre-nid30102026/",
+   "fecha": "2026-10-31T13:26:27Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Desde que asumió el gobierno de Javier Milei, más de 23.400 personas dejaron de trabajar para empresas del Estado",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/31/desde-que-asumio-el-gobierno-de-javier-milei-mas-de-23400-personas-dejaron-de-trabajar-para-empresas-del-estado/",
+   "fecha": "2026-10-31T12:49:54Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Chicharrita y cogollero: monitorear en el lote para no decidir desde el miedo",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/agricultura/chicharrita-y-cogollero-monitorear-en-el-lote-para-no-decidir-desde-el-miedo-nid31102026/",
+   "fecha": "2026-10-31T12:00:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "AUH de ANSES: qué familias pueden sumar $60.203 extra en noviembre",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/467658-auh-de-anses-que-familias-pueden-sumar-60-203-extra-en-noviembre",
+   "fecha": "2026-10-31T11:18:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "AUH de ANSES: qué deben hacer las familias en noviembre para cobrar el 20% retenido",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/467659-auh-de-anses-que-deben-hacer-las-familias-en-noviembre-para-cobrar-el-20-por-ciento-retenido",
+   "fecha": "2026-10-31T11:13:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Crédito hipotecario UVA: qué pasa si dejás de pagar una cuota",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/467601-credito-hipotecario-uva-que-pasa-si-dejas-de-pagar-una-cuota",
+   "fecha": "2026-10-31T11:10:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Pensión para madres de 7 hijos y AUH: qué dice ANSES y qué resolvió la Justicia",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/467736-pension-para-madres-de-7-hijos-y-auh-que-dice-anses-y-que-resolvio-la-justicia",
+   "fecha": "2026-10-31T11:08:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Lluvia de dólares crece con el comercio exterior pero no alcanza para bajar riesgo país",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/466973-lluvia-de-dolares-no-alcanza-para-bajar-riesgo-pais",
+   "fecha": "2026-10-31T11:01:00Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Por qué la caída del real brasileño frente al dólar no va a castigar al mercado argentino",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/467941-por-que-caida-del-real-brasileno-frente-al-dolar-no-condenara-a-la-argentina",
+   "fecha": "2026-10-31T10:55:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Dólar hoy y dólar blue hoy: a cuánto cotiza este sábado 31 de octubre",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/dolar/dolar-hoy-y-dolar-blue-hoy-a-cuanto-cotiza-este-sabado-31-de-octubre-nid31102026/",
+   "fecha": "2026-10-31T10:02:30Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Maíz tardío: el cultivo que desafía los límites y apuesta por la tecnología",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/maiz-tardio-el-cultivo-que-desafia-los-limites-y-apuesta-por-la-tecnologia-nid31102026/",
+   "fecha": "2026-10-31T10:00:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La Argentina se divorcia de la tendencia bajista de Chicago",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/la-argentina-se-divorcia-de-la-tendencia-bajista-de-chicago-nid31102026/",
+   "fecha": "2026-10-31T09:45:55Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "“Basta de inversiones”: un frigorífico no renovó 80 contratados, su gerente lo lamentó y habló de las importaciones desde Brasil",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/basta-de-inversiones-un-frigorifico-no-renovo-80-contratados-su-gerente-lo-lamento-y-hablo-de-las-nid30102026/",
+   "fecha": "2026-10-31T09:44:08Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "US$3791 millones: vuelan las exportaciones de carne vacuna y van rumbo a otro récord",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/us3791-millones-vuelan-en-dolares-las-exportaciones-de-carne-vacuna-y-van-camino-a-marcar-otro-nid30102026/",
+   "fecha": "2026-10-31T09:38:46Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Cuando la IA es solo discurso",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/negocios/cuando-la-ia-es-solo-discurso-nid31102026/",
+   "fecha": "2026-10-31T09:27:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Cómo ganar con la IA en 2027",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/negocios/como-ganar-con-la-ia-en-2027-nid31102026/",
+   "fecha": "2026-10-31T09:23:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Vandalismo rural: un paso adelante del Congreso en la agenda agropecuaria",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/vandalismo-rural-un-paso-adelante-del-congreso-en-la-agenda-agropecuaria-nid31102026/",
+   "fecha": "2026-10-31T08:55:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La publicidad entra en la era del aviso personalizado",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/negocios/la-publicidad-entra-en-la-era-del-aviso-personalizado-nid31102026/",
+   "fecha": "2026-10-31T08:39:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El riesgo país subió casi 30% en octubre y cerró el mes cerca de los 790 puntos",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/el-riesgo-pais-sube-mas-de-20-en-octubre-y-cierra-cerca-de-los-750-puntos-nid30102026/",
+   "fecha": "2026-10-31T06:37:27Z",
+   "tema": "mercados"
+  },
+  {
    "titulo": "Ganadores y perdedores del efecto Brasil: los tres sectores argentinos más amenazados y los que podrían salir favorecidos",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/31/ganadores-y-perdedores-del-efecto-brasil-los-tres-sectores-argentinos-mas-amenazados-y-los-que-podrian-salir-favorecidos/",
@@ -121,20 +310,6 @@
    "medio": "Infobae",
    "url": "https://www.infobae.com/opinion/2026/10/31/el-impacto-del-nuevo-congreso-en-la-agenda-de-trump/",
    "fecha": "2026-10-31T03:05:52Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Una violenta tormenta con granizo sorprendió en una región golpeada por otro fenómeno: la falta de sol",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/una-violenta-tormenta-con-granizo-sorprendio-en-una-region-golpeada-por-otro-fenomeno-la-falta-de-nid30102026/",
-   "fecha": "2026-10-31T02:59:28Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "“No puedo más”: Plantium-Gentec, un ícono de la innovación en el agro, despidió a casi 100 empleados y se achica",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/no-puedo-mas-una-reconocida-empresa-de-innovacion-del-agro-despidio-a-casi-100-empleados-y-se-achica-nid30102026/",
-   "fecha": "2026-10-31T02:57:38Z",
    "tema": "otros"
   },
   {
@@ -229,13 +404,6 @@
    "tema": "politica"
   },
   {
-   "titulo": "“Basta de inversiones”: un frigorífico no renovó 80 contratados, su gerente lo lamentó y habló de las importaciones desde Brasil",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/basta-de-inversiones-un-frigorifico-no-renovo-80-contratados-su-gerente-lo-lamento-y-hablo-de-las-nid30102026/",
-   "fecha": "2026-10-30T22:13:41Z",
-   "tema": "empresas"
-  },
-  {
    "titulo": "El riesgo país subió 5,5% y volvió a ubicarse en la zona de los 800 puntos después de un año",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/30/el-riesgo-pais-subio-55-y-volvio-a-ubicarse-en-la-zona-de-los-800-puntos-despues-de-un-ano/",
@@ -255,13 +423,6 @@
    "url": "https://www.iprofesional.com/finanzas/467452-allaria-marca-3-acciones-lideres-que-tienen-menos-margen-para-subir",
    "fecha": "2026-10-30T21:55:00Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "La demanda de dólares sigue elevada: los argentinos compraron US$3410 millones en septiembre",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/la-demanda-de-dolares-sigue-elevada-los-argentinos-compraron-us3410-millones-en-septiembre-nid30102026/",
-   "fecha": "2026-10-30T21:49:38Z",
-   "tema": "otros"
   },
   {
    "titulo": "Acciones cayeron hasta 29% y para noviembre lideran las preferencias YPF y Pampa Energía",
@@ -327,13 +488,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Dos motores del modelo libertario empiezan a arrancar, pero en el mercado aún apuestan por la cautela",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/dos-motores-del-modelo-libertario-empiezan-a-arrancar-pero-en-el-mercado-aun-apuestan-por-la-cautela-nid30102026/",
-   "fecha": "2026-10-30T20:59:26Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Manuel Antelo explicó por qué Argentina no puede competir en la industria de los autos",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/autos/467959-manuel-antelo-explico-por-que-argentina-no-puede-competir-en-industria-de-autos",
@@ -348,32 +502,11 @@
    "tema": "mercados"
   },
   {
-   "titulo": "Seguridad: el Gobierno y la Sociedad Rural Argentina impulsan una mesa nacional para combatir los delitos en el campo",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/seguridad-el-gobierno-y-la-sociedad-rural-argentina-impulsan-una-mesa-nacional-para-combatir-los-nid30102026/",
-   "fecha": "2026-10-30T20:22:30Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "El BCRA volvió a comprar y en octubre sumó casi tres veces más dólares que el mes pasado",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/467957-bcra-volvio-a-comprar-y-en-octubre-sumo-casi-tres-veces-mas-de-dolares-que-en-septiembre",
    "fecha": "2026-10-30T20:22:00Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "US$3791 millones: vuelan las exportaciones de carne vacuna y van rumbo a otro récord",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/us3791-millones-vuelan-en-dolares-las-exportaciones-de-carne-vacuna-y-van-camino-a-marcar-otro-nid30102026/",
-   "fecha": "2026-10-30T20:19:44Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Dólar hoy y dólar blue, EN VIVO: a cuánto cotiza el oficial y cuál es el precio del paralelo este viernes 30 de octubre, minuto a minuto",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/dolar/dolar-hoy-y-dolar-blue-en-vivo-a-cuanto-cotiza-el-oficial-y-cual-es-el-precio-del-paralelo-este-nid30102026/",
-   "fecha": "2026-10-30T20:02:17Z",
-   "tema": "dolar"
   },
   {
    "titulo": "Cuánto cuesta la pelota del Superclásico Boca vs. River y dónde comprar la Argentum Gambeta Derbi",
@@ -390,32 +523,11 @@
    "tema": "mercados"
   },
   {
-   "titulo": "El riesgo país subió casi 30% en octubre y cerró el mes cerca de los 790 puntos",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/el-riesgo-pais-sube-mas-de-20-en-octubre-y-cierra-cerca-de-los-750-puntos-nid30102026/",
-   "fecha": "2026-10-30T19:46:13Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Por qué sube el riesgo país",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/por-que-sube-el-riesgo-pais-nid30102026/",
-   "fecha": "2026-10-30T19:38:33Z",
-   "tema": "mercados"
-  },
-  {
    "titulo": "El hackeo a Binance: cómo operó el ataque millonario y quiénes están bajo sospecha",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/30/el-hackeo-a-binance-como-opero-el-ataque-millonario-y-quienes-estan-bajo-sospecha/",
    "fecha": "2026-10-30T19:35:19Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Tras el hackeo histórico a Binance, la cotización del bitcoin bajó 5% en un día",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/tecnologia/tras-el-hackeo-historico-a-binance-la-cotizacion-del-bitcoin-bajo-5-en-un-dia-nid30102026/",
-   "fecha": "2026-10-30T19:15:01Z",
-   "tema": "mercados"
   },
   {
    "titulo": "Japón desembarca en San Juan con camiones gigantes para una mina millonaria",
@@ -429,27 +541,6 @@
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/negocios/467945-cerro-fabrica-de-maquinaria-agricola-plantium-y-dejo-sin-trabajo-a-mas-de-100-personas",
    "fecha": "2026-10-30T19:01:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Modo Halloween: así se puede activar en WhatsApp 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/tecnologia/modo-halloween-asi-se-puede-activar-en-whatsapp-2026-nid30102026/",
-   "fecha": "2026-10-30T18:51:13Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Vacunos: cierre de semana con altibajos en el Mercado Agroganadero de Cañuelas",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/vacunos-cierre-de-semana-con-altibajos-en-el-mercado-agroganadero-de-canuelas-nid30102026/",
-   "fecha": "2026-10-30T18:50:28Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Cómo podrían los ladrones “lavar” los miles de millones de dólares en criptomonedas que le robaron a Binance",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/tecnologia/como-podrian-los-ladrones-lavar-los-miles-de-millones-de-dolares-en-criptomonedas-que-le-robaron-a-nid30102026/",
-   "fecha": "2026-10-30T18:43:34Z",
    "tema": "otros"
   },
   {
@@ -467,45 +558,10 @@
    "tema": "otros"
   },
   {
-   "titulo": "Todos los aumentos que llegan en noviembre: cuánto subirán la luz, el gas, el transporte, las prepagas y el alquiler",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/todos-los-aumentos-que-llegan-en-noviembre-cuanto-subiran-la-luz-el-gas-el-transporte-la-prepagas-y-nid30102026/",
-   "fecha": "2026-10-30T18:37:27Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Estimaciones privadas anticipan que en septiembre bajó la morosidad y hubo una mejora en los créditos a las familias",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/estimaciones-privadas-anticipan-que-en-septiembre-bajo-la-morosidad-y-hubo-una-mejora-en-los-nid30102026/",
-   "fecha": "2026-10-30T18:32:01Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Pesar las valijas, volar sobre cerros pelados y aterrizar en un salar: así es trabajar en una mina de litio en la Puna",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/pesar-las-valijas-volar-sobre-cerros-pelados-y-aterrizar-en-un-salar-asi-es-trabajar-en-una-mina-de-nid30102026/",
-   "fecha": "2026-10-30T18:23:57Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El gigante chino CATL, el mayor fabricante mundial de baterías, desembarcó en el país con la mira en la minería",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/el-gigante-chino-catl-el-mayor-fabricante-mundial-de-baterias-desembarco-en-el-pais-con-la-mira-en-nid30102026/",
-   "fecha": "2026-10-30T18:20:50Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Binance en la Argentina: qué impacto local ven los expertos y qué recomiendan a los usuarios de la plataforma hackeada",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/30/binance-en-la-argentina-que-impacto-local-ven-los-expertos-y-que-recomiendan-a-los-usuarios-de-la-plataforma-hackeada/",
    "fecha": "2026-10-30T18:05:50Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Mercado de carbono: fuerte expectativa en el agro luego de la media sanción en el Senado a una iniciativa que puede generar millones",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/mercado-de-carbono-fuerte-expectativa-en-el-agro-luego-de-la-media-sancion-en-el-senado-a-una-nid30102026/",
-   "fecha": "2026-10-30T18:02:01Z",
    "tema": "otros"
   },
   {
@@ -521,20 +577,6 @@
    "url": "https://www.iprofesional.com/economia/467939-banco-central-elimina-freno-monetario-cuando-se-notara-economia-octubre-2026",
    "fecha": "2026-10-30T17:40:00Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "Las nuevas jubilaciones cayeron 43% en 2026 con el fin de la moratoria",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/467921-las-nuevas-jubilaciones-cayeron-43-por-ciento-en-2026-con-el-fin-de-la-moratoria",
-   "fecha": "2026-10-30T17:28:00Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Qué provincias tienen las cuentas más sólidas y cuáles enfrentan dificultades fiscales",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/467928-que-provincias-tienen-las-cuentas-mas-solidas-y-cuales-enfrentan-dificultades-fiscales",
-   "fecha": "2026-10-30T17:28:00Z",
-   "tema": "otros"
   },
   {
    "titulo": "El triunfo de Lula puede mejorar el acceso de los productos argentinos al mercado de EEUU, según la Bolsa de Cereales",
@@ -572,13 +614,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "La venta de Supermercados DIA entra en la recta final: quién es el principal candidato para quedarse con la cadena",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/30/la-venta-de-supermercados-dia-entra-en-la-recta-final-quien-es-el-principal-candidato-para-quedarse-con-la-cadena/",
-   "fecha": "2026-10-30T16:07:14Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Francia alerta de que su economía está \"paralizada\" y podría \"estrellarse\" si no ordena las cuentas públicas",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/francia-alerta-que-su-esta-paralizada-y-podria-estrellarse-si-no-ordena-las-cuentas-publicas-n6339782",
@@ -586,46 +621,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "Habló el CEO de Binance tras el hackeo millonario: \"Sus activos están seguros\"",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/30/hablo-el-ceo-de-binance-tras-el-hackeo-millonario-sus-activos-estan-seguros/",
-   "fecha": "2026-10-30T15:42:08Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El FMI elogia a Caputo pero le cobra cada vez más caro y llega un vencimiento millonario",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/467754-fmi-vencimiento-intereses-altos-campana-electoral-complican-milei-octubre-2026",
-   "fecha": "2026-10-30T15:28:00Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "Plazo fijo: cuánto ganás si depositás $1.500.000 a 30 días",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/plazo-fijo-cuanto-ganas-si-depositas-1500000-30-dias-n6339025",
    "fecha": "2026-10-30T15:00:00Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "CAME reclamó una nueva agenda para las pymes ante la falta de respuestas oficiales",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/467919-came-advirtio-que-el-gobierno-no-responde-a-los-reclamos-de-las-pymes",
-   "fecha": "2026-10-30T14:27:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Cae 36% la producción electrónica por menos ventas e incertidumbre",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/energia/467917-cae-la-produccion-electronica-por-menos-ventas-e-incertidumbre",
-   "fecha": "2026-10-30T14:16:00Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "A la espera del papa León XIV, FADEA sigue su achique feroz y con operarios que son Uber",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/negocios/467911-a-la-espera-del-papa-leon-xiv-fadea-sigue-su-achique-feroz",
-   "fecha": "2026-10-30T13:40:00Z",
-   "tema": "otros"
   },
   {
    "titulo": "ARCA prorrogó el plazo para entrar al plan especial de pago para pymes hasta el 30 de diciembre",
