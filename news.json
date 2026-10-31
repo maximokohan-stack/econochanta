@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-31T00:13:29.053282Z",
+ "actualizado": "2026-10-31T04:54:03.711177Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -60,6 +60,97 @@
   }
  ],
  "items": [
+  {
+   "titulo": "Ganadores y perdedores del efecto Brasil: los tres sectores argentinos más amenazados y los que podrían salir favorecidos",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/31/ganadores-y-perdedores-del-efecto-brasil-los-tres-sectores-argentinos-mas-amenazados-y-los-que-podrian-salir-favorecidos/",
+   "fecha": "2026-10-31T03:09:49Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El Gobierno gestiona créditos con garantía multilateral para completar su financiamiento en 2026 y 2027",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/31/el-gobierno-gestiona-creditos-con-garantia-multilateral-para-completar-su-financiamiento-en-2026-y-2027/",
+   "fecha": "2026-10-31T03:09:13Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Por qué la frase de Horacio Marín sobre la inflación sorprendió a Wall Street, mientras YPF sostiene el buffer de precios",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/31/por-que-la-frase-de-horacio-marin-sobre-la-inflacion-sorprendio-a-wall-street-mientras-ypf-sostiene-el-buffer-de-precios/",
+   "fecha": "2026-10-31T03:07:57Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Cronología de un hackeo histórico: paso a paso, qué se sabe del caso Binance, el mayor robo de la historia cripto",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/31/cronologia-de-un-hackeo-historico-paso-a-paso-que-se-sabe-del-caso-binance-el-mayor-robo-de-la-historia-cripto/",
+   "fecha": "2026-10-31T03:07:38Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Números rojos en medio del contagio global: las acciones argentinas tuvieron 5 días de caídas consecutivas y se disparó el riesgo país",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/31/numeros-rojos-en-medio-del-contagio-global-las-acciones-argentinas-tuvieron-5-dias-de-caidas-consecutivas-y-se-disparo-el-riesgo-pais/",
+   "fecha": "2026-10-31T03:07:14Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Sigue para abajo la venta de autos: los patentamientos cayeron en octubre 8,4% contra el mes anterior y 12,8% en la cuenta interanual",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/31/sigue-para-abajo-la-venta-de-autos-los-patentamientos-cayeron-en-octubre-84-contra-el-mes-anterior-y-128-en-la-cuenta-interanual/",
+   "fecha": "2026-10-31T03:06:52Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Sin crédito no hay transición productiva",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/10/31/sin-credito-no-hay-transicion-productiva/",
+   "fecha": "2026-10-31T03:06:30Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Una economía a dos velocidades: lo que enseña el mundo sobre la convergencia",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/10/31/una-economia-a-dos-velocidades-lo-que-ensena-el-mundo-sobre-la-convergencia/",
+   "fecha": "2026-10-31T03:06:10Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El impacto del nuevo Congreso en la agenda de Trump",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/10/31/el-impacto-del-nuevo-congreso-en-la-agenda-de-trump/",
+   "fecha": "2026-10-31T03:05:52Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Una violenta tormenta con granizo sorprendió en una región golpeada por otro fenómeno: la falta de sol",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/una-violenta-tormenta-con-granizo-sorprendio-en-una-region-golpeada-por-otro-fenomeno-la-falta-de-nid30102026/",
+   "fecha": "2026-10-31T02:59:28Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "“No puedo más”: Plantium-Gentec, un ícono de la innovación en el agro, despidió a casi 100 empleados y se achica",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/no-puedo-mas-una-reconocida-empresa-de-innovacion-del-agro-despidio-a-casi-100-empleados-y-se-achica-nid30102026/",
+   "fecha": "2026-10-31T02:57:38Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Los 4 ejes de la Ley Integral Pyme: la propuesta para frenar el cierre de empresas que no encuentra interlocutor oficial",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/los-4-ejes-la-ley-integral-pyme-la-propuesta-frenar-el-cierre-empresas-que-no-encuentra-interlocutor-oficial-n6339999",
+   "fecha": "2026-10-31T01:25:00Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Cambio en Maizar: un exfuncionario de Macri asumió la presidencia y pidió reglas para invertir",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/cambio-en-maizar-un-exfuncionario-de-macri-asumio-la-presidencia-y-pidio-reglas-para-invertir-nid30102026/",
+   "fecha": "2026-10-31T00:57:27Z",
+   "tema": "dolar"
+  },
   {
    "titulo": "Paritarias en concesionarias: Smata acordó un aumento trimestral del 5,06%",
    "medio": "Ámbito",
@@ -233,13 +324,6 @@
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/30/binance-prometio-un-informe-post-mortem-del-hackeo-y-dijo-cuales-son-sus-4-prioridades-urgentes-tras-el-robo-de-usd-6300-millones/",
    "fecha": "2026-10-30T21:07:13Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Una violenta tormenta con granizo sorprendió en una región golpeada por otro fenómeno: la falta de sol",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/una-violenta-tormenta-con-granizo-sorprendio-en-una-region-golpeada-por-otro-fenomeno-la-falta-de-nid30102026/",
-   "fecha": "2026-10-30T21:03:07Z",
    "tema": "otros"
   },
   {
@@ -425,13 +509,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Plazo fijo: cuál es la tasa de interés banco por banco este viernes 30 de octubre",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/plazo-fijo-cual-es-la-tasa-de-interes-banco-por-banco-este-viernes-30-de-octubre-nid30102026/",
-   "fecha": "2026-10-30T18:00:36Z",
-   "tema": "mercados"
-  },
-  {
    "titulo": "Por qué se derrumban las acciones tecnológicas de Wall Street y sacuden a los mercados del mundo",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/30/por-que-se-derrumban-las-acciones-tecnologicas-de-wall-street-y-sacuden-a-los-mercados-del-mundo/",
@@ -444,13 +521,6 @@
    "url": "https://www.iprofesional.com/economia/467939-banco-central-elimina-freno-monetario-cuando-se-notara-economia-octubre-2026",
    "fecha": "2026-10-30T17:40:00Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "Cuáles son las novedades en ofertas que propone este Cyber Monday 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/cuales-son-las-novedades-en-ofertas-que-propone-este-cyber-monday-2026-nid30102026/",
-   "fecha": "2026-10-30T17:39:03Z",
-   "tema": "otros"
   },
   {
    "titulo": "Las nuevas jubilaciones cayeron 43% en 2026 con el fin de la moratoria",
@@ -523,13 +593,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "La inflación en Italia subió al 5,4% en octubre y el PBI no creció en el tercer trimestre",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/america/mundo/2026/10/30/la-inflacion-en-italia-subio-al-54-en-octubre-y-el-pbi-no-crecio-en-el-tercer-trimestre/",
-   "fecha": "2026-10-30T15:34:33Z",
-   "tema": "inflacion"
-  },
-  {
    "titulo": "El FMI elogia a Caputo pero le cobra cada vez más caro y llega un vencimiento millonario",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/finanzas/467754-fmi-vencimiento-intereses-altos-campana-electoral-complican-milei-octubre-2026",
@@ -537,24 +600,10 @@
    "tema": "politica"
   },
   {
-   "titulo": "“A veces es muy difícil pensar en invertir” en la Argentina, aseguró una empresaria industrial",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/30/a-veces-es-muy-dificil-pensar-en-invertir-en-la-argentina-aseguro-una-empresaria-industrial/",
-   "fecha": "2026-10-30T15:01:40Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Plazo fijo: cuánto ganás si depositás $1.500.000 a 30 días",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/plazo-fijo-cuanto-ganas-si-depositas-1500000-30-dias-n6339025",
    "fecha": "2026-10-30T15:00:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Fuertes bajas en Wall Street por las dudas sobre la inversión en inteligencia artificial: Intel se desploma más del 25%",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/america/mundo/2026/10/30/fuertes-bajas-en-wall-street-por-las-dudas-sobre-la-inversion-en-inteligencia-artificial-intel-se-desploma-mas-del-25/",
-   "fecha": "2026-10-30T14:39:48Z",
    "tema": "mercados"
   },
   {
@@ -565,32 +614,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "La otra cara del boom minero: las provincias que buscan quedarse con una parte del negocio sin tener grandes yacimientos",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/30/la-otra-cara-del-boom-minero-las-provincias-que-buscan-quedarse-con-una-parte-del-negocio-sin-tener-grandes-yacimientos/",
-   "fecha": "2026-10-30T14:25:13Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Cae 36% la producción electrónica por menos ventas e incertidumbre",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/energia/467917-cae-la-produccion-electronica-por-menos-ventas-e-incertidumbre",
    "fecha": "2026-10-30T14:16:00Z",
    "tema": "actividad"
-  },
-  {
-   "titulo": "Binance creó un fondo de más de USD 6.300 millones para cubrir las pérdidas del hackeo histórico",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/30/binance-creo-un-fondo-de-mas-de-usd-6300-millones-para-cubrir-las-perdidas-del-hackeo-historico/",
-   "fecha": "2026-10-30T14:01:40Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Milei contratará una empresa para controlar las obras de las represas de Santa Cruz",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/30/milei-contratara-una-empresa-para-controlar-las-obras-de-las-represas-de-santa-cruz/",
-   "fecha": "2026-10-30T13:51:35Z",
-   "tema": "politica"
   },
   {
    "titulo": "A la espera del papa León XIV, FADEA sigue su achique feroz y con operarios que son Uber",
@@ -605,27 +633,6 @@
    "url": "https://www.ambito.com/economia/arca-prorrogo-el-plazo-entrar-al-plan-especial-pago-pymes-el-30-diciembre-n6339655",
    "fecha": "2026-10-30T13:17:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Binance admitió que recibió \"un ataque complejo\" y aseguró que los fondos de los clientes están a salvo",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/tecno/2026/10/30/binance-admitio-que-recibio-un-ataque-complejo-y-aseguro-que-los-fondos-de-los-clientes-estan-a-salvo/",
-   "fecha": "2026-10-30T13:16:26Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "ARCA anunció nuevas prórrogas para Ganancias y planes de pago: cuáles son los nuevos plazos",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/30/arca-anuncio-nuevas-prorrogas-para-ganancias-y-planes-de-pago-cuales-son-los-nuevos-plazos/",
-   "fecha": "2026-10-30T13:06:11Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Aumentan la luz y gas: cuánto van a subir las tarifas en noviembre",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/30/aumentos-de-luz-y-gas-oficializaron-las-subas-de-las-tarifas-para-el-mes-de-noviembre/",
-   "fecha": "2026-10-30T12:52:04Z",
-   "tema": "inflacion"
   },
   {
    "titulo": "La inversión real no arranca: los factores detrás de una caída que no cede y por qué demorará en recuperarse",
@@ -696,13 +703,6 @@
    "url": "https://www.ambito.com/economia/se-vende-el-triplex-ricardo-fort-belgrano-cuanto-cuesta-y-como-es-dentro-n6338791",
    "fecha": "2026-10-29T17:00:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Los dos escenarios de Dante Sica para 2027: 70% de chances de crecimiento y 30% de probabilidad de caída del PBI",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/los-dos-escenarios-dante-sica-2027-70-chances-crecimiento-y-30-probabilidad-caida-del-pbi-n6339341",
-   "fecha": "2026-10-29T16:10:00Z",
-   "tema": "actividad"
   }
  ]
 }
