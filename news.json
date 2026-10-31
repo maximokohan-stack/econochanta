@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-31T18:53:50.205851Z",
+ "actualizado": "2026-10-31T22:00:23.899764Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 19
+   "n": 15
   },
   {
    "medio": "Infobae",
@@ -60,6 +60,48 @@
   }
  ],
  "items": [
+  {
+   "titulo": "Bancos alertan que el Gobierno tiene menos dólares de lo que dice para frenar una corrida",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/467976-bancos-alertan-por-los-dolares-que-tiene-el-gobierno-para-frenar-corrida",
+   "fecha": "2026-10-31T21:20:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "La producción de gas alcanzó un récord histórico en 2026 por la explotación no convencional de Vaca Muerta",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/31/la-produccion-de-gas-alcanzo-un-record-historico-en-2026-por-la-explotacion-no-convencional-de-vaca-muerta/",
+   "fecha": "2026-10-31T21:15:50Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Un diputado opositor solicitó a la AGN una auditoría integral de la privatización de AySA antes de que pase a manos privadas",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/un-diputado-opositor-solicito-a-la-agn-una-auditoria-integral-de-la-privatizacion-de-aysa-antes-de-nid31102026/",
+   "fecha": "2026-10-31T20:26:01Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Mercado Pago, a un paso de convertirse en banco: el BCRA dio aprobación técnica a la licencia pedida por la empresa de Marcos Galperin",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/29/mercado-pago-a-un-paso-de-convertirse-en-banco-el-bcra-dio-aprobacion-tecnica-a-la-licencia-pedida-por-la-empresa-de-marcos-galperin/",
+   "fecha": "2026-10-31T19:58:53Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Las extracciones de efectivo están en su mínimo histórico: qué medios de pago ganan terreno",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/31/las-extracciones-de-efectivo-estan-en-su-minimo-historico-que-medios-de-pago-ganan-terreno/",
+   "fecha": "2026-10-31T19:54:35Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Aumenta el transporte público: cómo queda el boleto de colectivos y subte a partir del 1° de noviembre",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/aumenta-el-transporte-publico-como-queda-el-boleto-de-colectivos-y-subte-a-partir-del-1-de-noviembre-nid31102026/",
+   "fecha": "2026-10-31T19:09:30Z",
+   "tema": "otros"
+  },
   {
    "titulo": "Binance ya recompró el 90% de los activos robados por los hackers: cuándo se reanudarán los retiros",
    "medio": "Infobae",
@@ -404,13 +446,6 @@
    "tema": "inflacion"
   },
   {
-   "titulo": "Cuándo es el Cyber Monday en Argentina 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/cuando-es-el-cyber-monday-en-argentina-2026-nid30102026/",
-   "fecha": "2026-10-30T23:39:39Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Grupo financiero de Costantini recalibra su estrategia con bonos y rota cartera",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/finanzas/466961-grupo-financiero-de-costantini-recalibra-su-estrategia-con-bonos-y-rota-cartera",
@@ -465,13 +500,6 @@
    "url": "https://www.infobae.com/economia/2026/10/29/macro-private-bank-es-la-nueva-propuesta-de-banca-privada-para-clientes-premium-de-alto-patrimonio/",
    "fecha": "2026-10-30T22:28:10Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "El Banco Central compró US$1395 millones en octubre, el mayor monto de los últimos tres meses",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/el-banco-central-compro-us1395-millones-en-octubre-el-mayor-monto-de-los-ultimos-tres-meses-nid30102026/",
-   "fecha": "2026-10-30T22:21:01Z",
-   "tema": "politica"
   },
   {
    "titulo": "El riesgo país subió 5,5% y volvió a ubicarse en la zona de los 800 puntos después de un año",
@@ -572,13 +600,6 @@
    "tema": "mercados"
   },
   {
-   "titulo": "El hackeo a Binance: cómo operó el ataque millonario y quiénes están bajo sospecha",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/30/el-hackeo-a-binance-como-opero-el-ataque-millonario-y-quienes-estan-bajo-sospecha/",
-   "fecha": "2026-10-30T19:35:19Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Japón desembarca en San Juan con camiones gigantes para una mina millonaria",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/467942-japon-desembarca-en-san-juan-con-camiones-gigantes-para-mina-millonaria",
@@ -590,27 +611,6 @@
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/negocios/467945-cerro-fabrica-de-maquinaria-agricola-plantium-y-dejo-sin-trabajo-a-mas-de-100-personas",
    "fecha": "2026-10-30T19:01:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Presión sobre bonos argentinos, riesgo país y dólar, lo que viene tras medida de la Fed",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/467747-presion-sobre-bonos-riesgo-pais-y-dolar-lo-que-viene-tras-medida-de-la-fed",
-   "fecha": "2026-10-30T18:40:00Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "El robo de USD 6.000 millones a Binance sacude el mundo de las criptomonedas y atrae la atención del FBI",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/america/mundo/2026/10/30/el-robo-de-usd-6000-millones-a-binance-sacude-el-mundo-de-las-criptomonedas-y-atrae-la-atencion-del-fbi/",
-   "fecha": "2026-10-30T18:39:32Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Binance en la Argentina: qué impacto local ven los expertos y qué recomiendan a los usuarios de la plataforma hackeada",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/30/binance-en-la-argentina-que-impacto-local-ven-los-expertos-y-que-recomiendan-a-los-usuarios-de-la-plataforma-hackeada/",
-   "fecha": "2026-10-30T18:05:50Z",
    "tema": "otros"
   },
   {
@@ -668,34 +668,6 @@
    "url": "https://www.ambito.com/economia/dolares-del-colchon-arca-postergo-sexta-vez-la-presentacion-la-ddjj-ganancias-n6339476",
    "fecha": "2026-10-29T23:09:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "La mora de las familias bajó en septiembre por segundo mes consecutivo, mientras crecen las refinanciaciones",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/la-mora-las-familias-septiembre-segundo-mes-consecutivo-mientras-crecen-las-refinanciaciones-n6339478",
-   "fecha": "2026-10-29T21:32:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "La economía de EEUU creció a su ritmo más rápido en un año de la mano del consumo interno y la inversión en IA",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/la-eeuu-crecio-su-ritmo-mas-rapido-un-ano-la-mano-del-consumo-interno-y-la-inversion-ia-n6339413",
-   "fecha": "2026-10-29T20:19:00Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Plazo fijo UVA en 2026: por qué es la inversión más rentable del año en Argentina",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/plazo-fijo-uva-2026-que-es-la-inversion-mas-rentable-del-ano-argentina-n6338937",
-   "fecha": "2026-10-29T20:00:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "El BCRA prevé un \"aumento significativo\" de la actividad económica para fin de año y una mayor demanda de pesos",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/el-bcra-preve-un-aumento-significativo-la-actividad-economica-fin-ano-y-una-mayor-demanda-pesos-n6339369",
-   "fecha": "2026-10-29T19:45:00Z",
-   "tema": "inflacion"
   }
  ]
 }
