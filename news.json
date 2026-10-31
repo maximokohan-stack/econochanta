@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-31T14:53:27.060466Z",
+ "actualizado": "2026-10-31T18:53:50.205851Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 20
+   "n": 19
   },
   {
    "medio": "Infobae",
@@ -61,6 +61,62 @@
  ],
  "items": [
   {
+   "titulo": "Binance ya recompró el 90% de los activos robados por los hackers: cuándo se reanudarán los retiros",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/31/binance-ya-recompro-el-90-de-los-activos-robados-por-los-hackers-cuando-se-reanudaran-los-retiros/",
+   "fecha": "2026-10-31T18:37:56Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "A cuánto abre el dólar el lunes 2 de noviembre",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/dolar/a-cuanto-abre-el-dolar-el-lunes-2-de-noviembre-nid31102026/",
+   "fecha": "2026-10-31T17:02:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "El nuevo comunicado de Binance tras el robo de más de US$6000 millones",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/tecnologia/el-nuevo-comunicado-de-binance-tras-el-robo-de-mas-de-us6000-millones-nid31102026/",
+   "fecha": "2026-10-31T16:29:38Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Servicios al exterior: cuáles son las actividades que lideran y por qué casi 4 de cada 10 empresas frenaron proyectos",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/31/servicios-al-exterior-cuales-son-las-actividades-que-lideran-y-por-que-casi-4-de-cada-10-empresas-frenaron-proyectos/",
+   "fecha": "2026-10-31T16:06:50Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Las refinanciaciones de deuda en el Banco Nación se redujeron un 55,4% en octubre",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/las-refinanciaciones-de-deuda-en-el-banco-nacion-se-redujeron-un-554-en-octubre-nid31102026/",
+   "fecha": "2026-10-31T15:53:38Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "El Banco Central compró USD 1.395 millones en octubre y reforzó las reservas",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/31/el-banco-central-compro-usd-1395-millones-en-octubre-y-reforzo-las-reservas/",
+   "fecha": "2026-10-31T15:24:42Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Cuáles fueron los diez autos más vendidos en octubre: tres pick ups al frente y sólo uno en el top ten de los más baratos",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/10/31/cuales-fueron-los-diez-autos-mas-vendidos-en-octubre-tres-pick-ups-al-frente-y-solo-uno-en-el-top-ten-de-los-mas-baratos/",
+   "fecha": "2026-10-31T15:00:56Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Jubilados cobran con aumento en noviembre: cuánto paga ANSES con el bono de $70.000",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/467991-anses-noviembre-2026-cuanto-cobran-los-jubilados-con-aumento-y-bono",
+   "fecha": "2026-10-31T14:57:00Z",
+   "tema": "inflacion"
+  },
+  {
    "titulo": "Elecciones en Estados Unidos: qué espera Wall Street y en qué Cedears invertir antes de los comicios de medio término",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/elecciones-en-estados-unidos-que-espera-wall-street-y-en-que-cedears-invertir-antes-de-los-comicios-nid31102026/",
@@ -72,6 +128,13 @@
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/campo/santos-vega-el-mitico-payador-admirado-por-escritores-y-gauchos-que-enfrento-al-diablo-nid31102026/",
    "fecha": "2026-10-31T14:51:22Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Banco Nación: las refinanciaciones de deudas cayeron un 55,4% en octubre y alcanzaron su menor nivel frente a septiembre",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/banco-nacion-las-refinanciaciones-deudas-cayeron-un-554-octubre-y-alcanzaron-su-menor-nivel-frente-septiembre-n6340058",
+   "fecha": "2026-10-31T14:49:00Z",
    "tema": "otros"
   },
   {
@@ -185,6 +248,13 @@
    "url": "https://www.lanacion.com.ar/economia/dolar/dolar-hoy-y-dolar-blue-hoy-a-cuanto-cotiza-este-sabado-31-de-octubre-nid31102026/",
    "fecha": "2026-10-31T10:02:30Z",
    "tema": "dolar"
+  },
+  {
+   "titulo": "Recaudación de octubre: Ganancias repuntó, pero el IVA volvió a caer y encendió alertas por el consumo",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/recaudacion-octubre-ganancias-repunto-pero-el-iva-volvio-caer-y-encendio-alertas-el-consumo-n6339995",
+   "fecha": "2026-10-31T10:00:00Z",
+   "tema": "actividad"
   },
   {
    "titulo": "Maíz tardío: el cultivo que desafía los límites y apuesta por la tecnología",
@@ -432,25 +502,11 @@
    "tema": "mercados"
   },
   {
-   "titulo": "Robar para el Amado Líder: cuál es el rastro cripto que va del hackeo de Binance a Corea del Norte",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/tecnologia/robar-para-el-amado-lider-cual-es-el-rastro-cripto-que-va-del-hackeo-de-binance-a-corea-del-norte-nid30102026/",
-   "fecha": "2026-10-30T21:40:01Z",
-   "tema": "mercados"
-  },
-  {
    "titulo": "En plena \"batalla\" fintech, Cocos vende dólares más baratos para captar más clientes",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/finanzas/467845-en-plena-batalla-fintech-cocos-vende-dolares-mas-baratos-para-captar-mas-clientes",
    "fecha": "2026-10-30T21:31:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "El Banco Central descartó inyectar liquidez adicional en el sistema para incentivar el consumo",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/el-banco-central-descarto-inyectar-liquidez-adicional-en-el-sistema-para-incentivar-el-consumo-nid30102026/",
-   "fecha": "2026-10-30T21:27:40Z",
-   "tema": "actividad"
   },
   {
    "titulo": "Las acciones tecnológicas volvieron a caer en Wall Street y arrastraron a la baja a los activos de la Argentina",
@@ -465,13 +521,6 @@
    "url": "https://www.iprofesional.com/finanzas/467963-ahorristas-le-arrebataron-al-bcra-casi-2500-millones-de-dolares",
    "fecha": "2026-10-30T21:20:00Z",
    "tema": "dolar"
-  },
-  {
-   "titulo": "Anuncio: Santa Fe destinará todo el dinero de un impuesto a obras para el campo",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/anuncio-santa-fe-destinara-todo-el-dinero-de-un-impuesto-a-obras-para-el-campo-nid30102026/",
-   "fecha": "2026-10-30T21:15:46Z",
-   "tema": "politica"
   },
   {
    "titulo": "Cuántos millones pueden ahorrar el país y la región usando GNC en lugar de gasoil",
@@ -565,41 +614,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Por qué se derrumban las acciones tecnológicas de Wall Street y sacuden a los mercados del mundo",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/30/por-que-se-derrumban-las-acciones-tecnologicas-de-wall-street-y-sacuden-a-los-mercados-del-mundo/",
-   "fecha": "2026-10-30T17:43:28Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "BCRA asegura que ya no hay freno monetario para la economía, pero la reactivación no llega",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/467939-banco-central-elimina-freno-monetario-cuando-se-notara-economia-octubre-2026",
-   "fecha": "2026-10-30T17:40:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "El triunfo de Lula puede mejorar el acceso de los productos argentinos al mercado de EEUU, según la Bolsa de Cereales",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/30/el-triunfo-de-lula-puede-mejorar-el-acceso-de-los-productos-argentinos-al-mercado-de-eeuu-segun-la-bolsa-de-cereales/",
-   "fecha": "2026-10-30T17:21:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Salarios en Vaca Muerta: cuánto cobran los petroleros y otros trabajadores de Neuquén",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/30/salarios-en-vaca-muerta-cuanto-cobran-los-petroleros-y-otros-trabajadores-de-neuquen/",
-   "fecha": "2026-10-30T17:18:49Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "El ranking de la UBA que calificó la gestión estratégica de 31 municipios del Conurbano",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/29/cuales-son-los-mejores-y-peores-municipios-del-conurbano-bonaerense-para-vivir-segun-un-ranking-de-la-uba/",
-   "fecha": "2026-10-30T17:04:57Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Santa Fe celebra el éxito de las primeras Rondas RIGI: 2.500 proveedores, 4.500 personas y 3.300 reuniones de negocios",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/santa-fe-celebra-el-exito-las-primeras-rondas-rigi-2500-proveedores-4500-personas-y-3300-reuniones-negocios-n6339818",
@@ -682,27 +696,6 @@
    "url": "https://www.ambito.com/economia/el-bcra-preve-un-aumento-significativo-la-actividad-economica-fin-ano-y-una-mayor-demanda-pesos-n6339369",
    "fecha": "2026-10-29T19:45:00Z",
    "tema": "inflacion"
-  },
-  {
-   "titulo": "Arriazu alertó sobre una corrida cambiaria en 2027 y pidió al Gobierno cambios urgentes",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/arriazu-alerto-una-corrida-cambiaria-2027-y-pidio-al-gobierno-cambios-urgentes-n6339384",
-   "fecha": "2026-10-29T17:20:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Qué provincias lideran el ranking fiscal completo con superávit y cuáles ocupan los últimos puestos con déficit",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/que-provincias-lideran-el-ranking-fiscal-completo-y-cuales-ocupan-los-ultimos-puestos-n6339398",
-   "fecha": "2026-10-29T17:03:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Se vende el tríplex de Ricardo Fort en Belgrano: cuánto cuesta y cómo es por dentro",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/se-vende-el-triplex-ricardo-fort-belgrano-cuanto-cuesta-y-como-es-dentro-n6338791",
-   "fecha": "2026-10-29T17:00:00Z",
-   "tema": "otros"
   }
  ]
 }
