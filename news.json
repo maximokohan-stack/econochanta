@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-01T19:56:13.993320Z",
+ "actualizado": "2026-11-01T23:15:26.394752Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 19
+   "n": 17
   },
   {
    "medio": "Infobae",
@@ -60,6 +60,69 @@
   }
  ],
  "items": [
+  {
+   "titulo": "El riesgo país argentino subió en octubre hasta seis veces lo que aumentó en la región y el Gobierno contuvo el dólar",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/el-riesgo-pais-argentino-subio-en-octubre-hasta-seis-veces-lo-que-aumento-en-la-region-y-el-gobierno-nid01112026/",
+   "fecha": "2026-11-01T23:01:22Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Cyber Monday 2026: a qué hora empieza, qué ofertas habrá y las categorías con descuentos más altos",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/01/cyber-monday-2026-a-que-hora-empieza-que-ofertas-habra-y-las-categorias-con-descuentos-mas-altos/",
+   "fecha": "2026-11-01T22:02:44Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El mercado de motos encadena otro mes de fuerte crecimiento mientras los autos registran su mayor caída interanual del año",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/01/el-mercado-de-motos-encadena-otro-mes-de-fuerte-crecimiento-mientras-los-autos-registran-su-mayor-caida-interanual-del-ano/",
+   "fecha": "2026-11-01T21:38:24Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Consultora asegura que la economía crecerá en septiembre pero no lo suficiente",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/468031-consultora-asegura-que-la-economia-crecera-en-septiembre-pero-no-lo-suficiente",
+   "fecha": "2026-11-01T21:26:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Los argentinos comen cada vez más carne de cerdo: cómo creció el consumo en 35 años",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/actualidad/468030-los-argentinos-comen-cada-vez-mas-carne-de-cerdo-como-crecio-el-consumo-en-35-anos",
+   "fecha": "2026-11-01T21:08:00Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Brasil ya golpeó a los activos argentinos y EEUU asoma como el próximo test para el mercado local",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/01/brasil-ya-golpeo-a-los-activos-argentinos-y-eeuu-asoma-como-el-proximo-test-para-el-mercado-local/",
+   "fecha": "2026-11-01T20:20:20Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El presupuesto inicial para un casamiento en Argentina puede quedarse corto",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/actualidad/467628-cuanto-cuesta-casarse-en-argentina-y-que-gastos-inesperados-pueden-surgir",
+   "fecha": "2026-11-01T20:10:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Se acumulan factores de presión y la City palpita un verano más caliente para el dólar",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/467365-la-city-anticipa-un-verano-mas-caliente-para-el-precio-de-dolar",
+   "fecha": "2026-11-01T20:00:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Cerró la mitad de hoteles alojamiento en 20 años y los que quedan en pie buscan sobrevivir",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/actualidad/467866-telos-portenos-lanzan-descuentos-cuotas-y-noche-especial-para-salvar-negocio",
+   "fecha": "2026-11-01T20:00:00Z",
+   "tema": "otros"
+  },
   {
    "titulo": "Las exportaciones de carne crecieron casi 37% en lo que va de 2026 por la mejora en los precios",
    "medio": "Ámbito",
@@ -446,13 +509,6 @@
    "tema": "politica"
   },
   {
-   "titulo": "¿Contra qué podemos comparar el boom de la IA? Ya no alcanza ni Internet ni la electricidad",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/contra-que-podemos-comparar-el-boom-de-la-ia-ya-no-alcanza-ni-internet-ni-la-electricidad-nid01112026/",
-   "fecha": "2026-11-01T03:01:00Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Qué se puede hacer para reactivar la economía sin modificar el rumbo",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/que-se-puede-hacer-para-reactivar-la-economia-sin-modificar-el-rumbo-nid01112026/",
@@ -530,13 +586,6 @@
    "tema": "politica"
   },
   {
-   "titulo": "Cuáles fueron los diez autos más vendidos en octubre: tres pick ups al frente y sólo uno en el top ten de los más baratos",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/31/cuales-fueron-los-diez-autos-mas-vendidos-en-octubre-tres-pick-ups-al-frente-y-solo-uno-en-el-top-ten-de-los-mas-baratos/",
-   "fecha": "2026-10-31T15:00:56Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Jubilados cobran con aumento en noviembre: cuánto paga ANSES con el bono de $70.000",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/467991-anses-noviembre-2026-cuanto-cobran-los-jubilados-con-aumento-y-bono",
@@ -549,20 +598,6 @@
    "url": "https://www.ambito.com/economia/banco-nacion-las-refinanciaciones-deudas-cayeron-un-554-octubre-y-alcanzaron-su-menor-nivel-frente-septiembre-n6340058",
    "fecha": "2026-10-31T14:49:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "“Ya no puedo seguir”: una reconocida empresa de tecnología para el agro cerró su planta y despidió a casi 100 empleados",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/31/ya-no-puedo-seguir-una-reconocida-empresa-de-tecnologia-para-el-agro-cerro-su-planta-y-despidio-a-casi-100-empleados/",
-   "fecha": "2026-10-31T13:31:41Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Desde que asumió el gobierno de Javier Milei, más de 23.400 personas dejaron de trabajar para empresas del Estado",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/31/desde-que-asumio-el-gobierno-de-javier-milei-mas-de-23400-personas-dejaron-de-trabajar-para-empresas-del-estado/",
-   "fecha": "2026-10-31T12:49:54Z",
-   "tema": "politica"
   },
   {
    "titulo": "AUH de ANSES: qué familias pueden sumar $60.203 extra en noviembre",
@@ -640,55 +675,6 @@
    "url": "https://www.iprofesional.com/finanzas/467563-5-acciones-argentinas-con-mayor-potencial-de-suba-en-el-ultimo-bimestre",
    "fecha": "2026-10-30T23:34:00Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "Acción de plataforma brasileña de inversiones XP se hundió 52% y JP Morgan dice qué hacer",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/467881-que-hacer-con-las-acciones-de-la-empresa-brasilena-que-se-derrumbo",
-   "fecha": "2026-10-30T23:28:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "La compra de dólar ahorro se mantuvo casi estable en septiembre, cerca de los u$s3.000 millones",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/la-compra-dolar-ahorro-se-mantuvo-casi-estable-septiembre-cerca-los-us3000-millones-n6339969",
-   "fecha": "2026-10-30T22:52:00Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "Coparticipación: los envíos a las provincias repuntaron levemente en octubre, impulsados por Ganancias",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/coparticipacion-los-envios-las-provincias-repuntaron-levemente-octubre-impulsados-ganancias-n6339976",
-   "fecha": "2026-10-30T22:50:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "YPF presentó un RIGI de u$s8.729 millones para un bloque de crudo y gas en Vaca Muerta",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/energia/467972-ypf-presenta-un-nuevo-rigi-para-vaca-muerta-por-us8729-millones",
-   "fecha": "2026-10-30T22:00:00Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Allaria advierte cuáles son las 3 acciones líderes que tienen menos margen para subir",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/467452-allaria-marca-3-acciones-lideres-que-tienen-menos-margen-para-subir",
-   "fecha": "2026-10-30T21:55:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Acciones cayeron hasta 29% y para noviembre lideran las preferencias YPF y Pampa Energía",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/467962-que-acciones-y-bonos-recomienda-la-city-para-noviembre-tras-desplome",
-   "fecha": "2026-10-30T21:46:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "En plena \"batalla\" fintech, Cocos vende dólares más baratos para captar más clientes",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/467845-en-plena-batalla-fintech-cocos-vende-dolares-mas-baratos-para-captar-mas-clientes",
-   "fecha": "2026-10-30T21:31:00Z",
-   "tema": "otros"
   }
  ]
 }
