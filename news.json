@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-01T01:36:25.836385Z",
+ "actualizado": "2026-11-01T05:21:07.716510Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 14
+   "n": 17
   },
   {
    "medio": "Infobae",
@@ -60,6 +60,153 @@
   }
  ],
  "items": [
+  {
+   "titulo": "Recuperación de ingresos, más crédito y freno tarifario: los pilares del plan para llegar lo mejor posible a las elecciones",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/01/recuperacion-de-ingresos-mas-credito-y-freno-tarifario-los-pilares-del-plan-para-llegar-lo-mejor-posible-a-las-elecciones/",
+   "fecha": "2026-11-01T04:28:15Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Clima de Negocios: los planes de la automotriz que llegó al país hace un año, ya entró al top 10 de ventas y apuesta a ser líder",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/01/clima-de-negocios-los-planes-de-la-automotriz-que-llego-al-pais-hace-un-ano-ya-entro-al-top-10-de-ventas-y-apuesta-a-ser-lider/",
+   "fecha": "2026-11-01T04:27:58Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Hackeo en Binance: tres claves que deben tener en cuenta los usuarios argentinos de la plataforma cripto",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/01/hackeo-en-binance-tres-claves-que-deben-tener-en-cuenta-los-usuarios-argentinos-de-la-plataforma-cripto/",
+   "fecha": "2026-11-01T04:27:34Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Devaluación del real: ¿es una señal de alerta para el peso argentino?",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/01/devaluacion-del-real-es-una-senal-de-alerta-para-el-peso-argentino/",
+   "fecha": "2026-11-01T04:27:11Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Sebastián Galiani: “Esta transformación necesita tiempo y continuidad”",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/01/sebastian-galiani-esta-transformacion-necesita-tiempo-y-continuidad/",
+   "fecha": "2026-11-01T04:26:42Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "A partir de hoy suben los boletos de colectivos y subtes: cuáles serán las nuevas tarifas",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/01/a-partir-de-hoy-suben-los-boletos-de-colectivos-y-subtes-cuales-seran-las-nuevas-tarifas/",
+   "fecha": "2026-11-01T04:25:10Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Comprar una empresa puede crear valor o destruirlo",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/11/01/comprar-una-empresa-puede-crear-valor-o-destruirlo/",
+   "fecha": "2026-11-01T04:24:51Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "La nueva grieta laboral no es entre humanos e IA, sino entre quienes saben liderarla y quienes no",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/11/01/la-nueva-grieta-laboral-no-es-entre-humanos-e-ia-sino-entre-quienes-saben-liderarla-y-quienes-no/",
+   "fecha": "2026-11-01T04:24:30Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La logística es casi un tercio del costo lácteo",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/11/01/la-logistica-es-casi-un-tercio-del-costo-lacteo/",
+   "fecha": "2026-11-01T04:23:53Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Tras las críticas de Javier Milei, Domingo Cavallo insistió con la necesidad de acumular reservas y pidió compras por u$s15.000 millones",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/tras-las-criticas-javier-milei-domingo-cavallo-insistio-la-necesidad-acumular-reservas-y-pidio-compras-us15000-millones-n6340188",
+   "fecha": "2026-11-01T03:05:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Qué se puede hacer para reactivar la economía sin modificar el rumbo",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/que-se-puede-hacer-para-reactivar-la-economia-sin-modificar-el-rumbo-nid01112026/",
+   "fecha": "2026-11-01T03:01:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "¿Contra qué podemos comparar el boom de la IA? Ya no alcanza ni Internet ni la electricidad",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/contra-que-podemos-comparar-el-boom-de-la-ia-ya-no-alcanza-ni-internet-ni-la-electricidad-nid01112026/",
+   "fecha": "2026-11-01T03:01:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El mercado concentra todas sus miradas en Estados Unidos",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/el-mercado-concentra-todas-sus-miradas-en-estados-unidos-nid01112026/",
+   "fecha": "2026-11-01T03:01:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Martín Rappallini: “Si hay dumping de China, tenemos que utilizar los instrumentos y actuar”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/martin-rappallini-si-hay-dumping-de-china-tenemos-que-utilizar-los-instrumentos-y-actuar-nid01112026/",
+   "fecha": "2026-11-01T03:01:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "“No hay una sola Argentina”: Sica y Malamud analizan cómo llega la economía a 2027, el impacto de Brasil y la “apuesta” de Milei",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/no-hay-una-sola-argentina-sica-y-malamud-analizan-como-llega-la-economia-a-2027-el-impacto-de-brasil-nid01112026/",
+   "fecha": "2026-11-01T03:01:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Las elecciones en Brasil y su impacto en la economía argentina",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/las-elecciones-en-brasil-y-su-impacto-en-la-economia-argentina-nid01112026/",
+   "fecha": "2026-11-01T03:01:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El cobre abre una oportunidad histórica para la Argentina",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/el-cobre-abre-una-oportunidad-historica-para-la-argentina-nid01112026/",
+   "fecha": "2026-11-01T03:01:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Dólar, embargos y recesión: Luis Caputo va a la UIA con muchos problemas y pocas herramientas",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/dolar-embargos-y-recesion-luis-caputo-va-la-uia-muchos-problemas-y-pocas-herramientas-n6340082",
+   "fecha": "2026-11-01T03:00:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Rodolfo Santangelo: \"Estamos subsidiando la demanda de dólares y gravando el consumo local\"",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/rodolfo-santangelo-estamos-subsidiando-la-demanda-dolares-y-gravando-el-consumo-local-n6340145",
+   "fecha": "2026-11-01T03:00:00Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "El Niño no tendrá un desarrollo parejo en todo el país",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/el-nino-no-tendra-un-desarrollo-parejo-en-todo-el-territorio-nid31102026/",
+   "fecha": "2026-11-01T02:09:02Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La primera MacBook Pro con pantalla táctil ya es oficial: precio, fecha de salida y el giro histórico de Apple",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/la-primera-macbook-pro-pantalla-tactil-ya-es-oficial-precio-fecha-salida-y-el-giro-historico-apple-n6339620",
+   "fecha": "2026-10-31T23:00:00Z",
+   "tema": "otros"
+  },
   {
    "titulo": "¿Y si el Indec, además del EMAE, calculara el EDAE?",
    "medio": "La Nación",
@@ -184,13 +331,6 @@
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/banco-nacion-las-refinanciaciones-deudas-cayeron-un-554-octubre-y-alcanzaron-su-menor-nivel-frente-septiembre-n6340058",
    "fecha": "2026-10-31T14:49:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El Niño no tendrá un desarrollo parejo en todo el país",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/el-nino-no-tendra-un-desarrollo-parejo-en-todo-el-territorio-nid31102026/",
-   "fecha": "2026-10-31T14:46:08Z",
    "tema": "otros"
   },
   {
@@ -320,55 +460,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "“Basta de inversiones”: un frigorífico no renovó 80 contratados, su gerente lo lamentó y habló de las importaciones desde Brasil",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/basta-de-inversiones-un-frigorifico-no-renovo-80-contratados-su-gerente-lo-lamento-y-hablo-de-las-nid30102026/",
-   "fecha": "2026-10-31T09:44:08Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "US$3791 millones: vuelan las exportaciones de carne vacuna y van rumbo a otro récord",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/us3791-millones-vuelan-en-dolares-las-exportaciones-de-carne-vacuna-y-van-camino-a-marcar-otro-nid30102026/",
-   "fecha": "2026-10-31T09:38:46Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Cuando la IA es solo discurso",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/negocios/cuando-la-ia-es-solo-discurso-nid31102026/",
-   "fecha": "2026-10-31T09:27:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Cómo ganar con la IA en 2027",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/negocios/como-ganar-con-la-ia-en-2027-nid31102026/",
-   "fecha": "2026-10-31T09:23:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Vandalismo rural: un paso adelante del Congreso en la agenda agropecuaria",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/vandalismo-rural-un-paso-adelante-del-congreso-en-la-agenda-agropecuaria-nid31102026/",
-   "fecha": "2026-10-31T08:55:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "La publicidad entra en la era del aviso personalizado",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/negocios/la-publicidad-entra-en-la-era-del-aviso-personalizado-nid31102026/",
-   "fecha": "2026-10-31T08:39:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El riesgo país subió casi 30% en octubre y cerró el mes cerca de los 790 puntos",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/el-riesgo-pais-sube-mas-de-20-en-octubre-y-cierra-cerca-de-los-750-puntos-nid30102026/",
-   "fecha": "2026-10-31T06:37:27Z",
-   "tema": "mercados"
-  },
-  {
    "titulo": "Ganadores y perdedores del efecto Brasil: los tres sectores argentinos más amenazados y los que podrían salir favorecidos",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/10/31/ganadores-y-perdedores-del-efecto-brasil-los-tres-sectores-argentinos-mas-amenazados-y-los-que-podrian-salir-favorecidos/",
@@ -418,20 +509,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Una economía a dos velocidades: lo que enseña el mundo sobre la convergencia",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/opinion/2026/10/31/una-economia-a-dos-velocidades-lo-que-ensena-el-mundo-sobre-la-convergencia/",
-   "fecha": "2026-10-31T03:06:10Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El impacto del nuevo Congreso en la agenda de Trump",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/opinion/2026/10/31/el-impacto-del-nuevo-congreso-en-la-agenda-de-trump/",
-   "fecha": "2026-10-31T03:05:52Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Los 4 ejes de la Ley Integral Pyme: la propuesta para frenar el cierre de empresas que no encuentra interlocutor oficial",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/los-4-ejes-la-ley-integral-pyme-la-propuesta-frenar-el-cierre-empresas-que-no-encuentra-interlocutor-oficial-n6339999",
@@ -467,24 +544,10 @@
    "tema": "mercados"
   },
   {
-   "titulo": "YPF pidió un RIGI para el norte de Vaca Muerta: invertirá USD 8.700 millones y prevé exportar USD 25.000 millones entre 2027 y 2055",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/30/ypf-pidio-un-rigi-para-el-norte-de-vaca-muerta-invertira-usd-8700-millones-y-preve-exportar-usd-25000-millones-entre-2027-y-2055/",
-   "fecha": "2026-10-30T23:18:58Z",
-   "tema": "empresas"
-  },
-  {
    "titulo": "La compra de dólar ahorro se mantuvo casi estable en septiembre, cerca de los u$s3.000 millones",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/la-compra-dolar-ahorro-se-mantuvo-casi-estable-septiembre-cerca-los-us3000-millones-n6339969",
    "fecha": "2026-10-30T22:52:00Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "Los argentinos compraron casi USD 2.900 millones cash y el acumulado desde la salida del cepo superó los USD 50.000 millones",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/30/los-argentinos-compraron-casi-usd-2900-millones-cash-y-el-acumulado-desde-la-salida-del-cepo-supero-los-usd-50000-millones/",
-   "fecha": "2026-10-30T22:50:17Z",
    "tema": "dolar"
   },
   {
@@ -493,20 +556,6 @@
    "url": "https://www.ambito.com/economia/coparticipacion-los-envios-las-provincias-repuntaron-levemente-octubre-impulsados-ganancias-n6339976",
    "fecha": "2026-10-30T22:50:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Macro Private Bank es la nueva propuesta de banca privada para clientes premium de alto patrimonio",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/29/macro-private-bank-es-la-nueva-propuesta-de-banca-privada-para-clientes-premium-de-alto-patrimonio/",
-   "fecha": "2026-10-30T22:28:10Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El riesgo país subió 5,5% y volvió a ubicarse en la zona de los 800 puntos después de un año",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/30/el-riesgo-pais-subio-55-y-volvio-a-ubicarse-en-la-zona-de-los-800-puntos-despues-de-un-ano/",
-   "fecha": "2026-10-30T22:08:20Z",
-   "tema": "mercados"
   },
   {
    "titulo": "YPF presentó un RIGI de u$s8.729 millones para un bloque de crudo y gas en Vaca Muerta",
@@ -537,13 +586,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Las acciones tecnológicas volvieron a caer en Wall Street y arrastraron a la baja a los activos de la Argentina",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/30/las-acciones-tecnologicas-vuelven-a-caer-en-wall-street-y-arrastran-a-la-baja-a-los-activos-de-la-argentina/",
-   "fecha": "2026-10-30T21:22:54Z",
-   "tema": "mercados"
-  },
-  {
    "titulo": "La demanda de dólar ahorro sigue elevada y las compras llegaron a los u$s2.500 millones",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/finanzas/467963-ahorristas-le-arrebataron-al-bcra-casi-2500-millones-de-dolares",
@@ -558,25 +600,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "Binance prometió un “informe post mortem” del hackeo y dijo cuáles son sus 4 prioridades urgentes tras el robo de USD 6.300 millones",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/30/binance-prometio-un-informe-post-mortem-del-hackeo-y-dijo-cuales-son-sus-4-prioridades-urgentes-tras-el-robo-de-usd-6300-millones/",
-   "fecha": "2026-10-30T21:07:13Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Manuel Antelo explicó por qué Argentina no puede competir en la industria de los autos",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/autos/467959-manuel-antelo-explico-por-que-argentina-no-puede-competir-en-industria-de-autos",
    "fecha": "2026-10-30T20:59:00Z",
    "tema": "actividad"
-  },
-  {
-   "titulo": "El riesgo país argentino subió a 790 puntos, un nuevo máximo en lo que va del año",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/30/el-riesgo-pais-argentino-subio-a-777-puntos-un-nuevo-maximo-en-lo-que-va-del-ano/",
-   "fecha": "2026-10-30T20:54:49Z",
-   "tema": "mercados"
   },
   {
    "titulo": "El BCRA volvió a comprar y en octubre sumó casi tres veces más dólares que el mes pasado",
@@ -654,13 +682,6 @@
    "url": "https://www.ambito.com/economia/la-inversion-real-no-arranca-los-factores-detras-una-caida-que-no-cede-y-que-demorara-recuperarse-n6339404",
    "fecha": "2026-10-30T10:00:00Z",
    "tema": "empresas"
-  },
-  {
-   "titulo": "Lo que se dice en las mesas: bajo la sangría brasileña, Javier Milei se diferencia con su ancla fiscal, ¿le alcanzará?",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/lo-que-se-dice-las-mesas-la-sangria-brasilena-javier-milei-se-diferencia-su-ancla-fiscal-le-alcanzara-n6339568",
-   "fecha": "2026-10-30T03:00:00Z",
-   "tema": "politica"
   }
  ]
 }
