@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-01T23:15:26.394752Z",
+ "actualizado": "2026-11-02T05:20:00.888266Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 17
+   "n": 15
   },
   {
    "medio": "Infobae",
@@ -50,7 +50,7 @@
   {
    "medio": "iProfesional",
    "ok": true,
-   "n": 21
+   "n": 19
   },
   {
    "medio": "Perfil",
@@ -60,6 +60,27 @@
   }
  ],
  "items": [
+  {
+   "titulo": "El Niño: anticipan focos de 200 milímetros en una región del país",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/el-nino-anticipan-focos-de-200-milimetros-en-una-region-del-pais-nid01112026/",
+   "fecha": "2026-11-02T01:15:48Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Thiago tiene 14 años, construyó un tractor y ahora quiere automatizarlo: “Lo hice con chatarra”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/thiago-tiene-14-anos-construyo-un-tractor-y-ahora-quiere-automatizarlo-lo-hice-con-chatarra-nid01112026/",
+   "fecha": "2026-11-02T01:11:30Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El Gobierno prepara otra licitación de rutas nacionales y da forma a un paquete para mejorar el acceso al crédito",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/el-gobierno-prepara-otra-licitacion-de-rutas-nacionales-y-da-forma-a-un-paquete-para-mejorar-el-nid01112026/",
+   "fecha": "2026-11-02T00:06:35Z",
+   "tema": "politica"
+  },
   {
    "titulo": "El riesgo país argentino subió en octubre hasta seis veces lo que aumentó en la región y el Gobierno contuvo el dólar",
    "medio": "La Nación",
@@ -185,13 +206,6 @@
    "url": "https://www.infobae.com/economia/2026/11/01/con-el-corazon-partido-gladys-la-bomba-tucumana-anuncio-el-cierre-de-su-local-de-empanadas-en-recoleta-y-culpo-a-milei/",
    "fecha": "2026-11-01T15:07:52Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "El Niño: anticipan focos de 200 milímetros en una región del país",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/el-nino-anticipan-focos-de-200-milimetros-en-una-region-del-pais-nid01112026/",
-   "fecha": "2026-11-01T15:00:00Z",
-   "tema": "otros"
   },
   {
    "titulo": "A cuánto abre el dólar el lunes 2 de noviembre",
@@ -432,13 +446,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Thiago tiene 14 años, construyó un tractor y ahora quiere automatizarlo: “Lo hice con chatarra”",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/thiago-tiene-14-anos-construyo-un-tractor-y-ahora-quiere-automatizarlo-lo-hice-con-chatarra-nid01112026/",
-   "fecha": "2026-11-01T06:00:00Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Recuperación de ingresos, más crédito y freno tarifario: los pilares del plan para llegar lo mejor posible a las elecciones",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/01/recuperacion-de-ingresos-mas-credito-y-freno-tarifario-los-pilares-del-plan-para-llegar-lo-mejor-posible-a-las-elecciones/",
@@ -507,13 +514,6 @@
    "url": "https://www.ambito.com/economia/tras-las-criticas-javier-milei-domingo-cavallo-insistio-la-necesidad-acumular-reservas-y-pidio-compras-us15000-millones-n6340188",
    "fecha": "2026-11-01T03:05:00Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "Qué se puede hacer para reactivar la economía sin modificar el rumbo",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/que-se-puede-hacer-para-reactivar-la-economia-sin-modificar-el-rumbo-nid01112026/",
-   "fecha": "2026-11-01T03:01:00Z",
-   "tema": "otros"
   },
   {
    "titulo": "Rodolfo Santangelo: \"Estamos subsidiando la demanda de dólares y gravando el consumo local\"",
@@ -647,34 +647,6 @@
    "url": "https://www.ambito.com/economia/recaudacion-octubre-ganancias-repunto-pero-el-iva-volvio-caer-y-encendio-alertas-el-consumo-n6339995",
    "fecha": "2026-10-31T10:00:00Z",
    "tema": "actividad"
-  },
-  {
-   "titulo": "Los 4 ejes de la Ley Integral Pyme: la propuesta para frenar el cierre de empresas que no encuentra interlocutor oficial",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/los-4-ejes-la-ley-integral-pyme-la-propuesta-frenar-el-cierre-empresas-que-no-encuentra-interlocutor-oficial-n6339999",
-   "fecha": "2026-10-31T01:25:00Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Paritarias en concesionarias: Smata acordó un aumento trimestral del 5,06%",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/paritarias-concesionarias-smata-acordo-un-aumento-trimestral-del-506-n6339986",
-   "fecha": "2026-10-31T00:00:00Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Grupo financiero de Costantini recalibra su estrategia con bonos y rota cartera",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/466961-grupo-financiero-de-costantini-recalibra-su-estrategia-con-bonos-y-rota-cartera",
-   "fecha": "2026-10-30T23:37:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Cinco acciones argentinas con mayor potencial de suba en el último bimestre, según Allaria",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/467563-5-acciones-argentinas-con-mayor-potencial-de-suba-en-el-ultimo-bimestre",
-   "fecha": "2026-10-30T23:34:00Z",
-   "tema": "mercados"
   }
  ]
 }
