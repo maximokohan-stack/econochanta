@@ -944,3 +944,45 @@ input[type="number"], .mkt__search, .mesa__buscar, .file { border-radius: 12px; 
 @media (max-width: 1100px) { .lec-lista { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 560px) { .lec-lista { grid-template-columns: minmax(0, 1fr); } }
 @media (prefers-reduced-motion: reduce) { .lec { transition: none; } .lec:hover { transform: none; } }
+
+/* ==========================================================================
+   Por mandato: indicadores clave medidos en cada gobierno
+   ========================================================================== */
+#vista-mandatos { max-width: 1180px; width: 100%; margin-inline: auto; }
+.mand { overflow-x: auto; }
+.mand__tabla { width: 100%; border-collapse: separate; border-spacing: 0; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); box-shadow: var(--sombra); overflow: hidden; }
+.mand__tabla th, .mand__tabla td { padding: 14px 16px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+.mand__tabla tbody tr:last-child > * { border-bottom: 0; }
+.mand__tabla thead th { background: var(--surface-2, var(--surface)); position: sticky; top: 0; }
+.mand__vacio { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--text-2); width: 22%; }
+.mand__mand { display: table-cell; }
+.mand__nombre { display: block; font-size: 16px; font-weight: 700; color: var(--head); letter-spacing: -0.01em; }
+.mand__rango { display: block; font-size: 13px; font-weight: 500; color: var(--text-2); margin-top: 2px; }
+.mand__ind { font-weight: 400; }
+.mand__indn { display: block; font-size: 16px; font-weight: 700; color: var(--head); }
+.mand__que { display: block; font-size: 13px; color: var(--text-2); line-height: 1.4; margin-top: 4px; max-width: 30ch; }
+.mand__celda { min-width: 150px; }
+.mand__valor { display: block; font-family: var(--mono); font-weight: 700; font-size: 26px; letter-spacing: -0.03em; line-height: 1.15; font-variant-numeric: tabular-nums; }
+.mand__valor.up { color: var(--up); }
+.mand__valor.down { color: var(--down); }
+.mand__det { display: block; font-size: 13px; color: var(--text-2); margin-top: 4px; line-height: 1.35; font-variant-numeric: tabular-nums; }
+.mand__extra { display: block; font-size: 13px; color: var(--text); margin-top: 6px; font-weight: 600; }
+.mand__notas { margin-top: 16px; padding: 14px 18px; border: 1px solid var(--line); border-radius: var(--r); background: var(--surface); color: var(--text-2); }
+.mand__notas summary { cursor: pointer; min-height: 36px; display: flex; align-items: center; color: var(--accent); font-weight: 700; }
+.mand__notas ul { display: grid; gap: 8px; padding-left: 18px; list-style: disc; line-height: 1.5; font-size: 14px; }
+.mand__fuente { max-width: 90ch; }
+
+@media (max-width: 900px) {
+  .mand { overflow: visible; }
+  .mand__tabla, .mand__tabla tbody, .mand__tabla tr, .mand__tabla th, .mand__tabla td { display: block; }
+  .mand__tabla { background: none; border: 0; box-shadow: none; border-radius: 0; }
+  .mand__tabla thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .mand__tabla tbody { display: grid; gap: 12px; }
+  .mand__tabla tbody tr { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); box-shadow: var(--sombra); padding: 6px 0 8px; }
+  .mand__tabla th, .mand__tabla td { border-bottom: 0; padding: 8px 16px; }
+  .mand__que { max-width: none; }
+  .mand__tabla td.mand__celda { display: grid; grid-template-columns: 1fr 1fr; gap: 2px 12px; align-items: baseline; min-width: 0; border-top: 1px solid var(--line); }
+  .mand__celda::before { content: attr(data-mandato); grid-column: 1; grid-row: 1 / span 4; font-size: 14px; font-weight: 700; color: var(--head); align-self: start; }
+  .mand__celda > * { grid-column: 2; }
+  .mand__valor { font-size: 22px; }
+}
