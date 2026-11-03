@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-03T01:25:11.785342Z",
+ "actualizado": "2026-11-03T05:59:29.382494Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -60,6 +60,20 @@
   }
  ],
  "items": [
+  {
+   "titulo": "Manejan una estancia de 33.000 hectáreas, trabajan con guanacos y venden al mundo una codiciada fibra: “Tiene que ser revolucionario”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/manejan-una-estancia-de-33000-hectareas-trabajan-con-guanacos-y-venden-al-mundo-una-codiciada-fibra-nid02112026/",
+   "fecha": "2026-11-03T02:52:24Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Mariana Camino, CEO de ABECEB: \"América Latina tiene los recursos que el mundo necesita, pero hay una ventana de oportunidad para aprovecharlos\"",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/mariana-camino-ceo-abeceb-america-latina-tiene-los-recursos-que-el-mundo-necesita-pero-hay-una-ventana-oportunidad-aprovecharlos-n6340761",
+   "fecha": "2026-11-03T01:41:00Z",
+   "tema": "otros"
+  },
   {
    "titulo": "El riesgo país tocó su nivel más alto en un año: cuáles son las razones detrás de la nueva baja de la deuda argentina",
    "medio": "Infobae",
@@ -290,13 +304,6 @@
    "url": "https://www.lanacion.com.ar/tecnologia/el-exchange-cripto-mercado-bitcoin-confirma-el-hackeo-y-robo-de-al-menos-us46-millones-en-brasil-nid02112026/",
    "fecha": "2026-11-02T19:33:28Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "Manejan una estancia de 33.000 hectáreas, trabajan con guanacos y venden al mundo una codiciada fibra: “Tiene que ser revolucionario”",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/manejan-una-estancia-de-33000-hectareas-trabajan-con-guanacos-y-venden-al-mundo-una-codiciada-fibra-nid02112026/",
-   "fecha": "2026-11-02T19:18:21Z",
-   "tema": "otros"
   },
   {
    "titulo": "La UIF aprobó una norma clave de Inocencia Fiscal II: desde qué monto se pueden pedir más datos por sacar los dólares del colchón",
@@ -689,13 +696,6 @@
    "url": "https://www.ambito.com/economia/cuanto-cuesta-la-pelota-del-superclasico-boca-vs-river-y-donde-comprar-la-argentum-gambeta-derbi-n6339225",
    "fecha": "2026-11-01T13:52:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Salarios: cuánto cobrarán los empleados de la construcción en noviembre de 2026",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/cuanto-cobraran-los-empleados-la-construccion-noviembre-2026-n6338551",
-   "fecha": "2026-11-01T12:19:00Z",
-   "tema": "actividad"
   }
  ]
 }
