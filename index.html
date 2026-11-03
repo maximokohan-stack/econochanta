@@ -42,6 +42,7 @@
   </nav>
   <nav class="subnav" id="subnav" aria-label="Secciones de Argentina" hidden>
     <a href="#recientes" data-vista="recientes">Recientes</a>
+    <a href="#mandatos" data-vista="mandatos">Mandatos</a>
     <a href="#dolares" data-vista="dolares">Dólares</a>
     <a href="#inflacion" data-vista="inflacion">Inflación y reservas</a>
     <a href="#tasas" data-vista="tasas">Tasas y pesos</a>
@@ -192,6 +193,11 @@
     </section>
 
     <!-- DATOS RECIENTES -->
+    <section id="vista-mandatos" class="vista" aria-labelledby="h-mandatos" hidden>
+      <h1 id="h-mandatos" class="title">Por mandato</h1>
+      <div id="mandatos-contenido" class="vista vista--inner"></div>
+    </section>
+
     <section id="vista-recientes" class="vista" aria-labelledby="h-recientes" hidden>
       <h1 id="h-recientes" class="title">Datos recientes</h1>
       <div id="recientes-contenido" class="vista vista--inner"></div>
@@ -483,6 +489,7 @@
   <script src="glosario.js"></script>
   <script src="analisis.js"></script>
   <script src="lectura.js"></script>
+  <script src="mandatos.js"></script>
   <script src="tablero.js"></script>
   <script src="app.js"></script>
 </body>

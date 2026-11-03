@@ -811,14 +811,14 @@
   /* ---------- navegación ---------- */
 
   var VISTAS = ["inicio", "argentina", "dolares", "inflacion", "tasas", "estado", "actividad", "bcra", "mercados",
-    "mas", "noticias", "miplata", "calcular", "alertas", "perfil", "glosario", "tabla", "metodologia", "analisis", "recientes"];
+    "mas", "noticias", "miplata", "calcular", "alertas", "perfil", "glosario", "tabla", "metodologia", "analisis", "recientes", "mandatos"];
   var TITULOS = {
     inicio: "Inicio", argentina: "Argentina", dolares: "Dólares", inflacion: "Inflación y reservas", tasas: "Tasas y pesos",
     estado: "Cuentas del Estado", actividad: "Actividad y empleo", bcra: "Banco Central", mercados: "Acciones y bonos",
-    mas: "Más", noticias: "Noticias", miplata: "Tu plata", calcular: "Calculadoras", alertas: "Alertas", perfil: "Perfil", glosario: "Glosario", tabla: "Tabla de indicadores", metodologia: "Cómo se calcula", analisis: "Análisis", recientes: "Datos recientes"
+    mas: "Más", noticias: "Noticias", miplata: "Tu plata", calcular: "Calculadoras", alertas: "Alertas", perfil: "Perfil", glosario: "Glosario", tabla: "Tabla de indicadores", metodologia: "Cómo se calcula", analisis: "Análisis", recientes: "Datos recientes", mandatos: "Por mandato"
   };
   // las secciones de Argentina dejan marcada esa pestaña y muestran su propio submenu; alertas y perfil cuelgan de "Más"
-  var ARGENTINA = ["argentina", "dolares", "inflacion", "tasas", "estado", "actividad", "bcra", "mercados", "tabla", "recientes"];
+  var ARGENTINA = ["argentina", "dolares", "inflacion", "tasas", "estado", "actividad", "bcra", "mercados", "tabla", "recientes", "mandatos"];
   var PESTANA = { alertas: "mas", perfil: "mas", glosario: "mas", metodologia: "mas" };
 
   var vistaAnterior = null;

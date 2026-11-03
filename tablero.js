@@ -275,6 +275,7 @@
   ];
   var SEC_OTRAS = [
     { id: "recientes", nombre: "Datos recientes", desc: "Lo último de cada indicador clave, con una lectura de qué significa en contexto" },
+    { id: "mandatos", nombre: "Por mandato", desc: "Inflación, dólar, riesgo país, reservas, actividad, empleo, pobreza y salarios medidos en cada gobierno" },
     { id: "bcra", nombre: "Banco Central", desc: "Reservas, base monetaria, tasas, depósitos, crédito y 39 monedas" },
     { id: "mercados", nombre: "Acciones y bonos", desc: "Acciones líderes y bonos soberanos en vivo, con búsqueda" },
     { id: "tabla", nombre: "Tabla de indicadores", desc: "Todos los indicadores juntos: último, anterior, variación, máximo y mínimo de 12 meses" }
@@ -1241,7 +1242,7 @@
   function getCorpus() {
     if (corpus) return corpus;
     corpus = [];
-    var esArg = function (id) { return id === "bcra" || id === "mercados" || id === "tabla" || id === "recientes" || secPorIdTemp(id); };
+    var esArg = function (id) { return id === "bcra" || id === "mercados" || id === "tabla" || id === "recientes" || id === "mandatos" || secPorIdTemp(id); };
     SECCIONES.concat(SEC_OTRAS, OTRAS_INICIO).forEach(function (s) {
       corpus.push({ sec: true, nombre: s.nombre, donde: esArg(s.id) ? "Argentina" : "Sección", desc: s.desc, href: "#" + s.id, n: norm(s.nombre), x: norm(s.desc) });
     });
@@ -2312,6 +2313,8 @@
       if (sub) bcraMesa.abrir(sub); else bcraMesa.cerrar();
     } else if (vista === "recientes") {
       if (!recientesListo) { recientesListo = true; armarRecientes(); }
+    } else if (vista === "mandatos") {
+      if (window.EconoMandatos) window.EconoMandatos.armar();
     } else if (vista === "analisis") {
       armarAnalisis(sub);
     } else if (vista === "tabla") {

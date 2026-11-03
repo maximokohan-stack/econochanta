@@ -46,13 +46,15 @@
 
     // Actividad
     emae: { src: "dg", id: "143.3_NO_PR_2004_A_31", label: "EMAE desestacionalizado", unit: "índice", dec: 1, fuente: "INDEC", ttl: 6 * HORA },
-    emaeVM: { src: "dg", id: "143.3_ICE_SER_VM_2004_A_34", label: "EMAE, variación mensual", unit: "%", dec: 1, fuente: "INDEC", ttl: 6 * HORA },
+    emaeVM: { src: "dg", id: "143.3_ICE_SER_VM_2004_A_34", mult: 100, label: "EMAE, variación mensual", unit: "%", dec: 1, fuente: "INDEC", ttl: 6 * HORA },
     ipi: { src: "dg", id: "453.1_SERIE_DESEADA_0_0_24_58", label: "Industria (IPI), desestacionalizado", unit: "índice", dec: 1, fuente: "INDEC", ttl: 6 * HORA },
     cemento: { src: "dg", id: "33.4_ISAC_CEMENAND_0_0_21_24", label: "Construcción, insumo cemento", unit: "índice", dec: 1, fuente: "INDEC", ttl: 6 * HORA },
     pbi: { src: "dg", id: "9.2_PP2_2004_T_16", label: "PBI a precios constantes", unit: "M ARS (2004)", dec: 0, fuente: "INDEC", ttl: 6 * HORA },
 
     // Empleo y salarios
     desocupacion: { src: "dg", id: "42.3_EPH_PUNTUATAL_0_M_30", mult: 100, label: "Desocupación", unit: "%", dec: 1, fuente: "INDEC (EPH)", ttl: 6 * HORA },
+    pobreza: { src: "indec", label: "Pobreza (personas)", unit: "%", dec: 1, fuente: "INDEC (EPH), API oficial", ttl: 6 * HORA },
+    indigencia: { src: "indec", label: "Indigencia (personas)", unit: "%", dec: 1, fuente: "INDEC (EPH), API oficial", ttl: 6 * HORA },
     salarios: { src: "dg", id: "149.1_TL_REGIADO_OCTU_0_16", label: "Índice de salarios, registrado", unit: "índice", dec: 1, fuente: "INDEC", ttl: 6 * HORA },
     salPrivado: { src: "dg", id: "149.1_SOR_PRIADO_OCTU_0_25", label: "Salarios, sector privado registrado", unit: "índice", dec: 1, fuente: "INDEC", ttl: 6 * HORA },
     salNoReg: { src: "dg", id: "149.1_SOR_PRIADO_OCTU_0_28", label: "Salarios, sector privado no registrado", unit: "índice", dec: 1, fuente: "INDEC", ttl: 6 * HORA },
@@ -95,6 +97,7 @@
     impo: { src: "dg", id: "74.3_IIT_0_M_25", label: "Importaciones", unit: "M USD", dec: 0, fuente: "INDEC", ttl: 6 * HORA },
 
     // Dinero (BCRA)
+    reservasMes: { src: "dg", id: "92.2_RESERVAS_IRES_0_0_32_40", label: "Reservas internacionales, fin de mes", unit: "M USD", dec: 0, fuente: "BCRA, vía datos.gob.ar", ttl: 6 * HORA },
     reservas: { src: "bcra", id: 1, label: "Reservas internacionales", unit: "M USD", dec: 0, fuente: "BCRA", ttl: 30 * MIN },
     baseMon: { src: "bcra", id: 15, label: "Base monetaria", unit: "M ARS", dec: 0, fuente: "BCRA", ttl: 30 * MIN },
     circulacion: { src: "bcra", id: 16, label: "Circulación monetaria", unit: "M ARS", dec: 0, fuente: "BCRA", ttl: 30 * MIN },
@@ -148,6 +151,39 @@
 
   function iso(d) { return d.toISOString().slice(0, 10); }
 
+  /* ---------- API oficial del INDEC ---------- */
+
+  // Una Action de GitHub baja las series de api.indec.gob.ar (necesita token, que no puede estar en
+  // el navegador) y las deja en data/indec.json. Ese archivo se suma a lo que traen las otras
+  // fuentes: pisa los meses que coinciden y agrega los que datos.gob.ar todavia no publico.
+  var indecDoc = null;
+
+  function cargarIndec() {
+    if (!indecDoc) {
+      indecDoc = fetch("data/indec.json", { cache: "no-cache" }).then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        return r.json();
+      }).catch(function () { return { series: {} }; });
+    }
+    return indecDoc;
+  }
+
+  function mesDe(f) { return f.slice(0, 7); }
+
+  function fusionarIndec(key, base, doc) {
+    var extra = doc && doc.series && doc.series[key];
+    if (!extra || !extra.length) return { puntos: base, indec: false };
+    var meses = {};
+    extra.forEach(function (p) { meses[mesDe(p[0])] = true; });
+    var resto = base.filter(function (p) { return !meses[mesDe(p[0])]; });
+    var union = resto.concat(extra.map(function (p) { return [p[0], Number(p[1])]; }))
+      .sort(function (a, b) { return a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0; });
+    var ult = union[union.length - 1];
+    // Se marca como "del INDEC" solo si el ultimo mes no estaba en la otra fuente.
+    var ya = base.some(function (p) { return mesDe(p[0]) === mesDe(ult[0]); });
+    return { puntos: union, indec: ult[0] === extra[extra.length - 1][0] && !ya };
+  }
+
   /* ---------- adaptadores ---------- */
 
   function pedir(c, n) {
@@ -192,6 +228,7 @@
           .sort(function (a, b) { return a[0] < b[0] ? -1 : 1; });
       });
     }
+    if (c.src === "indec") return Promise.reject(new Error("solo disponible en data/indec.json"));
     return Promise.reject(new Error("fuente desconocida"));
   }
 
@@ -200,28 +237,31 @@
   var mem = {};
 
   function leerCache(key, ttl) {
-    if (mem[key] && Date.now() - mem[key].t < ttl) return mem[key].v;
+    if (mem[key] && Date.now() - mem[key].t < ttl) { deIndec[key] = !!mem[key].i; return mem[key].v; }
     try {
-      var raw = localStorage.getItem("econochanta:v2:s:" + key);
+      var raw = localStorage.getItem("econochanta:v3:s:" + key);
       if (!raw) return null;
       var o = JSON.parse(raw);
-      if (Date.now() - o.t < ttl) { mem[key] = o; return o.v; }
+      if (Date.now() - o.t < ttl) { mem[key] = o; deIndec[key] = !!o.i; return o.v; }
     } catch (e) { /* sin storage */ }
     return null;
   }
 
   function guardarCache(key, v) {
-    var o = { t: Date.now(), v: v };
+    var o = { t: Date.now(), v: v, i: deIndec[key] ? 1 : 0 };
     mem[key] = o;
-    try { localStorage.setItem("econochanta:v2:s:" + key, JSON.stringify(o)); } catch (e) { /* cuota */ }
+    try { localStorage.setItem("econochanta:v3:s:" + key, JSON.stringify(o)); } catch (e) { /* cuota */ }
   }
+
+  var deIndec = {};
 
   function enriquecer(key, c, puntos) {
     var n = puntos.length;
     var ult = n ? puntos[n - 1] : null;
     var prev = n > 1 ? puntos[n - 2] : null;
     return {
-      key: key, label: c.label, unit: c.unit, dec: c.dec, fuente: c.fuente, points: puntos,
+      key: key, label: c.label, unit: c.unit, dec: c.dec,
+      fuente: deIndec[key] && c.src !== "indec" ? "INDEC, API oficial" : c.fuente, points: puntos,
       ultimo: ult ? { d: ult[0], v: ult[1] } : null,
       previo: prev ? { d: prev[0], v: prev[1] } : null
     };
@@ -238,7 +278,16 @@
     var cached = leerCache(key, c.ttl);
     if (cached) return Promise.resolve(enriquecer(key, c, cached.slice(-limite)));
     if (!enCurso[key]) {
-      enCurso[key] = pedir(c, 400).then(function (puntos) {
+      var base = pedir(c, 400).catch(function (e) { return c.src === "indec" ? [] : Promise.reject(e); });
+      // Si la fuente habitual falla pero el INDEC tiene la serie, se usa solo la del INDEC.
+      var conIndec = Promise.all([base.then(function (p) { return { p: p }; }, function (e) { return { e: e }; }), cargarIndec()])
+        .then(function (r) {
+          var f = fusionarIndec(key, r[0].p || [], r[1]);
+          if (r[0].e && !(r[1].series && r[1].series[key])) throw r[0].e;
+          deIndec[key] = f.indec;
+          return f.puntos;
+        });
+      enCurso[key] = conIndec.then(function (puntos) {
         if (!puntos.length) throw new Error("sin datos");
         var recorte = puntos.slice(-1300);
         guardarCache(key, recorte);
@@ -248,6 +297,39 @@
       enCurso[key].then(limpiar, limpiar);
     }
     return enCurso[key].then(function (recorte) { return enriquecer(key, c, recorte.slice(-limite)); });
+  }
+
+  /* Historia larga de una serie (desde 2010), solo en memoria: sirve para comparar mandatos.
+     No se recorta ni se guarda en localStorage. Devuelve [fecha, valor] ordenado. */
+  var historias = {};
+
+  function historia(key) {
+    var c = CAT[key];
+    if (!c) return Promise.reject(new Error("serie desconocida: " + key));
+    if (historias[key]) return historias[key];
+    var base;
+    if (c.src === "ad" || c.src === "adc" || c.src === "bcra") base = pedir(c, 0);
+    else if (c.src === "dg") {
+      // el servicio devuelve vacio si start_date queda antes del inicio de la serie: se prueban varios
+      var m = c.mult || 1, hoy = iso(new Date());
+      var desde = ["2010-12-01", "2016-10-01", "2016-12-01"];
+      var probar = function (i) {
+        return getJSON(DG0 + "&ids=" + c.id + "&start_date=" + desde[i] + "&limit=5000", 30000).then(function (r) {
+          var pts = (r.data || []).filter(function (x) { return x[1] !== null && x[1] !== undefined && x[0] <= hoy; })
+            .map(function (x) { return [x[0], Number(x[1]) * m]; })
+            .sort(function (a, b) { return a[0] < b[0] ? -1 : 1; });
+          return !pts.length && i + 1 < desde.length ? probar(i + 1) : pts;
+        });
+      };
+      base = probar(0);
+    } else base = Promise.resolve([]);
+    historias[key] = Promise.all([base.catch(function () { return []; }), cargarIndec()]).then(function (r) {
+      var pts = fusionarIndec(key, r[0], r[1]).puntos;
+      if (!pts.length) throw new Error("sin datos");
+      return pts;
+    });
+    historias[key].catch(function () { delete historias[key]; });
+    return historias[key];
   }
 
   /* Varias series a la vez. Las que fallan quedan en null y se informan en errores. */
@@ -444,7 +526,7 @@
   }
 
   window.EconoSeries = {
-    CAT: CAT, fiscalTrimestral: fiscalTrimestral, cotizacionesDolar: cotizacionesDolar, cargar: cargar, cargarVarias: cargarVarias, live: live, monedas: monedas,
+    CAT: CAT, fiscalTrimestral: fiscalTrimestral, cotizacionesDolar: cotizacionesDolar, cargar: cargar, cargarVarias: cargarVarias, historia: historia, live: live, monedas: monedas,
     restar: restar, variacion: variacion, variacionesMensuales: variacionesMensuales
   };
 })();

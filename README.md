@@ -71,6 +71,10 @@ Los datos son del informe mensual de ingresos y gastos del Estado nacional de la
 
 Cada lectura la genera `lectura.js` con una regla simple y visible, y la tarjeta tiene un "Por qué" con los números que se compararon. Las reglas comparan el dato con el anterior, con hace 12 meses, con su historia del último año o con otro indicador (por ejemplo, salarios y haber mínimo contra la inflación, recaudación contra la inflación, tasa de plazo fijo contra la inflación del mes). Cuando una situación es buena para unos y mala para otros (dólar, tasas), la lectura es "Mixto" y muestra los dos lados. Las etiquetas usan ícono, texto y un color distinto del verde y rojo de subir y bajar, para no mezclar dirección con interpretación. Los umbrales son criterios simples, no cifras oficiales, y están explicados en "Cómo se calcula".
 
+### Por mandato
+
+`#mandatos` compara inflación, dólar, riesgo país, reservas, actividad, desocupación, pobreza y salario real en los últimos cuatro mandatos presidenciales. Es solo descriptivo (no hay ranking ni colores de "bueno o malo") y la pantalla explica las ventanas de medición y los límites de los datos (por ejemplo, la intervención del INDEC entre 2007 y 2015). La lógica está en `mandatos.js`; las historias largas salen de `EconoSeries.historia`.
+
 ### Análisis
 
 Las notas viven en `analisis.js`. Cada una tiene bloques: párrafos, indicadores en vivo, "quién se ve beneficiado y perjudicado", "qué mirar ahora" y fuentes con enlace. La regla es separar los hechos (con fecha y fuente) de la interpretación, mostrar costos y ventajas de cada situación sin tomar partido ni recomendar inversiones, y no escribir cifras que cambian: para eso están los indicadores en vivo dentro de la nota.
@@ -113,6 +117,12 @@ Es una aproximación para decidir, no asesoramiento financiero.
 
 Las series de datos.gob.ar tienen un comportamiento particular: devuelven vacío si el pedido no encaja con el largo de la serie. `series.js` prueba varias formas de pedido hasta que una devuelva datos.
 
+### API oficial del INDEC
+
+`api.indec.gob.ar` publica los datos el mismo día, pero exige un token personal (JWT) y la web es pública, así que el token no puede estar en el navegador. Lo resuelve la Action `.github/workflows/indec.yml`: usa el secreto `INDEC_TOKEN` del repositorio, corre `scripts/fetch_indec.py` y guarda `data/indec.json` (datos públicos, sin el token). `series.js` suma esos puntos a lo que traen datos.gob.ar y ArgentinaDatos: pisa los meses que coinciden y agrega los que todavía no llegaron. Si el archivo no está o la Action falla, la web sigue con las otras fuentes.
+
+Para probarlo en local: `INDEC_TOKEN=... python scripts/fetch_indec.py`.
+
 ### Noticias
 
 `python scripts/fetch_news.py` baja los feeds de Ámbito, Infobae, La Nación, iProfesional y Perfil, se queda con las últimas 48 horas, clasifica por tema según palabras del título y escribe `news.json`. Solo se guarda título, medio, fecha y link. El workflow `.github/workflows/news.yml` de GitHub Actions lo corre cada hora de 6 a 23 hs (hora de Buenos Aires) y hace commit de `news.json`. También se puede disparar a mano desde la pestaña Actions o con `gh workflow run news.yml`. Para subir workflows, el token de `gh` necesita el permiso `workflow` (`gh auth refresh -h github.com -s workflow`).
@@ -122,6 +132,8 @@ Las series de datos.gob.ar tienen un comportamiento particular: devuelven vacío
 En Perfil elegís el backup de Plata. Se procesa en el navegador y solo se guardan totales por categoría (no movimientos ni notas). Cada categoría se cruza con el índice del INDEC de su rubro (transporte, salud, educación, ropa, hogar). Las que no tienen índice propio usan la inflación general. Comida y servicios todavía no tienen serie mensual disponible.
 
 ## Estructura
+
+`mandatos.js` (vista Por mandato), `data/indec.json` (lo genera la Action del INDEC), `scripts/fetch_indec.py`.
 
 ```
 index.html   vistas y markup
