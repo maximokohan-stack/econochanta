@@ -5,10 +5,10 @@
   "use strict";
 
   var MANDATOS = [
-    { id: "cfk", nombre: "Cristina Kirchner", sub: "2º mandato", ini: "2011-12-10", fin: "2015-12-09", rango: "dic 2011 – dic 2015" },
-    { id: "mm", nombre: "Mauricio Macri", sub: "", ini: "2015-12-10", fin: "2019-12-09", rango: "dic 2015 – dic 2019" },
-    { id: "af", nombre: "Alberto Fernández", sub: "", ini: "2019-12-10", fin: "2023-12-09", rango: "dic 2019 – dic 2023" },
-    { id: "jm", nombre: "Javier Milei", sub: "en curso", ini: "2023-12-10", fin: null, rango: "desde dic 2023" }
+    { id: "cfk", nombre: "Cristina Kirchner", sub: "2º mandato", ini: "2011-12-10", fin: "2015-12-09", rango: "dic 2011 – dic 2015", anios: "2011–15" },
+    { id: "mm", nombre: "Mauricio Macri", sub: "", ini: "2015-12-10", fin: "2019-12-09", rango: "dic 2015 – dic 2019", anios: "2015–19" },
+    { id: "af", nombre: "Alberto Fernández", sub: "", ini: "2019-12-10", fin: "2023-12-09", rango: "dic 2019 – dic 2023", anios: "2019–23" },
+    { id: "jm", nombre: "Javier Milei", sub: "en curso", ini: "2023-12-10", fin: null, rango: "desde dic 2023", anios: "2023–hoy" }
   ];
 
   var MESES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
@@ -226,7 +226,78 @@
     });
   }
 
+  function calcularTodo(datos) {
+    return INDICADORES.map(function (ind) {
+      var S = {};
+      ind.claves.concat(ind.opcionales || []).forEach(function (k) { S[k] = datos[k]; });
+      var faltan = ind.claves.some(function (k) { return !datos[k] || !datos[k].length; });
+      return MANDATOS.map(function (m) {
+        try { return faltan ? sinDato("sin datos") : ind.calc(S, m); } catch (e) { return sinDato("sin datos"); }
+      });
+    });
+  }
+
+  /* Una tarjeta por indicador con una barra por mandato. Si hay valores negativos, las barras salen
+     de una linea central (izquierda baja, derecha sube); si no, todas arrancan del borde. */
+  function pintarBarras(caja, res) {
+    var grilla = el("div", "mbar__grilla");
+    INDICADORES.forEach(function (ind, i) {
+      var celdas = res[i];
+      var vals = celdas.map(function (c) { return c.valor; }).filter(function (v) { return v !== null && isFinite(v); });
+      var max = Math.max.apply(null, vals.map(Math.abs).concat([1e-9]));
+      var conNeg = vals.some(function (v) { return v < 0; });
+      var card = el("article", "mbar" + (conNeg ? " mbar--div" : ""));
+      card.appendChild(el("h3", "mbar__tit", ind.nombre));
+      card.appendChild(el("p", "mbar__que", ind.que));
+      var ul = el("ul", "mbar__lista");
+      MANDATOS.forEach(function (m, j) {
+        var c = celdas[j], li = el("li", "mbar__fila");
+        var q = el("span", "mbar__quien"); q.appendChild(document.createTextNode(m.nombre.split(" ").slice(-1)[0]));
+        q.appendChild(el("small", "", m.anios)); li.appendChild(q);
+        var pista = el("span", "mbar__pista"); pista.setAttribute("aria-hidden", "true");
+        if (c.valor !== null) {
+          var w = Math.abs(c.valor) / max * (conNeg ? 50 : 100);
+          var barra = el("span", "mbar__barra " + (c.tono || "flat") + (c.valor < 0 ? " neg" : ""));
+          barra.style.width = Math.max(w, 0.8).toFixed(2) + "%";
+          barra.style.left = (conNeg ? (c.valor < 0 ? 50 - w : 50) : 0).toFixed(2) + "%";
+          barra.style.setProperty("--i", j);
+          pista.appendChild(barra);
+        }
+        li.appendChild(pista);
+        li.appendChild(el("span", "mbar__val" + (c.tono && c.tono !== "flat" ? " " + c.tono : ""), c.texto));
+        var det = el("span", "mbar__det", c.detalle[0] || "");
+        li.appendChild(det);
+        var mas = el("span", "mbar__mas", c.detalle.slice(1).concat(c.extra ? [c.extra] : []).join(" · "));
+        if (mas.textContent) li.appendChild(mas);
+        ul.appendChild(li);
+      });
+      card.appendChild(ul);
+      var b = el("button", "mbar__ver", "Ver detalle"); b.type = "button"; b.setAttribute("aria-expanded", "false");
+      b.addEventListener("click", function () {
+        var on = card.classList.toggle("abierto");
+        b.textContent = on ? "Ver menos" : "Ver detalle"; b.setAttribute("aria-expanded", on ? "true" : "false");
+      });
+      card.appendChild(b);
+      grilla.appendChild(card);
+    });
+    caja.appendChild(grilla);
+    // las barras crecen cuando la grilla entra en pantalla
+    if ("IntersectionObserver" in window) {
+      var io = new IntersectionObserver(function (es) {
+        es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("visible"); io.unobserve(e.target); } });
+      }, { threshold: 0.2 });
+      [].forEach.call(grilla.children, function (c) { io.observe(c); });
+      setTimeout(function () { [].forEach.call(grilla.children, function (c) { c.classList.add("visible"); }); }, 2500);
+    } else [].forEach.call(grilla.children, function (c) { c.classList.add("visible"); });
+  }
+
   function pintar(caja, datos) {
+    var res = calcularTodo(datos);
+    pintarBarras(caja, res);
+    var d = el("details", "mand__comotabla");
+    d.appendChild(el("summary", "", "Ver todo como tabla"));
+    caja.appendChild(d);
+    caja = d;
     var tabla = el("table", "mand__tabla");
     var cap = el("caption", "sr-only", "Indicadores por mandato presidencial"); tabla.appendChild(cap);
     var th = el("thead"), tr = el("tr");
@@ -247,13 +318,9 @@
       c0.appendChild(el("span", "mand__indn", ind.nombre));
       c0.appendChild(el("span", "mand__que", ind.que));
       fila.appendChild(c0);
-      var S = {};
-      ind.claves.concat(ind.opcionales || []).forEach(function (k) { S[k] = datos[k]; });
-      var faltan = ind.claves.some(function (k) { return !datos[k] || !datos[k].length; });
-      MANDATOS.forEach(function (m) {
+      MANDATOS.forEach(function (m, j) {
         var td = el("td", "mand__celda"); td.setAttribute("data-mandato", m.nombre);
-        var c;
-        try { c = faltan ? sinDato("sin datos") : ind.calc(S, m); } catch (e) { c = sinDato("sin datos"); }
+        var c = res[INDICADORES.indexOf(ind)][j];
         var v = el("span", "mand__valor" + (c.tono && c.tono !== "flat" ? " " + c.tono : ""), c.texto);
         td.appendChild(v);
         c.detalle.forEach(function (t) { td.appendChild(el("span", "mand__det", t)); });

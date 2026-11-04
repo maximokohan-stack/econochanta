@@ -168,6 +168,24 @@
     return indecDoc;
   }
 
+  // data/resumen.json: todas las series ya recortadas, armado cada hora por una Action. Con eso la
+  // web abre con un solo pedido (~180 KB) en vez de bajar la historia completa de cada fuente (~2,7 MB).
+  // Si el archivo no esta o tiene mas de 3 horas, cada serie se pide a su fuente como siempre.
+  var RESUMEN_EDAD = 3 * HORA, resumenDoc = null;
+
+  function cargarResumen() {
+    if (!resumenDoc) {
+      resumenDoc = fetch("data/resumen.json", { cache: "no-cache" }).then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        return r.json();
+      }).then(function (d) {
+        var t = Date.parse(d.generado);
+        return isFinite(t) && Date.now() - t < RESUMEN_EDAD ? d : { series: {} };
+      }).catch(function () { return { series: {} }; });
+    }
+    return resumenDoc;
+  }
+
   function mesDe(f) { return f.slice(0, 7); }
 
   function fusionarIndec(key, base, doc) {
@@ -278,7 +296,10 @@
     var cached = leerCache(key, c.ttl);
     if (cached) return Promise.resolve(enriquecer(key, c, cached.slice(-limite)));
     if (!enCurso[key]) {
-      var base = pedir(c, 400).catch(function (e) { return c.src === "indec" ? [] : Promise.reject(e); });
+      var base = cargarResumen().then(function (res) {
+        var r = res.series && res.series[key];
+        return r && r.length ? r.map(function (p) { return [p[0], Number(p[1])]; }) : pedir(c, 400);
+      }).catch(function (e) { return c.src === "indec" ? [] : Promise.reject(e); });
       // Si la fuente habitual falla pero el INDEC tiene la serie, se usa solo la del INDEC.
       var conIndec = Promise.all([base.then(function (p) { return { p: p }; }, function (e) { return { e: e }; }), cargarIndec()])
         .then(function (r) {

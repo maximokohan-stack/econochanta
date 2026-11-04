@@ -1628,7 +1628,7 @@
     var elegidos = IDS_LECTURA_INICIO.map(function (id) { return porId[id]; }).filter(Boolean);
     caja.textContent = "";
     elegidos.forEach(function (x) {
-      var b = el("button", "lec"); b.type = "button";
+      var b = el("button", "lec lec--" + x.r.v); b.type = "button";
       b.appendChild(el("span", "rec__tema", L.tema(x.id)));
       var n = el("span", "lec__nom"); var pt = punto(x.it.id); if (pt) n.appendChild(pt); n.appendChild(document.createTextNode(x.it.label)); b.appendChild(n);
       var v = el("span", "lec__val"); v.appendChild(document.createTextNode(x.it.valor));
@@ -2156,7 +2156,7 @@
     mixto: { icono: "⇄", nombre: "Mixto" },
     neutro: { icono: "=", nombre: "Neutral" }
   };
-  var recientesTema = "Todos";
+  var recientesTema = "Todos", recAbiertos = {};
 
   function armarRecientes() {
     var raiz = $("recientes-contenido"); raiz.textContent = "";
@@ -2170,7 +2170,7 @@
     var mt = el("a", "link", "Cómo se hacen las lecturas"); mt.href = "#metodologia"; aviso.appendChild(mt);
     raiz.appendChild(aviso);
     var resumen = el("div", "rec__resumen"); raiz.appendChild(resumen);
-    var chipsBox = el("div", "chips chips--sm"); chipsBox.setAttribute("role", "group"); chipsBox.setAttribute("aria-label", "Tema"); raiz.appendChild(chipsBox);
+    var chipsBox = el("div", "chips chips--sm rec__chips"); chipsBox.setAttribute("role", "group"); chipsBox.setAttribute("aria-label", "Tema"); raiz.appendChild(chipsBox);
     var estado = el("p", "hint"); raiz.appendChild(estado);
     var lista = el("div", "rec__lista"); raiz.appendChild(lista);
 
@@ -2184,7 +2184,7 @@
 
     function tarjetaRec(x) {
       var it = x.it, r = x.r;
-      var card = el("article", "rec");
+      var card = el("article", "rec" + (r ? " rec--" + r.v : "") + (recAbiertos[x.id] ? " abierto" : ""));
       var izq = el("div", "rec__izq");
       izq.appendChild(el("span", "rec__tema", L.tema(x.id)));
       var h = el("h3", "rec__nom"); var pt = punto(it.id); if (pt) h.appendChild(pt); h.appendChild(document.createTextNode(it.label)); izq.appendChild(h);
@@ -2214,8 +2214,17 @@
           der.appendChild(d);
         }
       } else der.appendChild(el("p", "hint", "Todavía no hay lectura para este indicador."));
-      var ver = el("a", "link", "Ver el indicador"); ver.href = "#" + (SEC_DE[it.id] || "bcra") + ":" + it.id; der.appendChild(ver);
+      var ver = el("a", "link rec__ver", "Ver el indicador"); ver.href = "#" + (SEC_DE[it.id] || "bcra") + ":" + it.id; der.appendChild(ver);
       card.appendChild(der);
+      var mas = el("button", "rec__mas", recAbiertos[x.id] ? "Ver menos" : "Ver detalle"); mas.type = "button";
+      mas.setAttribute("aria-expanded", recAbiertos[x.id] ? "true" : "false");
+      mas.addEventListener("click", function () {
+        recAbiertos[x.id] = !recAbiertos[x.id];
+        card.classList.toggle("abierto", recAbiertos[x.id]);
+        mas.textContent = recAbiertos[x.id] ? "Ver menos" : "Ver detalle";
+        mas.setAttribute("aria-expanded", recAbiertos[x.id] ? "true" : "false");
+      });
+      card.appendChild(mas);
       return card;
     }
 

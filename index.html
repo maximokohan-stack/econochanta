@@ -94,26 +94,40 @@
       </aside>
       <section class="pulso" id="pulso" aria-label="El pulso de hoy"></section>
       <div class="mov-cab">
+        <h2 class="resumen__sub">Lo último, con su lectura</h2>
+        <a class="link" href="#recientes">Ver los 16 →</a>
+      </div>
+      <div class="lec-lista" id="inicio-lectura"></div>
+      <p class="hint">Una lectura automática por tema, con reglas simples. Tocá una para ver el gráfico y por qué.</p>
+      <div class="mov-cab">
         <h2 class="resumen__sub">Lo que más se movió</h2>
         <div class="chips chips--sm" id="mov-periodos" role="group" aria-label="Período"></div>
       </div>
       <div class="movers" id="movers" aria-live="polite"></div>
       <p class="hint" id="mov-nota"></p>
       <div class="mov-cab">
-        <h2 class="resumen__sub">Lo último, con su lectura</h2>
-        <a class="link" href="#recientes">Ver los 16 indicadores →</a>
+        <h2 class="resumen__sub">Dólares hoy</h2>
+        <span class="hint solo-movil desliza">Deslizá →</span>
       </div>
-      <div class="lec-lista" id="inicio-lectura"></div>
-      <p class="hint">Una lectura automática por tema, con reglas simples. Tocá una para ver el gráfico y por qué.</p>
-      <h2 class="resumen__sub">Dólares hoy</h2>
-      <div class="tarjetas" id="inicio-dolares"></div>
+      <div class="tarjetas tarjetas--carrusel" id="inicio-dolares"></div>
       <div id="inicio-analisis"></div>
       <div id="inicio-favs-bloque" hidden>
         <h2 class="resumen__sub">★ Tus favoritos</h2>
         <div class="tarjetas" id="inicio-favs"></div>
       </div>
+      <aside class="instalar" id="instalar" hidden>
+        <div class="instalar__icono" aria-hidden="true"><img src="assets/icon-192.png" alt="" width="48" height="48"></div>
+        <div class="instalar__txt">
+          <strong>Tené Econochanta como app</strong>
+          <p id="instalar-como">Se abre a pantalla completa desde tu inicio, como cualquier app.</p>
+        </div>
+        <div class="instalar__acc">
+          <button class="btn btn--sm" id="instalar-si" type="button" hidden>Instalar</button>
+          <button class="btn btn--ghost btn--sm" id="instalar-no" type="button">Ahora no</button>
+        </div>
+      </aside>
       <h2 class="resumen__sub">Entrá por tema</h2>
-      <div id="inicio-tiles"></div>
+      <div id="inicio-tiles" class="tiles-compactas"></div>
     </section>
 
     <!-- ARGENTINA: menu de secciones -->
