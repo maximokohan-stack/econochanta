@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-03T22:08:17.055803Z",
+ "actualizado": "2026-11-04T02:48:52.623255Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 20
+   "n": 25
   },
   {
    "medio": "Infobae",
@@ -61,25 +61,88 @@
  ],
  "items": [
   {
-   "titulo": "Alivio sin euforia: Caputo buscó acercarse a la industria, pero la preocupación por la actividad dominó los pasillos",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/03/alivio-sin-euforia-caputo-busco-acercarse-a-la-industria-pero-la-preocupacion-por-la-actividad-domino-los-pasillos/",
-   "fecha": "2026-11-03T22:03:29Z",
+   "titulo": "El dólar y el riesgo país se recalientan, en la previa de las elecciones en EE.UU.",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/468240-dolar-y-riesgo-pais-se-recalientan-en-la-previa-de-las-elecciones-en-eeuu",
+   "fecha": "2026-11-04T00:28:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Empleo en plataformas de movilidad: el 65% de los conductores utiliza la app para complementar ingresos",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/empleo-plataformas-movilidad-el-65-los-conductores-utiliza-la-app-complementar-ingresos-n6341096",
+   "fecha": "2026-11-04T00:12:00Z",
    "tema": "actividad"
+  },
+  {
+   "titulo": "Calendario Anses: cuándo cobro la jubilación de noviembre si mi DNI termina en 2",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/calendario-anses-cuando-cobro-la-jubilacion-de-noviembre-si-mi-dni-termina-en-2-nid03112026/",
+   "fecha": "2026-11-03T23:33:00Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Los plazos fijos podrán negociarse en el mercado de capitales: así es el proyecto oficial",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/468254-buscan-que-plazos-fijos-se-puedan-negociar-en-el-mercado-de-capitales",
+   "fecha": "2026-11-03T23:29:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Un supermercado podrá exportar a Europa un subproducto bovino que sirve para fabricar un combustible para los aviones",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/un-supermercado-podra-exportar-a-europa-un-subproducto-que-sirve-para-fabricar-combustible-de-nid03112026/",
+   "fecha": "2026-11-03T23:27:42Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Gobernadores, sorprendidos por el pedido de Luis Caputo de eliminar Sellos: plantean discutir la coparticipación",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/gobernadores-sorprendidos-el-pedido-luis-caputo-eliminar-sellos-plantean-discutir-la-coparticipacion-n6341008",
+   "fecha": "2026-11-03T23:12:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "El Gobierno dio marcha atrás y aclaró que no buscará cobrar Ganancias a las inversiones en CEDEARs",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/03/el-gobierno-propone-que-paguen-ganancias-las-inversiones-en-cedear-uno-de-los-instrumentos-mas-populares-del-mercado/",
+   "fecha": "2026-11-03T22:37:02Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Vaca Muerta no frena su ritmo y supera en diez meses el registro de 2025",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/energia/468243-vaca-muerta-no-frena-su-ritmo-supera-en-diez-meses-de-2026-todo-el-registro-de-2025",
+   "fecha": "2026-11-03T22:25:00Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Encuesta: ocho de cada diez productores agropecuarios que incorporaron tecnología digital registraron mejoras medibles",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/encuesta-ocho-de-cada-diez-productores-agropecuarios-que-incorporaron-tecnologia-digital-registraron-nid03112026/",
+   "fecha": "2026-11-03T22:16:22Z",
+   "tema": "otros"
   },
   {
    "titulo": "“Campaña sofisticada”: Binance reveló que los hackers hicieron entrevistas de trabajo falsas para el robo de US$6300 millones",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/campana-sofisticada-binance-revelo-que-los-hackers-hicieron-entrevistas-de-trabajo-falsas-para-el-nid03112026/",
-   "fecha": "2026-11-03T22:03:08Z",
+   "fecha": "2026-11-03T22:07:01Z",
    "tema": "otros"
   },
   {
-   "titulo": "Belén, veterinaria, eligió un tractor rosa: “Vamos a hacer algo distinto y muy disruptivo”",
+   "titulo": "Belén, veterinaria, eligió un tractor rosa: “Vamos a hacer algo muy disruptivo”",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/campo/belen-veterinaria-produce-en-cordoba-y-eligio-un-tractor-rosa-para-un-homenaje-vamos-a-hacer-algo-nid03112026/",
-   "fecha": "2026-11-03T21:58:18Z",
+   "fecha": "2026-11-03T22:06:00Z",
    "tema": "otros"
+  },
+  {
+   "titulo": "Alivio sin euforia: Caputo buscó acercarse a la industria, pero la preocupación por la actividad dominó los pasillos",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/03/alivio-sin-euforia-caputo-busco-acercarse-a-la-industria-pero-la-preocupacion-por-la-actividad-domino-los-pasillos/",
+   "fecha": "2026-11-03T22:03:29Z",
+   "tema": "actividad"
   },
   {
    "titulo": "El riesgo país trepó a un máximo desde las elecciones de 2025 y el dólar anotó una nueva suba",
@@ -94,13 +157,6 @@
    "url": "https://www.infobae.com/economia/2026/11/03/riesgo-pais-arriba-de-800-puntos-y-activos-en-baja-por-que-las-acciones-y-los-bonos-argentinos-tocaron-minimos-en-un-ano/",
    "fecha": "2026-11-03T21:48:28Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "El Gobierno busca que paguen Ganancias las inversiones en CEDEARs, uno de los instrumentos más populares del mercado",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/03/el-gobierno-propone-que-paguen-ganancias-las-inversiones-en-cedear-uno-de-los-instrumentos-mas-populares-del-mercado/",
-   "fecha": "2026-11-03T21:47:03Z",
-   "tema": "politica"
   },
   {
    "titulo": "Juicios por coberturas de salud se cuadruplican y se agrava la crisis de las prepagas",
@@ -257,7 +313,7 @@
    "tema": "dolar"
   },
   {
-   "titulo": "El dólar mayorista superó los $1.550, con el mercado atento al potencial impacto de las elecciones en EEUU",
+   "titulo": "El dólar mayorista superó por primera vez los $1.550 y quebró un nuevo máximo nominal",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/dolar-su-record-nominal-el-mercado-sigue-atencion-las-elecciones-eeuu-y-las-reservas-del-bcra-n6340809",
    "fecha": "2026-11-03T19:09:00Z",
@@ -495,31 +551,10 @@
    "tema": "otros"
   },
   {
-   "titulo": "Juicio por YPF: fuerte lobby en EE.UU. para que la Corte Suprema revise el fallo favorable a la Argentina",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/juicio-por-ypf-fuerte-lobby-en-eeuu-para-que-la-corte-suprema-revise-el-fallo-favorable-a-la-nid03112026/",
-   "fecha": "2026-11-03T15:11:50Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Teo Zorraquín: qué dice sobre la situación del agro uno de los consultores más escuchados por los productores",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/teo-zorraquin-consultor-sobre-el-momento-del-agro-se-necesita-financiamiento-y-se-toma-pero-pateando-nid03112026/",
-   "fecha": "2026-11-03T15:06:59Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Nuevos sueldos de SMATA: las escalas de noviembre y diciembre para trabajadores de concesionarias",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/legales/468195-sueldo-smata-escala-salarial-de-concesionarias-para-noviembre-y-diciembre-de-2026",
    "fecha": "2026-11-03T15:04:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Pinterest desembarca en la Argentina y abre un hub de negocios para la región",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/negocios/pinterest-desembarca-en-la-argentina-y-abre-un-hub-de-negocios-para-la-region-nid03112026/",
-   "fecha": "2026-11-03T15:00:45Z",
    "tema": "otros"
   },
   {
@@ -621,34 +656,6 @@
    "tema": "politica"
   },
   {
-   "titulo": "Cuánto cuesta el libro de León XIV, \"La fuerza del Evangelio\" y dónde comprarlo",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/cuanto-cuesta-el-libro-leon-xiv-la-fuerza-del-evangelio-y-donde-comprarlo-n6325182",
-   "fecha": "2026-11-03T12:56:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Dueña de Molfino y La Paulina busca reactivar plantas de Lácteos Verónica",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/negocios/468169-duena-de-molfino-y-la-paulina-busca-reactivar-lacteos-veronica",
-   "fecha": "2026-11-03T12:43:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "ANSES noviembre 2026: calendario confirmado de jubilados, AUH y asignaciones",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/management/468098-anses-noviembre-2026-calendario-confirmado-de-jubilados-auh-y-asignaciones",
-   "fecha": "2026-11-03T11:57:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Aumento la prestación por desempleo para peones rurales: a cuánto se fue la máxima",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/468160-aumento-la-prestacion-por-desempleo-para-peones-rurales-a-cuanto-se-fue-la-maxima",
-   "fecha": "2026-11-03T11:51:00Z",
-   "tema": "inflacion"
-  },
-  {
    "titulo": "La UIA realiza su conferencia anual con una industria en rojo: presencia de Luis Caputo y foco en los impuestos",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/la-uia-realiza-su-conferencia-anual-una-industria-rojo-presencia-luis-caputo-y-foco-los-impuestos-n6340448",
@@ -677,13 +684,6 @@
    "tema": "mercados"
   },
   {
-   "titulo": "Industria del cannabis en Argentina: qué está permitido, cuáles son las trabas y cuánto puede crecer",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/industria-del-cannabis-argentina-que-esta-permitido-cuales-son-las-trabas-y-cuanto-puede-crecer-n6340571",
-   "fecha": "2026-11-03T10:00:00Z",
-   "tema": "actividad"
-  },
-  {
    "titulo": "Reservas del BCRA: déficit de servicios saltó a u$s1.061 millones en septiembre y fue el mayor en un año y medio",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/reservas-del-bcra-subio-el-deficit-servicios-septiembre-n6340739",
@@ -691,11 +691,46 @@
    "tema": "politica"
   },
   {
+   "titulo": "Industria del cannabis en Argentina: qué está permitido, cuáles son las trabas y cuánto puede crecer",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/industria-del-cannabis-argentina-que-esta-permitido-cuales-son-las-trabas-y-cuanto-puede-crecer-n6340571",
+   "fecha": "2026-11-03T10:00:00Z",
+   "tema": "actividad"
+  },
+  {
    "titulo": "Mariana Camino, CEO de ABECEB: \"América Latina tiene los recursos que el mundo necesita, pero hay una ventana de oportunidad para aprovecharlos\"",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/mariana-camino-ceo-abeceb-america-latina-tiene-los-recursos-que-el-mundo-necesita-pero-hay-una-ventana-oportunidad-aprovecharlos-n6340761",
    "fecha": "2026-11-03T01:41:00Z",
    "tema": "otros"
+  },
+  {
+   "titulo": "La recaudación de octubre registró una leve suba real, pese a una nueva caída del IVA",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/la-recaudacion-octubre-registro-una-leve-suba-real-pese-una-nueva-caida-del-iva-n6340700",
+   "fecha": "2026-11-02T21:14:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Estiman que la inflación se consolidó por debajo del 2% en octubre, aunque vivienda suma presión sobre los precios",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/la-inflacion-se-consolido-debajo-del-2-octubre-aunque-advierten-presiones-el-lado-la-vivienda-n6340511",
+   "fecha": "2026-11-02T19:01:00Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "EEUU llega a las elecciones con una economía dual: crece la actividad, pero también el costo de vida",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/eeuu-llega-las-elecciones-una-dual-crece-la-actividad-pero-tambien-el-costo-vida-n6340573",
+   "fecha": "2026-11-02T18:53:00Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "La inflación dejó de ser una de las principales preocupaciones de los argentinos: qué problemas encabezan el ranking",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/la-inflacion-dejo-ser-una-las-principales-preocupaciones-los-argentinos-que-problemas-encabezan-el-ranking-n6340517",
+   "fecha": "2026-11-02T17:26:00Z",
+   "tema": "inflacion"
   }
  ]
 }
