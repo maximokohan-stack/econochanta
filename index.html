@@ -12,6 +12,9 @@
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="Econochanta">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Inter:wght@400;500;600;700&amp;display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -66,10 +69,13 @@
 
     <!-- INICIO -->
     <section id="vista-inicio" class="vista" aria-labelledby="h-inicio">
-      <div class="front-head">
-        <div>
-          <h1 id="h-inicio" class="title">Cada número de la economía, explicado</h1>
-          <p class="sub">Dólar, inflación, tasas, cuentas del Estado y actividad de Argentina, con datos oficiales y una explicación en criollo de qué significa cada uno.</p>
+      <div class="hero">
+        <svg class="hero__amb" id="hero-amb" viewBox="0 0 1000 200" preserveAspectRatio="none" aria-hidden="true"></svg>
+        <div class="hero__txt">
+          <p class="hero__eyebrow"><span class="vivo" aria-hidden="true"></span><span id="hero-fecha">El pulso de la economía argentina</span></p>
+          <h1 id="h-inicio" class="hero__tit">Cada número de la economía, explicado</h1>
+          <p class="hero__sub" id="hero-sub">Dólar, inflación, tasas, cuentas del Estado y actividad de Argentina, con datos oficiales y una explicación en criollo de qué significa cada uno.</p>
+          <div class="senales" id="senales" hidden></div>
         </div>
         <div class="front-head__acc">
           <p class="front-head__stamp" id="actualizado" role="status"></p>
@@ -92,6 +98,37 @@
           <button class="btn btn--sm" id="primera-ok" type="button">Entendido</button>
         </div>
       </aside>
+      <div class="mov-cab">
+        <h2 class="resumen__sub">Dólares hoy</h2>
+        <span class="hint">Precio de venta · se actualiza solo</span>
+      </div>
+      <div class="tarjetas tarjetas--carrusel" id="inicio-dolares"></div>
+
+      <div class="mov-cab">
+        <div>
+          <h2 class="resumen__sub">Cómo se movió todo</h2>
+          <p class="hint mov-leyenda-txt">Verde subió, rojo bajó. Cuanto más intenso, más grande el movimiento.</p>
+        </div>
+        <div class="mov-cab__der">
+          <div class="escala" aria-hidden="true"><span>Baja fuerte</span><i class="h-d4"></i><i class="h-d3"></i><i class="h-d2"></i><i class="h-d1"></i><i class="h-u1"></i><i class="h-u2"></i><i class="h-u3"></i><i class="h-u4"></i><span>Sube fuerte</span></div>
+          <div class="chips chips--sm" id="mov-periodos" role="group" aria-label="Período"></div>
+        </div>
+      </div>
+      <div class="movers" id="movers" aria-live="polite"></div>
+      <p class="hint" id="mov-nota"></p>
+
+      <section class="mosaico-sec" aria-labelledby="h-mosaico">
+        <div class="mov-cab">
+          <div>
+            <h2 class="resumen__sub" id="h-mosaico">Ocho preguntas, ocho respuestas</h2>
+            <p class="hint">Cada tarjeta dice el último dato, qué cambió y qué significa para vos.</p>
+          </div>
+          <div class="chips chips--sm" id="mosaico-filtros" role="group" aria-label="¿Qué te importa a vos? Filtrar tarjetas"></div>
+        </div>
+        <div class="mosaico" id="mosaico"></div>
+        <p class="hint">La señal de cada tarjeta dice si el dato es bueno o malo para la gente. El color del cambio dice si subió o bajó.</p>
+      </section>
+
       <section class="pulso" id="pulso" aria-label="El pulso de hoy"></section>
       <div class="mov-cab">
         <h2 class="resumen__sub">Lo último, con su lectura</h2>
@@ -99,17 +136,6 @@
       </div>
       <div class="lec-lista" id="inicio-lectura"></div>
       <p class="hint">Una lectura automática por tema, con reglas simples. Tocá una para ver el gráfico y por qué.</p>
-      <div class="mov-cab">
-        <h2 class="resumen__sub">Lo que más se movió</h2>
-        <div class="chips chips--sm" id="mov-periodos" role="group" aria-label="Período"></div>
-      </div>
-      <div class="movers" id="movers" aria-live="polite"></div>
-      <p class="hint" id="mov-nota"></p>
-      <div class="mov-cab">
-        <h2 class="resumen__sub">Dólares hoy</h2>
-        <span class="hint solo-movil desliza">Deslizá →</span>
-      </div>
-      <div class="tarjetas tarjetas--carrusel" id="inicio-dolares"></div>
       <div id="inicio-analisis"></div>
       <div id="inicio-favs-bloque" hidden>
         <h2 class="resumen__sub">★ Tus favoritos</h2>

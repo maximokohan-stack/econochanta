@@ -866,10 +866,21 @@
   }
 
   function initTema() {
+    var guardado = null;
     try {
       var t = localStorage.getItem(KEY_TEMA);
-      if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+      if (t === "light" || t === "dark") guardado = t;
     } catch (e) { /* ignorar */ }
+    // sin preferencia guardada, el tema sigue al del sistema (y cambia si el sistema cambia)
+    var mq = window.matchMedia ? window.matchMedia("(prefers-color-scheme: light)") : null;
+    document.documentElement.dataset.theme = guardado || (mq && mq.matches ? "light" : "dark");
+    if (mq && !guardado) {
+      var alCambiar = function (e) {
+        try { if (localStorage.getItem(KEY_TEMA)) return; } catch (x) { /* ignorar */ }
+        document.documentElement.dataset.theme = e.matches ? "light" : "dark"; pintarBotonTema();
+      };
+      if (mq.addEventListener) mq.addEventListener("change", alCambiar); else if (mq.addListener) mq.addListener(alCambiar);
+    }
     pintarBotonTema();
     $("tema").addEventListener("click", function () {
       var next = temaEfectivo() === "dark" ? "light" : "dark";

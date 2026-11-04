@@ -1,5 +1,5 @@
 /* Cache simple del shell para que ande sin conexión. Subí VERSION al cambiar archivos. */
-var VERSION = "econochanta-v22";
+var VERSION = "econochanta-v23";
 var SHELL = ["./", "index.html", "styles.css", "app.js", "api.js", "series.js", "charts.js", "glosario.js", "analisis.js", "lectura.js", "mandatos.js", "tablero.js", "data.js", "manifest.webmanifest", "assets/icon.svg", "assets/icon-192.png", "assets/icon-512.png"];
 
 self.addEventListener("install", function (e) {
