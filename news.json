@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-04T02:48:52.623255Z",
+ "actualizado": "2026-11-04T05:39:02.331949Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -60,6 +60,55 @@
   }
  ],
  "items": [
+  {
+   "titulo": "El dólar volvió a trepar en Brasil, contagió al mercado argentino y el riesgo país se despegó de los 800 puntos",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/04/el-dolar-volvio-a-trepar-en-brasil-contagio-al-mercado-argentino-y-el-riesgo-pais-se-despego-de-los-800-puntos/",
+   "fecha": "2026-11-04T04:11:28Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Caputo busca impulsar la actividad con cuatro medidas: los puntos que celebran los economistas y las dudas que persisten",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/04/caputo-busca-impulsar-la-actividad-con-cuatro-medidas-los-puntos-que-celebran-los-economistas-y-las-dudas-que-persisten/",
+   "fecha": "2026-11-04T04:11:12Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "La UIA insiste en un RIGI para la industria: los impuestos que propone bajar y el pacto político que impulsa",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/04/la-uia-insiste-en-un-rigi-para-la-industria-los-impuestos-que-propone-bajar-y-el-pacto-politico-que-impulsa/",
+   "fecha": "2026-11-04T04:10:50Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Planes de ahorro: las suscripciones volvieron a caer en octubre, pero las pickups recuperaron terreno",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/04/planes-de-ahorro-las-suscripciones-volvieron-a-caer-en-octubre-pero-las-pickups-recuperaron-terreno/",
+   "fecha": "2026-11-04T04:10:31Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "¿Menos inversión?: las importaciones de bienes de capital cayeron casi 14% en lo que va del año",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/04/menos-inversion-las-importaciones-de-bienes-de-capital-cayeron-casi-14-en-lo-que-va-del-ano/",
+   "fecha": "2026-11-04T04:10:05Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Tras la suba del riesgo país, el Gobierno mueve fichas para reactivar la economía y el consumo",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/04/tras-la-suba-del-riesgo-pais-el-gobierno-mueve-fichas-para-reactivar-la-economia-y-el-consumo/",
+   "fecha": "2026-11-04T04:09:13Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "La City se prepara para pérdidas en acciones y bonos argentinos con un revés para Trump",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/468266-mercados-argentinos-panico-derrota-trump-fuerte-caida-acciones",
+   "fecha": "2026-11-04T03:44:00Z",
+   "tema": "mercados"
+  },
   {
    "titulo": "El dólar y el riesgo país se recalientan, en la previa de las elecciones en EE.UU.",
    "medio": "iProfesional",
@@ -523,20 +572,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Delcy Rodríguez recibió al ministro de Economía de Portugal y 37 entidades de distintos sectores del país europeo",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/venezuela/2026/11/03/delcy-rodriguez-recibio-al-ministro-de-economia-de-portugal-y-37-entidades-de-distintos-sectores-del-pais-europeo/",
-   "fecha": "2026-11-03T15:44:32Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Para el economista Fernando Marull, la suba del riesgo país refleja que bajaron las chances de reelección de Milei",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/03/para-el-economista-fernando-marull-la-suba-del-riesgo-pais-refleja-que-bajaron-las-chances-de-reeleccion-de-milei/",
-   "fecha": "2026-11-03T15:30:32Z",
-   "tema": "mercados"
-  },
-  {
    "titulo": "Algodonera en quiebra: hay cinco interesados en los activos de la empresa que debe millones y le están por cortar la luz",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/campo/algodonera-en-quiebra-hay-cinco-interesados-en-comprar-la-empresa-que-debe-millones-y-le-estan-por-nid03112026/",
@@ -544,25 +579,11 @@
    "tema": "empresas"
   },
   {
-   "titulo": "De cuánto es la PUAM de ANSES en noviembre 2026",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/03/de-cuanto-es-la-puam-de-anses-en-noviembre-2026/",
-   "fecha": "2026-11-03T15:24:45Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Nuevos sueldos de SMATA: las escalas de noviembre y diciembre para trabajadores de concesionarias",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/legales/468195-sueldo-smata-escala-salarial-de-concesionarias-para-noviembre-y-diciembre-de-2026",
    "fecha": "2026-11-03T15:04:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Economía anunció la suspensión de embargos de ARCA para pymes y otras tres medidas para impulsar la actividad",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/03/economia-anuncio-la-suspension-de-embargos-de-arca-para-pymes-y-otras-tres-medidas-para-impulsar-la-actividad/",
-   "fecha": "2026-11-03T14:54:28Z",
-   "tema": "actividad"
   },
   {
    "titulo": "Argentina actualiza la capacidad de sus cazas F-16 y empareja su flota con Chile",
@@ -577,13 +598,6 @@
    "url": "https://www.ambito.com/economia/ravier-que-suba-el-riesgo-pais-no-es-algo-que-altere-la-gente-pie-n6340939",
    "fecha": "2026-11-03T14:47:00Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "La fabricante de maquinaria agrícola Metalfor pidió su concurso preventivo tras meses de crisis financiera y despidos",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/03/la-fabricante-de-maquinaria-agricola-metalfor-pidio-su-concurso-preventivo-tras-meses-de-crisis-financiera-y-despidos/",
-   "fecha": "2026-11-03T14:13:17Z",
-   "tema": "otros"
   },
   {
    "titulo": "Línea F de subte: recrudece la batalla en torno a la expropiación de la disquería Zivals",
@@ -614,13 +628,6 @@
    "tema": "inflacion"
   },
   {
-   "titulo": "Kristalina Georgieva destacó a la Argentina como ejemplo de disciplina fiscal: “Hay que cortarle la cabeza al populismo”",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/03/kristalina-georgieva-destaco-a-la-argentina-como-ejemplo-de-disciplina-fiscal-lo-estan-haciendo-muy-bien/",
-   "fecha": "2026-11-03T13:28:42Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "El Gobierno suspenderá los embargos de ARCA para empresas y pymes hasta mayo de 2027 y extenderá plan de pago de deudas",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/el-gobierno-suspende-los-embargos-arca-mayo-2027-empresas-y-pymes-y-extienden-plan-pago-deudas-n6340883",
@@ -646,13 +653,6 @@
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/luis-caputo-rechazo-una-devaluacion-mejorar-la-competitividad-y-lanzo-criticas-exministros-la-propiedad-privada-n6340860",
    "fecha": "2026-11-03T13:02:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Carlos Melconian anunció que será candidato y lanzó críticas al Gobierno de Milei",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/468173-carlos-melconian-anuncio-que-sera-candidato-y-lanzo-criticas-al-gobierno-de-milei",
-   "fecha": "2026-11-03T13:01:00Z",
    "tema": "politica"
   },
   {
