@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-04T16:39:54.754595Z",
+ "actualizado": "2026-11-04T22:16:35.124696Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -61,6 +61,398 @@
  ],
  "items": [
   {
+   "titulo": "Movimientos inusuales: fuerte rebote de los bonos en pesos que venían más castigados",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/movimientos-inusuales-fuerte-rebote-de-los-bonos-en-pesos-que-venian-mas-castigados-nid04112026/",
+   "fecha": "2026-11-04T21:57:40Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Tras dos días sin sumar divisas, el Banco Central volvió a comprar dólares",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/04/tras-dos-dias-sin-sumar-divisas-el-banco-central-volvio-a-comprar-dolares/",
+   "fecha": "2026-11-04T21:52:12Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Mariel Fornoni, sobre las elecciones de 2027: “Vamos hacia un escenario que hoy no estamos viendo”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/negocios/mariel-fornoni-sobre-las-elecciones-de-2027-vamos-hacia-un-escenario-que-hoy-no-estamos-viendo-nid04112026/",
+   "fecha": "2026-11-04T21:50:26Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Qué son los \"kilómetros fantasma\" que le cuestan a Vaca Muerta u$s16 millones al año",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/energia/466710-que-son-kilometros-fantasma-que-cuestan-a-vaca-muerta-16-millones-de-dolares-anuales",
+   "fecha": "2026-11-04T21:45:00Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Cóctel bajista: la soja cayó a su menor precio en casi tres meses en el mercado internacional y hay alerta por el impacto en el país",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/coctel-bajista-la-soja-cayo-a-su-menor-precio-en-casi-tres-meses-en-el-mercado-internacional-y-hay-nid04112026/",
+   "fecha": "2026-11-04T21:40:57Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El riesgo país superó los 850 puntos, el dólar cayó y las acciones argentinas se hundieron hasta 8% en Wall Street",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/04/el-riesgo-pais-supero-los-850-puntos-el-dolar-cayo-y-las-acciones-argentinas-se-hundieron-hasta-8-en-wall-street/",
+   "fecha": "2026-11-04T21:35:59Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "El BCRA retomó la compra de reservas tras dos días sin intervenir y bajó el dólar oficial",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/468359-el-bcra-volvio-a-comprar-dolares-tras-dos-dias-de-correrse-del-mercado",
+   "fecha": "2026-11-04T21:30:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "A contramano de la suba de Wall Street tras la derrota de Trump, el riesgo país argentino subió a un nuevo máximo en un año",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/04/suben-los-bonos-argentinos-y-cede-el-riesgo-pais-por-la-tendencia-positiva-de-las-bolsas-internacionales/",
+   "fecha": "2026-11-04T21:25:55Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "La Anses modificó fechas por los feriados: cuándo y cuánto cobrarán este mes los jubilados",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/la-anses-modifico-fechas-por-los-feriados-cuando-y-cuanto-cobraran-este-mes-los-jubilados-nid04112026/",
+   "fecha": "2026-11-04T21:23:38Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Del prejuicio sobre las emociones a las exigencias de disponibilidad: qué obstáculos enfrentan las mujeres para llegar a puestos de liderazgo",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/negocios/del-prejuicio-sobre-las-emociones-a-las-exigencias-de-disponibilidad-que-obstaculos-enfrentan-las-nid04112026/",
+   "fecha": "2026-11-04T21:16:28Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Fin a una prohibición de más de 50 años: Sturzenegger celebró una exportación de ganado en pie por avión",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/finalizo-una-prohibicion-de-mas-de-50-anos-sturzenegger-celebro-una-exportacion-de-ganado-en-pie-por-nid04112026/",
+   "fecha": "2026-11-04T21:08:53Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Optimismo en los mercados internacionales tras las derrota de Trump: subieron las acciones y el petróleo cayó 8%",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/04/optimismo-en-los-mercados-internacionales-tras-las-derrota-de-trump-suben-las-acciones-y-cae-el-petroleo/",
+   "fecha": "2026-11-04T21:06:42Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "El desafío de liderar equipos con humanos y robots",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/negocios/el-desafio-de-liderar-equipos-con-humanos-y-robots-nid04112026/",
+   "fecha": "2026-11-04T20:56:57Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Milei en España tras derrota de Trump: pedido al embajador y temor por la ayuda financiera",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/politica/468354-milei-madrid-caida-trump-miedo-casa-rosada",
+   "fecha": "2026-11-04T20:54:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Escándalo financiero en un banco sacude Paraguay y hay alerta por posible corralito",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/468355-escandalo-financiero-en-un-banco-sacude-paraguay-y-hay-alerta-por-posible-corralito",
+   "fecha": "2026-11-04T20:53:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Cuál es el tope de facturación para acceder a créditos del Banco Nación para Microempresas",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/468356-cual-es-el-tope-de-facturacion-para-acceder-a-creditos-del-banco-nacion-para-microempresas",
+   "fecha": "2026-11-04T20:52:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El riesgo país superó los 850 puntos y las acciones argentinas cayeron hasta 7% en Wall Street",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/los-bonos-tienen-un-leve-rebote-y-las-acciones-argentinas-caen-hasta-casi-3-en-wall-street-tras-las-nid04112026/",
+   "fecha": "2026-11-04T20:18:39Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Cayó un banco con 3 millones de clientes en Paraguay y la City mira el caso de cerca",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/468295-ueno-bank-la-caida-del-banco-paraguayo-y-su-impacto-en-argentina",
+   "fecha": "2026-11-04T20:15:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Moody’s evaluó que la crisis por la intervención de Ueno Bank es “negativa” para el sistema financiero paraguayo, pero “manejable”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/moodys-evaluo-que-la-crisis-por-la-intervencion-de-ueno-bank-es-negativa-para-el-sistema-financiero-nid04112026/",
+   "fecha": "2026-11-04T20:14:41Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Empleados de Comercio: el Gobierno homologó el aumento del 5,7% y el bono de $50.000",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/empleados-comercio-el-gobierno-homologo-el-aumento-del-57-y-el-bono-50000-n6341611",
+   "fecha": "2026-11-04T20:11:00Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "La plataforma de inversiones etoro compró una fintech argentina y desembarca en el país",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/468351-plataforma-de-inversiones-etoro-compro-fintech-argentina-y-desembarca-en-el-pais",
+   "fecha": "2026-11-04T20:10:00Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Demanda tranquila y precios en baja en el Mercado Agroganadero de Cañuelas",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/demanda-tranquila-y-precios-en-baja-en-el-mercado-agroganadero-de-canuelas-nid04112026/",
+   "fecha": "2026-11-04T20:09:01Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Los precios del comercio exterior mejoraron 4,2% en el tercer trimestre y aportaron u$s1.019 millones",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/los-precios-del-comercio-exterior-mejoraron-42-el-tercer-trimestre-y-aportaron-us1019-millones-n6341598",
+   "fecha": "2026-11-04T20:03:00Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Crisis en una reconocida fábrica de tractores: los trabajadores tomaron las plantas y exigen el pago de sueldos",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/04/crisis-en-una-reconocida-fabrica-de-tractores-los-trabajadores-tomaron-las-plantas-y-exigen-el-pago-de-sueldos/",
+   "fecha": "2026-11-04T19:54:35Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Cayeron las acciones vinculadas a la IA y las empresas de Musk después del revés electoral que sufrieron los data centers",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/04/caen-las-acciones-vinculadas-a-la-ia-y-las-empresas-de-musk-despues-del-reves-electoral-que-sufrieron-los-data-centers/",
+   "fecha": "2026-11-04T19:53:30Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Elecciones en EEUU: cómo cambia el escenario económico y financiero para la Argentina con el triunfo demócrata",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/04/elecciones-en-eeuu-como-cambia-el-escenario-economico-y-financiero-para-la-argentina-con-el-triunfo-democrata/",
+   "fecha": "2026-11-04T19:34:59Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El magnate que protagoniza un escándalo financiero en EEUU vende su equipo de Fórmula 1: cuál es su conexión con la Argentina",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/04/el-magnate-que-protagoniza-un-escandalo-financiero-en-eeuu-vende-su-equipo-de-formula-1-cual-es-su-conexion-con-la-argentina/",
+   "fecha": "2026-11-04T19:33:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El Gobierno postergó la licitación del Belgrano Cargas y flexibilizó requisitos para competir por la privatización",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/el-gobierno-postergo-la-licitacion-del-belgrano-cargas-y-flexibilizo-requisitos-para-competir-por-la-nid04112026/",
+   "fecha": "2026-11-04T19:30:39Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Minera extranjera invertirá u$s800 millones en Mendoza para reducir el uso de agua",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/tecnologia/468343-minera-extranjera-invertira-800-millones-de-dolares-en-mendoza-para-reducir-uso-de-agua",
+   "fecha": "2026-11-04T19:26:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Tras la derrota de Trump, un organismo de Estados Unidos ratificó el financiamiento para proyectos en la Argentina",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/tras-la-derrota-de-trump-un-organismo-de-estados-unidos-ratifico-el-financiamiento-para-proyectos-en-nid04112026/",
+   "fecha": "2026-11-04T19:01:52Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "De YPF a Pampa y Telecom, todas las empresas que pagan dividendos en noviembre con sus ON",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/468275-de-ypf-a-telecom-que-empresas-pagan-dividendos-en-noviembre-con-on",
+   "fecha": "2026-11-04T19:00:00Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Excelencia Agropecuaria: estos son los ternados de 2026 para el premio a los mejores del campo",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/excelencia-agropecuaria-estos-son-los-ternados-de-2026-para-el-premio-a-los-mejores-del-campo-nid04112026/",
+   "fecha": "2026-11-04T18:59:33Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Invirtió US$40.000 para transformar bananas en harina y hoy vende un producto con demanda creciente: “Esto nos dio un plus”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/invirtio-us40000-para-transformar-bananas-en-harina-y-hoy-vende-un-producto-con-demanda-creciente-nid04112026/",
+   "fecha": "2026-11-04T18:56:37Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Por el Día del Bancario y la visita del Papa, habrá hasta seis días consecutivos sin atención en los bancos",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/por-el-dia-del-bancario-y-la-visita-del-papa-habra-hasta-seis-dias-consecutivos-sin-atencion-en-los-nid04112026/",
+   "fecha": "2026-11-04T18:55:35Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Lecciones para cambiar de industria a los 50, romper moldes y aprender de las nuevas generaciones",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/negocios/lecciones-para-cambiar-de-industria-a-los-50-romper-moldes-y-aprender-de-las-nuevas-generaciones-nid04112026/",
+   "fecha": "2026-11-04T18:54:04Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Busca un empleo en blanco, pero el precio del transporte limita hasta dónde puede llegar para conseguirlo",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/04/busca-un-empleo-en-blanco-pero-el-precio-del-transporte-limita-hasta-donde-puede-llegar-para-conseguirlo/",
+   "fecha": "2026-11-04T18:53:45Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "“Tuve que pedir plata prestada”: el drama de los ahorristas que no pueden acceder a su dinero",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/tuve-que-pedir-plata-prestada-el-drama-de-los-ahorristas-que-no-pueden-acceder-a-su-dinero-nid04112026/",
+   "fecha": "2026-11-04T18:50:59Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El crédito en pesos no repuntó y se estancaron los préstamos en dólares",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/el-credito-en-pesos-no-repunto-y-se-estancaron-los-prestamos-en-dolares-nid04112026/",
+   "fecha": "2026-11-04T18:49:09Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El salario empató con la inflación, pero el poder de compra del argentino se frenó",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/468061-economia-argentina-mejoro-salario-no-recupera-poder-compra-preocupa-hogares-noviembre-2026",
+   "fecha": "2026-11-04T18:49:00Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Javier Álvarez Bento denuncia la pérdida de más de 5000 hectáreas en una estancia vecina a un basural a cielo abierto: “Paren de tirar”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/javier-alvarez-bento-denuncia-la-perdida-de-mas-de-5000-hectareas-por-un-basural-a-cielo-abierto-nid04112026/",
+   "fecha": "2026-11-04T18:48:40Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El desafío de construir liderazgos más diversos",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/negocios/el-desafio-de-construir-liderazgos-mas-diversos-nid04112026/",
+   "fecha": "2026-11-04T18:36:55Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Ley de semillas: los multiplicadores reclaman un lugar en la mesa de debate con el Gobierno",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/ley-de-semillas-los-multiplicadores-reclaman-un-lugar-en-la-mesa-de-debate-con-el-gobierno-nid04112026/",
+   "fecha": "2026-11-04T18:16:55Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "El FMI inicia misión en Colombia y el Gobierno busca un préstamo de hasta u$s5.000 millones",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/el-fmi-inicia-mision-colombia-y-el-gobierno-busca-un-prestamo-us5000-millones-n6341540",
+   "fecha": "2026-11-04T17:54:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Tesla abrirá su primera concesionaria en la Argentina: dónde estará y para cuándo está planificada la apertura",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/04/tesla-abrira-su-primera-concesionaria-en-la-argentina-donde-estara-y-para-cuando-esta-planificada-la-apertura/",
+   "fecha": "2026-11-04T17:48:07Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "“Cualquiera cree que puede ser presidente”: la reflexión de Luis Caputo sobre los dirigentes que aspiran a suceder a Javier Milei",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/04/luis-caputo-mando-un-mensaje-a-los-que-quieren-reemplazar-a-javier-milei-en-2027-se-van-a-comer-una-curva/",
+   "fecha": "2026-11-04T17:43:52Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Luis Caputo volvió a descartar una devaluación, pero tiene un valor del dólar como referencia",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/luis-caputo-volvio-descartar-una-devaluacion-pero-tiene-un-valor-del-dolar-como-referencia-n6341442",
+   "fecha": "2026-11-04T17:31:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "A través de Lula, la fábrica de aviones FADEA obtiene otro negocio y exporta más a Embraer",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/negocios/468312-a-traves-de-lula-fabrica-de-aviones-fadea-exporta-mas-a-embraer",
+   "fecha": "2026-11-04T17:27:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Previsión Social, Economía, Conmebol y empresas argentinas: uno por uno, los afectados por el colapso de Ueno Bank en Paraguay",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/prevision-social-economia-conmebol-y-empresas-argentinas-uno-por-uno-los-afectados-por-el-colapso-de-nid04112026/",
+   "fecha": "2026-11-04T17:20:40Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "La letra chica del seguro del hogar que permite ahorrar muchos pesos y sacarte de un apuro",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/actualidad/468322-seguros-de-hogar-que-asistencias-cubren-y-cuanto-cuestan-por-mes",
+   "fecha": "2026-11-04T17:20:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Tesla llega a la Argentina: abrirá en Unicenter un espacio para probar sus autos",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/negocios/tesla-llega-a-la-argentina-abrira-en-unicenter-un-espacio-para-probar-sus-autos-nid04112026/",
+   "fecha": "2026-11-04T17:14:54Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Caputo aseguró que la derrota de Trump no cambia la relación con Estados Unidos y defendió el nivel del dólar",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/caputo-aseguro-que-la-derrota-de-trump-no-cambia-la-relacion-con-estados-unidos-y-defendio-el-nivel-nid04112026/",
+   "fecha": "2026-11-04T17:08:49Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Caputo aseguró que el resultado electoral en EEUU no afecta a la Argentina: “No cambia nada, era lo esperado”",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/04/caputo-aseguro-que-el-resultado-electoral-en-eeuu-no-afecta-a-la-argentina-no-cambia-nada-era-lo-esperado/",
+   "fecha": "2026-11-04T17:06:07Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Cinco días sin bancos: cómo afectará a los servicios financieros la visita del papa León XIV a la Argentina",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/04/cinco-dias-sin-bancos-como-afectara-a-los-servicios-financieros-la-visita-del-papa-leon-xiv-a-la-argentina/",
+   "fecha": "2026-11-04T17:02:30Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Santiago Peña anunció cambios en el Banco Central y una ley de emergencia para devolver los ahorros del Ueno Bank",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/america/america-latina/2026/11/04/santiago-pena-anuncio-cambios-en-el-banco-central-y-una-ley-de-emergencia-para-devolver-los-ahorros-del-ueno-bank/",
+   "fecha": "2026-11-04T16:50:47Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "ANSES elimina el trámite presencial para cobrar el 20% de la Asignación por Embarazo",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/468325-anses-asignacion-embarazo-paga-20-por-ciento-retenido-sin-tramites-presenciales",
+   "fecha": "2026-11-04T16:43:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "ANSES: cuándo cobro en noviembre 2026 si mi DNI termina en 2",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/04/anses-cuando-cobro-en-noviembre-2026-si-mi-dni-termina-en-2/",
+   "fecha": "2026-11-04T16:39:16Z",
+   "tema": "otros"
+  },
+  {
    "titulo": "Cuánto cuestan las pick ups compactas en Argentina tras el lanzamiento de la nueva competidora nacional",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/04/cuanto-cuestan-las-pick-ups-compactas-en-argentina-tras-el-lanzamiento-de-la-nueva-competidora-nacional/",
@@ -68,32 +460,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "Ley de semillas: la federación de distribuidores de insumos reclama un lugar en la mesa de debate con el Gobierno",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/ley-de-semillas-los-multiplicadores-reclaman-un-lugar-en-la-mesa-de-debate-con-el-gobierno-nid04112026/",
-   "fecha": "2026-11-04T16:26:57Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Caputo aseguró que el resultado electoral en EEUU no afecta a la Argentina: “No cambia nada, era lo esperado”",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/04/caputo-aseguro-que-el-resultado-electoral-en-eeuu-no-afecta-a-la-argentina-no-cambia-nada-era-lo-esperado/",
-   "fecha": "2026-11-04T16:11:43Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "El riesgo país de vuelve a subir mientras las acciones se acoplan a la tendencia positiva de las bolsas internacionales",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/04/suben-los-bonos-argentinos-y-cede-el-riesgo-pais-por-la-tendencia-positiva-de-las-bolsas-internacionales/",
-   "fecha": "2026-11-04T15:51:04Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Optimismo en los mercados internacionales tras las derrota de Trump: suben las acciones y cae el petróleo",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/04/optimismo-en-los-mercados-internacionales-tras-las-derrota-de-trump-suben-las-acciones-y-cae-el-petroleo/",
-   "fecha": "2026-11-04T15:47:14Z",
-   "tema": "mercados"
+   "titulo": "Feriados de noviembre: cuánto se puede ganar con un fondo común de inversión",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/468291-fondos-comunes-en-feriados-de-noviembre-cuanto-se-puede-ganar",
+   "fecha": "2026-11-04T16:28:00Z",
+   "tema": "empresas"
   },
   {
    "titulo": "Qué pasó con Ueno Bank en Paraguay: todos los detalles del colapso que puso en alerta el sistema financiero",
@@ -110,32 +481,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "Shock chino, energía cara y menos trabajadores, el diagnóstico europeo que deja lecciones más allá del Viejo Continente",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/shock-chino-energia-cara-y-menos-trabajadores-el-diagnostico-europeo-que-deja-lecciones-mas-alla-del-nid04112026/",
-   "fecha": "2026-11-04T15:37:59Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El escándalo de un banco digital ligado al presidente amenaza la reputación de Paraguay como polo de inversiones",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/el-escandalo-de-un-banco-digital-ligado-al-presidente-amenaza-la-reputacion-de-paraguay-como-polo-de-nid04112026/",
-   "fecha": "2026-11-04T15:31:43Z",
-   "tema": "empresas"
-  },
-  {
    "titulo": "Créditos, suspensión de embargos y eliminación de impuestos: una a una, las medidas que anunció Luis Caputo de alivio financiero para empresas y pymes",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/una-una-las-medidas-que-anuncio-luis-caputo-alivio-financiero-empresas-y-pymes-n6340903",
    "fecha": "2026-11-04T15:29:00Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "WhatsApp ya permite programar mensajes: cómo funciona en el celular y en la versión Web",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/tecnologia/whatsapp-ya-permite-programar-mensajes-como-funciona-en-el-celular-y-en-whatsapp-web-nid04112026/",
-   "fecha": "2026-11-04T15:19:56Z",
-   "tema": "otros"
   },
   {
    "titulo": "Vaca Muerta genera empleo y atrae trabajadores, pero Neuquén enfrenta un desafío: cómo recibir a miles de nuevos habitantes",
@@ -166,34 +516,6 @@
    "tema": "politica"
   },
   {
-   "titulo": "Caen las acciones vinculadas a la IA y las empresas de Musk después del revés electoral que sufrieron los data centers",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/04/caen-las-acciones-vinculadas-a-la-ia-y-las-empresas-de-musk-despues-del-reves-electoral-que-sufrieron-los-data-centers/",
-   "fecha": "2026-11-04T15:08:22Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Patricia Bullrich reconoció los reclamos del campo por las retenciones y las leyes pendientes",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/patricia-bullrich-reconocio-los-reclamos-del-campo-por-las-retenciones-y-las-leyes-pendientes-nid04112026/",
-   "fecha": "2026-11-04T15:04:56Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Las acciones argentinas trepan hasta 5% en Wall Street y el riesgo país toca su valor más alto del año",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/los-bonos-tienen-un-leve-rebote-y-las-acciones-argentinas-caen-hasta-casi-3-en-wall-street-tras-las-nid04112026/",
-   "fecha": "2026-11-04T14:53:02Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Ana Botín, presidenta del Santander: “La Argentina ha hecho mucho progreso y esperamos que siga en esa dirección”",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/ana-botin-presidenta-del-santander-la-argentina-ha-hecho-mucho-progreso-y-esperamos-que-siga-en-esa-nid04112026/",
-   "fecha": "2026-11-04T14:42:21Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Cuántos salarios se necesitan para construir una casa de 100 metros cuadrados en la Argentina",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/04/cuantos-salarios-se-necesitan-para-construir-una-casa-de-100-metros-cuadrados-en-la-argentina/",
@@ -208,45 +530,10 @@
    "tema": "empresas"
   },
   {
-   "titulo": "Plazo fijo: cuál es la tasa de interés banco por banco este miércoles 4 de noviembre",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/plazo-fijo-cual-es-la-tasa-de-interes-banco-por-banco-este-miercoles-4-de-noviembre-nid04112026/",
-   "fecha": "2026-11-04T14:34:59Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Calendario PNC de la Anses: cuándo se cobran las Pensiones no Contributivas de noviembre 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/calendario-pnc-de-la-anses-cuando-se-cobran-las-pensiones-no-contributivas-de-noviembre-2026-nid04112026/",
-   "fecha": "2026-11-04T14:32:56Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Qué pasó en Paraguay con la intervención del Ueno Bank: ¿Es un corralito?",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/sacude-a-paraguay-un-escandalo-financiero-que-le-impide-a-casi-tres-millones-de-personas-acceder-a-nid04112026/",
-   "fecha": "2026-11-04T14:32:52Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Ana Botín, presidenta de Santander: “En los últimos años Argentina tuvo mucho progreso, esperamos que siga en esa dirección”",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/04/ana-botin-presidenta-de-santander-en-los-ultimos-anos-argentina-tuvo-mucho-progreso-esperamos-que-siga-en-esa-direccion/",
    "fecha": "2026-11-04T14:32:14Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Expectativa por la posibilidad de que un poderoso grupo peruano reactive dos plantas lácteas",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/expectativa-por-la-posibilidad-de-que-un-poderoso-grupo-peruano-reactive-dos-plantas-lacteas-nid04112026/",
-   "fecha": "2026-11-04T14:28:48Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Del cajero al QR: las extracciones de efectivo cayeron a un mínimo histórico en la Argentina",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/del-cajero-al-qr-las-extracciones-de-efectivo-cayeron-a-un-minimo-historico-en-la-argentina-nid04112026/",
-   "fecha": "2026-11-04T14:28:05Z",
    "tema": "otros"
   },
   {
@@ -271,13 +558,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Javier Álvarez Bento denuncia la pérdida de más de 5000 hectáreas por un basural a cielo abierto: “Paren de tirar”",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/javier-alvarez-bento-denuncia-la-perdida-de-mas-de-5000-hectareas-por-un-basural-a-cielo-abierto-nid04112026/",
-   "fecha": "2026-11-04T14:03:49Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Las 8 señales de alarma para Caputo tras la derrota de Trump y la suba del dólar en Brasil",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/finanzas/468281-ocho-indicadores-que-revelan-el-deterioro-financiero-que-enfrenta-caputo-en-solo-4-meses",
@@ -285,25 +565,11 @@
    "tema": "dolar"
   },
   {
-   "titulo": "Cinco días sin bancos: cómo afectará a los servicios financieros la visita del papa León XIV a la Argentina",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/04/cinco-dias-sin-bancos-como-afectara-a-los-servicios-financieros-la-visita-del-papa-leon-xiv-a-la-argentina/",
-   "fecha": "2026-11-04T13:58:42Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Advierten que el FAL le costará a la ANSES unas 700.000 jubilaciones mínimas",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/468304-advierten-que-el-fal-le-costara-a-la-anses-unas-700-000-jubilaciones-minimas",
    "fecha": "2026-11-04T13:53:00Z",
    "tema": "actividad"
-  },
-  {
-   "titulo": "“No hay una sola Argentina”: Sica y Malamud analizan cómo llega la economía a 2027, el impacto de Brasil y la “apuesta” de Milei",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/no-hay-una-sola-argentina-sica-y-malamud-analizan-como-llega-la-economia-a-2027-el-impacto-de-brasil-nid01112026/",
-   "fecha": "2026-11-04T13:41:52Z",
-   "tema": "politica"
   },
   {
    "titulo": "Por la visita del Papa, Milei desplegará los F-16 y autoriza derribo de aeronaves hostiles",
@@ -327,13 +593,6 @@
    "tema": "mercados"
   },
   {
-   "titulo": "El Gobierno retirará, tras la polémica, el artículo que proponía cobrar Ganancias por la venta de cedears",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/el-gobierno-impulsa-una-reforma-clave-del-mercado-de-capitales-que-incluye-cobrar-ganancias-por-la-nid03112026/",
-   "fecha": "2026-11-04T13:04:44Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "Genneia colocó bonos verdes por u$s70 millones a tres años y una tasa del 6,25%",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/energia/468253-genneia-emite-bonos-verdes-por-us70-millones-a-tres-anos-al-625",
@@ -348,24 +607,10 @@
    "tema": "otros"
   },
   {
-   "titulo": "CAMSA, proveedora de Arcor y PepsiCo, pidió concurso con deudas por $13.029 millones",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/negocios/468293-camsa-proveedora-de-arcor-y-pepsico-pidio-concurso-preventivo",
-   "fecha": "2026-11-04T12:51:00Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "La derrota de Trump en el Congreso de EEUU: qué puede pasar con el apoyo financiero a la Argentina",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/04/la-derrota-de-trump-en-el-congreso-de-eeuu-que-puede-pasar-con-el-apoyo-financiero-a-la-argentina/",
    "fecha": "2026-11-04T12:49:07Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El Senado de Paraguay aprobó adelantar el pago a los ahorristas de Ueno Bank en 24 horas: cómo cobrarán",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/america/america-latina/2026/11/04/el-senado-de-paraguay-aprobo-adelantar-el-pago-a-los-ahorristas-de-ueno-bank-en-24-horas-como-cobraran/",
-   "fecha": "2026-11-04T12:36:15Z",
    "tema": "otros"
   },
   {
@@ -376,158 +621,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "Escándalo de Ueno Bank en Paraguay: ya son ocho los directivos detenidos",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/america/america-latina/2026/11/04/escandalo-de-ueno-bank-en-paraguay-ya-son-ocho-los-directivos-detenidos/",
-   "fecha": "2026-11-04T12:33:41Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Colectivos y subtes en noviembre: qué bancos y billeteras devuelven hasta 100% del viaje",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/468097-colectivos-y-subtes-como-recuperar-hasta-100-por-ciento-del-boleto-en-noviembre",
-   "fecha": "2026-11-04T12:18:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Cuánto cobra un empleado de seguridad privada en noviembre y cuánto ganará en diciembre",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/468286-sueldo-seguridad-privada-noviembre-2026-vigiladores",
-   "fecha": "2026-11-04T12:17:00Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "La inflación de la zona euro se aceleró en octubre al 4% interanual con impulso de la energía",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/la-inflacion-la-zona-euro-se-acelero-octubre-al-4-interanual-impulso-la-energia-n6341315",
    "fecha": "2026-11-04T11:59:00Z",
    "tema": "inflacion"
-  },
-  {
-   "titulo": "Cuánto debe ganar un jubilado por mes para cubrir comida, remedios y gastos básicos",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/04/cuanto-debe-ganar-un-jubilado-por-mes-para-cubrir-comida-remedios-y-gastos-basicos/",
-   "fecha": "2026-11-04T11:54:44Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Préstamos personales por hasta $50 millones: quiénes pueden acceder y a qué tasa en noviembre 2026",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/04/prestamos-personales-por-hasta-50-millones-quienes-pueden-acceder-y-a-que-tasa-en-noviembre-2026/",
-   "fecha": "2026-11-04T11:50:12Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "El crédito no despega: los préstamos para el consumo cayeron en octubre por sexto mes consecutivo",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/04/el-credito-no-despega-los-prestamos-para-el-consumo-cayeron-en-octubre-por-sexto-mes-consecutivo/",
-   "fecha": "2026-11-04T11:39:08Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Un supermercado podrá exportar a Europa un subproducto bovino que sirve para fabricar un combustible para los aviones",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/un-supermercado-podra-exportar-a-europa-un-subproducto-que-sirve-para-fabricar-combustible-de-nid03112026/",
-   "fecha": "2026-11-04T11:32:28Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Menos productores salen a “pelear” por alquilar tierras y los más grandes proyectan crecer un 31%",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/rotundo-giro-cada-vez-menos-productores-salen-a-pelear-por-alquilar-tierras-y-los-mas-grandes-nid03112026/",
-   "fecha": "2026-11-04T11:25:25Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Teo Zorraquín: qué dice sobre la situación del agro uno de los consultores más escuchados por los productores",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/teo-zorraquin-consultor-sobre-el-momento-del-agro-se-necesita-financiamiento-y-se-toma-pero-pateando-nid03112026/",
-   "fecha": "2026-11-04T11:18:40Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Excelencia Agropecuaria: estos son los ternados de 2026 para el premio a los mejores del campo",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/excelencia-agropecuaria-estos-son-los-ternados-de-2026-para-el-premio-a-los-mejores-del-campo-nid04112026/",
-   "fecha": "2026-11-04T11:17:45Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Belén, veterinaria, eligió un tractor rosa: “Vamos a hacer algo muy disruptivo”",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/belen-veterinaria-produce-en-cordoba-y-eligio-un-tractor-rosa-para-un-homenaje-vamos-a-hacer-algo-nid03112026/",
-   "fecha": "2026-11-04T11:13:50Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "“Fábrica tomada”: escala el conflicto en Pauny y los trabajadores se quedan en la planta",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/fabrica-tomada-escala-el-conflicto-en-la-fabrica-pauny-y-los-trabajadores-se-quedan-en-la-planta-nid03112026/",
-   "fecha": "2026-11-04T11:12:42Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Cómo funcionará el nuevo plan para cancelar deudas con ARCA que anunció Caputo: tasas, cuotas y pagos a cuenta",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/04/como-funcionara-el-nuevo-plan-para-cancelar-deudas-con-arca-que-anuncio-caputo-tasas-cuotas-y-pagos-a-cuenta/",
-   "fecha": "2026-11-04T11:03:11Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Anuncian incentivos para que las PyMEs inviertan en eficiencia energética",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/energia/468280-pymes-y-eficiencia-energetica-cuales-son-los-incentivos-aprobado",
-   "fecha": "2026-11-04T10:56:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Jubilados pueden acceder a préstamos de hasta $50 millones en noviembre: qué bancos los ofrecen",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/468276-jubilados-pueden-pedir-prestamos-de-hasta-50-millones-de-pesos-bancos-tasas-y-requisitos",
-   "fecha": "2026-11-04T10:46:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Calendario de jubilaciones de la Anses: cuándo cobro en noviembre 2026 con el bono oficial y el aumento confirmado",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/calendario-de-jubilaciones-de-la-anses-cuando-cobro-en-noviembre-2026-con-el-bono-oficial-y-el-nid28102026/",
-   "fecha": "2026-11-04T10:31:11Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Calendario de pagos de Anses: cuándo se cobra la PUAM de noviembre de 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/calendario-de-pagos-de-anses-cuando-se-cobra-la-puam-de-noviembre-de-2026-nid02112026/",
-   "fecha": "2026-11-04T10:31:09Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Calendario AUH de Anses: cuándo se cobra la Asignación Universal por Hijo en noviembre 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/calendario-auh-de-anses-cuando-se-cobra-la-asignacion-universal-por-hijo-en-noviembre-2026-nid29102026/",
-   "fecha": "2026-11-04T10:31:07Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "¿Qué es un concurso preventivo?",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/opinion/2026/11/04/que-es-un-concurso-preventivo/",
-   "fecha": "2026-11-04T10:23:05Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Calzado barato desde $5.000: las marcas que rematan mercadería ante la caída del consumo",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/468274-rematan-zapatos-y-zapatillas-desde-5000-pesos-para-evitar-el-cierre-de-fabricas",
-   "fecha": "2026-11-04T10:19:00Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Por qué con un Trump más débil el precio de la soja podría caer y llegarán menos dólares",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/468251-el-campo-argentino-ante-posible-baja-de-precios-por-efecto-trump",
-   "fecha": "2026-11-04T10:01:00Z",
-   "tema": "otros"
   },
   {
    "titulo": "Mercados: inversores dudan sobre el rol de refugio del yen",
@@ -544,48 +642,6 @@
    "tema": "empresas"
   },
   {
-   "titulo": "La City se prepara para pérdidas en acciones y bonos argentinos con un revés para Trump",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/468266-mercados-argentinos-panico-derrota-trump-fuerte-caida-acciones",
-   "fecha": "2026-11-04T10:00:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Aumento para metalúrgicos: cuánto cobran los trabajadores de la UOM en noviembre",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/management/468158-sueldos-uom-noviembre-2026-cuanto-cobran-los-metalurgicos-con-el-bono-de-50000-pesos",
-   "fecha": "2026-11-04T09:31:00Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "ANSES: cuándo cobro en noviembre 2026 si mi DNI termina en 1",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/04/anses-cuando-cobro-en-noviembre-2026-si-mi-dni-termina-en-1/",
-   "fecha": "2026-11-04T09:29:50Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El dólar volvió a trepar en Brasil, contagió al mercado argentino y el riesgo país se despegó de los 800 puntos",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/04/el-dolar-volvio-a-trepar-en-brasil-contagio-al-mercado-argentino-y-el-riesgo-pais-se-despego-de-los-800-puntos/",
-   "fecha": "2026-11-04T04:11:28Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "Caputo busca impulsar la actividad con cuatro medidas: los puntos que celebran los economistas y las dudas que persisten",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/04/caputo-busca-impulsar-la-actividad-con-cuatro-medidas-los-puntos-que-celebran-los-economistas-y-las-dudas-que-persisten/",
-   "fecha": "2026-11-04T04:11:12Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "El dólar y el riesgo país se recalientan, en la previa de las elecciones en EE.UU.",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/468240-dolar-y-riesgo-pais-se-recalientan-en-la-previa-de-las-elecciones-en-eeuu",
-   "fecha": "2026-11-04T00:28:00Z",
-   "tema": "dolar"
-  },
-  {
    "titulo": "Empleo en plataformas de movilidad: el 65% de los conductores utiliza la app para complementar ingresos",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/empleo-plataformas-movilidad-el-65-los-conductores-utiliza-la-app-complementar-ingresos-n6341096",
@@ -593,39 +649,11 @@
    "tema": "actividad"
   },
   {
-   "titulo": "Los plazos fijos podrán negociarse en el mercado de capitales: así es el proyecto oficial",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/468254-buscan-que-plazos-fijos-se-puedan-negociar-en-el-mercado-de-capitales",
-   "fecha": "2026-11-03T23:29:00Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Gobernadores, sorprendidos por el pedido de Luis Caputo de eliminar Sellos: plantean discutir la coparticipación",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/gobernadores-sorprendidos-el-pedido-luis-caputo-eliminar-sellos-plantean-discutir-la-coparticipacion-n6341008",
    "fecha": "2026-11-03T23:12:00Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "Vaca Muerta no frena su ritmo y supera en diez meses el registro de 2025",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/energia/468243-vaca-muerta-no-frena-su-ritmo-supera-en-diez-meses-de-2026-todo-el-registro-de-2025",
-   "fecha": "2026-11-03T22:25:00Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Juicios por coberturas de salud se cuadruplican y se agrava la crisis de las prepagas",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/legales/468239-juicios-salud-cuadruplicaron-jaque-cobertura-medica-privada-noviembre-2026",
-   "fecha": "2026-11-03T21:46:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Precios de exportaciones récord y menos importaciones impulsan el superávit comercial",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/comex/468234-precios-exportacion-record-y-menos-importaciones-impulsan-superavit-comercial-2026",
-   "fecha": "2026-11-03T21:02:00Z",
-   "tema": "inflacion"
   },
   {
    "titulo": "Plazo fijo en dólares: cuánto ganás al invertir u$d1.000 en 30 días",
@@ -668,34 +696,6 @@
    "url": "https://www.ambito.com/economia/inflacion-eeuu-la-fed-san-francisco-advierte-que-el-nino-representa-un-riesgo-significativo-n6340984",
    "fecha": "2026-11-03T17:27:00Z",
    "tema": "inflacion"
-  },
-  {
-   "titulo": "Las expectativas también se ajustan: el salario pretendido aumentó 2,2% en el tercer trimestre, por debajo de la inflación",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/las-expectativas-tambien-se-ajustan-el-salario-pretendido-aumento-22-el-tercer-trimestre-debajo-la-inflacion-n6340983",
-   "fecha": "2026-11-03T16:33:00Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Adrián Ravier: \"Argentina no va a caer en default mientras Milei sea presidente\"",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/ravier-que-suba-el-riesgo-pais-no-es-algo-que-altere-la-gente-pie-n6340939",
-   "fecha": "2026-11-03T14:47:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "El banco central de Australia aumentó las tasas de interés hasta su nivel más alto en 18 años",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/el-banco-central-australia-aumento-las-tasas-interes-su-nivel-mas-alto-18-anos-n6340872",
-   "fecha": "2026-11-03T13:32:00Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "El Gobierno suspenderá los embargos de ARCA para empresas y pymes hasta mayo de 2027 y extenderá plan de pago de deudas",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/el-gobierno-suspende-los-embargos-arca-mayo-2027-empresas-y-pymes-y-extienden-plan-pago-deudas-n6340883",
-   "fecha": "2026-11-03T13:28:00Z",
-   "tema": "politica"
   }
  ]
 }
