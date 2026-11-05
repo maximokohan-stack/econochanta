@@ -866,10 +866,21 @@
   }
 
   function initTema() {
+    var guardado = null;
     try {
       var t = localStorage.getItem(KEY_TEMA);
-      if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+      if (t === "light" || t === "dark") guardado = t;
     } catch (e) { /* ignorar */ }
+    // sin preferencia guardada, el tema sigue al del sistema (y cambia si el sistema cambia)
+    var mq = window.matchMedia ? window.matchMedia("(prefers-color-scheme: light)") : null;
+    document.documentElement.dataset.theme = guardado || (mq && mq.matches ? "light" : "dark");
+    if (mq && !guardado) {
+      var alCambiar = function (e) {
+        try { if (localStorage.getItem(KEY_TEMA)) return; } catch (x) { /* ignorar */ }
+        document.documentElement.dataset.theme = e.matches ? "light" : "dark"; pintarBotonTema();
+      };
+      if (mq.addEventListener) mq.addEventListener("change", alCambiar); else if (mq.addListener) mq.addListener(alCambiar);
+    }
     pintarBotonTema();
     $("tema").addEventListener("click", function () {
       var next = temaEfectivo() === "dark" ? "light" : "dark";
@@ -948,6 +959,38 @@
 
     if ("serviceWorker" in navigator && location.protocol.indexOf("http") === 0) {
       navigator.serviceWorker.register("sw.js").catch(function () { /* sin offline, sigue andando */ });
+    }
+    iniciarInstalar();
+  }
+
+  /* ---------- instalar como app ---------- */
+
+  // En Android, Chrome avisa que se puede instalar (beforeinstallprompt) y mostramos un botón propio.
+  // En iPhone no hay aviso: se explica el camino de Safari. Si ya está instalada o se cerró, no aparece.
+  var INSTALAR_KEY = "econochanta:v1:instalar-cerrado";
+  function iniciarInstalar() {
+    var caja = $("instalar"); if (!caja) return;
+    var instalada = (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches) || navigator.standalone;
+    var cerrado = false;
+    try { cerrado = !!localStorage.getItem(INSTALAR_KEY); } catch (e) { /* sin storage */ }
+    if (instalada || cerrado) return;
+    var evento = null, si = $("instalar-si"), como = $("instalar-como");
+    function cerrar() { caja.hidden = true; try { localStorage.setItem(INSTALAR_KEY, "1"); } catch (e) { /* sin storage */ } }
+    $("instalar-no").addEventListener("click", cerrar);
+    window.addEventListener("beforeinstallprompt", function (ev) {
+      ev.preventDefault(); evento = ev;
+      si.hidden = false; caja.hidden = false;
+    });
+    si.addEventListener("click", function () {
+      if (!evento) return;
+      evento.prompt();
+      evento.userChoice.then(function (r) { if (r.outcome === "accepted") cerrar(); evento = null; si.hidden = true; });
+    });
+    window.addEventListener("appinstalled", cerrar);
+    var ios = /iphone|ipad|ipod/i.test(navigator.userAgent);
+    if (ios) {
+      como.textContent = "En Safari, tocá Compartir (el cuadrado con la flecha) y elegí “Agregar a inicio”. Se abre a pantalla completa, como una app.";
+      caja.hidden = false;
     }
   }
 

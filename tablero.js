@@ -1424,6 +1424,12 @@
 
   function tonoCambio(c) { return Math.abs(c) < 0.0001 ? "flat" : c > 0 ? "tono-bien" : "tono-mal"; }
   function claseCalor(c) { return Math.abs(c) < 0.0001 ? "calor-neutro" : c > 0 ? "calor-bien" : "calor-mal"; }
+  // escala de calor en 4 tonos: verde si subio, rojo si bajo; mas intenso cuanto mas grande el movimiento
+  function nivelCalor(c, mag) {
+    if (c === null || c === undefined || Math.abs(c) < 0.0001) return "h-0";
+    var lv = mag < 0.15 ? 1 : mag < 0.4 ? 2 : mag < 0.8 ? 3 : 4;
+    return (c > 0 ? "h-u" : "h-d") + lv;
+  }
 
   function ordenarMov(per) {
     var out = [];
@@ -1457,7 +1463,7 @@
   // tarjeta de "lo que mas se movio": el recuadro cuenta el cambio del periodo elegido
   function tarjetaMov(x, per, grande) {
     var it = x.it, ch = x.ch;
-    var b = el("button", "tarjeta mov " + claseCalor(ch.c) + (grande ? " mov--grande" : "")); b.type = "button"; b.dataset.id = it.id;
+    var b = el("button", "tarjeta mov " + claseCalor(ch.c) + " " + nivelCalor(ch.c, x.mag) + (grande ? " mov--grande" : "")); b.type = "button"; b.dataset.id = it.id;
     b.style.setProperty("--k", Math.min(1, x.mag).toFixed(2));
     b.setAttribute("aria-label", it.label + ", " + it.valor + ", " + (ch.c > 0 ? "sube " : ch.c < 0 ? "baja " : "sin cambios ") + ch.txt.replace(/^[+\-−]/, "") + " " + per.txt);
     var nom = el("span", "tarjeta__nombre"); var pt = punto(it.id); if (pt) nom.appendChild(pt); nom.appendChild(document.createTextNode(it.label)); b.appendChild(nom);
@@ -1628,7 +1634,7 @@
     var elegidos = IDS_LECTURA_INICIO.map(function (id) { return porId[id]; }).filter(Boolean);
     caja.textContent = "";
     elegidos.forEach(function (x) {
-      var b = el("button", "lec"); b.type = "button";
+      var b = el("button", "lec lec--" + x.r.v); b.type = "button";
       b.appendChild(el("span", "rec__tema", L.tema(x.id)));
       var n = el("span", "lec__nom"); var pt = punto(x.it.id); if (pt) n.appendChild(pt); n.appendChild(document.createTextNode(x.it.label)); b.appendChild(n);
       var v = el("span", "lec__val"); v.appendChild(document.createTextNode(x.it.valor));
@@ -1726,10 +1732,204 @@
     }, 30);
   }
 
+  /* ---- titular del dia, señales y mosaico de preguntas (diseño "Pulso") ---- */
+
+  var IDS_MOSAICO = ["riesgo", "infM", "salarios", "emae", "desoc", "reservas", "haber", "badlar"];
+  var FILTROS_MOS = [["todo", "Todo"], ["sueldo", "Tengo un sueldo"], ["ahorro", "Ahorro"], ["jubilado", "Soy jubilado/a"], ["invierto", "Invierto"]];
+  var mosFiltro = "todo";
+  var DIAS_SEM = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+  var SEN = { bien: ["s-bien", "Mejora"], mal: ["s-mal", "Empeora"], mix: ["s-mix", "Mixto"], est: ["s-est", "Estable"] };
+
+  function pc1(v) { return signo(v, 1).replace("-", "−") + "%"; }
+  function valorDelMes(s, fecha) {
+    if (!s || !s.points) return null;
+    var mes = fecha.slice(0, 7);
+    for (var i = s.points.length - 1; i >= 0; i--) if (s.points[i][0].slice(0, 7) === mes) return s.points[i][1];
+    return null;
+  }
+  function valorHaceDias(s, dias) {
+    var pts = s.points, ult = pts[pts.length - 1];
+    var obj = new Date(new Date(ult[0] + "T12:00:00").getTime() - dias * 86400000).toISOString().slice(0, 10);
+    for (var i = pts.length - 1; i >= 0; i--) if (pts[i][0] <= obj) return pts[i][1];
+    return null;
+  }
+  function mesNombre(fecha) { return MESES_L[parseInt(fecha.slice(5, 7), 10) - 1]; }
+  // poder de compra en 12 meses: cuanto subio algo contra la inflacion del mismo mes
+  function realContraPrecios(m, it) {
+    var inf = m.porId.infIA;
+    if (!it || !it.ok || it.d12 === undefined || !inf || !inf.ok) return null;
+    var ia = valorDelMes(inf.s, it.s.ultimo.f || it.s.points[it.s.points.length - 1][0]);
+    if (ia === null) return null;
+    return { real: ((1 + it.d12 / 100) / (1 + ia / 100) - 1) * 100, ia: ia };
+  }
+
+  function armarPreguntas(m) {
+    var P = m.porId, out = [];
+    function add(id, tags, grande, q, fn) {
+      var it = P[id]; if (!it || !it.ok) return;
+      var r = fn(it); if (!r) return;
+      r.it = it; r.id = id; r.tags = tags; r.grande = grande; r.q = q; out.push(r);
+    }
+    add("riesgo", "invierto ahorro", true, "¿Confían los inversores en el país?", function (it) {
+      var h90 = valorHaceDias(it.s, 90), v = it.s.ultimo.v, c90 = h90 ? (v / h90 - 1) * 100 : null;
+      var sen = it.dPrev > 0 ? "mal" : it.dPrev < 0 ? "bien" : "est";
+      var txt = "Cuanto más alto, más caro le sale a la Argentina pedir prestado.";
+      if (c90 !== null && Math.abs(c90) >= 15) txt += " En tres meses " + (c90 > 0 ? "subió " : "bajó ") + pc1(Math.abs(c90)).replace("+", "") + ".";
+      return { sen: sen, mean: txt, det: h90 ? Math.round(h90) + " puntos hace tres meses" : "" };
+    });
+    add("infM", "sueldo jubilado ahorro", false, "¿Cuánto suben los precios?", function (it) {
+      var sen = it.dPrev > 0.05 ? "mal" : it.dPrev < -0.05 ? "bien" : "est";
+      var ia = P.infIA && P.infIA.ok ? P.infIA.valor + " en 12 meses" : "";
+      return { sen: sen, mean: it.dPrev > 0.05 ? "Subió respecto del mes anterior." : it.dPrev < -0.05 ? "Bajó respecto del mes anterior." : "Parecido al mes anterior.", det: ia };
+    });
+    add("salarios", "sueldo", false, "¿Alcanzan los sueldos?", function (it) {
+      var r = realContraPrecios(m, it); if (!r) return null;
+      var sen = r.real > 0.5 ? "bien" : r.real < -0.5 ? (it.dPrev > 0 ? "mix" : "mal") : "est";
+      return { sen: sen, big: pc1(r.real), unit: "poder de compra en 12 meses", det: "Sueldos " + pc1(it.d12) + " · precios " + pc1(r.ia) + " (" + mesNombre(it.s.points[it.s.points.length - 1][0]) + ")",
+        mean: r.real >= 0 ? "En el año le ganaron a los precios." : "En el año todavía pierden contra los precios." };
+    });
+    add("emae", "sueldo invierto", false, "¿Crece la economía?", function (it) {
+      if (it.dPrev === undefined) return null;
+      var v = it.dPrev, sen = v > 0.3 ? "bien" : v < -0.3 ? "mal" : "mix";
+      return { sen: sen, big: pc1(v), unit: "en el mes, " + mesNombre(it.s.points[it.s.points.length - 1][0]), det: it.d12 !== undefined ? pc1(it.d12) + " contra un año antes" : "",
+        mean: v > 0.3 ? "La actividad creció en el mes." : v < -0.3 ? "La actividad cayó en el mes." : "La actividad casi no se movió en el mes.", sinChip: true };
+    });
+    add("desoc", "sueldo", false, "¿Hay trabajo?", function (it) {
+      var d = it.d12, sen = d === undefined ? "est" : d > 0.2 ? "mal" : d < -0.2 ? "bien" : "est";
+      return { sen: sen, unit: "de desocupación", det: it.d12Txt ? it.d12Txt + " en un año" : "",
+        mean: sen === "mal" ? "Hay más gente que busca trabajo y no consigue." : sen === "bien" ? "Hay menos gente que busca trabajo y no consigue." : "Casi igual que hace un año." };
+    });
+    add("reservas", "ahorro invierto", false, "¿Cuántos dólares tiene el Central?", function (it) {
+      var sen = it.dPrev > 0 ? "bien" : (it.d12 > 0 ? "mix" : "mal");
+      return { sen: sen, det: it.d12Txt ? it.d12Txt + " en un año" : "",
+        mean: it.dPrev > 0 ? "Subieron en el último día hábil." : it.d12 > 0 ? "Bajaron en el último día, pero hay más que hace un año." : "Bajaron y hay menos que hace un año." };
+    });
+    add("haber", "jubilado", false, "¿Cómo les va a los jubilados?", function (it) {
+      var r = realContraPrecios(m, it); if (!r) return null;
+      var sen = r.real > 1 ? "bien" : r.real < -1 ? "mal" : "est";
+      return { sen: sen, unit: "haber mínimo", det: pc1(it.d12) + " en 12 meses · precios " + pc1(r.ia),
+        mean: sen === "bien" ? "En el año le ganó a la inflación." : sen === "mal" ? "En el año perdió contra la inflación." : "En el año le empata a la inflación." };
+    });
+    add("badlar", "ahorro jubilado", false, "¿Cuánto paga un plazo fijo?", function (it) {
+      var mens = it.s.ultimo.v / 12, inf = P.infM && P.infM.ok ? P.infM.s.ultimo.v : null;
+      var txt = "Rinde cerca de " + num(mens, 1) + "% por mes";
+      if (inf !== null) txt += Math.abs(mens - inf) < 0.3 ? ": casi lo mismo que suben los precios." : mens > inf ? ": más de lo que suben los precios." : ": menos de lo que suben los precios.";
+      return { sen: "est", unit: "anual, tasa BADLAR", det: it.d12Txt ? it.d12Txt + " en un año" : "", mean: txt + "" };
+    });
+    return out;
+  }
+
+  function fechaLarga() { var d = new Date(); return DIAS_SEM[d.getDay()] + " " + d.getDate() + " de " + MESES_L[d.getMonth()]; }
+
+  function pintarHero(m, preg) {
+    var P = m.porId, f = $("hero-fecha"), t = $("h-inicio"), sub = $("hero-sub"), amb = $("hero-amb");
+    if (f) f.textContent = fechaLarga() + " · el pulso de la economía argentina";
+    var r = P.riesgo, o = P.oficial;
+    if (t && r && r.ok && o && o.ok) {
+      var h90 = valorHaceDias(r.s, 90), c90 = h90 ? (r.s.ultimo.v / h90 - 1) * 100 : 0;
+      var h30 = valorHaceDias(o.s, 30), d30 = h30 ? (o.s.ultimo.v / h30 - 1) * 100 : 0;
+      var a = Math.abs(c90) >= 60 ? (c90 > 0 ? "El riesgo país casi se duplicó en tres meses" : "El riesgo país cayó fuerte en tres meses")
+        : Math.abs(c90) >= 15 ? "El riesgo país " + (c90 > 0 ? "subió " : "bajó ") + num(Math.abs(c90), 0) + "% en tres meses" : "El riesgo país está estable";
+      var b = d30 > 1.5 ? "el dólar empezó a moverse" : d30 < -1.5 ? "el dólar bajó en el último mes" : "el dólar sigue quieto";
+      t.textContent = "";
+      t.appendChild(document.createTextNode(a + " y "));
+      t.appendChild(el("span", "hero__acento", b));
+      t.appendChild(document.createTextNode("."));
+    }
+    var inf = P.infM, sal = preg.filter(function (x) { return x.id === "salarios"; })[0];
+    if (sub && inf && inf.ok) {
+      var s1 = "Los precios subieron " + inf.valor + " en " + mesNombre(inf.s.points[inf.s.points.length - 1][0]);
+      s1 += inf.dPrev > 0.05 ? ", un poco más que el mes anterior" : inf.dPrev < -0.05 ? ", menos que el mes anterior" : "";
+      if (sal && sal.big) s1 += sal.big.charAt(0) === "−" ? ", y en doce meses los sueldos todavía no los alcanzan." : ", y en doce meses los sueldos les ganan.";
+      else s1 += ".";
+      sub.textContent = s1;
+    }
+    if (amb && r && r.ok && !amb.__ok) {
+      var pts = r.s.points.slice(-90); if (pts.length > 2) {
+        var vs = pts.map(function (p) { return p[1]; }), mn = Math.min.apply(null, vs), mx = Math.max.apply(null, vs), rg = (mx - mn) || 1;
+        var d = pts.map(function (p, i) { return (i ? "L" : "M") + (i * 1000 / (pts.length - 1)).toFixed(1) + " " + (195 - (p[1] - mn) / rg * 170).toFixed(1); }).join(" ");
+        amb.innerHTML = "";
+        var NS = "http://www.w3.org/2000/svg", ar = document.createElementNS(NS, "path"), ln = document.createElementNS(NS, "path");
+        ar.setAttribute("d", d + " L1000 200 L0 200 Z"); ar.setAttribute("class", "hero__amb-ar");
+        ln.setAttribute("d", d); ln.setAttribute("pathLength", "1"); ln.setAttribute("class", "hero__amb-ln"); ln.setAttribute("vector-effect", "non-scaling-stroke");
+        amb.appendChild(ar); amb.appendChild(ln); amb.__ok = true;
+      }
+    }
+  }
+
+  function pintarSenales(preg) {
+    var caja = $("senales"); if (!caja || !preg.length) return;
+    var n = { mal: 0, mix: 0, est: 0, bien: 0 };
+    preg.forEach(function (x) { n[x.sen]++; });
+    caja.textContent = ""; caja.hidden = false;
+    caja.appendChild(el("span", "senales__tit", "Señales de hoy"));
+    var barra = el("span", "senales__barra"); barra.setAttribute("role", "img");
+    var partes = [];
+    ["bien", "mal", "mix", "est"].forEach(function (k) { if (n[k]) partes.push(n[k] + " " + SEN[k][1].toLowerCase()); });
+    barra.setAttribute("aria-label", preg.length + " señales: " + partes.join(", "));
+    ["bien", "mal", "mix", "est"].forEach(function (k) { for (var i = 0; i < n[k]; i++) { var s = el("i", "senales__seg " + SEN[k][0]); s.style.animationDelay = (400 + caja.childElementCount * 0 + barra.childElementCount * 80) + "ms"; barra.appendChild(s); } });
+    caja.appendChild(barra);
+    var txt = el("span", "senales__txt");
+    var etq = { bien: "mejoran", mal: "empeoran", mix: "mixtas", est: "estables" };
+    ["bien", "mal", "mix", "est"].forEach(function (k) {
+      if (!n[k]) return;
+      if (txt.childNodes.length) txt.appendChild(document.createTextNode(" · "));
+      txt.appendChild(el("strong", SEN[k][0], n[k] + " " + etq[k]));
+    });
+    caja.appendChild(txt);
+  }
+
+  function pintarFiltrosMos(m) {
+    var caja = $("mosaico-filtros"); if (!caja) return;
+    caja.textContent = "";
+    FILTROS_MOS.forEach(function (f) {
+      caja.appendChild(chip(f[1], f[0] === mosFiltro, function () { mosFiltro = f[0]; pintarFiltrosMos(m); pintarMosaico(m, true); anunciar("Mostrando: " + f[1]); }));
+    });
+  }
+
+  function pintarMosaico(m, refiltrar) {
+    var caja = $("mosaico"); if (!caja) return;
+    var preg = armarPreguntas(m);
+    pintarHero(m, preg);
+    pintarSenales(preg);
+    var vis = preg.filter(function (x) { return mosFiltro === "todo" || x.tags.indexOf(mosFiltro) >= 0; });
+    caja.textContent = "";
+    if (!vis.length) { caja.appendChild(el("p", "hint", preg.length ? "Nada para este filtro." : "Cargando indicadores…")); return; }
+    vis.forEach(function (x, i) {
+      var it = x.it, s = SEN[x.sen];
+      var b = el("button", "preg" + (x.grande ? " preg--grande" : "")); b.type = "button"; b.dataset.id = it.id;
+      b.style.animationDelay = (i * 80) + "ms";
+      var cab = el("span", "preg__cab");
+      cab.appendChild(el("span", "preg__q", x.q));
+      var sg = el("span", "preg__sen " + s[0]); sg.appendChild(el("i", "")); sg.appendChild(document.createTextNode(s[1])); cab.appendChild(sg);
+      b.appendChild(cab);
+      var big = x.big || it.valor, vEl = el("span", "preg__val", big); b.appendChild(vEl);
+      b.appendChild(el("span", "preg__unit", (x.unit || unidadDe(it) || "") + (it.fecha ? " · " + it.fecha : "")));
+      var fila = el("span", "preg__fila");
+      if (!x.sinChip && it.dPrevTxt && !esNulo(it.dPrevTxt)) {
+        var tipo = /pb$/.test(it.dPrevTxt) ? "pb" : /pp$/.test(it.dPrevTxt) ? "pp" : "pct";
+        var esc = ESCALA[tipo][it.mensual ? 30 : 0], mag = Math.abs(it.dPrev) / esc;
+        var paso = pasoDias(it.s);
+        fila.appendChild(el("span", "hchip " + nivelCalor(it.dPrev, mag), it.dPrevTxt + (paso > 40 ? " en el trimestre" : paso > 3 ? " en el mes" : " hoy")));
+      }
+      if (x.det) fila.appendChild(el("span", "preg__det", x.det));
+      b.appendChild(fila);
+      b.appendChild(el("span", "preg__mean", x.mean));
+      var sp = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      sp.setAttribute("class", "preg__spark " + s[0]); sp.setAttribute("aria-hidden", "true"); sp.setAttribute("preserveAspectRatio", "none");
+      C.spark(sp, it.spark, "currentColor"); b.appendChild(sp);
+      b.setAttribute("aria-label", x.q + " " + big + ". " + s[1] + ". " + x.mean);
+      b.addEventListener("click", function () { abrirCajon(it, "hoy"); });
+      b.addEventListener("pointermove", function (e) { var r = b.getBoundingClientRect(); b.style.setProperty("--mx", (e.clientX - r.left) + "px"); b.style.setProperty("--my", (e.clientY - r.top) + "px"); });
+      caja.appendChild(b);
+      if (!x.big) contar(vEl, big, "mos-" + it.id + (refiltrar ? "-" + Date.now() : ""));
+    });
+  }
+
   /* ---- armado del Inicio ---- */
 
   function armarInicio() {
-    var ids = IDS_DOLARES.concat(IDS_PULSO, IDS_MOV, IDS_VISITA, window.EconoLectura ? window.EconoLectura.ids.concat(window.EconoLectura.contexto) : []);
+    var ids = IDS_DOLARES.concat(IDS_PULSO, IDS_MOV, IDS_VISITA, IDS_MOSAICO, ["infIA"], window.EconoLectura ? window.EconoLectura.ids.concat(window.EconoLectura.contexto) : []);
     Object.keys(favs).forEach(function (id) { ids.push(id); });
     ids = ids.filter(function (id, i) { return DEFS[id] && ids.indexOf(id) === i; });
     var filas = ids.map(function (id) { var c = {}; Object.keys(DEFS[id]).forEach(function (k) { c[k] = DEFS[id][k]; }); c.g = "Inicio"; return c; });
@@ -1748,6 +1948,7 @@
     }
     function pintar() {
       pintarPulso(m);
+      pintarMosaico(m);
       pintarMovers(false);
       pintarLecturaInicio(m, cajas.lectura);
       grupo(cajas.dolares, IDS_DOLARES);
@@ -1759,6 +1960,7 @@
     inicio = { firma: firmaFavs(), pintar: pintar };
     m.armar();
     pintarPeriodos();
+    pintarFiltrosMos(m);
     pintar();
   }
 
@@ -2156,7 +2358,7 @@
     mixto: { icono: "⇄", nombre: "Mixto" },
     neutro: { icono: "=", nombre: "Neutral" }
   };
-  var recientesTema = "Todos";
+  var recientesTema = "Todos", recAbiertos = {};
 
   function armarRecientes() {
     var raiz = $("recientes-contenido"); raiz.textContent = "";
@@ -2170,7 +2372,7 @@
     var mt = el("a", "link", "Cómo se hacen las lecturas"); mt.href = "#metodologia"; aviso.appendChild(mt);
     raiz.appendChild(aviso);
     var resumen = el("div", "rec__resumen"); raiz.appendChild(resumen);
-    var chipsBox = el("div", "chips chips--sm"); chipsBox.setAttribute("role", "group"); chipsBox.setAttribute("aria-label", "Tema"); raiz.appendChild(chipsBox);
+    var chipsBox = el("div", "chips chips--sm rec__chips"); chipsBox.setAttribute("role", "group"); chipsBox.setAttribute("aria-label", "Tema"); raiz.appendChild(chipsBox);
     var estado = el("p", "hint"); raiz.appendChild(estado);
     var lista = el("div", "rec__lista"); raiz.appendChild(lista);
 
@@ -2184,7 +2386,7 @@
 
     function tarjetaRec(x) {
       var it = x.it, r = x.r;
-      var card = el("article", "rec");
+      var card = el("article", "rec" + (r ? " rec--" + r.v : "") + (recAbiertos[x.id] ? " abierto" : ""));
       var izq = el("div", "rec__izq");
       izq.appendChild(el("span", "rec__tema", L.tema(x.id)));
       var h = el("h3", "rec__nom"); var pt = punto(it.id); if (pt) h.appendChild(pt); h.appendChild(document.createTextNode(it.label)); izq.appendChild(h);
@@ -2214,8 +2416,17 @@
           der.appendChild(d);
         }
       } else der.appendChild(el("p", "hint", "Todavía no hay lectura para este indicador."));
-      var ver = el("a", "link", "Ver el indicador"); ver.href = "#" + (SEC_DE[it.id] || "bcra") + ":" + it.id; der.appendChild(ver);
+      var ver = el("a", "link rec__ver", "Ver el indicador"); ver.href = "#" + (SEC_DE[it.id] || "bcra") + ":" + it.id; der.appendChild(ver);
       card.appendChild(der);
+      var mas = el("button", "rec__mas", recAbiertos[x.id] ? "Ver menos" : "Ver detalle"); mas.type = "button";
+      mas.setAttribute("aria-expanded", recAbiertos[x.id] ? "true" : "false");
+      mas.addEventListener("click", function () {
+        recAbiertos[x.id] = !recAbiertos[x.id];
+        card.classList.toggle("abierto", recAbiertos[x.id]);
+        mas.textContent = recAbiertos[x.id] ? "Ver menos" : "Ver detalle";
+        mas.setAttribute("aria-expanded", recAbiertos[x.id] ? "true" : "false");
+      });
+      card.appendChild(mas);
       return card;
     }
 
