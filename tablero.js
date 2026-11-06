@@ -701,6 +701,7 @@
       if (it.d12Txt) chg.appendChild(el("span", "pastilla " + it.tono12, flechaDe(it.d12Txt, it.d12) + it.d12Txt + (it.t === "flow" ? "" : " en 12 meses")));
       var dias = rezagoDias(it.s);
       chg.appendChild(el("span", "pastilla " + (it.viejo ? "viejo" : "flat"), "Dato de " + it.fecha + (it.viejo ? " (hace " + dias + " días, desactualizado)" : "")));
+      chg.appendChild(el("span", "pastilla flat", "Fuente: " + fuenteCorta(it.s.fuente) + " · " + frecuenciaDe(it).toLowerCase()));
       box.appendChild(chg);
 
       // en pantallas anchas el grafico va a la izquierda y la explicacion a la derecha
@@ -1738,7 +1739,7 @@
   var FILTROS_MOS = [["todo", "Todo"], ["sueldo", "Tengo un sueldo"], ["ahorro", "Ahorro"], ["jubilado", "Soy jubilado/a"], ["invierto", "Invierto"]];
   var mosFiltro = "todo";
   var DIAS_SEM = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
-  var SEN = { bien: ["s-bien", "Mejora"], mal: ["s-mal", "Empeora"], mix: ["s-mix", "Mixto"], est: ["s-est", "Estable"] };
+  var SEN_LECT = { bien: "bien", mal: "mal", mix: "mixto", est: "neutro" };
 
   function pc1(v) { return signo(v, 1).replace("-", "−") + "%"; }
   function valorDelMes(s, fecha) {
@@ -1822,36 +1823,43 @@
   function fechaLarga() { var d = new Date(); return DIAS_SEM[d.getDay()] + " " + d.getDate() + " de " + MESES_L[d.getMonth()]; }
 
   function pintarHero(m, preg) {
-    var P = m.porId, f = $("hero-fecha"), t = $("h-inicio"), sub = $("hero-sub"), amb = $("hero-amb");
-    if (f) f.textContent = fechaLarga() + " · el pulso de la economía argentina";
-    var r = P.riesgo, o = P.oficial;
+    var P = m.porId, f = $("hoy-fecha"), t = $("h-hoy"), sub = $("hoy-sub"), amb = $("hoy-amb"), fu = $("hoy-fuente");
+    if (f) f.textContent = "Lo importante de hoy · " + fechaLarga();
+    var r = P.riesgo, o = P.oficial, inf = P.infM, partes = [];
     if (t && r && r.ok && o && o.ok) {
       var h90 = valorHaceDias(r.s, 90), c90 = h90 ? (r.s.ultimo.v / h90 - 1) * 100 : 0;
       var h30 = valorHaceDias(o.s, 30), d30 = h30 ? (o.s.ultimo.v / h30 - 1) * 100 : 0;
-      var a = Math.abs(c90) >= 60 ? (c90 > 0 ? "El riesgo país casi se duplicó en tres meses" : "El riesgo país cayó fuerte en tres meses")
+      var a1 = Math.abs(c90) >= 60 ? (c90 > 0 ? "El riesgo país casi se duplicó en tres meses" : "El riesgo país cayó fuerte en tres meses")
         : Math.abs(c90) >= 15 ? "El riesgo país " + (c90 > 0 ? "subió " : "bajó ") + num(Math.abs(c90), 0) + "% en tres meses" : "El riesgo país está estable";
-      var b = d30 > 1.5 ? "el dólar empezó a moverse" : d30 < -1.5 ? "el dólar bajó en el último mes" : "el dólar sigue quieto";
+      var b1 = d30 > 1.5 ? "el dólar oficial subió " + num(d30, 1) + "% en un mes" : d30 < -1.5 ? "el dólar oficial bajó " + num(Math.abs(d30), 1) + "% en un mes" : "el dólar oficial casi no se movió en un mes";
       t.textContent = "";
-      t.appendChild(document.createTextNode(a + " y "));
-      t.appendChild(el("span", "hero__acento", b));
+      t.appendChild(document.createTextNode(a1 + " y "));
+      t.appendChild(el("span", "hoy__acento", b1));
       t.appendChild(document.createTextNode("."));
+      partes.push("riesgo país: " + fuenteCorta(r.s.fuente) + ", dato del " + r.fecha);
+      partes.push("dólar oficial: " + fuenteCorta(o.s.fuente) + ", dato del " + o.fecha);
+    } else if (t) {
+      t.textContent = "Todavía no llegaron los datos del día.";
     }
-    var inf = P.infM, sal = preg.filter(function (x) { return x.id === "salarios"; })[0];
+    var sal = preg.filter(function (x) { return x.id === "salarios"; })[0];
     if (sub && inf && inf.ok) {
       var s1 = "Los precios subieron " + inf.valor + " en " + mesNombre(inf.s.points[inf.s.points.length - 1][0]);
       s1 += inf.dPrev > 0.05 ? ", un poco más que el mes anterior" : inf.dPrev < -0.05 ? ", menos que el mes anterior" : "";
-      if (sal && sal.big) s1 += sal.big.charAt(0) === "−" ? ", y en doce meses los sueldos todavía no los alcanzan." : ", y en doce meses los sueldos les ganan.";
+      if (sal && sal.big) s1 += sal.big.charAt(0) === "−" ? ", y en doce meses los sueldos registrados quedaron por debajo." : ", y en doce meses los sueldos registrados les ganaron.";
       else s1 += ".";
       sub.textContent = s1;
+      partes.push("inflación: " + fuenteCorta(inf.s.fuente) + ", dato de " + inf.fecha);
+      if (sal && sal.it) partes.push("sueldos: " + fuenteCorta(sal.it.s.fuente) + ", dato de " + sal.it.fecha);
     }
+    if (fu) fu.textContent = partes.length ? "Fuentes — " + partes.join(" · ") + "." : "";
     if (amb && r && r.ok && !amb.__ok) {
       var pts = r.s.points.slice(-90); if (pts.length > 2) {
         var vs = pts.map(function (p) { return p[1]; }), mn = Math.min.apply(null, vs), mx = Math.max.apply(null, vs), rg = (mx - mn) || 1;
         var d = pts.map(function (p, i) { return (i ? "L" : "M") + (i * 1000 / (pts.length - 1)).toFixed(1) + " " + (195 - (p[1] - mn) / rg * 170).toFixed(1); }).join(" ");
-        amb.innerHTML = "";
+        amb.textContent = "";
         var NS = "http://www.w3.org/2000/svg", ar = document.createElementNS(NS, "path"), ln = document.createElementNS(NS, "path");
-        ar.setAttribute("d", d + " L1000 200 L0 200 Z"); ar.setAttribute("class", "hero__amb-ar");
-        ln.setAttribute("d", d); ln.setAttribute("pathLength", "1"); ln.setAttribute("class", "hero__amb-ln"); ln.setAttribute("vector-effect", "non-scaling-stroke");
+        ar.setAttribute("d", d + " L1000 200 L0 200 Z"); ar.setAttribute("class", "hoy__amb-ar");
+        ln.setAttribute("d", d); ln.setAttribute("pathLength", "1"); ln.setAttribute("class", "hoy__amb-ln"); ln.setAttribute("vector-effect", "non-scaling-stroke");
         amb.appendChild(ar); amb.appendChild(ln); amb.__ok = true;
       }
     }
@@ -1859,24 +1867,27 @@
 
   function pintarSenales(preg) {
     var caja = $("senales"); if (!caja || !preg.length) return;
-    var n = { mal: 0, mix: 0, est: 0, bien: 0 };
-    preg.forEach(function (x) { n[x.sen]++; });
+    var n = { bien: 0, mal: 0, mixto: 0, neutro: 0 };
+    preg.forEach(function (x) { n[x.lect]++; });
     caja.textContent = ""; caja.hidden = false;
-    caja.appendChild(el("span", "senales__tit", "Señales de hoy"));
+    caja.appendChild(el("span", "senales__tit", "Lectura de 8 indicadores"));
     var barra = el("span", "senales__barra"); barra.setAttribute("role", "img");
-    var partes = [];
-    ["bien", "mal", "mix", "est"].forEach(function (k) { if (n[k]) partes.push(n[k] + " " + SEN[k][1].toLowerCase()); });
-    barra.setAttribute("aria-label", preg.length + " señales: " + partes.join(", "));
-    ["bien", "mal", "mix", "est"].forEach(function (k) { for (var i = 0; i < n[k]; i++) { var s = el("i", "senales__seg " + SEN[k][0]); s.style.animationDelay = (400 + caja.childElementCount * 0 + barra.childElementCount * 80) + "ms"; barra.appendChild(s); } });
+    var orden = ["bien", "mal", "mixto", "neutro"], partes = [];
+    orden.forEach(function (k) { if (n[k]) partes.push(n[k] + " " + LECT_ETIQUETA[k].nombre.toLowerCase()); });
+    barra.setAttribute("aria-label", partes.join(", "));
+    orden.forEach(function (k) { for (var i = 0; i < n[k]; i++) { var sg = el("i", "senales__seg lect-fondo--" + k); sg.style.animationDelay = (400 + barra.childElementCount * 80) + "ms"; barra.appendChild(sg); } });
     caja.appendChild(barra);
     var txt = el("span", "senales__txt");
-    var etq = { bien: "mejoran", mal: "empeoran", mix: "mixtas", est: "estables" };
-    ["bien", "mal", "mix", "est"].forEach(function (k) {
+    orden.forEach(function (k) {
       if (!n[k]) return;
-      if (txt.childNodes.length) txt.appendChild(document.createTextNode(" · "));
-      txt.appendChild(el("strong", SEN[k][0], n[k] + " " + etq[k]));
+      var e = LECT_ETIQUETA[k], sp = el("span", "lect-txt lect-txt--" + k);
+      sp.appendChild(el("b", "", e.icono + " " + n[k]));
+      sp.appendChild(document.createTextNode(" " + e.nombre.toLowerCase()));
+      txt.appendChild(sp);
     });
     caja.appendChild(txt);
+    var cr = el("a", "link senales__link", "¿Con qué criterio?"); cr.href = "#metodologia";
+    caja.appendChild(cr);
   }
 
   function pintarFiltrosMos(m) {
@@ -1890,18 +1901,22 @@
   function pintarMosaico(m, refiltrar) {
     var caja = $("mosaico"); if (!caja) return;
     var preg = armarPreguntas(m);
+    preg.forEach(function (x) {
+      var lr = window.EconoLectura ? window.EconoLectura.leer(x.id, m.porId) : null;
+      x.lect = lr && LECT_ETIQUETA[lr.v] ? lr.v : SEN_LECT[x.sen];
+    });
     pintarHero(m, preg);
     pintarSenales(preg);
     var vis = preg.filter(function (x) { return mosFiltro === "todo" || x.tags.indexOf(mosFiltro) >= 0; });
     caja.textContent = "";
     if (!vis.length) { caja.appendChild(el("p", "hint", preg.length ? "Nada para este filtro." : "Cargando indicadores…")); return; }
     vis.forEach(function (x, i) {
-      var it = x.it, s = SEN[x.sen];
+      var it = x.it, e = LECT_ETIQUETA[x.lect];
       var b = el("button", "preg" + (x.grande ? " preg--grande" : "")); b.type = "button"; b.dataset.id = it.id;
       b.style.animationDelay = (i * 80) + "ms";
       var cab = el("span", "preg__cab");
       cab.appendChild(el("span", "preg__q", x.q));
-      var sg = el("span", "preg__sen " + s[0]); sg.appendChild(el("i", "")); sg.appendChild(document.createTextNode(s[1])); cab.appendChild(sg);
+      var sg = el("span", "lect lect--" + x.lect + " preg__sen"); sg.appendChild(el("span", "lect__icono", e.icono)); sg.appendChild(document.createTextNode(" " + e.nombre)); cab.appendChild(sg);
       b.appendChild(cab);
       var big = x.big || it.valor, vEl = el("span", "preg__val", big); b.appendChild(vEl);
       b.appendChild(el("span", "preg__unit", (x.unit || unidadDe(it) || "") + (it.fecha ? " · " + it.fecha : "")));
@@ -1910,15 +1925,17 @@
         var tipo = /pb$/.test(it.dPrevTxt) ? "pb" : /pp$/.test(it.dPrevTxt) ? "pp" : "pct";
         var esc = ESCALA[tipo][it.mensual ? 30 : 0], mag = Math.abs(it.dPrev) / esc;
         var paso = pasoDias(it.s);
-        fila.appendChild(el("span", "hchip " + nivelCalor(it.dPrev, mag), it.dPrevTxt + (paso > 40 ? " en el trimestre" : paso > 3 ? " en el mes" : " hoy")));
+        var flecha = it.dPrev > 0 ? "▲ " : it.dPrev < 0 ? "▼ " : "■ ";
+        fila.appendChild(el("span", "hchip " + nivelCalor(it.dPrev, mag), flecha + it.dPrevTxt + (paso > 40 ? " contra el trimestre anterior" : paso > 3 ? " contra el mes anterior" : " contra el día anterior")));
       }
       if (x.det) fila.appendChild(el("span", "preg__det", x.det));
       b.appendChild(fila);
       b.appendChild(el("span", "preg__mean", x.mean));
+      b.appendChild(el("span", "preg__fuente", "Fuente: " + fuenteCorta(it.s.fuente) + " · dato de " + it.fecha));
       var sp = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-      sp.setAttribute("class", "preg__spark " + s[0]); sp.setAttribute("aria-hidden", "true"); sp.setAttribute("preserveAspectRatio", "none");
+      sp.setAttribute("class", "preg__spark lect-txt--" + x.lect); sp.setAttribute("aria-hidden", "true"); sp.setAttribute("preserveAspectRatio", "none");
       C.spark(sp, it.spark, "currentColor"); b.appendChild(sp);
-      b.setAttribute("aria-label", x.q + " " + big + ". " + s[1] + ". " + x.mean);
+      b.setAttribute("aria-label", x.q + " " + big + ". Lectura: " + e.nombre + ". " + x.mean + " Fuente: " + fuenteCorta(it.s.fuente) + ", dato de " + it.fecha + ".");
       b.addEventListener("click", function () { abrirCajon(it, "hoy"); });
       b.addEventListener("pointermove", function (e) { var r = b.getBoundingClientRect(); b.style.setProperty("--mx", (e.clientX - r.left) + "px"); b.style.setProperty("--my", (e.clientY - r.top) + "px"); });
       caja.appendChild(b);
@@ -2196,6 +2213,16 @@
 
   var PRIMERA_KEY = "econochanta:v1:primera";
   function iniciarPrimera() {
+    // acción principal del Inicio: ir al bloque "Lo importante de hoy" (el hash es el router, así que se resuelve con scroll y foco)
+    var irHoy = $("ir-hoy");
+    if (irHoy && !irHoy.__ok) {
+      irHoy.__ok = true;
+      irHoy.addEventListener("click", function () {
+        var h = $("h-hoy"), bloque = $("bloque-hoy");
+        if (bloque) bloque.scrollIntoView({ behavior: REDUCE ? "auto" : "smooth", block: "start" });
+        if (h) setTimeout(function () { h.focus({ preventScroll: true }); }, REDUCE ? 0 : 400);
+      });
+    }
     var caja = $("primera"), ok = $("primera-ok");
     if (!caja || !ok) return;
     var visto = false;

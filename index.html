@@ -38,7 +38,7 @@
 
   <nav class="nav" aria-label="Secciones">
     <a href="#inicio" data-vista="inicio">Inicio</a>
-    <a href="#argentina" data-vista="argentina">Argentina</a>
+    <a href="#argentina" data-vista="argentina">Indicadores</a>
     <a href="#analisis" data-vista="analisis">Análisis</a>
     <a href="#noticias" data-vista="noticias">Noticias</a>
     <a href="#calcular" data-vista="calcular">Calculadoras</a>
@@ -59,9 +59,9 @@
   </nav>
   <nav class="tabbar" aria-label="Secciones principales">
     <a href="#inicio" data-vista="inicio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg><span>Inicio</span></a>
-    <a href="#argentina" data-vista="argentina"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V11M10 20V4M16 20v-6M22 20H2"/></svg><span>Argentina</span></a>
+    <a href="#argentina" data-vista="argentina"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V11M10 20V4M16 20v-6M22 20H2"/></svg><span>Indicadores</span></a>
     <a href="#analisis" data-vista="analisis"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg><span>Análisis</span></a>
-    <a href="#noticias" data-vista="noticias"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h13v14H5a1 1 0 0 1-1-1zM17 8h3v10a1 1 0 0 1-2 0M7 9h7M7 13h7M7 16h4"/></svg><span>Noticias</span></a>
+    <a href="#calcular" data-vista="calcular"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01"/></svg><span>Calcular</span></a>
     <a href="#miplata" data-vista="miplata"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5C9.5 8.5 10.5 8 12 8s2.5.5 2.5 1.5-1 1.4-2.5 1.7-2.5.7-2.5 1.8S10.5 16 12 16s2.5-.5 2.5-1.5"/></svg><span>Tu plata</span></a>
   </nav>
 
@@ -69,35 +69,50 @@
 
     <!-- INICIO -->
     <section id="vista-inicio" class="vista" aria-labelledby="h-inicio">
-      <div class="hero">
-        <svg class="hero__amb" id="hero-amb" viewBox="0 0 1000 200" preserveAspectRatio="none" aria-hidden="true"></svg>
-        <div class="hero__txt">
-          <p class="hero__eyebrow"><span class="vivo" aria-hidden="true"></span><span id="hero-fecha">El pulso de la economía argentina</span></p>
-          <h1 id="h-inicio" class="hero__tit">Cada número de la economía, explicado</h1>
-          <p class="hero__sub" id="hero-sub">Dólar, inflación, tasas, cuentas del Estado y actividad de Argentina, con datos oficiales y una explicación en criollo de qué significa cada uno.</p>
-          <div class="senales" id="senales" hidden></div>
+      <!-- 1. propuesta de valor (fija) y búsqueda -->
+      <div class="portada">
+        <div class="portada__txt">
+          <h1 id="h-inicio" class="portada__marca">Economía argentina, explicada sin vueltas</h1>
+          <p class="portada__prop">Mirá qué cambió, entendé qué significa y consultá la fuente de cada dato.</p>
+          <div class="portada__acc">
+            <button class="btn" id="ir-hoy" type="button">Ver lo importante de hoy</button>
+            <a class="btn btn--ghost" href="#tabla">Explorar todos los indicadores</a>
+          </div>
         </div>
-        <div class="front-head__acc">
-          <p class="front-head__stamp" id="actualizado" role="status"></p>
-          <button class="btn btn--ghost btn--sm" id="refrescar" type="button">Actualizar</button>
+        <div class="buscador" role="search">
+          <label class="sr-only" for="buscador-input">Buscar un indicador o una sección</label>
+          <input id="buscador-input" class="buscador__input" type="search" placeholder="Buscar: dólar, inflación, jubilaciones, cuenta corriente…" autocomplete="off" aria-controls="buscador-lista">
+          <p class="sr-only" id="buscador-estado" role="status"></p>
+          <ul class="buscador__lista" id="buscador-lista" hidden></ul>
         </div>
-      </div>
-      <div class="buscador" role="search">
-        <label class="sr-only" for="buscador-input">Buscar un indicador o una sección</label>
-        <input id="buscador-input" class="buscador__input" type="search" placeholder="Buscar: dólar, inflación, jubilaciones, cuenta corriente…" autocomplete="off" aria-controls="buscador-lista">
-        <p class="sr-only" id="buscador-estado" role="status"></p>
-        <ul class="buscador__lista" id="buscador-lista" hidden></ul>
       </div>
       <aside class="primera" id="primera" role="note" hidden>
         <div>
           <strong>¿Es tu primera vez acá?</strong>
-          <p>Tocá cualquier número: te mostramos su gráfico y te explicamos qué mide y cómo se lee. Si buscás algo puntual, usá el buscador.</p>
+          <p>Tocá cualquier número: te mostramos su gráfico, qué mide, de dónde sale y cómo leerlo. Si buscás algo puntual, usá el buscador.</p>
         </div>
         <div class="primera__acc">
           <a class="btn btn--ghost btn--sm" href="#glosario">Ver el glosario</a>
           <button class="btn btn--sm" id="primera-ok" type="button">Entendido</button>
         </div>
       </aside>
+
+      <!-- 2. lo importante de hoy: titular con fecha y fuente, cambios destacados -->
+      <section class="hoy" id="bloque-hoy" aria-labelledby="h-hoy">
+        <svg class="hoy__amb" id="hoy-amb" viewBox="0 0 1000 200" preserveAspectRatio="none" aria-hidden="true"></svg>
+        <div class="hoy__txt">
+          <p class="hoy__eyebrow"><span class="vivo" aria-hidden="true"></span><span id="hoy-fecha">Lo importante de hoy</span></p>
+          <h2 id="h-hoy" class="hoy__tit" tabindex="-1">Cargando los datos del día…</h2>
+          <p class="hoy__sub" id="hoy-sub"></p>
+          <div class="senales" id="senales" hidden></div>
+          <p class="hoy__fuente" id="hoy-fuente"></p>
+        </div>
+        <div class="front-head__acc">
+          <p class="front-head__stamp" id="actualizado" role="status"></p>
+          <button class="btn btn--ghost btn--sm" id="refrescar" type="button">Actualizar</button>
+        </div>
+      </section>
+
       <div class="mov-cab">
         <h2 class="resumen__sub">Dólares hoy</h2>
         <span class="hint">Precio de venta · se actualiza solo</span>
@@ -107,40 +122,43 @@
       <div class="mov-cab">
         <div>
           <h2 class="resumen__sub">Cómo se movió todo</h2>
-          <p class="hint mov-leyenda-txt">Verde subió, rojo bajó. Cuanto más intenso, más grande el movimiento.</p>
+          <p class="hint mov-leyenda-txt">▲ verde subió, ▼ rojo bajó. Cuanto más intenso, más grande el movimiento. Subir no siempre es bueno ni bajar es malo: depende de tu situación.</p>
         </div>
         <div class="mov-cab__der">
-          <div class="escala" aria-hidden="true"><span>Baja fuerte</span><i class="h-d4"></i><i class="h-d3"></i><i class="h-d2"></i><i class="h-d1"></i><i class="h-u1"></i><i class="h-u2"></i><i class="h-u3"></i><i class="h-u4"></i><span>Sube fuerte</span></div>
+          <div class="escala" aria-hidden="true"><span>▼ Baja fuerte</span><i class="h-d4"></i><i class="h-d3"></i><i class="h-d2"></i><i class="h-d1"></i><i class="h-u1"></i><i class="h-u2"></i><i class="h-u3"></i><i class="h-u4"></i><span>Sube fuerte ▲</span></div>
           <div class="chips chips--sm" id="mov-periodos" role="group" aria-label="Período"></div>
         </div>
       </div>
       <div class="movers" id="movers" aria-live="polite"></div>
       <p class="hint" id="mov-nota"></p>
 
+      <!-- 3. preguntas cotidianas -->
       <section class="mosaico-sec" aria-labelledby="h-mosaico">
         <div class="mov-cab">
           <div>
-            <h2 class="resumen__sub" id="h-mosaico">Ocho preguntas, ocho respuestas</h2>
-            <p class="hint">Cada tarjeta dice el último dato, qué cambió y qué significa para vos.</p>
+            <h2 class="resumen__sub" id="h-mosaico">Ocho preguntas de todos los días</h2>
+            <p class="hint">Cada tarjeta dice el último dato, contra qué se compara, de dónde sale y una lectura posible.</p>
           </div>
           <div class="chips chips--sm" id="mosaico-filtros" role="group" aria-label="¿Qué te importa a vos? Filtrar tarjetas"></div>
         </div>
         <div class="mosaico" id="mosaico"></div>
-        <p class="hint">La señal de cada tarjeta dice si el dato es bueno o malo para la gente. El color del cambio dice si subió o bajó.</p>
+        <p class="hint">La lectura (✓ buena señal, ! alerta, ⇄ mixto, = neutral) sale de reglas simples y públicas, no de una verdad objetiva: lo que conviene a unos puede perjudicar a otros. <a class="link" href="#metodologia">Ver criterios y límites</a></p>
       </section>
 
-      <section class="pulso" id="pulso" aria-label="El pulso de hoy"></section>
-      <div class="mov-cab">
-        <h2 class="resumen__sub">Lo último, con su lectura</h2>
-        <a class="link" href="#recientes">Ver los 16 →</a>
-      </div>
-      <div class="lec-lista" id="inicio-lectura"></div>
-      <p class="hint">Una lectura automática por tema, con reglas simples. Tocá una para ver el gráfico y por qué.</p>
+      <!-- 4. una explicación destacada -->
       <div id="inicio-analisis"></div>
+      <details class="desplegable">
+        <summary>Lectura automática de 16 indicadores</summary>
+        <div class="lec-lista" id="inicio-lectura"></div>
+        <p class="hint">Una lectura por tema, con reglas simples que comparan el dato con el anterior, con hace un año o con la inflación. Tocá una para ver el gráfico y los números que se compararon. <a class="link" href="#recientes">Ver los 16 con detalle</a></p>
+      </details>
+
+      <!-- 5. lo tuyo: favoritos y cambios desde tu última visita -->
       <div id="inicio-favs-bloque" hidden>
         <h2 class="resumen__sub">★ Tus favoritos</h2>
         <div class="tarjetas" id="inicio-favs"></div>
       </div>
+      <section class="pulso" id="pulso" aria-label="Desde tu última visita"></section>
       <aside class="instalar" id="instalar" hidden>
         <div class="instalar__icono" aria-hidden="true"><img src="assets/icon-192.png" alt="" width="48" height="48"></div>
         <div class="instalar__txt">
@@ -152,14 +170,19 @@
           <button class="btn btn--ghost btn--sm" id="instalar-no" type="button">Ahora no</button>
         </div>
       </aside>
-      <h2 class="resumen__sub">Entrá por tema</h2>
+
+      <!-- 6. acceso al tablero completo -->
+      <div class="mov-cab">
+        <h2 class="resumen__sub">Todos los indicadores, por tema</h2>
+        <a class="link" href="#tabla">Ver la tabla completa →</a>
+      </div>
       <div id="inicio-tiles" class="tiles-compactas"></div>
     </section>
 
     <!-- ARGENTINA: menu de secciones -->
     <section id="vista-argentina" class="vista" aria-labelledby="h-argentina" hidden>
-      <h1 id="h-argentina" class="title">Argentina</h1>
-      <p class="sub">Elegí un tema. Cada uno abre una lista de indicadores con su gráfico.</p>
+      <h1 id="h-argentina" class="title">Indicadores de Argentina</h1>
+      <p class="sub">Elegí un tema. Cada uno abre una lista de indicadores con su gráfico, su fuente y la fecha del último dato. ¿Preferís verlos todos juntos? <a class="link" href="#tabla">Tabla completa</a>.</p>
       <div id="argentina-tiles"></div>
     </section>
 
@@ -210,6 +233,7 @@
     <section id="vista-mas" class="vista" aria-labelledby="h-mas" hidden>
       <h1 id="h-mas" class="title">Más</h1>
       <ul class="menu">
+        <li><a href="#noticias"><strong>Noticias</strong><span>Titulares de medios, por tema y por medio</span></a></li>
         <li><a href="#calcular"><strong>Calculadoras</strong><span>Plazo fijo contra dólar, sueldo contra inflación</span></a></li>
         <li><a href="#metodologia"><strong>Cómo se calcula</strong><span>Fuentes, frecuencia, cálculos propios y cómo citar</span></a></li>
         <li><a href="#glosario"><strong>Glosario</strong><span>Qué mide cada indicador y cómo leerlo</span></a></li>
@@ -221,16 +245,16 @@
         <table class="tabla">
           <thead><tr><th>Datos</th><th>Fuente</th></tr></thead>
           <tbody>
-            <tr><td>Dólar, histórico</td><td>DolarAPI, ArgentinaDatos</td></tr>
+            <tr><td>Dólar, histórico</td><td>DolarAPI y ArgentinaDatos (proveedores privados que relevan cotizaciones)</td></tr>
             <tr><td>Inflación y rubros, actividad, empleo, salarios, comercio</td><td>INDEC, vía datos.gob.ar y ArgentinaDatos</td></tr>
             <tr><td>Resultado fiscal, recaudación</td><td>Secretaría de Hacienda, ARCA, vía datos.gob.ar</td></tr>
             <tr><td>Reservas, base monetaria, depósitos, préstamos, tasas</td><td>BCRA</td></tr>
             <tr><td>Acciones y bonos (con demora)</td><td>data912</td></tr>
-            <tr><td>Riesgo país</td><td>ArgentinaDatos</td></tr>
+            <tr><td>Riesgo país</td><td>Índice EMBI de JP Morgan, vía ArgentinaDatos</td></tr>
             <tr><td>Noticias</td><td>RSS públicos de Ámbito, Infobae, La Nación, iProfesional y Perfil</td></tr>
           </tbody>
         </table>
-        <p class="hint">Cada gráfico muestra su fuente y la fecha de su último dato. Los datos mensuales y trimestrales se publican con rezago. No es asesoramiento financiero.</p>
+        <p class="hint">Cada gráfico muestra su fuente y la fecha de su último dato. La fecha del dato (el período que mide) no es la hora en que lo consultamos: los datos mensuales y trimestrales se publican con rezago. Si una fuente no responde, esa parte queda vacía o con el último dato que se pudo traer, avisado; nunca se completa con valores de ejemplo. No es asesoramiento financiero.</p>
       </article>
     </section>
 
@@ -308,7 +332,7 @@
           <li><b>Recaudación.</b> Se compara su variación con la inflación de 12 meses.</li>
           <li><b>Saldo comercial y cuenta corriente.</b> Superávit es buena señal; déficit, alerta.</li>
         </ul>
-        <p class="hint">Los umbrales son criterios simples elegidos para ordenar la lectura, no cifras oficiales. Un dato puede ser alerta para una cosa y buena señal para otra.</p>
+        <p class="hint">Los umbrales son criterios simples elegidos para ordenar la lectura, no cifras oficiales ni una verdad objetiva. Un dato puede ser alerta para una cosa y buena señal para otra, y una suba o una baja no le pega igual a todos: a quien ahorra en dólares le conviene lo que a quien cobra en pesos le complica. Por eso cada lectura muestra los números que compara y, cuando hay ganadores y perdedores, los dos lados.</p>
       </article>
 
       <article class="card">
@@ -350,11 +374,12 @@
     <!-- MI PLATA -->
     <section id="vista-miplata" class="vista" aria-labelledby="h-miplata" hidden>
       <h1 id="h-miplata" class="title">Tu plata</h1>
+      <div class="aviso" id="plata-aviso" role="note"></div>
 
       <article class="card hero" aria-live="polite">
         <p class="label">Tu plata, en términos reales</p>
-        <p class="hero__num" id="hero-num">0,00%</p>
-        <p class="hero__sub" id="hero-sub"></p>
+        <p class="hero__num" id="hero-num">—</p>
+        <p class="hero__sub" id="plata-sub">Cargando los datos del día…</p>
         <dl class="hero__meta">
           <div><dt>Desde ayer</dt><dd id="hero-dia">-</dd></div>
           <div><dt>En pesos, 30 días</dt><dd id="hero-mes">-</dd></div>
@@ -390,6 +415,7 @@
       <article class="card" aria-labelledby="h-dolar">
         <h2 id="h-dolar" class="label">Dólar y brecha</h2>
         <ul class="quotes" id="cotizaciones"></ul>
+        <p class="hint" id="cotizaciones-estado"></p>
         <figure class="spark">
           <svg viewBox="0 0 300 70" id="spark" role="img" aria-label="Evolución del dólar MEP en 30 días"></svg>
           <figcaption class="hint">Dólar MEP, últimos 30 días</figcaption>
@@ -406,7 +432,7 @@
     <!-- PERFIL -->
     <section id="vista-perfil" class="vista" aria-labelledby="h-perfil" hidden>
       <h1 id="h-perfil" class="title">Tu perfil</h1>
-      <p class="lead">Cinco datos para que todo se mida contra tu bolsillo y no contra el promedio. Se guardan solo en este dispositivo.</p>
+      <p class="lead">Cinco datos para que todo se mida contra tu bolsillo y no contra el promedio. Mientras no los cambies, ves un ejemplo inventado. Lo que escribas se guarda solo en este dispositivo.</p>
 
       <form class="card form" id="form-perfil" autocomplete="off" novalidate>
         <div class="field">
@@ -435,7 +461,7 @@
           <p class="field__help">Viajes, suscripciones y compras afuera.</p>
         </div>
         <div class="form__actions">
-          <button class="btn btn--ghost" type="button" id="perfil-reset">Volver al ejemplo</button>
+          <button class="btn btn--ghost" type="button" id="perfil-reset">Borrar mis datos y volver al ejemplo</button>
         </div>
         <p class="hint" id="perfil-estado" role="status"></p>
       </form>
@@ -477,7 +503,8 @@
         </div>
         <div class="field">
           <label for="pf-tna">Tasa nominal anual del plazo fijo (%)</label>
-          <input id="pf-tna" type="number" inputmode="decimal" min="0" step="0.5">
+          <input id="pf-tna" type="number" inputmode="decimal" min="0" step="0.5" aria-describedby="pf-tna-fuente">
+          <p class="field__help" id="pf-tna-fuente"></p>
         </div>
         <div class="field">
           <label for="pf-dias">Plazo (días)</label>
@@ -485,8 +512,8 @@
         </div>
         <div class="field">
           <label for="pf-dolar">Cuánto suponés que sube el dólar por mes (%)</label>
-          <input id="pf-dolar" type="number" inputmode="decimal" step="0.1">
-          <p class="field__help">Por defecto, lo que subió en los últimos 30 días. Es un supuesto, nadie sabe el futuro.</p>
+          <input id="pf-dolar" type="number" inputmode="decimal" step="0.1" aria-describedby="pf-dolar-fuente">
+          <p class="field__help" id="pf-dolar-fuente"></p>
         </div>
         <div class="result" id="pf-resultado" aria-live="polite"></div>
       </article>
@@ -494,15 +521,16 @@
       <article class="card form" id="panel-sueldo" role="tabpanel" aria-labelledby="tab-sueldo" hidden>
         <div class="field">
           <label for="s-sueldo">Tu sueldo de hoy (ARS)</label>
-          <input id="s-sueldo" type="number" inputmode="decimal" min="0" step="1000">
+          <input id="s-sueldo" type="number" inputmode="decimal" min="0" step="1000" placeholder="Ej.: 1200000">
         </div>
         <div class="field">
           <label for="s-aumento">Cuánto te aumentaron en los últimos 12 meses (%)</label>
-          <input id="s-aumento" type="number" inputmode="decimal" step="0.5" value="28">
+          <input id="s-aumento" type="number" inputmode="decimal" step="0.5" placeholder="Ej.: 28">
         </div>
         <div class="field">
           <label for="s-inflacion">Inflación de esos 12 meses (%)</label>
-          <input id="s-inflacion" type="number" inputmode="decimal" step="0.1">
+          <input id="s-inflacion" type="number" inputmode="decimal" step="0.1" aria-describedby="s-inflacion-fuente">
+          <p class="field__help" id="s-inflacion-fuente"></p>
         </div>
         <div class="result" id="s-resultado" aria-live="polite"></div>
       </article>

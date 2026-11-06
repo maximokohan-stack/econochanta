@@ -2,7 +2,7 @@
 
 El tablero de la economía argentina: dólar, inflación, actividad, empleo, cuentas fiscales, comercio exterior, dinero y mercados, con datos oficiales y gráficos propios. Las noticias y las herramientas personales quedan en un segundo plano.
 
-PWA estática (HTML, CSS y JS sin build). Los datos salen de APIs públicas sin clave. Si una serie falla, se avisa y se muestra el último dato o el de ejemplo.
+PWA estática (HTML, CSS y JS sin build). Los datos salen de APIs públicas sin clave. Si una fuente falla, se avisa: se muestra el último dato real que se pudo traer, con su hora de consulta, o la parte queda vacía. Nunca se completa con valores de ejemplo. El único ejemplo es el perfil de "Tu plata", marcado como tal hasta que cargues tus datos.
 
 **Diseño desktop first.** La interfaz está pensada primero para escritorio (dos paneles: lista y detalle) y se adapta después a tablet y celular. En `styles.css` el diseño base es el de escritorio y las adaptaciones están al final con `max-width` (1100, 820 y 560 px); en pantallas táctiles los controles pasan a 44 px.
 
@@ -144,7 +144,7 @@ tablero.js   portada, secciones de Argentina (cada una con su mesa de indicadore
 series.js    catálogo de series y carga (69 series de 5 fuentes)
 charts.js    gráficos SVG: líneas, barras, sparklines, CSV
 api.js       dólar y datos para Tu plata, con respaldo
-data.js      datos de ejemplo y valores por defecto
+data.js      perfil de ejemplo de Tu plata y alertas por defecto (ECONO_MOCK ya no se usa para datos de mercado)
 news.json    titulares (los actualiza el workflow cada hora)
 scripts/     fetch_news.py
 .github/     workflow que actualiza news.json
