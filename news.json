@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-06T02:57:11.501365Z",
+ "actualizado": "2026-11-06T05:53:32.578638Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -61,6 +61,69 @@
  ],
  "items": [
   {
+   "titulo": "La tormenta global volvió a impactar en el riesgo país argentino y suma más complicaciones para el año electoral",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/06/la-tormenta-global-volvio-a-impactar-en-el-riesgo-pais-argentino-y-suma-mas-complicaciones-para-el-ano-electoral/",
+   "fecha": "2026-11-06T04:50:52Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Una por una, las claves para entender el escándalo del Ueno Bank en Paraguay que derivó en una fuerte crisis política",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/06/una-por-una-las-claves-para-entender-el-escandalo-del-ueno-bank-en-paraguay-que-derivo-en-una-fuerte-crisis-politica/",
+   "fecha": "2026-11-06T04:50:17Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Los empresarios ven en el RIGI una certeza, pero piden más medidas y ponen en pausa las inversiones por el ruido electoral",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/06/los-empresarios-ven-en-el-rigi-una-certeza-pero-piden-mas-medidas-y-ponen-en-pausa-las-inversiones-por-el-ruido-electoral/",
+   "fecha": "2026-11-06T04:49:54Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "La filial paraguaya de una reconocida financiera de la City Porteña tenía depósitos en el Ueno Bank",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/06/la-filial-paraguaya-de-una-reconocida-financiera-de-la-city-portena-tenia-depositos-en-el-ueno-bank/",
+   "fecha": "2026-11-06T04:49:26Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La pobreza aumentó al 34,4% en el segundo trimestre del año, según cálculos privados en base al Indec",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/06/la-pobreza-aumento-al-344-en-el-segundo-trimestre-del-ano-segun-calculos-privados-en-base-al-indec/",
+   "fecha": "2026-11-06T04:49:09Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Del sueño de Wall Street a la cárcel: quién es el banquero millennial, heredero y triatleta que está detrás de la crisis de Paraguay",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/06/del-sueno-de-wall-street-a-la-carcel-quien-es-el-banquero-millennial-heredero-y-triatleta-que-esta-detras-de-la-crisis-de-paraguay/",
+   "fecha": "2026-11-06T04:48:44Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Lo que se dice en las mesas: el incomprensible adelantamiento de la carrera electoral ya afecta decisiones de inversión",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/lo-que-se-dice-las-mesas-el-incomprensible-adelantamiento-la-carrera-electoral-ya-afecta-decisiones-inversion-n6342231",
+   "fecha": "2026-11-06T03:32:00Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "El Niño. Las lluvias no dan tregua y en el sur bonaerense hay hasta 20 días de atraso en la siembra: “Vamos lerdo”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/el-nino-las-lluvias-no-dan-tregua-y-en-el-sur-bonaerense-hay-hasta-20-dias-de-atraso-en-la-siembra-nid05112026/",
+   "fecha": "2026-11-06T03:15:27Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El Niño: anticipan temperaturas de más de 40 grados, riesgo de heladas y tormentas intensas",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/el-nino-anticipan-temperaturas-de-mas-de-40-grados-riesgo-de-heladas-y-tormentas-intensas-nid05112026/",
+   "fecha": "2026-11-06T03:13:37Z",
+   "tema": "otros"
+  },
+  {
    "titulo": "La visita del papa León XIV generará un impacto económico superior a los u$s88 millones en Buenos Aires",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/la-visita-del-papa-leon-xiv-generara-un-impacto-economico-superior-los-us88-millones-buenos-aires-n6342210",
@@ -100,13 +163,6 @@
    "medio": "Infobae",
    "url": "https://www.infobae.com/america/america-latina/2026/11/05/santiago-pena-renuncio-a-la-presidencia-de-paraguay-por-el-escandalo-del-ueno-bank/",
    "fecha": "2026-11-06T00:07:38Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El Niño. Las lluvias no dan tregua y en el sur bonaerense hay hasta 20 días de atraso en la siembra: “Vamos lerdo”",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/el-nino-las-lluvias-no-dan-tregua-y-en-el-sur-bonaerense-hay-hasta-20-dias-de-atraso-en-la-siembra-nid05112026/",
-   "fecha": "2026-11-05T23:55:21Z",
    "tema": "otros"
   },
   {
@@ -227,13 +283,6 @@
    "url": "https://www.infobae.com/economia/2026/11/05/para-la-camara-de-empresas-de-eeuu-en-argentina-el-triunfo-democrata-podria-condicionar-el-vinculo-comercial-y-el-apoyo-financiero/",
    "fecha": "2026-11-05T21:21:11Z",
    "tema": "empresas"
-  },
-  {
-   "titulo": "El Niño: anticipan temperaturas de más de 40 grados, riesgo de heladas y tormentas intensas",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/el-nino-anticipan-temperaturas-de-mas-de-40-grados-riesgo-de-heladas-y-tormentas-intensas-nid05112026/",
-   "fecha": "2026-11-05T21:08:24Z",
-   "tema": "otros"
   },
   {
    "titulo": "Mercado Libre cayó 12% en Wall Street tras presentar sus resultados del tercer trimestre",
@@ -502,25 +551,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "Daniel Schteingart presentó su nuevo libro: cómo está la Argentina y qué futuro le espera al país",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/05/daniel-schteingart-presento-su-nuevo-libro-como-esta-la-argentina-y-que-futuro-le-espera-al-pais/",
-   "fecha": "2026-11-05T16:43:15Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Alerta para Milei: advierten que EE.UU. podría tener más dificultades para asistir a la Argentina",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/468443-argentina-por-que-eeuu-podria-limitar-su-ayuda-financiera-tras-las-elecciones",
    "fecha": "2026-11-05T16:35:00Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "ANSES: cuándo cobro en noviembre 2026 si mi DNI termina en 4",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/05/anses-cuando-cobro-en-noviembre-2026-si-mi-dni-termina-en-4/",
-   "fecha": "2026-11-05T16:32:51Z",
-   "tema": "otros"
   },
   {
    "titulo": "Cayó un banco con 3 millones de clientes en Paraguay y la City mira el caso de cerca",
@@ -534,13 +569,6 @@
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/finanzas/468355-como-estallo-el-escandalo-de-ueno-bank-que-termino-con-la-renuncia-de-pena-en-paraguay",
    "fecha": "2026-11-05T16:30:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El caso Ueno Bank: por qué cayó y cuál es su impacto sobre la economía de Paraguay",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/05/el-caso-ueno-bank-por-que-cayo-y-cual-es-su-impacto-sobre-la-economia-de-paraguay/",
-   "fecha": "2026-11-05T16:19:16Z",
    "tema": "otros"
   },
   {
@@ -565,25 +593,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "La principal cámara de EEUU anticipó que la derrota de Trump limitará una posible asistencia financiera a la Argentina",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/05/la-principal-camara-de-eeuu-anticipo-que-la-derrota-de-trump-limitara-una-posible-asistencia-financiera-a-la-argentina/",
-   "fecha": "2026-11-05T15:50:45Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Retenciones: la Argentina quedó última en un ranking mundial de apoyo al campo y revelan cuánto pierde por los impuestos",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/campo/retenciones-la-argentina-quedo-ultima-en-un-ranking-mundial-de-apoyo-al-campo-y-revelan-cuanto-nid05112026/",
    "fecha": "2026-11-05T15:36:12Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "El colapso de Ueno Bank de Paraguay golpea en Argentina: tiene 900 empleados en Buenos Aires, no pagó sueldos y hay suspensiones",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/05/el-colapso-de-ueno-bank-de-paraguay-golpea-en-argentina-tiene-900-empleados-en-buenos-aires-no-pago-sueldos-y-hay-suspensiones/",
-   "fecha": "2026-11-05T15:28:54Z",
-   "tema": "otros"
   },
   {
    "titulo": "El escándalo de Ueno Bank llegó a la Argentina: suspenden empleados y admiten que no tienen fondos para pagar salarios",
@@ -626,13 +640,6 @@
    "url": "https://www.iprofesional.com/economia/468426-bono-para-trabajadores-metalurgicos-como-quedo-el-salario-basico-en-noviembre",
    "fecha": "2026-11-05T14:49:00Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "La IA deja obsoletas tareas y a las estructuras de las empresas",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/opinion/2026/11/05/la-ia-deja-obsoletas-tareas-y-a-las-estructuras-de-las-empresas/",
-   "fecha": "2026-11-05T14:29:34Z",
-   "tema": "empresas"
   },
   {
    "titulo": "Gustavo Puccini, ministro de producción de Santa Fe: \"El RIGI no llegará a las pymes si las provincias no acercan las puntas\"",
@@ -696,13 +703,6 @@
    "url": "https://www.ambito.com/economia/la-produccion-automotriz-no-levanta-cayo-144-anual-octubre-y-acumulo-una-baja-del-155-el-ano-n6341693",
    "fecha": "2026-11-04T23:02:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Plazo fijo: cuánto debés invertir para ganar $500.000 en 30 días",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/plazo-fijo-cuanto-debes-invertir-ganar-500000-30-dias-n6341534",
-   "fecha": "2026-11-04T22:00:00Z",
-   "tema": "mercados"
   }
  ]
 }
