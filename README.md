@@ -73,6 +73,8 @@ Cada lectura la genera `lectura.js` con una regla simple y visible, y la tarjeta
 
 ### Por mandato
 
+Las secciones **Dólares** e **Inflación y reservas** tienen una portada arriba de su mesa de indicadores (`secciones.js`, diseño «Pulso»): un titular armado con los datos, el dato grande, un gráfico que se recorre con el mouse, el dedo o las flechas (con compartir, imagen PNG y CSV), y tarjetas que explican. Si una fuente falla, esa parte dice "sin dato". La calculadora de sueldo compara lo que cobrabas hace un año con lo que cobrás hoy contra la inflación de 12 meses del INDEC.
+
 `#mandatos` compara inflación, dólar, riesgo país, reservas, actividad, desocupación, pobreza y salario real en los últimos cuatro mandatos presidenciales. Es solo descriptivo (no hay ranking ni colores de "bueno o malo") y la pantalla explica las ventanas de medición y los límites de los datos (por ejemplo, la intervención del INDEC entre 2007 y 2015). La lógica está en `mandatos.js`; las historias largas salen de `EconoSeries.historia`.
 
 ### Análisis
@@ -141,6 +143,7 @@ styles.css   tokens, componentes y, al final, adaptación a pantallas chicas
 glosario.js  qué mide cada indicador, cómo se mide y cómo leerlo
 app.js       Tu plata, perfil, alertas, calculadoras, noticias y navegación por hash (menú y submenú)
 tablero.js   portada, secciones de Argentina (cada una con su mesa de indicadores), Banco Central y acciones y bonos
+secciones.js portadas de Dólares e Inflación (titular con datos, gráfico que se recorre, brecha, quién le gana a los precios, reservas)
 series.js    catálogo de series y carga (69 series de 5 fuentes)
 charts.js    gráficos SVG: líneas, barras, sparklines, CSV
 api.js       dólar y datos para Tu plata, con respaldo

@@ -24,7 +24,7 @@
   <header class="top">
     <div class="top__row">
       <div>
-        <p class="brand">Econo<span>chanta</span></p>
+        <a class="brand" href="#inicio" aria-label="Econochanta, ir al inicio"><svg class="brand__logo" width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="10"/><path d="M6 19h5l3-8 5 14 3-9 2 3h4"/></svg><span class="brand__txt">econochanta</span></a>
         <p class="top__date" id="fecha"></p>
       </div>
       <div class="top__btns">
@@ -187,12 +187,26 @@
     </section>
 
     <!-- SECCIONES DE ARGENTINA: cada una abre su mesa de indicadores -->
-    <section id="vista-dolares" class="vista" aria-labelledby="h-dolares" hidden>
-      <h1 id="h-dolares" class="title">Dólares</h1>
+    <section id="vista-dolares" class="vista vista--portada" aria-labelledby="h-dolares" hidden>
+      <div class="sp">
+        <p class="sp__eyebrow" id="dol-eyebrow">Indicadores · Dólares</p>
+        <h1 id="h-dolares" class="sp__tit">Dólares</h1>
+        <p class="sp__sub" id="dol-sub">Cuánto está cada dólar, cuánto se movió y qué significa.</p>
+        <p class="sp__fuente" id="dol-fuente"></p>
+        <div id="dol-cuerpo" class="sp__cuerpo"></div>
+      </div>
+      <h2 class="sp__todos">Todos los indicadores de dólares</h2>
       <div id="mesa-dolares"></div>
     </section>
-    <section id="vista-inflacion" class="vista" aria-labelledby="h-inflacion" hidden>
-      <h1 id="h-inflacion" class="title">Inflación y reservas</h1>
+    <section id="vista-inflacion" class="vista vista--portada" aria-labelledby="h-inflacion" hidden>
+      <div class="sp">
+        <p class="sp__eyebrow" id="inf-eyebrow">Indicadores · Inflación</p>
+        <h1 id="h-inflacion" class="sp__tit">Inflación y reservas</h1>
+        <p class="sp__sub" id="inf-sub">Cuánto suben los precios, quién les gana y cuántos dólares tiene el Banco Central.</p>
+        <p class="sp__fuente" id="inf-fuente"></p>
+        <div id="inf-cuerpo" class="sp__cuerpo"></div>
+      </div>
+      <h2 class="sp__todos">Todos los indicadores de inflación y reservas</h2>
       <div id="mesa-inflacion"></div>
     </section>
     <section id="vista-tasas" class="vista" aria-labelledby="h-tasas" hidden>
@@ -492,11 +506,45 @@
       <p class="lead">Dos preguntas que te hacés todos los meses, con números de hoy.</p>
 
       <div class="tabs" role="tablist" aria-label="Calculadoras">
-        <button role="tab" id="tab-pf" aria-controls="panel-pf" aria-selected="true" class="tab">Plazo fijo o dólar</button>
-        <button role="tab" id="tab-sueldo" aria-controls="panel-sueldo" aria-selected="false" class="tab" tabindex="-1">Sueldo vs inflación</button>
+        <button role="tab" id="tab-sueldo" aria-controls="panel-sueldo" aria-selected="true" class="tab">Sueldo contra precios</button>
+        <button role="tab" id="tab-pf" aria-controls="panel-pf" aria-selected="false" class="tab" tabindex="-1">Plazo fijo o dólar</button>
       </div>
 
-      <article class="card form" id="panel-pf" role="tabpanel" aria-labelledby="tab-pf">
+      <div class="cs" id="panel-sueldo" role="tabpanel" aria-labelledby="tab-sueldo">
+        <div class="cs__cab">
+          <h2 class="cs__tit">¿Tu sueldo le ganó a los precios?</h2>
+          <p class="cs__sub">Poné lo que cobrabas hace un año y lo que cobrás hoy. Lo comparamos con cuánto subieron los precios.</p>
+        </div>
+        <div class="cs__fila">
+          <section class="sp-card cs__datos" aria-label="Tus datos">
+            <div class="field cs__field">
+              <label for="s-antes">Hace un año cobraba</label>
+              <div class="money"><span aria-hidden="true">$</span><input id="s-antes" type="text" inputmode="numeric" autocomplete="off" placeholder="Ej.: 1.000.000" aria-describedby="s-antes-ayuda"></div>
+              <p class="field__help" id="s-antes-ayuda">Sueldo de bolsillo, el de hace 12 meses.</p>
+            </div>
+            <div class="field cs__field">
+              <label for="s-hoy">Hoy cobro</label>
+              <div class="money"><span aria-hidden="true">$</span><input id="s-hoy" type="text" inputmode="numeric" autocomplete="off" placeholder="Ej.: 1.300.000" aria-describedby="s-hoy-ayuda"></div>
+              <p class="field__help" id="s-hoy-ayuda">Sueldo de bolsillo de este mes.</p>
+            </div>
+            <div class="cs__inf">
+              <p id="s-inflacion-fuente"></p>
+              <details id="s-inf-det">
+                <summary>Usar otra inflación</summary>
+                <div class="field">
+                  <label for="s-inflacion">Inflación de esos 12 meses (%)</label>
+                  <input id="s-inflacion" type="number" inputmode="decimal" step="0.1">
+                </div>
+                <button class="btn btn--ghost btn--sm" type="button" id="s-inf-indec">Volver a la del INDEC</button>
+              </details>
+              <p class="hint">No guardamos lo que escribís.</p>
+            </div>
+          </section>
+          <section class="sp-card cs__res" id="s-resultado" aria-live="polite" aria-label="Resultado"></section>
+        </div>
+      </div>
+
+      <article class="card form" id="panel-pf" role="tabpanel" aria-labelledby="tab-pf" hidden>
         <div class="field">
           <label for="pf-monto">Monto a invertir (ARS)</label>
           <input id="pf-monto" type="number" inputmode="decimal" min="0" step="1000" value="500000">
@@ -518,22 +566,6 @@
         <div class="result" id="pf-resultado" aria-live="polite"></div>
       </article>
 
-      <article class="card form" id="panel-sueldo" role="tabpanel" aria-labelledby="tab-sueldo" hidden>
-        <div class="field">
-          <label for="s-sueldo">Tu sueldo de hoy (ARS)</label>
-          <input id="s-sueldo" type="number" inputmode="decimal" min="0" step="1000" placeholder="Ej.: 1200000">
-        </div>
-        <div class="field">
-          <label for="s-aumento">Cuánto te aumentaron en los últimos 12 meses (%)</label>
-          <input id="s-aumento" type="number" inputmode="decimal" step="0.5" placeholder="Ej.: 28">
-        </div>
-        <div class="field">
-          <label for="s-inflacion">Inflación de esos 12 meses (%)</label>
-          <input id="s-inflacion" type="number" inputmode="decimal" step="0.1" aria-describedby="s-inflacion-fuente">
-          <p class="field__help" id="s-inflacion-fuente"></p>
-        </div>
-        <div class="result" id="s-resultado" aria-live="polite"></div>
-      </article>
     </section>
 
     <!-- ALERTAS -->
@@ -561,6 +593,7 @@
   <script src="lectura.js"></script>
   <script src="mandatos.js"></script>
   <script src="tablero.js"></script>
+  <script src="secciones.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

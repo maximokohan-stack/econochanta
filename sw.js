@@ -1,6 +1,6 @@
 /* Cache simple del shell para que ande sin conexión. Subí VERSION al cambiar archivos. */
-var VERSION = "econochanta-v24";
-var SHELL = ["./", "index.html", "styles.css", "app.js", "api.js", "series.js", "charts.js", "glosario.js", "analisis.js", "lectura.js", "mandatos.js", "tablero.js", "data.js", "manifest.webmanifest", "assets/icon.svg", "assets/icon-192.png", "assets/icon-512.png"];
+var VERSION = "econochanta-v25";
+var SHELL = ["./", "index.html", "styles.css", "app.js", "api.js", "series.js", "charts.js", "glosario.js", "analisis.js", "lectura.js", "mandatos.js", "tablero.js", "secciones.js", "data.js", "manifest.webmanifest", "assets/icon.svg", "assets/icon-192.png", "assets/icon-512.png"];
 
 self.addEventListener("install", function (e) {
   e.waitUntil(caches.open(VERSION).then(function (c) { return c.addAll(SHELL); }));

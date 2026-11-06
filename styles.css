@@ -1311,3 +1311,268 @@ body { font-family: var(--font); background: var(--bg); }
 /* enlaces con forma de botón */
 a.btn { text-decoration: none; display: inline-flex; align-items: center; justify-content: center; }
 .pulso__link, .pulso__cambio { min-height: 44px; }
+
+/* ======================================================================
+   Pulso · secciones: encabezado con logo, portadas de Dólares e Inflación
+   y calculadora de sueldo (canvas de Design "Econochanta — rediseño").
+   ====================================================================== */
+
+:root { --violet: #c9a7f5; --ib-base: color-mix(in srgb, var(--text-2) 32%, var(--surface)); }
+:root[data-theme="light"] { --violet: #7a3fc4; --ib-base: color-mix(in srgb, var(--text-2) 30%, var(--surface)); }
+
+/* encabezado: logo, secciones en píldoras y submenú subrayado */
+.brand { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; text-decoration: none; color: var(--text); font-family: var(--disp); font-size: 22px; font-weight: 800; letter-spacing: -0.02em; }
+.brand span.brand__txt { color: var(--text); transition: color .2s; }
+.brand:hover span.brand__txt { color: var(--accent); }
+.brand__logo { flex: none; }
+.brand__logo rect { fill: var(--accent); }
+.brand__logo path { fill: none; stroke: var(--bg); stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+.nav a { min-height: 44px; margin: 4px 0; padding: 0 14px; font-size: 14px; font-weight: 500; letter-spacing: 0; color: var(--text-2); }
+.nav a:hover { color: var(--text); background: var(--surface-2); }
+.nav a[aria-current="page"] { background: var(--text); color: var(--bg); font-weight: 600; }
+.subnav { gap: 26px; padding-top: 0; padding-bottom: 0; border-bottom: 1px solid var(--line); }
+.subnav a { min-height: 44px; padding: 0 2px; border: 0; border-bottom: 2px solid transparent; border-radius: 0; background: none; font-size: 15px; font-weight: 500; color: var(--text-2); }
+.subnav a:hover { background: none; border-color: transparent; color: var(--text); }
+.subnav a[aria-current="page"] { background: none; border-color: transparent; border-bottom-color: var(--sun); color: var(--text); font-weight: 600; }
+
+/* portada de una sección: titular armado con los datos */
+.vista--portada .sp { display: flex; flex-direction: column; gap: 10px; padding: 36px 0 8px; }
+.sp__eyebrow { margin: 0; font-size: 15px; font-weight: 500; color: var(--text-2); }
+.sp__tit { margin: 0; font-family: var(--disp); font-size: clamp(32px, 4.4vw, 60px); font-weight: 700; line-height: 1.05; letter-spacing: -0.035em; max-width: 22ch; color: var(--text); animation: pul-rise .9s cubic-bezier(.2, .8, .2, 1) both .1s; }
+.sp__tit:focus { outline: none; }
+.sp__acento { color: var(--sun); }
+.sp__sub { margin: 0; font-size: clamp(16px, 1.6vw, 19px); color: var(--text-2); max-width: 62ch; animation: pul-rise .9s cubic-bezier(.2, .8, .2, 1) both .3s; }
+.sp__fuente { margin: 0; font-size: 13px; color: var(--text-2); max-width: 90ch; }
+.sp__fuente:empty { display: none; }
+.sp__cuerpo { display: flex; flex-direction: column; gap: 24px; margin-top: 18px; }
+.sp__todos { margin: 52px 0 12px; font-family: var(--disp); font-size: 26px; font-weight: 700; letter-spacing: -0.02em; }
+
+.sp-card { min-width: 0; padding: 24px 26px; border: 1px solid var(--line); border-radius: 22px; background: var(--surface); animation: pul-rise .7s cubic-bezier(.2, .8, .2, 1) both; }
+.sp-card__tit { margin: 0; font-family: var(--disp); font-size: 24px; line-height: 1.2; letter-spacing: -0.02em; }
+.sp-card__tit--xl { font-size: 28px; }
+.sp-card__bajada { margin: 4px 0 0; font-size: 15px; color: var(--text-2); }
+.sp-card__nota { margin: 0; font-size: 13px; color: var(--text-2); }
+.sp-fila { display: flex; flex-wrap: wrap; gap: 20px; }
+.sp-fila > .sp-card { flex: 1 1 440px; display: flex; flex-direction: column; gap: 14px; }
+.sp-que__p { margin: 0; font-size: 17px; }
+.sp-que__s { margin: 0; font-size: 15px; color: var(--text-2); }
+.sp-que__s strong { color: var(--sun); }
+.sp-que__ir { margin-top: auto; }
+
+/* Dólares: selector de dólar */
+.dp { display: flex; flex-wrap: wrap; gap: 12px; }
+.dp__b {
+  position: relative; overflow: hidden; flex: 1 1 150px; display: flex; flex-direction: column; align-items: flex-start; gap: 2px;
+  min-height: 44px; padding: 16px 18px; border: 1px solid var(--line); border-radius: 18px; background: var(--surface);
+  color: var(--text); font: inherit; text-align: left; cursor: pointer; transition: border-color .2s, background .2s, transform .2s;
+}
+.dp__b:hover { border-color: var(--accent); transform: translateY(-2px); }
+.dp__b[aria-pressed="true"] { background: var(--text); border-color: var(--text); color: var(--bg); }
+.dp__b::after { content: ""; position: absolute; left: 18px; right: 18px; bottom: 0; height: 3px; border-radius: 3px 3px 0 0; background: var(--accent); transform: scaleX(0); transition: transform .35s cubic-bezier(.2, .8, .2, 1); }
+.dp__b[aria-pressed="true"]::after { transform: scaleX(1); }
+.dp__n { font-size: 14px; color: var(--text-2); }
+.dp__b[aria-pressed="true"] .dp__n { color: color-mix(in srgb, var(--bg) 72%, var(--text)); }
+.dp__v { font-family: var(--disp); font-size: 28px; font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.dp__c { min-height: 24px; margin-top: 4px; }
+
+/* Dólares: tarjeta del dólar elegido */
+.dg { display: flex; flex-direction: column; gap: 18px; padding: 28px 28px 20px; border-radius: 26px; }
+.dg__top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px 40px; }
+.dg__tit { margin: 0; font-family: var(--font); font-size: 17px; font-weight: 600; color: var(--text-2); }
+.dg__big { margin: 4px 0 0; font-family: var(--disp); font-size: clamp(48px, 6vw, 72px); font-weight: 700; line-height: 1; letter-spacing: -0.04em; font-variant-numeric: tabular-nums; }
+.dg__nota { margin: 6px 0 0; font-size: 14px; color: var(--text-2); }
+.dg__cambios { display: grid; grid-template-columns: repeat(3, auto); gap: 8px 36px; margin: 0; }
+.dg__cambios dt { font-size: 14px; color: var(--text-2); }
+.dg__cambios dd { margin: 4px 0 0; }
+.hchip--xl { padding: 4px 14px; font-family: var(--disp); font-size: 20px; }
+.dg__barra { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; }
+.seg-grupo { display: flex; gap: 4px; padding: 4px; border: 1px solid var(--line); border-radius: 999px; background: var(--bg); }
+.seg { min-height: 40px; padding: 0 16px; border: 0; border-radius: 999px; background: transparent; color: var(--text-2); font: 600 14px var(--font); cursor: pointer; }
+.seg:hover { color: var(--text); }
+.seg[aria-pressed="true"] { background: var(--text); color: var(--bg); }
+.dg__acc { display: flex; flex-wrap: wrap; gap: 8px; }
+.act { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border: 1px solid var(--control); border-radius: 999px; background: transparent; color: var(--text-2); font: 600 14px var(--font); cursor: pointer; }
+.act:hover { border-color: var(--accent); color: var(--text); }
+.dg__stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px 24px; margin: 4px 0 0; padding-top: 18px; border-top: 1px solid var(--line); }
+.dg__stats dt { font-size: 14px; color: var(--text-2); }
+.dg__stats dd { margin: 0; font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.dg__stats .dg__vs { color: var(--sun); }
+
+/* gráfico de línea que se recorre con el mouse, el dedo o las flechas */
+.gl { position: relative; height: 340px; }
+.gl__svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.gl__grid { stroke: var(--line); }
+.gl__ar { fill: var(--accent); fill-opacity: .12; animation: pul-fade 1.2s ease both .4s; }
+.gl__ln { fill: none; stroke: var(--accent); stroke-width: 3; stroke-dasharray: 1; animation: pul-draw 1.4s cubic-bezier(.4, 0, .2, 1) both; }
+.gl__cruz { stroke: var(--text); stroke-opacity: .5; stroke-dasharray: 4 4; }
+.gl__capa { position: absolute; inset: 0; z-index: 2; border-radius: 12px; cursor: crosshair; touch-action: pan-y; }
+.gl__capa:focus-visible { outline: 2px solid var(--ring); outline-offset: 4px; }
+.gl__tip { position: absolute; top: -10px; z-index: 3; padding: 6px 12px; border-radius: 12px; background: var(--text); color: var(--bg); font-size: 14px; white-space: nowrap; pointer-events: none; font-variant-numeric: tabular-nums; }
+.gl__tip[hidden] { display: none; }
+.gl__dot { position: absolute; z-index: 1; width: 12px; height: 12px; margin: -6px 0 0 -6px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 5px var(--glow); pointer-events: none; }
+.gl__max, .gl__min { position: absolute; right: 0; font-size: 13px; color: var(--text-2); pointer-events: none; font-variant-numeric: tabular-nums; }
+.gl__max { top: calc(10% - 22px); }
+.gl__min { top: calc(90% + 4px); }
+.gl__ejes { display: flex; justify-content: space-between; font-size: 13px; color: var(--text-2); font-variant-numeric: tabular-nums; }
+
+/* barras horizontales: brecha, quién le gana a los precios y calculadora */
+.db__lista, .ic__lista { display: flex; flex-direction: column; gap: 14px; margin: 0; padding: 0; list-style: none; }
+.db__fila { display: grid; grid-template-columns: 80px minmax(0, 1fr) 72px; align-items: center; gap: 14px; }
+.db__n { font-size: 15px; color: var(--text-2); }
+.db__pista { display: block; height: 14px; border-radius: 99px; background: var(--surface-2); }
+.db__barra { display: block; height: 100%; border-radius: 99px; background: var(--sun); transform-origin: left; animation: pul-grow 1s cubic-bezier(.2, .8, .2, 1) both; }
+.db__v { text-align: right; font-size: 16px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.ic__fila { display: grid; grid-template-columns: 170px minmax(0, 1fr) 76px; align-items: center; gap: 14px; }
+.ic__fila .db__pista { height: 16px; }
+.ic__n { font-size: 15px; }
+.ic__n strong { display: block; }
+.ic__n span { font-size: 13px; color: var(--text-2); }
+.ic__frase { margin: 0; font-size: 15px; }
+
+/* Inflación: cuatro números */
+.is { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.is__c { padding: 22px 24px; }
+.is__l { margin: 0; font-size: 15px; color: var(--text-2); }
+.is__v { margin: 4px 0 0; font-family: var(--disp); font-size: 44px; font-weight: 700; line-height: 1.05; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+.is__n { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 8px 0 0; font-size: 14px; color: var(--text-2); }
+
+/* Inflación: mes a mes */
+.ib { display: flex; flex-direction: column; gap: 18px; padding: 28px 28px 22px; }
+.ib__cab { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 12px 32px; }
+.ib__lect { min-height: 52px; text-align: right; font-variant-numeric: tabular-nums; }
+.ib__mes { margin: 0; font-size: 14px; color: var(--text-2); }
+.ib__val { margin: 0; font-family: var(--disp); font-size: 32px; font-weight: 700; line-height: 1.1; }
+.ib__barras { display: flex; align-items: flex-end; gap: 6px; height: 300px; border-radius: 8px; }
+.ib__barras:focus-visible { outline: 2px solid var(--ring); outline-offset: 6px; }
+.ib__b { flex: 1; min-width: 0; border-radius: 8px 8px 3px 3px; background: var(--ib-base); transform-origin: bottom; cursor: pointer; animation: ib-up .8s cubic-bezier(.2, .8, .2, 1) both; transition: background .2s; }
+.ib__b--ult { background: var(--accent); }
+.ib__b--pico { background: var(--sun); }
+.ib__barras.eligiendo .ib__b--pico { background: var(--ib-base); }
+.ib__barras .ib__b--sel { background: var(--sun); }
+.ib__ley { margin: 0; padding-top: 14px; border-top: 1px solid var(--line); font-size: 15px; color: var(--text-2); }
+.ib__sw { display: inline-block; width: 10px; height: 10px; margin-right: 6px; border-radius: 3px; }
+.ib__sw--pico { background: var(--sun); }
+.ib__sw--ult { margin-left: 4px; background: var(--accent); }
+@keyframes ib-up { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+
+/* Inflación: reservas y próximo dato */
+.ir { --rc: var(--text-2); overflow: hidden; padding-bottom: 0; }
+.ir--bien { --rc: var(--celeste); }
+.ir--mal { --rc: var(--warn); }
+.ir--mixto { --rc: var(--p5); }
+.ir__cab { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 12px; }
+.ir__v { margin: 6px 0 0; font-family: var(--disp); font-size: 48px; font-weight: 700; line-height: 1; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+.ir__d { margin: 0; font-size: 15px; color: var(--text-2); font-variant-numeric: tabular-nums; }
+.ir__t { margin: 0; font-size: 15px; }
+.ir__spk { display: block; width: calc(100% + 52px); height: 120px; margin: 4px -26px 0; }
+.ir__ar { fill: var(--rc); fill-opacity: .12; }
+.ir__ln { fill: none; stroke: var(--rc); stroke-width: 2.2; stroke-dasharray: 1; animation: pul-draw 1.5s cubic-bezier(.4, 0, .2, 1) both .4s; }
+.ip__mes { margin: 0; font-family: var(--disp); font-size: 36px; font-weight: 700; line-height: 1.1; color: var(--sun); }
+.ip__t { margin: 0; font-size: 16px; }
+.ip__btn { align-self: flex-start; min-height: 48px; margin-top: auto; padding: 0 22px; border-radius: 999px; }
+
+/* Calculadora de sueldo */
+#vista-calcular { max-width: 1180px; }
+[role="tabpanel"][hidden] { display: none; }
+#vista-calcular > .tabs, #panel-pf { max-width: 680px; }
+#vista-calcular > .title { margin: 28px 0 0; font-family: var(--font); font-size: 15px; font-weight: 500; letter-spacing: 0; color: var(--text-2); }
+#vista-calcular > .lead { margin: 2px 0 16px; font-size: 15px; color: var(--text-2); }
+.cs { display: flex; flex-direction: column; gap: 22px; margin-top: 18px; }
+.cs[hidden] { display: none; }
+.cs__tit { margin: 0; font-family: var(--disp); font-size: clamp(32px, 4.4vw, 56px); line-height: 1.05; letter-spacing: -0.035em; }
+.cs__sub { margin: 8px 0 0; font-size: clamp(16px, 1.6vw, 19px); color: var(--text-2); max-width: 60ch; }
+.cs__fila { display: flex; flex-wrap: wrap; align-items: stretch; gap: 20px; }
+.cs__datos { flex: 1 1 380px; display: flex; flex-direction: column; gap: 22px; padding: 28px; }
+.cs__res { flex: 1.3 1 480px; display: flex; flex-direction: column; gap: 22px; padding: 28px; animation-delay: .12s; }
+.cs__field label { font-size: 16px; font-weight: 600; }
+.money { display: flex; align-items: center; gap: 8px; min-height: 64px; padding: 0 18px; border: 1px solid var(--control); border-radius: 16px; background: var(--bg); transition: border-color .2s, box-shadow .2s; }
+.money:focus-within { border-color: var(--accent); box-shadow: 0 0 0 4px var(--glow); }
+.money span { font-family: var(--disp); font-size: 26px; font-weight: 700; color: var(--text-2); }
+.cs__field, .money { min-width: 0; }
+.field .money input { flex: 1 1 0; width: 0; min-width: 0; min-height: 60px; padding: 0; border: 0; outline: none; background: transparent; color: var(--text); font: 700 28px var(--disp); font-variant-numeric: tabular-nums; }
+.cs__inf { display: flex; flex-direction: column; gap: 8px; margin-top: auto; padding-top: 18px; border-top: 1px solid var(--line); font-size: 14px; color: var(--text-2); }
+.cs__inf p { margin: 0; }
+.cs__inf summary { display: flex; align-items: center; min-height: 40px; color: var(--accent); font-weight: 700; cursor: pointer; }
+.cs__caja { padding: 24px 26px; border-radius: 20px; background: var(--hb); color: var(--hi); transition: background .4s, color .4s; }
+.cs__ct { margin: 0; font-size: 16px; font-weight: 600; }
+.cs__pct { margin: 6px 0 0; font-family: var(--disp); font-size: clamp(48px, 6vw, 72px); font-weight: 800; line-height: 1; letter-spacing: -0.04em; font-variant-numeric: tabular-nums; }
+.cs__frase { margin: 8px 0 0; font-size: 16px; }
+.cs__barras { display: flex; flex-direction: column; gap: 14px; }
+.cs__barra { display: grid; grid-template-columns: 140px minmax(0, 1fr) 76px; align-items: center; gap: 14px; }
+.cs__bn { font-weight: 600; }
+.cs__barra .db__pista { height: 18px; }
+.cs__barra .db__barra { animation: none; }
+.cs__dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 24px; margin: 0; padding-top: 18px; border-top: 1px solid var(--line); }
+.cs__dl dt { font-size: 14px; color: var(--text-2); }
+.cs__dl dd { margin: 2px 0 0; font-family: var(--disp); font-size: 28px; font-weight: 700; font-variant-numeric: tabular-nums; }
+
+@media (max-width: 1100px) {
+  .is, .dg__stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+/* en celular, con una ficha abierta, la portada se esconde para que la ficha quede arriba */
+@media (max-width: 820px) {
+  .vista--portada.con-ficha .sp, .vista--portada.con-ficha .sp__todos { display: none; }
+  .subnav { gap: 22px; }
+}
+@media (max-width: 640px) {
+  .vista--portada .sp { padding-top: 18px; }
+  .sp__tit { font-size: 32px; }
+  .sp__cuerpo { gap: 20px; }
+  .sp__todos { margin-top: 36px; font-size: 22px; }
+  .sp-card { padding: 20px; border-radius: 20px; }
+  .sp-card__tit, .sp-card__tit--xl { font-size: 20px; }
+  .sp-fila > .sp-card { flex-basis: 100%; }
+
+  /* el selector de dólares pasa a una fila de píldoras que se desliza */
+  .dp { flex-wrap: nowrap; gap: 8px; margin: 0 -12px; padding: 0 12px 4px; overflow-x: auto; scrollbar-width: none; }
+  .dp::-webkit-scrollbar { display: none; }
+  .dp__b { flex: none; flex-direction: row; align-items: center; padding: 0 18px; border-radius: 999px; }
+  .dp__b:hover { transform: none; }
+  .dp__b::after, .dp__v, .dp__c { display: none; }
+  .dp__n { font-size: 15px; font-weight: 600; }
+  .dp__b[aria-pressed="true"] .dp__n { color: var(--bg); }
+
+  /* el dólar elegido ocupa todo el ancho, sin recuadro */
+  .dg { padding: 4px 0 0; border: 0; border-radius: 0; background: none; }
+  .dg__top { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .dg__tit { font-size: 15px; }
+  .dg__big { font-size: 60px; }
+  .dg__cambios { display: flex; flex-wrap: wrap; gap: 8px; }
+  .dg__cambios div { display: flex; align-items: center; gap: 6px; }
+  .dg__cambios dd { margin: 0; }
+  .dg__cambios dt { font-size: 13px; }
+  .hchip--xl { padding: 3px 10px; font-family: var(--font); font-size: 14px; }
+  .dg__top { order: 0; }
+  .gl { order: 1; }
+  .dg > .gl__ejes { order: 2; }
+  .dg__barra { flex-direction: column; align-items: stretch; order: 3; }
+  .dg__stats { order: 4; }
+  .seg-grupo .seg { flex: 1; }
+  .gl { height: 260px; margin: 30px -12px 0; }
+  .gl__max, .gl__min { right: 12px; }
+  .dg__stats { gap: 10px; padding-top: 0; border-top: 0; }
+  .dg__stats > div { padding: 14px 16px; border: 1px solid var(--line); border-radius: 18px; background: var(--surface); }
+  .dg__stats dt { font-size: 13px; }
+  .dg__stats dd { font-family: var(--disp); font-size: 22px; }
+  .db__fila { grid-template-columns: 70px minmax(0, 1fr) 60px; gap: 12px; }
+  .ic__fila { grid-template-columns: 112px minmax(0, 1fr) 64px; gap: 10px; }
+
+  .is { gap: 10px; }
+  .is__c { padding: 16px; }
+  .is__v { font-size: 32px; }
+  .ib { padding: 20px 16px 16px; }
+  .ib__barras { height: 200px; gap: 3px; }
+  .ib__b { border-radius: 4px 4px 2px 2px; }
+  .ir__spk { width: calc(100% + 40px); margin: 4px -20px 0; }
+  .ir__v { font-size: 40px; }
+
+  .cs__datos, .cs__res { flex-basis: 100%; padding: 20px; }
+  .cs__barra { grid-template-columns: 112px minmax(0, 1fr) 64px; gap: 10px; }
+  .cs__dl dd { font-size: 22px; }
+  .field .money input { font-size: 24px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sp__tit, .sp__sub, .sp-card, .gl__ln, .gl__ar, .db__barra, .ib__b, .ir__ln { animation: none !important; }
+  .gl__ln, .ir__ln { stroke-dasharray: none; }
+  .dp__b, .dp__b::after, .ib__b, .cs__caja, .brand span.brand__txt { transition: none; }
+}

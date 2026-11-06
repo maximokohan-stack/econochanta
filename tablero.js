@@ -2546,6 +2546,8 @@
         if (vista === "estado") armarEstado();
       }
       if (sub) mesasSec[vista].abrir(sub); else mesasSec[vista].cerrar();
+      // Dólares e Inflación tienen una portada arriba de la mesa (secciones.js)
+      if (window.EconoSecciones) window.EconoSecciones.mostrar(vista, sub);
     } else if (vista === "bcra") {
       if (!bcraMesa) armarBCRA();
       if (sub) bcraMesa.abrir(sub); else bcraMesa.cerrar();

@@ -653,8 +653,8 @@
     renderExposicion();
     renderInicio();
     renderMiPlata();
-    var s = $("s-sueldo");
-    if (!s.dataset.tocado) { s.value = perfilPropio ? String(perfil.ingreso) : ""; calcSueldo(); }
+    var s = $("s-hoy");
+    if (!s.dataset.tocado) { s.value = perfilPropio && perfil.ingreso > 0 ? f0.format(perfil.ingreso) : ""; calcSueldo(); }
   }
 
   function resumirPlata(json) {
@@ -865,33 +865,68 @@
     box.appendChild(el("p", "hint", "No incluye comisiones, impuestos ni la diferencia entre comprar y vender."));
   }
 
+  // monto escrito con puntos de miles: "1.300.000" -> 1300000
+  function monto(id) { var n = parseInt(String($(id).value).replace(/\D/g, ""), 10); return isFinite(n) ? n : 0; }
+  function conPuntos(inp) {
+    var dig = String(inp.value).replace(/\D/g, "").slice(0, 13);
+    inp.value = dig ? f0.format(Number(dig)) : "";
+  }
+  function nivelCalor(v, cortes) {
+    var a = Math.abs(v);
+    return (v >= 0 ? "h-u" : "h-d") + (a < cortes[0] ? 1 : a < cortes[1] ? 2 : a < cortes[2] ? 3 : 4);
+  }
+  var salProm = null; // sueldos registrados del INDEC, variacion en 12 meses (para comparar)
+
+  function barraCalc(nombre, valor, ancho, color) {
+    var f = el("div", "cs__barra");
+    f.appendChild(el("span", "cs__bn", nombre));
+    var pista = el("span", "db__pista"); pista.setAttribute("aria-hidden", "true");
+    var b = el("span", "db__barra"); b.style.width = Math.max(0, ancho).toFixed(1) + "%"; b.style.background = color;
+    pista.appendChild(b); f.appendChild(pista);
+    f.appendChild(el("span", "db__v", valor));
+    return f;
+  }
+
   function calcSueldo() {
-    var hoy = Math.max(0, num($("s-sueldo").value));
-    var aum = num($("s-aumento").value);
-    var infl = num($("s-inflacion").value);
+    var antes = monto("s-antes"), hoy = monto("s-hoy");
+    var txtInf = $("s-inflacion").value, infl = num(txtInf);
     var box = $("s-resultado");
     box.textContent = "";
     var vacios = [];
-    if (hoy <= 0) vacios.push("tu sueldo de hoy");
-    if ($("s-aumento").value === "") vacios.push("cuánto te aumentaron");
-    if ($("s-inflacion").value === "") vacios.push("la inflación de esos 12 meses");
+    if (antes <= 0) vacios.push("lo que cobrabas hace un año");
+    if (hoy <= 0) vacios.push("lo que cobrás hoy");
+    if (txtInf === "") vacios.push("la inflación de esos 12 meses");
+    var caja = el("div", "cs__caja");
     if (vacios.length) {
-      box.appendChild(el("p", "hint", "Para ver el resultado, completá " + listaY(vacios) + "."));
+      caja.classList.add("h-0");
+      caja.appendChild(el("p", "cs__ct", vacios.length === 1 && txtInf === "" ? "Falta la inflación" : "Completá los dos sueldos"));
+      caja.appendChild(el("p", "cs__pct", "—"));
+      caja.appendChild(el("p", "cs__frase", "Para ver el resultado, falta " + listaY(vacios) + "." + (txtInf === "" ? ($("s-inflacion").dataset.tocado ? " Escribila en “Usar otra inflación” o volvé a la del INDEC." : " No pudimos traer la inflación del INDEC: escribila en “Usar otra inflación”.") : "")));
+      box.appendChild(caja);
+      if (txtInf === "") $("s-inf-det").open = true;
       return;
     }
-    var hace12 = hoy / (1 + aum / 100);
-    var real = ((1 + aum / 100) / (1 + infl / 100) - 1) * 100;
-    var necesario = hace12 * (1 + infl / 100);
-    var dif = necesario - hoy;
+    var nom = (hoy / antes - 1) * 100;
+    var real = ((hoy / antes) / (1 + infl / 100) - 1) * 100;
+    var necesario = antes * (1 + infl / 100);
+    var dif = hoy - necesario;
+    caja.classList.add(nivelCalor(real, [1, 5, 15]));
+    caja.appendChild(el("p", "cs__ct", real >= 0 ? "Tu sueldo le ganó a los precios" : "Tu sueldo perdió contra los precios"));
+    caja.appendChild(el("p", "cs__pct", (real >= 0 ? "▲ +" : "▼ −") + Math.abs(real).toLocaleString("es-AR", { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + "%"));
+    caja.appendChild(el("p", "cs__frase", "Hoy podés comprar un " + pctPlain(Math.abs(real), 1) + (real >= 0 ? " más" : " menos") + " que hace un año con tu sueldo."));
+    box.appendChild(caja);
 
-    box.appendChild(el("p", "result__verdict", real < 0
-      ? "Tu sueldo perdió " + pctPlain(Math.abs(real), 1) + " de poder de compra en el último año."
-      : "Le ganaste a la inflación por " + pctPlain(real, 1) + "."));
+    var tope = Math.max(nom, infl, salProm ? salProm.v : 0, 1);
+    var barras = el("div", "cs__barras");
+    barras.appendChild(barraCalc("Tu sueldo", pct(nom, 1), nom / tope * 100, nom >= infl ? "var(--u4)" : "var(--d3)"));
+    barras.appendChild(barraCalc("Precios", pct(infl, 1), infl / tope * 100, "var(--sun)"));
+    if (salProm) barras.appendChild(barraCalc("Sueldo promedio", pct(salProm.v, 1), salProm.v / tope * 100, "var(--text-2)"));
+    box.appendChild(barras);
+    if (salProm) box.appendChild(el("p", "hint", "Sueldo promedio: índice de salarios registrados del INDEC, " + salProm.mes + " contra el mismo mes del año anterior. Sirve de referencia: no es tu sueldo."));
 
-    var dl = el("dl", "result__rows");
-    dl.appendChild(fila("Tu sueldo hace 12 meses", ars(hace12)));
-    dl.appendChild(fila("Para empatar con la inflación", ars(necesario)));
-    dl.appendChild(fila(dif > 0 ? "Te faltan" : "Te sobran", ars(Math.abs(dif))));
+    var dl = el("dl", "cs__dl");
+    dl.appendChild(fila("Para empatarle a los precios", ars(necesario)));
+    dl.appendChild(fila(dif >= 0 ? "Te sobran por mes" : "Te faltan por mes", ars(Math.abs(dif))));
     box.appendChild(dl);
   }
 
@@ -903,23 +938,40 @@
     var ep = estadoPieza("plazoFijo"), eh = estadoPieza("historia"), ei = estadoPieza("inflacion");
     $("pf-tna-fuente").textContent = ep.estado === "falta" ? "No pudimos traer la tasa de los bancos: escribí la que te ofrecen." : "Precargada: " + ep.txt.charAt(0).toLowerCase() + ep.txt.slice(1) + " Podés cambiarla.";
     $("pf-dolar-fuente").textContent = sr ? "Por defecto, lo que subió el MEP en los últimos 30 días (" + eh.txt.charAt(0).toLowerCase() + eh.txt.slice(1).replace(/.$/, "") + "). Es un supuesto: nadie sabe el futuro." : "No pudimos traer el histórico del dólar: escribí tu supuesto.";
-    $("s-inflacion-fuente").textContent = ei.estado === "falta" ? "No pudimos traer el dato del INDEC: escribilo vos." : "Precargada con la inflación de 12 meses del INDEC. " + ei.txt;
+    var fi = M.inflacionMensualFecha ? new Date(M.inflacionMensualFecha + "T12:00:00").toLocaleDateString("es-AR", { month: "long", year: "numeric" }) : null;
+    $("s-inflacion-fuente").textContent = ei.estado === "falta"
+      ? "No pudimos traer la inflación del INDEC. Escribila en “Usar otra inflación”."
+      : inf.dataset.tocado ? "Usás la inflación que escribiste: " + (inf.value === "" ? "sin dato" : inf.value.replace(".", ",") + "%") + "."
+      : hay(M.inflacionInteranual) ? "Usamos la inflación del INDEC de los 12 meses a " + (fi || "su último dato") + ": " + pctPlain(M.inflacionInteranual, 1) + ". " + ei.txt
+      : "Cargando la inflación del INDEC…";
     calcPlazoFijo();
     calcSueldo();
   }
 
   function initCalculadoras() {
-    $("s-sueldo").value = perfilPropio ? String(perfil.ingreso) : "";
+    $("s-hoy").value = perfilPropio && perfil.ingreso > 0 ? f0.format(perfil.ingreso) : "";
     ["pf-monto", "pf-tna", "pf-dias", "pf-dolar"].forEach(function (id) {
       $(id).addEventListener("input", function () { $(id).dataset.tocado = "1"; calcPlazoFijo(); });
     });
-    ["s-sueldo", "s-aumento", "s-inflacion"].forEach(function (id) {
-      $(id).addEventListener("input", function () { $(id).dataset.tocado = "1"; calcSueldo(); });
+    ["s-antes", "s-hoy"].forEach(function (id) {
+      $(id).addEventListener("input", function () { $(id).dataset.tocado = "1"; conPuntos($(id)); calcSueldo(); });
     });
+    $("s-inflacion").addEventListener("input", function () { $("s-inflacion").dataset.tocado = "1"; defaultsCalculadoras(); });
+    $("s-inf-indec").addEventListener("click", function () {
+      delete $("s-inflacion").dataset.tocado;
+      defaultsCalculadoras();
+      $("s-inf-det").open = false;
+      $("s-inf-det").querySelector("summary").focus();
+    });
+    if (window.EconoSeries) window.EconoSeries.cargar("salarios", 30).then(function (sr) {
+      var u = sr.points[sr.points.length - 1], d = new Date(u[0] + "T12:00:00"), obj = (d.getFullYear() - 1) + "-" + ("0" + (d.getMonth() + 1)).slice(-2), h = null;
+      sr.points.forEach(function (p) { if (p[0].slice(0, 7) === obj) h = p; });
+      if (h && h[1]) { salProm = { v: (u[1] / h[1] - 1) * 100, mes: d.toLocaleDateString("es-AR", { month: "long", year: "numeric" }) }; calcSueldo(); }
+    }, function () { /* sin la referencia: la barra no se muestra */ });
     defaultsCalculadoras();
 
-    var tabs = [$("tab-pf"), $("tab-sueldo")];
-    var panels = [$("panel-pf"), $("panel-sueldo")];
+    var tabs = [$("tab-sueldo"), $("tab-pf")];
+    var panels = [$("panel-sueldo"), $("panel-pf")];
     function activar(i) {
       tabs.forEach(function (t, j) {
         t.setAttribute("aria-selected", j === i ? "true" : "false");
