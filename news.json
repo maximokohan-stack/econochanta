@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-05T22:27:07.561448Z",
+ "actualizado": "2026-11-06T02:57:11.501365Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -61,6 +61,104 @@
  ],
  "items": [
   {
+   "titulo": "La visita del papa León XIV generará un impacto económico superior a los u$s88 millones en Buenos Aires",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/la-visita-del-papa-leon-xiv-generara-un-impacto-economico-superior-los-us88-millones-buenos-aires-n6342210",
+   "fecha": "2026-11-06T01:18:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Federico Sturzenegger defendió el rumbo económico, pero admitió que la inversión demora en despegar",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/federico-sturzenegger-defendio-el-rumbo-economico-pero-admitio-que-la-inversion-demora-despegar-n6342209",
+   "fecha": "2026-11-06T00:58:00Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Impacto financiero por el colapso del Ueno Bank: saltó el riesgo país de Paraguay y el guaraní se devaluó 12%",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/05/impacto-financiero-por-el-colapso-del-ueno-bank-salto-el-riesgo-pais-de-paraguay-y-el-guarani-se-devaluo-8/",
+   "fecha": "2026-11-06T00:22:31Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Tras la crisis política y la renuncia de Peña, el riesgo país de Paraguay subió 5,1% y alcanzó los 144 puntos básicos",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/05/tras-la-crisis-politica-y-la-renuncia-de-pena-el-riesgo-pais-de-paraguay-subio-66-y-alcanzo-los-146-puntos-basicos/",
+   "fecha": "2026-11-06T00:21:42Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Por qué el mercado atribuye al Gobierno una compra de bonos por $2 billones",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/06/por-que-el-mercado-atribuye-al-gobierno-una-compra-de-bonos-por-2-billones/",
+   "fecha": "2026-11-06T00:15:03Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Santiago Peña renunció a la Presidencia de Paraguay pero el Congreso no la aceptó para avanzar con el juicio político",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/america/america-latina/2026/11/05/santiago-pena-renuncio-a-la-presidencia-de-paraguay-por-el-escandalo-del-ueno-bank/",
+   "fecha": "2026-11-06T00:07:38Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El Niño. Las lluvias no dan tregua y en el sur bonaerense hay hasta 20 días de atraso en la siembra: “Vamos lerdo”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/el-nino-las-lluvias-no-dan-tregua-y-en-el-sur-bonaerense-hay-hasta-20-dias-de-atraso-en-la-siembra-nid05112026/",
+   "fecha": "2026-11-05T23:55:21Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Encuesta entre economistas refleja pesimismo y acota crecimiento del PBI a solo 0,7%",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/468491-economistas-son-pesimistas-y-recortan-crecimiento-del-pbi-a-07-por-ciento",
+   "fecha": "2026-11-05T23:37:00Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Por lluvia de importaciones, cierra una histórica papelera y despide a 160 empleados",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/468493-por-importaciones-cierra-historica-papelera-y-despide-a-160-empleados",
+   "fecha": "2026-11-05T23:35:00Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "En plena suba del riesgo país, el BCRA reveló el precio del dólar que prevén 45 analistas",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/468485-el-bcra-revelo-que-esperan-45-economistas-para-el-dolar-en-argentina",
+   "fecha": "2026-11-05T23:08:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "38 fotos del Foro Abeceb 2026",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/fotos/2026/11/05/38-fotos-del-foro-abeceb-2026/",
+   "fecha": "2026-11-05T23:01:30Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Las empresas estadounidenses alertaron que la derrota de Trump puede condicionar el auxilio financiero a la Argentina",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/las-empresas-estadounidenses-alertaron-que-la-derrota-de-trump-puede-condicionar-la-ayuda-financiera-nid05112026/",
+   "fecha": "2026-11-05T22:51:08Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Las consultoras que releva el BCRA previeron una inflación de 1,8% para octubre y recortaron las proyecciones de crecimiento",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/05/las-consultoras-que-releva-el-bcra-proyectaron-una-inflacion-de-18-para-octubre-que-preven-para-este-mes/",
+   "fecha": "2026-11-05T22:43:26Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Advertencia de la Cámara de Comercio de EEUU: \"La posibilidad de rescatar a la Argentina se reduce con un gobierno dividido\"",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/advertencia-la-camara-comercio-eeuu-la-posibilidad-rescatar-la-argentina-se-reduce-un-gobierno-dividido-n6342094",
+   "fecha": "2026-11-05T22:27:00Z",
+   "tema": "politica"
+  },
+  {
    "titulo": "“Quieren volver a la 125″: estalló un fuerte conflicto entre CRA y la Sociedad Rural Argentina, dos de las más importantes entidades del campo",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/campo/quieren-volver-a-la-125-estallo-un-conflicto-entre-cra-y-la-sociedad-rural-argentina-dos-de-las-mas-nid05112026/",
@@ -75,32 +173,18 @@
    "tema": "politica"
   },
   {
-   "titulo": "Santiago Peña renunció a la Presidencia de Paraguay por el escándalo del Ueno Bank",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/america/america-latina/2026/11/05/santiago-pena-renuncio-a-la-presidencia-de-paraguay-por-el-escandalo-del-ueno-bank/",
-   "fecha": "2026-11-05T22:04:32Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "38 fotos del Foro Abeceb 2026",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/fotos/2026/11/05/38-fotos-del-foro-abeceb-2026/",
-   "fecha": "2026-11-05T22:03:35Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Las consultoras que releva el BCRA proyectaron una inflación de 1,8% para octubre: qué prevén para este mes",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/05/las-consultoras-que-releva-el-bcra-proyectaron-una-inflacion-de-18-para-octubre-que-preven-para-este-mes/",
-   "fecha": "2026-11-05T22:02:25Z",
-   "tema": "inflacion"
-  },
-  {
    "titulo": "El riesgo país trepó por encima de los 900 puntos y las acciones argentinas sufrieron fuertes caídas en Wall Street",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/05/el-riesgo-pais-trepo-por-encima-de-los-900-puntos-y-las-acciones-argentinas-sufrieron-fuertes-caidas-en-wall-street/",
    "fecha": "2026-11-05T21:51:52Z",
    "tema": "mercados"
+  },
+  {
+   "titulo": "Alquileres de verano: cómo evitar estafas y qué garantías ofrecen Airbnb y Booking",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/468357-alquileres-de-verano-como-evitar-estafas-que-garantias-ofrecen-airbnb-y-booking",
+   "fecha": "2026-11-05T21:50:00Z",
+   "tema": "otros"
   },
   {
    "titulo": "La Argentina cambia de camiseta, pero no se saca la mochila",
@@ -180,7 +264,7 @@
    "tema": "otros"
   },
   {
-   "titulo": "EcoSuiza 2026: un encuentro que tendrá como premisa la competitividad empresaria",
+   "titulo": "EcoSuiza 2026: un encuentro que tendrá como premisa la sostenibilidad",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/ecosuiza-2026-un-encuentro-que-tendra-como-premisa-la-competitividad-empresaria-nid05112026/",
    "fecha": "2026-11-05T20:45:31Z",
@@ -194,25 +278,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "Tras la crisis política y la renuncia de Peña, el riesgo país de Paraguay subió 5,1% y alcanzó los 144 puntos básicos",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/05/tras-la-crisis-politica-y-la-renuncia-de-pena-el-riesgo-pais-de-paraguay-subio-66-y-alcanzo-los-146-puntos-basicos/",
-   "fecha": "2026-11-05T20:38:15Z",
-   "tema": "mercados"
-  },
-  {
    "titulo": "Qué dice el mail que le enviaron a los empleados en la Argentina que trabajaban para Ueno Bank",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/que-dice-el-mail-que-le-enviaron-a-los-empleados-de-la-filial-argentina-de-ueno-bank-nid05112026/",
    "fecha": "2026-11-05T20:37:55Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Impacto financiero por el colapso del Ueno Bank: saltó el riesgo país de Paraguay y el guaraní se devaluó 12%",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/05/impacto-financiero-por-el-colapso-del-ueno-bank-salto-el-riesgo-pais-de-paraguay-y-el-guarani-se-devaluo-8/",
-   "fecha": "2026-11-05T20:32:07Z",
-   "tema": "mercados"
   },
   {
    "titulo": "El Banco Central ya compró más de USD 16.000 millones en 2026, pero las reservas cayeron por un pago al FMI",
@@ -257,7 +327,7 @@
    "tema": "politica"
   },
   {
-   "titulo": "Por qué descartan efecto cantagio en bancos argentinos tras descalabro de Ueno en Paraguay",
+   "titulo": "Por qué descartan efecto contagio en bancos argentinos tras descalabro de Ueno en Paraguay",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/finanzas/468463-por-que-la-crisis-de-ueno-bank-no-debe-afectar-a-bancos-de-argentina",
    "fecha": "2026-11-05T19:36:00Z",
@@ -467,13 +537,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "REM de octubre: los gurúes de la city actualizan sus pronósticos para el dólar, la inflación y el PBI",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/rem-octubre-los-gurues-la-city-actualizan-sus-pronosticos-el-dolar-la-inflacion-y-el-pbi-n6341932",
-   "fecha": "2026-11-05T16:23:00Z",
-   "tema": "dolar"
-  },
-  {
    "titulo": "El caso Ueno Bank: por qué cayó y cuál es su impacto sobre la economía de Paraguay",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/05/el-caso-ueno-bank-por-que-cayo-y-cual-es-su-impacto-sobre-la-economia-de-paraguay/",
@@ -530,20 +593,6 @@
    "tema": "actividad"
   },
   {
-   "titulo": "“Pasaporte digital de la vaca”: una revolucionaria tecnología ayuda a estimar la grasa de la carne desde el celular y registrar datos clave",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/pasaporte-digital-de-la-vaca-una-revolucionaria-tecnologia-ayuda-a-estimar-la-grasa-de-la-carne-nid05112026/",
-   "fecha": "2026-11-05T15:18:27Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Sin intervenir el dólar desde 2021, el ministro de Economía de Uruguay explicó la receta detrás de la estabilidad",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/sin-intervenir-el-dolar-desde-2021-el-ministro-de-economia-de-uruguay-explico-la-receta-detras-de-la-nid05112026/",
-   "fecha": "2026-11-05T15:13:56Z",
-   "tema": "dolar"
-  },
-  {
    "titulo": "Cuánto cuesta el libro de León XIV, \"La fuerza del Evangelio\" y dónde comprarlo",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/cuanto-cuesta-el-libro-leon-xiv-la-fuerza-del-evangelio-y-donde-comprarlo-n6325182",
@@ -579,27 +628,6 @@
    "tema": "mercados"
   },
   {
-   "titulo": "Cuenta regresiva para la llegada de los helicópteros Black Hawk que compró Argentina",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/negocios/468423-arribo-al-pais-de-los-helicopteros-black-hawk-en-cuenta-regresiva",
-   "fecha": "2026-11-05T14:43:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Equinor e YPF reactivan la búsqueda de una Vaca Muerta del mar",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/energia/468430-equinor-e-ypf-reactivan-la-busqueda-de-una-vaca-muerta-del-mar",
-   "fecha": "2026-11-05T14:36:00Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Trabajadores de alimentación: cuánto reciben este mes y qué cambia en diciembre",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/468421-cuanto-cobra-un-trabajador-de-alimentacion-en-noviembre-de-2026",
-   "fecha": "2026-11-05T14:30:00Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "La IA deja obsoletas tareas y a las estructuras de las empresas",
    "medio": "Infobae",
    "url": "https://www.infobae.com/opinion/2026/11/05/la-ia-deja-obsoletas-tareas-y-a-las-estructuras-de-las-empresas/",
@@ -607,25 +635,11 @@
    "tema": "empresas"
   },
   {
-   "titulo": "El número dos del BCRA defendió la velocidad diferente a la que crecen los sectores exportadores: “Tienen un derrame fuertísimo”",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/05/el-numero-dos-del-bcra-defendio-la-velocidad-diferente-a-la-que-crecen-los-sectores-exportadores-tienen-un-derrame-fuertisimo/",
-   "fecha": "2026-11-05T14:24:47Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "Gustavo Puccini, ministro de producción de Santa Fe: \"El RIGI no llegará a las pymes si las provincias no acercan las puntas\"",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/gustavo-puccini-ministro-produccion-santa-fe-el-rigi-no-llegara-las-pymes-si-las-provincias-no-acercan-las-puntas-n6341682",
    "fecha": "2026-11-05T14:05:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Recuperan planta de ex fabricante de New Balance y Diadora para indemnizar a despedidos",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/negocios/468414-recuperan-planta-de-ex-fabricante-de-new-balance-y-diadora",
-   "fecha": "2026-11-05T13:46:00Z",
-   "tema": "empresas"
   },
   {
    "titulo": "China exige una baja de aranceles a EEUU para destrabar la compra de productos agrícolas",
@@ -689,20 +703,6 @@
    "url": "https://www.ambito.com/economia/plazo-fijo-cuanto-debes-invertir-ganar-500000-30-dias-n6341534",
    "fecha": "2026-11-04T22:00:00Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "Empleados de Comercio: el Gobierno homologó el aumento del 5,7% y el bono de $50.000",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/empleados-comercio-el-gobierno-homologo-el-aumento-del-57-y-el-bono-50000-n6341611",
-   "fecha": "2026-11-04T20:11:00Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Los precios del comercio exterior mejoraron 4,2% en el tercer trimestre y aportaron u$s1.019 millones",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/los-precios-del-comercio-exterior-mejoraron-42-el-tercer-trimestre-y-aportaron-us1019-millones-n6341598",
-   "fecha": "2026-11-04T20:03:00Z",
-   "tema": "inflacion"
   }
  ]
 }
