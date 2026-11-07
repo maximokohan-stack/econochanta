@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-07T05:25:19.702400Z",
+ "actualizado": "2026-11-07T15:15:00.694685Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -59,6 +59,181 @@
   }
  ],
  "items": [
+  {
+   "titulo": "Sturzenegger contó las regulaciones paradas en la Justicia y explicó por qué es el “plomero” del gobierno, “la macro es para vagos” y Milei habla como habla",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/07/sturzenegger-conto-las-regulaciones-paradas-en-la-justicia-y-explico-por-que-es-el-plomero-del-gobierno-la-macro-es-para-vagos-y-milei-habla-como-habla/",
+   "fecha": "2026-11-07T15:06:48Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Ni las ofertas alcanzan: el consumo sigue sin repuntar y los comercios anticipan un fin de año en rojo",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/07/ni-las-ofertas-alcanzan-el-consumo-masivo-sigue-sin-repuntar-y-los-comercios-anticipan-un-fin-de-ano-en-rojo/",
+   "fecha": "2026-11-07T14:38:36Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "La CAME le pidió a Caputo modificar las condiciones del plan de facilidades de pago de ARCA",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/la-came-le-pidio-a-caputo-modificar-las-condiciones-del-plan-de-facilidades-de-pago-de-arca-nid07112026/",
+   "fecha": "2026-11-07T14:18:16Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "La visita del papa León XIV generará un impacto económico superior a los u$s88 millones en Buenos Aires",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/la-visita-del-papa-leon-xiv-generara-un-impacto-economico-superior-los-us88-millones-buenos-aires-n6342210",
+   "fecha": "2026-11-07T14:08:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Cuánto cuesta el libro de León XIV, \"La fuerza del Evangelio\" y dónde comprarlo",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/cuanto-cuesta-el-libro-leon-xiv-la-fuerza-del-evangelio-y-donde-comprarlo-n6325182",
+   "fecha": "2026-11-07T13:28:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Alfredo Di Costanzo, de la Universidad de Minnesota, y una pregunta incómoda en EE.UU.: “¿Quién producirá los terneros en el futuro?\"",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/alfredo-di-costanzo-de-la-universidad-de-minnesota-y-una-pregunta-incomoda-en-eeuu-quien-producira-nid07112026/",
+   "fecha": "2026-11-07T13:12:22Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Radiografía: el avance de la labranza, bajo un análisis crítico de cinco expertos desde Bahía Blanca a Chaco",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/a-fondo-el-avance-de-la-labranza-bajo-un-analisis-critico-de-cinco-expertos-desde-bahia-blanca-a-nid07112026/",
+   "fecha": "2026-11-07T12:59:24Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El Gobierno modificó los créditos hipotecarios financiados con fondos de Anses",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/468605-el-gobierno-modifico-el-acceso-a-creditos-hipotecarios-con-fondos-de-anses",
+   "fecha": "2026-11-07T12:41:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Dólar hoy y dólar blue hoy: a cuánto cotiza este sábado 7 de noviembre",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/dolar/dolar-hoy-y-dolar-blue-hoy-a-cuanto-cotiza-este-sabado-7-de-noviembre-nid07112026/",
+   "fecha": "2026-11-07T11:32:30Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Una salida al teatro y a cenar ya consume un salario mínimo completo",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/468603-una-familia-tipo-ya-gasta-un-salario-minimo-en-una-salida-al-teatro-y-a-cenar",
+   "fecha": "2026-11-07T11:26:00Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Plazo fijo: cuánto se gana al colocar $1.000.000 durante un mes",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/plazo-fijo-cuanto-se-gana-al-colocar-1000000-un-mes-n6341898",
+   "fecha": "2026-11-07T11:00:00Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Ramona Casas tiene 74 años, fue elegida para hacer quesillos para el papa León XIV y sigue una conmovedora tradición familiar",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/ramona-casas-tiene-74-anos-fue-elegida-para-hacer-quesillos-para-el-papa-leon-xiv-y-sigue-una-nid07112026/",
+   "fecha": "2026-11-07T10:55:01Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Minería y energía: Grupo L busca crecer al ritmo de las inversiones en Argentina",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/468560-mineria-y-energia-grupo-l-busca-crecer-al-ritmo-de-las-inversiones-en-argentina",
+   "fecha": "2026-11-07T10:16:00Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Motosierra: Luis Caputo profundizó el ajuste y recortó casi 10% el gasto público en octubre",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/motosierra-luis-caputo-profundizo-el-ajuste-y-recorto-casi-10-el-gasto-publico-octubre-n6342474",
+   "fecha": "2026-11-07T10:00:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Zona Fría: quiénes podrán mantener los descuentos en las facturas de gas",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/468415-zona-fria-quienes-podran-mantener-los-descuentos-en-las-facturas-de-gas",
+   "fecha": "2026-11-07T09:54:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Advierten que el feriado XXL reducirá todavía más el dato de actividad de noviembre",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/468584-feriados-papa-hunden-economia-pbi-sorprende-funcionarios-analistas",
+   "fecha": "2026-11-07T09:40:00Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Envases vacíos de agroquímicos: el 44% del plástico recuperado se usa para fabricar caños de fibra óptica",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/envases-vacios-de-agroquimicos-el-44-del-plastico-recuperado-se-usa-para-fabricar-canos-de-fibra-nid06112026/",
+   "fecha": "2026-11-07T09:35:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Que la volatilidad no nuble el negocio: bonos argentinos están a precios muy apetecibles",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/468564-bonos-argentinos-caen-precios-irresistibles-oportunidad-compra-noviembre-2026",
+   "fecha": "2026-11-07T09:25:00Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Maíz tardío: las claves del nitrógeno para destrabar el rinde",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/agricultura/maiz-tardio-las-claves-del-nitrogeno-para-destrabar-el-rinde-nid07112026/",
+   "fecha": "2026-11-07T09:00:01Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Quién es quién y cuáles son las claves del escándalo del Ueno Bank que terminó con la detención de Peña en Paraguay",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/07/quien-es-quien-y-cuales-son-las-claves-del-escandalo-del-ueno-bank-que-termino-con-la-detencion-de-pena-en-paraguay/",
+   "fecha": "2026-11-07T05:29:26Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Volvió el auto deportivo compacto más exitoso del mundo a la Argentina: cómo es y cuánto cuesta",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/07/volvio-el-auto-deportivo-compacto-mas-exitoso-del-mundo-a-la-argentina-como-es-y-cuanto-cuesta/",
+   "fecha": "2026-11-07T05:28:55Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La gran trampa argentina",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/11/07/la-gran-trampa-argentina/",
+   "fecha": "2026-11-07T05:28:33Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Fondos comunes de inversión: qué dejó octubre y qué mirar en noviembre",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/11/07/fondos-comunes-de-inversion-que-dejo-octubre-y-que-mirar-en-noviembre/",
+   "fecha": "2026-11-07T05:28:23Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Un proyecto puede parecer rentable y destruir valor: el error está en el método",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/11/07/un-proyecto-puede-parecer-rentable-y-destruir-valor-el-error-esta-en-el-metodo/",
+   "fecha": "2026-11-07T05:28:08Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El riesgo país no para de subir y se duplicó en tres meses: cuánto se explica por factores locales y cuánto pesa el frente externo",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/07/el-riesgo-pais-no-para-de-subir-y-se-duplico-en-tres-meses-cuanto-se-explica-por-factores-locales-y-cuanto-pesa-el-frente-externo/",
+   "fecha": "2026-11-07T05:26:41Z",
+   "tema": "mercados"
+  },
   {
    "titulo": "El Niño: anticipan temperaturas de más de 40 grados, riesgo de heladas y tormentas intensas",
    "medio": "La Nación",
@@ -134,13 +309,6 @@
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/la-pobreza-alcanzo-el-454-ponderadores-actualizados-y-afecto-211-millones-argentinos-n6342519",
    "fecha": "2026-11-06T21:52:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Envases vacíos de agroquímicos: el 44% del plástico recuperado se usa para fabricar caños de fibra óptica",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/envases-vacios-de-agroquimicos-el-44-del-plastico-recuperado-se-usa-para-fabricar-canos-de-fibra-nid06112026/",
-   "fecha": "2026-11-06T21:46:04Z",
    "tema": "otros"
   },
   {
@@ -368,13 +536,6 @@
    "tema": "mercados"
   },
   {
-   "titulo": "La filial paraguaya de Puente tiene depósitos en Ueno Bank, aunque afirma que es por un monto bajo",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/la-filial-paraguaya-de-puente-tiene-depositos-en-ueno-bank-aunque-afirma-que-es-por-un-monto-bajo-nid06112026/",
-   "fecha": "2026-11-06T17:19:11Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "¿Freno al ingreso de equipos de telefonía celular de China? Argentina adhirió a un estándar de seguridad de EEUU",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/06/freno-al-ingreso-de-equipos-de-telefonia-celular-de-china-argentina-adhirio-a-un-estandar-de-seguridad-de-eeuu/",
@@ -389,25 +550,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "Aunque se espera un rebote en el último trimestre, los economistas empeoraron las proyecciones de crecimiento de la actividad para 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/aunque-se-espera-un-rebote-en-los-ultimos-meses-siguio-bajando-la-estimacion-de-crecimiento-para-nid06112026/",
-   "fecha": "2026-11-06T16:46:38Z",
-   "tema": "actividad"
-  },
-  {
    "titulo": "Alimentos, salud y vivienda: cuánto aumentaron los gastos básicos en CABA",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/468545-inflacion-en-caba-cuanto-aumentaron-alimentos-salud-y-vivienda-en-2026",
    "fecha": "2026-11-06T16:32:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Milei destacó la baja de retenciones en su Gobierno y dijo que desaparecerán en el largo plazo",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/milei-destaco-la-baja-de-retenciones-en-su-gobierno-y-dijo-que-desapareceran-en-el-largo-plazo-nid06112026/",
-   "fecha": "2026-11-06T16:22:19Z",
-   "tema": "politica"
   },
   {
    "titulo": "Alejandro Díaz, CEO de AmCham, habló de las inversiones de EEUU en Argentina: “Van a depender del recorrido que tenga el país”",
@@ -431,20 +578,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "El Gobierno comienza a restringir la llegada de celulares chinos a la Argentina",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/el-gobierno-comienza-a-restringir-la-llegada-de-celulares-chinos-a-la-argentina-nid06112026/",
-   "fecha": "2026-11-06T15:41:01Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "“Neoproteccionismo ambiental”: Quirno cuestionó las exigencias de Europa y advirtió por nuevas trabas para el campo",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/neoproteccionismo-ambiental-quirno-cuestiono-las-exigencias-de-europa-y-advirtio-por-nuevas-trabas-nid06112026/",
-   "fecha": "2026-11-06T15:37:59Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Cuánto cobrarán los ahorristas del Ueno Bank y qué tienen que hacer para recuperar su dinero",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/06/cuanto-cobraran-los-ahorristas-del-ueno-bank-y-que-tienen-que-hacer-para-recuperar-su-dinero/",
@@ -456,13 +589,6 @@
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/06/tesla-confirmo-su-llegada-a-la-argentina-para-los-proximos-dias-los-detalles-del-desembarco-de-los-autos-electricos-de-elon-musk/",
    "fecha": "2026-11-06T15:14:36Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "“Libremente y en igualdad”: CRA le planteó a Sturzenegger un reclamo por Visec",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/libremente-y-en-igualdad-cra-le-planteo-a-sturzenegger-un-reclamo-por-visec-nid06112026/",
-   "fecha": "2026-11-06T15:10:32Z",
    "tema": "otros"
   },
   {
@@ -501,39 +627,11 @@
    "tema": "inflacion"
   },
   {
-   "titulo": "La inflación en la Ciudad de Buenos Aires fue de 1,9% en octubre y acumuló un 32,5% en los últimos doce meses",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/06/la-inflacion-en-la-ciudad-de-buenos-aires-fue-de-19-en-octubre-y-acumulo-un-325-en-los-ultimos-doce-meses/",
-   "fecha": "2026-11-06T14:14:17Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Alivio fiscal en la Ciudad: más de 83.000 contribuyentes dejarán de sufrir retenciones de Ingresos Brutos desde enero",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/06/alivio-fiscal-en-la-ciudad-mas-de-83000-contribuyentes-dejaran-de-sufrir-retenciones-de-ingresos-brutos-desde-enero/",
-   "fecha": "2026-11-06T14:13:51Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "El Gobierno minimizó el salto del riesgo país y aseguró estar “tremendamente tranquilo” de cara a las elecciones",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/06/caputo-minimizo-el-salto-del-riesgo-pais-y-aseguro-estar-tremendamente-tranquilo-de-cara-a-las-elecciones/",
-   "fecha": "2026-11-06T14:05:21Z",
-   "tema": "mercados"
-  },
-  {
    "titulo": "La inflación en CABA se aceleró al 1,9% en octubre impulsada por vivienda, alimentos y precios estacionales",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/la-inflacion-caba-se-acelero-al-19-octubre-impulsada-vivienda-alimentos-y-precios-estacionales-n6342364",
    "fecha": "2026-11-06T14:00:00Z",
    "tema": "inflacion"
-  },
-  {
-   "titulo": "Tras las demoras, el Gobierno finalmente abrió la licitación para el cupo 2027 de autos híbridos y eléctricos y habrá cambios",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/06/tras-las-demoras-el-gobierno-finalmente-abrio-la-licitacion-para-el-cupo-2027-de-autos-hibridos-y-electricos-y-habra-cambios/",
-   "fecha": "2026-11-06T13:33:51Z",
-   "tema": "politica"
   },
   {
    "titulo": "Argentina LNG cierra 28 contratos para una inversión de u$s51.000 M",
@@ -564,62 +662,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Una papelera cerrará sus puertas y peligran 160 trabajos en Tornquist",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/06/una-papelera-cerrara-sus-puertas-y-peligran-160-trabajos-en-tornquist/",
-   "fecha": "2026-11-06T12:41:50Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "La UIA propone bajar Ganancias al 25% y eliminar Ingresos Brutos para la industria",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/impuestos/468408-la-uia-propone-eximir-a-las-industrias-de-pagar-ingresos-brutos",
-   "fecha": "2026-11-06T12:33:00Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Qué pasará con Supermercados Dia tras la venta al dueño de ChangoMás",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/468511-el-dueno-de-changomas-compro-dia-que-pasara-con-las-sucursales-y-los-descuentos",
-   "fecha": "2026-11-06T12:06:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Estos son los 10 autos 0 km más baratos en noviembre: uno por uno, los precios y sus principales características",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/06/estos-son-los-10-autos-0-km-mas-baratos-en-noviembre-uno-por-uno-los-precios-y-sus-principales-caracteristicas/",
-   "fecha": "2026-11-06T12:04:51Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "El riesgo país de la Argentina siguió subiendo y rompió la barrera de los 900 puntos básicos",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/05/el-riesgo-pais-de-la-argentina-sigue-subiendo-y-rompe-la-barrera-de-los-900-puntos-basicos/",
-   "fecha": "2026-11-06T11:49:18Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Parques Nacionales: proteger la naturaleza es cuidar el agua del futuro",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/opinion/2026/11/06/parques-nacionales-proteger-la-naturaleza-es-cuidar-el-agua-del-futuro/",
-   "fecha": "2026-11-06T11:28:11Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Cuánto cobrarán directores y gerentes por el bono 2026 y cuántas empresas los pagan",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/management/468506-bonos-2026-cuanto-cobraran-directores-y-gerentes-y-cuantas-empresas-los-pagan",
-   "fecha": "2026-11-06T10:45:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "La City prevé un nuevo umbral para el riesgo país y advierte por impacto claro sobre dólar",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/468496-cual-es-el-nuevo-techo-que-preve-la-city-para-el-riesgo-pais",
-   "fecha": "2026-11-06T10:00:00Z",
-   "tema": "dolar"
-  },
-  {
    "titulo": "Plazo fijo: cuánto obtenés al invertir $200.000 durante 30 días",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/plazo-fijo-cuanto-obtenes-al-invertir-200000-30-dias-n6341363",
@@ -634,31 +676,10 @@
    "tema": "empresas"
   },
   {
-   "titulo": "La visita del papa León XIV generará un impacto económico superior a los u$s88 millones en Buenos Aires",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/la-visita-del-papa-leon-xiv-generara-un-impacto-economico-superior-los-us88-millones-buenos-aires-n6342210",
-   "fecha": "2026-11-06T01:18:00Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Federico Sturzenegger defendió el rumbo económico, pero admitió que la inversión demora en despegar",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/federico-sturzenegger-defendio-el-rumbo-economico-pero-admitio-que-la-inversion-demora-despegar-n6342209",
    "fecha": "2026-11-06T00:58:00Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Encuesta entre economistas refleja pesimismo y acota crecimiento del PBI a solo 0,7%",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/468491-economistas-son-pesimistas-y-recortan-crecimiento-del-pbi-a-07-por-ciento",
-   "fecha": "2026-11-05T23:37:00Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Por lluvia de importaciones, cierra una histórica papelera y despide a 160 empleados",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/468493-por-importaciones-cierra-historica-papelera-y-despide-a-160-empleados",
-   "fecha": "2026-11-05T23:35:00Z",
    "tema": "empresas"
   },
   {
@@ -709,27 +730,6 @@
    "url": "https://www.ambito.com/economia/amcham-advirtio-que-un-cambio-gobierno-eeuu-podria-restarle-prioridad-al-vinculo-la-argentina-n6342069",
    "fecha": "2026-11-05T19:13:00Z",
    "tema": "dolar"
-  },
-  {
-   "titulo": "José Luis Daza reconoció un crecimiento \"menor al esperado\", pero ve señales positivas y una \"impaciencia muy grande\"",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/jose-luis-daza-reconocio-un-crecimiento-menor-al-esperado-pero-ve-senales-positivas-y-una-impaciencia-muy-grande-n6342052",
-   "fecha": "2026-11-05T19:09:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Advierten que la recaudación de impuestos se sostiene solo por \"factores excepcionales\"",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/advierten-que-la-recaudacion-impuestos-se-sostiene-solo-factores-excepcionales-n6341858",
-   "fecha": "2026-11-05T18:37:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Cuánto cuesta el libro de León XIV, \"La fuerza del Evangelio\" y dónde comprarlo",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/cuanto-cuesta-el-libro-leon-xiv-la-fuerza-del-evangelio-y-donde-comprarlo-n6325182",
-   "fecha": "2026-11-05T15:09:00Z",
-   "tema": "otros"
   }
  ]
 }
