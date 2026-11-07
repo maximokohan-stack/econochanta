@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-07T01:24:18.673755Z",
+ "actualizado": "2026-11-07T05:25:19.702400Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -59,6 +59,20 @@
   }
  ],
  "items": [
+  {
+   "titulo": "El Niño: anticipan temperaturas de más de 40 grados, riesgo de heladas y tormentas intensas",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/el-nino-anticipan-temperaturas-de-mas-de-40-grados-riesgo-de-heladas-y-tormentas-intensas-nid05112026/",
+   "fecha": "2026-11-07T02:20:14Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Qué pasó con Ueno Bank y cómo sigue la crisis en Paraguay hoy, viernes 6 de noviembre",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/que-paso-con-ueno-bank-y-como-sigue-la-crisis-en-paraguay-hoy-viernes-6-de-noviembre-nid06112026/",
+   "fecha": "2026-11-07T02:14:29Z",
+   "tema": "otros"
+  },
   {
    "titulo": "Motos vs. autos: Argentina ya tiene una relación de patentamientos propia de países de bajos ingresos",
    "medio": "Ámbito",
@@ -170,13 +184,6 @@
    "url": "https://www.infobae.com/economia/2026/11/06/el-riesgo-pais-argentino-cae-debajo-de-los-900-puntos-mientras-que-wall-street-insinua-un-rebote/",
    "fecha": "2026-11-06T21:18:07Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "El Niño: anticipan temperaturas de más de 40 grados, riesgo de heladas y tormentas intensas",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/el-nino-anticipan-temperaturas-de-mas-de-40-grados-riesgo-de-heladas-y-tormentas-intensas-nid05112026/",
-   "fecha": "2026-11-06T21:08:30Z",
-   "tema": "otros"
   },
   {
    "titulo": "El presidente de OpenAI confirmó que la compañía podría salir a la Bolsa en 2027",
@@ -344,13 +351,6 @@
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/06/cuanto-hay-que-ganar-para-ser-de-clase-media-en-la-ciudad-de-buenos-aires/",
    "fecha": "2026-11-06T18:00:50Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Qué pasó con Ueno Bank y cómo sigue la crisis en Paraguay hoy, viernes 6 de noviembre",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/que-paso-con-ueno-bank-y-como-sigue-la-crisis-en-paraguay-hoy-viernes-6-de-noviembre-nid06112026/",
-   "fecha": "2026-11-06T17:48:38Z",
    "tema": "otros"
   },
   {
