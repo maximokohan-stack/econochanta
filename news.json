@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-07T15:15:00.694685Z",
+ "actualizado": "2026-11-07T19:42:31.504589Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 20
+   "n": 19
   },
   {
    "medio": "Infobae",
@@ -60,18 +60,109 @@
  ],
  "items": [
   {
-   "titulo": "Sturzenegger contó las regulaciones paradas en la Justicia y explicó por qué es el “plomero” del gobierno, “la macro es para vagos” y Milei habla como habla",
+   "titulo": "Mientras los plazos fijos pierden contra la inflación, las empresas consiguen crédito más barato que los consumidores",
    "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/07/sturzenegger-conto-las-regulaciones-paradas-en-la-justicia-y-explico-por-que-es-el-plomero-del-gobierno-la-macro-es-para-vagos-y-milei-habla-como-habla/",
-   "fecha": "2026-11-07T15:06:48Z",
-   "tema": "politica"
+   "url": "https://www.infobae.com/economia/2026/11/07/mientras-los-plazos-fijos-pierden-contra-la-inflacion-las-empresas-consiguen-credito-mas-barato-que-los-consumidores/",
+   "fecha": "2026-11-07T19:31:18Z",
+   "tema": "inflacion"
   },
   {
    "titulo": "Ni las ofertas alcanzan: el consumo sigue sin repuntar y los comercios anticipan un fin de año en rojo",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/07/ni-las-ofertas-alcanzan-el-consumo-masivo-sigue-sin-repuntar-y-los-comercios-anticipan-un-fin-de-ano-en-rojo/",
-   "fecha": "2026-11-07T14:38:36Z",
+   "fecha": "2026-11-07T19:09:45Z",
    "tema": "actividad"
+  },
+  {
+   "titulo": "La visita del papa León XIV podría movilizar más de 3 millones de turistas nacionales e internacionales",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/la-visita-del-papa-leon-xiv-podria-movilizar-mas-de-3-millones-de-turistas-nacionales-e-nid07112026/",
+   "fecha": "2026-11-07T19:08:10Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El ajuste fiscal se profundizó en octubre: el gasto público cayó 5,4% real y acumula una baja de 3,2% en 2026",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/el-ajuste-fiscal-se-profundizo-en-octubre-el-gasto-publico-cayo-54-real-y-acumula-una-baja-de-32-en-nid07112026/",
+   "fecha": "2026-11-07T19:03:37Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Súper Niño: pronostican más de 40 grados y tormentas intensas en una región",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/super-nino-pronostican-mas-de-40-grados-y-tormentas-intensas-en-una-region-nid07112026/",
+   "fecha": "2026-11-07T18:22:40Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Cuál será la cotización del dólar este lunes 9 de noviembre",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/dolar/cual-sera-la-cotizacion-del-dolar-este-lunes-9-de-noviembre-nid07112026/",
+   "fecha": "2026-11-07T18:20:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Súper Niño: miles de hectáreas fueron alcanzadas por violentas tormentas y hay cultivos “barridos por completo”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/super-nino-miles-de-hectareas-fueron-alcanzadas-por-violentas-tormentas-y-hay-cultivos-barridos-por-nid07112026/",
+   "fecha": "2026-11-07T18:13:50Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La pulseada entre Caputo y los gobernadores que podría cambiar el mapa de impuestos provinciales",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/07/la-pulseada-entre-caputo-y-los-gobernadores-que-podria-cambiar-el-mapa-de-impuestos-provinciales/",
+   "fecha": "2026-11-07T18:13:13Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "“China-Shock.2”: productores de acero latinoamericanos debatirán cómo responder a la presión y competencia desleal del gigante asiático",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/07/china-shock2-productores-de-acero-latinoamericanos-debatiran-como-responder-a-la-presion-y-competencia-desleal-del-gigante-asiatico/",
+   "fecha": "2026-11-07T18:10:56Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Ramona Casas tiene 74 años, fue elegida para hacer quesillos para el papa León XIV y sigue una conmovedora tradición familiar",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/ramona-casas-tiene-74-anos-fue-elegida-para-hacer-quesillos-para-el-papa-leon-xiv-y-sigue-una-nid07112026/",
+   "fecha": "2026-11-07T17:49:51Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Alfredo Di Costanzo, de la Universidad de Minnesota, y una pregunta incómoda en EE.UU.: “¿Quién producirá los terneros en el futuro?\"",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/alfredo-di-costanzo-de-la-universidad-de-minnesota-y-una-pregunta-incomoda-en-eeuu-quien-producira-nid07112026/",
+   "fecha": "2026-11-07T15:50:46Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Radiografía: el avance de la labranza, bajo un análisis crítico de cinco expertos desde Bahía Blanca a Chaco",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/a-fondo-el-avance-de-la-labranza-bajo-un-analisis-critico-de-cinco-expertos-desde-bahia-blanca-a-nid07112026/",
+   "fecha": "2026-11-07T15:49:04Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La SEC confirmó que recibió la denuncia de Dalbón por las operaciones con oro del BCRA",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/07/la-sec-confirmo-que-recibio-la-denuncia-de-dalbon-por-las-operaciones-con-oro-del-bcra/",
+   "fecha": "2026-11-07T15:45:03Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Sturzenegger contó por qué es el “plomero” del gobierno y habló sobre el nivel de riesgo país",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/07/sturzenegger-conto-las-regulaciones-paradas-en-la-justicia-y-explico-por-que-es-el-plomero-del-gobierno-la-macro-es-para-vagos-y-milei-habla-como-habla/",
+   "fecha": "2026-11-07T15:22:19Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "El riesgo país pasó los 900 puntos y las acciones argentinas se hundieron ante un incierto contexto externo",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/07/el-riesgo-pais-paso-los-900-puntos-y-las-acciones-argentinas-se-hundieron-ante-un-incierto-contexto-externo/",
+   "fecha": "2026-11-07T15:20:18Z",
+   "tema": "mercados"
   },
   {
    "titulo": "La CAME le pidió a Caputo modificar las condiciones del plan de facilidades de pago de ARCA",
@@ -92,20 +183,6 @@
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/cuanto-cuesta-el-libro-leon-xiv-la-fuerza-del-evangelio-y-donde-comprarlo-n6325182",
    "fecha": "2026-11-07T13:28:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Alfredo Di Costanzo, de la Universidad de Minnesota, y una pregunta incómoda en EE.UU.: “¿Quién producirá los terneros en el futuro?\"",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/alfredo-di-costanzo-de-la-universidad-de-minnesota-y-una-pregunta-incomoda-en-eeuu-quien-producira-nid07112026/",
-   "fecha": "2026-11-07T13:12:22Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Radiografía: el avance de la labranza, bajo un análisis crítico de cinco expertos desde Bahía Blanca a Chaco",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/a-fondo-el-avance-de-la-labranza-bajo-un-analisis-critico-de-cinco-expertos-desde-bahia-blanca-a-nid07112026/",
-   "fecha": "2026-11-07T12:59:24Z",
    "tema": "otros"
   },
   {
@@ -135,13 +212,6 @@
    "url": "https://www.ambito.com/economia/plazo-fijo-cuanto-se-gana-al-colocar-1000000-un-mes-n6341898",
    "fecha": "2026-11-07T11:00:00Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "Ramona Casas tiene 74 años, fue elegida para hacer quesillos para el papa León XIV y sigue una conmovedora tradición familiar",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/ramona-casas-tiene-74-anos-fue-elegida-para-hacer-quesillos-para-el-papa-leon-xiv-y-sigue-una-nid07112026/",
-   "fecha": "2026-11-07T10:55:01Z",
-   "tema": "otros"
   },
   {
    "titulo": "Minería y energía: Grupo L busca crecer al ritmo de las inversiones en Argentina",
@@ -445,20 +515,6 @@
    "tema": "actividad"
   },
   {
-   "titulo": "El Gobierno ofrece deuda en pesos a corto plazo para tratar de renovar todo lo que le vence la semana próxima",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/el-gobierno-ofrece-deuda-en-pesos-a-corto-plazo-para-tratar-de-renovar-todo-lo-que-le-vence-la-nid06112026/",
-   "fecha": "2026-11-06T19:24:41Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "La construcción dio un fuerte salto en septiembre, mientras la industria tuvo una leve suba mensual y una caída interanual",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/la-construccion-dio-un-fuerte-salto-en-septiembre-mientras-la-industria-tuvo-una-leve-suba-mensual-y-nid06112026/",
-   "fecha": "2026-11-06T19:20:59Z",
-   "tema": "actividad"
-  },
-  {
    "titulo": "El mercado advierte un problema con las reservas que acelera la suba del riesgo país",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/468477-la-city-alerta-un-problema-con-las-reservas-que-acelera-la-suba-del-riesgo-pais",
@@ -471,13 +527,6 @@
    "url": "https://www.ambito.com/economia/construccion-formato-serrucho-reboto-casi-8-mensual-y-marco-una-suba-mayor-5-interanual-n6342533",
    "fecha": "2026-11-06T19:03:00Z",
    "tema": "actividad"
-  },
-  {
-   "titulo": "Los cultivos transgénicos generaron en el país beneficios brutos por unos US$197.500 millones en 30 años",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/los-cultivos-transgenicos-generaron-en-el-pais-beneficios-brutos-por-unos-us197500-millones-en-30-nid06112026/",
-   "fecha": "2026-11-06T18:59:02Z",
-   "tema": "otros"
   },
   {
    "titulo": "Una minera canadiense prepara un despliegue récord con ocho perforadoras en San Juan",
@@ -501,13 +550,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "La inflación en la Ciudad volvió a acelerarse en octubre y llegó al 1,9%",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/la-inflacion-en-octubre-en-la-ciudad-volvio-a-acelerarse-y-llego-al-19-nid06112026/",
-   "fecha": "2026-11-06T18:26:04Z",
-   "tema": "inflacion"
-  },
-  {
    "titulo": "Supervielle se renueva y lanza \"SúperApp\" para competir en el nuevo escenario financiero",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/finanzas/468495-supervielle-se-renueva-y-lanza-superapp-para-competir-en-el-nuevo-escenario-financiero",
@@ -520,13 +562,6 @@
    "url": "https://www.infobae.com/economia/2026/11/06/cuanto-hay-que-ganar-para-ser-de-clase-media-en-la-ciudad-de-buenos-aires/",
    "fecha": "2026-11-06T18:00:50Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Jubilaciones: un fallo declara inconstitucional la ley de movilidad de Alberto Fernández, pero con un efecto muy limitado",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/jubilaciones-un-fallo-declara-inconstitucional-la-ley-de-movilidad-de-alberto-fernandez-pero-dispone-nid06112026/",
-   "fecha": "2026-11-06T17:47:33Z",
-   "tema": "actividad"
   },
   {
    "titulo": "Riesgo país rumbo a 1.000 puntos: la City advierte que la corrida contra bonos se adelantó",
@@ -557,38 +592,10 @@
    "tema": "otros"
   },
   {
-   "titulo": "Alejandro Díaz, CEO de AmCham, habló de las inversiones de EEUU en Argentina: “Van a depender del recorrido que tenga el país”",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/06/alejandro-diaz-ceo-de-amcham-hablo-de-las-inversiones-de-eeuu-en-argentina-van-a-depender-del-recorrido-que-tenga-el-pais/",
-   "fecha": "2026-11-06T16:19:37Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Milei en la Sociedad Rural: llamó héroes a los empresarios y dijo que relajar la política monetaria sería “tirarle nafta al fuego”",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/06/milei-en-la-sociedad-rural-llamo-heroes-a-los-empresarios-y-dijo-que-relajar-la-politica-monetaria-seria-tirarle-nafta-al-fuego/",
-   "fecha": "2026-11-06T16:16:30Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "Una familia porteña necesita más de $1,7 millones para no ser pobre: qué pasa si alquila",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/468543-cuanto-hay-que-ganar-para-no-ser-pobre-en-caba-en-noviembre-2026",
    "fecha": "2026-11-06T16:13:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Cuánto cobrarán los ahorristas del Ueno Bank y qué tienen que hacer para recuperar su dinero",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/06/cuanto-cobraran-los-ahorristas-del-ueno-bank-y-que-tienen-que-hacer-para-recuperar-su-dinero/",
-   "fecha": "2026-11-06T15:29:02Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Tesla confirmó su llegada a la Argentina para los próximos días: los detalles del desembarco de los autos eléctricos de Elon Musk",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/06/tesla-confirmo-su-llegada-a-la-argentina-para-los-proximos-dias-los-detalles-del-desembarco-de-los-autos-electricos-de-elon-musk/",
-   "fecha": "2026-11-06T15:14:36Z",
    "tema": "otros"
   },
   {
@@ -597,13 +604,6 @@
    "url": "https://www.ambito.com/economia/los-precios-globales-los-alimentos-bajaron-octubre-pero-aun-son-6-mas-altos-que-2025-n6342389",
    "fecha": "2026-11-06T15:07:00Z",
    "tema": "inflacion"
-  },
-  {
-   "titulo": "Quirno prometió llegar al 80% del producto mundial con acuerdos y cuestionó el \"neoproteccionismo\" europeo",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/06/quirno-prometio-llegar-al-80-del-producto-mundial-con-acuerdos-y-cuestiono-el-neoproteccionismo-europeo/",
-   "fecha": "2026-11-06T15:03:15Z",
-   "tema": "otros"
   },
   {
    "titulo": "El desempleo bajó en EEUU y el mercado refuerza la expectativa de una suba de tasas de la Fed en diciembre",
@@ -723,13 +723,6 @@
    "url": "https://www.ambito.com/economia/plazo-fijo-uva-como-funciona-y-es-preferible-al-tradicional-n6341892",
    "fecha": "2026-11-05T20:00:00Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "AmCham advirtió que un cambio de gobierno en EEUU podría restarle prioridad al vínculo con la Argentina",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/amcham-advirtio-que-un-cambio-gobierno-eeuu-podria-restarle-prioridad-al-vinculo-la-argentina-n6342069",
-   "fecha": "2026-11-05T19:13:00Z",
-   "tema": "dolar"
   }
  ]
 }
