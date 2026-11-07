@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-06T21:50:57.647479Z",
+ "actualizado": "2026-11-07T01:24:18.673755Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -59,6 +59,76 @@
   }
  ],
  "items": [
+  {
+   "titulo": "Motos vs. autos: Argentina ya tiene una relación de patentamientos propia de países de bajos ingresos",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/motos-vs-autos-argentina-ya-tiene-una-relacion-patentamientos-propia-paises-bajos-ingresos-n6342655",
+   "fecha": "2026-11-07T00:25:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Los principales bancos brasileños recortaron sus previsiones de crecimiento para 2027",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/america/america-latina/2026/11/07/los-principales-bancos-brasilenos-recortaron-sus-previsiones-de-crecimiento-para-2027/",
+   "fecha": "2026-11-07T00:24:29Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Banco de Valores absorberá Portfolio Personal Inversiones",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/banco-de-valores-absorbera-portfolio-personal-inversiones-nid06112026/",
+   "fecha": "2026-11-07T00:00:30Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "El banco VALO compró la sociedad de bolsa PPI y cambia el mapa financiero en la City",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/468597-el-banco-valo-compro-la-sociedad-de-bolsa-ppi-y-cambia-el-mapa-financiero-en-la-city",
+   "fecha": "2026-11-06T23:50:00Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Puente tenía dólares en Ueno Bank y el vicepresidente de la firma habló tras la crisis",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/468598-broker-argentino-tenia-dolares-depositados-en-ueno-bank-esperamos-que-se-acomode-pronto",
+   "fecha": "2026-11-06T23:24:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Minería y Vaca Muerta desatan dura carrera por líderes gerenciales",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/energia/468585-mineria-y-vaca-muerta-desatan-dura-carrera-por-lideres-gerenciales",
+   "fecha": "2026-11-06T22:20:00Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "El Niño posterga la temporada de exploración minera en San Juan",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/energia/468588-el-nino-posterga-la-temporada-de-exploracion-minera-en-san-juan",
+   "fecha": "2026-11-06T22:01:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El riesgo país subió por sexta rueda consecutiva, rozó los 940 puntos básicos y marcó un nuevo máximo en más de un año",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/06/el-riesgo-pais-subio-por-sexta-rueda-consecutiva-rozo-los-940-puntos-basicos-y-marco-un-nuevo-maximo-en-mas-de-un-ano/",
+   "fecha": "2026-11-06T21:52:36Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "La pobreza alcanzó el 45,4% con ponderadores actualizados y afectó a 21,1 millones de argentinos",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/la-pobreza-alcanzo-el-454-ponderadores-actualizados-y-afecto-211-millones-argentinos-n6342519",
+   "fecha": "2026-11-06T21:52:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Envases vacíos de agroquímicos: el 44% del plástico recuperado se usa para fabricar caños de fibra óptica",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/envases-vacios-de-agroquimicos-el-44-del-plastico-recuperado-se-usa-para-fabricar-canos-de-fibra-nid06112026/",
+   "fecha": "2026-11-06T21:46:04Z",
+   "tema": "otros"
+  },
   {
    "titulo": "El precio del petróleo registró a la caída semanal más grande desde la pandemia",
    "medio": "Infobae",
@@ -284,7 +354,7 @@
    "tema": "otros"
   },
   {
-   "titulo": "Jubilaciones: un fallo declara inconstitucional la ley de movilidad de Alberto Fernández, pero dispone un efecto limitado",
+   "titulo": "Jubilaciones: un fallo declara inconstitucional la ley de movilidad de Alberto Fernández, pero con un efecto muy limitado",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/jubilaciones-un-fallo-declara-inconstitucional-la-ley-de-movilidad-de-alberto-fernandez-pero-dispone-nid06112026/",
    "fecha": "2026-11-06T17:47:33Z",
@@ -417,24 +487,10 @@
    "tema": "actividad"
   },
   {
-   "titulo": "Día del Bancario: por qué se celebra hoy en la Argentina",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/dia-del-bancario-por-que-se-celebra-hoy-en-la-argentina-nid06112026/",
-   "fecha": "2026-11-06T14:42:31Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "En competencia con otro pelotón de empresas, Adecoagro busca desembarcar en SanCor",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/negocios/468533-con-foco-en-tres-plantas-adecoagro-busca-desembarcar-en-sancor",
    "fecha": "2026-11-06T14:42:00Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Hub regional: una plataforma global de inversiones compró una fintech argentina y busca ganar terreno en la región",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/negocios/hub-regional-una-plataforma-global-de-inversiones-compro-una-fintech-argentina-y-busca-ganar-terreno-nid06112026/",
-   "fecha": "2026-11-06T14:39:35Z",
    "tema": "empresas"
   },
   {
@@ -550,25 +606,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "El real estate “old school” murió",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/opinion/2026/11/06/el-real-estate-old-school-murio/",
-   "fecha": "2026-11-06T11:28:01Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Cuánto cobrarán directores y gerentes por el bono 2026 y cuántas empresas los pagan",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/management/468506-bonos-2026-cuanto-cobraran-directores-y-gerentes-y-cuantas-empresas-los-pagan",
    "fecha": "2026-11-06T10:45:00Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "Cerrarán 72 Registros del Automotor en los próximos 60 días: una por una, qué oficinas dejarán de funcionar",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/06/cerraran-72-registros-del-automotor-en-los-proximos-60-dias-una-por-una-que-oficinas-dejaran-de-funcionar/",
-   "fecha": "2026-11-06T10:41:32Z",
-   "tema": "otros"
   },
   {
    "titulo": "La City prevé un nuevo umbral para el riesgo país y advierte por impacto claro sobre dólar",
@@ -620,13 +662,6 @@
    "tema": "empresas"
   },
   {
-   "titulo": "En plena suba del riesgo país, el BCRA reveló el precio del dólar que prevén 45 analistas",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/468485-el-bcra-revelo-que-esperan-45-economistas-para-el-dolar-en-argentina",
-   "fecha": "2026-11-05T23:08:00Z",
-   "tema": "dolar"
-  },
-  {
    "titulo": "Emiliano Libman en RDEco: “No creo que colapse Paraguay como colapsó Argentina en el 2001”",
    "medio": "Perfil",
    "url": "https://perfil.com/mas-perfil/emiliano-libman-en-rdeco-no-creo-que-colapse-paraguay-como-colapso-argentina-en-el-2001-axa7n0p4uuPu",
@@ -662,27 +697,6 @@
    "tema": "politica"
   },
   {
-   "titulo": "Alquileres de verano: cómo evitar estafas y qué garantías ofrecen Airbnb y Booking",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/468357-alquileres-de-verano-como-evitar-estafas-que-garantias-ofrecen-airbnb-y-booking",
-   "fecha": "2026-11-05T21:50:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Las acciones de Mercado Libre se desploman 14% en Wall Street tras presentar su balance",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/468371-las-acciones-de-mercado-libre-se-desploman-un-13-en-wall-street-tras-presentar-su-balance",
-   "fecha": "2026-11-05T21:30:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Renunció el presidente Peña, pero el riesgo país subió más en Argentina que en Paraguay",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/468469-renuncio-el-presidente-pena-pero-el-riesgo-pais-subio-mas-en-argentina-que-en-paraguay",
-   "fecha": "2026-11-05T21:00:00Z",
-   "tema": "mercados"
-  },
-  {
    "titulo": "Plazo fijo UVA: ¿cómo funciona y es preferible al tradicional?",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/plazo-fijo-uva-como-funciona-y-es-preferible-al-tradicional-n6341892",
@@ -715,20 +729,6 @@
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/cuanto-cuesta-el-libro-leon-xiv-la-fuerza-del-evangelio-y-donde-comprarlo-n6325182",
    "fecha": "2026-11-05T15:09:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Vladimir Werning, vice del BCRA: \"La rentabilidad de los sectores exportadores tiene un efecto derrame fuertísimo\"",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/vladimir-werning-vice-del-bcra-la-rentabilidad-los-sectores-exportadores-tiene-un-efecto-derrame-fuertisimo-n6341886",
-   "fecha": "2026-11-05T14:53:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Donald Trump avanza contra la Fed: se fijó una audiencia para intentar apartar a Lisa Cook en diciembre",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/donald-trump-avanza-contra-la-fed-se-fijo-una-audiencia-intentar-apartar-lisa-cook-diciembre-n6341908",
-   "fecha": "2026-11-05T14:52:00Z",
    "tema": "otros"
   }
  ]
