@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-07T23:12:01.966202Z",
+ "actualizado": "2026-11-08T05:24:08.614871Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 17
+   "n": 15
   },
   {
    "medio": "Infobae",
@@ -60,6 +60,125 @@
  ],
  "items": [
   {
+   "titulo": "El Gobierno busca encapsular la suba del riesgo país para evitar un impacto en el dólar y la actividad",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/08/el-gobierno-busca-encapsular-la-suba-del-riesgo-pais-para-evitar-un-impacto-en-el-dolar-y-la-actividad/",
+   "fecha": "2026-11-08T03:51:13Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Clima de Negocios: en medio del ruido financiero, los empresarios locales siguen de compras y miran atentos una norma del Gobierno",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/08/clima-de-negocios-en-medio-del-ruido-financiero-los-empresarios-locales-siguen-de-compras-y-miran-atentos-una-norma-del-gobierno/",
+   "fecha": "2026-11-08T03:50:46Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "¿Habrá menos autos chinos?: todo lo que hay que saber del cupo de autos híbridos y eléctricos de 2027",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/08/habra-menos-autos-chinos-todo-lo-que-hay-que-saber-del-cupo-de-autos-hibridos-y-electricos-de-2027/",
+   "fecha": "2026-11-08T03:50:16Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Esteban Domecq: “Se necesita fortalecer la consistencia del programa para atravesar el año electoral”",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/08/esteban-domecq-se-necesita-fortalecer-la-consistencia-del-programa-para-atravesar-el-ano-electoral/",
+   "fecha": "2026-11-08T03:48:56Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Wait and see",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/11/08/wait-and-see/",
+   "fecha": "2026-11-08T03:48:37Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Ajuste deflacionario con boom de dólares",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/11/08/ajuste-deflacionario-con-boom-de-dolares/",
+   "fecha": "2026-11-08T03:48:19Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La “factura invisible”: más del 30% de las parejas tiene roces por plata",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/11/08/la-factura-invisible-mas-del-30-de-las-parejas-tiene-roces-por-plata/",
+   "fecha": "2026-11-08T03:48:02Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Marc Fleurbaey: “Además de los ingresos, el bienestar debe contemplar la salud y las conexiones sociales”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/marc-fleurbaey-ademas-de-los-ingresos-el-bienestar-debe-contemplar-la-salud-y-las-conexiones-nid08112026/",
+   "fecha": "2026-11-08T03:39:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "De Marte a la conciencia: el dilema más antiguo de la Filosofía acelera motores con su “momento IA”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/de-marte-a-la-conciencia-el-dilema-mas-antiguo-de-la-filosofia-acelera-motores-con-su-momento-ia-nid08112026/",
+   "fecha": "2026-11-08T03:39:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Martín Redrado: “La Argentina necesita una segunda etapa de este programa”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/martin-redrado-la-argentina-necesita-una-segunda-etapa-de-este-programa-nid08112026/",
+   "fecha": "2026-11-08T03:14:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Lo que Perú consiguió y la Argentina aún tiene pendiente",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/peru-como-espejo-nid08112026/",
+   "fecha": "2026-11-08T03:12:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Finanzas: nerviosismo e incertidumbre afuera y adentro",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/finanzas-nerviosismo-e-incertidumbre-afuera-y-adentro-nid08112026/",
+   "fecha": "2026-11-08T03:01:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Cuál es el impacto del nuevo escenario mundial para la Argentina",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/cual-es-el-impacto-del-nuevo-escenario-mundial-para-la-argentina-nid08112026/",
+   "fecha": "2026-11-08T03:01:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Alerta en la industria de maquinaria agrícola: crecen las importaciones y los fabricantes locales acumulan deudas y cierres",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/07/alerta-en-la-industria-de-maquinaria-agricola-crecen-las-importaciones-y-los-fabricantes-locales-acumulan-deudas-y-cierres/",
+   "fecha": "2026-11-07T23:23:18Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Celebra Río Negro: comenzó la soldadura del gasoducto que conectará Vaca Muerta con el Golfo San Matías para exportar GNL",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/07/celebra-rio-negro-comenzo-la-soldadura-del-gasoducto-que-conectara-vaca-muerta-con-el-golfo-san-matias-para-exportar-gnl/",
+   "fecha": "2026-11-07T23:16:30Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Súper Niño: pronostican más de 40 grados y tormentas intensas en una región",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/super-nino-pronostican-mas-de-40-grados-y-tormentas-intensas-en-una-region-nid07112026/",
+   "fecha": "2026-11-07T23:08:15Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Súper Niño: miles de hectáreas fueron alcanzadas por violentas tormentas y hay cultivos “barridos por completo”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/super-nino-miles-de-hectareas-fueron-alcanzadas-por-violentas-tormentas-y-hay-cultivos-barridos-por-nid07112026/",
+   "fecha": "2026-11-07T23:06:29Z",
+   "tema": "otros"
+  },
+  {
    "titulo": "Ramona Casas tiene 74 años, fue elegida para hacer quesillos para el papa León XIV y sigue una conmovedora tradición familiar",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/campo/ramona-casas-tiene-74-anos-fue-elegida-para-hacer-quesillos-para-el-papa-leon-xiv-y-sigue-una-nid07112026/",
@@ -72,6 +191,13 @@
    "url": "https://www.infobae.com/economia/2026/11/07/moodys-otorgo-al-banco-ciudad-la-maxima-calificacion-crediticia-local/",
    "fecha": "2026-11-07T22:42:58Z",
    "tema": "otros"
+  },
+  {
+   "titulo": "Caputo y las elecciones 2027: \"La única persona que garantiza el orden económico es Milei\"",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/468617-caputo-y-las-elecciones-2027-la-unica-persona-que-garantiza-el-orden-economico-es-milei",
+   "fecha": "2026-11-07T22:40:00Z",
+   "tema": "politica"
   },
   {
    "titulo": "Teorías del desarrollo balanceado y desbalanceado",
@@ -137,25 +263,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "Súper Niño: pronostican más de 40 grados y tormentas intensas en una región",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/super-nino-pronostican-mas-de-40-grados-y-tormentas-intensas-en-una-region-nid07112026/",
-   "fecha": "2026-11-07T18:22:40Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Cuál será la cotización del dólar este lunes 9 de noviembre",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/dolar/cual-sera-la-cotizacion-del-dolar-este-lunes-9-de-noviembre-nid07112026/",
    "fecha": "2026-11-07T18:20:00Z",
    "tema": "dolar"
-  },
-  {
-   "titulo": "Súper Niño: miles de hectáreas fueron alcanzadas por violentas tormentas y hay cultivos “barridos por completo”",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/super-nino-miles-de-hectareas-fueron-alcanzadas-por-violentas-tormentas-y-hay-cultivos-barridos-por-nid07112026/",
-   "fecha": "2026-11-07T18:13:50Z",
-   "tema": "otros"
   },
   {
    "titulo": "La pulseada entre Caputo y los gobernadores que podría cambiar el mapa de impuestos provinciales",
@@ -361,13 +473,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Los principales bancos brasileños recortaron sus previsiones de crecimiento para 2027",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/america/america-latina/2026/11/07/los-principales-bancos-brasilenos-recortaron-sus-previsiones-de-crecimiento-para-2027/",
-   "fecha": "2026-11-07T00:24:29Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Banco de Valores absorberá Portfolio Personal Inversiones",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/banco-de-valores-absorbera-portfolio-personal-inversiones-nid06112026/",
@@ -403,24 +508,10 @@
    "tema": "otros"
   },
   {
-   "titulo": "El riesgo país subió por sexta rueda consecutiva, rozó los 940 puntos básicos y marcó un nuevo máximo en más de un año",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/06/el-riesgo-pais-subio-por-sexta-rueda-consecutiva-rozo-los-940-puntos-basicos-y-marco-un-nuevo-maximo-en-mas-de-un-ano/",
-   "fecha": "2026-11-06T21:52:36Z",
-   "tema": "mercados"
-  },
-  {
    "titulo": "La pobreza alcanzó el 45,4% con ponderadores actualizados y afectó a 21,1 millones de argentinos",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/la-pobreza-alcanzo-el-454-ponderadores-actualizados-y-afecto-211-millones-argentinos-n6342519",
    "fecha": "2026-11-06T21:52:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El precio del petróleo registró a la caída semanal más grande desde la pandemia",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/06/el-petroleo-se-encamina-a-la-caida-semanal-mas-grande-desde-la-pandemia/",
-   "fecha": "2026-11-06T21:36:09Z",
    "tema": "otros"
   },
   {
@@ -452,13 +543,6 @@
    "tema": "politica"
   },
   {
-   "titulo": "Subió el riesgo país argentino y se alejó de los 900 puntos, mientras Wall Street insinuó un rebote",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/06/el-riesgo-pais-argentino-cae-debajo-de-los-900-puntos-mientras-que-wall-street-insinua-un-rebote/",
-   "fecha": "2026-11-06T21:18:07Z",
-   "tema": "mercados"
-  },
-  {
    "titulo": "El presidente de OpenAI confirmó que la compañía podría salir a la Bolsa en 2027",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/IA/el-presidente-de-openai-confirmo-que-la-compania-podria-salir-a-la-bolsa-en-2027-nid06112026/",
@@ -466,74 +550,11 @@
    "tema": "mercados"
   },
   {
-   "titulo": "Cierre de semana con altibajos en el Mercado Agroganadero de Cañuelas",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/cierre-de-semana-con-altibajos-en-el-mercado-agroganadero-de-canuelas-nid06112026/",
-   "fecha": "2026-11-06T20:55:40Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Malas noticias para el consumo online: el CyberMonday vendió un 20% menos que el año anterior",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/06/malas-noticias-para-el-consumo-online-el-cybermonday-vendio-un-20-menos-que-el-ano-anterior/",
-   "fecha": "2026-11-06T20:41:37Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Caen las compras de bienes para ampliar la capacidad productiva",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/caen-las-compras-de-bienes-para-ampliar-la-capacidad-productiva-nid06112026/",
-   "fecha": "2026-11-06T20:32:43Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "“Como amigos, vamos a hablarlo en privado”: Nicolás Pino dijo que conversará con Carlos Castagnani por una polémica abierta entre la Rural y CRA",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/como-amigos-vamos-a-hablarlo-en-privado-nicolas-pino-dijo-que-hablara-con-carlos-castagnani-por-una-nid06112026/",
-   "fecha": "2026-11-06T20:21:01Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "La industria mostró un leve crecimiento mensual en septiembre pero cayó 1,8% en el último año",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/06/la-industria-mostro-un-leve-crecimiento-mensual-en-septiembre-pero-cayo-18-en-el-ultimo-ano/",
-   "fecha": "2026-11-06T20:07:13Z",
-   "tema": "actividad"
-  },
-  {
    "titulo": "La inflación en los países de la OCDE saltó al 4,5% en septiembre por repunte de la energía",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/la-inflacion-los-paises-la-ocde-salto-al-45-septiembre-repunte-la-energia-n6342478",
    "fecha": "2026-11-06T20:04:00Z",
    "tema": "inflacion"
-  },
-  {
-   "titulo": "Quilmes acelera una apuesta: exportó cebada y malta por US$370 millones y busca crecer en India",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/quilmes-acelera-una-apuesta-exporto-cebada-y-malta-por-us370-millones-y-busca-crecer-en-india-nid06112026/",
-   "fecha": "2026-11-06T19:45:09Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "CyberMonday: crecieron 21% las unidades vendidas, pero la facturación cayó 20% en términos reales",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/cybermonday-crecieron-21-las-unidades-vendidas-pero-la-facturacion-cayo-20-en-terminos-reales-nid06112026/",
-   "fecha": "2026-11-06T19:43:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El riesgo país volvió a subir y quedó a un paso de los 940 puntos",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/el-riesgo-pais-cae-por-debajo-de-los-900-puntos-a-partir-del-rebote-de-los-bonos-nid06112026/",
-   "fecha": "2026-11-06T19:42:54Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "La construcción registró la mayor suba mensual del año en septiembre y volvió a crecer frente a 2025",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/06/la-construccion-registro-la-mayor-suba-mensual-del-ano-en-septiembre-y-volvio-a-crecer-frente-a-2025/",
-   "fecha": "2026-11-06T19:40:37Z",
-   "tema": "actividad"
   },
   {
    "titulo": "La industria cayó 3,2% en el tercer trimestre y anotó una nueva baja interanual",
@@ -561,20 +582,6 @@
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/468565-minera-canadiense-ngex-minerals-prepara-despliegue-record-con-ocho-perforadoras-en-san-juan",
    "fecha": "2026-11-06T18:51:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Los empresarios ven en el RIGI una certeza, pero piden más medidas y ponen en pausa las inversiones por el ruido electoral",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/06/los-empresarios-ven-en-el-rigi-una-certeza-pero-piden-mas-medidas-y-ponen-en-pausa-las-inversiones-por-el-ruido-electoral/",
-   "fecha": "2026-11-06T18:36:47Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Los bancos estarán cinco días cerrados por la visita del papa León XIV: qué servicios funcionarán y cuáles no",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/06/los-bancos-estaran-cinco-dias-cerrados-por-la-visita-del-papa-leon-xiv-que-servicios-funcionaran-y-cuales-no/",
-   "fecha": "2026-11-06T18:30:03Z",
    "tema": "otros"
   },
   {
@@ -641,13 +648,6 @@
    "tema": "inflacion"
   },
   {
-   "titulo": "Argentina LNG cierra 28 contratos para una inversión de u$s51.000 M",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/energia/468524-argentina-lng-cierra-28-contratos-para-una-inversion-de-us51000-m",
-   "fecha": "2026-11-06T13:27:00Z",
-   "tema": "empresas"
-  },
-  {
    "titulo": "Tesla dejará de producir su Cybertruck y se enfocará en taxis robots",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/tesla-dejara-producir-su-cybertruck-y-se-enfocara-taxis-robots-n6342344",
@@ -667,20 +667,6 @@
    "url": "https://www.ambito.com/economia/plazo-fijo-cuanto-obtenes-al-invertir-200000-30-dias-n6341363",
    "fecha": "2026-11-06T09:00:00Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "Lo que se dice en las mesas: el incomprensible adelantamiento de la carrera electoral ya afecta decisiones de inversión",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/lo-que-se-dice-las-mesas-el-incomprensible-adelantamiento-la-carrera-electoral-ya-afecta-decisiones-inversion-n6342231",
-   "fecha": "2026-11-06T03:32:00Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Federico Sturzenegger defendió el rumbo económico, pero admitió que la inversión demora en despegar",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/federico-sturzenegger-defendio-el-rumbo-economico-pero-admitio-que-la-inversion-demora-despegar-n6342209",
-   "fecha": "2026-11-06T00:58:00Z",
-   "tema": "empresas"
   }
  ]
 }
