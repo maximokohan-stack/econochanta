@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-08T15:38:59.133713Z",
+ "actualizado": "2026-11-08T20:01:38.838671Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 11
+   "n": 15
   },
   {
    "medio": "Infobae",
@@ -50,7 +50,7 @@
   {
    "medio": "iProfesional",
    "ok": true,
-   "n": 22
+   "n": 18
   },
   {
    "medio": "Perfil",
@@ -59,6 +59,90 @@
   }
  ],
  "items": [
+  {
+   "titulo": "Sebastián Castillo, CEO de Abuelo Julio, que exporta carne: “Potenciamos el negocio familiar de más de cuatro generaciones”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/sebastian-castillo-ceo-de-abuelo-julio-que-exporta-carne-potenciamos-el-negocio-familiar-de-mas-de-nid08112026/",
+   "fecha": "2026-11-08T19:50:38Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Súper Niño: pronostican más de 40 grados y tormentas intensas en una región",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/super-nino-pronostican-mas-de-40-grados-y-tormentas-intensas-en-una-region-nid07112026/",
+   "fecha": "2026-11-08T19:33:29Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Ya está disponible: una plataforma pública permite hacer un mapeo del campo",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/lanzamiento-una-plataforma-publica-permitira-hacer-un-mapeo-del-campo-nid08112026/",
+   "fecha": "2026-11-08T19:32:14Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Estiman que la pobreza subió en el tercer trimestre y ya afecta a 16,2 millones de argentinos",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/estiman-que-la-pobreza-subio-el-tercer-trimestre-y-ya-afecta-162-millones-argentinos-n6342928",
+   "fecha": "2026-11-08T19:12:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Tras la derrota de Trump, EEUU ratificó su apoyo a Milei, pero crecen las dudas sobre la asistencia financiera en 2027",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/tras-la-derrota-trump-eeuu-ratifico-su-apoyo-milei-pero-crecen-las-dudas-la-asistencia-financiera-2027-n6342951",
+   "fecha": "2026-11-08T18:54:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Calendario semanal de Anses: qué pasa con los pagos de jubilaciones y AUH durante los feriados por la visita del papa León XIV a la Argentina",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/calendario-semanal-de-anses-que-pasa-con-los-pagos-de-jubilaciones-y-auh-durante-los-feriados-por-la-nid08112026/",
+   "fecha": "2026-11-08T18:45:30Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "En qué provincias y sectores la industria del juicio golpea más fuerte: las causas y las consecuencias del ranking de conflictividad",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/08/en-que-provincias-y-sectores-la-industria-del-juicio-golpea-mas-fuerte-las-causas-y-las-consecuencias-del-ranking-de-conflictividad/",
+   "fecha": "2026-11-08T18:18:00Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "León XIV: quién es Ramona Casas, elegida para hacer quesillos para el papa",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/leon-xiv-quien-es-ramona-casas-elegida-para-hacer-quesillos-para-el-papa-nid08112026/",
+   "fecha": "2026-11-08T18:12:14Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Clima de Negocios: en medio del ruido financiero, los empresarios locales siguen de compras y miran atentos una norma del Gobierno",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/08/clima-de-negocios-en-medio-del-ruido-financiero-los-empresarios-locales-siguen-de-compras-y-miran-atentos-una-norma-del-gobierno/",
+   "fecha": "2026-11-08T17:35:31Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "La visita del papa León XIV podría generar u$s270 millones y dispara el turismo religioso: el impacto en hoteles, comercios y gastronomía",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/la-visita-del-papa-leon-xiv-podria-generar-us270-millones-y-dispara-el-turismo-religioso-el-impacto-hoteles-comercios-y-gastronomia-n6342926",
+   "fecha": "2026-11-08T16:21:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Plazo fijo en dólares: cuánto se puede obtener al invertir u$d2.000",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/plazo-fijo-dolares-cuanto-se-puede-obtener-al-invertir-ud2000-n6342233",
+   "fecha": "2026-11-08T16:00:00Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Cuánto cobra el papa León XIV y qué beneficios económicos recibe del Vaticano",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/cuanto-cobra-el-papa-leon-xiv-y-que-beneficios-economicos-recibe-del-vaticano-n6342922",
+   "fecha": "2026-11-08T15:41:00Z",
+   "tema": "otros"
+  },
   {
    "titulo": "El salto en las importaciones del RIGI que reabre la discusión sobre el lugar de las pyme argentinas",
    "medio": "Infobae",
@@ -200,6 +284,13 @@
    "tema": "dolar"
   },
   {
+   "titulo": "Cuánto cuesta el libro de León XIV, \"La fuerza del Evangelio\" y dónde comprarlo",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/cuanto-cuesta-el-libro-leon-xiv-la-fuerza-del-evangelio-y-donde-comprarlo-n6325182",
+   "fecha": "2026-11-08T12:49:00Z",
+   "tema": "otros"
+  },
+  {
    "titulo": "Los pronósticos para el dólar y el riesgo en la semana posterior a la visita del Papa",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/468623-que-se-espera-para-el-dolar-y-el-riesgo-despues-de-la-visita-del-papa",
@@ -256,25 +347,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "Ya está disponible: una plataforma pública permite hacer un mapeo del campo",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/lanzamiento-una-plataforma-publica-permitira-hacer-un-mapeo-del-campo-nid08112026/",
-   "fecha": "2026-11-08T06:00:00Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "El Gobierno busca encapsular la suba del riesgo país para evitar un impacto en el dólar y la actividad",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/08/el-gobierno-busca-encapsular-la-suba-del-riesgo-pais-para-evitar-un-impacto-en-el-dolar-y-la-actividad/",
    "fecha": "2026-11-08T03:51:13Z",
    "tema": "dolar"
-  },
-  {
-   "titulo": "Clima de Negocios: en medio del ruido financiero, los empresarios locales siguen de compras y miran atentos una norma del Gobierno",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/08/clima-de-negocios-en-medio-del-ruido-financiero-los-empresarios-locales-siguen-de-compras-y-miran-atentos-una-norma-del-gobierno/",
-   "fecha": "2026-11-08T03:50:46Z",
-   "tema": "politica"
   },
   {
    "titulo": "¿Habrá menos autos chinos?: todo lo que hay que saber del cupo de autos híbridos y eléctricos de 2027",
@@ -319,32 +396,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "De Marte a la conciencia: el dilema más antiguo de la Filosofía acelera motores con su “momento IA”",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/de-marte-a-la-conciencia-el-dilema-mas-antiguo-de-la-filosofia-acelera-motores-con-su-momento-ia-nid08112026/",
-   "fecha": "2026-11-08T03:39:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Martín Redrado: “La Argentina necesita una segunda etapa de este programa”",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/martin-redrado-la-argentina-necesita-una-segunda-etapa-de-este-programa-nid08112026/",
-   "fecha": "2026-11-08T03:14:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Lo que Perú consiguió y la Argentina aún tiene pendiente",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/peru-como-espejo-nid08112026/",
-   "fecha": "2026-11-08T03:12:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Finanzas: nerviosismo e incertidumbre afuera y adentro",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/finanzas-nerviosismo-e-incertidumbre-afuera-y-adentro-nid08112026/",
-   "fecha": "2026-11-08T03:01:00Z",
-   "tema": "otros"
+   "titulo": "Argentina tendrá más adultos mayores que niños hacia 2040: cómo impactará en la economía y las jubilaciones",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/argentina-tendra-mas-adultos-mayores-que-ninos-2040-como-impactara-la-y-las-jubilaciones-n6341616",
+   "fecha": "2026-11-08T03:00:00Z",
+   "tema": "actividad"
   },
   {
    "titulo": "Martín Polo: “Lo peor que le podría pasar a la Argentina en 2027 es acudir a la ayuda de EEUU”",
@@ -352,13 +408,6 @@
    "url": "https://www.ambito.com/economia/martin-polo-lo-peor-que-le-podria-pasar-la-argentina-2027-es-acudir-la-ayuda-eeuu-n6342805",
    "fecha": "2026-11-08T03:00:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Argentina tendrá más adultos mayores que niños hacia 2040: cómo impactará en la economía y las jubilaciones",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/argentina-tendra-mas-adultos-mayores-que-ninos-2040-como-impactara-la-y-las-jubilaciones-n6341616",
-   "fecha": "2026-11-08T03:00:00Z",
-   "tema": "actividad"
   },
   {
    "titulo": "Alerta en la industria de maquinaria agrícola: crecen las importaciones y los fabricantes locales acumulan deudas y cierres",
@@ -529,13 +578,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Volvió el auto deportivo compacto más exitoso del mundo a la Argentina: cómo es y cuánto cuesta",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/07/volvio-el-auto-deportivo-compacto-mas-exitoso-del-mundo-a-la-argentina-como-es-y-cuanto-cuesta/",
-   "fecha": "2026-11-07T05:28:55Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Motos vs autos: Argentina ya tiene una relación de patentamientos propia de países de bajos ingresos",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/motos-vs-autos-argentina-ya-tiene-una-relacion-patentamientos-propia-paises-bajos-ingresos-n6342655",
@@ -597,48 +639,6 @@
    "url": "https://www.ambito.com/economia/la-inflacion-los-paises-la-ocde-salto-al-45-septiembre-repunte-la-energia-n6342478",
    "fecha": "2026-11-06T20:04:00Z",
    "tema": "inflacion"
-  },
-  {
-   "titulo": "La industria cayó 3,2% en el tercer trimestre y anotó una nueva baja interanual",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/la-industria-cerro-el-tercer-trimestre-rojo-y-anoto-una-nueva-baja-interanual-n6342537",
-   "fecha": "2026-11-06T19:25:00Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "El mercado advierte un problema con las reservas que acelera la suba del riesgo país",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/468477-la-city-alerta-un-problema-con-las-reservas-que-acelera-la-suba-del-riesgo-pais",
-   "fecha": "2026-11-06T19:10:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "La construcción saltó casi 8% mensual en septiembre, el mayor avance desde mediados de 2024",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/construccion-formato-serrucho-reboto-casi-8-mensual-y-marco-una-suba-mayor-5-interanual-n6342533",
-   "fecha": "2026-11-06T19:03:00Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Una minera canadiense prepara un despliegue récord con ocho perforadoras en San Juan",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/468565-minera-canadiense-ngex-minerals-prepara-despliegue-record-con-ocho-perforadoras-en-san-juan",
-   "fecha": "2026-11-06T18:51:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Supervielle se renueva y lanza \"SúperApp\" para competir en el nuevo escenario financiero",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/468495-supervielle-se-renueva-y-lanza-superapp-para-competir-en-el-nuevo-escenario-financiero",
-   "fecha": "2026-11-06T18:20:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Riesgo país rumbo a 1.000 puntos: la City advierte que la corrida contra bonos se adelantó",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/468484-la-city-advierte-que-la-corrida-contra-bonos-argentinos-se-adelanto",
-   "fecha": "2026-11-06T17:30:00Z",
-   "tema": "mercados"
   }
  ]
 }
