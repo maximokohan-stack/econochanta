@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-09T05:35:15.246616Z",
+ "actualizado": "2026-11-09T19:17:44.800747Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 12
+   "n": 11
   },
   {
    "medio": "Infobae",
@@ -50,7 +50,7 @@
   {
    "medio": "iProfesional",
    "ok": true,
-   "n": 14
+   "n": 20
   },
   {
    "medio": "Perfil",
@@ -60,6 +60,398 @@
  ],
  "items": [
   {
+   "titulo": "Dólar hoy y dólar blue, EN VIVO: a cuánto cotizan el oficial y el paralelo este lunes 9 de noviembre, minuto a minuto",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/dolar/dolar-hoy-y-dolar-blue-en-vivo-a-cuanto-cotizan-el-oficial-y-el-paralelo-este-lunes-9-de-noviembre-nid09112026/",
+   "fecha": "2026-11-09T19:10:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Cae el riesgo país cae debajo de los 900 puntos, en una sesión positiva para los mercados internacionales",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/09/cae-el-riesgo-pais-argentino-en-una-sesion-positiva-para-los-mercados-internacionales/",
+   "fecha": "2026-11-09T19:02:43Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Las expectativas de desempleo en Estados Unidos subieron a niveles 2020, reveló la Fed",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/las-expectativas-desempleo-estados-unidos-subieron-niveles-2020-revelo-la-fed-n6343271",
+   "fecha": "2026-11-09T18:57:00Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Estiman que habrá solo dos nuevos empleos por cada millón de dólares de RIGI",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/energia/468668-cuantos-empleos-nuevos-se-crearan-por-cada-millon-de-dolares-del-rigi",
+   "fecha": "2026-11-09T18:40:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Paradoja: por qué Paraguay tiene un riesgo país seis veces menor que la Argentina pese a su crisis",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/paradoja-por-que-paraguay-tiene-un-riesgo-pais-seis-veces-menor-que-la-argentina-pese-a-su-crisis-nid09112026/",
+   "fecha": "2026-11-09T18:21:48Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Plataforma de inversiones eToro compró una fintech para operar en Argentina",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/468351-plataforma-de-inversiones-etoro-compro-fintech-argentina-y-desembarca-en-el-pais",
+   "fecha": "2026-11-09T17:51:00Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "A examen: probamos la aspiradora robot Dreame F10 Plus",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/tecnologia/a-examen-probamos-la-aspiradora-robot-dreame-f10-plus-nid09112026/",
+   "fecha": "2026-11-09T17:27:33Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Cómo se armó la venta de recuerdos del Papa, entre los puestos oficiales y el rebusque callejero",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/como-se-armo-la-venta-de-recuerdos-del-papa-entre-los-puestos-oficiales-y-el-rebusque-callejero-nid09112026/",
+   "fecha": "2026-11-09T16:31:51Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Cuánto valían el dólar y la carne la última vez que un Papa visitó Argentina",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/468666-cuanto-valian-el-dolar-y-la-carne-la-ultima-vez-que-un-papa-visito-argentina",
+   "fecha": "2026-11-09T16:09:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Las acciones de Nvidia caen 5% en Wall Street y se disparan las de sus competidores mientras avanza la investigación",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/09/las-acciones-de-nvidia-caen-5-en-wall-street-y-se-disparan-las-de-sus-competidores-mientras-avanza-la-investigacion/",
+   "fecha": "2026-11-09T16:08:06Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "ANSES: cuándo cobro en noviembre 2026 si mi DNI termina en 7",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/09/anses-cuando-cobro-en-noviembre-2026-si-mi-dni-termina-en-7/",
+   "fecha": "2026-11-09T16:03:57Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El petróleo cae por las esperanzas de una salida diplomática a la guerra entre Estados Unidos e Irán",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/america/mundo/2026/11/09/el-petroleo-cae-por-las-esperanzas-de-una-salida-diplomatica-a-la-guerra-entre-estados-unidos-e-iran/",
+   "fecha": "2026-11-09T15:48:11Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El manual de Marcos Galperin para construir su sueño llamado Mercado Libre",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/negocios/el-manual-de-marcos-galperin-para-construir-su-sueno-llamado-mercado-libre-nid09112026/",
+   "fecha": "2026-11-09T15:29:26Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Demandan a Google por chats de IA relacionados con el suicidio en una computadora escolar",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/tecnologia/demandan-a-google-por-chats-de-ia-relacionados-con-el-suicidio-en-una-computadora-escolar-nid09112026/",
+   "fecha": "2026-11-09T15:25:17Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El precio del petróleo cae otro 5% y alcanza su precio más bajo en dos meses",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/09/el-precio-del-petroleo-cae-otro-5-y-alcanza-su-precio-mas-bajo-en-dos-meses/",
+   "fecha": "2026-11-09T15:21:41Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El petróleo cae tras una declaración clave de Donald Trump sobre Irán",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/468664-petroleo-cae-tras-senales-de-calma-en-medio-oriente-y-giro-de-donald-trump-sobre-iran",
+   "fecha": "2026-11-09T15:20:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Sony resucita los míticos auriculares naranja Walkman MDR-3, ahora con conector USB-C y edición especial de Stranger Things",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/tecnologia/sony-resucita-los-miticos-auriculares-naranja-walkman-mdr-3-ahora-con-conector-usb-c-y-edicion-nid09112026/",
+   "fecha": "2026-11-09T15:10:23Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "CyberMonday: la verdad detrás de los descuentos y las ofertas que fueron un engaño",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/468663-cybermonday-la-verdad-detras-de-los-descuentos-y-las-ofertas-que-fueron-un-engano",
+   "fecha": "2026-11-09T15:03:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Cuánto cuesta el libro de León XIV, \"La fuerza del Evangelio\" y dónde comprarlo",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/cuanto-cuesta-el-libro-leon-xiv-la-fuerza-del-evangelio-y-donde-comprarlo-n6325182",
+   "fecha": "2026-11-09T14:51:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Se mantiene la toma de Pauny. Los trabajadores reclaman un plan de pagos y la empresa ofrece una apertura parcial",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/se-mantiene-la-toma-de-pauny-los-trabajadores-reclaman-un-plan-de-pagos-y-la-empresa-ofrece-una-nid09112026/",
+   "fecha": "2026-11-09T14:50:02Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Plazo fijo: cuál es la tasa que ofrece cada banco para depósitos de $1 millón a 30 días",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/09/plazo-fijo-cual-es-la-tasa-que-ofrece-cada-banco-para-depositos-de-1-millon-a-30-dias/",
+   "fecha": "2026-11-09T14:26:55Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Del liderazgo personalista al colaborativo: cómo convertir tres décadas de historia en una cultura de equipos",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/11/09/del-liderazgo-personalista-al-colaborativo-como-convertir-tres-decadas-de-historia-en-una-cultura-de-equipos/",
+   "fecha": "2026-11-09T14:16:10Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Comenzó la soldadura del primer proyecto que exportará GNL",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/energia/468610-comenzo-la-soldadura-del-primer-proyecto-que-exportara-gnl",
+   "fecha": "2026-11-09T14:15:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Cuenta regresiva para la llegada de los helicópteros Black Hawk que compró Argentina",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/negocios/468423-arribo-al-pais-de-los-helicopteros-black-hawk-en-cuenta-regresiva",
+   "fecha": "2026-11-09T14:11:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Clara llega a la Argentina: el unicornio mexicano que apuesta por la inteligencia artificial para gestionar gastos",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/negocios/clara-llega-a-la-argentina-el-unicornio-mexicano-que-apuesta-por-la-inteligencia-artificial-para-nid09112026/",
+   "fecha": "2026-11-09T13:56:19Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Así es el papamóvil fabricado en el país que traslada a León XIV: todos los detalles",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/09/asi-es-el-papamovil-fabricado-en-el-pais-que-traslada-a-leon-xiv-todos-los-detalles/",
+   "fecha": "2026-11-09T13:01:47Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El video que expone a Jensen Huang y su presunta amante: la espía china que hizo bajar las acciones de NVIDIA",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/america/mundo/2026/11/09/el-video-que-expone-a-jensen-huang-y-su-presunta-amante-la-espia-china-que-hizo-bajar-las-acciones-de-nvidia/",
+   "fecha": "2026-11-09T12:42:38Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Qué supermercados tienen descuentos para jubilados y cómo acceder a los reintegros",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/468649-jubilados-que-bancos-ofrecen-reintegros-de-hasta-40000-de-pesos-en-compras-de-noviembre",
+   "fecha": "2026-11-09T11:46:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Mapa de la minería: a qué países van el oro, la plata y el litio que produce la Argentina",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/09/mapa-de-la-mineria-a-que-paises-van-el-oro-la-plata-y-el-litio-que-produce-la-argentina/",
+   "fecha": "2026-11-09T11:29:21Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Casi 1.300.000 personas perdieron su cobertura de salud durante el Gobierno de Milei",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/468642-casi-1300000-personal-perdieron-su-cobertura-de-salud-durante-el-gobierno-de-milei",
+   "fecha": "2026-11-09T11:03:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Gonzalo Goñi, sobre un desarrollo argentino innovador: “Esto me va a decir cuánta plata te puedo prestar a partir de tu productividad”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/gonzalo-goni-sobre-un-desarrollo-argentino-innovador-esto-me-va-a-decir-cuanta-plata-te-puedo-nid09112026/",
+   "fecha": "2026-11-09T11:00:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Creación y destrucción de empresas y de empleo: el riesgo de que la economía argentina se termine pareciendo al Deportivo La Coruña",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/09/creacion-y-destruccion-de-empresas-y-de-empleo-el-riesgo-de-que-la-economia-argentina-se-termine-pareciendo-al-deportivo-la-coruna/",
+   "fecha": "2026-11-09T10:52:13Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Calendario PNC de la Anses: cuándo se cobran las Pensiones no Contributivas de noviembre 2026",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/calendario-pnc-de-la-anses-cuando-se-cobran-las-pensiones-no-contributivas-de-noviembre-2026-nid04112026/",
+   "fecha": "2026-11-09T10:13:49Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Calendario de jubilaciones de la Anses: cuándo cobro en noviembre 2026 con el bono oficial y el aumento confirmado",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/calendario-de-jubilaciones-de-la-anses-cuando-cobro-en-noviembre-2026-con-el-bono-oficial-y-el-nid28102026/",
+   "fecha": "2026-11-09T10:13:47Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Calendario de pagos de Anses: cuándo se cobra la PUAM de noviembre de 2026",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/calendario-de-pagos-de-anses-cuando-se-cobra-la-puam-de-noviembre-de-2026-nid02112026/",
+   "fecha": "2026-11-09T10:13:45Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "De cuánto es el bono de noviembre 2026 para jubilados y a quiénes les corresponde",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/de-cuanto-es-el-bono-de-noviembre-2026-para-jubilados-y-a-quienes-les-corresponde-nid29102026/",
+   "fecha": "2026-11-09T10:13:42Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "SUAF de Anses: el monto de las asignaciones familiares en noviembre de 2026",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/suaf-de-anses-el-monto-de-las-asignaciones-familiares-en-noviembre-de-2026-nid21102026/",
+   "fecha": "2026-11-09T10:13:40Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "A cuánto llega la PUAM en noviembre de 2026 con el aumento confirmado",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/a-cuanto-llega-la-puam-en-noviembre-de-2026-con-el-aumento-confirmado-nid20102026/",
+   "fecha": "2026-11-09T10:13:38Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "PNC de Anses: cuál es el monto de las Pensiones No Contributivas en noviembre de 2026",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/pnc-de-anses-cual-es-el-monto-de-las-pensiones-no-contributivas-en-noviembre-de-2026-nid19102026/",
+   "fecha": "2026-11-09T10:13:35Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Monto de la Asignación Universal por Hijo: de cuánto es la AUH en noviembre 2026, con el aumento oficial",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/monto-de-la-asignacion-universal-por-hijo-de-cuanto-es-la-auh-en-noviembre-2026-con-el-aumento-nid15102026/",
+   "fecha": "2026-11-09T10:13:34Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Jubilaciones de Anses: cuánto cobro en noviembre 2026, con el bono oficial y el aumento confirmado",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/jubilaciones-de-anses-cuanto-cobro-en-noviembre-2026-con-el-bono-oficial-y-el-aumento-confirmado-nid14102026/",
+   "fecha": "2026-11-09T10:13:32Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Cuándo cobro Anses: el calendario completo de noviembre 2026",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/cuando-cobro-anses-el-calendario-completo-de-noviembre-2026-nid27102026/",
+   "fecha": "2026-11-09T10:13:29Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Nueva paritaria de octubre a diciembre: cuánto cobran los empleados de comercio con el aumento confirmado",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/nueva-paritaria-de-octubre-a-diciembre-cuanto-cobran-los-empleados-de-comercio-con-el-aumento-nid28102026/",
+   "fecha": "2026-11-09T10:13:27Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Servicio doméstico en noviembre 2026: cuánto cobran, quiénes reciben el aumento y cómo se incorpora el bono",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/servicio-domestico-en-noviembre-de-2026-cuanto-cobran-las-empleadas-quienes-reciben-el-aumento-y-nid22102026/",
+   "fecha": "2026-11-09T10:13:26Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Cuándo se cobra el aguinaldo de diciembre 2026 en la Argentina: fecha de pago y a quiénes les corresponde",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/cuando-se-cobra-el-aguinaldo-de-diciembre-2026-en-la-argentina-fecha-de-pago-y-a-quienes-les-nid02112026/",
+   "fecha": "2026-11-09T10:13:18Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Morgan Stanley enciende luz amarilla para los bonos argentinos tras derrota de Trump",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/468512-morgan-stanley-lanza-advierte-por-bonos-argentinos-tras-derrota-de-trump",
+   "fecha": "2026-11-09T10:08:00Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Papelera del Sur cerró su fábrica en Tornquist y deja 160 trabajadores en la calle",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/468639-cerro-papelera-del-sur-y-dejo-160-trabajadores-en-la-calle",
+   "fecha": "2026-11-09T10:07:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Calendario semanal de Anses: qué pasa con los pagos de jubilaciones y AUH durante los feriados por la visita del papa León XIV a la Argentina",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/calendario-semanal-de-anses-que-pasa-con-los-pagos-de-jubilaciones-y-auh-durante-los-feriados-por-la-nid08112026/",
+   "fecha": "2026-11-09T10:06:56Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Suba del dólar achicó ganancia del carry trade y la City avisa qué pasará con el negocio",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/468641-que-pasara-con-la-maniobra-del-dolar-el-ultimo-bimestre-del-ano",
+   "fecha": "2026-11-09T10:00:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "ANSES: cuándo cobro en noviembre 2026 si mi DNI termina en 6",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/09/anses-cuando-cobro-en-noviembre-2026-si-mi-dni-termina-en-6/",
+   "fecha": "2026-11-09T09:35:32Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Sorpresa en una feria gigantesca: la IA, los robots y su impacto no son un cuento chino",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/sorpresa-en-una-feria-gigantesca-la-ia-los-robots-y-su-impacto-no-son-un-cuento-chino-nid09112026/",
+   "fecha": "2026-11-09T09:30:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Por qué la suba del riesgo país no movió al dólar: claves de la pelea principal del Gobierno con el mercado",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/09/por-que-la-suba-del-riesgo-pais-no-movio-al-dolar-claves-de-la-pelea-principal-del-gobierno-con-el-mercado/",
+   "fecha": "2026-11-09T06:13:22Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Los dólares del RIGI: cuánto tardarán en concretarse los USD 76.000 millones de las inversiones aprobadas",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/09/los-dolares-del-rigi-cuanto-tardaran-en-concretarse-los-usd-76000-millones-de-las-inversiones-aprobadas/",
+   "fecha": "2026-11-09T06:13:15Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "El Gobierno mantiene la sintonía fina con el dólar, en medio de la volatilidad financiera",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/09/el-gobierno-mantiene-la-sintonia-fina-con-el-dolar-en-medio-de-la-volatilidad-financiera/",
+   "fecha": "2026-11-09T06:12:59Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Las recientes elecciones en EEUU reavivaron el interés por la construcción de data centers en la Patagonia",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/09/las-recientes-elecciones-en-eeuu-reavivaron-el-interes-por-la-construccion-de-data-centers-en-la-patagonia/",
+   "fecha": "2026-11-09T06:12:48Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "El análisis de las consultoras locales sobre las consecuencias para la Argentina de la derrota electoral de Donald Trump",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/09/el-analisis-de-las-consultoras-locales-sobre-las-consecuencias-para-la-argentina-de-la-derrota-electoral-de-donald-trump/",
+   "fecha": "2026-11-09T06:11:15Z",
+   "tema": "otros"
+  },
+  {
    "titulo": "Los empresarios compartieron la visión del papa León XIV: \"No hay empresa próspera en una sociedad que fracasa\"",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/09/los-empresarios-compartieron-la-vision-del-papa-leon-xiv-no-hay-empresa-prospera-en-una-sociedad-que-fracasa/",
@@ -67,18 +459,11 @@
    "tema": "empresas"
   },
   {
-   "titulo": "Súper Niño: pronostican más de 40 grados y tormentas intensas en una región",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/super-nino-pronostican-mas-de-40-grados-y-tormentas-intensas-en-una-region-nid07112026/",
-   "fecha": "2026-11-09T01:59:50Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Los empresarios del Grupo de los Seis propondrán una mesa de diálogo nacional tras la visita del Papa",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/los-empresarios-del-grupo-de-los-seis-propondran-una-mesa-de-dialogo-nacional-tras-la-visita-del-nid08112026/",
-   "fecha": "2026-11-09T00:36:39Z",
-   "tema": "otros"
+   "titulo": "Luego que la ola azul tapara a Donald Trump, Wall Street retoma su programación habitual",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/luego-que-la-ola-azul-tapara-donald-trump-wall-street-retoma-su-programacion-habitual-n6343007",
+   "fecha": "2026-11-09T03:00:00Z",
+   "tema": "mercados"
   },
   {
    "titulo": "Contra viento y marea: en los últimos 12 meses la base monetaria cayó más del 13% y Milei ratificó que no piensa aflojarla",
@@ -102,38 +487,10 @@
    "tema": "otros"
   },
   {
-   "titulo": "“Castigo”: CRA no descarta una acción judicial en medio de la polémica abierta con la plataforma Visec por una exigencia de la Unión Europea",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/castigo-cra-no-descarta-una-accion-judicial-en-medio-de-la-polemica-abierta-con-la-plataforma-visec-nid08112026/",
-   "fecha": "2026-11-08T20:57:39Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Sebastián Castillo, CEO de Abuelo Julio, que exporta carne: “Potenciamos el negocio familiar de más de cuatro generaciones”",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/sebastian-castillo-ceo-de-abuelo-julio-que-exporta-carne-potenciamos-el-negocio-familiar-de-mas-de-nid08112026/",
-   "fecha": "2026-11-08T20:48:29Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Argentina LNG: mañana se define la licitación de caños más grande de la historia energética del país",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/08/argentina-lng-manana-se-define-la-licitacion-de-canos-mas-grande-de-la-historia-energetica-del-pais/",
    "fecha": "2026-11-08T20:23:01Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "YPF alista la licitación de tubos para el gasoducto más grande de América del Sur y Techint va por la revancha",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/ypf-alista-la-licitacion-de-tubos-para-el-gasoducto-mas-grande-de-america-del-sur-y-techint-va-por-nid08112026/",
-   "fecha": "2026-11-08T20:07:30Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Ya está disponible: una plataforma pública permite hacer un mapeo del campo",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/lanzamiento-una-plataforma-publica-permitira-hacer-un-mapeo-del-campo-nid08112026/",
-   "fecha": "2026-11-08T19:32:14Z",
    "tema": "otros"
   },
   {
@@ -151,25 +508,11 @@
    "tema": "politica"
   },
   {
-   "titulo": "Calendario semanal de Anses: qué pasa con los pagos de jubilaciones y AUH durante los feriados por la visita del papa León XIV a la Argentina",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/calendario-semanal-de-anses-que-pasa-con-los-pagos-de-jubilaciones-y-auh-durante-los-feriados-por-la-nid08112026/",
-   "fecha": "2026-11-08T18:45:30Z",
-   "tema": "actividad"
-  },
-  {
    "titulo": "En qué provincias y sectores la industria del juicio golpea más fuerte: las causas y las consecuencias del ranking de conflictividad",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/08/en-que-provincias-y-sectores-la-industria-del-juicio-golpea-mas-fuerte-las-causas-y-las-consecuencias-del-ranking-de-conflictividad/",
    "fecha": "2026-11-08T18:18:00Z",
    "tema": "actividad"
-  },
-  {
-   "titulo": "León XIV: quién es Ramona Casas, elegida para hacer quesillos para el papa",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/leon-xiv-quien-es-ramona-casas-elegida-para-hacer-quesillos-para-el-papa-nid08112026/",
-   "fecha": "2026-11-08T18:12:14Z",
-   "tema": "otros"
   },
   {
    "titulo": "Clima de Negocios: en medio del ruido financiero, los empresarios locales siguen de compras y miran atentos una norma del Gobierno",
@@ -228,137 +571,11 @@
    "tema": "actividad"
   },
   {
-   "titulo": "Con el riesgo país en alza, el Gobierno identificó tres amenazas globales: qué factores preocupan al equipo económico",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/08/con-el-riesgo-pais-en-alza-el-gobierno-identifico-tres-amenazas-globales-que-factores-preocupan-al-equipo-economico/",
-   "fecha": "2026-11-08T13:46:45Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Cuándo se cobra el aguinaldo de diciembre 2026 en la Argentina: fecha de pago y a quiénes les corresponde",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/cuando-se-cobra-el-aguinaldo-de-diciembre-2026-en-la-argentina-fecha-de-pago-y-a-quienes-les-nid02112026/",
-   "fecha": "2026-11-08T12:58:55Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Calendario PNC de la Anses: cuándo se cobran las Pensiones no Contributivas de noviembre 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/calendario-pnc-de-la-anses-cuando-se-cobran-las-pensiones-no-contributivas-de-noviembre-2026-nid04112026/",
-   "fecha": "2026-11-08T12:56:38Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Calendario de jubilaciones de la Anses: cuándo cobro en noviembre 2026 con el bono oficial y el aumento confirmado",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/calendario-de-jubilaciones-de-la-anses-cuando-cobro-en-noviembre-2026-con-el-bono-oficial-y-el-nid28102026/",
-   "fecha": "2026-11-08T12:56:36Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Calendario de pagos de Anses: cuándo se cobra la PUAM de noviembre de 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/calendario-de-pagos-de-anses-cuando-se-cobra-la-puam-de-noviembre-de-2026-nid02112026/",
-   "fecha": "2026-11-08T12:56:33Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Calendario AUH de Anses: cuándo se cobra la Asignación Universal por Hijo en noviembre 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/calendario-auh-de-anses-cuando-se-cobra-la-asignacion-universal-por-hijo-en-noviembre-2026-nid29102026/",
-   "fecha": "2026-11-08T12:56:29Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "De cuánto es el bono de noviembre 2026 para jubilados y a quiénes les corresponde",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/de-cuanto-es-el-bono-de-noviembre-2026-para-jubilados-y-a-quienes-les-corresponde-nid29102026/",
-   "fecha": "2026-11-08T12:56:27Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "SUAF de Anses: el monto de las asignaciones familiares en noviembre de 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/suaf-de-anses-el-monto-de-las-asignaciones-familiares-en-noviembre-de-2026-nid21102026/",
-   "fecha": "2026-11-08T12:56:24Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "PNC de Anses: cuál es el monto de las Pensiones No Contributivas en noviembre de 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/pnc-de-anses-cual-es-el-monto-de-las-pensiones-no-contributivas-en-noviembre-de-2026-nid19102026/",
-   "fecha": "2026-11-08T12:56:20Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "A cuánto llega la PUAM en noviembre de 2026 con el aumento confirmado",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/a-cuanto-llega-la-puam-en-noviembre-de-2026-con-el-aumento-confirmado-nid20102026/",
-   "fecha": "2026-11-08T12:56:15Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Monto de la Asignación Universal por Hijo: de cuánto es la AUH en noviembre 2026, con el aumento oficial",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/monto-de-la-asignacion-universal-por-hijo-de-cuanto-es-la-auh-en-noviembre-2026-con-el-aumento-nid15102026/",
-   "fecha": "2026-11-08T12:56:08Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Jubilaciones de Anses: cuánto cobro en noviembre 2026, con el bono oficial y el aumento confirmado",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/jubilaciones-de-anses-cuanto-cobro-en-noviembre-2026-con-el-bono-oficial-y-el-aumento-confirmado-nid14102026/",
-   "fecha": "2026-11-08T12:56:06Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Cuándo cobro Anses: el calendario completo de noviembre 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/cuando-cobro-anses-el-calendario-completo-de-noviembre-2026-nid27102026/",
-   "fecha": "2026-11-08T12:56:04Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Nueva paritaria de octubre a diciembre: cuánto cobran los empleados de comercio con el aumento confirmado",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/nueva-paritaria-de-octubre-a-diciembre-cuanto-cobran-los-empleados-de-comercio-con-el-aumento-nid28102026/",
-   "fecha": "2026-11-08T12:56:00Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Servicio doméstico en noviembre 2026: cuánto cobran, quiénes reciben el aumento y cómo se incorpora el bono",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/servicio-domestico-en-noviembre-de-2026-cuanto-cobran-las-empleadas-quienes-reciben-el-aumento-y-nid22102026/",
-   "fecha": "2026-11-08T12:55:58Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "A cuánto abre el dólar este lunes 9 de noviembre",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/dolar/cual-sera-la-cotizacion-del-dolar-este-lunes-9-de-noviembre-nid07112026/",
-   "fecha": "2026-11-08T12:49:29Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "Cuánto cuesta el libro de León XIV, \"La fuerza del Evangelio\" y dónde comprarlo",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/cuanto-cuesta-el-libro-leon-xiv-la-fuerza-del-evangelio-y-donde-comprarlo-n6325182",
-   "fecha": "2026-11-08T12:49:00Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Los pronósticos para el dólar y el riesgo en la semana posterior a la visita del Papa",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/468623-que-se-espera-para-el-dolar-y-el-riesgo-despues-de-la-visita-del-papa",
    "fecha": "2026-11-08T11:45:00Z",
    "tema": "dolar"
-  },
-  {
-   "titulo": "Radiografía de uno de los números que más le preocupan al papa León XIV",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/radiografia-de-uno-de-los-numeros-que-mas-le-preocupan-al-papa-leon-xiv-nid08112026/",
-   "fecha": "2026-11-08T11:20:52Z",
-   "tema": "otros"
   },
   {
    "titulo": "La vida de Horacio Marín, del sueño de ganar Wimbledon a la transformación de YPF",
@@ -382,55 +599,6 @@
    "tema": "mercados"
   },
   {
-   "titulo": "Trabajo, inteligencia artificial y justicia social, según la mirada de León XIV",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/mundo-laboral-inteligencia-artificial-y-justicia-social-segun-la-mirada-de-leon-xiv-nid08112026/",
-   "fecha": "2026-11-08T10:03:02Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El Gobierno busca encapsular la suba del riesgo país para evitar un impacto en el dólar y la actividad",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/08/el-gobierno-busca-encapsular-la-suba-del-riesgo-pais-para-evitar-un-impacto-en-el-dolar-y-la-actividad/",
-   "fecha": "2026-11-08T03:51:13Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "¿Habrá menos autos chinos?: todo lo que hay que saber del cupo de autos híbridos y eléctricos de 2027",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/08/habra-menos-autos-chinos-todo-lo-que-hay-que-saber-del-cupo-de-autos-hibridos-y-electricos-de-2027/",
-   "fecha": "2026-11-08T03:50:16Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Esteban Domecq: “Se necesita fortalecer la consistencia del programa para atravesar el año electoral”",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/08/esteban-domecq-se-necesita-fortalecer-la-consistencia-del-programa-para-atravesar-el-ano-electoral/",
-   "fecha": "2026-11-08T03:48:56Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Wait and see",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/opinion/2026/11/08/wait-and-see/",
-   "fecha": "2026-11-08T03:48:37Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Ajuste deflacionario con boom de dólares",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/opinion/2026/11/08/ajuste-deflacionario-con-boom-de-dolares/",
-   "fecha": "2026-11-08T03:48:19Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "La “factura invisible”: más del 30% de las parejas tiene roces por plata",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/opinion/2026/11/08/la-factura-invisible-mas-del-30-de-las-parejas-tiene-roces-por-plata/",
-   "fecha": "2026-11-08T03:48:02Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Argentina tendrá más adultos mayores que niños hacia 2040: cómo impactará en la economía y las jubilaciones",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/argentina-tendra-mas-adultos-mayores-que-ninos-2040-como-impactara-la-y-las-jubilaciones-n6341616",
@@ -445,27 +613,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Alerta en la industria de maquinaria agrícola: crecen las importaciones y los fabricantes locales acumulan deudas y cierres",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/07/alerta-en-la-industria-de-maquinaria-agricola-crecen-las-importaciones-y-los-fabricantes-locales-acumulan-deudas-y-cierres/",
-   "fecha": "2026-11-07T23:23:18Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Celebra Río Negro: comenzó la soldadura del gasoducto que conectará Vaca Muerta con el Golfo San Matías para exportar GNL",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/07/celebra-rio-negro-comenzo-la-soldadura-del-gasoducto-que-conectara-vaca-muerta-con-el-golfo-san-matias-para-exportar-gnl/",
-   "fecha": "2026-11-07T23:16:30Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Moody’s otorgó al Banco Ciudad la máxima calificación crediticia local",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/07/moodys-otorgo-al-banco-ciudad-la-maxima-calificacion-crediticia-local/",
-   "fecha": "2026-11-07T22:42:58Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Caputo y las elecciones 2027: \"La única persona que garantiza el orden económico es Milei\"",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/468617-caputo-y-las-elecciones-2027-la-unica-persona-que-garantiza-el-orden-economico-es-milei",
@@ -473,123 +620,11 @@
    "tema": "politica"
   },
   {
-   "titulo": "Quiénes pescan en el Mar Argentino: lanzan la primera plataforma sobre embarcaciones que operan en la Zona Económica Exclusiva",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/07/quienes-pescan-en-el-mar-argentino-lanzan-la-primera-plataforma-sobre-embarcaciones-que-operan-en-la-zona-economica-exclusiva/",
-   "fecha": "2026-11-07T21:15:07Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Sturzenegger contó por qué es el “plomero” del gobierno y habló sobre el nivel de riesgo país",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/07/sturzenegger-conto-las-regulaciones-paradas-en-la-justicia-y-explico-por-que-es-el-plomero-del-gobierno-la-macro-es-para-vagos-y-milei-habla-como-habla/",
-   "fecha": "2026-11-07T21:05:29Z",
-   "tema": "mercados"
-  },
-  {
    "titulo": "A partir de qué precio del dólar el carry trade deja de ser negocio para inversores",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/finanzas/468577-a-partir-de-que-precio-del-dolar-el-carry-trade-pasa-a-ser-mal-negocio",
    "fecha": "2026-11-07T20:15:00Z",
    "tema": "dolar"
-  },
-  {
-   "titulo": "Ranking: el riesgo país de la Argentina es el segundo más alto de América Latina, más que cuadruplica el promedio regional y multiplica por más de 7 el de Paraguay",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/07/ranking-el-riesgo-pais-de-la-argentina-es-el-segundo-mas-alto-de-america-latina-mas-que-cuadruplica-el-promedio-regional-y-multiplica-por-mas-de-7-el-de-paraguay/",
-   "fecha": "2026-11-07T20:00:27Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Mientras los plazos fijos pierden contra la inflación, las empresas consiguen crédito más barato que los consumidores",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/07/mientras-los-plazos-fijos-pierden-contra-la-inflacion-las-empresas-consiguen-credito-mas-barato-que-los-consumidores/",
-   "fecha": "2026-11-07T19:31:18Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Ni las ofertas alcanzan: el consumo sigue sin repuntar y los comercios anticipan un fin de año en rojo",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/07/ni-las-ofertas-alcanzan-el-consumo-masivo-sigue-sin-repuntar-y-los-comercios-anticipan-un-fin-de-ano-en-rojo/",
-   "fecha": "2026-11-07T19:09:45Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "La pulseada entre Caputo y los gobernadores que podría cambiar el mapa de impuestos provinciales",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/07/la-pulseada-entre-caputo-y-los-gobernadores-que-podria-cambiar-el-mapa-de-impuestos-provinciales/",
-   "fecha": "2026-11-07T18:13:13Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "“China-Shock.2”: productores de acero latinoamericanos debatirán cómo responder a la presión y competencia desleal del gigante asiático",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/07/china-shock2-productores-de-acero-latinoamericanos-debatiran-como-responder-a-la-presion-y-competencia-desleal-del-gigante-asiatico/",
-   "fecha": "2026-11-07T18:10:56Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "La visita del papa León XIV generará un impacto económico superior a los u$s88 millones en Buenos Aires",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/la-visita-del-papa-leon-xiv-generara-un-impacto-economico-superior-los-us88-millones-buenos-aires-n6342210",
-   "fecha": "2026-11-07T14:08:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El Gobierno modificó los créditos hipotecarios financiados con fondos de Anses",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/468605-el-gobierno-modifico-el-acceso-a-creditos-hipotecarios-con-fondos-de-anses",
-   "fecha": "2026-11-07T12:41:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Una salida al teatro y a cenar ya consume un salario mínimo completo",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/468603-una-familia-tipo-ya-gasta-un-salario-minimo-en-una-salida-al-teatro-y-a-cenar",
-   "fecha": "2026-11-07T11:26:00Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Plazo fijo: cuánto se gana al colocar $1.000.000 durante un mes",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/plazo-fijo-cuanto-se-gana-al-colocar-1000000-un-mes-n6341898",
-   "fecha": "2026-11-07T11:00:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Minería y energía: Grupo L busca crecer al ritmo de las inversiones en Argentina",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/468560-mineria-y-energia-grupo-l-busca-crecer-al-ritmo-de-las-inversiones-en-argentina",
-   "fecha": "2026-11-07T10:16:00Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Motosierra: Luis Caputo profundizó el ajuste y recortó casi 10% el gasto público en octubre",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/motosierra-luis-caputo-profundizo-el-ajuste-y-recorto-casi-10-el-gasto-publico-octubre-n6342474",
-   "fecha": "2026-11-07T10:00:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Zona Fría: quiénes podrán mantener los descuentos en las facturas de gas",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/468415-zona-fria-quienes-podran-mantener-los-descuentos-en-las-facturas-de-gas",
-   "fecha": "2026-11-07T09:54:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Advierten que el feriado XXL reducirá todavía más el dato de actividad de noviembre",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/468584-feriados-papa-hunden-economia-pbi-sorprende-funcionarios-analistas",
-   "fecha": "2026-11-07T09:40:00Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Que la volatilidad no nuble el negocio: bonos argentinos están a precios muy apetecibles",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/468564-bonos-argentinos-caen-precios-irresistibles-oportunidad-compra-noviembre-2026",
-   "fecha": "2026-11-07T09:25:00Z",
-   "tema": "inflacion"
   }
  ]
 }
