@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-09T00:14:56.901590Z",
+ "actualizado": "2026-11-09T05:35:15.246616Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 13
+   "n": 12
   },
   {
    "medio": "Infobae",
@@ -50,7 +50,7 @@
   {
    "medio": "iProfesional",
    "ok": true,
-   "n": 12
+   "n": 14
   },
   {
    "medio": "Perfil",
@@ -60,11 +60,46 @@
  ],
  "items": [
   {
+   "titulo": "Los empresarios compartieron la visión del papa León XIV: \"No hay empresa próspera en una sociedad que fracasa\"",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/09/los-empresarios-compartieron-la-vision-del-papa-leon-xiv-no-hay-empresa-prospera-en-una-sociedad-que-fracasa/",
+   "fecha": "2026-11-09T03:39:31Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Súper Niño: pronostican más de 40 grados y tormentas intensas en una región",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/super-nino-pronostican-mas-de-40-grados-y-tormentas-intensas-en-una-region-nid07112026/",
+   "fecha": "2026-11-09T01:59:50Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Los empresarios del Grupo de los Seis propondrán una mesa de diálogo nacional tras la visita del Papa",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/los-empresarios-del-grupo-de-los-seis-propondran-una-mesa-de-dialogo-nacional-tras-la-visita-del-nid08112026/",
+   "fecha": "2026-11-09T00:36:39Z",
+   "tema": "otros"
+  },
+  {
    "titulo": "Contra viento y marea: en los últimos 12 meses la base monetaria cayó más del 13% y Milei ratificó que no piensa aflojarla",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/09/contra-viento-y-marea-en-los-ultimos-12-meses-la-base-monetaria-cayo-mas-del-13-y-milei-ratifico-que-no-piensa-aflojarla/",
    "fecha": "2026-11-09T00:11:09Z",
    "tema": "politica"
+  },
+  {
+   "titulo": "Revolut ya le puso fecha al comienzo de sus operaciones como banco en Argentina",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/468637-revolut-ya-le-puso-fecha-al-comienzo-de-sus-operaciones-como-banco-en-argentina",
+   "fecha": "2026-11-08T23:45:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Volvió a aumentar la pobreza en la Argentina y las proyecciones a futuro preocupan",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/actualidad/468635-volvio-a-aumentar-la-pobreza-en-la-argentina-y-las-proyecciones-a-futuro-preocupan",
+   "fecha": "2026-11-08T23:16:00Z",
+   "tema": "otros"
   },
   {
    "titulo": "“Castigo”: CRA no descarta una acción judicial en medio de la polémica abierta con la plataforma Visec por una exigencia de la Unión Europea",
@@ -93,13 +128,6 @@
    "url": "https://www.lanacion.com.ar/economia/ypf-alista-la-licitacion-de-tubos-para-el-gasoducto-mas-grande-de-america-del-sur-y-techint-va-por-nid08112026/",
    "fecha": "2026-11-08T20:07:30Z",
    "tema": "empresas"
-  },
-  {
-   "titulo": "Súper Niño: pronostican más de 40 grados y tormentas intensas en una región",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/super-nino-pronostican-mas-de-40-grados-y-tormentas-intensas-en-una-region-nid07112026/",
-   "fecha": "2026-11-08T19:33:29Z",
-   "tema": "otros"
   },
   {
    "titulo": "Ya está disponible: una plataforma pública permite hacer un mapeo del campo",
@@ -361,13 +389,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Dólar hoy y dólar blue hoy: a cuánto cotiza este domingo 8 de noviembre",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/dolar/dolar-hoy-y-dolar-blue-hoy-a-cuanto-cotiza-este-domingo-8-de-noviembre-nid08112026/",
-   "fecha": "2026-11-08T10:02:00Z",
-   "tema": "dolar"
-  },
-  {
    "titulo": "El Gobierno busca encapsular la suba del riesgo país para evitar un impacto en el dólar y la actividad",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/08/el-gobierno-busca-encapsular-la-suba-del-riesgo-pais-para-evitar-un-impacto-en-el-dolar-y-la-actividad/",
@@ -508,13 +529,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "La SEC confirmó que recibió la denuncia de Dalbón por las operaciones con oro del BCRA",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/07/la-sec-confirmo-que-recibio-la-denuncia-de-dalbon-por-las-operaciones-con-oro-del-bcra/",
-   "fecha": "2026-11-07T15:45:03Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "La visita del papa León XIV generará un impacto económico superior a los u$s88 millones en Buenos Aires",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/la-visita-del-papa-leon-xiv-generara-un-impacto-economico-superior-los-us88-millones-buenos-aires-n6342210",
@@ -576,13 +590,6 @@
    "url": "https://www.iprofesional.com/finanzas/468564-bonos-argentinos-caen-precios-irresistibles-oportunidad-compra-noviembre-2026",
    "fecha": "2026-11-07T09:25:00Z",
    "tema": "inflacion"
-  },
-  {
-   "titulo": "Motos vs autos: Argentina ya tiene una relación de patentamientos propia de países de bajos ingresos",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/motos-vs-autos-argentina-ya-tiene-una-relacion-patentamientos-propia-paises-bajos-ingresos-n6342655",
-   "fecha": "2026-11-07T00:25:00Z",
-   "tema": "otros"
   }
  ]
 }
