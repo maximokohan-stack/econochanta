@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-08T20:01:38.838671Z",
+ "actualizado": "2026-11-09T00:14:56.901590Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 15
+   "n": 13
   },
   {
    "medio": "Infobae",
@@ -50,7 +50,7 @@
   {
    "medio": "iProfesional",
    "ok": true,
-   "n": 18
+   "n": 12
   },
   {
    "medio": "Perfil",
@@ -60,11 +60,39 @@
  ],
  "items": [
   {
+   "titulo": "Contra viento y marea: en los últimos 12 meses la base monetaria cayó más del 13% y Milei ratificó que no piensa aflojarla",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/09/contra-viento-y-marea-en-los-ultimos-12-meses-la-base-monetaria-cayo-mas-del-13-y-milei-ratifico-que-no-piensa-aflojarla/",
+   "fecha": "2026-11-09T00:11:09Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "“Castigo”: CRA no descarta una acción judicial en medio de la polémica abierta con la plataforma Visec por una exigencia de la Unión Europea",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/castigo-cra-no-descarta-una-accion-judicial-en-medio-de-la-polemica-abierta-con-la-plataforma-visec-nid08112026/",
+   "fecha": "2026-11-08T20:57:39Z",
+   "tema": "mercados"
+  },
+  {
    "titulo": "Sebastián Castillo, CEO de Abuelo Julio, que exporta carne: “Potenciamos el negocio familiar de más de cuatro generaciones”",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/campo/sebastian-castillo-ceo-de-abuelo-julio-que-exporta-carne-potenciamos-el-negocio-familiar-de-mas-de-nid08112026/",
-   "fecha": "2026-11-08T19:50:38Z",
+   "fecha": "2026-11-08T20:48:29Z",
    "tema": "otros"
+  },
+  {
+   "titulo": "Argentina LNG: mañana se define la licitación de caños más grande de la historia energética del país",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/08/argentina-lng-manana-se-define-la-licitacion-de-canos-mas-grande-de-la-historia-energetica-del-pais/",
+   "fecha": "2026-11-08T20:23:01Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "YPF alista la licitación de tubos para el gasoducto más grande de América del Sur y Techint va por la revancha",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/ypf-alista-la-licitacion-de-tubos-para-el-gasoducto-mas-grande-de-america-del-sur-y-techint-va-por-nid08112026/",
+   "fecha": "2026-11-08T20:07:30Z",
+   "tema": "empresas"
   },
   {
    "titulo": "Súper Niño: pronostican más de 40 grados y tormentas intensas en una región",
@@ -340,13 +368,6 @@
    "tema": "dolar"
   },
   {
-   "titulo": "¿Está en riesgo el maíz en el norte argentino? El comportamiento de la soja puede tener una respuesta",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/agricultura/esta-en-riesgo-el-maiz-en-el-norte-argentino-el-comportamiento-de-la-soja-puede-tener-una-respuesta-nid08112026/",
-   "fecha": "2026-11-08T10:00:00Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "El Gobierno busca encapsular la suba del riesgo país para evitar un impacto en el dólar y la actividad",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/08/el-gobierno-busca-encapsular-la-suba-del-riesgo-pais-para-evitar-un-impacto-en-el-dolar-y-la-actividad/",
@@ -386,13 +407,6 @@
    "medio": "Infobae",
    "url": "https://www.infobae.com/opinion/2026/11/08/la-factura-invisible-mas-del-30-de-las-parejas-tiene-roces-por-plata/",
    "fecha": "2026-11-08T03:48:02Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Marc Fleurbaey: “Además de los ingresos, el bienestar debe contemplar la salud y las conexiones sociales”",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/marc-fleurbaey-ademas-de-los-ingresos-el-bienestar-debe-contemplar-la-salud-y-las-conexiones-nid08112026/",
-   "fecha": "2026-11-08T03:39:00Z",
    "tema": "otros"
   },
   {
@@ -501,13 +515,6 @@
    "tema": "politica"
   },
   {
-   "titulo": "El riesgo país pasó los 900 puntos y las acciones argentinas se hundieron ante un incierto contexto externo",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/07/el-riesgo-pais-paso-los-900-puntos-y-las-acciones-argentinas-se-hundieron-ante-un-incierto-contexto-externo/",
-   "fecha": "2026-11-07T15:20:18Z",
-   "tema": "mercados"
-  },
-  {
    "titulo": "La visita del papa León XIV generará un impacto económico superior a los u$s88 millones en Buenos Aires",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/la-visita-del-papa-leon-xiv-generara-un-impacto-economico-superior-los-us88-millones-buenos-aires-n6342210",
@@ -571,74 +578,11 @@
    "tema": "inflacion"
   },
   {
-   "titulo": "Quién es quién y cuáles son las claves del escándalo del Ueno Bank que terminó con la detención de Peña en Paraguay",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/07/quien-es-quien-y-cuales-son-las-claves-del-escandalo-del-ueno-bank-que-termino-con-la-detencion-de-pena-en-paraguay/",
-   "fecha": "2026-11-07T05:29:26Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Motos vs autos: Argentina ya tiene una relación de patentamientos propia de países de bajos ingresos",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/motos-vs-autos-argentina-ya-tiene-una-relacion-patentamientos-propia-paises-bajos-ingresos-n6342655",
    "fecha": "2026-11-07T00:25:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "El banco VALO compró la sociedad de bolsa PPI y cambia el mapa financiero en la City",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/468597-el-banco-valo-compro-la-sociedad-de-bolsa-ppi-y-cambia-el-mapa-financiero-en-la-city",
-   "fecha": "2026-11-06T23:50:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Puente tenía dólares en Ueno Bank y el vicepresidente de la firma habló tras la crisis",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/468598-broker-argentino-tenia-dolares-depositados-en-ueno-bank-esperamos-que-se-acomode-pronto",
-   "fecha": "2026-11-06T23:24:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Minería y Vaca Muerta desatan dura carrera por líderes gerenciales",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/energia/468585-mineria-y-vaca-muerta-desatan-dura-carrera-por-lideres-gerenciales",
-   "fecha": "2026-11-06T22:20:00Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "El Niño posterga la temporada de exploración minera en San Juan",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/energia/468588-el-nino-posterga-la-temporada-de-exploracion-minera-en-san-juan",
-   "fecha": "2026-11-06T22:01:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "La pobreza alcanzó el 45,4% con ponderadores actualizados y afectó a 21,1 millones de argentinos",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/la-pobreza-alcanzo-el-454-ponderadores-actualizados-y-afecto-211-millones-argentinos-n6342519",
-   "fecha": "2026-11-06T21:52:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Fábrica de asientos deja sus operaciones en Córdoba en manos de Renault",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/autos/468578-multinacional-magna-deja-sus-operaciones-en-cordoba-en-manos-de-renault",
-   "fecha": "2026-11-06T21:29:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Aumentos de nafta en Buenos Aires: qué dice el proyecto de ley que impulsa el oficialismo",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/468581-aumentos-de-nafta-en-buenos-aires-que-dice-el-proyecto-de-ley-que-impulsa-el-oficialismo",
-   "fecha": "2026-11-06T21:22:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "La inflación en los países de la OCDE saltó al 4,5% en septiembre por repunte de la energía",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/la-inflacion-los-paises-la-ocde-salto-al-45-septiembre-repunte-la-energia-n6342478",
-   "fecha": "2026-11-06T20:04:00Z",
-   "tema": "inflacion"
   }
  ]
 }
