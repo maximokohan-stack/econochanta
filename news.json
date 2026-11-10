@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-10T02:27:21.823681Z",
+ "actualizado": "2026-11-10T06:45:04.565486Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 11
+   "n": 9
   },
   {
    "medio": "Infobae",
@@ -59,6 +59,62 @@
   }
  ],
  "items": [
+  {
+   "titulo": "Un reconocido grupo de siembra recortó 30.000 hectáreas y acelera en otro millonario negocio",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/un-reconocido-grupo-de-siembra-recorto-30000-hectareas-y-acelera-en-otro-millonario-negocio-nid10112026/",
+   "fecha": "2026-11-10T06:00:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El dato clave de Estados Unidos que puede extender el rebote de los bonos argentinos y la baja del riesgo país",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/10/el-dato-clave-de-estados-unidos-que-puede-extender-el-rebote-de-los-bonos-argentinos-y-la-baja-del-riesgo-pais/",
+   "fecha": "2026-11-10T05:26:36Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Inflación: la buena señal de los primeros días de noviembre y el dato que el Indec dará a conocer esta semana",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/10/inflacion-la-buena-senal-de-los-primeros-dias-de-noviembre-y-el-dato-que-el-indec-dara-a-conocer-esta-semana/",
+   "fecha": "2026-11-10T05:26:27Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Por la suba del crudo, las petroleras argentinas aumentaron sus ingresos en más de USD 5.100 millones en ocho meses",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/10/por-la-suba-del-crudo-las-petroleras-argentinas-aumentaron-sus-ingresos-en-mas-de-usd-5100-millones-en-ocho-meses/",
+   "fecha": "2026-11-10T05:26:19Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Por qué la suba del riesgo país afecta la compra de reservas del Banco Central y la cobertura cambiaria",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/10/por-que-la-suba-del-riesgo-pais-afecta-la-compra-de-reservas-del-banco-central-y-la-cobertura-cambiaria/",
+   "fecha": "2026-11-10T05:26:13Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Trigo argentino al rescate: una menor cosecha en Brasil abre grandes puertas para la exportación nacional",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/10/trigo-argentino-al-rescate-una-menor-cosecha-en-brasil-abre-grandes-puertas-para-la-exportacion-nacional/",
+   "fecha": "2026-11-10T05:26:07Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El riesgo país cayó con fuerza en la Argentina y se espera una baja de tasas a nivel global",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/10/el-riesgo-pais-cayo-con-fuerza-en-la-argentina-y-se-espera-una-baja-de-tasas-a-nivel-global/",
+   "fecha": "2026-11-10T05:25:57Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "El índice de riesgo país y su influencia en la vida de la gente",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/11/10/el-indice-de-riesgo-pais-y-su-influencia-en-la-vida-de-la-gente/",
+   "fecha": "2026-11-10T05:25:50Z",
+   "tema": "mercados"
+  },
   {
    "titulo": "Radiografía: el avance de la labranza, bajo un análisis crítico de cinco expertos desde Bahía Blanca a Chaco",
    "medio": "La Nación",
@@ -424,13 +480,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "De cuánto es el bono de noviembre 2026 para jubilados y a quiénes les corresponde",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/de-cuanto-es-el-bono-de-noviembre-2026-para-jubilados-y-a-quienes-les-corresponde-nid29102026/",
-   "fecha": "2026-11-09T10:13:42Z",
-   "tema": "mercados"
-  },
-  {
    "titulo": "Morgan Stanley enciende luz amarilla para los bonos argentinos tras derrota de Trump",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/finanzas/468512-morgan-stanley-lanza-advierte-por-bonos-argentinos-tras-derrota-de-trump",
@@ -473,46 +522,11 @@
    "tema": "empresas"
   },
   {
-   "titulo": "El Gobierno mantiene la sintonía fina con el dólar, en medio de la volatilidad financiera",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/09/el-gobierno-mantiene-la-sintonia-fina-con-el-dolar-en-medio-de-la-volatilidad-financiera/",
-   "fecha": "2026-11-09T06:12:59Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "Las recientes elecciones en EEUU reavivaron el interés por la construcción de data centers en la Patagonia",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/09/las-recientes-elecciones-en-eeuu-reavivaron-el-interes-por-la-construccion-de-data-centers-en-la-patagonia/",
-   "fecha": "2026-11-09T06:12:48Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "El análisis de las consultoras locales sobre las consecuencias para la Argentina de la derrota electoral de Donald Trump",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/09/el-analisis-de-las-consultoras-locales-sobre-las-consecuencias-para-la-argentina-de-la-derrota-electoral-de-donald-trump/",
-   "fecha": "2026-11-09T06:11:15Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Los empresarios compartieron la visión del papa León XIV: \"No hay empresa próspera en una sociedad que fracasa\"",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/09/los-empresarios-compartieron-la-vision-del-papa-leon-xiv-no-hay-empresa-prospera-en-una-sociedad-que-fracasa/",
-   "fecha": "2026-11-09T03:39:31Z",
-   "tema": "empresas"
-  },
-  {
    "titulo": "Luego que la ola azul tapara a Donald Trump, Wall Street retoma su programación habitual",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/luego-que-la-ola-azul-tapara-donald-trump-wall-street-retoma-su-programacion-habitual-n6343007",
    "fecha": "2026-11-09T03:00:00Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "Contra viento y marea: en los últimos 12 meses la base monetaria cayó más del 13% y Milei ratificó que no piensa aflojarla",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/09/contra-viento-y-marea-en-los-ultimos-12-meses-la-base-monetaria-cayo-mas-del-13-y-milei-ratifico-que-no-piensa-aflojarla/",
-   "fecha": "2026-11-09T00:11:09Z",
-   "tema": "politica"
   },
   {
    "titulo": "Revolut ya le puso fecha al comienzo de sus operaciones como banco en Argentina",
@@ -529,13 +543,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Argentina LNG: mañana se define la licitación de caños más grande de la historia energética del país",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/08/argentina-lng-manana-se-define-la-licitacion-de-canos-mas-grande-de-la-historia-energetica-del-pais/",
-   "fecha": "2026-11-08T20:23:01Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Estiman que la pobreza subió en el tercer trimestre y ya afecta a 16,2 millones de argentinos",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/estiman-que-la-pobreza-subio-el-tercer-trimestre-y-ya-afecta-162-millones-argentinos-n6342928",
@@ -548,13 +555,6 @@
    "url": "https://www.ambito.com/economia/tras-la-derrota-trump-eeuu-ratifico-su-apoyo-milei-pero-crecen-las-dudas-la-asistencia-financiera-2027-n6342951",
    "fecha": "2026-11-08T18:54:00Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "En qué provincias y sectores la industria del juicio golpea más fuerte: las causas y las consecuencias del ranking de conflictividad",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/08/en-que-provincias-y-sectores-la-industria-del-juicio-golpea-mas-fuerte-las-causas-y-las-consecuencias-del-ranking-de-conflictividad/",
-   "fecha": "2026-11-08T18:18:00Z",
-   "tema": "actividad"
   },
   {
    "titulo": "La visita del papa León XIV podría generar u$s270 millones y dispara el turismo religioso: el impacto en hoteles, comercios y gastronomía",
@@ -611,20 +611,6 @@
    "url": "https://www.iprofesional.com/economia/468437-la-bolsa-tendra-un-cronograma-especial-por-la-visita-del-papa-y-estos-dias-no-operara",
    "fecha": "2026-11-08T10:43:00Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "Argentina tendrá más adultos mayores que niños hacia 2040: cómo impactará en la economía y las jubilaciones",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/argentina-tendra-mas-adultos-mayores-que-ninos-2040-como-impactara-la-y-las-jubilaciones-n6341616",
-   "fecha": "2026-11-08T03:00:00Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Martín Polo: “Lo peor que le podría pasar a la Argentina en 2027 es acudir a la ayuda de EEUU”",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/martin-polo-lo-peor-que-le-podria-pasar-la-argentina-2027-es-acudir-la-ayuda-eeuu-n6342805",
-   "fecha": "2026-11-08T03:00:00Z",
-   "tema": "otros"
   }
  ]
 }
