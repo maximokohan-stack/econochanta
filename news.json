@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-10T16:39:10.423690Z",
+ "actualizado": "2026-11-10T22:00:18.482409Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -60,17 +60,241 @@
  ],
  "items": [
   {
-   "titulo": "¿Qué vamos a redistribuir si este país nunca generó riquezas?“: la reflexión de un empresario tras el mensaje del Papa",
+   "titulo": "¿Pueden espiar los autos chinos? Las cámaras, los GPS y los sensores que generan preocupación",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/autos/468732-autos-electricos-chinos-por-que-eeuu-teme-que-puedan-espiar",
+   "fecha": "2026-11-10T21:54:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El futuro de la Trumponomics: ¿acuerdo o fracaso?",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/el-futuro-la-trumponomics-acuerdo-o-fracaso-n6343720",
+   "fecha": "2026-11-10T21:27:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Quiénes pueden acceder a los préstamos UVA con tasa 0% en el rubro artístico",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/468741-quienes-pueden-acceder-a-los-prestamos-uva-con-tasa-0-en-el-rubro-artistico",
+   "fecha": "2026-11-10T21:16:00Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Murió Eduardo Rafael “Teddy” García Mansilla, empresario y referente de la aviación y los medios",
    "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/10/que-vamos-a-redistribuir-si-el-pais-que-nunca-genero-riquezas-la-reflexion-de-un-empresario-tras-el-mensaje-del-papa/",
-   "fecha": "2026-11-10T16:33:19Z",
+   "url": "https://www.infobae.com/economia/2026/11/10/murio-eduardo-rafael-teddy-garcia-mansilla-empresario-y-referente-de-la-aviacion-y-los-medios/",
+   "fecha": "2026-11-10T21:15:32Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Perú tomó US$4500 millones del mercado global a 12 y 30 años a tasas de hasta 6,45% anual",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/peru-tomo-us4500-millones-del-mercado-global-a-12-y-30-anos-a-tasas-de-hasta-645-anual-nid10112026/",
+   "fecha": "2026-11-10T21:09:13Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Primer aporte nacional: durante 12 años evaluaron un riego usado en Israel y Estados Unidos y descubrieron importantes resultados",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/primer-aporte-nacional-durante-12-anos-evaluaron-un-riego-usado-en-israel-y-estados-unidos-y-nid10112026/",
+   "fecha": "2026-11-10T21:07:35Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "SpaceX presentó la antena Starlink Mini 2, con batería integrada, Wi-Fi 6 y mayor portabilidad",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/tecnologia/spacex-presento-la-antena-starlink-mini-2-con-bateria-integrada-wi-fi-6-y-mayor-portabilidad-nid10112026/",
+   "fecha": "2026-11-10T20:48:32Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "RIGI: advierten que dos tercios de las importaciones pueden ser abastecidas por la industria local",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/rigi-advierten-que-dos-tercios-las-importaciones-pueden-ser-abastecidas-la-industria-local-n6343676",
+   "fecha": "2026-11-10T20:47:00Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Crece la expectativa por el debut bursátil de Anthropic: los tres escenarios que proyectan los analistas",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/crece-la-expectativa-por-el-debut-bursatil-de-anthropic-los-tres-escenarios-que-proyectan-los-nid10112026/",
+   "fecha": "2026-11-10T20:25:39Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La multinacional Bunge y el grupo argentino GDM crearon una empresa para desarrollar cultivos destinados a biocombustibles",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/la-multinacional-bunge-y-el-grupo-argentino-gdm-crearon-una-empresa-para-desarrollar-cultivos-nid10112026/",
+   "fecha": "2026-11-10T20:16:13Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Un reconocido grupo de siembra recortó 30.000 hectáreas y acelera en otro millonario negocio",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/un-reconocido-grupo-de-siembra-recorto-30000-hectareas-y-acelera-en-otro-millonario-negocio-nid10112026/",
+   "fecha": "2026-11-10T20:15:24Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "León XIV: el contundente elogio del Papa a la innovación agrícola argentina y el trabajo en la tierra",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/leon-xiv-el-contundente-elogio-del-papa-a-la-innovacion-agricola-argentina-y-el-trabajo-en-la-tierra-nid10112026/",
+   "fecha": "2026-11-10T20:14:28Z",
    "tema": "otros"
   },
   {
    "titulo": "Los bonos argentinos operan con una leve suba y el riesgo país vuelve a ceder",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/10/los-bonos-argentinos-operan-con-una-leve-suba-y-el-riesgo-pais-vuelve-a-ceder/",
-   "fecha": "2026-11-10T16:19:52Z",
+   "fecha": "2026-11-10T20:05:46Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Los bonos argentinos reflejan un temor creciente a un 2027 turbulento y dudas sobre la continuidad política",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/los-bonos-argentinos-reflejan-un-temor-creciente-a-un-2027-turbulento-y-dudas-sobre-la-continuidad-nid10112026/",
+   "fecha": "2026-11-10T20:00:36Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Plazo fijo, dólar o UVA: cuál puede dar más rendimiento en los próximos seis meses y qué riesgos hay",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/468730-que-inversion-conviene-antes-de-las-elecciones-2027-dolar-plazo-fijo-o-uva",
+   "fecha": "2026-11-10T19:52:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Qué dijo el Papa León XIV sobre la inteligencia artificial en su paso por la Argentina",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/tecnologia/que-dijo-el-papa-leon-xiv-sobre-la-inteligencia-artificial-en-su-paso-por-la-argentina-nid10112026/",
+   "fecha": "2026-11-10T19:46:08Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "“¿Qué vamos a redistribuir si este país nunca generó riquezas?“: la reflexión de un empresario tras el mensaje del Papa",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/10/que-vamos-a-redistribuir-si-el-pais-que-nunca-genero-riquezas-la-reflexion-de-un-empresario-tras-el-mensaje-del-papa/",
+   "fecha": "2026-11-10T19:39:43Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Murió Teddy García Mansilla, el empresario que hizo del entusiasmo una forma de vida",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/adios-a-teddy-garcia-mansilla-el-empresario-que-hizo-del-entusiasmo-una-forma-de-vida-nid10112026/",
+   "fecha": "2026-11-10T19:31:01Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Nuevos modelos diésel y eléctricos: por qué vuelve a crecer la oferta de vans y furgones en la Argentina",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/10/nuevos-modelos-diesel-y-electricos-por-que-vuelve-a-crecer-la-oferta-de-vans-y-furgones-en-la-argentina/",
+   "fecha": "2026-11-10T19:30:40Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Hasta US$4 millones: se conocieron los precios de referencia para comprar los inmuebles de una textil en quiebra",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/hasta-us4-millones-se-conocieron-los-precios-de-referencia-para-la-venta-de-los-inmuebles-de-una-nid10112026/",
+   "fecha": "2026-11-10T19:15:17Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Las acciones argentinas caen en Wall Street por la baja del petróleo y el dato de inflación de EEUU",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/10/las-acciones-argentinas-caen-en-wall-street-por-la-baja-del-petroleo-y-el-dato-de-inflacion-de-eeuu/",
+   "fecha": "2026-11-10T19:09:04Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Demanda de cobertura cambiaria por las elecciones se despierta y empieza a meter presión",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/468677-demanda-de-cobertura-cambiaria-por-las-elecciones-se-despierta-y-empieza-a-meter-presion",
+   "fecha": "2026-11-10T19:00:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "“No es habitual”: por qué el riesgo país se duplicó en cuatro meses, pero el dólar sigue sin reaccionar",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/dolar/no-es-habitual-por-que-el-riesgo-pais-se-duplico-en-cuatro-meses-pero-el-dolar-sigue-sin-reaccionar-nid10112026/",
+   "fecha": "2026-11-10T18:45:18Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "La nueva era del mercado laboral: qué habilidades priorizan las empresas en la Argentina y en el mundo",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/10/la-nueva-era-del-mercado-laboral-que-habilidades-priorizan-las-empresas-en-la-argentina-y-en-el-mundo/",
+   "fecha": "2026-11-10T18:32:03Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Comienzo de semana con altibajos en el Mercado Agroganadero de Cañuelas",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/comienzo-de-semana-con-altibajos-en-el-mercado-agroganadero-de-canuelas-nid10112026/",
+   "fecha": "2026-11-10T18:17:59Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Después de 13 años de espera, Grand Theft Auto VI vuelve a Vice City este 19 de noviembre",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/tecnologia/despues-de-13-anos-de-espera-grand-theft-auto-vi-vuelve-a-vice-city-este-19-de-noviembre-nid10112026/",
+   "fecha": "2026-11-10T18:07:55Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "De la luz a la nafta: Edenor desembarca en el negocio de los combustibles con el 20% de la red Shell",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/de-la-luz-a-la-nafta-edenor-desembarca-en-el-negocio-de-los-combustibles-con-el-20-de-la-red-shell-nid10112026/",
+   "fecha": "2026-11-10T18:00:17Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Visec: una entidad ligada a CRA sube la apuesta en un conflicto abierto con la Sociedad Rural Argentina",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/visec-una-entidad-ligada-a-cra-sube-la-apuesta-en-un-conflicto-abierto-con-la-sociedad-rural-nid10112026/",
+   "fecha": "2026-11-10T17:44:53Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "A cuánto abre el dólar este miércoles 11 de noviembre tras los feriados bancarios y la visita del papa León XIV",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/dolar/a-cuanto-abre-el-dolar-este-miercoles-11-de-noviembre-tras-los-feriados-bancarios-y-la-visita-del-nid10112026/",
+   "fecha": "2026-11-10T17:35:13Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Gustavo Weiss, presidente de la Cámara de la Construcción: “El desafío es consolidar el mensaje del Papa en el largo plazo”",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/10/gustavo-weiss-presidente-de-la-camara-de-la-construccion-el-desafio-es-consolidar-el-mensaje-del-papa-en-el-largo-plazo/",
+   "fecha": "2026-11-10T17:20:16Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Quiénes son los empresarios y sindicalistas que estuvieron esta tarde con el papa León XIV en la UCA",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/09/quienes-son-los-empresarios-y-sindicalistas-que-estuvieron-esta-tarde-con-el-papa-leon-xiv-en-la-uca/",
+   "fecha": "2026-11-10T17:16:38Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Anthropic morigera sus expectativas y espera valer solo US$1 billón cuando cotice en la Bolsa",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/tecnologia/anthropic-morigera-sus-expectativas-y-espera-valer-solo-us1-billon-cuando-cotice-en-la-bolsa-nid10112026/",
+   "fecha": "2026-11-10T17:10:37Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "El barril de petróleo cae por debajo de los 90 dólares, su precio más bajo desde agosto",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/10/el-barril-de-petroleo-cae-por-debajo-de-los-90-dolares-su-precio-mas-bajo-desde-agosto/",
+   "fecha": "2026-11-10T16:57:35Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El riesgo país cayó hasta los 860 puntos pese a un contexto internacional desfavorable",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/el-riesgo-pais-vuelve-a-bajar-y-queda-por-debajo-de-los-860-puntos-nid10112026/",
+   "fecha": "2026-11-10T16:46:34Z",
    "tema": "mercados"
   },
   {
@@ -92,6 +316,13 @@
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/campo/carne-a-china-fuerte-expectativa-por-otro-millonario-negocio-en-un-mercado-que-cada-vez-sorprende-nid10112026/",
    "fecha": "2026-11-10T16:04:30Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Una mina de oro argentina sufrió una fuerte caída por el impacto de El Niño",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/468720-mina-de-oro-argentina-veladero-sufrio-fuerte-caida-por-impacto-de-el-nino",
+   "fecha": "2026-11-10T15:51:00Z",
    "tema": "otros"
   },
   {
@@ -130,27 +361,6 @@
    "tema": "actividad"
   },
   {
-   "titulo": "La multinacional Bunge y el grupo argentino GDM crearon una empresa para desarrollar cultivos destinados a biocombustibles",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/la-multinacional-bunge-y-el-grupo-argentino-gdm-crearon-una-empresa-para-desarrollar-cultivos-nid10112026/",
-   "fecha": "2026-11-10T14:34:39Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Primer aporte nacional: durante 12 años evaluaron un riego usado en Israel y Estados Unidos y descubrieron importantes resultados",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/primer-aporte-nacional-durante-12-anos-evaluaron-un-riego-usado-en-israel-y-estados-unidos-y-nid10112026/",
-   "fecha": "2026-11-10T14:29:39Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Un reconocido grupo de siembra recortó 30.000 hectáreas y acelera en otro millonario negocio",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/un-reconocido-grupo-de-siembra-recorto-30000-hectareas-y-acelera-en-otro-millonario-negocio-nid10112026/",
-   "fecha": "2026-11-10T14:28:44Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Centro de Messi, Lautaro cabecea y es gol a Inglaterra: recrearon en un laberinto de maíz la inolvidable jugada en el Mundial",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/campo/centro-de-messi-lautaro-cabecea-y-es-gol-a-inglaterra-recrearon-en-un-laberinto-de-maiz-la-nid10112026/",
@@ -184,13 +394,6 @@
    "url": "https://www.lanacion.com.ar/economia/efecto-vaca-muerta-sp-elevo-el-perfil-crediticio-de-neuquen-que-sube-puestos-en-el-ranking-nid10112026/",
    "fecha": "2026-11-10T13:32:39Z",
    "tema": "empresas"
-  },
-  {
-   "titulo": "Aguinaldo de diciembre 2026: cuándo se paga y el cálculo para saber cuánto se cobra",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/aguinaldo-2026-cuando-se-paga-en-la-argentina-y-cual-es-el-calculo-nid10112026/",
-   "fecha": "2026-11-10T13:20:27Z",
-   "tema": "otros"
   },
   {
    "titulo": "Cómo cambió el inversor argentino y qué buscan hoy quienes entran al mundo cripto",
@@ -263,109 +466,11 @@
    "tema": "inflacion"
   },
   {
-   "titulo": "Cuándo se cobra el aguinaldo de diciembre 2026 en la Argentina: fecha de pago y a quiénes les corresponde",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/cuando-se-cobra-el-aguinaldo-de-diciembre-2026-en-la-argentina-fecha-de-pago-y-a-quienes-les-nid02112026/",
-   "fecha": "2026-11-10T11:05:40Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "El outlet de La Rural ofrece ropa y zapatillas con descuentos de hasta el 50%: hasta cuándo",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/actualidad/468697-reoutlet-en-la-rural-descuentos-de-hasta-el-50-por-ciento-en-nike-adidas-y-mas-de-30-marcas",
    "fecha": "2026-11-10T11:01:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Calendario PNC de la Anses: cuándo se cobran las Pensiones no Contributivas de noviembre 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/calendario-pnc-de-la-anses-cuando-se-cobran-las-pensiones-no-contributivas-de-noviembre-2026-nid04112026/",
-   "fecha": "2026-11-10T10:31:19Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Calendario de jubilaciones de la Anses: cuándo cobro en noviembre 2026 con el bono oficial y el aumento confirmado",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/calendario-de-jubilaciones-de-la-anses-cuando-cobro-en-noviembre-2026-con-el-bono-oficial-y-el-nid28102026/",
-   "fecha": "2026-11-10T10:31:17Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Calendario de pagos de Anses: cuándo se cobra la PUAM de noviembre de 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/calendario-de-pagos-de-anses-cuando-se-cobra-la-puam-de-noviembre-de-2026-nid02112026/",
-   "fecha": "2026-11-10T10:31:16Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Calendario AUH de Anses: cuándo se cobra la Asignación Universal por Hijo en noviembre 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/calendario-auh-de-anses-cuando-se-cobra-la-asignacion-universal-por-hijo-en-noviembre-2026-nid29102026/",
-   "fecha": "2026-11-10T10:31:12Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "De cuánto es el bono de noviembre 2026 para jubilados y a quiénes les corresponde",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/de-cuanto-es-el-bono-de-noviembre-2026-para-jubilados-y-a-quienes-les-corresponde-nid29102026/",
-   "fecha": "2026-11-10T10:31:11Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "SUAF de Anses: el monto de las asignaciones familiares en noviembre de 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/suaf-de-anses-el-monto-de-las-asignaciones-familiares-en-noviembre-de-2026-nid21102026/",
-   "fecha": "2026-11-10T10:31:07Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "A cuánto llega la PUAM en noviembre de 2026 con el aumento confirmado",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/a-cuanto-llega-la-puam-en-noviembre-de-2026-con-el-aumento-confirmado-nid20102026/",
-   "fecha": "2026-11-10T10:31:05Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "PNC de Anses: cuál es el monto de las Pensiones No Contributivas en noviembre de 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/pnc-de-anses-cual-es-el-monto-de-las-pensiones-no-contributivas-en-noviembre-de-2026-nid19102026/",
-   "fecha": "2026-11-10T10:31:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Monto de la Asignación Universal por Hijo: de cuánto es la AUH en noviembre 2026, con el aumento oficial",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/monto-de-la-asignacion-universal-por-hijo-de-cuanto-es-la-auh-en-noviembre-2026-con-el-aumento-nid15102026/",
-   "fecha": "2026-11-10T10:30:45Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Jubilaciones de Anses: cuánto cobro en noviembre 2026, con el bono oficial y el aumento confirmado",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/jubilaciones-de-anses-cuanto-cobro-en-noviembre-2026-con-el-bono-oficial-y-el-aumento-confirmado-nid14102026/",
-   "fecha": "2026-11-10T10:30:41Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Cuándo cobro Anses: el calendario completo de noviembre 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/cuando-cobro-anses-el-calendario-completo-de-noviembre-2026-nid27102026/",
-   "fecha": "2026-11-10T10:30:36Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Nueva paritaria de octubre a diciembre: cuánto cobran los empleados de comercio con el aumento confirmado",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/nueva-paritaria-de-octubre-a-diciembre-cuanto-cobran-los-empleados-de-comercio-con-el-aumento-nid28102026/",
-   "fecha": "2026-11-10T10:30:33Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Servicio doméstico en noviembre 2026: cuánto cobran, quiénes reciben el aumento y cómo se incorpora el bono",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/servicio-domestico-en-noviembre-de-2026-cuanto-cobran-las-empleadas-quienes-reciben-el-aumento-y-nid22102026/",
-   "fecha": "2026-11-10T10:30:30Z",
-   "tema": "inflacion"
   },
   {
    "titulo": "León XIV en la UCA: el recuerdo de Francisco, las demandas al Gobierno, empresarios y sindicalistas",
@@ -410,13 +515,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Riqueza discreta: un plan simple para construir patrimonio sin estudiar finanzas",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/riqueza-discreta-un-plan-simple-para-construir-patrimonio-sin-estudiar-finanzas-nid10112026/",
-   "fecha": "2026-11-10T09:00:00Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "El dato clave de Estados Unidos que puede extender el rebote de los bonos argentinos y la baja del riesgo país",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/10/el-dato-clave-de-estados-unidos-que-puede-extender-el-rebote-de-los-bonos-argentinos-y-la-baja-del-riesgo-pais/",
@@ -442,55 +540,6 @@
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/10/por-que-la-suba-del-riesgo-pais-afecta-la-compra-de-reservas-del-banco-central-y-la-cobertura-cambiaria/",
    "fecha": "2026-11-10T05:26:13Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Trigo argentino al rescate: una menor cosecha en Brasil abre grandes puertas para la exportación nacional",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/10/trigo-argentino-al-rescate-una-menor-cosecha-en-brasil-abre-grandes-puertas-para-la-exportacion-nacional/",
-   "fecha": "2026-11-10T05:26:07Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El riesgo país cayó con fuerza en la Argentina y se espera una baja de tasas a nivel global",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/10/el-riesgo-pais-cayo-con-fuerza-en-la-argentina-y-se-espera-una-baja-de-tasas-a-nivel-global/",
-   "fecha": "2026-11-10T05:25:57Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "El índice de riesgo país y su influencia en la vida de la gente",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/opinion/2026/11/10/el-indice-de-riesgo-pais-y-su-influencia-en-la-vida-de-la-gente/",
-   "fecha": "2026-11-10T05:25:50Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Quiénes son los empresarios y sindicalistas que estuvieron esta tarde con el papa León XIV en la UCA",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/09/quienes-son-los-empresarios-y-sindicalistas-que-estuvieron-esta-tarde-con-el-papa-leon-xiv-en-la-uca/",
-   "fecha": "2026-11-09T23:53:03Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El riesgo país se desplomó 7% y cerró por debajo de los 900 puntos en una rueda de euforia para Wall Street",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/09/el-riesgo-pais-se-desplomo-7-y-cerro-por-debajo-de-los-900-puntos-en-una-rueda-de-euforia-para-wall-street/",
-   "fecha": "2026-11-09T21:48:21Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "El riesgo país cayó debajo de los 900 puntos, en una sesión positiva para los mercados internacionales",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/09/cae-el-riesgo-pais-argentino-en-una-sesion-positiva-para-los-mercados-internacionales/",
-   "fecha": "2026-11-09T21:19:56Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Las acciones de Nvidia perdieron 4% en Wall Street y se dispararon las de sus competidores mientras avanza la investigación",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/09/las-acciones-de-nvidia-caen-5-en-wall-street-y-se-disparan-las-de-sus-competidores-mientras-avanza-la-investigacion/",
-   "fecha": "2026-11-09T21:08:03Z",
    "tema": "mercados"
   },
   {
@@ -564,60 +613,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "Qué supermercados tienen descuentos para jubilados y cómo acceder a los reintegros",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/468649-jubilados-que-bancos-ofrecen-reintegros-de-hasta-40000-de-pesos-en-compras-de-noviembre",
-   "fecha": "2026-11-09T11:46:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Casi 1.300.000 personas perdieron su cobertura de salud durante el Gobierno de Milei",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/468642-casi-1300000-personal-perdieron-su-cobertura-de-salud-durante-el-gobierno-de-milei",
-   "fecha": "2026-11-09T11:03:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Morgan Stanley enciende luz amarilla para los bonos argentinos tras derrota de Trump",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/468512-morgan-stanley-lanza-advierte-por-bonos-argentinos-tras-derrota-de-trump",
-   "fecha": "2026-11-09T10:08:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Papelera del Sur cerró su fábrica en Tornquist y deja 160 trabajadores en la calle",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/468639-cerro-papelera-del-sur-y-dejo-160-trabajadores-en-la-calle",
-   "fecha": "2026-11-09T10:07:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Suba del dólar achicó ganancia del carry trade y la City avisa qué pasará con el negocio",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/468641-que-pasara-con-la-maniobra-del-dolar-el-ultimo-bimestre-del-ano",
-   "fecha": "2026-11-09T10:00:00Z",
-   "tema": "dolar"
-  },
-  {
    "titulo": "Luego que la ola azul tapara a Donald Trump, Wall Street retoma su programación habitual",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/luego-que-la-ola-azul-tapara-donald-trump-wall-street-retoma-su-programacion-habitual-n6343007",
    "fecha": "2026-11-09T03:00:00Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "Estiman que la pobreza subió en el tercer trimestre y ya afecta a 16,2 millones de argentinos",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/estiman-que-la-pobreza-subio-el-tercer-trimestre-y-ya-afecta-162-millones-argentinos-n6342928",
-   "fecha": "2026-11-08T19:12:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Tras la derrota de Trump, EEUU ratificó su apoyo a Milei, pero crecen las dudas sobre la asistencia financiera en 2027",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/tras-la-derrota-trump-eeuu-ratifico-su-apoyo-milei-pero-crecen-las-dudas-la-asistencia-financiera-2027-n6342951",
-   "fecha": "2026-11-08T18:54:00Z",
-   "tema": "politica"
   }
  ]
 }
