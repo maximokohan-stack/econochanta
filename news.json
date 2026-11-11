@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-11T02:20:43.766575Z",
+ "actualizado": "2026-11-11T05:31:47.509715Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 8
+   "n": 7
   },
   {
    "medio": "Infobae",
@@ -59,6 +59,76 @@
   }
  ],
  "items": [
+  {
+   "titulo": "Tras dos feriados, el mercado argentino tendrá que ponerse al día con limitaciones por el día festivo en EEUU",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/11/tras-dos-feriados-el-mercado-argentino-tendra-que-ponerse-al-dia-con-limitaciones-por-el-dia-festivo-en-eeuu/",
+   "fecha": "2026-11-11T03:31:46Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Los números detrás del escándalo de infidelidad y espionaje en Nvidia: cuánto pueden perder la empresa y los accionistas",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/11/los-numeros-detras-del-escandalo-de-infidelidad-y-espionaje-en-nvidia-cuanto-pueden-perder-la-empresa-y-los-accionistas/",
+   "fecha": "2026-11-11T03:31:02Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Baja del petróleo: cuánto costaba la nafta en la Argentina la última vez que el barril estuvo por debajo de los USD 90",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/11/baja-del-petroleo-cuanto-costaba-la-nafta-en-la-argentina-la-ultima-vez-que-el-barril-estuvo-por-debajo-de-los-usd-90/",
+   "fecha": "2026-11-11T03:29:50Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Martín Galdeano, presidente de Ford: “Hay marcas que son oportunistas, trajeron autos y no dan servicio de posventa”",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/11/martin-galdeano-presidente-de-ford-hay-marcas-que-son-oportunistas-trajeron-autos-y-no-dan-servicio-de-posventa/",
+   "fecha": "2026-11-11T03:29:30Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Con tasas más altas en Estados Unidos, el mercado mira el riesgo electoral argentino",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/11/con-tasas-mas-altas-en-estados-unidos-el-mercado-mira-el-riesgo-electoral-argentino/",
+   "fecha": "2026-11-11T03:29:15Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Cómo siguen los feriados bancarios durante la visita del Papa León IV a Luján",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/11/como-siguen-los-feriados-bancarios-durante-la-visita-del-papa-leon-iv-a-lujan/",
+   "fecha": "2026-11-11T03:28:56Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Vacaciones de verano: cuánto cuesta viajar a los destinos más elegidos del país desde Buenos Aires",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/11/vacaciones-de-verano-cuanto-cuesta-viajar-a-los-destinos-mas-elegidos-del-pais-desde-buenos-aires/",
+   "fecha": "2026-11-11T03:28:03Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Las exportaciones de vino se dispararon 19% en octubre, pero aún siguen en terreno negativo en el acumulado del año",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/11/las-exportaciones-de-vino-se-dispararon-19-en-octubre-pero-aun-siguen-en-terreno-negativo-en-el-acumulado-del-ano/",
+   "fecha": "2026-11-11T03:27:05Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Takenos levantó US$7 millones y proyecta operar en más de 15 países de América Latina en 2027",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/negocios/takenos-levanto-us7-millones-y-proyecta-operar-en-mas-de-15-paises-de-america-latina-en-2027-nid11112026/",
+   "fecha": "2026-11-11T03:01:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "De los restaurantes a los hospitales: cómo la IA cambia las operaciones y qué recomienda Sam Altman",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/tecnologia/de-los-restaurantes-a-los-hospitales-como-la-ia-cambia-las-operaciones-y-que-recomienda-sam-altman-nid11112026/",
+   "fecha": "2026-11-11T03:01:00Z",
+   "tema": "otros"
+  },
   {
    "titulo": "Los bonos argentinos cerraron en alza y el riesgo país bajó a 853 unidades",
    "medio": "Infobae",
@@ -347,13 +417,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "El riesgo país cayó hasta los 860 puntos pese a un contexto internacional desfavorable",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/el-riesgo-pais-vuelve-a-bajar-y-queda-por-debajo-de-los-860-puntos-nid10112026/",
-   "fecha": "2026-11-10T16:46:34Z",
-   "tema": "mercados"
-  },
-  {
    "titulo": "ANSES: cuándo cobro en noviembre 2026 si mi DNI termina en 9",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/10/anses-cuando-cobro-en-noviembre-2026-si-mi-dni-termina-en-9/",
@@ -366,13 +429,6 @@
    "url": "https://www.infobae.com/estados-unidos/2026/11/10/subio-la-inflacion-en-estados-unidos-y-la-reserva-federal-evalua-una-alza-de-tasas-por-encima-de-lo-esperado/",
    "fecha": "2026-11-10T16:18:19Z",
    "tema": "inflacion"
-  },
-  {
-   "titulo": "Carne para China: fuerte expectativa por otro millonario negocio en un mercado que “cada vez sorprende más”",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/carne-a-china-fuerte-expectativa-por-otro-millonario-negocio-en-un-mercado-que-cada-vez-sorprende-nid10112026/",
-   "fecha": "2026-11-10T16:04:30Z",
-   "tema": "otros"
   },
   {
    "titulo": "Una mina de oro argentina sufrió una fuerte caída por el impacto de El Niño",
@@ -452,20 +508,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Quién fue Enrique Shaw, el empresario argentino que el papa León XIV puso como ejemplo y que será beatificado",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/09/quien-fue-enrique-shaw-el-empresario-argentino-que-el-papa-leon-xiv-puso-como-ejemplo-y-que-sera-beatificado/",
-   "fecha": "2026-11-10T12:05:54Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Es el instrumento en pesos más eficaz para protegerse contra la inflación y su uso se disparó en 2026: cuál es y cómo funciona",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/10/es-el-instrumento-en-pesos-mas-eficaz-para-protegerse-contra-la-inflacion-y-su-uso-se-disparo-en-2026-cual-es-y-como-funciona/",
-   "fecha": "2026-11-10T11:53:07Z",
-   "tema": "inflacion"
-  },
-  {
    "titulo": "Tarifas de luz: la Provincia convocó a una audiencia pública para definir los cuadros tarifarios",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/tarifas-luz-la-provincia-convoco-una-audiencia-publica-definir-los-cuadros-tarifarios-n6343418",
@@ -478,13 +520,6 @@
    "url": "https://www.ambito.com/economia/cuanto-cuesta-el-libro-leon-xiv-la-fuerza-del-evangelio-y-donde-comprarlo-n6325182",
    "fecha": "2026-11-10T11:39:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Viajó a uno de los destinos más buscados de Brasil y mostró los precios en el supermercado tras la suba del real",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/10/viajo-a-uno-de-los-destinos-mas-buscados-de-brasil-y-mostro-los-precios-en-el-supermercado-tras-la-suba-del-real/",
-   "fecha": "2026-11-10T11:29:47Z",
-   "tema": "inflacion"
   },
   {
    "titulo": "El outlet de La Rural ofrece ropa y zapatillas con descuentos de hasta el 50%: hasta cuándo",
@@ -527,41 +562,6 @@
    "url": "https://www.iprofesional.com/finanzas/468590-precio-mas-alto-del-dolar-en-diciembre-2026-segun-15-bancos-y-consultoras",
    "fecha": "2026-11-10T10:00:00Z",
    "tema": "dolar"
-  },
-  {
-   "titulo": "ANSES: cuándo cobro en noviembre 2026 si mi DNI termina en 8",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/10/anses-cuando-cobro-en-noviembre-2026-si-mi-dni-termina-en-8/",
-   "fecha": "2026-11-10T09:46:21Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El dato clave de Estados Unidos que puede extender el rebote de los bonos argentinos y la baja del riesgo país",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/10/el-dato-clave-de-estados-unidos-que-puede-extender-el-rebote-de-los-bonos-argentinos-y-la-baja-del-riesgo-pais/",
-   "fecha": "2026-11-10T05:26:36Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Inflación: la buena señal de los primeros días de noviembre y el dato que el Indec dará a conocer esta semana",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/10/inflacion-la-buena-senal-de-los-primeros-dias-de-noviembre-y-el-dato-que-el-indec-dara-a-conocer-esta-semana/",
-   "fecha": "2026-11-10T05:26:27Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Por la suba del crudo, las petroleras argentinas aumentaron sus ingresos en más de USD 5.100 millones en ocho meses",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/10/por-la-suba-del-crudo-las-petroleras-argentinas-aumentaron-sus-ingresos-en-mas-de-usd-5100-millones-en-ocho-meses/",
-   "fecha": "2026-11-10T05:26:19Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Por qué la suba del riesgo país afecta la compra de reservas del Banco Central y la cobertura cambiaria",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/10/por-que-la-suba-del-riesgo-pais-afecta-la-compra-de-reservas-del-banco-central-y-la-cobertura-cambiaria/",
-   "fecha": "2026-11-10T05:26:13Z",
-   "tema": "mercados"
   },
   {
    "titulo": "Cuánto se gana con $2 millones en un plazo fijo en Banco Galicia tras suba de tasas",
@@ -611,13 +611,6 @@
    "url": "https://www.iprofesional.com/economia/468664-petroleo-cae-tras-senales-de-calma-en-medio-oriente-y-giro-de-donald-trump-sobre-iran",
    "fecha": "2026-11-09T15:20:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Luego que la ola azul tapara a Donald Trump, Wall Street retoma su programación habitual",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/luego-que-la-ola-azul-tapara-donald-trump-wall-street-retoma-su-programacion-habitual-n6343007",
-   "fecha": "2026-11-09T03:00:00Z",
-   "tema": "mercados"
   }
  ]
 }
