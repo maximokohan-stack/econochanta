@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-10T22:00:18.482409Z",
+ "actualizado": "2026-11-11T02:20:43.766575Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -59,6 +59,69 @@
   }
  ],
  "items": [
+  {
+   "titulo": "Los bonos argentinos cerraron en alza y el riesgo país bajó a 853 unidades",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/10/los-bonos-argentinos-operan-con-una-leve-suba-y-el-riesgo-pais-vuelve-a-ceder/",
+   "fecha": "2026-11-11T00:53:26Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Las acciones argentinas cerraron en baja en Wall Street, pese a la mejora de los bonos",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/10/las-acciones-argentinas-caen-en-wall-street-por-la-baja-del-petroleo-y-el-dato-de-inflacion-de-eeuu/",
+   "fecha": "2026-11-10T23:58:45Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Seis empresas argentinas de maquinaria agrícola buscan nuevos compradores en Italia",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/seis-empresas-argentinas-de-maquinaria-agricola-buscan-nuevos-compradores-en-italia-nid10112026/",
+   "fecha": "2026-11-10T23:22:38Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Muerte misteriosa: sospechan que un carnero mató a un productor agropecuario de 81 años",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/misteriosa-muerte-sospechan-que-un-carnero-mato-a-un-productor-agropecuario-de-81-anos-nid10112026/",
+   "fecha": "2026-11-10T23:09:30Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Centro de Messi, Lautaro cabecea y es gol a Inglaterra: recrearon en un laberinto de maíz la inolvidable jugada en el Mundial",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/centro-de-messi-lautaro-cabecea-y-es-gol-a-inglaterra-recrearon-en-un-laberinto-de-maiz-la-nid10112026/",
+   "fecha": "2026-11-10T23:07:05Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Lucciano’s desembarca en África: abrió su primera heladería en Marruecos y proyecta 15 locales",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/negocios/luccianos-desembarca-en-africa-abrio-su-primera-heladeria-en-marruecos-y-proyecta-15-locales-nid10112026/",
+   "fecha": "2026-11-10T22:39:27Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Papelera del Sur: trabajadores iniciaron un acampe para reclamar por los 160 despidos",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/468747-papelera-sur-cerro-pueblo-bonaerense-vilo",
+   "fecha": "2026-11-10T22:25:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Se disparó la soja: el precio en el mercado internacional aumentó US$14,6 por tonelada",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/se-disparo-la-soja-el-precio-en-el-mercado-internacional-aumento-us146-por-tonelada-nid10112026/",
+   "fecha": "2026-11-10T22:20:54Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "A  través de Edenor, Manzano compra 20% de la controlante de las estaciones Shell",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/energia/468744-a-traves-de-edenor-manzano-compra-20-de-la-controlante-de-las-estaciones-shell",
+   "fecha": "2026-11-10T22:14:00Z",
+   "tema": "otros"
+  },
   {
    "titulo": "¿Pueden espiar los autos chinos? Las cámaras, los GPS y los sensores que generan preocupación",
    "medio": "iProfesional",
@@ -144,18 +207,18 @@
    "tema": "otros"
   },
   {
-   "titulo": "Los bonos argentinos operan con una leve suba y el riesgo país vuelve a ceder",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/10/los-bonos-argentinos-operan-con-una-leve-suba-y-el-riesgo-pais-vuelve-a-ceder/",
-   "fecha": "2026-11-10T20:05:46Z",
-   "tema": "mercados"
-  },
-  {
    "titulo": "Los bonos argentinos reflejan un temor creciente a un 2027 turbulento y dudas sobre la continuidad política",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/los-bonos-argentinos-reflejan-un-temor-creciente-a-un-2027-turbulento-y-dudas-sobre-la-continuidad-nid10112026/",
    "fecha": "2026-11-10T20:00:36Z",
    "tema": "mercados"
+  },
+  {
+   "titulo": "Brasil, dividido por un drástico plan para bajar tasas que tiene un raro aroma argentino",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/468734-plan-para-cortar-tasas-a-lo-caputo-divide-a-brasil",
+   "fecha": "2026-11-10T19:53:00Z",
+   "tema": "otros"
   },
   {
    "titulo": "Plazo fijo, dólar o UVA: cuál puede dar más rendimiento en los próximos seis meses y qué riesgos hay",
@@ -197,13 +260,6 @@
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/campo/hasta-us4-millones-se-conocieron-los-precios-de-referencia-para-la-venta-de-los-inmuebles-de-una-nid10112026/",
    "fecha": "2026-11-10T19:15:17Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Las acciones argentinas caen en Wall Street por la baja del petróleo y el dato de inflación de EEUU",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/10/las-acciones-argentinas-caen-en-wall-street-por-la-baja-del-petroleo-y-el-dato-de-inflacion-de-eeuu/",
-   "fecha": "2026-11-10T19:09:04Z",
    "tema": "inflacion"
   },
   {
@@ -354,46 +410,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "Distinguen a cuatro referentes de la industria",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/negocios/distinguen-a-cuatro-referentes-de-la-industria-nid10112026/",
-   "fecha": "2026-11-10T14:38:47Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Centro de Messi, Lautaro cabecea y es gol a Inglaterra: recrearon en un laberinto de maíz la inolvidable jugada en el Mundial",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/centro-de-messi-lautaro-cabecea-y-es-gol-a-inglaterra-recrearon-en-un-laberinto-de-maiz-la-nid10112026/",
-   "fecha": "2026-11-10T14:28:00Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Aguinaldo de diciembre 2026: cómo se calcula y cuándo se cobra",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/10/aguinaldo-de-diciembre-2026-como-se-calcula-y-cuando-se-cobra/",
    "fecha": "2026-11-10T14:14:32Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Preocupación en las empresas por la negativa del Gobierno a ingresar tecnología china",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/preocupacion-en-las-empresas-por-la-negativa-del-gobierno-a-ingresar-tecnologia-china-nid10112026/",
-   "fecha": "2026-11-10T14:02:23Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Las fusiones y adquisiciones entran en una nueva era regulatoria",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/negocios/las-fusiones-y-adquisiciones-entran-en-una-nueva-era-regulatoria-nid10112026/",
-   "fecha": "2026-11-10T13:58:13Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Efecto Vaca Muerta: S&P elevó el perfil crediticio de Neuquén, que sube puestos en el ranking subnacional",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/efecto-vaca-muerta-sp-elevo-el-perfil-crediticio-de-neuquen-que-sube-puestos-en-el-ranking-nid10112026/",
-   "fecha": "2026-11-10T13:32:39Z",
-   "tema": "empresas"
   },
   {
    "titulo": "Cómo cambió el inversor argentino y qué buscan hoy quienes entran al mundo cripto",
@@ -589,27 +610,6 @@
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/468664-petroleo-cae-tras-senales-de-calma-en-medio-oriente-y-giro-de-donald-trump-sobre-iran",
    "fecha": "2026-11-09T15:20:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "CyberMonday: la verdad detrás de los descuentos y las ofertas que fueron un engaño",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/468663-cybermonday-la-verdad-detras-de-los-descuentos-y-las-ofertas-que-fueron-un-engano",
-   "fecha": "2026-11-09T15:03:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Comenzó la soldadura del primer proyecto que exportará GNL",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/energia/468610-comenzo-la-soldadura-del-primer-proyecto-que-exportara-gnl",
-   "fecha": "2026-11-09T14:15:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Cuenta regresiva para la llegada de los helicópteros Black Hawk que compró Argentina",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/negocios/468423-arribo-al-pais-de-los-helicopteros-black-hawk-en-cuenta-regresiva",
-   "fecha": "2026-11-09T14:11:00Z",
    "tema": "otros"
   },
   {
