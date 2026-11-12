@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-11T23:12:02.530592Z",
+ "actualizado": "2026-11-12T06:37:45.526474Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 13
+   "n": 14
   },
   {
    "medio": "Infobae",
@@ -60,10 +60,122 @@
  ],
  "items": [
   {
+   "titulo": "Licitación clave: el equipo económico se entusiasma por el regreso del “punto Anker” y espera un repunte del crédito",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/12/licitacion-clave-el-equipo-economico-se-entusiasma-por-el-regreso-del-punto-anker-y-espera-un-repunte-del-credito/",
+   "fecha": "2026-11-12T06:01:32Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Hoy se conoce el dato de inflación de octubre: qué número esperan los especialistas",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/12/hoy-se-conoce-el-dato-de-inflacion-de-octubre-que-numero-esperan-los-especialistas/",
+   "fecha": "2026-11-12T04:54:46Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Casi el 70% de las empresas argentinas que solo operan en el país proyectan exportar en los próximos tres años",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/12/casi-el-70-de-las-empresas-argentinas-que-solo-operan-en-el-pais-proyectan-exportar-en-los-proximos-tres-anos/",
+   "fecha": "2026-11-12T04:54:28Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Alerta en el Mercosur: los autos chinos desplazan a la producción regional y cae el comercio entre Argentina y Brasil",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/12/alerta-en-el-mercosur-los-autos-chinos-desplazan-a-la-produccion-regional-y-cae-el-comercio-entre-argentina-y-brasil/",
+   "fecha": "2026-11-12T04:54:09Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Ranking de precios en dólares: en qué rubros la Argentina está más cara que la región",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/12/ranking-de-precios-en-dolares-en-que-rubros-la-argentina-esta-mas-cara-que-la-region/",
+   "fecha": "2026-11-12T04:53:41Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Los bonos recuperan terreno y baja el riesgo país, pero octubre de 2027 mantiene al mercado en alerta",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/12/los-bonos-recuperan-terreno-y-baja-el-riesgo-pais-pero-octubre-de-2027-mantiene-al-mercado-en-alerta/",
+   "fecha": "2026-11-12T04:52:58Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Inflación de octubre: hoy se conocerá el número del Indec y se espera que siga cerca del 2%",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/inflacion-el-indec-dara-a-conocer-manana-el-dato-de-octubre-y-se-espera-que-siga-cerca-del-2-nid11112026/",
+   "fecha": "2026-11-12T04:17:50Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Emigraron a España en 2001 y hoy tienen un restaurante y dos alojamientos en un pueblo de los Pirineos",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/emigraron-a-espana-en-2001-y-hoy-tienen-un-restaurante-y-dos-alojamientos-en-un-pueblo-de-los-nid12112026/",
+   "fecha": "2026-11-12T03:01:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El mundo se repliega y las empresas miran al exterior",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/el-mundo-se-repliega-y-las-empresas-miran-al-exterior-nid11112026/",
+   "fecha": "2026-11-12T00:03:27Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Plazo fijo UVA: lo que tenés que saber antes de invertir y los riesgos que tiene",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/plazo-fijo-uva-lo-que-tenes-que-saber-antes-invertir-y-los-riesgos-que-tiene-n6344085",
+   "fecha": "2026-11-12T00:00:00Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Alquilar un departamento con cochera: cuánto aumenta el precio, barrio por barrio",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/468873-alquilar-un-departamento-con-cochera-cuanto-aumenta-el-precio-barrio-por-barrio",
+   "fecha": "2026-11-12T00:00:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Empresa del agro debe $6.500 millones y acumula decenas de cheques rechazados",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/468869-empresa-agricola-debe-6500-millones-de-pesos-y-acumula-decenas-de-cheques-rechazados",
+   "fecha": "2026-11-11T23:53:00Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Se desploman las acciones de Nvidia tras las nuevas versiones del escándalo que involucra a su CEO Jensen Huang",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/11/se-desploman-las-acciones-de-nvidia-tras-las-nuevas-versiones-del-escandalo-que-involucra-a-su-ceo-jensen-huang/",
+   "fecha": "2026-11-11T23:17:07Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Guerra con Ucrania: Rusia recurre a las silobolsas, una tecnología que generó una revolución en la Argentina",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/guerra-con-ucrania-rusia-recurre-a-las-silobolsas-una-tecnologia-que-genero-una-revolucion-en-la-nid11112026/",
+   "fecha": "2026-11-11T23:12:07Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Jorge Aníbal Leguiza, de 55 años. Empezó de cero en un pequeño pueblo y hoy maneja 1000 hectáreas: “Salimos de la calle”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/salimos-de-la-calle-de-vender-pan-a-criar-bufalos-la-historia-del-comerciante-que-empezo-de-cero-y-nid11112026/",
+   "fecha": "2026-11-11T23:11:27Z",
+   "tema": "otros"
+  },
+  {
    "titulo": "Ezeiza abre nueva terminal para contener la lluvia de importaciones de Shein y Temu",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/actualidad/468858-aeropuerto-ezeiza-abre-nueva-terminal-para-contener-lluvia-de-importaciones-de-shein-y-temu",
    "fecha": "2026-11-11T23:02:00Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Las exportaciones mineras logran récord de u$s6.720 millones en los primeros nueve meses",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/energia/468863-exportaciones-mineras-alcanzan-record-de-6720-millones-dolares-septiembre-2026",
+   "fecha": "2026-11-11T22:56:00Z",
    "tema": "empresas"
   },
   {
@@ -130,13 +242,6 @@
    "tema": "politica"
   },
   {
-   "titulo": "Guerra con Ucrania: Rusia recurre a las silobolsas, una tecnología que generó una revolución en la Argentina",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/guerra-con-ucrania-rusia-recurre-a-las-silobolsas-una-tecnologia-que-genero-una-revolucion-en-la-nid11112026/",
-   "fecha": "2026-11-11T21:31:33Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Mercados: las acciones argentinas operaron dispares en una jornada con actividad limitada en Wall Street",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/11/mercados-las-acciones-argentinas-operan-sin-cambios-en-una-jornada-con-actividad-limitada-en-wall-street/",
@@ -156,13 +261,6 @@
    "url": "https://www.lanacion.com.ar/economia/efecto-china-y-costo-argentino-referentes-de-la-industria-del-acero-elogian-avances-macro-pero-nid11112026/",
    "fecha": "2026-11-11T20:52:12Z",
    "tema": "actividad"
-  },
-  {
-   "titulo": "Jorge Aníbal Leguiza, de 55 años. Empezó de cero en un pequeño pueblo y hoy maneja 1000 hectáreas: “Salimos de la calle”",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/salimos-de-la-calle-de-vender-pan-a-criar-bufalos-la-historia-del-comerciante-que-empezo-de-cero-y-nid11112026/",
-   "fecha": "2026-11-11T20:44:05Z",
-   "tema": "otros"
   },
   {
    "titulo": "Stanley Black & Decker cierra su fábrica en San Luis y despide a 61 trabajadores",
@@ -247,13 +345,6 @@
    "url": "https://www.infobae.com/economia/2026/11/08/clima-de-negocios-en-medio-del-ruido-financiero-los-empresarios-locales-siguen-de-compras-y-miran-atentos-una-norma-del-gobierno/",
    "fecha": "2026-11-11T19:00:18Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "Inflación de octubre: mañana se conoce el número del Indec y se espera que siga cerca del 2%",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/inflacion-el-indec-dara-a-conocer-manana-el-dato-de-octubre-y-se-espera-que-siga-cerca-del-2-nid11112026/",
-   "fecha": "2026-11-11T18:40:44Z",
-   "tema": "inflacion"
   },
   {
    "titulo": "Primer aporte nacional: durante 12 años evaluaron un riego usado en Israel y Estados Unidos y descubrieron importantes resultados",
@@ -361,31 +452,10 @@
    "tema": "politica"
   },
   {
-   "titulo": "La petrolera brasileña Petrobras elevó sus ganancias un 46% interanual hasta septiembre",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/america/america-latina/2026/11/11/la-petrolera-brasilena-petrobras-elevo-sus-ganancias-un-46-interanual-hasta-septiembre/",
-   "fecha": "2026-11-11T16:13:26Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El Gobierno enfrenta hoy una licitación de deuda con vencimientos por más de $10 billones: qué espera el mercado",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/11/el-gobierno-enfrenta-vencimientos-por-mas-de-10-billones-hoy-que-esperan-en-el-mercado/",
-   "fecha": "2026-11-11T16:04:27Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "Pymes: ARCA puso en marcha el esquema para tramitar la devolución del IVA por el RIMI",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/pymes-arca-puso-marcha-el-esquema-tramitar-la-devolucion-del-iva-el-rimi-n6343943",
    "fecha": "2026-11-11T16:00:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Lula y Erdogan conversaron sobre una posible cooperación en minerales críticos durante la COP31",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/america/america-latina/2026/11/11/lula-y-erdogan-conversaron-sobre-una-posible-cooperacion-en-minerales-criticos-durante-la-cop31/",
-   "fecha": "2026-11-11T15:51:20Z",
    "tema": "otros"
   },
   {
@@ -414,34 +484,6 @@
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/la-jubilacion-promedio-cayo-casi-13-real-2023-pese-al-leve-rebote-este-ano-n6343955",
    "fecha": "2026-11-11T14:42:00Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "La caída de Ueno Bank dejó sin empleo a 7.000 personas en cinco países",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/america/america-latina/2026/11/11/la-caida-de-ueno-bank-dejo-sin-empleo-a-7000-personas-en-cinco-paises/",
-   "fecha": "2026-11-11T14:36:10Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Macro Private Bank es la nueva propuesta de banca privada para clientes premium de alto patrimonio",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/10/29/macro-private-bank-es-la-nueva-propuesta-de-banca-privada-para-clientes-premium-de-alto-patrimonio/",
-   "fecha": "2026-11-11T14:32:08Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Aumentan el pasaporte y el DNI: cuánto van a costar desde fines de noviembre",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/11/aumentan-el-pasaporte-y-el-dni-cuanto-van-a-costar-desde-fines-de-noviembre/",
-   "fecha": "2026-11-11T14:25:27Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El poder adquisitivo de la jubilación promedio cayó casi 13% desde noviembre de 2023",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/11/el-poder-adquisitivo-de-la-jubilacion-promedio-cayo-casi-13-desde-noviembre-de-2023/",
-   "fecha": "2026-11-11T14:24:31Z",
    "tema": "actividad"
   },
   {
@@ -529,20 +571,6 @@
    "tema": "actividad"
   },
   {
-   "titulo": "El escándalo Nvidia: las infidelidades de los CEO que terminaron costándoles millones a las empresas",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/negocios/el-escandalo-nvidia-las-infidelidades-de-los-ceo-que-terminaron-costandoles-millones-a-las-empresas-nid09112026/",
-   "fecha": "2026-11-11T12:01:51Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Carne para China: fuerte expectativa por otro millonario negocio en un mercado que “cada vez sorprende más”",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/carne-a-china-fuerte-expectativa-por-otro-millonario-negocio-en-un-mercado-que-cada-vez-sorprende-nid10112026/",
-   "fecha": "2026-11-11T11:16:40Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Cuánto ganarán los empleados de comercio en noviembre 2026",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/management/468769-cuanto-ganaran-los-empleados-de-comercio-en-noviembre-2026",
@@ -604,27 +632,6 @@
    "url": "https://www.ambito.com/economia/rigi-advierten-que-dos-tercios-las-importaciones-pueden-ser-abastecidas-la-industria-local-n6343676",
    "fecha": "2026-11-10T20:47:00Z",
    "tema": "actividad"
-  },
-  {
-   "titulo": "Brasil, dividido por un drástico plan para bajar tasas que tiene un raro aroma argentino",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/468734-plan-para-cortar-tasas-a-lo-caputo-divide-a-brasil",
-   "fecha": "2026-11-10T19:53:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Plazo fijo, dólar o UVA: cuál puede dar más rendimiento en los próximos seis meses y qué riesgos hay",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/468730-que-inversion-conviene-antes-de-las-elecciones-2027-dolar-plazo-fijo-o-uva",
-   "fecha": "2026-11-10T19:52:00Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "Demanda de cobertura cambiaria por las elecciones se despierta y empieza a meter presión",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/468677-demanda-de-cobertura-cambiaria-por-las-elecciones-se-despierta-y-empieza-a-meter-presion",
-   "fecha": "2026-11-10T19:00:00Z",
-   "tema": "otros"
   },
   {
    "titulo": "La inflación en EEUU fue mayor a la esperada en octubre y presiona a las tasas de la Fed",
