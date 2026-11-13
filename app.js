@@ -1151,7 +1151,7 @@
     });
 
     if ("serviceWorker" in navigator && location.protocol.indexOf("http") === 0) {
-      navigator.serviceWorker.register("sw.js").catch(function () { /* sin offline, sigue andando */ });
+      navigator.serviceWorker.register("sw.js", { updateViaCache: "none" }).catch(function () { /* sin offline, sigue andando */ });
     }
     iniciarInstalar();
   }
@@ -1187,5 +1187,14 @@
     }
   }
 
-  init();
+  // Si el arranque falla, casi siempre es porque el navegador mezcló archivos de dos versiones
+  // (la página nueva con un script viejo guardado, o al revés). Se baja de nuevo la página sin
+  // caché, se borran las copias del service worker y se recarga una sola vez por sesión.
+  function recuperar(err) {
+    var KEY = "econochanta:recuperado";
+    try { if (sessionStorage.getItem(KEY)) throw err; sessionStorage.setItem(KEY, "1"); } catch (e) { throw err; }
+    var limpiar = window.caches ? caches.keys().then(function (ks) { return Promise.all(ks.map(function (k) { return caches.delete(k); })); }) : Promise.resolve();
+    Promise.all([limpiar, fetch("index.html", { cache: "reload" }).catch(function () {})]).then(function () { location.reload(); });
+  }
+  try { init(); } catch (err) { recuperar(err); }
 })();
