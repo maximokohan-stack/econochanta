@@ -1044,8 +1044,17 @@
     return document.documentElement.dataset.theme === "light" ? "light" : "dark";
   }
 
+  // el botón muestra un ícono (sol o luna) y el texto; en pantallas chicas queda solo el ícono, con el texto para lectores de pantalla
   function pintarBotonTema() {
-    $("tema").textContent = temaEfectivo() === "dark" ? "Modo claro" : "Modo oscuro";
+    var b = $("tema"), oscuro = temaEfectivo() === "dark", txt = oscuro ? "Modo claro" : "Modo oscuro";
+    b.textContent = "";
+    b.setAttribute("aria-label", txt);
+    var NS = "http://www.w3.org/2000/svg", sv = document.createElementNS(NS, "svg");
+    sv.setAttribute("class", "icono"); sv.setAttribute("viewBox", "0 0 24 24"); sv.setAttribute("aria-hidden", "true");
+    var pa = document.createElementNS(NS, "path");
+    pa.setAttribute("d", oscuro ? "M12 4V2M12 22v-2M4 12H2M22 12h-2M5.6 5.6 4.2 4.2M19.8 19.8l-1.4-1.4M5.6 18.4l-1.4 1.4M19.8 4.2l-1.4 1.4M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z" : "M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z");
+    sv.appendChild(pa); b.appendChild(sv);
+    b.appendChild(el("span", "tema__txt", txt));
   }
 
   function initTema() {

@@ -2551,6 +2551,7 @@
     } else if (vista === "bcra") {
       if (!bcraMesa) armarBCRA();
       if (sub) bcraMesa.abrir(sub); else bcraMesa.cerrar();
+      if (window.EconoSecciones) window.EconoSecciones.mostrar(vista, sub);
     } else if (vista === "recientes") {
       if (!recientesListo) { recientesListo = true; armarRecientes(); }
     } else if (vista === "mandatos") {
@@ -2563,6 +2564,7 @@
       if (!glosarioListo) { glosarioListo = true; armarGlosario(); }
     } else if (vista === "mercados") {
       if (!mercadosListo) { mercadosListo = true; armarMercados(); }
+      if (window.EconoSecciones) window.EconoSecciones.mostrar(vista, sub);
     }
   }
 

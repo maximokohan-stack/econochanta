@@ -666,6 +666,88 @@
     caja.appendChild(a);
   }
 
+  /* ---------- titulares de las demás secciones ---------- */
+
+  // cada sección arma su titular con sus propios datos; si falta alguno, queda el título fijo
+  var LIDERES = [["GGAL", "Galicia"], ["YPFD", "YPF"], ["PAMP", "Pampa"], ["BMA", "Macro"], ["TXAR", "Ternium"], ["ALUA", "Aluar"], ["CEPU", "Central Puerto"], ["TGSU2", "TGS"], ["BBAR", "Francés"], ["LOMA", "Loma Negra"]];
+  var titListo = {};
+
+  function ponerTitular(vista, antes, acento, despues, sub, fuente) {
+    var h = document.querySelector("#vista-" + vista + " .sp__tit");
+    if (h) {
+      h.textContent = "";
+      h.appendChild(document.createTextNode(antes));
+      if (acento) h.appendChild(el("span", "sp__acento", acento));
+      if (despues) h.appendChild(document.createTextNode(despues));
+    }
+    var sb = $(vista + "-sub"); if (sb && sub) sb.textContent = sub;
+    var fu = $(vista + "-fuente"); if (fu && fuente) fu.textContent = fuente;
+  }
+  function trimestre(iso) { var d = fecha(iso); return (Math.floor(d.getMonth() / 3) + 1) + "º trimestre de " + d.getFullYear(); }
+  function ultimoPar(s) { return s && s.points && s.points.length > 1 ? [s.points[s.points.length - 2], s.points[s.points.length - 1]] : null; }
+
+  var TITULARES = {
+    tasas: function () {
+      return Promise.all([S.cargar("badlar", 60), S.cargar("infM", 3)]).then(function (r) {
+        var b = r[0].ultimo, im = r[1].ultimo, mens = b.v / 12, dif = mens - im.v;
+        var verbo = dif > 0.2 ? "le gana a la inflación" : dif < -0.2 ? "pierde contra la inflación" : "empata con la inflación";
+        ponerTitular("tasas", "Un plazo fijo grande rinde cerca de " + nf(mens, 1) + "% por mes y ", verbo, ".",
+          "La tasa BADLAR, la que pagan los bancos por depósitos grandes, está en " + nf(b.v, 1) + "% anual. La inflación de " + mesNom(im.d) + " fue " + nf(im.v, 1) + "%. Es una comparación aproximada: la tasa es de hoy y la inflación, del último mes publicado.",
+          "Fuentes: BCRA (BADLAR, dato del " + diaMesAnio(b.d) + ") e INDEC (inflación de " + mesAnio(im.d) + ").");
+      });
+    },
+    actividad: function () {
+      return Promise.all([S.cargar("emae", 24), S.cargar("desocupacion", 12)]).then(function (r) {
+        var par = ultimoPar(r[0]); if (!par) throw new Error("sin EMAE");
+        var c = (par[1][1] / par[0][1] - 1) * 100, du = r[1].ultimo;
+        var a = c > 0.2 ? "La actividad creció " + nf(c, 1) + "% en " + mesNom(par[1][0]) : c < -0.2 ? "La actividad cayó " + nf(Math.abs(c), 1) + "% en " + mesNom(par[1][0]) : "La actividad casi no se movió en " + mesNom(par[1][0]);
+        ponerTitular("actividad", a + " y la desocupación está en ", nf(du.v, 1) + "%", ".",
+          "El EMAE mide cuánto produce la economía cada mes, sin el efecto de la época del año. La desocupación es la parte de quienes buscan trabajo que no lo consiguen.",
+          "Fuentes: INDEC (EMAE de " + mesAnio(par[1][0]) + ") e INDEC, EPH (desocupación del " + trimestre(du.d) + ").");
+      });
+    },
+    estado: function () {
+      return S.cargar("resPrimario", 24).then(function (s) {
+        var u = s.ultimo, milM = Math.abs(u.v) / 1000;
+        var monto = "$ " + nf(milM, milM >= 100 ? 0 : 1) + " mil millones";
+        ponerTitular("estado", "En " + mesNom(u.d) + ", el Estado nacional tuvo " + (u.v >= 0 ? "superávit" : "déficit") + " primario de ", monto, ".",
+          "Primario quiere decir ingresos menos gastos, sin contar los intereses de la deuda. " + (u.v >= 0 ? "Le sobró plata" : "Le faltó plata") + " antes de pagar intereses.",
+          "Fuente: Secretaría de Hacienda, dato de " + mesAnio(u.d) + ".");
+      });
+    },
+    bcra: function () {
+      return S.cargar("reservas", 60).then(function (s) {
+        var u = s.ultimo, a = antesDe(s.points, u.d, 30), c = a ? (u.v / a[1] - 1) * 100 : null;
+        ponerTitular("bcra", "Las reservas del Banco Central están en ", "US$ " + nf(u.v, 0) + " millones", ".",
+          (c === null ? "" : (c >= 0 ? "Subieron " : "Bajaron ") + nf(Math.abs(c), 1) + "% en 30 días. ") + "Son reservas brutas: incluyen dólares que el Banco Central tiene que devolver.",
+          "Fuente: BCRA, dato del " + diaMesAnio(u.d) + ".");
+      });
+    },
+    mercados: function () {
+      return S.live("arg_stocks").then(function (lista) {
+        var por = {}; lista.forEach(function (x) { por[x.symbol] = x; });
+        var xs = LIDERES.map(function (l) { var x = por[l[0]]; return x && isFinite(x.pct_change) && x.c > 0 ? { n: l[1], c: Number(x.pct_change) } : null; }).filter(Boolean);
+        if (xs.length < 5) throw new Error("pocas acciones");
+        var suben = xs.filter(function (x) { return x.c > 0; }).length, bajan = xs.filter(function (x) { return x.c < 0; }).length;
+        xs.sort(function (a, b) { return b.c - a.c; });
+        var antes = suben > bajan ? "En la última rueda suben " : bajan > suben ? "En la última rueda bajan " : "En la última rueda, las acciones líderes están ";
+        var acento = suben > bajan ? suben + " de " + xs.length + " acciones líderes" : bajan > suben ? bajan + " de " + xs.length + " acciones líderes" : "parejas";
+        ponerTitular("mercados", antes, acento, ".",
+          "La que más subió es " + xs[0].n + " (" + conSigno(xs[0].c, 2) + ") y la que más bajó, " + xs[xs.length - 1].n + " (" + conSigno(xs[xs.length - 1].c, 2) + "). Precios en pesos, en BYMA.",
+          "Fuente: data912, con demora; consultado " + hora(Date.now()) + ".");
+      });
+    }
+  };
+
+  function armarTitular(vista) {
+    if (titListo[vista] && Date.now() - titListo[vista] < 5 * 60000) return;
+    titListo[vista] = Date.now();
+    TITULARES[vista]().catch(function () {
+      titListo[vista] = 0;
+      var fu = $(vista + "-fuente"); if (fu) fu.textContent = "No pudimos traer los datos del titular; abajo están todos los indicadores.";
+    });
+  }
+
   /* ---------- API ---------- */
 
   // se llama desde el router: arma la portada la primera vez y la esconde en celular cuando hay una ficha abierta
@@ -673,6 +755,7 @@
     var sec = $("vista-" + vista); if (!sec) return;
     if (vista === "dolares") armarDolares();
     else if (vista === "inflacion") armarInflacion();
+    else if (TITULARES[vista]) armarTitular(vista);
     else return;
     sec.classList.toggle("con-ficha", !!sub);
     if (sub && !window.matchMedia("(max-width: 820px)").matches) {

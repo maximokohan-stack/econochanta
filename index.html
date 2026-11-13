@@ -21,6 +21,14 @@
   <a class="skip" href="#main">Saltar al contenido</a>
   <div class="sr-only" id="anuncio" role="status" aria-live="polite"></div>
 
+  <section class="cinta" id="cinta" aria-label="Cinta de mercados: precios con demora">
+    <div class="cinta__vent"></div>
+    <div class="cinta__ctl">
+      <span class="cinta__estado" aria-live="off"></span>
+      <button class="cinta__pausa" id="cinta-pausa" type="button" aria-pressed="false" aria-label="Pausar la cinta de mercados"></button>
+    </div>
+  </section>
+
   <header class="top">
     <div class="top__row">
       <div>
@@ -180,9 +188,13 @@
     </section>
 
     <!-- ARGENTINA: menu de secciones -->
-    <section id="vista-argentina" class="vista" aria-labelledby="h-argentina" hidden>
-      <h1 id="h-argentina" class="title">Indicadores de Argentina</h1>
-      <p class="sub">Elegí un tema. Cada uno abre una lista de indicadores con su gráfico, su fuente y la fecha del último dato. ¿Preferís verlos todos juntos? <a class="link" href="#tabla">Tabla completa</a>.</p>
+    <section id="vista-argentina" class="vista vista--portada" aria-labelledby="h-argentina" hidden>
+      <div class="sp">
+        <p class="sp__eyebrow">Indicadores</p>
+        <h1 id="h-argentina" class="sp__tit">Indicadores de Argentina</h1>
+        <p class="sp__sub" id="argentina-sub">Elegí un tema. Cada uno abre una lista de indicadores con su gráfico, su fuente y la fecha del último dato. ¿Preferís verlos todos juntos? <a class="link" href="#tabla">Tabla completa</a>.</p>
+        <p class="sp__fuente" id="argentina-fuente"></p>
+      </div>
       <div id="argentina-tiles"></div>
     </section>
 
@@ -209,43 +221,76 @@
       <h2 class="sp__todos">Todos los indicadores de inflación y reservas</h2>
       <div id="mesa-inflacion"></div>
     </section>
-    <section id="vista-tasas" class="vista" aria-labelledby="h-tasas" hidden>
-      <h1 id="h-tasas" class="title">Tasas y pesos</h1>
+    <section id="vista-tasas" class="vista vista--portada" aria-labelledby="h-tasas" hidden>
+      <div class="sp">
+        <p class="sp__eyebrow">Indicadores · Tasas y pesos</p>
+        <h1 id="h-tasas" class="sp__tit">Tasas y pesos</h1>
+        <p class="sp__sub" id="tasas-sub">Cuánto rinden los pesos: plazo fijo y tasas de referencia, crédito, depósitos y el CER.</p>
+        <p class="sp__fuente" id="tasas-fuente"></p>
+      </div>
       <div id="mesa-tasas"></div>
     </section>
-    <section id="vista-estado" class="vista" aria-labelledby="h-estado" hidden>
-      <h1 id="h-estado" class="title">Cuentas del Estado</h1>
+    <section id="vista-estado" class="vista vista--portada" aria-labelledby="h-estado" hidden>
+      <div class="sp">
+        <p class="sp__eyebrow">Indicadores · Cuentas del Estado</p>
+        <h1 id="h-estado" class="sp__tit">Cuentas del Estado</h1>
+        <p class="sp__sub" id="estado-sub">Cuánto recauda y cuánto gasta el Estado nacional, si le sobra o le falta plata, y cómo le va con el resto del mundo.</p>
+        <p class="sp__fuente" id="estado-fuente"></p>
+      </div>
       <div id="mesa-estado"></div>
       <div id="estado-extras" class="estado-extras"></div>
     </section>
-    <section id="vista-actividad" class="vista" aria-labelledby="h-actividad" hidden>
-      <h1 id="h-actividad" class="title">Actividad y empleo</h1>
+    <section id="vista-actividad" class="vista vista--portada" aria-labelledby="h-actividad" hidden>
+      <div class="sp">
+        <p class="sp__eyebrow">Indicadores · Actividad y empleo</p>
+        <h1 id="h-actividad" class="sp__tit">Actividad y empleo</h1>
+        <p class="sp__sub" id="actividad-sub">Si la economía produce más o menos, cuánta gente trabaja y cómo vienen los sueldos.</p>
+        <p class="sp__fuente" id="actividad-fuente"></p>
+      </div>
       <div id="mesa-actividad"></div>
     </section>
 
     <!-- BANCO CENTRAL -->
-    <section id="vista-bcra" class="vista" aria-labelledby="h-bcra" hidden>
-      <h1 id="h-bcra" class="title">Banco Central</h1>
-      <p class="sub">Reservas, base monetaria, tasas, depósitos, crédito y cotizaciones, con los datos de la API del BCRA.</p>
+    <section id="vista-bcra" class="vista vista--portada" aria-labelledby="h-bcra" hidden>
+      <div class="sp">
+        <p class="sp__eyebrow">Indicadores · Banco Central</p>
+        <h1 id="h-bcra" class="sp__tit">Banco Central</h1>
+        <p class="sp__sub" id="bcra-sub">Reservas, base monetaria, tasas, depósitos, crédito y cotizaciones, con los datos de la API del BCRA.</p>
+        <p class="sp__fuente" id="bcra-fuente"></p>
+      </div>
       <div id="bcra-contenido" class="vista vista--inner"></div>
     </section>
 
     <!-- MERCADOS -->
-    <section id="vista-mercados" class="vista" aria-labelledby="h-mercados" hidden>
-      <h1 id="h-mercados" class="title">Acciones y bonos</h1>
+    <section id="vista-mercados" class="vista vista--portada" aria-labelledby="h-mercados" hidden>
+      <div class="sp">
+        <p class="sp__eyebrow">Indicadores · Mercados</p>
+        <h1 id="h-mercados" class="sp__tit">Acciones y bonos</h1>
+        <p class="sp__sub" id="mercados-sub">Acciones, bonos y CEDEARs que se negocian en Argentina, con precios con demora.</p>
+        <p class="sp__fuente" id="mercados-fuente"></p>
+      </div>
       <div id="mercados-contenido" class="vista vista--inner"></div>
     </section>
 
     <!-- TABLA DE INDICADORES -->
-    <section id="vista-tabla" class="vista" aria-labelledby="h-tabla" hidden>
-      <h1 id="h-tabla" class="title">Tabla de indicadores</h1>
-      <p class="sub">Todos los indicadores juntos, con su último dato, el anterior, el cambio y el máximo y mínimo de los últimos 12 meses.</p>
+    <section id="vista-tabla" class="vista vista--portada" aria-labelledby="h-tabla" hidden>
+      <div class="sp">
+        <p class="sp__eyebrow">Indicadores · Tabla completa</p>
+        <h1 id="h-tabla" class="sp__tit">Tabla de indicadores</h1>
+        <p class="sp__sub" id="tabla-sub">Todos los indicadores juntos, con su último dato, el anterior, el cambio y el máximo y mínimo de los últimos 12 meses.</p>
+        <p class="sp__fuente" id="tabla-fuente"></p>
+      </div>
       <div id="tabla-contenido" class="vista vista--inner"></div>
     </section>
 
     <!-- MAS -->
-    <section id="vista-mas" class="vista" aria-labelledby="h-mas" hidden>
-      <h1 id="h-mas" class="title">Más</h1>
+    <section id="vista-mas" class="vista vista--portada" aria-labelledby="h-mas" hidden>
+      <div class="sp">
+        <p class="sp__eyebrow">Más</p>
+        <h1 id="h-mas" class="sp__tit">Más</h1>
+        <p class="sp__sub" id="mas-sub">Herramientas, explicaciones y de dónde sale cada dato.</p>
+        <p class="sp__fuente" id="mas-fuente"></p>
+      </div>
       <ul class="menu">
         <li><a href="#noticias"><strong>Noticias</strong><span>Titulares de medios, por tema y por medio</span></a></li>
         <li><a href="#calcular"><strong>Calculadoras</strong><span>Plazo fijo contra dólar, sueldo contra inflación</span></a></li>
@@ -273,26 +318,45 @@
     </section>
 
     <!-- DATOS RECIENTES -->
-    <section id="vista-mandatos" class="vista" aria-labelledby="h-mandatos" hidden>
-      <h1 id="h-mandatos" class="title">Por mandato</h1>
+    <section id="vista-mandatos" class="vista vista--portada" aria-labelledby="h-mandatos" hidden>
+      <div class="sp">
+        <p class="sp__eyebrow">Indicadores · Por mandato</p>
+        <h1 id="h-mandatos" class="sp__tit">Por mandato</h1>
+        <p class="sp__sub" id="mandatos-sub">Cómo cambiaron los principales indicadores en cada gobierno, con las ventanas de medición y sus límites.</p>
+        <p class="sp__fuente" id="mandatos-fuente"></p>
+      </div>
       <div id="mandatos-contenido" class="vista vista--inner"></div>
     </section>
 
-    <section id="vista-recientes" class="vista" aria-labelledby="h-recientes" hidden>
-      <h1 id="h-recientes" class="title">Datos recientes</h1>
+    <section id="vista-recientes" class="vista vista--portada" aria-labelledby="h-recientes" hidden>
+      <div class="sp">
+        <p class="sp__eyebrow">Indicadores · Datos recientes</p>
+        <h1 id="h-recientes" class="sp__tit">Datos recientes</h1>
+        <p class="sp__sub" id="recientes-sub">Los últimos datos publicados, del más nuevo al más viejo, con una lectura posible de cada uno.</p>
+        <p class="sp__fuente" id="recientes-fuente"></p>
+      </div>
       <div id="recientes-contenido" class="vista vista--inner"></div>
     </section>
 
     <!-- ANALISIS -->
-    <section id="vista-analisis" class="vista" aria-labelledby="h-analisis" hidden>
-      <h1 id="h-analisis" class="title">Análisis</h1>
+    <section id="vista-analisis" class="vista vista--portada" aria-labelledby="h-analisis" hidden>
+      <div class="sp">
+        <p class="sp__eyebrow">Entender</p>
+        <h1 id="h-analisis" class="sp__tit">Análisis</h1>
+        <p class="sp__sub" id="analisis-sub">Notas que ponen en contexto lo que pasó, con los hechos separados de la interpretación.</p>
+        <p class="sp__fuente" id="analisis-fuente"></p>
+      </div>
       <div id="analisis-contenido" class="vista vista--inner"></div>
     </section>
 
     <!-- COMO SE CALCULA -->
-    <section id="vista-metodologia" class="vista" aria-labelledby="h-metodologia" hidden>
-      <h1 id="h-metodologia" class="title">Cómo se calcula</h1>
-      <p class="lead">De dónde sale cada dato, cada cuánto se actualiza, qué cuentas hacemos nosotros y qué tener en cuenta antes de usarlo.</p>
+    <section id="vista-metodologia" class="vista vista--portada" aria-labelledby="h-metodologia" hidden>
+      <div class="sp">
+        <p class="sp__eyebrow">Entender · Cómo se calcula</p>
+        <h1 id="h-metodologia" class="sp__tit">Cómo se calcula</h1>
+        <p class="sp__sub" id="metodologia-sub">De dónde sale cada dato, cada cuánto se actualiza, qué cuentas hacemos nosotros y qué tener en cuenta antes de usarlo.</p>
+        <p class="sp__fuente" id="metodologia-fuente"></p>
+      </div>
 
       <article class="card">
         <h2 class="label">Fuentes y frecuencia</h2>
@@ -367,15 +431,24 @@
     </section>
 
     <!-- GLOSARIO -->
-    <section id="vista-glosario" class="vista" aria-labelledby="h-glosario" hidden>
-      <h1 id="h-glosario" class="title">Glosario</h1>
-      <p class="lead">Qué mide cada indicador, cómo se calcula y cómo leerlo para ponerlo en contexto. Tocá un indicador para ver la explicación.</p>
+    <section id="vista-glosario" class="vista vista--portada" aria-labelledby="h-glosario" hidden>
+      <div class="sp">
+        <p class="sp__eyebrow">Entender · Glosario</p>
+        <h1 id="h-glosario" class="sp__tit">Glosario</h1>
+        <p class="sp__sub" id="glosario-sub">Qué mide cada indicador, cómo se calcula y cómo leerlo para ponerlo en contexto. Tocá un indicador para ver la explicación.</p>
+        <p class="sp__fuente" id="glosario-fuente"></p>
+      </div>
       <div id="glosario-contenido" class="vista vista--inner"></div>
     </section>
 
     <!-- NOTICIAS -->
-    <section id="vista-noticias" class="vista" aria-labelledby="h-noticias" hidden>
-      <h1 id="h-noticias" class="title">Noticias</h1>
+    <section id="vista-noticias" class="vista vista--portada" aria-labelledby="h-noticias" hidden>
+      <div class="sp">
+        <p class="sp__eyebrow">Actualidad</p>
+        <h1 id="h-noticias" class="sp__tit">Noticias</h1>
+        <p class="sp__sub" id="noticias-sub">Titulares de medios económicos de las últimas horas, por tema y por medio. Se abren en el sitio de cada medio.</p>
+        <p class="sp__fuente" id="noticias-fuente"></p>
+      </div>
       <div class="filters">
         <div class="chips" id="chips-tema" role="group" aria-label="Filtrar por tema"></div>
         <div class="chips" id="chips-medio" role="group" aria-label="Filtrar por medio"></div>
@@ -386,8 +459,13 @@
     </section>
 
     <!-- MI PLATA -->
-    <section id="vista-miplata" class="vista" aria-labelledby="h-miplata" hidden>
-      <h1 id="h-miplata" class="title">Tu plata</h1>
+    <section id="vista-miplata" class="vista vista--portada" aria-labelledby="h-miplata" hidden>
+      <div class="sp">
+        <p class="sp__eyebrow">Lo tuyo</p>
+        <h1 id="h-miplata" class="sp__tit">Tu plata</h1>
+        <p class="sp__sub" id="miplata-sub">Cómo te afecta la economía según tu sueldo, tus ahorros y tus gastos.</p>
+        <p class="sp__fuente" id="miplata-fuente"></p>
+      </div>
       <div class="aviso" id="plata-aviso" role="note"></div>
 
       <article class="card hero" aria-live="polite">
@@ -444,9 +522,13 @@
     </section>
 
     <!-- PERFIL -->
-    <section id="vista-perfil" class="vista" aria-labelledby="h-perfil" hidden>
-      <h1 id="h-perfil" class="title">Tu perfil</h1>
-      <p class="lead">Cinco datos para que todo se mida contra tu bolsillo y no contra el promedio. Mientras no los cambies, ves un ejemplo inventado. Lo que escribas se guarda solo en este dispositivo.</p>
+    <section id="vista-perfil" class="vista vista--portada" aria-labelledby="h-perfil" hidden>
+      <div class="sp">
+        <p class="sp__eyebrow">Lo tuyo · Perfil</p>
+        <h1 id="h-perfil" class="sp__tit">Tu perfil</h1>
+        <p class="sp__sub" id="perfil-sub">Cinco datos para que todo se mida contra tu bolsillo y no contra el promedio. Mientras no los cambies, ves un ejemplo inventado. Lo que escribas se guarda solo en este dispositivo.</p>
+        <p class="sp__fuente" id="perfil-fuente"></p>
+      </div>
 
       <form class="card form" id="form-perfil" autocomplete="off" novalidate>
         <div class="field">
@@ -501,9 +583,13 @@
     </section>
 
     <!-- CALCULAR -->
-    <section id="vista-calcular" class="vista" aria-labelledby="h-calc" hidden>
-      <h1 id="h-calc" class="title">Calculadoras</h1>
-      <p class="lead">Dos preguntas que te hacés todos los meses, con números de hoy.</p>
+    <section id="vista-calcular" class="vista vista--portada" aria-labelledby="h-calc" hidden>
+      <div class="sp">
+        <p class="sp__eyebrow">Herramientas</p>
+        <h1 id="h-calc" class="sp__tit">Calculadoras</h1>
+        <p class="sp__sub" id="calcular-sub">Dos preguntas que te hacés todos los meses, con números de hoy.</p>
+        <p class="sp__fuente" id="calcular-fuente"></p>
+      </div>
 
       <div class="tabs" role="tablist" aria-label="Calculadoras">
         <button role="tab" id="tab-sueldo" aria-controls="panel-sueldo" aria-selected="true" class="tab">Sueldo contra precios</button>
@@ -569,9 +655,13 @@
     </section>
 
     <!-- ALERTAS -->
-    <section id="vista-alertas" class="vista" aria-labelledby="h-alertas" hidden>
-      <h1 id="h-alertas" class="title">Alertas</h1>
-      <p class="lead">Avisos solo por lo que te toca. Elegí a partir de qué brecha querés enterarte.</p>
+    <section id="vista-alertas" class="vista vista--portada" aria-labelledby="h-alertas" hidden>
+      <div class="sp">
+        <p class="sp__eyebrow">Herramientas · Alertas</p>
+        <h1 id="h-alertas" class="sp__tit">Alertas</h1>
+        <p class="sp__sub" id="alertas-sub">Avisos solo por lo que te toca. Elegí a partir de qué brecha querés enterarte.</p>
+        <p class="sp__fuente" id="alertas-fuente"></p>
+      </div>
 
       <ul class="alert-config" id="alertas-config"></ul>
 
@@ -594,6 +684,7 @@
   <script src="mandatos.js"></script>
   <script src="tablero.js"></script>
   <script src="secciones.js"></script>
+  <script src="cinta.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

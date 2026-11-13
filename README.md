@@ -143,7 +143,8 @@ styles.css   tokens, componentes y, al final, adaptación a pantallas chicas
 glosario.js  qué mide cada indicador, cómo se mide y cómo leerlo
 app.js       Tu plata, perfil, alertas, calculadoras, noticias y navegación por hash (menú y submenú)
 tablero.js   portada, secciones de Argentina (cada una con su mesa de indicadores), Banco Central y acciones y bonos
-secciones.js portadas de Dólares e Inflación (titular con datos, gráfico que se recorre, brecha, quién le gana a los precios, reservas)
+secciones.js portadas de Dólares e Inflación (titular con datos, gráfico que se recorre, brecha, quién le gana a los precios, reservas) y titulares con datos de Tasas, Actividad, Cuentas del Estado, Banco Central y Mercados
+cinta.js     cinta de mercados arriba de todo: riesgo país y dólares (ArgentinaDatos), CEDEARs de ETFs de índices, acciones líderes, ADRs y bonos (data912, con demora); se puede pausar y queda quieta con "reducir movimiento"
 series.js    catálogo de series y carga (69 series de 5 fuentes)
 charts.js    gráficos SVG: líneas, barras, sparklines, CSV
 api.js       dólar y datos para Tu plata, con respaldo
