@@ -35,9 +35,10 @@ jobs:
           git config user.name "econochanta-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/indec.json
-          # "generado" cambia siempre; solo se publica si cambio algun dato.
+          # "generado" cambia siempre; solo se publica si cambio algun dato. El archivo va en una sola
+          # linea, asi que se compara el contenido (sin "generado") en vez de las lineas del diff.
           if git diff --staged --quiet; then exit 0; fi
-          git diff --staged -U0 data/indec.json | grep -E '^[+-]' | grep -v '"generado"' | grep -vE '^(\+\+\+|---)' | grep -q . || { git reset -q; exit 0; }
+          if python3 -c 'import json,subprocess,sys; n=json.load(open("data/indec.json",encoding="utf-8")); v=json.loads(subprocess.run(["git","show","HEAD:data/indec.json"],capture_output=True,text=True).stdout or "{}"); n.pop("generado",None); v.pop("generado",None); sys.exit(0 if n==v else 1)'; then git reset -q; echo "Sin datos nuevos."; exit 0; fi
           git commit -m "Actualizar datos del INDEC"
           git pull --rebase origin main
           git push

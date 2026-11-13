@@ -2,6 +2,7 @@ name: Armar resumen de datos
 
 # Arma data/resumen.json con todas las series ya recortadas, para que la web abra con un solo
 # pedido. Cada hora, de 8 a 23 hs de Buenos Aires (UTC-3). No necesita claves.
+# Si el archivo tiene mas de 3 horas (12 para las series mensuales), la web pide cada serie a su fuente.
 on:
   schedule:
     - cron: "40 11-23 * * *"
