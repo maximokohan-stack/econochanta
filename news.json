@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-12T22:56:32.385255Z",
+ "actualizado": "2026-11-13T03:04:09.435778Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 20
+   "n": 21
   },
   {
    "medio": "Infobae",
@@ -60,6 +60,97 @@
  ],
  "items": [
   {
+   "titulo": "Se cayó Outlook durante el jueves en todo el mundo, pero Microsoft dice que el servicio se está recuperando",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/tecnologia/reportan-fallas-en-el-servicio-microsoft-365-a-nivel-mundial-nid12112026/",
+   "fecha": "2026-11-13T00:54:20Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Una empresa agropecuaria de Tandil acumula cheques rechazados por más de $2200 millones: “Estamos poniendo la cara”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/una-empresa-agropecuaria-de-tandil-acumula-cheques-rechazados-por-mas-de-2200-millones-nid12112026/",
+   "fecha": "2026-11-13T00:28:21Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "“Kiosco de la casta”: productores autoconvocados de todo el país apuntaron contra Visec",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/kiosco-de-la-casta-productores-autoconvocados-de-todo-el-pais-apuntaron-contra-visec-nid12112026/",
+   "fecha": "2026-11-13T00:19:51Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El Niño: anticipan temperaturas de hasta 45 grados, lluvias desiguales y un posterior cambio térmico",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/el-nino-anticipan-temperaturas-de-hasta-45-grados-lluvias-desiguales-y-un-posterior-cambio-termico-nid12112026/",
+   "fecha": "2026-11-13T00:04:24Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Tras nueve meses: reemplazan un puente de 1930 que se derrumbó por tubos de cemento y dicen que es “un parche definitivo”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/tras-nueve-meses-reemplazan-un-puente-de-1930-que-se-derrumbo-por-tubos-de-cemento-y-dicen-que-es-un-nid12112026/",
+   "fecha": "2026-11-13T00:03:51Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El especialista en consumo Guillermo Oliveto advirtió sobre el deterioro de la clase media: “Hoy serlo es exigente y caro”",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/13/el-especialista-en-consumo-guillermo-oliveto-advirtio-sobre-el-deterioro-de-la-clase-media-hoy-serlo-es-exigente-y-caro/",
+   "fecha": "2026-11-13T00:00:36Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "El via crucis electoral ya arrancó",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/el-via-crucis-electoral-ya-arranco-nid12112026/",
+   "fecha": "2026-11-12T23:57:19Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Diez días de conflicto: la fábrica de tractores Pauny no se presentó a una audiencia y plantea 150 retiros voluntarios",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/diez-dias-de-conflicto-la-fabrica-de-tractores-pauny-no-se-presento-a-una-audiencia-y-plantea-150-nid12112026/",
+   "fecha": "2026-11-12T23:55:39Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El empleo asalariado privado sumó 15 meses seguidos en baja, mientras el monotributo anotó su mayor alza en dos años",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/el-empleo-asalariado-privado-sumo-15-meses-seguidos-baja-mientras-el-monotributo-anoto-su-mayor-alza-dos-anos-n6344697",
+   "fecha": "2026-11-12T23:55:00Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Milei habló tras el dato de inflación y dijo que buscará profundizar la apertura económica",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/politica/469003-milei-hablo-tras-el-dato-de-inflacion-y-dijo-que-buscara-profundizar-la-apertura-economica",
+   "fecha": "2026-11-12T23:43:00Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Hubo 82.000 contrataciones con beneficios de la reforma laboral, pero el empleo privado registrado igual cayó",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/hubo-82000-contrataciones-con-beneficios-de-la-reforma-laboral-pero-el-empleo-privado-registrado-nid12112026/",
+   "fecha": "2026-11-12T23:36:59Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Pese a que los precios se aceleraron en octubre, el Gobierno aseguró que el “proceso de desinflación continúa”",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/12/pese-a-que-los-precios-se-aceleraron-en-octubre-el-gobierno-aseguro-que-el-proceso-de-desinflacion-continua/",
+   "fecha": "2026-11-12T23:24:46Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Buenos Aires cerró su misión comercial en China con reuniones con Huawei y Chery",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/buenos-aires-cerro-su-mision-comercial-china-reuniones-huawei-y-chery-n6344693",
+   "fecha": "2026-11-12T22:54:00Z",
+   "tema": "otros"
+  },
+  {
    "titulo": "Cómo es el bono por hasta $600.000 millones que analiza emitir CABA para pagar a proveedores",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/como-es-el-bono-600000-millones-que-analiza-emitir-caba-pagar-proveedores-n6344689",
@@ -72,27 +163,6 @@
    "url": "https://www.infobae.com/economia/2026/11/12/inflacion-de-octubre-cuales-son-los-alimentos-que-saltaron-mas-de-20-en-el-mes-y-duplicaron-su-precio-en-el-ultimo-ano/",
    "fecha": "2026-11-12T22:18:08Z",
    "tema": "inflacion"
-  },
-  {
-   "titulo": "Se cayó Outlook: reportan fallas en el servicio Microsoft 365 a nivel mundial",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/tecnologia/reportan-fallas-en-el-servicio-microsoft-365-a-nivel-mundial-nid12112026/",
-   "fecha": "2026-11-12T22:11:45Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Tras nueve meses: reemplazan un puente de 1930 que se derrumbó por tubos de cemento y dicen que es “un parche definitivo”",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/tras-nueve-meses-reemplazan-un-puente-de-1930-que-se-derrumbo-por-tubos-de-cemento-y-dicen-que-es-un-nid12112026/",
-   "fecha": "2026-11-12T22:11:43Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El Niño: anticipan temperaturas de hasta 45 grados, lluvias desiguales y un posterior cambio térmico",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/el-nino-anticipan-temperaturas-de-hasta-45-grados-lluvias-desiguales-y-un-posterior-cambio-termico-nid12112026/",
-   "fecha": "2026-11-12T22:09:31Z",
-   "tema": "dolar"
   },
   {
    "titulo": "Cuánto se gana con un plazo fijo Banco Provincia con $2 millones tras suba de tasa",
@@ -165,7 +235,7 @@
    "tema": "mercados"
   },
   {
-   "titulo": "El gigante brasileño AMaggi alquilará un negocio emblemático de la concursada Los Grobo Agropecuaria y reemplazará su marca",
+   "titulo": "Un negocio de Los Grobo Agropecuaria pasa a manos de un gigante brasileño que reemplazará su marca",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/campo/el-gigante-brasileno-amaggi-se-queda-a-traves-de-un-alquiler-con-un-negocio-emblematico-de-los-grobo-nid12112026/",
    "fecha": "2026-11-12T21:09:14Z",
@@ -212,13 +282,6 @@
    "url": "https://www.lanacion.com.ar/economia/negocios/venture-capital-en-tiempos-de-ia-los-desafios-de-invertir-y-escalar-negocios-en-america-latina-nid12112026/",
    "fecha": "2026-11-12T20:31:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Una empresa agropecuaria de Tandil acumula cheques rechazados por más de $2200 millones",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/una-empresa-agropecuaria-de-tandil-acumula-cheques-rechazados-por-mas-de-2200-millones-nid12112026/",
-   "fecha": "2026-11-12T20:28:48Z",
-   "tema": "empresas"
   },
   {
    "titulo": "Nvidia: cómo perder US$2 billones en 38 días y tener la mayor caída bursátil de la historia",
@@ -389,13 +452,6 @@
    "tema": "empresas"
   },
   {
-   "titulo": "La pesca argentina exportó US$1866 millones hasta septiembre y el sector pide eliminar las retenciones",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/la-pesca-argentina-exporto-us1866-millones-hasta-septiembre-y-el-sector-pide-eliminar-las-nid12112026/",
-   "fecha": "2026-11-12T18:00:03Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "Créditos a tasa 0% para la compra de autos: cómo son los préstamos a los que apuestan las automotrices por la caída de ventas",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/12/tras-la-caida-de-ventas-de-octubre-las-automotrices-refuerzan-los-creditos-a-tasa-0-para-comprar-0-km/",
@@ -403,24 +459,10 @@
    "tema": "mercados"
   },
   {
-   "titulo": "La industria textil avala la suspensión de embargos a pymes, pero alerta por el contrabando y las importaciones",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/protextil-2026-la-industria-avala-la-suspension-a-embargos-pero-alerta-que-el-contrabando-y-las-nid12112026/",
-   "fecha": "2026-11-12T17:49:59Z",
-   "tema": "actividad"
-  },
-  {
    "titulo": "La economía de Reino Unido creció 0,7% en el tercer trimestre por el impulso de la inteligencia artificial",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/la-reino-unido-crecio-07-el-tercer-trimestre-el-impulso-la-inteligencia-artificial-n6344515",
    "fecha": "2026-11-12T17:22:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Demandan a Google, OpenAI, Anthropic, Meta y SpaceX por no poder controlar los efectos negativos de la IA",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/tecnologia/demandan-a-google-openai-anthropic-meta-y-spacex-por-no-poder-controlar-los-efectos-negativos-de-la-nid12112026/",
-   "fecha": "2026-11-12T17:07:37Z",
    "tema": "otros"
   },
   {
@@ -450,13 +492,6 @@
    "url": "https://www.infobae.com/economia/2026/11/12/fluctuaciones-de-corto-plazo-el-fmi-resto-importancia-a-la-volatilidad-del-mercado-argentino-y-la-suba-del-riesgo-pais/",
    "fecha": "2026-11-12T16:37:25Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "Mientras ultima detalles para el nuevo desembolso a la Argentina, el FMI le buscó llevar calma ante la volatilidad de los mercados",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/mientras-ultima-detalles-para-el-nuevo-desembolso-a-la-argentina-el-fmi-le-busco-llevar-calma-ante-nid12112026/",
-   "fecha": "2026-11-12T16:31:44Z",
-   "tema": "politica"
   },
   {
    "titulo": "Plazo fijo en dólares: cuánto gano al invertir u$d 3.000",
@@ -541,20 +576,6 @@
    "url": "https://www.infobae.com/economia/2026/11/12/renuncio-jensen-huang-el-ceo-de-nvidia-en-medio-del-escandalo-de-infidelidad-y-espionaje-chino/",
    "fecha": "2026-11-12T14:08:53Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Escándalo de Nvidia: se derrumba la acción de la fabricante de chips tras la renuncia de su CEO, Jensen Huang",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/12/escandalo-de-nvidia-se-derrumba-la-accion-de-la-fabricante-de-chips-mientras-el-directorio-analiza-el-despido-de-su-ceo/",
-   "fecha": "2026-11-12T14:06:39Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "ARCA reglamentó la reducción de multas para pymes de la ley de Inocencia Fiscal II: cómo se aplicará y a quiénes beneficia",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/12/arca-reglamento-la-reduccion-de-multas-para-pymes-de-la-ley-de-inocencia-fiscal-ii-como-se-aplicara-y-a-quienes-beneficia/",
-   "fecha": "2026-11-12T13:57:36Z",
-   "tema": "politica"
   },
   {
    "titulo": "China le reclamó a EEUU acelerar la aplicación del acuerdo de baja de aranceles por u$s60.000 millones",
@@ -648,13 +669,6 @@
    "tema": "mercados"
   },
   {
-   "titulo": "Alquilar un departamento con cochera: cuánto aumenta el precio, barrio por barrio",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/468873-alquilar-un-departamento-con-cochera-cuanto-aumenta-el-precio-barrio-por-barrio",
-   "fecha": "2026-11-12T00:00:00Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "La construcción repunta de la mano de la obra pública, pero el m2 en dólares continúa caro y retrae la inversión privada",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/la-construccion-repunta-la-mano-la-obra-publica-pero-el-m2-dolares-continua-caro-y-retrae-la-inversion-privada-n6344195",
@@ -695,13 +709,6 @@
    "url": "https://www.ambito.com/economia/la-jubilacion-promedio-cayo-casi-13-real-2023-pese-al-leve-rebote-este-ano-n6343955",
    "fecha": "2026-11-11T14:42:00Z",
    "tema": "actividad"
-  },
-  {
-   "titulo": "Diálogos de Wall Street: acechan nubarrones en el mercado, y truenos en la Fed por tasas e inflación",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/dialogos-wall-street-acechan-nubarrones-el-mercado-y-truenos-la-fed-tasas-e-inflacion-n6343753",
-   "fecha": "2026-11-11T03:00:00Z",
-   "tema": "inflacion"
   }
  ]
 }
