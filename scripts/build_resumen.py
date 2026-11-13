@@ -17,7 +17,7 @@ from datetime import date, datetime, timedelta, timezone
 RAIZ = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 SALIDA = os.path.join(RAIZ, "data", "resumen.json")
 AD = "https://api.argentinadatos.com/v1/"
-DG = "https://apis.datos.gob.ar/series/api/series?format=json"
+DG = "https://apis.datos.gob.ar/series/api/series/?format=json"
 BCRA = "https://api.bcra.gob.ar/estadisticas/v4.0/Monetarias/"
 MAX_DIARIAS = 800
 MAX_PUNTOS = 1300

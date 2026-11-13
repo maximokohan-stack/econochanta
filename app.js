@@ -5,6 +5,7 @@
   var KEY_ALERTAS = "econochanta:v1:alertas";
   var KEY_TEMA = "econochanta:v1:tema";
   var KEY_PLATA = "econochanta:v1:plata";
+  var KEY_PERFIL_PROPIO = "econochanta:v1:perfil-propio";
 
   /* ---------- utilidades ---------- */
 
@@ -66,14 +67,53 @@
   function hora(iso) {
     return new Date(iso).toLocaleTimeString("es-AR", { hour: "2-digit", minute: "2-digit" });
   }
+  function hay(v) { return v !== null && v !== undefined && isFinite(v); }
+  var NOMBRE_DATO = {
+    oficial: "la cotización del dólar oficial", mep: "la cotización del dólar MEP", ccl: "la cotización del dólar CCL", blue: "la cotización del dólar blue",
+    ayer: "las cotizaciones del día anterior", serie: "el histórico del dólar MEP", infM: "la inflación del mes", infIA: "la inflación de 12 meses",
+    tna: "la tasa de plazo fijo", reservas: "la variación de las reservas"
+  };
+  // qué datos de la lista no están disponibles ahora
+  function faltantes(lista) {
+    var d = M.dolar || {};
+    var chk = {
+      oficial: hay(d.oficial), mep: hay(d.mep), ccl: hay(d.ccl), blue: hay(d.blue),
+      ayer: !!(d.ayer && hay(d.ayer.mep) && hay(d.ayer.oficial)), serie: !!(M.serieMep30d && M.serieMep30d.length >= 10),
+      infM: hay(M.inflacionMensual), infIA: hay(M.inflacionInteranual), tna: hay(M.tnaPlazoFijo), reservas: hay(M.reservasVar30d)
+    };
+    return lista.filter(function (k) { return !chk[k]; }).map(function (k) { return NOMBRE_DATO[k]; });
+  }
+  function listaY(a) { return a.length < 2 ? a.join("") : a.slice(0, -1).join(", ") + " y " + a[a.length - 1]; }
+  // "dato de septiembre 2026" o "consultado 13:05", según la pieza
+  function estadoPieza(nombre) {
+    var mt = M.meta && M.meta[nombre];
+    if (!mt) return { estado: "cargando", txt: "Cargando…" };
+    if (mt.estado === "falta") return { estado: "falta", txt: "Sin dato: no se pudo consultar " + (mt.fuente || "la fuente") + "." };
+    var per = mt.periodo && /^\d{4}-\d{2}-\d{2}$/.test(mt.periodo) ? mt.periodo : null;
+    var mensual = nombre === "inflacion" || nombre === "ipc";
+    var cuando = per ? (mensual ? "Dato de " : "Dato del ") + new Date(per + "T12:00:00").toLocaleDateString("es-AR", mensual ? { month: "long", year: "numeric" } : { day: "numeric", month: "long", year: "numeric" }) : null;
+    var consulta = mt.consultado ? "consultado a las " + hora(mt.consultado) : "";
+    var base = [cuando, consulta].filter(Boolean).join(" · ");
+    if (mt.estado === "previo") return { estado: "previo", txt: "Último dato disponible (" + base + "); la última consulta falló · Fuente: " + mt.fuente + "." };
+    return { estado: "ok", txt: base.charAt(0).toUpperCase() + base.slice(1) + " · Fuente: " + mt.fuente + "." };
+  }
   function urlSegura(u) {
     return typeof u === "string" && /^https?:\/\//i.test(u) ? u : null;
   }
 
   /* ---------- estado ---------- */
 
-  var M = clone(window.ECONO_MOCK);
+  // los datos de mercado arrancan vacíos: nunca se muestra un valor de ejemplo como si fuera real
+  var M = window.EconoAPI ? window.EconoAPI.vacio() : { dolar: {}, meta: {} };
   var perfil = load(KEY_PERFIL, window.ECONO_PERFIL_DEFAULT);
+  // el perfil precargado es un ejemplo; pasa a ser "tuyo" recién cuando lo editás o traés tus datos
+  var perfilPropio = false;
+  try {
+    var marca = localStorage.getItem(KEY_PERFIL_PROPIO);
+    if (marca !== null) perfilPropio = marca === "1";
+    else if (localStorage.getItem(KEY_PERFIL)) perfilPropio = JSON.stringify(perfil) !== JSON.stringify(window.ECONO_PERFIL_DEFAULT);
+  } catch (e) { /* sin storage */ }
+  function marcarPropio(v) { perfilPropio = v; try { localStorage.setItem(KEY_PERFIL_PROPIO, v ? "1" : "0"); } catch (e) { /* ignorar */ } }
   var alertas = load(KEY_ALERTAS, window.ECONO_ALERTAS_DEFAULT);
   var plata = null;
   try { plata = JSON.parse(localStorage.getItem(KEY_PLATA) || "null"); } catch (e) { plata = null; }
@@ -84,6 +124,7 @@
 
   function serie() {
     var s = M.serieMep30d;
+    if (!s || s.length < 2) return null;
     var min = Math.min.apply(null, s);
     var max = Math.max.apply(null, s);
     return { rango: (max - min) / min * 100, var30: (s[s.length - 1] / s[0] - 1) * 100 };
@@ -121,7 +162,7 @@
   }
 
   function exposicion(p) {
-    var mep = M.dolar.mep;
+    var mep = hay(M.dolar && M.dolar.mep) ? M.dolar.mep : 0;
     var ingreso = num(p.ingreso), ahARS = num(p.ahorroARS), ahUSD = num(p.ahorroUSD);
     var alq = num(p.alquiler), gUSD = num(p.gastoUSD);
     var pesosIngreso = ingreso * 3;
@@ -134,7 +175,8 @@
       wAhorroARS: ahARS / base,
       wUSD: usdEnPesos / base,
       idx: ingreso > 0 ? clamp(alq / ingreso, 0, 1) : 0,
-      viaje: ingreso > 0 ? clamp(gUSD * mep / ingreso, 0, 1) : 0
+      viaje: ingreso > 0 ? clamp(gUSD * mep / ingreso, 0, 1) : 0,
+      sinMep: !mep
     };
   }
 
@@ -359,24 +401,80 @@
   function renderEstado() {
     var banner = $("banner");
     var stamp = $("actualizado");
-    if (M.actualizadoEn) stamp.textContent = (M.esMock ? "Datos de ejemplo" : "En vivo") + ", actualizado " + hora(M.actualizadoEn);
-    else stamp.textContent = "Datos de ejemplo, sin actualizar";
+    var meta = M.meta || {};
+    var claves = Object.keys(ETIQUETAS);
+    var faltan = claves.filter(function (k) { return meta[k] && meta[k].estado === "falta"; });
+    var previos = claves.filter(function (k) { return meta[k] && meta[k].estado === "previo"; });
+    if (!M.actualizadoEn) stamp.textContent = "Cargando datos…";
+    else stamp.textContent = "Consultado a las " + hora(M.actualizadoEn) + (faltan.length || previos.length ? " · con datos incompletos" : "");
 
-    var fallas = M.estado ? Object.keys(M.estado).filter(function (k) { return !M.estado[k]; }) : [];
-    if (!M.actualizadoEn) {
-      banner.hidden = false;
-      banner.textContent = "Mostrando datos de ejemplo mientras se cargan los reales.";
-    } else if (fallas.length) {
-      banner.hidden = false;
-      banner.textContent = "No se pudo traer: " + fallas.map(function (k) { return ETIQUETAS[k] || k; }).join(", ") + ". Para eso se muestra el dato de ejemplo.";
-    } else {
-      banner.hidden = true;
-    }
+    var partes = [];
+    if (faltan.length) partes.push("Sin dato de " + faltan.map(function (k) { return ETIQUETAS[k]; }).join(", ") + ": esas partes quedan vacías, sin valores inventados.");
+    if (previos.length) partes.push("De " + previos.map(function (k) { return ETIQUETAS[k]; }).join(", ") + " se muestra el último dato que se pudo traer.");
+    if (partes.length) { banner.hidden = false; banner.textContent = partes.join(" "); }
+    else banner.hidden = true;
   }
 
   /* ---------- Tu plata ---------- */
 
+  function renderAvisoEjemplo() {
+    var box = $("plata-aviso");
+    if (!box) return;
+    box.textContent = "";
+    var p = el("p", "aviso__txt");
+    if (perfilPropio) {
+      p.appendChild(el("strong", "", "Con tus datos. "));
+      p.appendChild(document.createTextNode("Se guardan solo en este dispositivo."));
+      box.dataset.modo = "propio";
+      box.appendChild(p);
+      var ed = el("a", "btn btn--ghost btn--sm", "Editar mis datos"); ed.href = "#perfil";
+      box.appendChild(ed);
+      return;
+    }
+    box.dataset.modo = "ejemplo";
+    p.appendChild(el("strong", "", "Estás viendo un ejemplo, no tus datos. "));
+    p.appendChild(document.createTextNode("Es una persona inventada que cobra " + ars(perfil.ingreso) + ", tiene " + ars(perfil.ahorroARS) + " y USD " + f0.format(perfil.ahorroUSD) +
+      " ahorrados y paga " + ars(perfil.alquiler) + " de alquiler. Los datos de mercado sí son reales."));
+    box.appendChild(p);
+    var acc = el("div", "aviso__acc");
+    var mios = el("a", "btn btn--sm", "Usar mis datos"); mios.href = "#perfil";
+    acc.appendChild(mios);
+    acc.appendChild(el("span", "hint", "Se guardan solo en este dispositivo."));
+    box.appendChild(acc);
+  }
+
+  function renderPlataSinDatos(falta) {
+    $("hero-num").textContent = "—";
+    $("hero-num").dataset.signo = "";
+    $("plata-sub").textContent = "Ahora no lo podemos calcular: falta " + listaY(falta) + ". No usamos valores inventados en su lugar; probá actualizar en un rato.";
+    $("hero-dia").textContent = "—";
+    $("hero-mes").textContent = "—";
+    $("mensaje").textContent = "Sin todos los datos del día no damos una lectura personal.";
+    $("score").textContent = "—";
+    $("mood").textContent = "sin datos";
+    var g = $("gauge-valor");
+    g.dataset.mood = "";
+    g.style.strokeDashoffset = "100";
+    $("gauge-svg").setAttribute("aria-label", "Termómetro personal sin datos suficientes");
+    var ul = $("factores");
+    ul.textContent = "";
+    var li = el("li");
+    li.appendChild(el("span", "factors__note", "Falta " + listaY(falta) + "."));
+    ul.appendChild(li);
+  }
+
+  var NECESARIOS_PLATA = ["oficial", "mep", "ccl", "ayer", "serie", "infM", "tna", "reservas"];
+
   function renderMiPlata() {
+    renderAvisoEjemplo();
+    var falta = faltantes(NECESARIOS_PLATA);
+    if (falta.length) {
+      renderPlataSinDatos(falta);
+      renderPersonal(inflacionPersonal());
+      renderCotizaciones();
+      renderAlertasHoy();
+      return;
+    }
     var r = factores(perfil);
     var v = variaciones(r);
     var m = mood(r.score);
@@ -384,7 +482,7 @@
     var heroNum = $("hero-num");
     heroNum.textContent = pct(v.mes, 2);
     heroNum.dataset.signo = v.mes < 0 ? "neg" : v.mes > 0 ? "pos" : "";
-    $("hero-sub").textContent = v.mes < 0
+    $("plata-sub").textContent = v.mes < 0
       ? "En 30 días, tu plata perdió contra los precios."
       : "En 30 días, tu plata le ganó a los precios.";
     $("hero-dia").textContent = pct(v.dia, 2);
@@ -449,24 +547,28 @@
   }
 
   function renderCotizaciones() {
-    var d = M.dolar;
+    var d = M.dolar || {};
+    function brecha(k) { return hay(d[k]) && hay(d.oficial) ? "Brecha " + pctPlain((d[k] / d.oficial - 1) * 100, 1) : "Sin dato"; }
     var items = [
-      { k: "oficial", n: "Oficial", extra: pct((d.oficial / d.ayer.oficial - 1) * 100, 2) + " hoy" },
-      { k: "mep", n: "MEP", extra: "Brecha " + pctPlain((d.mep / d.oficial - 1) * 100, 1) },
-      { k: "ccl", n: "CCL", extra: "Brecha " + pctPlain((d.ccl / d.oficial - 1) * 100, 1) },
-      { k: "blue", n: "Blue", extra: "Brecha " + pctPlain((d.blue / d.oficial - 1) * 100, 1) }
+      { k: "oficial", n: "Oficial", extra: hay(d.oficial) && d.ayer && hay(d.ayer.oficial) ? pct((d.oficial / d.ayer.oficial - 1) * 100, 2) + " hoy" : (hay(d.oficial) ? "" : "Sin dato") },
+      { k: "mep", n: "MEP", extra: brecha("mep") },
+      { k: "ccl", n: "CCL", extra: brecha("ccl") },
+      { k: "blue", n: "Blue", extra: brecha("blue") }
     ];
     var ul = $("cotizaciones");
     ul.textContent = "";
     items.forEach(function (it) {
       var li = el("li");
       li.appendChild(el("span", "quotes__name", it.n));
-      li.appendChild(el("span", "quotes__val", ars(d[it.k])));
+      li.appendChild(el("span", "quotes__val", hay(d[it.k]) ? ars(d[it.k]) : "—"));
       li.appendChild(el("span", "quotes__gap", it.extra));
       ul.appendChild(li);
     });
 
+    var est = $("cotizaciones-estado");
+    if (est) est.textContent = estadoPieza("dolar").txt;
     var s = M.serieMep30d;
+    if (!s || s.length < 2) { $("spark").textContent = ""; return; }
     var min = Math.min.apply(null, s), max = Math.max.apply(null, s);
     var pts = s.map(function (y, i) {
       var x = 4 + i / (s.length - 1) * 292;
@@ -481,7 +583,7 @@
   }
 
   var NOMBRES_ALERTA = { mep: "MEP", ccl: "CCL", blue: "Blue" };
-  function brechaDe(k) { return (M.dolar[k] / M.dolar.oficial - 1) * 100; }
+  function brechaDe(k) { var d = M.dolar || {}; return hay(d[k]) && hay(d.oficial) ? (d[k] / d.oficial - 1) * 100 : null; }
 
   function renderAlertasHoy() {
     var ul = $("alertas-hoy");
@@ -494,6 +596,13 @@
     } else {
       activas.forEach(function (k) {
         var b = brechaDe(k);
+        if (b === null) {
+          var sd = el("li");
+          sd.appendChild(el("p", "alerts__title", "Brecha " + NOMBRES_ALERTA[k] + ": sin dato"));
+          sd.appendChild(el("p", "alerts__body", "No se pudo traer la cotización. La alerta no se evalúa hasta que vuelva el dato."));
+          ul.appendChild(sd);
+          return;
+        }
         var u = alertas[k].umbral;
         var dispara = b >= u;
         var li = el("li");
@@ -507,7 +616,7 @@
     }
     Object.keys(NOMBRES_ALERTA).forEach(function (k) {
       var now = $("al-" + k + "-now");
-      if (now) now.textContent = "Hoy: " + pctPlain(brechaDe(k), 1) + " sobre el oficial";
+      if (now) now.textContent = brechaDe(k) === null ? "Hoy: sin dato" : "Hoy: " + pctPlain(brechaDe(k), 1) + " sobre el oficial";
     });
   }
 
@@ -528,6 +637,7 @@
       { n: "Gastos que se indexan", v: pctPlain(e.idx * 100, 0), t: "Alquiler o cuota UVA contra tu sueldo." },
       { n: "Gasto en dólares", v: pctPlain(e.viaje * 100, 0), t: "Lo que gastás en dólares contra tu sueldo." }
     ];
+    if (e.sinMep) filas[2].t = "Sin la cotización del MEP no podemos pasar tus dólares a pesos: por ahora no se cuentan.";
     var ul = $("exposicion");
     ul.textContent = "";
     filas.forEach(function (f) {
@@ -543,8 +653,8 @@
     renderExposicion();
     renderInicio();
     renderMiPlata();
-    var s = $("s-sueldo");
-    if (!s.dataset.tocado) { s.value = String(perfil.ingreso); calcSueldo(); }
+    var s = $("s-hoy");
+    if (!s.dataset.tocado) { s.value = perfilPropio && perfil.ingreso > 0 ? f0.format(perfil.ingreso) : ""; calcSueldo(); }
   }
 
   function resumirPlata(json) {
@@ -598,15 +708,17 @@
         if (CAMPOS[k] === id) perfil[k] = Math.max(0, num(ev.target.value));
       });
       save(KEY_PERFIL, perfil);
-      $("perfil-estado").textContent = "Guardado en este dispositivo.";
+      marcarPropio(true);
+      $("perfil-estado").textContent = "Guardado en este dispositivo. Desde ahora Tu plata usa tus datos.";
       refrescarTodoSegunPerfil();
     });
     $("perfil-reset").addEventListener("click", function () {
       perfil = clone(window.ECONO_PERFIL_DEFAULT);
       save(KEY_PERFIL, perfil);
+      marcarPropio(false);
       pintarPerfil();
       refrescarTodoSegunPerfil();
-      $("perfil-estado").textContent = "Volviste a los datos de ejemplo.";
+      $("perfil-estado").textContent = "Volviste al ejemplo. Tus datos se borraron de este dispositivo.";
     });
 
     $("plata-file").addEventListener("change", function (ev) {
@@ -633,6 +745,7 @@
       if (!plata || !(plata.ingresoMes > 0)) return;
       perfil.ingreso = plata.ingresoMes;
       save(KEY_PERFIL, perfil);
+      marcarPropio(true);
       pintarPerfil();
       refrescarTodoSegunPerfil();
       $("perfil-estado").textContent = "Sueldo actualizado con el promedio de Plata.";
@@ -655,7 +768,7 @@
       var head = el("div", "alert-config__head");
       var left = el("div");
       left.appendChild(el("p", "alert-config__name", "Brecha " + NOMBRES_ALERTA[k]));
-      var now = el("p", "alert-config__now", "Hoy: " + pctPlain(brechaDe(k), 1) + " sobre el oficial");
+      var now = el("p", "alert-config__now", brechaDe(k) === null ? "Hoy: sin dato" : "Hoy: " + pctPlain(brechaDe(k), 1) + " sobre el oficial");
       now.id = "al-" + k + "-now";
       left.appendChild(now);
       head.appendChild(left);
@@ -716,6 +829,16 @@
       box.appendChild(el("p", "hint", "Ingresá un monto para ver la comparación."));
       return;
     }
+    var faltaPF = faltantes(["mep", "infM"]);
+    var vaciosPF = [];
+    if ($("pf-tna").value === "") vaciosPF.push("la tasa del plazo fijo");
+    if ($("pf-dolar").value === "") vaciosPF.push("cuánto suponés que sube el dólar");
+    if (faltaPF.length || vaciosPF.length) {
+      box.appendChild(el("p", "result__falta", "Todavía no hay resultado."));
+      if (vaciosPF.length) box.appendChild(el("p", "hint", "Completá " + listaY(vaciosPF) + "."));
+      if (faltaPF.length) box.appendChild(el("p", "hint", "Falta " + listaY(faltaPF) + ", que no pudimos traer. Sin ese dato la comparación no sería confiable, así que no la mostramos."));
+      return;
+    }
     var ganPF = monto * tna / 100 * dias / 365;
     var finalPF = monto + ganPF;
     var mepFinal = M.dolar.mep * (1 + sube / 100 * dias / 30);
@@ -742,53 +865,113 @@
     box.appendChild(el("p", "hint", "No incluye comisiones, impuestos ni la diferencia entre comprar y vender."));
   }
 
+  // monto escrito con puntos de miles: "1.300.000" -> 1300000
+  function monto(id) { var n = parseInt(String($(id).value).replace(/\D/g, ""), 10); return isFinite(n) ? n : 0; }
+  function conPuntos(inp) {
+    var dig = String(inp.value).replace(/\D/g, "").slice(0, 13);
+    inp.value = dig ? f0.format(Number(dig)) : "";
+  }
+  function nivelCalor(v, cortes) {
+    var a = Math.abs(v);
+    return (v >= 0 ? "h-u" : "h-d") + (a < cortes[0] ? 1 : a < cortes[1] ? 2 : a < cortes[2] ? 3 : 4);
+  }
+  var salProm = null; // sueldos registrados del INDEC, variacion en 12 meses (para comparar)
+
+  function barraCalc(nombre, valor, ancho, color) {
+    var f = el("div", "cs__barra");
+    f.appendChild(el("span", "cs__bn", nombre));
+    var pista = el("span", "db__pista"); pista.setAttribute("aria-hidden", "true");
+    var b = el("span", "db__barra"); b.style.width = Math.max(0, ancho).toFixed(1) + "%"; b.style.background = color;
+    pista.appendChild(b); f.appendChild(pista);
+    f.appendChild(el("span", "db__v", valor));
+    return f;
+  }
+
   function calcSueldo() {
-    var hoy = Math.max(0, num($("s-sueldo").value));
-    var aum = num($("s-aumento").value);
-    var infl = num($("s-inflacion").value);
+    var antes = monto("s-antes"), hoy = monto("s-hoy");
+    var txtInf = $("s-inflacion").value, infl = num(txtInf);
     var box = $("s-resultado");
     box.textContent = "";
-    if (hoy <= 0) {
-      box.appendChild(el("p", "hint", "Ingresá tu sueldo para ver el resultado."));
+    var vacios = [];
+    if (antes <= 0) vacios.push("lo que cobrabas hace un año");
+    if (hoy <= 0) vacios.push("lo que cobrás hoy");
+    if (txtInf === "") vacios.push("la inflación de esos 12 meses");
+    var caja = el("div", "cs__caja");
+    if (vacios.length) {
+      caja.classList.add("h-0");
+      caja.appendChild(el("p", "cs__ct", vacios.length === 1 && txtInf === "" ? "Falta la inflación" : "Completá los dos sueldos"));
+      caja.appendChild(el("p", "cs__pct", "—"));
+      caja.appendChild(el("p", "cs__frase", "Para ver el resultado, falta " + listaY(vacios) + "." + (txtInf === "" ? ($("s-inflacion").dataset.tocado ? " Escribila en “Usar otra inflación” o volvé a la del INDEC." : " No pudimos traer la inflación del INDEC: escribila en “Usar otra inflación”.") : "")));
+      box.appendChild(caja);
+      if (txtInf === "") $("s-inf-det").open = true;
       return;
     }
-    var hace12 = hoy / (1 + aum / 100);
-    var real = ((1 + aum / 100) / (1 + infl / 100) - 1) * 100;
-    var necesario = hace12 * (1 + infl / 100);
-    var dif = necesario - hoy;
+    var nom = (hoy / antes - 1) * 100;
+    var real = ((hoy / antes) / (1 + infl / 100) - 1) * 100;
+    var necesario = antes * (1 + infl / 100);
+    var dif = hoy - necesario;
+    caja.classList.add(nivelCalor(real, [1, 5, 15]));
+    caja.appendChild(el("p", "cs__ct", real >= 0 ? "Tu sueldo le ganó a los precios" : "Tu sueldo perdió contra los precios"));
+    caja.appendChild(el("p", "cs__pct", (real >= 0 ? "▲ +" : "▼ −") + Math.abs(real).toLocaleString("es-AR", { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + "%"));
+    caja.appendChild(el("p", "cs__frase", "Hoy podés comprar un " + pctPlain(Math.abs(real), 1) + (real >= 0 ? " más" : " menos") + " que hace un año con tu sueldo."));
+    box.appendChild(caja);
 
-    box.appendChild(el("p", "result__verdict", real < 0
-      ? "Tu sueldo perdió " + pctPlain(Math.abs(real), 1) + " de poder de compra en el último año."
-      : "Le ganaste a la inflación por " + pctPlain(real, 1) + "."));
+    var tope = Math.max(nom, infl, salProm ? salProm.v : 0, 1);
+    var barras = el("div", "cs__barras");
+    barras.appendChild(barraCalc("Tu sueldo", pct(nom, 1), nom / tope * 100, nom >= infl ? "var(--u4)" : "var(--d3)"));
+    barras.appendChild(barraCalc("Precios", pct(infl, 1), infl / tope * 100, "var(--sun)"));
+    if (salProm) barras.appendChild(barraCalc("Sueldo promedio", pct(salProm.v, 1), salProm.v / tope * 100, "var(--text-2)"));
+    box.appendChild(barras);
+    if (salProm) box.appendChild(el("p", "hint", "Sueldo promedio: índice de salarios registrados del INDEC, " + salProm.mes + " contra el mismo mes del año anterior. Sirve de referencia: no es tu sueldo."));
 
-    var dl = el("dl", "result__rows");
-    dl.appendChild(fila("Tu sueldo hace 12 meses", ars(hace12)));
-    dl.appendChild(fila("Para empatar con la inflación", ars(necesario)));
-    dl.appendChild(fila(dif > 0 ? "Te faltan" : "Te sobran", ars(Math.abs(dif))));
+    var dl = el("dl", "cs__dl");
+    dl.appendChild(fila("Para empatarle a los precios", ars(necesario)));
+    dl.appendChild(fila(dif >= 0 ? "Te sobran por mes" : "Te faltan por mes", ars(Math.abs(dif))));
     box.appendChild(dl);
   }
 
   function defaultsCalculadoras() {
-    var tna = $("pf-tna"), dol = $("pf-dolar"), inf = $("s-inflacion");
-    if (!tna.dataset.tocado) tna.value = String(M.tnaPlazoFijo);
-    if (!dol.dataset.tocado) dol.value = serie().var30.toFixed(1);
-    if (!inf.dataset.tocado) inf.value = String(M.inflacionInteranual);
+    var tna = $("pf-tna"), dol = $("pf-dolar"), inf = $("s-inflacion"), sr = serie();
+    if (!tna.dataset.tocado) tna.value = hay(M.tnaPlazoFijo) ? String(M.tnaPlazoFijo) : "";
+    if (!dol.dataset.tocado) dol.value = sr ? sr.var30.toFixed(1) : "";
+    if (!inf.dataset.tocado) inf.value = hay(M.inflacionInteranual) ? String(M.inflacionInteranual) : "";
+    var ep = estadoPieza("plazoFijo"), eh = estadoPieza("historia"), ei = estadoPieza("inflacion");
+    $("pf-tna-fuente").textContent = ep.estado === "falta" ? "No pudimos traer la tasa de los bancos: escribí la que te ofrecen." : "Precargada: " + ep.txt.charAt(0).toLowerCase() + ep.txt.slice(1) + " Podés cambiarla.";
+    $("pf-dolar-fuente").textContent = sr ? "Por defecto, lo que subió el MEP en los últimos 30 días (" + eh.txt.charAt(0).toLowerCase() + eh.txt.slice(1).replace(/.$/, "") + "). Es un supuesto: nadie sabe el futuro." : "No pudimos traer el histórico del dólar: escribí tu supuesto.";
+    var fi = M.inflacionMensualFecha ? new Date(M.inflacionMensualFecha + "T12:00:00").toLocaleDateString("es-AR", { month: "long", year: "numeric" }) : null;
+    $("s-inflacion-fuente").textContent = ei.estado === "falta"
+      ? "No pudimos traer la inflación del INDEC. Escribila en “Usar otra inflación”."
+      : inf.dataset.tocado ? "Usás la inflación que escribiste: " + (inf.value === "" ? "sin dato" : inf.value.replace(".", ",") + "%") + "."
+      : hay(M.inflacionInteranual) ? "Usamos la inflación del INDEC de los 12 meses a " + (fi || "su último dato") + ": " + pctPlain(M.inflacionInteranual, 1) + ". " + ei.txt
+      : "Cargando la inflación del INDEC…";
     calcPlazoFijo();
     calcSueldo();
   }
 
   function initCalculadoras() {
-    $("s-sueldo").value = String(perfil.ingreso);
+    $("s-hoy").value = perfilPropio && perfil.ingreso > 0 ? f0.format(perfil.ingreso) : "";
     ["pf-monto", "pf-tna", "pf-dias", "pf-dolar"].forEach(function (id) {
       $(id).addEventListener("input", function () { $(id).dataset.tocado = "1"; calcPlazoFijo(); });
     });
-    ["s-sueldo", "s-aumento", "s-inflacion"].forEach(function (id) {
-      $(id).addEventListener("input", function () { $(id).dataset.tocado = "1"; calcSueldo(); });
+    ["s-antes", "s-hoy"].forEach(function (id) {
+      $(id).addEventListener("input", function () { $(id).dataset.tocado = "1"; conPuntos($(id)); calcSueldo(); });
     });
+    $("s-inflacion").addEventListener("input", function () { $("s-inflacion").dataset.tocado = "1"; defaultsCalculadoras(); });
+    $("s-inf-indec").addEventListener("click", function () {
+      delete $("s-inflacion").dataset.tocado;
+      defaultsCalculadoras();
+      $("s-inf-det").open = false;
+      $("s-inf-det").querySelector("summary").focus();
+    });
+    if (window.EconoSeries) window.EconoSeries.cargar("salarios", 30).then(function (sr) {
+      var u = sr.points[sr.points.length - 1], d = new Date(u[0] + "T12:00:00"), obj = (d.getFullYear() - 1) + "-" + ("0" + (d.getMonth() + 1)).slice(-2), h = null;
+      sr.points.forEach(function (p) { if (p[0].slice(0, 7) === obj) h = p; });
+      if (h && h[1]) { salProm = { v: (u[1] / h[1] - 1) * 100, mes: d.toLocaleDateString("es-AR", { month: "long", year: "numeric" }) }; calcSueldo(); }
+    }, function () { /* sin la referencia: la barra no se muestra */ });
     defaultsCalculadoras();
 
-    var tabs = [$("tab-pf"), $("tab-sueldo")];
-    var panels = [$("panel-pf"), $("panel-sueldo")];
+    var tabs = [$("tab-sueldo"), $("tab-pf")];
+    var panels = [$("panel-sueldo"), $("panel-pf")];
     function activar(i) {
       tabs.forEach(function (t, j) {
         t.setAttribute("aria-selected", j === i ? "true" : "false");
@@ -861,8 +1044,17 @@
     return document.documentElement.dataset.theme === "light" ? "light" : "dark";
   }
 
+  // el botón muestra un ícono (sol o luna) y el texto; en pantallas chicas queda solo el ícono, con el texto para lectores de pantalla
   function pintarBotonTema() {
-    $("tema").textContent = temaEfectivo() === "dark" ? "Modo claro" : "Modo oscuro";
+    var b = $("tema"), oscuro = temaEfectivo() === "dark", txt = oscuro ? "Modo claro" : "Modo oscuro";
+    b.textContent = "";
+    b.setAttribute("aria-label", txt);
+    var NS = "http://www.w3.org/2000/svg", sv = document.createElementNS(NS, "svg");
+    sv.setAttribute("class", "icono"); sv.setAttribute("viewBox", "0 0 24 24"); sv.setAttribute("aria-hidden", "true");
+    var pa = document.createElementNS(NS, "path");
+    pa.setAttribute("d", oscuro ? "M12 4V2M12 22v-2M4 12H2M22 12h-2M5.6 5.6 4.2 4.2M19.8 19.8l-1.4-1.4M5.6 18.4l-1.4 1.4M19.8 4.2l-1.4 1.4M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z" : "M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z");
+    sv.appendChild(pa); b.appendChild(sv);
+    b.appendChild(el("span", "tema__txt", txt));
   }
 
   function initTema() {
@@ -905,7 +1097,7 @@
     cargando = true;
     var b = $("refrescar");
     b.disabled = true; b.textContent = "Actualizando";
-    window.EconoAPI.cargar().then(function (datos) {
+    window.EconoAPI.cargar(M).then(function (datos) {
       M = datos;
       renderTodo();
     }).catch(function () {
@@ -935,6 +1127,7 @@
       hace: hace,
       actualizar: actualizar,
       resumenPlata: function () {
+        if (faltantes(NECESARIOS_PLATA).length) return null;
         var r = factores(perfil), v = variaciones(r), m = mood(r.score);
         return { mes: v.mes, score: r.score, mood: m.texto };
       }

@@ -1,13 +1,13 @@
 /*
  * Capa de datos en vivo. Todas las fuentes son publicas y no piden clave:
  *   DolarAPI, ArgentinaDatos, API del BCRA, datos.gob.ar (INDEC) y news.json (propio).
- * Cada pieza falla por separado: si una cae, esa parte queda con el dato de ejemplo
- * (data.js) y se avisa en pantalla cual fue.
+ * Cada pieza falla por separado: si una cae, se conserva el último dato real que había
+ * (marcado como "previo") o queda sin dato ("falta"). Nunca se rellena con valores de ejemplo.
  */
 (function () {
   "use strict";
 
-  var CACHE_KEY = "econochanta:v1:cache";
+  var CACHE_KEY = "econochanta:v2:cache"; // v2: sin datos de ejemplo mezclados
   var TTL_MS = 5 * 60 * 1000;
 
   var IPC_IDS = {
@@ -72,7 +72,8 @@
       }
       return {
         ayer: { oficial: ayer(r[0]), mep: ayer(r[1]), ccl: ayer(r[2]), blue: ayer(r[3]) },
-        serieMep30d: r[1].points.slice(-30).map(function (p) { return p[1]; })
+        serieMep30d: r[1].points.slice(-30).map(function (p) { return p[1]; }),
+        fecha: r[1].ultimo.d
       };
     });
   }
@@ -113,7 +114,7 @@
   function pedirIPC() {
     var claves = Object.keys(IPC_IDS);
     return Promise.all(claves.map(function (k) {
-      return getJSON("https://apis.datos.gob.ar/series/api/series?ids=" + IPC_IDS[k] + "&limit=8&sort=desc&format=json")
+      return getJSON("https://apis.datos.gob.ar/series/api/series/?ids=" + IPC_IDS[k] + "&limit=8&sort=desc&format=json")
         .then(function (r) {
           var puntos = (r.data || []).filter(function (x) { return x[1] !== null && x[1] !== undefined; });
           if (puntos.length < 2) return null;
@@ -140,42 +141,77 @@
 
   /* ---- orquestador ---- */
 
-  function cargar(opts) {
-    var base = JSON.parse(JSON.stringify(window.ECONO_MOCK));
-    var estado = { dolar: false, historia: false, inflacion: false, plazoFijo: false, reservas: false, ipc: false, noticias: false };
-    var errores = [];
-    var out = base;
-    out.esMock = true;
-    out.ipc = null;
-    out.noticias = null;
+  // de dónde sale cada pieza (proveedor concreto, no "oficial" en general)
+  var FUENTES = {
+    dolar: "DolarAPI (dolarapi.com), precio de venta",
+    historia: "ArgentinaDatos (api.argentinadatos.com)",
+    inflacion: "INDEC, vía datos.gob.ar",
+    plazoFijo: "ArgentinaDatos, mediana de la TNA que publican los bancos",
+    reservas: "BCRA, API de estadísticas",
+    ipc: "INDEC, vía datos.gob.ar",
+    noticias: "Titulares de medios (news.json propio)"
+  };
 
-    function pieza(nombre, p, aplicar) {
-      return p.then(function (v) { aplicar(v); estado[nombre] = true; })
-        .catch(function (e) { errores.push(nombre + ": " + (e && e.message ? e.message : e)); });
+  function vacio() {
+    return {
+      dolar: { oficial: null, mep: null, ccl: null, blue: null, ayer: null },
+      serieMep30d: null, inflacionMensual: null, inflacionMensualFecha: null, inflacionInteranual: null,
+      tnaPlazoFijo: null, reservasVar30d: null, reservasFecha: null, ipc: null, noticias: null,
+      meta: {}, actualizadoEn: null
+    };
+  }
+
+  // Cada pieza falla por separado. Si una falla:
+  // - si hay un valor real de una consulta anterior, se conserva y queda marcado como "previo" (último dato disponible);
+  // - si no, queda en null y marcado como "falta". Nunca se completa con un valor de ejemplo.
+  function cargar(prev) {
+    var out = vacio();
+    var errores = [];
+    var ahora = new Date().toISOString();
+
+    function copiarPrevio(nombre, campos) {
+      if (!prev || !prev.meta || !prev.meta[nombre] || prev.meta[nombre].estado === "falta") return false;
+      campos.forEach(function (c) {
+        if (c.indexOf("dolar.") === 0) out.dolar[c.slice(6)] = prev.dolar ? prev.dolar[c.slice(6)] : null;
+        else out[c] = prev[c];
+      });
+      out.meta[nombre] = { estado: "previo", fuente: FUENTES[nombre], periodo: prev.meta[nombre].periodo, consultado: prev.meta[nombre].consultado };
+      return true;
+    }
+
+    function pieza(nombre, p, campos, aplicar) {
+      return p.then(function (v) {
+        var periodo = aplicar(v);
+        out.meta[nombre] = { estado: "ok", fuente: FUENTES[nombre], periodo: periodo || ahora, consultado: ahora };
+      }).catch(function (e) {
+        errores.push(nombre + ": " + (e && e.message ? e.message : e));
+        if (!copiarPrevio(nombre, campos)) out.meta[nombre] = { estado: "falta", fuente: FUENTES[nombre], periodo: null, consultado: ahora };
+      });
     }
 
     return Promise.all([
-      pieza("dolar", pedirDolar(), function (d) {
+      pieza("dolar", pedirDolar(), ["dolar.oficial", "dolar.mep", "dolar.ccl", "dolar.blue"], function (d) {
         out.dolar.oficial = d.oficial; out.dolar.mep = d.mep; out.dolar.ccl = d.ccl; out.dolar.blue = d.blue;
+        return ahora;
       }),
-      pieza("historia", pedirHistoria(), function (h) {
+      pieza("historia", pedirHistoria(), ["dolar.ayer", "serieMep30d"], function (h) {
         out.dolar.ayer = h.ayer;
-        if (h.serieMep30d.length >= 10) out.serieMep30d = h.serieMep30d;
+        out.serieMep30d = h.serieMep30d.length >= 10 ? h.serieMep30d : null;
+        if (!out.serieMep30d) throw new Error("serie corta");
+        return h.fecha || null;
       }),
-      pieza("inflacion", pedirInflacion(), function (i) {
+      pieza("inflacion", pedirInflacion(), ["inflacionMensual", "inflacionMensualFecha", "inflacionInteranual"], function (i) {
         out.inflacionMensual = i.mensual; out.inflacionMensualFecha = i.mensualFecha; out.inflacionInteranual = i.interanual;
+        return i.mensualFecha;
       }),
-      pieza("plazoFijo", pedirPlazoFijo(), function (t) { out.tnaPlazoFijo = Math.round(t * 10) / 10; }),
-      pieza("reservas", pedirReservas(), function (r) { out.reservasVar30d = r.var30; out.reservasFecha = r.fecha; }),
-      pieza("ipc", pedirIPC(), function (x) { out.ipc = x; }),
-      pieza("noticias", pedirNoticias(), function (n) { out.noticias = n; })
+      pieza("plazoFijo", pedirPlazoFijo(), ["tnaPlazoFijo"], function (t) { out.tnaPlazoFijo = Math.round(t * 10) / 10; return ahora; }),
+      pieza("reservas", pedirReservas(), ["reservasVar30d", "reservasFecha"], function (r) { out.reservasVar30d = r.var30; out.reservasFecha = r.fecha; return r.fecha; }),
+      pieza("ipc", pedirIPC(), ["ipc"], function (x) { out.ipc = x; return x.general.fecha; }),
+      pieza("noticias", pedirNoticias(), ["noticias"], function (n) { out.noticias = n; return n.actualizado || ahora; })
     ]).then(function () {
-      var ahora = new Date();
-      out.fecha = ahora.toISOString().slice(0, 10);
-      out.esMock = !(estado.dolar && estado.inflacion);
-      out.estado = estado;
+      out.fecha = ahora.slice(0, 10);
       out.errores = errores;
-      out.actualizadoEn = ahora.toISOString();
+      out.actualizadoEn = ahora;
       try {
         localStorage.setItem(CACHE_KEY, JSON.stringify({ t: Date.now(), datos: out }));
       } catch (e) { /* sin storage */ }
@@ -188,10 +224,10 @@
       var raw = localStorage.getItem(CACHE_KEY);
       if (!raw) return null;
       var c = JSON.parse(raw);
-      if (!c || !c.datos || !c.datos.dolar) return null;
+      if (!c || !c.datos || !c.datos.meta) return null;
       return { datos: c.datos, edadMs: Date.now() - c.t, vigente: Date.now() - c.t < TTL_MS };
     } catch (e) { return null; }
   }
 
-  window.EconoAPI = { cargar: cargar, desdeCache: desdeCache, TTL_MS: TTL_MS };
+  window.EconoAPI = { cargar: cargar, desdeCache: desdeCache, vacio: vacio, FUENTES: FUENTES, TTL_MS: TTL_MS };
 })();
