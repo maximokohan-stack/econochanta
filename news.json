@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-13T03:04:09.435778Z",
+ "actualizado": "2026-11-13T05:56:10.992116Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -59,6 +59,55 @@
   }
  ],
  "items": [
+  {
+   "titulo": "El Gobierno consolida al dólar como ancla para volver al proceso de desinflación y remonetizar la economía",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/13/el-gobierno-consolida-al-dolar-como-ancla-para-volver-al-proceso-de-desinflacion-y-remonetizar-la-economia/",
+   "fecha": "2026-11-13T05:31:41Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "La inflación sigue al alza: cómo evolucionaron los gastos fijos que más pesan en el presupuesto familiar a lo largo de 2026",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/13/la-inflacion-sigue-al-alza-como-evolucionaron-los-gastos-fijos-que-mas-pesan-en-el-presupuesto-familiar-a-lo-largo-de-2026/",
+   "fecha": "2026-11-13T05:31:23Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "“No queríamos implosionar con el modelo”: cerró su fábrica en Argentina y ahora produce el 70% de su ropa en China",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/13/no-queriamos-implosionar-con-el-modelo-cerro-su-fabrica-en-argentina-y-ahora-produce-el-70-de-su-ropa-en-china/",
+   "fecha": "2026-11-13T05:31:05Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "¿Hay cada vez más autos importados en Argentina?: cuál es el verdadero peso de los vehículos que llegan del extranjero",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/13/hay-cada-vez-mas-autos-importados-en-argentina-cual-es-el-verdadero-peso-de-los-vehiculos-que-llegan-del-extranjero/",
+   "fecha": "2026-11-13T05:30:45Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "De dónde van a salir los dólares para pagar casi USD 4.400 millones de vencimientos en enero",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/13/de-donde-van-a-salir-los-dolares-para-pagar-casi-usd-4400-millones-de-vencimientos-en-enero/",
+   "fecha": "2026-11-13T05:30:29Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El riesgo país baja mientras la inflación no le da tregua al Gobierno y Brasil agrava sus problemas",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/13/el-riesgo-pais-baja-mientras-la-inflacion-no-le-da-tregua-al-gobierno-y-brasil-agrava-sus-problemas/",
+   "fecha": "2026-11-13T05:30:14Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Cuánto van a aumentar las jubilaciones y pensiones de Anses en diciembre tras el último dato de inflación",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/12/cuanto-van-a-aumentar-las-jubilaciones-y-pensiones-de-anses-en-diciembre-tras-el-ultimo-dato-de-inflacion/",
+   "fecha": "2026-11-13T03:29:21Z",
+   "tema": "inflacion"
+  },
   {
    "titulo": "Se cayó Outlook durante el jueves en todo el mundo, pero Microsoft dice que el servicio se está recuperando",
    "medio": "La Nación",
@@ -261,13 +310,6 @@
    "url": "https://www.lanacion.com.ar/economia/cuanto-cobraran-los-jubilados-de-la-anses-en-diciembre-con-reajuste-bono-y-aguinaldo-nid12112026/",
    "fecha": "2026-11-12T20:50:58Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "Cuánto van a aumentar las jubilaciones y pensiones de Anses en diciembre tras el último dato de inflación",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/12/cuanto-van-a-aumentar-las-jubilaciones-y-pensiones-de-anses-en-diciembre-tras-el-ultimo-dato-de-inflacion/",
-   "fecha": "2026-11-12T20:41:26Z",
-   "tema": "inflacion"
   },
   {
    "titulo": "Un índice del Banco Central muestra que el peso vuelve a acelerar su apreciación",
@@ -522,38 +564,10 @@
    "tema": "otros"
   },
   {
-   "titulo": "Crisis textil: con la producción en caída libre, los empresarios advirtieron que sostener al sector “es una decisión política”",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/12/crisis-textil-con-la-produccion-en-caida-libre-los-empresarios-advirtieron-que-sostener-al-sector-es-una-decision-politica/",
-   "fecha": "2026-11-12T15:35:02Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "La pobreza urbana alcanzó al 32,6% de la población y afecta a casi 10 millones de personas",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/468929-pobreza-urbana-llego-32-por-ciento-afecta-a-10-millones-argentinos",
    "fecha": "2026-11-12T15:34:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Privatización de AySA: la firma del contrato de compraventa se pospuso hasta mediados de diciembre",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/12/privatizacion-de-aysa-la-firma-del-contrato-de-compraventa-se-pospuso-hasta-mediados-de-diciembre/",
-   "fecha": "2026-11-12T14:59:43Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Por la caída de las importaciones, este año la Argentina reducirá a la mitad su déficit comercial con Brasil",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/12/por-menores-compras-la-argentina-reduciria-a-la-mitad-su-deficit-comercial-con-brasil-este-ano/",
-   "fecha": "2026-11-12T14:53:19Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Quién es Colette Kress, la nueva CEO interina de Nvidia que reemplazó a Jensen Huang",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/12/quien-es-colette-kress-la-nueva-ceo-interina-de-nvidia-que-reemplazo-a-jensen-huang/",
-   "fecha": "2026-11-12T14:35:18Z",
    "tema": "otros"
   },
   {
@@ -562,20 +576,6 @@
    "url": "https://www.iprofesional.com/economia/468853-por-que-el-mercado-preve-un-dato-de-inflacion-ipc-indec-elevado",
    "fecha": "2026-11-12T14:30:00Z",
    "tema": "dolar"
-  },
-  {
-   "titulo": "Punto por punto: la trama de espionaje, infidelidad y tecnología que puede costarle el cargo al CEO de Nvidia",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/12/punto-por-punto-la-trama-de-espionaje-infidelidad-y-tecnologia-que-puede-costarle-el-cargo-al-ceo-de-nvidia/",
-   "fecha": "2026-11-12T14:19:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Renunció Jensen Huang, el CEO de Nvidia, en medio del escándalo de infidelidad y espionaje chino",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/12/renuncio-jensen-huang-el-ceo-de-nvidia-en-medio-del-escandalo-de-infidelidad-y-espionaje-chino/",
-   "fecha": "2026-11-12T14:08:53Z",
-   "tema": "otros"
   },
   {
    "titulo": "China le reclamó a EEUU acelerar la aplicación del acuerdo de baja de aranceles por u$s60.000 millones",
