@@ -1165,15 +1165,10 @@ body { font-family: var(--font); background: var(--bg); }
 .portada__txt { display: flex; flex-direction: column; gap: 12px; }
 .portada__marca { margin: 0; font-family: var(--disp); font-size: clamp(32px, 4.4vw, 56px); line-height: 1.05; letter-spacing: -0.035em; font-weight: 800; max-width: 20ch; color: var(--text); }
 .portada__prop { margin: 0; font-size: clamp(17px, 1.6vw, 20px); color: var(--text-2); max-width: 56ch; }
-.portada__acc { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
-.portada__acc .btn { min-height: 48px; padding: 0 22px; font-size: 16px; }
 .portada .buscador { margin: 0; max-width: 720px; }
 
 /* lo importante de hoy: titular que cambia con los datos, con fecha y fuente */
 .hoy { position: relative; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 18px 32px; margin-top: 28px; padding: 28px 28px 24px; overflow: hidden; border: 1px solid var(--line); border-radius: 26px; background: var(--surface); scroll-margin-top: 120px; }
-.hoy__amb { position: absolute; left: 0; bottom: 0; width: 100%; height: 70%; pointer-events: none; opacity: .5; }
-.hoy__amb-ar { fill: var(--down); fill-opacity: .06; animation: pul-fade 2s ease both 1s; }
-.hoy__amb-ln { fill: none; stroke: var(--down); stroke-opacity: .4; stroke-width: 2; stroke-dasharray: 1; animation: pul-draw 3s cubic-bezier(.4, 0, .2, 1) both .2s; }
 .hoy__txt { position: relative; flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 14px; }
 .hoy__eyebrow { margin: 0; display: flex; align-items: center; gap: 10px; color: var(--text-2); font-weight: 600; font-size: 14px; letter-spacing: .02em; }
 .hoy__tit { margin: 0; font-family: var(--disp); font-size: clamp(30px, 4.2vw, 56px); line-height: 1.05; letter-spacing: -0.03em; font-weight: 700; max-width: 20ch; color: var(--text); animation: pul-rise .9s cubic-bezier(.2, .8, .2, 1) both .1s; }
@@ -1279,11 +1274,10 @@ body { font-family: var(--font); background: var(--bg); }
   .resumen__sub { font-size: 22px; margin-top: 30px; }
   .portada { padding-top: 22px; }
   .hoy { padding: 22px 18px 20px; border-radius: 20px; }
-  .portada__acc .btn { flex: 1 1 100%; justify-content: center; }
   .escala { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .hoy__tit, .hoy__sub, .senales, .senales__seg, .preg, .hoy__amb-ln, .hoy__amb-ar, .vivo::after { animation: none !important; }
+  .hoy__tit, .hoy__sub, .senales, .senales__seg, .preg, .vivo::after { animation: none !important; }
   .preg, .preg__val { transition: none; }
 }
 

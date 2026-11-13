@@ -1213,7 +1213,6 @@
     { id: "analisis", nombre: "Análisis", desc: "Qué pasó, qué dicen los datos y a quién le pega o le conviene" },
     { id: "glosario", nombre: "Glosario", desc: "Qué mide cada indicador, cómo se calcula y cómo leerlo" }
   ];
-  var IDS_DOLARES = ["oficial", "blue", "mep", "ccl", "tarjeta", "brecha"];
 
   /* ---------- buscador de la portada ---------- */
 
@@ -1388,7 +1387,6 @@
 
   var REDUCE = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
   var IDS_PULSO = ["oficial", "infM", "riesgo"];
-  var IDS_LECTURA_INICIO = ["infM", "riesgo", "salarios", "resPrim", "saldo", "badlar"];
   var IDS_VISITA = ["oficial", "blue", "mep", "ccl", "brecha", "riesgo", "reservas", "infM", "badlar"];
   var IDS_MOV = ["oficial", "blue", "mep", "ccl", "tarjeta", "brecha", "riesgo", "reservas", "badlar", "tamar", "infM", "infIA", "emae", "desoc", "resPrim", "saldo", "recaudIA", "salarios"];
   var PERIODOS = [
@@ -1626,29 +1624,6 @@
     var tag = el("span", "lect lect--" + r.v); tag.appendChild(el("span", "lect__icono", e.icono)); tag.appendChild(document.createTextNode(" " + e.nombre));
     return tag;
   }
-  function pintarLecturaInicio(m, caja) {
-    var L = window.EconoLectura; if (!caja || !L) return;
-    var items = L.ids.map(function (id) { return { id: id, it: m.porId[id], r: L.leer(id, m.porId) }; }).filter(function (x) { return x.it && x.it.ok && x.r; });
-    // una lectura por tema, elegida a mano por ser la mas informativa de cada uno (las demas estan en "Datos recientes")
-    var porId = {};
-    items.forEach(function (x) { porId[x.id] = x; });
-    var elegidos = IDS_LECTURA_INICIO.map(function (id) { return porId[id]; }).filter(Boolean);
-    caja.textContent = "";
-    elegidos.forEach(function (x) {
-      var b = el("button", "lec lec--" + x.r.v); b.type = "button";
-      b.appendChild(el("span", "rec__tema", L.tema(x.id)));
-      var n = el("span", "lec__nom"); var pt = punto(x.it.id); if (pt) n.appendChild(pt); n.appendChild(document.createTextNode(x.it.label)); b.appendChild(n);
-      var v = el("span", "lec__val"); v.appendChild(document.createTextNode(x.it.valor));
-      var un = unidadDe(x.it); if (un) v.appendChild(el("small", "", " " + un));
-      b.appendChild(v);
-      b.appendChild(bloqueLectura(x.r));
-      b.appendChild(el("span", "lec__texto", x.r.t));
-      b.appendChild(el("span", "lec__fecha", "Dato de " + x.it.fecha));
-      b.addEventListener("click", function () { abrirCajon(x.it, "mes"); });
-      caja.appendChild(b);
-    });
-  }
-
   /* ---- cajon de detalle: se abre sobre el Inicio, sin salir de la pagina ---- */
 
   var cajon = null, cajonFoco = null;
@@ -1995,11 +1970,11 @@
   /* ---- armado del Inicio ---- */
 
   function armarInicio() {
-    var ids = IDS_DOLARES.concat(IDS_PULSO, IDS_MOV, IDS_VISITA, IDS_MOSAICO, ["infIA"], window.EconoLectura ? window.EconoLectura.ids.concat(window.EconoLectura.contexto) : []);
+    var ids = IDS_PULSO.concat(IDS_MOV, IDS_VISITA, IDS_MOSAICO, ["infIA"], window.EconoLectura ? window.EconoLectura.ids.concat(window.EconoLectura.contexto) : []);
     Object.keys(favs).forEach(function (id) { ids.push(id); });
     ids = ids.filter(function (id, i) { return DEFS[id] && ids.indexOf(id) === i; });
     var filas = ids.map(function (id) { var c = {}; Object.keys(DEFS[id]).forEach(function (k) { c[k] = DEFS[id][k]; }); c.g = "Inicio"; return c; });
-    var cajas = { dolares: $("inicio-dolares"), favs: $("inicio-favs"), lectura: $("inicio-lectura") };
+    var cajas = { favs: $("inicio-favs") };
 
     var m = crearMesa({
       filas: filas, raiz: document.createElement("div"), vista: "inicio", titulo: "", clave: [], frases: null, sinRegistro: true,
@@ -2017,8 +1992,6 @@
       pintarPulso(m);
       pintarMosaico(m);
       pintarMovers(false);
-      pintarLecturaInicio(m, cajas.lectura);
-      grupo(cajas.dolares, IDS_DOLARES);
       var mis = Object.keys(favs).filter(function (id) { return m.porId[id]; });
       $("inicio-favs-bloque").hidden = !mis.length;
       grupo(cajas.favs, mis);
@@ -2263,16 +2236,6 @@
 
   var PRIMERA_KEY = "econochanta:v1:primera";
   function iniciarPrimera() {
-    // acción principal del Inicio: ir al bloque "Lo importante de hoy" (el hash es el router, así que se resuelve con scroll y foco)
-    var irHoy = $("ir-hoy");
-    if (irHoy && !irHoy.__ok) {
-      irHoy.__ok = true;
-      irHoy.addEventListener("click", function () {
-        var h = $("h-hoy"), bloque = $("bloque-hoy");
-        if (bloque) bloque.scrollIntoView({ behavior: REDUCE ? "auto" : "smooth", block: "start" });
-        if (h) setTimeout(function () { h.focus({ preventScroll: true }); }, REDUCE ? 0 : 400);
-      });
-    }
     var caja = $("primera"), ok = $("primera-ok");
     if (!caja || !ok) return;
     var visto = false;

@@ -114,7 +114,7 @@
   function pedirIPC() {
     var claves = Object.keys(IPC_IDS);
     return Promise.all(claves.map(function (k) {
-      return getJSON("https://apis.datos.gob.ar/series/api/series?ids=" + IPC_IDS[k] + "&limit=8&sort=desc&format=json")
+      return getJSON("https://apis.datos.gob.ar/series/api/series/?ids=" + IPC_IDS[k] + "&limit=8&sort=desc&format=json")
         .then(function (r) {
           var puntos = (r.data || []).filter(function (x) { return x[1] !== null && x[1] !== undefined; });
           if (puntos.length < 2) return null;

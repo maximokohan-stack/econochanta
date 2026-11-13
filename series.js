@@ -12,7 +12,7 @@
   "use strict";
 
   var AD = "https://api.argentinadatos.com/v1/";
-  var DG0 = "https://apis.datos.gob.ar/series/api/series?format=json";
+  var DG0 = "https://apis.datos.gob.ar/series/api/series/?format=json";  // con la barra final: sin la redirección 301
   var BCRA = "https://api.bcra.gob.ar/estadisticas/v4.0/monetarias/";
   var D912 = "https://data912.com/live/";
 
@@ -151,6 +151,17 @@
 
   function iso(d) { return d.toISOString().slice(0, 10); }
 
+  // misma URL en los últimos 10 minutos: se reusa la respuesta (o el pedido en curso)
+  var memoURL = {};
+  function getJSONMemo(url, ms) {
+    var h = memoURL[url];
+    if (h && Date.now() - h.t < 10 * MIN) return h.p;
+    var p = getJSON(url, ms);
+    memoURL[url] = { t: Date.now(), p: p };
+    p.catch(function () { delete memoURL[url]; });
+    return p;
+  }
+
   /* ---------- API oficial del INDEC ---------- */
 
   // Una Action de GitHub baja las series de api.indec.gob.ar (necesita token, que no puede estar en
@@ -170,8 +181,14 @@
 
   // data/resumen.json: todas las series ya recortadas, armado cada hora por una Action. Con eso la
   // web abre con un solo pedido (~180 KB) en vez de bajar la historia completa de cada fuente (~2,7 MB).
-  // Si el archivo no esta o tiene mas de 3 horas, cada serie se pide a su fuente como siempre.
-  var RESUMEN_EDAD = 3 * HORA, resumenDoc = null;
+  // Cada serie se toma del resumen si es lo bastante reciente para su ritmo: las mensuales (datos.gob.ar
+  // e INDEC) hasta 12 horas, las diarias o en vivo hasta 3 horas. Si no, se pide a su fuente como siempre.
+  var RESUMEN_EDAD = 3 * HORA, RESUMEN_EDAD_LENTA = 12 * HORA, resumenDoc = null;
+  function resumenSirve(doc, c) {
+    if (!doc || !isFinite(doc.t)) return false;
+    var lenta = c.src === "dg" || c.src === "indec";
+    return Date.now() - doc.t < (lenta ? RESUMEN_EDAD_LENTA : RESUMEN_EDAD);
+  }
 
   function cargarResumen() {
     if (!resumenDoc) {
@@ -179,8 +196,8 @@
         if (!r.ok) throw new Error("HTTP " + r.status);
         return r.json();
       }).then(function (d) {
-        var t = Date.parse(d.generado);
-        return isFinite(t) && Date.now() - t < RESUMEN_EDAD ? d : { series: {} };
+        d.t = Date.parse(d.generado);
+        return isFinite(d.t) && Date.now() - d.t < RESUMEN_EDAD_LENTA ? d : { series: {} };
       }).catch(function () { return { series: {} }; });
     }
     return resumenDoc;
@@ -207,13 +224,13 @@
   function pedir(c, n) {
     var hoy = iso(new Date());
     if (c.src === "ad") {
-      return getJSON(AD + c.path).then(function (r) {
+      return getJSONMemo(AD + c.path).then(function (r) {
         return r.filter(function (x) { return x.valor !== null && x.valor !== undefined; })
           .map(function (x) { return [x.fecha, Number(x.valor)]; });
       });
     }
     if (c.src === "adc") {
-      return getJSON(AD + "cotizaciones/dolares/" + c.path).then(function (r) {
+      return getJSONMemo(AD + "cotizaciones/dolares/" + c.path).then(function (r) {
         return r.filter(function (x) { return x.venta !== null && x.venta !== undefined; })
           .map(function (x) { return [x.fecha, Number(x.venta)]; });
       });
@@ -239,7 +256,7 @@
     }
     if (c.src === "bcra") {
       var desde = iso(new Date(Date.now() - 800 * 86400000));
-      return getJSON(BCRA + c.id + "?desde=" + desde + "&hasta=" + hoy + "&limit=3000", 25000).then(function (r) {
+      return getJSONMemo(BCRA + c.id + "?desde=" + desde + "&hasta=" + hoy + "&limit=3000", 25000).then(function (r) {
         var det = (r.results && r.results[0] && r.results[0].detalle) || [];
         return det.filter(function (x) { return x.valor !== null && x.valor !== undefined; })
           .map(function (x) { return [x.fecha, Number(x.valor)]; })
@@ -273,6 +290,12 @@
 
   var deIndec = {};
 
+  var VACIA = "econochanta:v3:vacia:";
+  function marcarVacia(key) { try { localStorage.setItem(VACIA + key, String(Date.now())); } catch (e) { /* sin storage */ } }
+  function vaciaReciente(key) {
+    try { var t = Number(localStorage.getItem(VACIA + key)); return isFinite(t) && t > 0 && Date.now() - t < HORA; } catch (e) { return false; }
+  }
+
   function enriquecer(key, c, puntos) {
     var n = puntos.length;
     var ult = n ? puntos[n - 1] : null;
@@ -295,9 +318,10 @@
     var limite = n || 120;
     var cached = leerCache(key, c.ttl);
     if (cached) return Promise.resolve(enriquecer(key, c, cached.slice(-limite)));
+    if (vaciaReciente(key)) return Promise.reject(new Error("sin datos"));
     if (!enCurso[key]) {
       var base = cargarResumen().then(function (res) {
-        var r = res.series && res.series[key];
+        var r = resumenSirve(res, c) && res.series && res.series[key];
         return r && r.length ? r.map(function (p) { return [p[0], Number(p[1])]; }) : pedir(c, 400);
       }).catch(function (e) { return c.src === "indec" ? [] : Promise.reject(e); });
       // Si la fuente habitual falla pero el INDEC tiene la serie, se usa solo la del INDEC.
@@ -309,7 +333,7 @@
           return f.puntos;
         });
       enCurso[key] = conIndec.then(function (puntos) {
-        if (!puntos.length) throw new Error("sin datos");
+        if (!puntos.length) { marcarVacia(key); throw new Error("sin datos"); }
         var recorte = puntos.slice(-1300);
         guardarCache(key, recorte);
         return recorte;
