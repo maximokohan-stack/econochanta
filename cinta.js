@@ -16,8 +16,8 @@
 
   // [símbolo en data912, nombre que se muestra]; los índices no cotizan como tales: se usan CEDEARs de ETFs que los siguen
   var GRUPOS = [
-    { id: "idx", panel: "arg_cedears", titulo: "Índices del mundo", nota: "vía CEDEARs de ETFs, en pesos", moneda: "ARS",
-      items: [["SPY", "S&P 500"], ["QQQ", "Nasdaq 100"], ["DIA", "Dow Jones"], ["EWZ", "Bolsa de Brasil"], ["GLD", "Oro"]] },
+    { id: "idx", panel: "arg_cedears", titulo: "Índices, oro, petróleo y cripto", nota: "vía CEDEARs de ETFs, en pesos", moneda: "ARS",
+      items: [["SPY", "S&P 500"], ["QQQ", "Nasdaq 100"], ["DIA", "Dow Jones"], ["EWZ", "Bolsa de Brasil"], ["GLD", "Oro"], ["USO", "Petróleo"], ["IBIT", "Bitcoin"], ["ETHA", "Ethereum"]] },
     { id: "acc", panel: "arg_stocks", titulo: "Acciones líderes", nota: "BYMA, en pesos", moneda: "ARS",
       items: [["GGAL", "Galicia"], ["YPFD", "YPF"], ["PAMP", "Pampa"], ["BMA", "Macro"], ["TXAR", "Ternium"], ["ALUA", "Aluar"], ["CEPU", "Central Puerto"], ["TGSU2", "TGS"], ["BBAR", "Francés"], ["LOMA", "Loma Negra"]] },
     { id: "adr", panel: "usa_adrs", titulo: "ADRs en Nueva York", nota: "en dólares", moneda: "USD",
@@ -130,7 +130,7 @@
     // la velocidad depende del largo: unos 70 px por segundo
     requestAnimationFrame(function () {
       var w = pista.firstChild.getBoundingClientRect().width;
-      pista.style.setProperty("--dur", Math.max(40, Math.round(w / 70)) + "s");
+      pista.style.setProperty("--dur", Math.max(120, Math.round(w / 16)) + "s");  // lenta: se lee sin perseguirla
     });
     raiz.classList.toggle("cinta--mueve", !REDUCE);
     pie.textContent = "Consultado " + hora(estado.consultado);

@@ -748,6 +748,147 @@
     });
   }
 
+  /* ================= PORTADAS DE TASAS, ACTIVIDAD, ESTADO, BANCO CENTRAL Y MERCADOS ================= */
+  // Cada una: selector de serie (si hay más de una), el dato grande con sus cambios, un gráfico que se
+  // recorre con períodos, mínimo, máximo y promedio, y la tarjeta «¿Qué es?» del glosario. Todo sale de
+  // las mismas series que el resto de la app; si una falla, dice «sin dato».
+  // tipo: "pp" = diferencia en puntos, "pct" = variación porcentual, "abs" = diferencia en la misma unidad
+  var PORT = {
+    tasas: [
+      { key: "badlar", glos: "badlar", nombre: "Tasa BADLAR", corto: "BADLAR", que: "¿Qué es la tasa BADLAR?", diaria: true, tipo: "pp", fmt: function (v) { return nf(v, 1) + "%"; }, nota: "% anual que pagan los bancos por depósitos grandes" },
+      { key: "tamar", glos: "tamar", nombre: "Tasa TAMAR", corto: "TAMAR", que: "¿Qué es la tasa TAMAR?", diaria: true, tipo: "pp", fmt: function (v) { return nf(v, 1) + "%"; }, nota: "% anual por depósitos de más de $ 1.000 millones" }],
+    actividad: [
+      { key: "emae", glos: "emae", nombre: "Actividad económica (EMAE)", corto: "EMAE", que: "¿Qué es el EMAE?", tipo: "pct", fmt: function (v) { return nf(v, 1); }, nota: "índice sin estacionalidad (2004 = 100)" },
+      { key: "desocupacion", glos: "desoc", nombre: "Desocupación", corto: "Desocupación", que: "¿Qué mide la desocupación?", tipo: "pp", fmt: function (v) { return nf(v, 1) + "%"; }, nota: "de quienes buscan trabajo, por trimestre" }],
+    estado: [
+      { key: "resPrimario", glos: "resPrim", nombre: "Resultado primario", corto: "Resultado primario", que: "¿Qué es el resultado primario?", tipo: "abs", fmt: function (v) { var m = v / 1000; return (v < 0 ? "−" : "") + "$ " + nf(Math.abs(m), Math.abs(m) >= 100 ? 0 : 1) + " mil M"; }, nota: "por mes, en miles de millones de pesos" }],
+    bcra: [
+      { key: "reservas", glos: "reservas", nombre: "Reservas internacionales", corto: "Reservas", que: "¿Qué son las reservas?", diaria: true, tipo: "pct", fmt: function (v) { return "US$ " + nf(v, 0) + " M"; }, nota: "brutas, en millones de dólares" },
+      { key: "comprasDivisas", glos: "compras", nombre: "Compras de dólares del BCRA", corto: "Compras del BCRA", que: "¿Qué son las compras del BCRA?", diaria: true, tipo: "abs", fmt: function (v) { return (v < 0 ? "−" : "") + "US$ " + nf(Math.abs(v), 0) + " M"; }, nota: "por día, en millones de dólares" }],
+    mercados: [
+      { key: "riesgo", glos: "riesgo", nombre: "Riesgo país", corto: "Riesgo país", que: "¿Qué es el riesgo país?", diaria: true, tipo: "pct", fmt: function (v) { return nf(v, 0) + " pb"; }, nota: "puntos básicos (100 = 1 punto)" }]
+  };
+  var PER_D = [["3m", "3 meses", 92, "últimos 3 meses"], ["1a", "1 año", 366, "último año"], ["3a", "3 años", 1100, "últimos 3 años"]];
+  var PER_M = [["2a", "2 años", 731, "últimos 2 años"], ["5a", "5 años", 1827, "últimos 5 años"], ["10a", "10 años", 3653, "últimos 10 años"]];
+  // cortes de la escala de calor para el último dato, 3 meses y 12 meses
+  var ESC_PORT = { pp: [[0.1, 0.5, 1.5], [0.5, 2, 5], [1, 4, 10]], pct: [[0.25, 1, 3], [1, 5, 15], [5, 20, 60]] };
+  var port = {};
+
+  function cambioDe(cfg, a, b) {
+    if (!a || !b) return null;
+    if (cfg.tipo === "pct") return a[1] ? (b[1] / a[1] - 1) * 100 : null;
+    return b[1] - a[1];
+  }
+  function txtCambio(cfg, c) {
+    if (cfg.tipo === "pp") return conSigno(c, 1, " pp");
+    if (cfg.tipo === "pct") return conSigno(c, 1);
+    return (c > 0 ? "+" : c < 0 ? "−" : "") + cfg.fmt(Math.abs(c));
+  }
+
+  function armarPortada(vista) {
+    var lista = PORT[vista], sec = $("vista-" + vista); if (!lista || !sec) return;
+    if (port[vista]) { pintarPortada(vista); return; }
+    var cab = sec.querySelector(".sp"); if (!cab) return;
+    var P = port[vista] = { i: 0, per: null, s: {}, err: {}, dom: {} };
+    var D = P.dom, cuerpo = el("div", "sp__cuerpo port"); cab.appendChild(cuerpo);
+    if (lista.length > 1) { D.picks = el("div", "dp"); D.picks.setAttribute("role", "group"); D.picks.setAttribute("aria-label", "Elegí un indicador"); cuerpo.appendChild(D.picks); }
+    var card = el("section", "sp-card dg"); card.setAttribute("aria-labelledby", vista + "-pt");
+    var top = el("div", "dg__top"), izq = el("div", "dg__izq");
+    D.tit = el("h2", "dg__tit"); D.tit.id = vista + "-pt"; izq.appendChild(D.tit);
+    D.big = el("p", "dg__big", "…"); izq.appendChild(D.big);
+    D.nota = el("p", "dg__nota"); izq.appendChild(D.nota);
+    top.appendChild(izq);
+    D.cambios = el("dl", "dg__cambios"); top.appendChild(D.cambios);
+    card.appendChild(top);
+    var barra = el("div", "dg__barra");
+    D.pers = el("div", "seg-grupo"); D.pers.setAttribute("role", "group"); D.pers.setAttribute("aria-label", "Período del gráfico");
+    barra.appendChild(D.pers);
+    var acc = el("div", "dg__acc"); D.bCsv = accion("CSV", IC_CSV); acc.appendChild(D.bCsv); barra.appendChild(acc);
+    card.appendChild(barra);
+    D.graf = el("div", "gl"); card.appendChild(D.graf);
+    D.ejes = el("div", "gl__ejes"); card.appendChild(D.ejes);
+    D.stats = el("dl", "dg__stats"); card.appendChild(D.stats);
+    cuerpo.appendChild(card);
+    D.que = el("section", "sp-card sp-que"); D.que.setAttribute("aria-labelledby", vista + "-pq");
+    var fila = el("div", "sp-fila"); fila.appendChild(D.que); cuerpo.appendChild(fila);
+    D.bCsv.addEventListener("click", function () {
+      var cfg = lista[P.i], se = P.s[cfg.key]; if (!se) return;
+      C.csv(cfg.key, [{ label: cfg.nombre + " (" + (se.fuente || "") + ")", points: se.points }]);
+    });
+    lista.forEach(function (cfg) {
+      S.cargar(cfg.key, cfg.diaria ? 1300 : 140).then(function (se) { P.s[cfg.key] = se; }, function () { P.err[cfg.key] = true; }).then(function () { pintarPortada(vista); });
+    });
+    pintarPortada(vista);
+  }
+
+  function pintarPortada(vista) {
+    var lista = PORT[vista], P = port[vista]; if (!P) return;
+    var D = P.dom, cfg = lista[P.i], se = P.s[cfg.key], pers = cfg.diaria ? PER_D : PER_M;
+    if (!P.per || !pers.some(function (p) { return p[0] === P.per; })) P.per = pers[1][0];
+    var per = pers.filter(function (p) { return p[0] === P.per; })[0];
+
+    if (D.picks) {
+      D.picks.textContent = "";
+      lista.forEach(function (c, j) {
+        var x = P.s[c.key], b = boton("", "dp__b"); b.setAttribute("aria-pressed", j === P.i ? "true" : "false");
+        b.appendChild(el("span", "dp__n", c.corto));
+        b.appendChild(el("span", "dp__v", x && x.ultimo ? c.fmt(x.ultimo.v) : P.err[c.key] ? "sin dato" : "…"));
+        b.addEventListener("click", function () { if (P.i === j) return; P.i = j; P.per = null; pintarPortada(vista); anunciar(c.nombre); var y = D.picks.children[j]; if (y) y.focus(); });
+        D.picks.appendChild(b);
+      });
+    }
+
+    D.tit.textContent = cfg.nombre + " · " + per[3];
+    var g = glosa(cfg.glos);
+    D.que.textContent = "";
+    var hq = el("h2", "sp-card__tit", cfg.que); hq.id = vista + "-pq"; D.que.appendChild(hq);
+    if (g) {
+      D.que.appendChild(el("p", "sp-que__p", g.q));
+      if (g.l) { var pl = el("p", "sp-que__s"); pl.appendChild(el("strong", "", "Cómo leerlo: ")); pl.appendChild(document.createTextNode(g.l)); D.que.appendChild(pl); }
+      if (g.o) { var po = el("p", "sp-que__s"); po.appendChild(el("strong", "", "Ojo: ")); po.appendChild(document.createTextNode(g.o)); D.que.appendChild(po); }
+    }
+
+    if (!se || !se.points || se.points.length < 2) {
+      D.big.textContent = P.err[cfg.key] ? "sin dato" : "…";
+      D.nota.textContent = P.err[cfg.key] ? "No pudimos traer este dato. Probá de nuevo más tarde." : "Cargando…";
+      D.cambios.textContent = ""; D.graf.textContent = ""; D.ejes.textContent = ""; D.stats.textContent = ""; D.pers.textContent = "";
+      return;
+    }
+    var pts = se.points, u = pts[pts.length - 1];
+    D.big.textContent = cfg.fmt(u[1]);
+    D.nota.textContent = mayus(cfg.nota) + " · " + (se.fuente || "") + ", dato " + (cfg.diaria ? "del " + diaMesAnio(u[0]) : "de " + mesAnio(u[0])) + ".";
+    D.cambios.textContent = "";
+    var refs = [[cfg.diaria ? "Último día" : "Último dato", cambioDe(cfg, pts[pts.length - 2], u)], ["3 meses", cambioDe(cfg, antesDe(pts, u[0], 90), u)], ["12 meses", cambioDe(cfg, antesDe(pts, u[0], 365), u)]];
+    refs.forEach(function (x, j) {
+      var w = el("div"); w.appendChild(el("dt", "", x[0]));
+      var dd = el("dd");
+      if (x[1] === null) dd.appendChild(el("span", "hchip h-0", "sin dato"));
+      else {
+        var ref = Math.abs(u[1]) || 1;
+        var cortes = ESC_PORT[cfg.tipo] ? ESC_PORT[cfg.tipo][j] : [ref * 0.1, ref * 0.5, ref * 1.5];
+        dd.appendChild(el("span", "hchip hchip--xl " + calor(x[1], cortes), flecha(x[1]) + txtCambio(cfg, x[1])));
+      }
+      w.appendChild(dd); D.cambios.appendChild(w);
+    });
+
+    var corte = new Date(fecha(u[0]).getTime() - per[2] * 86400000).toISOString().slice(0, 10);
+    var vis = pts.filter(function (p) { return p[0] >= corte; }); if (vis.length < 2) vis = pts.slice(-2);
+    var etq = function (f) { return cfg.diaria ? diaMesAnio(f) : mesAnio(f); };
+    grafico(D.graf, vis, { fmt: cfg.fmt, etiqueta: etq, aria: cfg.nombre + ": de " + cfg.fmt(vis[0][1]) + " (" + etq(vis[0][0]) + ") a " + cfg.fmt(vis[vis.length - 1][1]) + " (" + etq(vis[vis.length - 1][0]) + ")" });
+    D.ejes.textContent = ""; D.ejes.appendChild(el("span", "", etq(vis[0][0]))); D.ejes.appendChild(el("span", "", etq(vis[vis.length - 1][0])));
+    var vals = vis.map(function (p) { return p[1]; }), prom = vals.reduce(function (a, b) { return a + b; }, 0) / vals.length;
+    D.stats.textContent = "";
+    [["Promedio del período", cfg.fmt(prom)], ["Mínimo", cfg.fmt(Math.min.apply(null, vals))], ["Máximo", cfg.fmt(Math.max.apply(null, vals))], ["Datos en el gráfico", nf(vals.length, 0)]].forEach(function (x) {
+      var w = el("div"); w.appendChild(el("dt", "", x[0])); w.appendChild(el("dd", "", x[1])); D.stats.appendChild(w);
+    });
+    D.pers.textContent = "";
+    pers.forEach(function (p) {
+      var b = boton(p[1], "seg"); b.setAttribute("aria-pressed", p[0] === P.per ? "true" : "false");
+      b.addEventListener("click", function () { if (P.per === p[0]) return; P.per = p[0]; pintarPortada(vista); var x = D.pers.querySelector('[aria-pressed="true"]'); if (x) x.focus(); anunciar("Gráfico: " + p[3]); });
+      D.pers.appendChild(b);
+    });
+  }
+
   /* ---------- API ---------- */
 
   // se llama desde el router: arma la portada la primera vez y la esconde en celular cuando hay una ficha abierta
@@ -755,7 +896,7 @@
     var sec = $("vista-" + vista); if (!sec) return;
     if (vista === "dolares") armarDolares();
     else if (vista === "inflacion") armarInflacion();
-    else if (TITULARES[vista]) armarTitular(vista);
+    else if (TITULARES[vista]) { armarTitular(vista); armarPortada(vista); }
     else return;
     sec.classList.toggle("con-ficha", !!sub);
     if (sub && !window.matchMedia("(max-width: 820px)").matches) {

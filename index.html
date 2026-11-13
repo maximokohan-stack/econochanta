@@ -14,7 +14,7 @@
   <meta name="apple-mobile-web-app-title" content="Econochanta">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Inter:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -81,11 +81,7 @@
       <div class="portada">
         <div class="portada__txt">
           <h1 id="h-inicio" class="portada__marca">Economía argentina, explicada sin vueltas</h1>
-          <p class="portada__prop">Mirá qué cambió, entendé qué significa y consultá la fuente de cada dato.</p>
-          <div class="portada__acc">
-            <button class="btn" id="ir-hoy" type="button">Ver lo importante de hoy</button>
-            <a class="btn btn--ghost" href="#tabla">Explorar todos los indicadores</a>
-          </div>
+          <p class="portada__prop">Qué cambió, qué significa y de dónde sale cada dato.</p>
         </div>
         <div class="buscador" role="search">
           <label class="sr-only" for="buscador-input">Buscar un indicador o una sección</label>
@@ -106,31 +102,33 @@
       </aside>
 
       <!-- 2. lo importante de hoy: titular con fecha y fuente, cambios destacados -->
-      <section class="hoy" id="bloque-hoy" aria-labelledby="h-hoy">
-        <svg class="hoy__amb" id="hoy-amb" viewBox="0 0 1000 200" preserveAspectRatio="none" aria-hidden="true"></svg>
-        <div class="hoy__txt">
-          <p class="hoy__eyebrow"><span class="vivo" aria-hidden="true"></span><span id="hoy-fecha">Lo importante de hoy</span></p>
-          <h2 id="h-hoy" class="hoy__tit" tabindex="-1">Cargando los datos del día…</h2>
-          <p class="hoy__sub" id="hoy-sub"></p>
-          <div class="senales" id="senales" hidden></div>
-          <p class="hoy__fuente" id="hoy-fuente"></p>
+      <section class="hoy hoy--noche" id="bloque-hoy" aria-labelledby="h-hoy">
+        <p class="hoy__eyebrow"><span class="vivo" aria-hidden="true"></span><span id="hoy-fecha">Lo importante de hoy</span></p>
+        <div class="hoy__g">
+          <div class="hoy__txt">
+            <h2 id="h-hoy" class="hoy__tit" tabindex="-1">Cargando los datos del día…</h2>
+            <p class="hoy__sub" id="hoy-sub"></p>
+          </div>
+          <div class="hoy__graf">
+            <div class="hoy__graf-cab" id="hoy-graf-cab"></div>
+            <div class="hoy__chart" id="hoy-chart"></div>
+          </div>
         </div>
-        <div class="front-head__acc">
-          <p class="front-head__stamp" id="actualizado" role="status"></p>
-          <button class="btn btn--ghost btn--sm" id="refrescar" type="button">Actualizar</button>
+        <div class="hoy__cifras" id="hoy-cifras"></div>
+        <div class="hoy__pie">
+          <p class="hoy__fuente" id="hoy-fuente"></p>
+          <div class="front-head__acc">
+            <p class="front-head__stamp" id="actualizado" role="status"></p>
+            <button class="btn btn--ghost btn--sm" id="refrescar" type="button">Actualizar</button>
+          </div>
         </div>
       </section>
 
       <div class="mov-cab">
-        <h2 class="resumen__sub">Dólares hoy</h2>
-        <span class="hint">Precio de venta · se actualiza solo</span>
-      </div>
-      <div class="tarjetas tarjetas--carrusel" id="inicio-dolares"></div>
-
-      <div class="mov-cab">
         <div>
           <h2 class="resumen__sub">Cómo se movió todo</h2>
-          <p class="hint mov-leyenda-txt">▲ verde subió, ▼ rojo bajó. Cuanto más intenso, más grande el movimiento. Subir no siempre es bueno ni bajar es malo: depende de tu situación.</p>
+          <p class="hint mov-leyenda-txt">▲ verde subió, ▼ rojo bajó: más intenso, más grande el movimiento. Subir no siempre es bueno.</p>
+          <a class="link" href="#dolares">Los seis dólares →</a>
         </div>
         <div class="mov-cab__der">
           <div class="escala" aria-hidden="true"><span>▼ Baja fuerte</span><i class="h-d4"></i><i class="h-d3"></i><i class="h-d2"></i><i class="h-d1"></i><i class="h-u1"></i><i class="h-u2"></i><i class="h-u3"></i><i class="h-u4"></i><span>Sube fuerte ▲</span></div>
@@ -145,21 +143,16 @@
         <div class="mov-cab">
           <div>
             <h2 class="resumen__sub" id="h-mosaico">Ocho preguntas de todos los días</h2>
-            <p class="hint">Cada tarjeta dice el último dato, contra qué se compara, de dónde sale y una lectura posible.</p>
           </div>
           <div class="chips chips--sm" id="mosaico-filtros" role="group" aria-label="¿Qué te importa a vos? Filtrar tarjetas"></div>
         </div>
+        <div class="senales" id="senales" hidden></div>
         <div class="mosaico" id="mosaico"></div>
-        <p class="hint">La lectura (✓ buena señal, ! alerta, ⇄ mixto, = neutral) sale de reglas simples y públicas, no de una verdad objetiva: lo que conviene a unos puede perjudicar a otros. <a class="link" href="#metodologia">Ver criterios y límites</a></p>
+        <p class="hint">La lectura (✓ buena señal, ! alerta, ⇄ mixto, = neutral) sale de reglas simples y públicas, no de una verdad objetiva: lo que conviene a unos puede perjudicar a otros.</p>
       </section>
 
       <!-- 4. una explicación destacada -->
       <div id="inicio-analisis"></div>
-      <details class="desplegable">
-        <summary>Lectura automática de 16 indicadores</summary>
-        <div class="lec-lista" id="inicio-lectura"></div>
-        <p class="hint">Una lectura por tema, con reglas simples que comparan el dato con el anterior, con hace un año o con la inflación. Tocá una para ver el gráfico y los números que se compararon. <a class="link" href="#recientes">Ver los 16 con detalle</a></p>
-      </details>
 
       <!-- 5. lo tuyo: favoritos y cambios desde tu última visita -->
       <div id="inicio-favs-bloque" hidden>
@@ -179,12 +172,6 @@
         </div>
       </aside>
 
-      <!-- 6. acceso al tablero completo -->
-      <div class="mov-cab">
-        <h2 class="resumen__sub">Todos los indicadores, por tema</h2>
-        <a class="link" href="#tabla">Ver la tabla completa →</a>
-      </div>
-      <div id="inicio-tiles" class="tiles-compactas"></div>
     </section>
 
     <!-- ARGENTINA: menu de secciones -->
