@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-14T15:24:16.382007Z",
+ "actualizado": "2026-11-14T20:13:02.808134Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 22
+   "n": 16
   },
   {
    "medio": "Infobae",
@@ -60,11 +60,74 @@
  ],
  "items": [
   {
+   "titulo": "Nuevo gigante del retail: De Narváez sumó como socio a José Luis Manzano para manejar las cadenas Dia y ChangoMás",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/14/nuevo-gigante-retail-de-narvaez-suma-como-socio-a-jose-luis-manzano-para-manejar-las-cadenas-dia-y-changomas/",
+   "fecha": "2026-11-14T20:03:50Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Un importante empresario del agro compró 10.000 hectáreas en una zona con condiciones excepcionales",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/un-importante-empresario-del-agro-compro-10000-hectareas-en-una-zona-con-condiciones-excepcionales-nid14112026/",
+   "fecha": "2026-11-14T19:12:01Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Altas y bajas: unas 6,5 millones de personas mejoraron sus condiciones de vida, pero 4,8 millones las empeoraron",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/14/altas-y-bajas-unas-65-millones-de-personas-mejoraron-sus-condiciones-de-vida-pero-48-millones-las-empeoraron/",
+   "fecha": "2026-11-14T19:08:34Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Para el mercado, el Gobierno deberá revisar su plan financiero para afrontar los pagos de deuda de 2027",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/para-el-mercado-el-gobierno-debera-revisar-su-plan-financiero-para-afrontar-los-pagos-de-deuda-de-nid14112026/",
+   "fecha": "2026-11-14T18:36:54Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "La Argentina se encareció en dólares, pero sigue más barata que el resto de América Latina: cuáles son los rubros que más subieron",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/la-argentina-se-encarecio-en-dolares-pero-sigue-mas-barata-que-el-resto-de-america-latina-cuales-son-nid14112026/",
+   "fecha": "2026-11-14T18:10:39Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "A cuánto abre el dólar el lunes 16 de noviembre",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/dolar/a-cuanto-abre-el-dolar-el-lunes-16-de-noviembre-nid14112026/",
+   "fecha": "2026-11-14T18:01:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "La baja del precio del oro le restó más de USD 1.800 millones a las reservas del Banco Central desde su máximo del año",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/14/la-baja-del-precio-del-oro-le-resto-mas-de-usd-1800-millones-a-las-reservas-del-banco-central-desde-su-maximo-del-ano/",
+   "fecha": "2026-11-14T17:13:42Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "En agosto hubo 139 empresas registradas menos y ya son 10.234 en el acumulado anual",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/en-agosto-hubo-139-empresas-registradas-menos-y-ya-son-10234-en-el-acumulado-anual-nid13112026/",
+   "fecha": "2026-11-14T16:43:01Z",
+   "tema": "empresas"
+  },
+  {
    "titulo": "Retenciones: el fallo de la Corte que reabre una discusión pendiente entre el campo y el Estado",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/campo/retenciones-el-fallo-de-la-corte-que-reabre-una-discusion-pendiente-entre-el-campo-y-el-estado-nid14112026/",
    "fecha": "2026-11-14T14:58:56Z",
    "tema": "politica"
+  },
+  {
+   "titulo": "Outlet Adidas en Núñez: zapatillas, camisetas y botines con precios rebajados",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/actualidad/469140-zapatillas-2x1-y-botines-desde-31500-las-ofertas-del-outlet-adidas",
+   "fecha": "2026-11-14T14:36:00Z",
+   "tema": "inflacion"
   },
   {
    "titulo": "Con el apoyo de Elon Musk, una petición con casi 90.000 firmas exige que Jensen Huang vuelva a ser el CEO de Nvidia",
@@ -107,13 +170,6 @@
    "url": "https://www.infobae.com/economia/2026/11/14/se-vendio-una-emblematica-marca-de-galletitas-que-gigante-de-los-alimentos-se-la-quedo/",
    "fecha": "2026-11-14T13:09:32Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "En agosto hubo 139 empresas registradas menos y ya son 10.234 en el acumulado anual",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/en-agosto-hubo-139-empresas-registradas-menos-y-ya-son-10234-en-el-acumulado-anual-nid13112026/",
-   "fecha": "2026-11-14T12:55:03Z",
-   "tema": "empresas"
   },
   {
    "titulo": "FAL: una herramienta para combatir la informalidad laboral",
@@ -354,34 +410,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "En Rosario: el río Paraná subió casi dos metros en nueve semanas y quedó a 53 centímetros del nivel de alerta",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/en-rosario-el-rio-parana-subio-casi-dos-metros-en-nueve-semanas-y-quedo-a-53-centimetros-del-nivel-nid13112026/",
-   "fecha": "2026-11-13T22:39:07Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El Niño: anticipan temperaturas de hasta 45 grados, lluvias desiguales y un posterior cambio térmico",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/el-nino-anticipan-temperaturas-de-hasta-45-grados-lluvias-desiguales-y-un-posterior-cambio-termico-nid12112026/",
-   "fecha": "2026-11-13T22:34:03Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "Tras nueve meses: reemplazan un puente de 1930 que se derrumbó por tubos de cemento y dicen que es “un parche definitivo”",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/tras-nueve-meses-reemplazan-un-puente-de-1930-que-se-derrumbo-por-tubos-de-cemento-y-dicen-que-es-un-nid12112026/",
-   "fecha": "2026-11-13T22:33:28Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El Gobierno lanza un nuevo canje para tratar de reducir el vencimiento por casi $30 billones de fin de mes",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/el-gobierno-lanza-un-nuevo-canje-para-tratar-de-reducir-el-vencimiento-por-casi-30-billones-de-fin-nid13112026/",
-   "fecha": "2026-11-13T21:58:14Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "Jornada financiera: las acciones argentinas rebotaron desde sus precios mínimos del año y el riesgo país tuvo una leve caída",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/13/jornada-financiera-las-acciones-argentinas-rebotaron-desde-sus-precios-minimos-del-ano-y-el-riesgo-pais-tuvo-una-leve-caida/",
@@ -522,24 +550,10 @@
    "tema": "otros"
   },
   {
-   "titulo": "Reforma laboral: el Gobierno asegura que el incentivo a la formalización creó 82.000 empleos en blanco en cuatro meses",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/13/reforma-laboral-el-gobierno-asegura-que-el-incentivo-a-la-formalizacion-creo-82000-empleos-en-blanco-en-cuatro-meses/",
-   "fecha": "2026-11-13T17:14:54Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "Supermercados lanzan descuentos de hasta 50% y hasta 18 cuotas en electrodomésticos",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/actualidad/469060-supermercados-lanzan-descuentos-de-hasta-50-y-hasta-18-cuotas-en-electrodomesticos",
    "fecha": "2026-11-13T16:55:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "De cuánto son las Pensiones No Contributivas de ANSES en noviembre 2026",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/13/de-cuanto-son-las-pensiones-no-contributivas-de-anses-en-noviembre-2026/",
-   "fecha": "2026-11-13T16:33:49Z",
    "tema": "otros"
   },
   {
@@ -548,13 +562,6 @@
    "url": "https://www.ambito.com/economia/motosierra-el-gobierno-retira-el-subsidio-fijo-del-30-los-colectivos-gas-y-del-50-los-electricos-n6344954",
    "fecha": "2026-11-13T16:19:00Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "Los cinco funcionarios paraguayos que hace diez días anunciaron la intervención al Ueno Bank ahora están presos",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/america/america-latina/2026/11/13/los-cinco-funcionarios-paraguayos-que-hace-diez-dias-anunciaron-la-intervencion-al-ueno-bank-ahora-estan-presos/",
-   "fecha": "2026-11-13T16:05:07Z",
-   "tema": "otros"
   },
   {
    "titulo": "Colectivos: la UTA cuestionó la oferta salarial y espera una nueva propuesta de las empresas",
@@ -627,13 +634,6 @@
    "tema": "dolar"
   },
   {
-   "titulo": "ATE aplicará \"paro a la japonesa\" en Ezeiza y Aeroparque. ¿habrá demoras en los vuelos?",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/468899-ate-aplicara-paro-a-la-japonesa-en-ezeiza-y-aeroparque-habra-demoras-en-los-vuelos",
-   "fecha": "2026-11-13T12:00:00Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Lo que se dice en las mesas: el mercado empieza a ver el 2027 como un escenario a todo o nada",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/lo-que-se-dice-las-mesas-se-afirma-la-idea-que-el-2027-es-un-escenario-todo-o-nada-n6344679",
@@ -674,48 +674,6 @@
    "url": "https://www.ambito.com/economia/luis-caputo-explico-que-impulso-la-inflacion-octubre-y-defendio-el-rumbo-economico-n6344665",
    "fecha": "2026-11-12T21:26:00Z",
    "tema": "inflacion"
-  },
-  {
-   "titulo": "La inflación se aceleró al 2,2% en octubre y alcanzó su mayor nivel en seis meses",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/la-inflacion-se-acelero-al-22-octubre-y-alcanzo-su-mayor-nivel-seis-meses-n6344589",
-   "fecha": "2026-11-12T19:14:00Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Industria textil: la actividad cayó más de 20% en 2026 y ya se perdieron más de 29.000 puestos de trabajo",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/industria-textil-la-actividad-cayo-mas-20-2026-y-ya-se-perdieron-mas-29000-puestos-trabajo-n6344544",
-   "fecha": "2026-11-12T18:44:00Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "La economía de Reino Unido creció 0,7% en el tercer trimestre por el impulso de la inteligencia artificial",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/la-reino-unido-crecio-07-el-tercer-trimestre-el-impulso-la-inteligencia-artificial-n6344515",
-   "fecha": "2026-11-12T17:22:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El FMI destacó que se están mitigando los riesgos de refinanciación",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/el-fmi-destaco-que-se-estan-mitigando-los-riesgos-refinanciacion-n6344495",
-   "fecha": "2026-11-12T16:40:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Plazo fijo en dólares: cuánto gano al invertir u$d 3.000",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/plazo-fijo-dolares-cuanto-gano-al-invertir-ud-3000-n6344288",
-   "fecha": "2026-11-12T16:00:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Aguinaldo 2026: quiénes cobran en diciembre, cuándo se deposita y cómo se calcula",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/aguinaldo-2026-quienes-cobran-diciembre-cuando-se-deposita-y-como-se-calcula-n6344447",
-   "fecha": "2026-11-12T15:39:00Z",
-   "tema": "otros"
   }
  ]
 }
