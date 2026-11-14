@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-14T02:47:07.999519Z",
+ "actualizado": "2026-11-14T05:44:10.492689Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -60,18 +60,74 @@
  ],
  "items": [
   {
-   "titulo": "Demoras y desvío: qué pasa con los vuelos programados para hoy desde Argentina a Estados Unidos",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/13/que-pasara-con-los-vuelos-programados-para-hoy-desde-argentina-a-estados-unidos/",
-   "fecha": "2026-11-14T01:16:20Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Molinos Rio de la Plata anunció la compra de Tía Maruca",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/negocios/molinos-compro-tia-maruca-nid13112026/",
-   "fecha": "2026-11-14T01:14:05Z",
+   "fecha": "2026-11-14T04:55:22Z",
    "tema": "otros"
+  },
+  {
+   "titulo": "Demoras y desvío: qué pasa con los vuelos programados para hoy desde Argentina a Estados Unidos",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/13/que-pasara-con-los-vuelos-programados-para-hoy-desde-argentina-a-estados-unidos/",
+   "fecha": "2026-11-14T04:50:03Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "¿Se estancó la desinflación?: el dato que esperanza al Gobierno y los riesgos que asoman en el cierre de 2026",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/14/se-estanco-la-desinflacion-el-dato-que-esperanza-al-gobierno-y-los-riesgos-que-asoman-en-el-cierre-de-2026/",
+   "fecha": "2026-11-14T03:49:03Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Fábricas que se achican y empresarios que buscan reinventarse: las historias detrás de la crisis textil",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/14/fabricas-que-se-achican-y-empresarios-que-buscan-reinventarse-las-historias-detras-de-la-crisis-textil/",
+   "fecha": "2026-11-14T03:48:43Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Ranking de inflación en América Latina: qué lugar ocupó la Argentina tras la aceleración de octubre",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/14/ranking-de-inflacion-en-america-latina-que-lugar-ocupo-la-argentina-tras-la-aceleracion-de-octubre/",
+   "fecha": "2026-11-14T03:46:17Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Comprar un Tesla en Argentina: desde cuándo se podrán encargar lo autos eléctricos de Elon Musk y qué modelos llegarán al país",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/13/desde-cuando-se-podran-encargar-los-tesla-y-que-modelos-se-vendera-en-argentina/",
+   "fecha": "2026-11-14T03:45:48Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Los bonos rebotaron 3% y el riesgo país argentino descontó más de 100 puntos básicos en una semana de alta volatilidad externa",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/14/los-bonos-rebotaron-3-y-el-riesgo-pais-argentino-desconto-mas-de-100-puntos-basicos-en-una-semana-de-alta-volatilidad-externa/",
+   "fecha": "2026-11-14T03:45:29Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Las diferencias entre crecer por demanda o por oferta",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/11/14/las-diferencias-entre-crecer-por-demanda-o-por-oferta/",
+   "fecha": "2026-11-14T03:45:13Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "FAL: una herramienta para combatir la informalidad laboral",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/11/14/fal-una-herramienta-para-combatir-la-informalidad-laboral/",
+   "fecha": "2026-11-14T03:44:52Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Por qué la inflación impulsa a los bonos en pesos",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/11/14/por-que-la-inflacion-impulsa-a-los-bonos-en-pesos/",
+   "fecha": "2026-11-14T03:44:33Z",
+   "tema": "inflacion"
   },
   {
    "titulo": "Un fallo rechaza la movilidad jubilatoria de Alberto Fernández y ordena aplicar en su reemplazo la del gobierno de Mauricio Macri",
@@ -487,13 +543,6 @@
    "tema": "inflacion"
   },
   {
-   "titulo": "La inflación mayorista en Estados Unidos alcanzó el 6,5% interanual, el nivel más alto desde 2022",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/estados-unidos/2026/11/13/la-inflacion-mayorista-en-estados-unidos-alcanzo-el-65-interanual-el-nivel-mas-alto-desde-2022/",
-   "fecha": "2026-11-13T14:23:28Z",
-   "tema": "inflacion"
-  },
-  {
    "titulo": "Pablo Moyano paraliza por tiempo indeterminado la recolección de residuos en el Mercado Central",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/politica/469044-moyano-paraliza-por-tiempo-indeterminado-la-recoleccion-de-residuos-en-el-mercado-central",
@@ -529,25 +578,11 @@
    "tema": "inflacion"
   },
   {
-   "titulo": "El costo de construcción en CABA está en máximos desde 2015",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/13/el-costo-de-construccion-en-caba-esta-en-maximos-desde-2015/",
-   "fecha": "2026-11-13T13:26:19Z",
-   "tema": "actividad"
-  },
-  {
    "titulo": "El \"enfriamiento\" y los dólares del colchón: el \"gurú del blue\" advirtió sobre la recesión técnica",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/el-enfriamiento-y-los-dolares-del-colchon-el-guru-del-blue-advirtio-la-recesion-tecnica-n6344837",
    "fecha": "2026-11-13T13:21:00Z",
    "tema": "dolar"
-  },
-  {
-   "titulo": "Crisis agraria en Cuba: el 82% de los cítricos y el 62% del arroz desaparecieron de la producción nacional en cuatro años",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/cuba/2026/11/13/crisis-agraria-en-cuba-el-82-de-los-citricos-y-el-62-del-arroz-desaparecieron-de-la-produccion-nacional-en-cuatro-anos/",
-   "fecha": "2026-11-13T13:02:29Z",
-   "tema": "otros"
   },
   {
    "titulo": "NSES: cuánto cobra en diciembre una persona que se jubila con 30 años de aportes",
@@ -557,45 +592,10 @@
    "tema": "otros"
   },
   {
-   "titulo": "En agosto se perdieron más de 13.000 puestos de trabajo registrados",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/13/en-agosto-se-perdieron-mas-de-13000-puestos-de-trabajo-registrados/",
-   "fecha": "2026-11-13T12:41:03Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Fiebre por los SUV: cuáles son y cuánto cuestan los 10 modelos más vendidos del mercado",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/13/fiebre-por-los-suv-cuales-son-y-cuanto-cuestan-los-10-modelos-mas-vendidos-del-mercado/",
-   "fecha": "2026-11-13T12:35:31Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "A cuánto habría llegado la inflación de octubre con el nuevo índice de precios que el Gobierno postergó",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/13/a-cuanto-habria-llegado-la-inflacion-de-octubre-con-el-nuevo-indice-de-precios-que-el-gobierno-postergo/",
-   "fecha": "2026-11-13T12:08:01Z",
-   "tema": "inflacion"
-  },
-  {
    "titulo": "ATE aplicará \"paro a la japonesa\" en Ezeiza y Aeroparque. ¿habrá demoras en los vuelos?",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/468899-ate-aplicara-paro-a-la-japonesa-en-ezeiza-y-aeroparque-habra-demoras-en-los-vuelos",
    "fecha": "2026-11-13T12:00:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "En el nuevo riel, Ueno no hubiese chocado",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/opinion/2026/11/13/en-el-nuevo-riel-ueno-no-hubiese-chocado/",
-   "fecha": "2026-11-13T11:41:46Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Del vapor al algoritmo: León XIV y el trabajo en la revolución digital",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/opinion/2026/11/13/del-vapor-al-algoritmo-leon-xiv-y-el-trabajo-en-la-revolucion-digital/",
-   "fecha": "2026-11-13T11:40:52Z",
    "tema": "otros"
   },
   {
