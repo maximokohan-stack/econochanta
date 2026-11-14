@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-14T05:44:10.492689Z",
+ "actualizado": "2026-11-14T15:24:16.382007Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 25
+   "n": 22
   },
   {
    "medio": "Infobae",
@@ -60,17 +60,192 @@
  ],
  "items": [
   {
-   "titulo": "Molinos Rio de la Plata anunció la compra de Tía Maruca",
+   "titulo": "Retenciones: el fallo de la Corte que reabre una discusión pendiente entre el campo y el Estado",
    "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/negocios/molinos-compro-tia-maruca-nid13112026/",
-   "fecha": "2026-11-14T04:55:22Z",
+   "url": "https://www.lanacion.com.ar/economia/campo/retenciones-el-fallo-de-la-corte-que-reabre-una-discusion-pendiente-entre-el-campo-y-el-estado-nid14112026/",
+   "fecha": "2026-11-14T14:58:56Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Con el apoyo de Elon Musk, una petición con casi 90.000 firmas exige que Jensen Huang vuelva a ser el CEO de Nvidia",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/con-el-apoyo-de-elon-musk-una-peticion-con-casi-90000-firmas-exige-que-jensen-huang-vuelva-a-ser-el-nid14112026/",
+   "fecha": "2026-11-14T14:28:37Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Integra Capital, el grupo presidido por José Luis Manzano, se quedó con la cadena de Burger King en la Argentina",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/14/integra-capital-el-grupo-presidido-por-jose-luis-manzano-adquirio-la-cadena-burger-king/",
+   "fecha": "2026-11-14T14:18:14Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "“La Justicia nos vuelve a dar la razón”: Federación Agraria pidió derogar el artículo del Código Aduanero que se usó para modificar retenciones",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/la-justicia-nos-vuelve-a-dar-la-razon-federacion-agraria-pidio-derogar-el-articulo-del-codigo-nid14112026/",
+   "fecha": "2026-11-14T14:01:46Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Cerraron casi 10.000 empresas en lo que va de 2026: cuáles fueron los sectores más afectados",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/14/cerraron-casi-10000-empresas-en-lo-que-va-de-2026-cuales-fueron-los-sectores-mas-afectados/",
+   "fecha": "2026-11-14T14:01:45Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Miguel Kiguel: “No sé si hoy las preferencias del gobierno son las mismas que tiene la sociedad”",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/14/miguel-kiguel-no-se-si-hoy-las-preferencias-del-gobierno-son-las-mismas-que-tiene-la-sociedad/",
+   "fecha": "2026-11-14T13:49:14Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Se vendió una emblemática marca de galletitas: qué gigante de los alimentos se la quedó",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/14/se-vendio-una-emblematica-marca-de-galletitas-que-gigante-de-los-alimentos-se-la-quedo/",
+   "fecha": "2026-11-14T13:09:32Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "En agosto hubo 139 empresas registradas menos y ya son 10.234 en el acumulado anual",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/en-agosto-hubo-139-empresas-registradas-menos-y-ya-son-10234-en-el-acumulado-anual-nid13112026/",
+   "fecha": "2026-11-14T12:55:03Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "FAL: una herramienta para combatir la informalidad laboral",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/11/14/fal-una-herramienta-para-combatir-la-informalidad-laboral/",
+   "fecha": "2026-11-14T12:37:31Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "De un sachet a más de 60 países: la empresa argentina que duplicó las exportaciones de silobolsas y ahora va por otro hito",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/de-un-sachet-a-mas-de-60-paises-la-empresa-argentina-que-duplico-sus-exportaciones-de-silobolsas-y-nid14112026/",
+   "fecha": "2026-11-14T12:03:36Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Plazo fijo: qué bancos pagan más a no clientes y cuánto ganás con $1 millón",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/468998-plazo-fijo-que-bancos-pagan-mas-a-no-clientes-y-cuanto-ganas-con-1-millon",
+   "fecha": "2026-11-14T11:48:00Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Los bonos en dólares prometen rentabilidad de más del 40% medidos en pesos",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/469083-bonos-en-dolares-prometen-rentabilidad-de-mas-del-40-por-ciento-medidos-en-pesos",
+   "fecha": "2026-11-14T11:00:00Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Las ventas PyME cayeron 1,6% en octubre y CAME detalló qué rubros crecieron",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/468982-came-detallo-que-rubros-pyme-crecieron-y-cuales-cayeron-en-octubre",
+   "fecha": "2026-11-14T10:59:00Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Nike tiene 2x1 combinable en sus outlets de Buenos Aires: qué productos incluye y dónde están",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/actualidad/469014-nike-liquida-zapatillas-y-botines-con-2x1-desde-35000-pesos-y-3-cuotas-sin-interes",
+   "fecha": "2026-11-14T10:58:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Para más de 50.000 hectáreas: el PRO reclama por un proyecto que permite la siembra al costado de las rutas nacionales",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/el-pro-reclama-que-avance-un-proyecto-para-volver-a-permitir-la-siembra-al-costado-de-las-rutas-nid13112026/",
+   "fecha": "2026-11-14T10:07:45Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Dólar hoy y dólar blue hoy: a cuánto cotiza este sábado 14 de noviembre",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/dolar/dolar-hoy-y-dolar-blue-hoy-a-cuanto-cotiza-este-sabado-14-de-noviembre-nid14112026/",
+   "fecha": "2026-11-14T10:02:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "El desafío de asesorar en la era de la inteligencia artificial",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/negocios/el-desafio-de-asesorar-en-la-era-de-la-ia-nid14112026/",
+   "fecha": "2026-11-14T09:18:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El desafío de diseñar experiencias para humanos y algoritmos",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/negocios/el-desafio-de-disenar-experiencias-para-humanos-y-algoritmos-nid14112026/",
+   "fecha": "2026-11-14T09:02:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Las claves de las marcas que logran destacarse",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/negocios/las-claves-de-las-marcas-que-logran-destacarse-nid14112026/",
+   "fecha": "2026-11-14T08:57:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Un mensaje papal que también llegó al corazón de la agroindustria",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/un-mensaje-papal-que-tambien-llego-al-corazon-de-la-agroindustria-nid14112026/",
+   "fecha": "2026-11-14T08:50:00Z",
    "tema": "otros"
   },
   {
    "titulo": "Demoras y desvío: qué pasa con los vuelos programados para hoy desde Argentina a Estados Unidos",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/13/que-pasara-con-los-vuelos-programados-para-hoy-desde-argentina-a-estados-unidos/",
-   "fecha": "2026-11-14T04:50:03Z",
+   "fecha": "2026-11-14T08:38:30Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El trigo evoluciona favorablemente y se abre una oportunidad en Brasil",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/el-trigo-evoluciona-favorablemente-y-se-abre-una-oportunidad-en-brasil-nid14112026/",
+   "fecha": "2026-11-14T08:30:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Billetera no mata deseo",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/negocios/billetera-no-mata-deseo-nid14112026/",
+   "fecha": "2026-11-14T08:15:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La firme demanda por el maíz argentino sostiene los precios en el mercado local",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/la-firme-demanda-por-el-maiz-argentino-sostiene-los-precios-en-el-mercado-local-nid14112026/",
+   "fecha": "2026-11-14T08:00:00Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "El apero criollo que dejó su huella en los dichos camperos y en la literatura gauchesca",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/el-apero-criollo-que-dejo-su-huella-en-los-dichos-camperos-y-en-la-literatura-gauchesca-nid14112026/",
+   "fecha": "2026-11-14T08:00:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La IA corre, el juicio camina",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/negocios/la-ia-corre-el-juicio-camina-nid14112026/",
+   "fecha": "2026-11-14T07:45:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Molinos Río de la Plata anunció la compra de Tía Maruca",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/negocios/molinos-compro-tia-maruca-nid13112026/",
+   "fecha": "2026-11-14T04:55:22Z",
    "tema": "otros"
   },
   {
@@ -116,18 +291,25 @@
    "tema": "otros"
   },
   {
-   "titulo": "FAL: una herramienta para combatir la informalidad laboral",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/opinion/2026/11/14/fal-una-herramienta-para-combatir-la-informalidad-laboral/",
-   "fecha": "2026-11-14T03:44:52Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Por qué la inflación impulsa a los bonos en pesos",
    "medio": "Infobae",
    "url": "https://www.infobae.com/opinion/2026/11/14/por-que-la-inflacion-impulsa-a-los-bonos-en-pesos/",
    "fecha": "2026-11-14T03:44:33Z",
    "tema": "inflacion"
+  },
+  {
+   "titulo": "Cambian los precios de los documentos argentinos: cuánto costarán el pasaporte y el DNI",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/468793-pasaporte-argentino-cuanto-cuesta-tramitarlo-ahora-sube-precio-dni-noviembre-2026",
+   "fecha": "2026-11-14T03:01:00Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "NSES: cuánto cobra en diciembre una persona que se jubila con 30 años de aportes",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/469025-jubilacion-30-anos-aportes-cuanto-cobrar-noviembre-2026",
+   "fecha": "2026-11-14T03:01:00Z",
+   "tema": "otros"
   },
   {
    "titulo": "Un fallo rechaza la movilidad jubilatoria de Alberto Fernández y ordena aplicar en su reemplazo la del gobierno de Mauricio Macri",
@@ -137,17 +319,10 @@
    "tema": "politica"
   },
   {
-   "titulo": "Se vendió Burger King en la Argentina: Manzano cada vez más cerca",
+   "titulo": "Se vendió Burger King en la Argentina: Manzano es el nuevo dueño",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/negocios/se-vendio-burger-king-en-la-argentina-manzano-cada-vez-mas-cerca-nid13112026/",
    "fecha": "2026-11-13T23:36:35Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Para más de 50.000 hectáreas: el PRO reclama por un proyecto que permite la siembra al costado de las rutas nacionales",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/el-pro-reclama-que-avance-un-proyecto-para-volver-a-permitir-la-siembra-al-costado-de-las-rutas-nid13112026/",
-   "fecha": "2026-11-13T23:17:47Z",
    "tema": "otros"
   },
   {
@@ -249,13 +424,6 @@
    "tema": "mercados"
   },
   {
-   "titulo": "Los depósitos en dólares del Gobierno en el BCRA tocaron un piso, pero la entidad sigue comprando reservas",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/los-depositos-en-dolares-del-gobierno-en-el-bcra-tocaron-un-piso-pero-la-entidad-sigue-comprando-nid13112026/",
-   "fecha": "2026-11-13T20:43:55Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "La industria llegó a su pico de 2026 en uso de fábricas y máquinas, pero quedó por debajo del año pasado",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/13/la-industria-llego-a-su-pico-de-2026-en-uso-de-fabricas-y-maquinas-pero-quedo-por-debajo-del-ano-pasado/",
@@ -263,32 +431,11 @@
    "tema": "actividad"
   },
   {
-   "titulo": "“Arbitrario”: tres entidades del agro cuestionaron una suba del 16% que fijó el gobierno de Kicillof para el transporte de granos",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/arbitrario-tres-entidades-del-agro-cuestionaron-una-suba-del-16-que-fijo-el-gobierno-de-kicillof-nid13112026/",
-   "fecha": "2026-11-13T20:33:44Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "Los salarios registrados subieron 1,9% y empataron contra la inflación en septiembre",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/13/los-salarios-registrados-subieron-19-y-empataron-contra-la-inflacion-en-septiembre/",
    "fecha": "2026-11-13T20:26:03Z",
    "tema": "inflacion"
-  },
-  {
-   "titulo": "Cristian Coloca, especialista en inversiones: cuál es el error más común al elegir dónde poner el dinero",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/cristian-coloca-especialista-en-inversiones-cual-es-el-error-mas-comun-al-elegir-donde-poner-el-nid13112026/",
-   "fecha": "2026-11-13T20:00:00Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Mercado Pago es la primera billetera virtual en sumarse al fondo que pagará indemnizaciones",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/mercado-pago-es-la-primera-billetera-virtual-en-sumarse-al-fondo-que-pagara-indemnizaciones-nid13112026/",
-   "fecha": "2026-11-13T19:57:22Z",
-   "tema": "otros"
   },
   {
    "titulo": "Empresas: se perdieron casi 32.500 unidades productivas desde 2023 y las pymes migran a la informalidad",
@@ -305,39 +452,11 @@
    "tema": "actividad"
   },
   {
-   "titulo": "Siguen ocupados, pero ganan menos: el costo de perder un empleo registrado",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/siguen-ocupados-pero-ganan-menos-el-costo-de-perder-un-empleo-registrado-nid13112026/",
-   "fecha": "2026-11-13T19:46:16Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Microsoft confirma una “recuperación generalizada” de Outlook y los servicios asociados a Microsoft 365",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/tecnologia/reportan-fallas-en-el-servicio-microsoft-365-a-nivel-mundial-nid12112026/",
-   "fecha": "2026-11-13T19:40:48Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Orlando Ferreres: \"La inflación de noviembre tampoco va a ser muy baja\"",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/13/orlando-ferreres-la-inflacion-de-noviembre-tampoco-va-a-ser-muy-baja/",
    "fecha": "2026-11-13T19:36:31Z",
    "tema": "inflacion"
-  },
-  {
-   "titulo": "Los salarios registrados crecieron 1,9% en septiembre y empataron con la inflación",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/los-salarios-registrados-crecieron-19-en-septiembre-y-empataron-con-la-inflacion-nid13112026/",
-   "fecha": "2026-11-13T19:21:38Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Invierten US$ 55 millones para la reapertura de un hotel en el Caribe: “Lo fácil era tirarlo abajo y hacer un desarrollo eficiente, pero perdía la identidad”",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/negocios/invierten-us-55-millones-para-la-reapertura-de-un-hotel-en-el-caribe-lo-facil-era-tirarlo-abajo-y-nid13112026/",
-   "fecha": "2026-11-13T19:21:15Z",
-   "tema": "otros"
   },
   {
    "titulo": "Industria: el uso de capacidad instalada cruzó el 60% por primera vez en 2026, aunque tuvo una caída anual",
@@ -347,32 +466,11 @@
    "tema": "actividad"
   },
   {
-   "titulo": "Dólar hoy y dólar blue, EN VIVO: a cuánto cotizan el oficial y el paralelo este viernes 13 de noviembre, minuto a minuto",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/dolar/dolar-hoy-y-dolar-blue-en-vivo-a-cuanto-cotizan-el-oficial-y-el-paralelo-este-viernes-13-de-nid13112026/",
-   "fecha": "2026-11-13T19:20:00Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "En agosto hubo 139 empresas registradas menos y ya son 10.234 en el acumulado anual",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/en-agosto-hubo-139-empresas-registradas-menos-y-ya-son-10234-en-el-acumulado-anual-nid13112026/",
-   "fecha": "2026-11-13T19:17:21Z",
-   "tema": "empresas"
-  },
-  {
    "titulo": "Los salarios privados registrados le empataron a la inflación en septiembre, pero los públicos volvieron a perder",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/los-salarios-privados-registrados-le-empataron-la-inflacion-septiembre-pero-los-publicos-volvieron-perder-n6345076",
    "fecha": "2026-11-13T19:16:00Z",
    "tema": "inflacion"
-  },
-  {
-   "titulo": "Visec: fuerte reclamo de consignatarios por demoras en la plataforma de trazabilidad para exportar carne a Europa",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/visec-fuerte-reclamo-de-consignatarios-por-demoras-en-la-plataforma-de-trazabilidad-para-exportar-nid13112026/",
-   "fecha": "2026-11-13T18:51:40Z",
-   "tema": "otros"
   },
   {
    "titulo": "Marcha de gastronómicos por falta de homologación de las tres últimas paritarias",
@@ -396,13 +494,6 @@
    "tema": "mercados"
   },
   {
-   "titulo": "Remate especial en el Mercado Agroganadero de Cañuelas",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/ganaderia/remate-especial-en-el-mercado-agroganadero-de-canuelas-nid13112026/",
-   "fecha": "2026-11-13T18:38:50Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Generación sin casa propia: se sumaron 600.000 hogares inquilinos en la última década",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/generacion-casa-propia-se-sumaron-600000-hogares-inquilinos-la-ultima-decada-n6345015",
@@ -410,25 +501,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "Las acciones argentinas rebotaron hasta casi 9% en Wall Street, mientras que el riesgo país cerró la semana en 830 puntos",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/las-acciones-argentinas-rebotan-hasta-9-en-wall-street-mientras-que-el-riesgo-pais-cierra-la-semana-nid13112026/",
-   "fecha": "2026-11-13T18:31:52Z",
-   "tema": "mercados"
-  },
-  {
    "titulo": "El Gobierno oficializó en el RIGI dos proyectos de gas de TGS por más de u$s3.200 millones",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/energia/469074-el-gobierno-oficializo-en-el-rigi-dos-proyectos-de-tgs-por-mas-de-3200-millones-dolares",
    "fecha": "2026-11-13T18:05:00Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "La bomba que podría frenar a Nvidia y la pregunta que inquieta a Silicon Valley",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/tecnologia/la-bomba-que-podria-frenar-a-nvidia-y-la-pregunta-que-inquieta-a-silicon-valley-nid13112026/",
-   "fecha": "2026-11-13T17:59:14Z",
-   "tema": "otros"
   },
   {
    "titulo": "La devaluación en Brasil alerta a Caputo y reaparece el fantasma del atraso cambiario",
@@ -450,13 +527,6 @@
    "url": "https://www.infobae.com/economia/2026/11/13/reforma-laboral-el-gobierno-asegura-que-el-incentivo-a-la-formalizacion-creo-82000-empleos-en-blanco-en-cuatro-meses/",
    "fecha": "2026-11-13T17:14:54Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "HappyRobot, el unicornio con presencia en 5 países que desarrolla agentes de IA, desembarca en la Argentina",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/tecnologia/happyrobot-el-unicornio-con-presencia-en-5-paises-que-desarrolla-agentes-de-ia-desembarca-en-la-nid13112026/",
-   "fecha": "2026-11-13T16:55:29Z",
-   "tema": "otros"
   },
   {
    "titulo": "Supermercados lanzan descuentos de hasta 50% y hasta 18 cuotas en electrodomésticos",
@@ -487,13 +557,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Fabio Cuggini: “La motosierra nos pegó a todos, a mí me hirió”",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/13/fabio-cuggini-la-motosierra-nos-pego-a-todos-a-mi-me-hirio/",
-   "fecha": "2026-11-13T15:58:00Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Colectivos: la UTA cuestionó la oferta salarial y espera una nueva propuesta de las empresas",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/469056-fracaso-la-paritaria-de-la-uta-hay-posibilidades-de-paro-de-colectivos",
@@ -501,32 +564,11 @@
    "tema": "empresas"
   },
   {
-   "titulo": "El Gobierno recortó un beneficio para los colectivos impulsados a GNC y reavivó la guerra en el sector",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/13/el-gobierno-recorto-un-beneficio-para-los-colectivos-impulsados-a-gnc-y-reavivo-la-guerra-en-el-sector/",
-   "fecha": "2026-11-13T15:26:19Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "La inflación mayorista se desaceleró en EEUU, pero el mercado todavía espera dos subas de tasas al hilo",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/la-inflacion-mayorista-se-desacelero-eeuu-pero-el-mercado-todavia-espera-dos-subas-tasas-al-hilo-n6344923",
    "fecha": "2026-11-13T15:14:00Z",
    "tema": "inflacion"
-  },
-  {
-   "titulo": "Quiénes lideran la carrera por suceder a Jensen Huang como CEO de Nvidia",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/america/mundo/2026/11/13/quienes-lideran-la-carrera-por-suceder-a-jensen-huang-como-ceo-de-nvidia/",
-   "fecha": "2026-11-13T15:12:52Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El Gobierno sumó al RIGI dos megaproyectos por USD 3.245 millones para potenciar las exportaciones de gas",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/13/el-gobierno-sumo-al-rigi-dos-megaproyectos-por-usd-3245-millones-para-potenciar-las-exportaciones-de-gas/",
-   "fecha": "2026-11-13T14:53:08Z",
-   "tema": "politica"
   },
   {
    "titulo": "Más del 60% de los hogares argentinos elige segundas marcas, que cuestan hasta 40% menos",
@@ -585,53 +627,11 @@
    "tema": "dolar"
   },
   {
-   "titulo": "NSES: cuánto cobra en diciembre una persona que se jubila con 30 años de aportes",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/469025-jubilacion-30-anos-aportes-cuanto-cobrar-noviembre-2026",
-   "fecha": "2026-11-13T12:42:00Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "ATE aplicará \"paro a la japonesa\" en Ezeiza y Aeroparque. ¿habrá demoras en los vuelos?",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/468899-ate-aplicara-paro-a-la-japonesa-en-ezeiza-y-aeroparque-habra-demoras-en-los-vuelos",
    "fecha": "2026-11-13T12:00:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Nike tiene 2x1 combinable en sus outlets de Buenos Aires: qué productos incluye y dónde están",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/actualidad/469014-nike-liquida-zapatillas-y-botines-con-2x1-desde-35000-pesos-y-3-cuotas-sin-interes",
-   "fecha": "2026-11-13T10:58:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Mercado Pago habilitó el Fondo FAL para empresas: quiénes pueden adherir y cómo hacerlo",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/impuestos/468883-fondo-de-asistencia-laboral-como-elegir-a-mercado-pago-antes-del-1-de-diciembre",
-   "fecha": "2026-11-13T10:30:00Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Los pocos gremios que lograron ganarle en paritarias a la inflación de octubre",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/management/468959-los-pocos-gremios-que-lograron-ganarle-en-paritarias-a-la-inflacion-de-octubre",
-   "fecha": "2026-11-13T10:19:00Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Milei está a un paso de reformar el BCRA: la ley ya tiene fecha de votación en Diputados",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/politica/469008-milei-esta-a-un-paso-de-reformar-el-bcra-la-ley-que-ya-tiene-fecha-en-diputados",
-   "fecha": "2026-11-13T10:05:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Milei acumula 350% de inflación, la City prevé estancamiento y ajusta carteras de inversión",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/469006-la-city-preve-estancamiento-y-gira-hacia-estas-inversiones",
-   "fecha": "2026-11-13T10:00:00Z",
-   "tema": "inflacion"
   },
   {
    "titulo": "Lo que se dice en las mesas: el mercado empieza a ver el 2027 como un escenario a todo o nada",
@@ -715,27 +715,6 @@
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/aguinaldo-2026-quienes-cobran-diciembre-cuando-se-deposita-y-como-se-calcula-n6344447",
    "fecha": "2026-11-12T15:39:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "China le reclamó a EEUU acelerar la aplicación del acuerdo de baja de aranceles por u$s60.000 millones",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/china-le-reclamo-eeuu-acelerar-la-aplicacion-del-acuerdo-baja-aranceles-us60000-millones-n6344368",
-   "fecha": "2026-11-12T13:24:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Efecto Ueno Bank: Fitch puso en vigilancia negativa la deuda de Paraguay",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/efecto-ueno-bank-fitch-puso-vigilancia-negativa-la-deuda-paraguay-n6344333",
-   "fecha": "2026-11-12T12:13:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Inocencia Fiscal: ARCA reglamentó la rebaja del 50% en las multas para pymes",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/inocencia-fiscal-arca-reglamento-la-rebaja-del-50-las-multas-pymes-n6344308",
-   "fecha": "2026-11-12T12:02:00Z",
    "tema": "otros"
   }
  ]
