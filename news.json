@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-15T15:57:04.187481Z",
+ "actualizado": "2026-11-15T20:42:58.781552Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 17
+   "n": 13
   },
   {
    "medio": "Infobae",
@@ -50,7 +50,7 @@
   {
    "medio": "iProfesional",
    "ok": true,
-   "n": 22
+   "n": 17
   },
   {
    "medio": "Perfil",
@@ -59,6 +59,76 @@
   }
  ],
  "items": [
+  {
+   "titulo": "La inflación de octubre: el dato que sorprendió a casi todos y la distancia que persiste con los parámetros internacionales",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/15/inflacion-octubre-el-dato-que-sorprendio-a-casi-todos-y-la-distancia-que-persiste-con-los-parametros-internacionales/",
+   "fecha": "2026-11-15T20:37:43Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Economía anunció la suspensión de embargos de ARCA para pymes y otras tres medidas para impulsar la actividad",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/03/economia-anuncio-la-suspension-de-embargos-de-arca-para-pymes-y-otras-tres-medidas-para-impulsar-la-actividad/",
+   "fecha": "2026-11-15T20:03:48Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Andrés Hatum, profesor de Di Tella: por qué cumplir 50 no tiene que ser el final de la carrera",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/andres-hatum-profesor-de-di-tella-por-que-cumplir-50-no-tiene-que-ser-el-final-de-la-carrera-nid15112026/",
+   "fecha": "2026-11-15T20:00:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Las 15 empresas y líderes destacados que están revolucionando sus sectores",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/los-15-casos-mas-innovadores-del-ano-nid15112026/",
+   "fecha": "2026-11-15T18:27:36Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Calendario Anses: comienza el pago de las prestaciones sociales que se cobran en la semana del 16 al 20 de noviembre",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/calendario-anses-comienza-el-pago-de-las-prestaciones-sociales-que-se-cobran-en-la-semana-del-16-al-nid15112026/",
+   "fecha": "2026-11-15T18:25:50Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Alerta por el bolsillo: casi el 70% de los argentinos se queda sin plata antes del día 20 y crece el endeudamiento",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/el-68-los-argentinos-se-queda-ingresos-antes-del-dia-20-y-casi-el-60-se-endeuda-llegar-fin-mes-n6345436",
+   "fecha": "2026-11-15T18:06:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Siete países en el mundo tienen una inflación superior al 20% anual: cuáles son y cuántos superan a la Argentina",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/15/siete-paises-en-el-mundo-tienen-una-inflacion-anual-superior-al-20-anual-cuales-son-y-cuantos-superan-a-la-argentina/",
+   "fecha": "2026-11-15T17:58:19Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Todo empezó con un inmigrante en 1898 y hoy, después de más de 100 años, mantiene su vigencia: “Mi abuela hacía dulce de leche en estas cocinas”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/todo-empezo-con-un-inmigrante-en-1898-y-hoy-despues-de-mas-de-100-anos-mantiene-su-vigencia-mi-nid15112026/",
+   "fecha": "2026-11-15T17:23:13Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Un importante empresario del agro compró 10.000 hectáreas en una zona con condiciones excepcionales",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/un-importante-empresario-del-agro-compro-10000-hectareas-en-una-zona-con-condiciones-excepcionales-nid14112026/",
+   "fecha": "2026-11-15T17:21:12Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "De la Patagonia a San Pablo: empieza a tomar forma el proyecto de exportar gas de Vaca Muerta a Brasil",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/15/de-la-patagonia-a-san-pablo-empieza-a-tomar-forma-el-proyecto-de-exportar-gas-de-vaca-muerta-a-brasil/",
+   "fecha": "2026-11-15T16:34:04Z",
+   "tema": "empresas"
+  },
   {
    "titulo": "Menos ventas, más stock: la demora en definir el cupo de autos híbridos y eléctricos generó 4 meses de colchón a las automotrices",
    "medio": "Infobae",
@@ -74,18 +144,18 @@
    "tema": "otros"
   },
   {
+   "titulo": "Nuevo mal dato para Milei: 2 de cada 3 argentinos se quedan sin sueldo el 20 de cada mes",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/469171-nuevo-mal-dato-para-milei-2-de-cada-3-argentinos-se-quedan-sin-sueldo-el-20-de-cada-mes",
+   "fecha": "2026-11-15T15:14:00Z",
+   "tema": "politica"
+  },
+  {
    "titulo": "Miguel Kiguel advirtió que el Gobierno subestimó la inflación y pidió priorizar la actividad económica y el empleo",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/miguel-kiguel-advirtio-que-el-gobierno-subestimo-la-inflacion-y-pidio-priorizar-la-actividad-economica-y-el-empleo-n6345408",
    "fecha": "2026-11-15T14:53:00Z",
    "tema": "inflacion"
-  },
-  {
-   "titulo": "Todo empezó con un inmigrante en 1898 y hoy, después de más de 100 años, mantiene su vigencia: “Mi abuela hacía dulce de leche en estas cocinas”",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/todo-empezo-con-un-inmigrante-en-1898-y-hoy-despues-de-mas-de-100-anos-mantiene-su-vigencia-mi-nid15112026/",
-   "fecha": "2026-11-15T14:32:42Z",
-   "tema": "otros"
   },
   {
    "titulo": "Plazo fijo: cuánto hay que invertir para ganar $250.000",
@@ -134,13 +204,6 @@
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/calendario-anses-cuando-cobro-la-auh-en-noviembre-2026-si-mi-dni-termina-en-2-nid15112026/",
    "fecha": "2026-11-15T13:35:28Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Un importante empresario del agro compró 10.000 hectáreas en una zona con condiciones excepcionales",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/un-importante-empresario-del-agro-compro-10000-hectareas-en-una-zona-con-condiciones-excepcionales-nid14112026/",
-   "fecha": "2026-11-15T13:34:19Z",
    "tema": "otros"
   },
   {
@@ -260,27 +323,6 @@
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/calendario-de-pagos-de-anses-cuando-se-cobra-la-puam-de-noviembre-de-2026-nid02112026/",
    "fecha": "2026-11-15T12:55:48Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Calendario de jubilaciones de la Anses: cuándo cobro en noviembre 2026 con el bono oficial y el aumento confirmado",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/calendario-de-jubilaciones-de-la-anses-cuando-cobro-en-noviembre-2026-con-el-bono-oficial-y-el-nid28102026/",
-   "fecha": "2026-11-15T12:55:45Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Calendario PNC de la Anses: cuándo se cobran las Pensiones no Contributivas de noviembre 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/calendario-pnc-de-la-anses-cuando-se-cobran-las-pensiones-no-contributivas-de-noviembre-2026-nid04112026/",
-   "fecha": "2026-11-15T12:55:43Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Calendario SUAF: cuándo cobro la Asignación Familiar de noviembre 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/calendario-suaf-cuando-cobro-la-asignacion-familiar-de-noviembre-2026-nid11112026/",
-   "fecha": "2026-11-15T12:55:41Z",
    "tema": "otros"
   },
   {
@@ -501,20 +543,6 @@
    "tema": "politica"
   },
   {
-   "titulo": "Se vendió una emblemática marca de galletitas: qué gigante de los alimentos se la quedó",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/14/se-vendio-una-emblematica-marca-de-galletitas-que-gigante-de-los-alimentos-se-la-quedo/",
-   "fecha": "2026-11-14T13:09:32Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "FAL: una herramienta para combatir la informalidad laboral",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/opinion/2026/11/14/fal-una-herramienta-para-combatir-la-informalidad-laboral/",
-   "fecha": "2026-11-14T12:37:31Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Plazo fijo: qué bancos pagan más a no clientes y cuánto ganás con $1 millón",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/finanzas/468998-plazo-fijo-que-bancos-pagan-mas-a-no-clientes-y-cuanto-ganas-con-1-millon",
@@ -547,20 +575,6 @@
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/el-resultado-fiscal-octubre-definira-si-el-gobierno-logra-cumplir-la-meta-superavit-acordada-el-fmi-n6345009",
    "fecha": "2026-11-14T10:00:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Demoras y desvío: qué pasa con los vuelos programados para hoy desde Argentina a Estados Unidos",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/13/que-pasara-con-los-vuelos-programados-para-hoy-desde-argentina-a-estados-unidos/",
-   "fecha": "2026-11-14T08:38:30Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "¿Se estancó la desinflación?: el dato que esperanza al Gobierno y los riesgos que asoman en el cierre de 2026",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/14/se-estanco-la-desinflacion-el-dato-que-esperanza-al-gobierno-y-los-riesgos-que-asoman-en-el-cierre-de-2026/",
-   "fecha": "2026-11-14T03:49:03Z",
    "tema": "politica"
   },
   {
@@ -604,83 +618,6 @@
    "url": "https://www.ambito.com/economia/plazo-fijo-cuanto-debes-invertir-ganar-200000-n6344859",
    "fecha": "2026-11-13T21:00:00Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "Empresas: se perdieron casi 32.500 unidades productivas desde 2023 y las pymes migran a la informalidad",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/empresas-se-perdieron-casi-32500-unidades-productivas-2023-y-las-pymes-migran-la-informalidad-n6345026",
-   "fecha": "2026-11-13T19:57:00Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "El uso de la capacidad instalada de la industria superó el 60% por primera vez en el año",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/469081-el-uso-de-la-capacidad-instalada-de-la-industria-supero-el-60-por-primera-vez-en-el-ano",
-   "fecha": "2026-11-13T19:56:00Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Industria: el uso de capacidad instalada cruzó el 60% por primera vez en 2026, aunque tuvo una caída anual",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/industria-el-uso-capacidad-instalada-cruzo-el-60-primera-vez-2026-aunque-tuvo-una-caida-anual-n6345064",
-   "fecha": "2026-11-13T19:21:00Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Los salarios privados registrados le empataron a la inflación en septiembre, pero los públicos volvieron a perder",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/los-salarios-privados-registrados-le-empataron-la-inflacion-septiembre-pero-los-publicos-volvieron-perder-n6345076",
-   "fecha": "2026-11-13T19:16:00Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Marcha de gastronómicos por falta de homologación de las tres últimas paritarias",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/469073-marcha-de-gastronomicos-por-falta-de-homologacion-de-tres-ultimas-paritarias",
-   "fecha": "2026-11-13T18:47:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Wall Street anticipa balances flojos para bancos argentinos y recomienda una sola acción",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/468851-wall-street-recomienda-una-sola-accion-entre-los-bancos-argentinos",
-   "fecha": "2026-11-13T18:40:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Generación sin casa propia: se sumaron 600.000 hogares inquilinos en la última década",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/generacion-casa-propia-se-sumaron-600000-hogares-inquilinos-la-ultima-decada-n6345015",
-   "fecha": "2026-11-13T18:33:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El Gobierno oficializó en el RIGI dos proyectos de gas de TGS por más de u$s3.200 millones",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/energia/469074-el-gobierno-oficializo-en-el-rigi-dos-proyectos-de-tgs-por-mas-de-3200-millones-dolares",
-   "fecha": "2026-11-13T18:05:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "La devaluación en Brasil alerta a Caputo y reaparece el fantasma del atraso cambiario",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/469007-caida-del-real-frente-al-dolar-en-brasil-le-mete-presion-a-caputo",
-   "fecha": "2026-11-13T17:30:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Supermercados lanzan descuentos de hasta 50% y hasta 18 cuotas en electrodomésticos",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/actualidad/469060-supermercados-lanzan-descuentos-de-hasta-50-y-hasta-18-cuotas-en-electrodomesticos",
-   "fecha": "2026-11-13T16:55:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Motosierra: el Gobierno retira el subsidio fijo del 30% a los colectivos a gas y del 50% a los eléctricos",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/motosierra-el-gobierno-retira-el-subsidio-fijo-del-30-los-colectivos-gas-y-del-50-los-electricos-n6344954",
-   "fecha": "2026-11-13T16:19:00Z",
-   "tema": "politica"
   }
  ]
 }
