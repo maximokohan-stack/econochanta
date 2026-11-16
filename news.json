@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-16T00:30:51.313397Z",
+ "actualizado": "2026-11-16T05:44:12.040221Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -50,7 +50,7 @@
   {
    "medio": "iProfesional",
    "ok": true,
-   "n": 16
+   "n": 15
   },
   {
    "medio": "Perfil",
@@ -59,6 +59,13 @@
   }
  ],
  "items": [
+  {
+   "titulo": "Marcada baja interanual del consumo de carne vacuna en Argentina",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/actualidad/469185-marcada-baja-interanual-del-consumo-de-carne-vacuna-en-argentina",
+   "fecha": "2026-11-16T00:12:00Z",
+   "tema": "actividad"
+  },
   {
    "titulo": "Récord histórico de las exportaciones del agro: en diez meses superaron los 100 millones de toneladas",
    "medio": "Infobae",
@@ -583,20 +590,6 @@
    "url": "https://www.ambito.com/economia/el-resultado-fiscal-octubre-definira-si-el-gobierno-logra-cumplir-la-meta-superavit-acordada-el-fmi-n6345009",
    "fecha": "2026-11-14T10:00:00Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "Cambian los precios de los documentos argentinos: cuánto costarán el pasaporte y el DNI",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/468793-pasaporte-argentino-cuanto-cuesta-tramitarlo-ahora-sube-precio-dni-noviembre-2026",
-   "fecha": "2026-11-14T03:01:00Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "NSES: cuánto cobra en diciembre una persona que se jubila con 30 años de aportes",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/469025-jubilacion-30-anos-aportes-cuanto-cobrar-noviembre-2026",
-   "fecha": "2026-11-14T03:01:00Z",
-   "tema": "otros"
   }
  ]
 }
