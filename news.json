@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-15T20:42:58.781552Z",
+ "actualizado": "2026-11-16T00:30:51.313397Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 13
+   "n": 11
   },
   {
    "medio": "Infobae",
@@ -50,7 +50,7 @@
   {
    "medio": "iProfesional",
    "ok": true,
-   "n": 17
+   "n": 16
   },
   {
    "medio": "Perfil",
@@ -59,6 +59,41 @@
   }
  ],
  "items": [
+  {
+   "titulo": "Récord histórico de las exportaciones del agro: en diez meses superaron los 100 millones de toneladas",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/15/record-historico-de-las-exportaciones-del-agro-en-diez-meses-superaron-los-100-millones-de-toneladas/",
+   "fecha": "2026-11-15T23:19:40Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "JP Morgan prevé que la inflación llegue a las elecciones cerca del 2% mensual y dejó una advertencia sobre el dólar",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/jp-morgan-preve-que-la-inflacion-llegue-a-las-elecciones-cerca-del-2-mensual-y-dejo-una-advertencia-nid15112026/",
+   "fecha": "2026-11-15T22:58:24Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "El consumo de carne vacuna cayó 11% en un año: los argentinos comen 5,6 kilos menos que en 2025",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/15/el-consumo-de-carne-vacuna-cayo-11-en-un-ano-los-argentinos-comen-56-kilos-menos-que-en-2025/",
+   "fecha": "2026-11-15T21:50:44Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Calendario Anses: cuándo cobro la AUH en noviembre 2026 si mi DNI termina en 3",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/calendario-anses-cuando-cobro-la-auh-en-noviembre-2026-si-mi-dni-termina-en-3-nid15112026/",
+   "fecha": "2026-11-15T21:39:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Las 10 acciones del Merval que recomienda comprar con $1 millón un broker top de la City",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/469020-10-acciones-del-merval-que-recomienda-comprar-broker-top-de-la-city",
+   "fecha": "2026-11-15T21:10:00Z",
+   "tema": "mercados"
+  },
   {
    "titulo": "La inflación de octubre: el dato que sorprendió a casi todos y la distancia que persiste con los parámetros internacionales",
    "medio": "Infobae",
@@ -312,20 +347,6 @@
    "tema": "mercados"
   },
   {
-   "titulo": "Calendario AUH de Anses: cuándo se cobra la Asignación Universal por Hijo en noviembre 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/calendario-auh-de-anses-cuando-se-cobra-la-asignacion-universal-por-hijo-en-noviembre-2026-nid29102026/",
-   "fecha": "2026-11-15T12:55:51Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Calendario de pagos de Anses: cuándo se cobra la PUAM de noviembre de 2026",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/calendario-de-pagos-de-anses-cuando-se-cobra-la-puam-de-noviembre-de-2026-nid02112026/",
-   "fecha": "2026-11-15T12:55:48Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "La visita del papa León XIV movilizó millones y dejó cifras récord en el turismo",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/468907-papa-leon-xiv-cuanto-dinero-movilizo-su-visita-a-argentina",
@@ -529,20 +550,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Cerraron casi 10.000 empresas en lo que va de 2026: cuáles fueron los sectores más afectados",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/14/cerraron-casi-10000-empresas-en-lo-que-va-de-2026-cuales-fueron-los-sectores-mas-afectados/",
-   "fecha": "2026-11-14T14:01:45Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Miguel Kiguel: “No sé si hoy las preferencias del gobierno son las mismas que tiene la sociedad”",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/14/miguel-kiguel-no-se-si-hoy-las-preferencias-del-gobierno-son-las-mismas-que-tiene-la-sociedad/",
-   "fecha": "2026-11-14T13:49:14Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "Plazo fijo: qué bancos pagan más a no clientes y cuánto ganás con $1 millón",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/finanzas/468998-plazo-fijo-que-bancos-pagan-mas-a-no-clientes-y-cuanto-ganas-con-1-millon",
@@ -590,34 +597,6 @@
    "url": "https://www.iprofesional.com/economia/469025-jubilacion-30-anos-aportes-cuanto-cobrar-noviembre-2026",
    "fecha": "2026-11-14T03:01:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "La demanda de pesos que sigue el BCRA cayó en octubre, pero hubo señales positivas: ¿arranca la remonetización?",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/la-demanda-pesos-que-sigue-el-bcra-cayo-octubre-pero-hubo-senales-positivas-arranca-la-remonetizacion-n6345059",
-   "fecha": "2026-11-13T23:13:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Dal Poggetto se burló de Milei por la inflación: \"Dalpifieto habría que ponérselo a otro\"",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/actualidad/469108-economista-marina-dal-poggetto-se-burlo-de-javier-milei-tras-alto-dato-de-inflacion-octubre-2026",
-   "fecha": "2026-11-13T22:55:00Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Historias del drama textil: fábricas que cierran y empresarios que empiezan a importar",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/469092-historias-del-drama-textil-fabricas-que-cierran-y-empresarios-que-empiezan-a-importar",
-   "fecha": "2026-11-13T21:10:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Plazo fijo: cuánto debés invertir para ganar $200.000",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/plazo-fijo-cuanto-debes-invertir-ganar-200000-n6344859",
-   "fecha": "2026-11-13T21:00:00Z",
-   "tema": "mercados"
   }
  ]
 }
