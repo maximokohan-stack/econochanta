@@ -1,0 +1,107 @@
+{
+ "fuente": "Secretaría de Finanzas, Deuda Bruta de la Administración Central por acreedor (informes trimestrales)",
+ "url": "https://www.argentina.gob.ar/economia/finanzas/datos-trimestrales-de-la-deuda",
+ "unidad": "millones de dólares",
+ "nota": "Deuda neta = deuda bruta menos la parte en manos de agencias del sector público nacional (BCRA, FGS de la ANSES, Banco Nación y otros). El % del PBI es el de cada informe, a tipo de cambio de fin de período.",
+ "generado": "2026-11-17T22:50:41+00:00",
+ "puntos": [
+  {
+   "fecha": "2024-12-31",
+   "total": 466921.0,
+   "agencias": 217298.0,
+   "privado": 170343.0,
+   "elegible": 2316.0,
+   "multi": 79280.0,
+   "pbi": {
+    "total": "82,6%",
+    "agencias": "38,4%",
+    "privado": "30,1%",
+    "multi": "14,0%"
+   }
+  },
+  {
+   "fecha": "2025-03-31",
+   "total": 473561.0,
+   "agencias": 224265.0,
+   "privado": 169893.0,
+   "elegible": 2354.0,
+   "multi": 79402.0,
+   "pbi": {
+    "total": "76,2%",
+    "agencias": "36,1%",
+    "privado": "27,3%",
+    "multi": "12,8%"
+   }
+  },
+  {
+   "fecha": "2025-06-30",
+   "total": 465353.0,
+   "agencias": 207934.0,
+   "privado": 161876.0,
+   "elegible": 2429.0,
+   "multi": 95542.0,
+   "pbi": {
+    "total": "76,3%",
+    "agencias": "34,1%",
+    "privado": "26,5%",
+    "multi": "15,7%"
+   }
+  },
+  {
+   "fecha": "2025-09-30",
+   "total": 454037.0,
+   "agencias": 199810.0,
+   "privado": 155822.0,
+   "elegible": 2420.0,
+   "multi": 98404.0,
+   "pbi": {
+    "total": "78,2%",
+    "agencias": "34,4%",
+    "privado": "26,9%",
+    "multi": "17,0%"
+   }
+  },
+  {
+   "fecha": "2025-12-31",
+   "total": 455077.0,
+   "agencias": 200249.0,
+   "privado": 155468.0,
+   "elegible": 2420.0,
+   "multi": 99360.0,
+   "pbi": {
+    "total": "78,1%",
+    "agencias": "34,4%",
+    "privado": "26,7%",
+    "multi": "17,1%"
+   }
+  },
+  {
+   "fecha": "2026-03-31",
+   "total": 483854.0,
+   "agencias": 219641.0,
+   "privado": 165733.0,
+   "elegible": 2413.0,
+   "multi": 98481.0,
+   "pbi": {
+    "total": "73,4%",
+    "agencias": "33,3%",
+    "privado": "25,1%",
+    "multi": "14,9%"
+   }
+  },
+  {
+   "fecha": "2026-06-30",
+   "total": 474198.0,
+   "agencias": 197213.0,
+   "privado": 177738.0,
+   "elegible": 2403.0,
+   "multi": 99247.0,
+   "pbi": {
+    "total": "71,4%",
+    "agencias": "29,7%",
+    "privado": "26,8%",
+    "multi": "14,9%"
+   }
+  }
+ ]
+}

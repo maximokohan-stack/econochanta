@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap">
-  <link rel="stylesheet" href="styles.css?v=31">
+  <link rel="stylesheet" href="styles.css?v=32">
 </head>
 <body>
   <a class="skip" href="#main">Saltar al contenido</a>
@@ -101,27 +101,19 @@
         </div>
       </aside>
 
-      <!-- 2. lo importante de hoy: titular con fecha y fuente, cambios destacados -->
-      <section class="hoy hoy--noche" id="bloque-hoy" aria-labelledby="h-hoy">
-        <p class="hoy__eyebrow"><span class="vivo" aria-hidden="true"></span><span id="hoy-fecha">Lo importante de hoy</span></p>
-        <div class="hoy__g">
-          <div class="hoy__txt">
-            <h2 id="h-hoy" class="hoy__tit" tabindex="-1">Cargando los datos del día…</h2>
-            <p class="hoy__sub" id="hoy-sub"></p>
+      <!-- 2. las secciones, cada una con su dato del día -->
+      <section class="secs" aria-labelledby="h-secs">
+        <div class="mov-cab">
+          <div>
+            <h2 class="resumen__sub" id="h-secs">¿Qué querés ver?</h2>
+            <p class="hint">Cada sección con su dato del día.</p>
           </div>
-          <div class="hoy__graf">
-            <div class="hoy__graf-cab" id="hoy-graf-cab"></div>
-            <div class="hoy__chart" id="hoy-chart"></div>
-          </div>
-        </div>
-        <div class="hoy__cifras" id="hoy-cifras"></div>
-        <div class="hoy__pie">
-          <p class="hoy__fuente" id="hoy-fuente"></p>
           <div class="front-head__acc">
             <p class="front-head__stamp" id="actualizado" role="status"></p>
             <button class="btn btn--ghost btn--sm" id="refrescar" type="button">Actualizar</button>
           </div>
         </div>
+        <div class="secs__g" id="secs"></div>
       </section>
 
       <div class="mov-cab">
@@ -224,6 +216,7 @@
         <p class="sp__sub" id="estado-sub">Cuánto recauda y cuánto gasta el Estado nacional, si le sobra o le falta plata, y cómo le va con el resto del mundo.</p>
         <p class="sp__fuente" id="estado-fuente"></p>
       </div>
+      <div id="estado-deuda" class="deuda"></div>
       <div id="mesa-estado"></div>
       <div id="estado-extras" class="estado-extras"></div>
     </section>
@@ -661,17 +654,18 @@
 
 
 
-  <script src="data.js?v=31"></script>
-  <script src="api.js?v=31"></script>
-  <script src="series.js?v=31"></script>
-  <script src="charts.js?v=31"></script>
-  <script src="glosario.js?v=31"></script>
-  <script src="analisis.js?v=31"></script>
-  <script src="lectura.js?v=31"></script>
-  <script src="mandatos.js?v=31"></script>
-  <script src="tablero.js?v=31"></script>
-  <script src="secciones.js?v=31"></script>
-  <script src="cinta.js?v=31"></script>
-  <script src="app.js?v=31"></script>
+  <script src="data.js?v=32"></script>
+  <script src="api.js?v=32"></script>
+  <script src="series.js?v=32"></script>
+  <script src="charts.js?v=32"></script>
+  <script src="glosario.js?v=32"></script>
+  <script src="analisis.js?v=32"></script>
+  <script src="lectura.js?v=32"></script>
+  <script src="mandatos.js?v=32"></script>
+  <script src="tablero.js?v=32"></script>
+  <script src="secciones.js?v=32"></script>
+  <script src="cinta.js?v=32"></script>
+  <script src="deuda.js?v=32"></script>
+  <script src="app.js?v=32"></script>
 </body>
 </html>

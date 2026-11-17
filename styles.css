@@ -1828,3 +1828,82 @@ input[type="number"]:focus, .mkt__search:focus, .mesa__buscar:focus { box-shadow
 .inicio-noti__meta b { color: var(--text); }
 .inicio-noti__t { font-size: 17px; font-weight: 600; line-height: 1.35; }
 .inicio-noti .resumen__sub, .inicio-fila__col .resumen__sub { margin: 0; }
+
+/* ---------- Inicio: menos zoom (como en el diseño aprobado) ---------- */
+@media (min-width: 821px) { #vista-inicio { zoom: .86; } }
+@media (max-width: 820px) { #vista-inicio { zoom: .92; } }
+
+/* ---------- Inicio: ¿Qué querés ver? (cada sección con su dato) ---------- */
+.sec-dolares { --sec: #7CB8F0; } .sec-inflacion { --sec: #F5B74E; } .sec-tasas { --sec: #B9A0F5; } .sec-estado { --sec: #4FC9DE; }
+.sec-actividad { --sec: #F49AC1; } .sec-bcra { --sec: #93A6FF; } .sec-mercados { --sec: #C9D1EA; }
+:root[data-theme="light"] .sec-dolares { --sec: #1F6FC2; } :root[data-theme="light"] .sec-inflacion { --sec: #A35C00; }
+:root[data-theme="light"] .sec-tasas { --sec: #6B3FB8; } :root[data-theme="light"] .sec-estado { --sec: #0B7285; }
+:root[data-theme="light"] .sec-actividad { --sec: #A8306A; } :root[data-theme="light"] .sec-bcra { --sec: #3B4CC0; }
+:root[data-theme="light"] .sec-mercados { --sec: #3E4767; }
+.secs { margin-top: 22px; }
+.secs .mov-cab { align-items: end; }
+.secs .front-head__acc { display: flex; align-items: center; gap: 10px; }
+.secs .front-head__stamp { margin: 0; font-size: 13px; color: var(--text-2); }
+.secs__g { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 12px; }
+.secs__c { display: flex; flex-direction: column; gap: 2px; min-width: 0; padding: 16px 18px 14px; border-radius: 18px; background: var(--surface); border: 1px solid var(--line); color: var(--text); text-decoration: none; transition: border-color .2s, transform .2s; }
+a.secs__c:hover { border-color: var(--sec, var(--control)); transform: translateY(-2px); }
+a.secs__c:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
+.secs__n { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 16px; }
+.secs__n i { width: 9px; height: 9px; border-radius: 50%; background: var(--sec); flex: none; }
+.secs__d { font-size: 13.5px; color: var(--text-2); margin-bottom: 8px; }
+.secs__v { font-family: var(--disp); font-weight: 700; font-size: 24px; letter-spacing: -.02em; line-height: 1.15; font-variant-numeric: tabular-nums; }
+.secs__v small { font-family: var(--font); font-size: 13px; font-weight: 500; color: var(--text-2); letter-spacing: 0; }
+.secs__x { font-size: 13px; color: var(--text-2); min-height: 1.4em; }
+.secs__sp { display: block; width: 100%; height: 40px; margin-top: auto; padding-top: 10px; }
+.secs__sp path { stroke-width: 2; }
+.secs__b { fill: var(--sec); opacity: .45; } .secs__b--u { opacity: 1; }
+.secs__herr { background: var(--surface-2); }
+.secs__links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px 14px; margin-top: 4px; }
+.secs__links a { display: block; padding: 7px 0; color: var(--text); font-weight: 600; font-size: 14.5px; text-decoration: none; }
+.secs__links a::after { content: " →"; color: var(--text-2); }
+.secs__links a:hover { color: var(--accent); }
+@media (max-width: 1100px) { .secs__g { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) {
+  .secs__g { gap: 10px; }
+  .secs__c { padding: 12px 13px 10px; border-radius: 16px; }
+  .secs__d { display: none; }
+  .secs__n { font-size: 14.5px; margin-bottom: 6px; }
+  .secs__v { font-size: 19px; }
+  .secs__v small { display: block; font-size: 12px; }
+  .secs__x { font-size: 12px; }
+  .secs__sp { height: 34px; }
+  .secs__links { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .secs__links a { padding: 4px 0; font-size: 13.5px; }
+}
+
+/* ---------- Cuentas del Estado: deuda neta ---------- */
+.deuda { margin-top: 18px; }
+.deuda__card { display: flex; flex-direction: column; gap: 14px; }
+.deuda__cab { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 10px 24px; }
+.deuda__tit { margin: 0; font-size: 24px; }
+.deuda__baj { margin: 4px 0 0; color: var(--text-2); max-width: 78ch; }
+.deuda__ley { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 0; font-size: 13.5px; color: var(--text-2); }
+.deuda__ley span { display: inline-flex; align-items: center; gap: 6px; }
+.deuda__ley i { width: 14px; height: 10px; border-radius: 3px; display: inline-block; }
+.deuda__ley-priv { background: var(--sec); } .deuda__ley-multi { background: var(--sec); opacity: .55; }
+.deuda__ley-raya { background: repeating-linear-gradient(45deg, var(--text-2) 0 2px, var(--surface-2) 2px 5px); }
+.deuda__kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.deuda__k { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border-radius: 14px; background: var(--surface-2); }
+.deuda__k p { margin: 0; }
+.deuda__kl { font-size: 14px; color: var(--text-2); }
+.deuda__kv { font-family: var(--disp); font-weight: 700; font-size: 26px; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+.deuda__kn { font-size: 13.5px; color: var(--text-2); }
+.deuda__k--neta { background: color-mix(in srgb, var(--sec) 16%, var(--surface-2)); }
+.deuda__k--estado .deuda__kv { color: var(--text-2); text-decoration: line-through; text-decoration-thickness: 1.5px; }
+.deuda__cuenta { margin: 0; color: var(--text-2); }
+.deuda__cuenta b { color: var(--text); font-variant-numeric: tabular-nums; }
+.deuda__cuenta span { margin: 0 6px; }
+.deuda__graf svg { display: block; }
+.deuda__eje { stroke: var(--line); } .deuda__eje0 { stroke: var(--control); }
+.deuda__lab { fill: var(--text-2); font: 13px var(--font); }
+.deuda__in { fill: var(--bg); font: 700 13px var(--font); }
+.deuda__priv { fill: var(--sec); } .deuda__multi { fill: var(--sec); opacity: .55; }
+.deuda__fondo { fill: var(--surface-2); } .deuda__raya { stroke: var(--text-2); stroke-width: 2; }
+.deuda__fuente { margin: 0; font-size: 12.5px; color: var(--text-2); }
+@media (max-width: 900px) { .deuda__kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .deuda__kpis { grid-template-columns: minmax(0, 1fr); } }

@@ -4,9 +4,9 @@
  * (CSS y scripts). Así el HTML nuevo siempre pide los archivos nuevos, aunque el
  * navegador tenga guardados los viejos (GitHub Pages los deja 10 minutos en caché).
  */
-var V = "31";
+var V = "32";
 var VERSION = "econochanta-v" + V;
-var ARCHIVOS = ["styles.css", "data.js", "api.js", "series.js", "charts.js", "glosario.js", "analisis.js", "lectura.js", "mandatos.js", "tablero.js", "secciones.js", "cinta.js", "app.js"];
+var ARCHIVOS = ["styles.css", "data.js", "api.js", "series.js", "charts.js", "glosario.js", "analisis.js", "lectura.js", "mandatos.js", "tablero.js", "secciones.js", "cinta.js", "deuda.js", "app.js"];
 var SHELL = ["./", "index.html", "manifest.webmanifest", "assets/icon.svg", "assets/icon-192.png", "assets/icon-512.png"]
   .concat(ARCHIVOS.map(function (f) { return f + "?v=" + V; }));
 

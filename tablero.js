@@ -1922,7 +1922,68 @@
     });
   }
 
+
+  /* ---- ¿Qué querés ver?: cada sección con su dato del día y un gráfico chico ---- */
+  var SECS = [
+    { v: "dolares", n: "Dólares", d: "Los seis dólares y la brecha", id: "oficial", u: function () { return "oficial"; }, x: function (P) { return P.blue && P.blue.ok && P.mep && P.mep.ok ? "Blue " + P.blue.valor + " · MEP " + P.mep.valor : ""; }, dias: 95 },
+    { v: "inflacion", n: "Inflación", d: "Precios, rubros y tu canasta", id: "infM", u: function (it) { return mesNombre(it.s.points[it.s.points.length - 1][0]); }, x: function (P) { return P.infIA && P.infIA.ok ? P.infIA.valor + " en doce meses" : ""; }, n_: 14, barras: true },
+    { v: "tasas", n: "Tasas y pesos", d: "Plazo fijo y cuánto rinde tu plata", id: "badlar", u: function () { return "BADLAR"; }, x: function (P) { return P.tamar && P.tamar.ok ? "TAMAR " + P.tamar.valor : ""; }, dias: 180 },
+    { v: "estado", n: "Cuentas del Estado", d: "Ingresos, gastos y deuda", id: "resPrim", u: function (it) { return "resultado primario · " + it.fecha; }, x: function () { return ""; }, n_: 24, barras: true, deuda: true },
+    { v: "actividad", n: "Actividad y empleo", d: "Producción, trabajo y salarios", id: "emae", u: function (it) { return "actividad, " + mesNombre(it.s.points[it.s.points.length - 1][0]); }, x: function (P) { return P.desoc && P.desoc.ok ? "Desocupación " + P.desoc.valor : ""; }, n_: 24,
+      big: function (it) { var p = it.s.points, a = p[p.length - 1][1], b = p[p.length - 2][1]; return b ? signo((a / b - 1) * 100, 1) + "%" : it.valor; } },
+    { v: "bcra", n: "Banco Central", d: "Reservas, compras y base monetaria", id: "reservas", u: function (it) { return "reservas · " + it.fecha; }, x: function () { return ""; }, dias: 180 },
+    { v: "mercados", n: "Acciones y bonos", d: "Riesgo país, Merval, ADRs y bonos", id: "riesgo", u: function () { return "riesgo país"; }, x: function (P) { var r = P.riesgo; if (!r || !r.ok) return ""; var p = r.s.points; return p.length > 1 ? (p[p.length - 1][1] >= p[p.length - 2][1] ? "▲ " : "▼ ") + signo(p[p.length - 1][1] - p[p.length - 2][1], 0) + " pb en el día" : ""; }, dias: 92 }
+  ];
+  var HERR = [["Calculadoras", "#calcular"], ["Tu plata", "#miplata"], ["Análisis", "#analisis"], ["Noticias", "#noticias"], ["Glosario", "#glosario"]];
+
+  function barrasChicas(svg, pts) {
+    var NS = "http://www.w3.org/2000/svg", W = 100, H = 28, vals = pts.map(function (p) { return p[1]; });
+    var lo = Math.min(0, Math.min.apply(null, vals)), hi = Math.max(0, Math.max.apply(null, vals)), rg = hi - lo || 1;
+    function Y(v) { return H - 1 - (H - 2) * (v - lo) / rg; }
+    svg.setAttribute("viewBox", "0 0 " + W + " " + H); svg.setAttribute("preserveAspectRatio", "none");
+    var bw = W / vals.length;
+    vals.forEach(function (v, i) {
+      var r = document.createElementNS(NS, "rect"), y = Y(v), y0 = Y(0);
+      r.setAttribute("x", (i * bw + bw * 0.18).toFixed(2)); r.setAttribute("width", (bw * 0.64).toFixed(2));
+      r.setAttribute("y", Math.min(y, y0).toFixed(2)); r.setAttribute("height", Math.max(Math.abs(y0 - y), 0.6).toFixed(2));
+      r.setAttribute("class", i === vals.length - 1 ? "secs__b secs__b--u" : "secs__b");
+      svg.appendChild(r);
+    });
+  }
+
+  function pintarSecciones(m) {
+    var caja = $("secs"); if (!caja) return;
+    var P = m.porId;
+    caja.textContent = "";
+    SECS.forEach(function (c) {
+      var it = P[c.id], ok = it && it.ok && it.s && it.s.points && it.s.points.length > 1;
+      var a = el("a", "secs__c sec-" + c.v); a.href = "#" + c.v;
+      var nom = el("span", "secs__n"); nom.appendChild(el("i")); nom.appendChild(document.createTextNode(c.n)); a.appendChild(nom);
+      a.appendChild(el("span", "secs__d", c.d));
+      var v = el("span", "secs__v", ok ? (c.big ? c.big(it) : it.valor) : "…");
+      if (ok) v.appendChild(el("small", "", " " + c.u(it)));
+      a.appendChild(v);
+      var extra = el("span", "secs__x", ok ? c.x(P) : "Cargando…"); a.appendChild(extra);
+      if (c.deuda && window.EconoDeuda) window.EconoDeuda.ultimo().then(function (d) { extra.textContent = "Deuda neta " + d.texto + " (" + d.corta + ")"; }).catch(function () { /* sin dato de deuda */ });
+      if (ok) {
+        var sp = document.createElementNS("http://www.w3.org/2000/svg", "svg"); sp.setAttribute("class", "secs__sp"); sp.setAttribute("aria-hidden", "true");
+        var pts = it.s.points;
+        if (c.dias) { var desde = new Date(Date.now() - c.dias * 86400000).toISOString().slice(0, 10); pts = pts.filter(function (p) { return p[0] >= desde; }); }
+        else pts = pts.slice(-(c.n_ || 24));
+        if (pts.length > 1) { if (c.barras) barrasChicas(sp, pts); else C.spark(sp, pts, "var(--sec)"); a.appendChild(sp); }
+      }
+      a.setAttribute("aria-label", c.n + (ok ? ": " + v.textContent + ". " + extra.textContent : ""));
+      caja.appendChild(a);
+    });
+    var h = el("div", "secs__c secs__herr");
+    h.appendChild(el("span", "secs__n", "Herramientas")); h.appendChild(el("span", "secs__d", "Para hacer tus cuentas"));
+    var nav = el("nav", "secs__links"); nav.setAttribute("aria-label", "Herramientas");
+    HERR.forEach(function (x) { var l = el("a", "", x[0]); l.href = x[1]; nav.appendChild(l); });
+    h.appendChild(nav); caja.appendChild(h);
+  }
+
   function pintarMosaico(m, refiltrar) {
+    pintarSecciones(m);
     var caja = $("mosaico"); if (!caja) return;
     var preg = armarPreguntas(m);
     preg.forEach(function (x) {

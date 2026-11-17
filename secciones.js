@@ -897,6 +897,7 @@
     if (vista === "dolares") armarDolares();
     else if (vista === "inflacion") armarInflacion();
     else if (TITULARES[vista]) { armarTitular(vista); armarPortada(vista); }
+    if (vista === "estado" && window.EconoDeuda) window.EconoDeuda.pintar($("estado-deuda"));
     else return;
     sec.classList.toggle("con-ficha", !!sub);
     if (sub && !window.matchMedia("(max-width: 820px)").matches) {
