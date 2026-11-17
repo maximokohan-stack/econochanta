@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-17T02:41:19.863944Z",
+ "actualizado": "2026-11-17T07:21:38.504679Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 15
+   "n": 13
   },
   {
    "medio": "Infobae",
@@ -59,6 +59,55 @@
   }
  ],
  "items": [
+  {
+   "titulo": "El dólar en Brasil trepó 16% desde la reelección de Lula da Silva: cómo impacta en la Argentina",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/17/el-dolar-en-brasil-trepo-16-desde-la-reeleccion-de-lula-da-silva-como-impacta-en-la-argentina/",
+   "fecha": "2026-11-17T05:25:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "¿La economía argentina atraviesa una estanflación?: qué muestran los últimos datos y cuáles son las causas",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/17/la-economia-argentina-atraviesa-una-estanflacion-que-muestran-los-ultimos-datos-y-cuales-son-las-causas/",
+   "fecha": "2026-11-17T05:24:50Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "“Guerra” entre importadores de autos por el cupo de híbridos y eléctricos: hoy termina el plazo para definir qué pasará en 2027",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/17/guerra-entre-importadores-de-autos-por-el-cupo-de-hibridos-y-electricos-hoy-termina-el-plazo-para-definir-que-pasara-en-2027/",
+   "fecha": "2026-11-17T05:24:43Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Frazada corta: por qué el desafío financiero de 2027 es mucho más complicado que el de 2026",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/17/frazada-corta-por-que-el-desafio-financiero-de-2027-es-mucho-mas-complicado-que-el-de-2026/",
+   "fecha": "2026-11-17T05:24:36Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Se suman fantasmas a la incertidumbre electoral: los factores que golpearon a la Argentina y empujaron al riesgo país",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/17/se-suman-fantasmas-a-la-incertidumbre-electoral-los-factores-que-golpearon-a-la-argentina-y-empujaron-al-riesgo-pais/",
+   "fecha": "2026-11-17T05:24:26Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Cuánto cuesta criar un hijo en Argentina y cómo varían los gastos según cada edad",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/17/cuanto-cuesta-criar-un-hijo-en-argentina-y-como-varian-los-gastos-segun-cada-edad/",
+   "fecha": "2026-11-17T05:24:20Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Una opción es bajar impuestos para reactivar la economía",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/11/17/una-opcion-es-bajar-impuestos-para-reactivar-la-economia/",
+   "fecha": "2026-11-17T05:24:12Z",
+   "tema": "politica"
+  },
   {
    "titulo": "Una aerolínea europea suspendió por tiempo indeterminado sus vuelos a la Argentina: qué deberán hacer los pasajeros",
    "medio": "Infobae",
@@ -487,20 +536,6 @@
    "tema": "politica"
   },
   {
-   "titulo": "Subastan antiguos vagones del Subte porteño: cuánto cuesta una unidad fabricada en 1980",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/16/subastan-antiguos-vagones-del-subte-porteno-cuanto-cuesta-una-unidad-fabricada-en-1980/",
-   "fecha": "2026-11-16T15:57:27Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Bausili defendió los costos de la estabilización como parte de la “destrucción creativa” necesaria para crecer en forma sostenida",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/16/bausili-defendio-los-costos-de-la-estabilizacion-como-parte-de-la-destruccion-creativa-necesaria-para-crecer-en-forma-sostenida/",
-   "fecha": "2026-11-16T15:53:47Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Anthropic se prepara para salir a la Bolsa y se dispara el interés por sus acciones",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/tecnologia/anthropic-se-prepara-para-salir-a-la-bolsa-y-se-dispara-el-interes-por-sus-acciones-nid16112026/",
@@ -522,32 +557,11 @@
    "tema": "dolar"
   },
   {
-   "titulo": "Melconian le reconoció al Gobierno haber pateado el hormiguero pero le cuestionó que ahora \"están colgados del travesaño\"",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/16/melconian-le-reconocio-al-gobierno-haber-pateado-el-hormiguero-pero-le-cuestiono-que-ahora-estan-colgados-del-travesano/",
-   "fecha": "2026-11-16T15:28:23Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "Bancarios actualizaron los salarios: básico de casi $2.700.000 y pago de súper bono",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/469238-bancarios-actualizaron-los-salarios-basico-de-casi-2700000-de-pesos-y-pago-de-super-bono",
    "fecha": "2026-11-16T15:27:00Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "Una reliquia brilló en la Noche de los Museos: la historia del Ford T que fue el primer colectivo de Misiones",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/16/una-reliquia-brillo-en-la-noche-de-los-museos-la-historia-del-ford-t-que-fue-el-primer-colectivo-de-misiones/",
-   "fecha": "2026-11-16T15:12:17Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Italia intervino el banco digital Revolut por deficiencias en los controles: sospechan que la mafia lavó dinero",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/america/mundo/2026/11/16/italia-intervino-el-banco-digital-revolut-por-deficiencias-en-los-controles-sospechan-que-la-mafia-lavo-dinero/",
-   "fecha": "2026-11-16T15:02:33Z",
-   "tema": "otros"
   },
   {
    "titulo": "Dos de cada tres argentinos se quedan sin plata antes del día 20: crece la deuda para pagar gastos",
@@ -571,13 +585,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "El Gobierno modificó el RIGI: las empresas extranjeras podrán competir por el cupo de proveedores locales",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/16/el-gobierno-modifico-el-rigi-las-empresas-extranjeras-podran-competir-por-el-cupo-de-proveedores-locales/",
-   "fecha": "2026-11-16T14:29:08Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "JP Morgan alerta por el dólar y proyecta una inflación del 23% para 2027",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/469223-inflacion-y-dolar-las-proyecciones-de-jp-morgan-para-argentina-en-2027",
@@ -590,13 +597,6 @@
    "url": "https://www.iprofesional.com/energia/469229-el-petroleo-supero-a-los-productos-del-agro-y-lidera-las-exportaciones",
    "fecha": "2026-11-16T13:56:00Z",
    "tema": "empresas"
-  },
-  {
-   "titulo": "Buenos Aires: de la desmesura provincial a la armonía",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/opinion/2026/11/16/buenos-aires-de-la-desmesura-provincial-a-la-armonia/",
-   "fecha": "2026-11-16T13:43:51Z",
-   "tema": "otros"
   },
   {
    "titulo": "Papelera del Sur acata la conciliación a medias: sigue cerrada, pero paga los sueldos",
@@ -653,20 +653,6 @@
    "url": "https://www.ambito.com/economia/plazo-fijo-cuanto-hay-que-invertir-ganar-250000-n6344756",
    "fecha": "2026-11-15T14:00:00Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "Tras la visita de León XIV, la economía vuelve al centro de la escena con luces rojas en la actividad y el empleo",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/tras-la-visita-leon-xiv-la-vuelve-al-centro-la-escena-luces-rojas-la-actividad-y-el-empleo-n6345250",
-   "fecha": "2026-11-15T03:00:00Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Santiago Migone, exfuncionario de Javier Milei: “A principios de año, nadie vio venir el estancamiento actual”",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/santiago-migone-exfuncionario-javier-milei-a-principios-ano-nadie-vio-venir-el-estancamiento-actual-n6345246",
-   "fecha": "2026-11-15T03:00:00Z",
-   "tema": "politica"
   }
  ]
 }
