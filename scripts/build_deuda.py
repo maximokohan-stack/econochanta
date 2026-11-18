@@ -5,9 +5,14 @@ Fuente: Secretaría de Finanzas, «Datos trimestrales de la deuda»
 trimestre, cuadro «Deuda Bruta de la Administración Central por acreedor». Cada informe trae dos columnas:
 el diciembre anterior (a) y el trimestre del informe (b).
 
+Además:
+- Por organismo internacional (FMI, BID, Banco Mundial, CAF): planilla «Excel» del último trimestre, hoja A.2.1.
+- Deuda propia del BCRA al cierre de cada trimestre: API de estadísticas del BCRA v4.0, series 158 (LEBAC, LEDIV y
+  BOPREAL, en US$), 1258 (letras en pesos), 1262 (pases pasivos) y 5 (tipo de cambio de referencia, para pasar pesos a US$).
+
 Se corre a mano cuando sale un informe nuevo (uno por trimestre, con unos tres meses de atraso):
     python scripts/build_deuda.py
-Necesita PyMuPDF (pip install pymupdf). No usa claves.
+Necesita PyMuPDF y openpyxl (pip install pymupdf openpyxl). No usa claves.
 """
 import json, re, sys, tempfile, urllib.request, pathlib, datetime
 
@@ -53,6 +58,52 @@ def leer_cuadro(texto):
     return None
 
 
+BCRA = "https://api.bcra.gob.ar/estadisticas/v4.0/monetarias/"
+
+
+def serie_bcra(idv, desde, hasta):
+    import bisect
+    d = json.loads(bajar(BCRA + str(idv) + "?desde=" + desde + "&hasta=" + hasta + "&limit=3000"))
+    pts = sorted((x["fecha"], x["valor"]) for x in d["results"][0]["detalle"])
+    fechas = [p[0] for p in pts]
+    def al(f):  # último dato publicado hasta esa fecha
+        i = bisect.bisect_right(fechas, f) - 1
+        return pts[i][1] if i >= 0 else None
+    return al
+
+
+def deuda_bcra(fechas):
+    desde = (datetime.date.fromisoformat(fechas[0]) - datetime.timedelta(days=15)).isoformat()
+    hasta = fechas[-1]
+    usd, pesos, pases, tc = (serie_bcra(i, desde, hasta) for i in (158, 1258, 1262, 5))
+    out = {}
+    for f in fechas:
+        t = tc(f)
+        if None in (usd(f), pesos(f), t):
+            continue
+        p = pases(f) or 0
+        out[f] = {"titulos": round(usd(f), 1), "letras_pesos": round(pesos(f) / t, 1), "pases": round(p / t, 1),
+                  "total": round(usd(f) + pesos(f) / t + p / t, 1)}
+    return out
+
+
+def organismos(html):
+    """FMI, BID, Banco Mundial y CAF del último trimestre (hoja A.2.1, en miles de US$ → millones)."""
+    import openpyxl, io
+    xls = re.findall(r'href="([^"]+deuda_publica[^"]+\.xlsx)"', html)
+    if not xls:
+        return None
+    url = xls[0] if xls[0].startswith("http") else "https://www.argentina.gob.ar" + xls[0]
+    ws = openpyxl.load_workbook(io.BytesIO(bajar(url)), read_only=True, data_only=True)["A.2.1"]
+    nombres = {"- FMI": "FMI", "- BID": "BID", "- BIRF": "Banco Mundial", "- CAF": "CAF"}
+    out = {}
+    for fila in ws.iter_rows(values_only=True):
+        vals = [c for c in fila if c not in (None, "")]
+        if vals and isinstance(vals[0], str) and vals[0].strip() in nombres:
+            out[nombres[vals[0].strip()]] = round(vals[-1] / 1000, 1)
+    return out or None
+
+
 def main():
     import fitz  # PyMuPDF
     html = bajar(PAGINA).decode("utf-8", "replace")
@@ -85,8 +136,15 @@ def main():
             "elegible": x["elegible"][0], "multi": x["multi"][0],
             "pbi": {k: x[k][1] for k in ("total", "agencias", "privado", "multi")},
         })
+    bc = deuda_bcra([p["fecha"] for p in puntos])
+    for p in puntos:
+        if p["fecha"] in bc:
+            p["bcra"] = bc[p["fecha"]]
+    orgs = organismos(html)
     doc = {
         "fuente": "Secretaría de Finanzas, Deuda Bruta de la Administración Central por acreedor (informes trimestrales)",
+        "fuente_bcra": "BCRA, API de estadísticas v4.0: series 158, 1258, 1262 y 5",
+        "organismos": orgs,
         "url": PAGINA,
         "unidad": "millones de dólares",
         "nota": "Deuda neta = deuda bruta menos la parte en manos de agencias del sector público nacional (BCRA, FGS de la ANSES, Banco Nación y otros). El % del PBI es el de cada informe, a tipo de cambio de fin de período.",

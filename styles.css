@@ -1876,34 +1876,89 @@ a.secs__c:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
   .secs__links a { padding: 4px 0; font-size: 13.5px; }
 }
 
-/* ---------- Cuentas del Estado: deuda neta ---------- */
+/* ---------- Cuentas del Estado: deuda del Tesoro y del BCRA ---------- */
 .deuda { margin-top: 18px; }
-.deuda__card { display: flex; flex-direction: column; gap: 14px; }
-.deuda__cab { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 10px 24px; }
-.deuda__tit { margin: 0; font-size: 24px; }
-.deuda__baj { margin: 4px 0 0; color: var(--text-2); max-width: 78ch; }
-.deuda__ley { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 0; font-size: 13.5px; color: var(--text-2); }
+.deuda__card { display: flex; flex-direction: column; gap: 22px; --bc: #93A6FF; }
+:root[data-theme="light"] .deuda__card { --bc: #3B4CC0; }
+.deuda__card p { margin: 0; }
+.deuda__tit { margin: 0; font-size: 22px; }
+.deuda__resp { margin: 8px 0 2px !important; font-family: var(--disp); font-size: clamp(22px, 2.4vw, 30px); line-height: 1.2; letter-spacing: -.02em; max-width: 34ch; }
+.deuda__resp b { color: var(--sec); }
+.deuda__baj { color: var(--text-2); }
+.deuda__h { margin: 0 0 12px; font-size: 16px; font-weight: 700; color: var(--text-2); }
+.deuda__h--sep { margin-top: 22px; }
+.deuda__tres { display: grid; grid-template-columns: minmax(0, 1fr) 28px minmax(0, 1fr) 28px minmax(0, 1.1fr); gap: 8px; }
+.deuda__t { padding: 14px 16px; border-radius: 14px; background: var(--surface-2); }
+.deuda__tl { font-size: 14px; color: var(--text-2); }
+.deuda__tv { font-family: var(--disp); font-weight: 700; font-size: 26px; letter-spacing: -.02em; font-variant-numeric: tabular-nums; margin: 2px 0 !important; }
+.deuda__tn { font-size: 13px; color: var(--text-2); }
+.deuda__t--suma { background: color-mix(in srgb, var(--sec) 18%, var(--surface-2)); }
+.deuda__t--suma .deuda__tv { color: var(--sec); }
+.deuda__op { display: grid; place-items: center; font-size: 24px; color: var(--text-2); }
+.deuda__llaves { display: grid; gap: 4px; margin-bottom: 6px; }
+.deuda__llave { position: relative; display: flex; flex-direction: column; gap: 1px; padding-bottom: 8px; border-bottom: 2px solid; font-size: 13.5px; color: var(--text-2); }
+.deuda__llave b { font-size: 16px; color: var(--text); }
+.deuda__llave--neta { border-color: var(--sec); }
+.deuda__llave--estado { border-color: var(--text-2); text-align: right; align-items: flex-end; }
+.deuda__llave--estado b { color: var(--text-2); }
+.deuda__llave::before, .deuda__llave::after { content: ""; position: absolute; bottom: -2px; width: 2px; height: 10px; background: var(--text-2); }
+.deuda__llave--neta::before, .deuda__llave--neta::after { background: var(--sec); }
+.deuda__llave::before { left: 0; } .deuda__llave::after { right: 0; }
+.deuda__barra { display: flex; height: 64px; border-radius: 14px; overflow: hidden; gap: 3px; }
+.deuda__s { display: flex; flex-direction: column; justify-content: center; padding: 0 14px; font-size: 15px; font-variant-numeric: tabular-nums; white-space: nowrap; overflow: hidden; color: var(--bg); }
+.deuda__s b { font-size: 12.5px; font-weight: 600; opacity: .85; }
+.deuda__s--pr { background: var(--sec); }
+.deuda__s--mu { background: color-mix(in srgb, var(--sec) 62%, var(--surface)); }
+.deuda__s--ag { background: repeating-linear-gradient(45deg, var(--surface-2) 0 7px, color-mix(in srgb, var(--text-2) 35%, var(--surface-2)) 7px 9px); color: var(--text-2); text-decoration: line-through; text-decoration-thickness: 1px; }
+.deuda__cuenta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; margin-top: 12px !important; font-size: 15px; color: var(--text-2); }
+.deuda__cuenta b { color: var(--text); font-size: 19px; font-variant-numeric: tabular-nums; }
+.deuda__cuenta i { font-style: normal; font-size: 20px; }
+.deuda__res b { color: var(--sec); font-size: 22px; }
+.deuda__cuenta em { font-style: normal; font-size: 12.5px; margin-left: auto; }
+.deuda__cmp { display: grid; grid-template-columns: 110px minmax(0, 1fr) 56px; gap: 10px; align-items: center; margin-bottom: 8px; font-size: 14px; color: var(--text-2); }
+.deuda__cmp b { text-align: right; color: var(--text); font-variant-numeric: tabular-nums; }
+.deuda__cb { height: 16px; border-radius: 5px; background: var(--line); overflow: hidden; }
+.deuda__cb i { display: block; height: 100%; border-radius: 5px; min-width: 3px; }
+.deuda__cb--t { background: var(--sec); } .deuda__cb--b { background: var(--bc); }
+.deuda__p { font-size: 14.5px; color: var(--text-2); max-width: 90ch; }
+.deuda__p b { color: var(--text); }
+.deuda__dos { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 28px; }
+.deuda__quien { display: flex; flex-direction: column; gap: 10px; }
+.deuda__q { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 14px; align-items: start; padding: 14px 16px; border-radius: 14px; background: var(--surface-2); }
+.deuda__qp { font-family: var(--disp); font-weight: 800; font-size: 34px; line-height: 1; letter-spacing: -.03em; color: var(--sec); }
+.deuda__q--mu .deuda__qp { color: color-mix(in srgb, var(--sec) 62%, var(--text-2)); }
+.deuda__q b { font-size: 15.5px; }
+.deuda__q p { margin-top: 4px !important; font-size: 13.5px; color: var(--text-2); }
+.deuda__orgs { display: flex; flex-direction: column; gap: 5px; margin-top: 8px; }
+.deuda__org { display: grid; grid-template-columns: 104px minmax(0, 1fr) 44px; gap: 8px; align-items: center; font-size: 13.5px; color: var(--text-2); }
+.deuda__org b { text-align: right; color: var(--text); font-size: 13.5px; font-variant-numeric: tabular-nums; }
+.deuda__ob { height: 8px; border-radius: 4px; background: var(--line); }
+.deuda__ob i { display: block; height: 100%; border-radius: 4px; background: color-mix(in srgb, var(--sec) 62%, var(--surface)); }
+.deuda__linea { margin-top: 6px; }
+.deuda__linea svg { display: block; }
+.deuda__base { stroke: var(--line); }
+.deuda__ln { fill: none; stroke: var(--sec); stroke-width: 3; stroke-linejoin: round; }
+.deuda__lt { fill: none; stroke: var(--text-2); stroke-width: 2; stroke-dasharray: 5 4; }
+.deuda__pt { fill: var(--surface); stroke: var(--sec); stroke-width: 2; } .deuda__pt--fin { fill: var(--sec); }
+.deuda__lab { fill: var(--text-2); font: 12.5px var(--font); }
+.deuda__an { fill: var(--text); font: 700 15px var(--font); }
+.deuda__ley { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 6px !important; font-size: 12.5px; color: var(--text-2); }
 .deuda__ley span { display: inline-flex; align-items: center; gap: 6px; }
-.deuda__ley i { width: 14px; height: 10px; border-radius: 3px; display: inline-block; }
-.deuda__ley-priv { background: var(--sec); } .deuda__ley-multi { background: var(--sec); opacity: .55; }
-.deuda__ley-raya { background: repeating-linear-gradient(45deg, var(--text-2) 0 2px, var(--surface-2) 2px 5px); }
-.deuda__kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
-.deuda__k { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border-radius: 14px; background: var(--surface-2); }
-.deuda__k p { margin: 0; }
-.deuda__kl { font-size: 14px; color: var(--text-2); }
-.deuda__kv { font-family: var(--disp); font-weight: 700; font-size: 26px; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
-.deuda__kn { font-size: 13.5px; color: var(--text-2); }
-.deuda__k--neta { background: color-mix(in srgb, var(--sec) 16%, var(--surface-2)); }
-.deuda__k--estado .deuda__kv { color: var(--text-2); text-decoration: line-through; text-decoration-thickness: 1.5px; }
-.deuda__cuenta { margin: 0; color: var(--text-2); }
-.deuda__cuenta b { color: var(--text); font-variant-numeric: tabular-nums; }
-.deuda__cuenta span { margin: 0 6px; }
-.deuda__graf svg { display: block; }
-.deuda__eje { stroke: var(--line); } .deuda__eje0 { stroke: var(--control); }
-.deuda__lab { fill: var(--text-2); font: 13px var(--font); }
-.deuda__in { fill: var(--bg); font: 700 13px var(--font); }
-.deuda__priv { fill: var(--sec); } .deuda__multi { fill: var(--sec); opacity: .55; }
-.deuda__fondo { fill: var(--surface-2); } .deuda__raya { stroke: var(--text-2); stroke-width: 2; }
-.deuda__fuente { margin: 0; font-size: 12.5px; color: var(--text-2); }
-@media (max-width: 900px) { .deuda__kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 560px) { .deuda__kpis { grid-template-columns: minmax(0, 1fr); } }
+.deuda__ley i { width: 18px; border-top: 3px solid var(--sec); display: inline-block; }
+.deuda__ley .deuda__ley-t { border-top: 2px dashed var(--text-2); }
+.deuda__por { padding: 14px 16px; border-radius: 14px; border: 1px dashed var(--control); font-size: 14.5px; color: var(--text-2); line-height: 1.5; }
+.deuda__por b { color: var(--text); }
+.deuda__fuente { font-size: 12.5px; color: var(--text-2); }
+@media (max-width: 900px) {
+  .deuda__tres { grid-template-columns: minmax(0, 1fr); } .deuda__op { display: none; }
+  .deuda__dos { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 560px) {
+  .deuda__barra { height: 56px; }
+  .deuda__s { padding: 0 8px; font-size: 13px; }
+  .deuda__s b { display: none; }
+  .deuda__llave { font-size: 12px; } .deuda__llave b { font-size: 13.5px; }
+  .deuda__cuenta em { margin-left: 0; }
+  .deuda__cmp { grid-template-columns: 92px minmax(0, 1fr) 44px; }
+  .deuda__org { grid-template-columns: 92px minmax(0, 1fr) 40px; }
+}

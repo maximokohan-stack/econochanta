@@ -1964,7 +1964,7 @@
       if (ok) v.appendChild(el("small", "", " " + c.u(it)));
       a.appendChild(v);
       var extra = el("span", "secs__x", ok ? c.x(P) : "Cargando…"); a.appendChild(extra);
-      if (c.deuda && window.EconoDeuda) window.EconoDeuda.ultimo().then(function (d) { extra.textContent = "Deuda neta " + d.texto + " (" + d.corta + ")"; }).catch(function () { /* sin dato de deuda */ });
+      if (c.deuda && window.EconoDeuda) window.EconoDeuda.ultimo().then(function (d) { extra.textContent = "Deuda Tesoro + BCRA " + d.texto + " (" + d.corta + ")"; }).catch(function () { /* sin dato de deuda */ });
       if (ok) {
         var sp = document.createElementNS("http://www.w3.org/2000/svg", "svg"); sp.setAttribute("class", "secs__sp"); sp.setAttribute("aria-hidden", "true");
         var pts = it.s.points;
