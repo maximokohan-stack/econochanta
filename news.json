@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-18T00:28:52.264532Z",
+ "actualizado": "2026-11-18T06:46:28.839965Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 23
+   "n": 22
   },
   {
    "medio": "Infobae",
@@ -60,11 +60,88 @@
  ],
  "items": [
   {
+   "titulo": "El factor político que podría darle aire al riesgo país y que el mercado ve como un “evento positivo”",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/18/el-factor-politico-que-podria-darle-aire-al-riesgo-pais-y-que-el-mercado-ve-como-un-evento-positivo/",
+   "fecha": "2026-11-18T04:08:37Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Cómo funcionó el amortiguador de precios de YPF durante la disparada del petróleo: los valores en el surtidor y el impacto en el bolsillo",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/18/como-funciono-el-amortiguador-de-precios-de-ypf-durante-la-disparada-del-petroleo-los-valores-en-el-surtidor-y-el-impacto-en-el-bolsillo/",
+   "fecha": "2026-11-18T04:08:10Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Las 6 claves de la UIA: los industriales presentaron sus propuestas para reducir la carga fiscal y sumar competitividad",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/18/las-6-claves-de-la-uia-los-industriales-presentaron-sus-propuestas-para-reducir-la-carga-fiscal-y-sumar-competitividad/",
+   "fecha": "2026-11-18T04:07:38Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Toyota confirmó cuánto invertirá para fabricar su pickup híbrida: la medida del Gobierno que permitió que el proyecto se concrete",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/18/toyota-confirmo-cuanto-invertira-para-fabricar-su-pickup-hibrida-la-medida-del-gobierno-que-permitio-que-el-proyecto-se-concrete/",
+   "fecha": "2026-11-18T04:07:13Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Más de 18.000 micropymes de todo el país tienen deudas en mora: cuánto deben y cuáles son las regiones más comprometidas",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/18/mas-de-18000-micropymes-de-todo-el-pais-tienen-deudas-en-mora-cuanto-deben-y-cuales-son-las-regiones-mas-comprometidas/",
+   "fecha": "2026-11-18T04:06:53Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Suben los dólares financieros y se amplía la brecha, mientras un indicador global enciende las alarmas en el mercado",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/18/suben-los-dolares-financieros-y-se-amplia-la-brecha-mientras-un-indicador-global-enciende-las-alarmas-en-el-mercado/",
+   "fecha": "2026-11-18T04:06:16Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Fernando Gorbarán, el hombre detrás de las ferias que crecen con el petróleo, el gas y la minería",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/18/fernando-gorbaran-el-hombre-detras-de-las-ferias-que-crecen-con-el-petroleo-el-gas-y-la-mineria/",
+   "fecha": "2026-11-18T03:05:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "En fotos: así fue la gran noche del Premio LA NACION-Galicia a la Excelencia Agropecuaria 2026",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/en-fotos-asi-fue-la-gran-noche-del-premio-la-nacion-galicia-a-la-excelencia-agropecuaria-2026-nid17112026/",
+   "fecha": "2026-11-18T02:40:32Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Patricia Bullrich: “Si hacés todo bien pero perdiste las elecciones, no hiciste todo bien”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/patricia-bullrich-si-haces-todo-bien-pero-perdiste-las-elecciones-no-hiciste-todo-bien-nid17112026/",
+   "fecha": "2026-11-18T02:22:24Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Premio Excelencia Agropecuaria 2026: los protagonistas del campo tuvieron su noche de gala y Establecimientos La Negra ganó el Oro",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/excelencia-agropecuaria-2026-los-protagonistas-del-campo-tuvieron-su-noche-de-gala-y-nid17112026/",
+   "fecha": "2026-11-18T01:34:08Z",
+   "tema": "otros"
+  },
+  {
    "titulo": "La desarrolladora QUBE inició la construcción de su cuarto edificio: los detalles de una obra premium en Palermo Hollywood",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/18/la-desarrolladora-qube-inicio-la-construccion-de-su-cuarto-edificio-los-detalles-de-un-obra-premium-en-palermo-hollywood/",
-   "fecha": "2026-11-18T00:14:27Z",
+   "fecha": "2026-11-18T01:00:45Z",
    "tema": "actividad"
+  },
+  {
+   "titulo": "Las acciones y los bonos argentinos resistieron a una rueda bajista de Wall Street",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/17/las-acciones-y-los-bonos-argentinos-resistieron-a-una-rueda-bajista-de-wall-street/",
+   "fecha": "2026-11-18T00:32:16Z",
+   "tema": "mercados"
   },
   {
    "titulo": "Javier Milei apuntó contra Domingo Cavallo: “Tiene un prontuario de expropiaciones”",
@@ -116,11 +193,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "Las acciones y los bonos argentinos resistieron a una rueda bajista de Wall Street",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/17/las-acciones-y-los-bonos-argentinos-resistieron-a-una-rueda-bajista-de-wall-street/",
-   "fecha": "2026-11-17T22:43:24Z",
-   "tema": "mercados"
+   "titulo": "Arriazu advirtió qué puede frenar el salto exportador de energía y minería",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/469393-ricardo-arriazu-advirtio-que-puede-frenar-el-salto-exportador-de-energia-y-mineria",
+   "fecha": "2026-11-17T22:59:00Z",
+   "tema": "otros"
   },
   {
    "titulo": "El Gobierno canjeó el 60% de la letra dolarizada que vence a fin de mes",
@@ -403,31 +480,10 @@
    "tema": "otros"
   },
   {
-   "titulo": "Dujovne defendió el rumbo de Milei, pero criticó que se perdió una oportunidad para sumar dólares",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/dujovne-defendio-el-rumbo-economico-de-milei-y-alerto-por-un-plan-platita-nid17112026/",
-   "fecha": "2026-11-17T18:30:03Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "El magnate Peter Thiel redobló su apuesta por Vaca Muerta: qué petrolera ganó peso en sus inversiones",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/17/el-magnate-peter-thiel-redoblo-su-apuesta-por-vaca-muerta-que-petrolera-gano-peso-en-sus-inversiones/",
    "fecha": "2026-11-17T18:24:24Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "El Nobel de Economía Philippe Aghion recomendó a la Argentina tres políticas para crecer",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/el-nobel-de-economia-philippe-aghion-recomendo-a-la-argentina-tres-politicas-para-crecer-nid17112026/",
-   "fecha": "2026-11-17T18:21:18Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Millones de dólares en juego: cuáles son las provincias mejor rankeadas para recibir inversiones en data centers",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/millones-de-dolares-en-juego-cuales-son-las-provincias-mejor-rankeadas-para-recibir-inversiones-en-nid17112026/",
-   "fecha": "2026-11-17T18:06:52Z",
    "tema": "empresas"
   },
   {
@@ -487,41 +543,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Los datos de pobreza en Argentina: el Gobierno ratificó que los datos del Indec son la única referencia para medirla",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/17/los-datos-de-pobreza-en-argentina-el-gobierno-ratifico-que-los-datos-del-indec-son-la-unica-referencia-para-medirla/",
-   "fecha": "2026-11-17T16:15:55Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "18 fotos de la cena del Consejo Interamericano de Comercio y Producción con Javier Milei como invitado especial",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/fotos/2026/11/17/18-fotos-de-la-cena-del-consejo-interamericano-de-comercio-y-produccion-con-javier-milei-como-invitado-especial/",
-   "fecha": "2026-11-17T16:06:54Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "El desafío de conseguir trabajo después de los 45: claves para superar los prejuicios y volver al mercado laboral",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/17/el-desafio-de-conseguir-trabajo-despues-de-los-45-claves-para-superar-los-prejuicios-y-volver-al-mercado-laboral/",
-   "fecha": "2026-11-17T16:02:12Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Una planta con 120 años de historia que producía Durlock en la Patagonia cerró y despidió a sus últimos empleados",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/17/una-planta-con-120-anos-de-historia-que-producia-durlock-en-la-patagonia-cerro-y-despidio-a-sus-ultimos-empleados/",
-   "fecha": "2026-11-17T15:26:44Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "La Ciudad lanzó el RIMI CABA: devolverá el 25% como pago a cuenta de Ingresos Brutos para incentivar inversiones",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/17/la-ciudad-lanzo-el-rimi-caba-devolvera-el-25-como-pago-a-cuenta-de-ingresos-brutos-para-incentivar-inversiones/",
-   "fecha": "2026-11-17T15:19:48Z",
-   "tema": "empresas"
-  },
-  {
    "titulo": "Por qué Nvidia y Anthropic son clave para el comportamiento de las tasas de la Fed y la economía de EEUU",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/por-que-nvidia-y-anthropic-son-clave-el-comportamiento-las-tasas-la-fed-y-la-eeuu-n6346117",
@@ -540,20 +561,6 @@
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/finanzas/469335-el-oro-cae-30-desde-su-record-cuanto-vale-y-que-bancos-lo-venden",
    "fecha": "2026-11-17T15:05:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Donald Trump pactó con Tailandia eliminar todos los aranceles a los bienes de Estados Unidos",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/estados-unidos/2026/11/17/donald-trump-pacto-con-tailandia-eliminar-todos-los-aranceles-a-los-bienes-de-estados-unidos/",
-   "fecha": "2026-11-17T14:53:17Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Cuáles son los cuatro factores que deben darse para que la mejora económica llegue a la clase media",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/17/cuales-son-los-cuatro-factores-que-deben-darse-para-que-la-mejora-economica-llegue-a-la-clase-media/",
-   "fecha": "2026-11-17T14:49:36Z",
    "tema": "otros"
   },
   {
@@ -655,13 +662,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "El Gobierno logró otro superávit fiscal en octubre y se encamina a cumplir la meta del FMI",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/469295-el-gobierno-logro-otro-superavit-fiscal-en-octubre-y-se-encamina-a-cumplir-la-meta-del-fmi",
-   "fecha": "2026-11-16T23:45:00Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "LEGO abrirá su primera tienda en Argentina: el video de Javier Milei para anunciarlo",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/lego-abrira-su-primera-tienda-argentina-el-video-javier-milei-anunciarlo-n6345927",
@@ -716,13 +716,6 @@
    "url": "https://www.ambito.com/economia/el-pronostico-jp-morgan-la-argentina-2027-inflacion-torno-2-y-mas-presion-el-dolar-n6345584",
    "fecha": "2026-11-16T12:47:00Z",
    "tema": "dolar"
-  },
-  {
-   "titulo": "Wall Street sufrió por Nvidia, la inflación y las tasas largas, pero ya está lista para retomar los récords de la mano de Anthropic",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/wall-street-sufrio-nvidia-la-inflacion-y-las-tasas-largas-pero-ya-esta-lista-retomar-los-records-la-mano-anthropic-n6345464",
-   "fecha": "2026-11-16T03:00:00Z",
-   "tema": "inflacion"
   }
  ]
 }
