@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-18T23:40:51.391707Z",
+ "actualizado": "2026-11-19T06:47:10.249600Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -59,6 +59,83 @@
   }
  ],
  "items": [
+  {
+   "titulo": "El Gobierno amplió el Presupuesto 2026 en $15,6 billones y resigna parte del superávit previsto para fin de año",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/19/el-gobierno-amplio-el-presupuesto-2026-en-156-billones-y-resigna-parte-del-superavit-previsto-para-fin-de-ano/",
+   "fecha": "2026-11-19T06:41:45Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Avanza la suspensión de las PASO: el “fantasma” que aleja y el impacto que puede tener en el riesgo país",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/19/avanza-la-suspension-de-las-paso-el-fantasma-que-aleja-y-el-impacto-que-puede-tener-en-el-riesgo-pais/",
+   "fecha": "2026-11-19T05:03:21Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Cómo es la estrategia que planteó Caputo para que las pymes se financien a tasas más bajas",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/19/como-es-la-estrategia-que-planteo-caputo-para-que-las-pymes-se-financien-a-tasas-mas-bajas/",
+   "fecha": "2026-11-19T05:03:04Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Tesla tiene todo listo para desembarcar en Argentina: nuevos locales y algunos detalles de los modelos eléctricos que venderá",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/19/tesla-tiene-todo-listo-para-desembarcar-en-argentina-nuevos-locales-y-algunos-detalles-de-los-modelos-electricos-que-vendera/",
+   "fecha": "2026-11-19T05:02:29Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Boom petrolero: una provincia ya ganó por regalías más que en todo el 2025 y rompió una nueva marca histórica",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/19/boom-petrolero-una-provincia-ya-gano-por-regalias-mas-que-en-todo-el-2025-y-rompio-una-nueva-marca-historica/",
+   "fecha": "2026-11-19T05:01:39Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "¿Se despertó el dólar?: las razones que explican por qué la brecha cambiaria aumentó a 10%",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/19/se-desperto-el-dolar-las-razones-que-explican-por-que-la-brecha-cambiaria-aumento-a-10/",
+   "fecha": "2026-11-19T05:01:05Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "“Changuito federal”: cuánto sale hacer la compra del supermercado en cada provincia",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/19/changuito-federal-cuanto-sale-hacer-la-compra-del-supermercado-en-cada-provincia/",
+   "fecha": "2026-11-19T05:00:32Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "“Ahora piensa como los populistas de izquierda”: la dura respuesta de Cavallo a Milei",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/18/ahora-piensa-como-los-populistas-de-izquierda-la-dura-respuesta-de-cavallo-a-milei-tras-sus-criticas-contra-el-ex-ministro/",
+   "fecha": "2026-11-19T01:19:58Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Tomás Karagozian: “Necesitamos más dólares y más trabajo, no más dólares y más pobres”",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/19/tomas-karagozian-necesitamos-mas-dolares-y-mas-trabajo-no-mas-dolares-y-mas-pobres/",
+   "fecha": "2026-11-19T00:21:23Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Revuelo en una provincia por una prohibición al uso de drones",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/revuelo-en-una-provincia-por-una-prohibicion-al-uso-de-drones-nid18112026/",
+   "fecha": "2026-11-18T23:55:21Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Anthropic sale a la bolsa: ¿acciones pueden caer como pasó con SpaceX?",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/469290-expertos-piden-recordar-que-paso-con-spacex-antes-de-invertir-en-anthropic",
+   "fecha": "2026-11-18T23:36:00Z",
+   "tema": "mercados"
+  },
   {
    "titulo": "Por qué la inflación no baja más rápido y dónde está el oro del Banco Central, según Milei",
    "medio": "Infobae",
@@ -177,13 +254,6 @@
    "url": "https://www.lanacion.com.ar/economia/cuatro-economistas-candidatos-a-presidente-socorro-nid18112026/",
    "fecha": "2026-11-18T21:16:42Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "“Ahora piensa como los populistas de izquierda”: la dura respuesta de Cavallo a Milei tras sus críticas contra el ex ministro",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/18/ahora-piensa-como-los-populistas-de-izquierda-la-dura-respuesta-de-cavallo-a-milei-tras-sus-criticas-contra-el-ex-ministro/",
-   "fecha": "2026-11-18T21:10:25Z",
-   "tema": "politica"
   },
   {
    "titulo": "“Nefasta cláusula”: el presidente de Acopiadores fustigó prácticas de los molinos y también cuestionó a los exportadores",
@@ -431,13 +501,6 @@
    "tema": "empresas"
   },
   {
-   "titulo": "Melconian apuntó contra el rumbo económico: “Milei es parte de una transición que llegó a un techo”",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/carlos-melconian-apunto-contra-el-rumbo-economico-milei-es-parte-de-una-transicion-que-llego-a-un-nid18112026/",
-   "fecha": "2026-11-18T17:15:22Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "Lego abrirá un local en la Argentina: cuánto cuestan sus productos y qué diferencia de precios hay con Brasil, Chile y EEUU",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/18/lego-abrira-un-local-en-la-argentina-cuanto-cuestan-sus-productos-y-que-diferencia-de-precios-hay-con-brasil-chile-y-eeuu/",
@@ -466,20 +529,6 @@
    "tema": "empresas"
   },
   {
-   "titulo": "Proponen eliminar impuestos a las industrias que aumenten su producción para recuperar 90.000 empleos",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/18/proponen-eliminar-impuestos-a-las-industrias-que-aumenten-su-produccion-para-recuperar-90000-empleos/",
-   "fecha": "2026-11-18T14:52:40Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Todo lo que hay que saber sobre la salida a la Bolsa de Anthropic, el nuevo gigante de la IA en Wall Street",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/18/todo-lo-que-hay-que-saber-sobre-la-salida-a-la-bolsa-de-anthropic-el-nuevo-gigante-de-la-ia-en-wall-street/",
-   "fecha": "2026-11-18T14:51:18Z",
-   "tema": "mercados"
-  },
-  {
    "titulo": "Caputo avisó qué pasará con el bono extraordinario para jubilados",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/actualidad/469237-caputo-aviso-que-pasara-con-el-bono-extraordinario-para-jubilados",
@@ -492,20 +541,6 @@
    "url": "https://www.iprofesional.com/economia/469297-reservas-del-bcra-no-alcanzarian-si-hay-una-fuerte-dolarizacion",
    "fecha": "2026-11-18T14:30:00Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "“Cambien el chip”: la advertencia de Caputo a quienes creen que el dólar llegará a $4.000 en el año electoral",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/18/cambien-el-chip-la-advertencia-de-caputo-a-quienes-creen-que-el-dolar-llegara-a-4000-en-el-ano-electoral/",
-   "fecha": "2026-11-18T14:28:52Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "Plazo fijo: cuánto pagan los bancos por depósitos de $1 millón a 30 días",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/18/plazo-fijo-cuanto-pagan-los-bancos-por-depositos-de-1-millon-a-30-dias/",
-   "fecha": "2026-11-18T14:12:45Z",
-   "tema": "mercados"
   },
   {
    "titulo": "Cuánto cobra un recolector de residuos en noviembre: sueldo básico, viáticos y bonos",
@@ -527,13 +562,6 @@
    "url": "https://www.ambito.com/economia/plazo-fijo-no-clientes-que-bancos-pagan-mas-y-cuanto-rinde-invertir-1000000-n6346050",
    "fecha": "2026-11-18T14:00:00Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "La pesca argentina rechazó la propuesta de Sturzenegger de abrir licitaciones: “Las especies ya están en su máximo nivel de explotación”",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/18/la-pesca-argentina-rechazo-la-propuesta-de-sturzenegger-de-abrir-licitaciones-las-especies-ya-estan-en-su-maximo-nivel-de-explotacion/",
-   "fecha": "2026-11-18T13:53:36Z",
-   "tema": "otros"
   },
   {
    "titulo": "Créditos para emprendedores: qué bancos prestan, cuánto cobran y cómo acceder",
@@ -564,13 +592,6 @@
    "tema": "actividad"
   },
   {
-   "titulo": "La góndola invisible: la IA redefine las compras y la competencia retail en un mundo donde dominan los algoritmos",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/18/la-gondola-invisible-la-ia-redefine-las-compras-y-la-competencia-retail-en-un-mundo-donde-dominan-los-algoritmos/",
-   "fecha": "2026-11-18T12:50:22Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "El Gobierno subió 2,20% los aranceles por discapacidad y fijó los valores para noviembre",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/469424-el-gobierno-aumento-220-los-aranceles-de-discapacidad-en-noviembre",
@@ -582,20 +603,6 @@
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/alerta-domingo-cavallo-si-el-gobierno-no-toma-medidas-hay-riesgo-que-se-destartale-todo-antes-las-elecciones-n6346515",
    "fecha": "2026-11-18T12:24:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Así cambió el negocio de vender autos en la Argentina: cuánto cayó el margen de ganancia y qué buscan las concesionarias",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/18/asi-cambio-el-negocio-de-vender-autos-en-la-argentina-cuanto-cayo-el-margen-de-ganancia-y-que-buscan-las-concesionarias/",
-   "fecha": "2026-11-18T12:05:07Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "\"Cavallo tiene un prontuario de expropiaciones\": dura réplica de Javier Milei a las críticas del ex ministro de Economía",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/18/cavallo-tiene-un-prontuario-de-expropiaciones-dura-replica-de-javier-milei-a-las-criticas-del-ex-ministro-de-economia/",
-   "fecha": "2026-11-18T11:49:58Z",
    "tema": "politica"
   },
   {
@@ -659,13 +666,6 @@
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/actualidad/469199-grimoldi-liquida-zapatillas-y-botas-de-merrell-y-hush-puppies-con-hasta-50-por-ciento-off",
    "fecha": "2026-11-18T09:10:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Pensión por fallecimiento: qué familiares pueden cobrarla, cuánto paga ANSES y cómo hacer el trámite",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/469350-pension-fallecimiento-anses-cuanto-paga-como-cobrar-sin-perder-beneficios-noviembre-2026",
-   "fecha": "2026-11-18T03:01:00Z",
    "tema": "otros"
   },
   {
