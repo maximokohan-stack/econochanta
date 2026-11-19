@@ -92,15 +92,84 @@ def organismos(html):
     import openpyxl, io
     xls = re.findall(r'href="([^"]+deuda_publica[^"]+\.xlsx)"', html)
     if not xls:
-        return None
+        return None, None
     url = xls[0] if xls[0].startswith("http") else "https://www.argentina.gob.ar" + xls[0]
-    ws = openpyxl.load_workbook(io.BytesIO(bajar(url)), read_only=True, data_only=True)["A.2.1"]
+    wb = openpyxl.load_workbook(io.BytesIO(bajar(url)), read_only=True, data_only=True)
     nombres = {"- FMI": "FMI", "- BID": "BID", "- BIRF": "Banco Mundial", "- CAF": "CAF"}
     out = {}
-    for fila in ws.iter_rows(values_only=True):
+    for fila in wb["A.2.1"].iter_rows(values_only=True):
         vals = [c for c in fila if c not in (None, "")]
         if vals and isinstance(vals[0], str) and vals[0].strip() in nombres:
             out[nombres[vals[0].strip()]] = round(vals[-1] / 1000, 1)
+    return out or None, vencimientos(wb)
+
+
+MESES_ES = ("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre")
+
+
+def vencimientos(wb):
+    """Perfil de vencimientos: los próximos 12 meses (hoja A.3.1) y por año (A.3.6), en millones de US$."""
+    def filas(nombre):
+        out = []
+        for r in wb[nombre].iter_rows(values_only=True):
+            v = [c for c in r if c not in (None, "")]
+            if v and isinstance(v[0], str):
+                out.append((v[0].strip(), v[1:]))
+        return out
+    try:
+        cab = next(n_v for n_v in filas("A.3.1") if n_v[0] in MESES_ES)
+        cab = [cab[0]] + [str(c).strip() for c in cab[1]]
+        idx = [i for i, c in enumerate(cab) if c in MESES_ES]
+        meses = [cab[i] for i in idx]
+        m = filas("A.3.1")
+        def fila(nom):
+            for i, (n, v) in enumerate(m):
+                if n.upper().startswith(nom):
+                    return i, v
+            raise KeyError(nom)
+        grupos = {"bonos": ["TÍTULOS PÚBLICOS", "LETRAS DEL TESORO"], "organismos": ["ORGANISMOS INTERNACIONALES", "ORGANISMOS OFICIALES"],
+                  "otros": ["PRESTAMOS GARANTIZADOS", "BANCA COMERCIAL", "AVALES", "PAGARÉS DEL TESORO", "ADELANTOS TRANSITORIOS BCR"]}
+        g = {k: [0.0] * len(idx) for k in grupos}
+        for k, ns in grupos.items():
+            for n in ns:
+                try:
+                    _, v = fila(n)
+                except KeyError:
+                    continue
+                for j, ix in enumerate(idx):
+                    g[k][j] += v[ix] / 1000
+        it, vt = fila("TOTAL")
+        tot = [vt[ix] / 1000 for ix in idx]
+        cap, inte = m[it + 1][1], m[it + 2][1]
+        a = filas("A.3.6")
+        anios = next(([str(int(c)) if isinstance(c, float) else str(c) for c in v[:-1]] for n, v in a if n.upper().startswith("TIPO DE ACREEDOR")), None)
+        anual = next(([round(x / 1000, 1) for x in v[:-1]] for n, v in a if n == "TOTAL"), None)
+        return {"meses": meses, "grupos": {k: [round(x, 1) for x in v] for k, v in g.items()}, "total": [round(x, 1) for x in tot],
+                "doce": {"total": round(vt[-1] / 1000, 1), "capital": round(cap[-1] / 1000, 1), "interes": round(inte[-1] / 1000, 1)},
+                "anual": {"anios": anios, "total": anual}}
+    except Exception as e:
+        print("Vencimientos: no se pudo leer la planilla:", e)
+        return None
+
+
+def historia(pagina):
+    """Deuda bruta del Tesoro por acreedor en % del PBI, a fin de cada año (gráfico del informe trimestral)."""
+    ws = pagina.get_text("words")
+    anios = [(w[4], (w[0] + w[2]) / 2) for w in ws if re.fullmatch(r"20\d\d", w[4])]
+    trim = [w[4] for w in ws if w[4] in ("IT", "IIT", "IIIT", "IVT")]
+    pc = [((w[0] + w[2]) / 2, w[1], float(w[4][:-1].replace(",", "."))) for w in ws if re.fullmatch(r"\d+,\d%", w[4])]
+    out, vistos = [], set()
+    for nombre, x in sorted(anios, key=lambda a: a[1]):
+        col = sorted([v for v in pc if abs(v[0] - x) < 9], key=lambda v: v[1])
+        if len(col) != 5 or nombre in vistos:
+            continue
+        tot, seg = col[0][2], [v[2] for v in col[1:]]
+        if abs(sum(seg) - tot) > 0.8:
+            continue
+        vistos.add(nombre)
+        out.append({"anio": nombre, "total": tot, "agencias": seg[0], "neta": round(tot - seg[0], 1)})
+    if trim and out:
+        out[-1]["anio"] = trim[0] + " " + out[-1]["anio"]   # el último punto es el trimestre del informe, no un fin de año
     return out or None
 
 
@@ -110,12 +179,17 @@ def main():
     pdfs = re.findall(r'href="([^"]+presentacion[^"]+\.pdf)"', html)[:CUANTOS]
     if not pdfs:
         sys.exit("No encontré informes en la página de la Secretaría de Finanzas.")
-    serie = {}
+    serie, hist = {}, None
     for url in pdfs:
         url = url if url.startswith("http") else "https://www.argentina.gob.ar" + url
         with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as t:
             t.write(bajar(url))
         doc = fitz.open(t.name)
+        if hist is None:   # el primer informe de la lista es el más nuevo
+            for pag in doc:
+                if "acreedor en % del PBI" in pag.get_text().replace("\n", " "):
+                    hist = historia(pag)
+                    break
         for pag in doc:
             tx = pag.get_text()
             if "por acreedor" in tx and "Agencias del Sector" in tx and "Total Deuda P" in tx:
@@ -140,11 +214,13 @@ def main():
     for p in puntos:
         if p["fecha"] in bc:
             p["bcra"] = bc[p["fecha"]]
-    orgs = organismos(html)
+    orgs, venc = organismos(html) or (None, None)
     doc = {
         "fuente": "Secretaría de Finanzas, Deuda Bruta de la Administración Central por acreedor (informes trimestrales)",
         "fuente_bcra": "BCRA, API de estadísticas v4.0: series 158, 1258, 1262 y 5",
         "organismos": orgs,
+        "vencimientos": venc,
+        "historia": hist,
         "url": PAGINA,
         "unidad": "millones de dólares",
         "nota": "Deuda neta = deuda bruta menos la parte en manos de agencias del sector público nacional (BCRA, FGS de la ANSES, Banco Nación y otros). El % del PBI es el de cada informe, a tipo de cambio de fin de período.",

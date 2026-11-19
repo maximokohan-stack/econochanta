@@ -7,10 +7,257 @@
   "CAF": 5223.6,
   "FMI": 57705.5
  },
+ "vencimientos": {
+  "meses": [
+   "Julio",
+   "Agosto",
+   "Septiembre",
+   "Octubre",
+   "Noviembre",
+   "Diciembre",
+   "Enero",
+   "Febrero",
+   "Marzo",
+   "Abril",
+   "Mayo",
+   "Junio"
+  ],
+  "grupos": {
+   "bonos": [
+    13115.3,
+    10784.6,
+    10877.7,
+    10638.6,
+    10152.0,
+    23661.0,
+    14735.4,
+    4197.1,
+    3722.5,
+    9032.3,
+    8811.2,
+    13329.0
+   ],
+   "organismos": [
+    511.0,
+    966.9,
+    1590.5,
+    394.8,
+    1214.6,
+    614.0,
+    518.4,
+    953.0,
+    1575.7,
+    735.7,
+    1175.9,
+    1114.6
+   ],
+   "otros": [
+    125.8,
+    78.4,
+    87.9,
+    20.8,
+    108.2,
+    1207.5,
+    448.5,
+    38.9,
+    171.7,
+    337.3,
+    430.3,
+    452.6
+   ]
+  },
+  "total": [
+   13752.1,
+   11830.0,
+   12556.2,
+   11054.2,
+   11474.8,
+   25482.4,
+   15702.2,
+   5189.0,
+   5470.0,
+   10105.2,
+   10417.3,
+   14896.2
+  ],
+  "doce": {
+   "total": 147929.7,
+   "capital": 137211.8,
+   "interes": 10717.9
+  },
+  "anual": {
+   "anios": [
+    "2026",
+    "2027",
+    "2028",
+    "2029",
+    "2030",
+    "2031",
+    "2032",
+    "2033",
+    "2034",
+    "2035",
+    "2036/2089"
+   ],
+   "total": [
+    86149.8,
+    100566.8,
+    80496.6,
+    39184.9,
+    33209.0,
+    32551.5,
+    37176.2,
+    36242.8,
+    30267.7,
+    18246.0,
+    52047.6
+   ]
+  }
+ },
+ "historia": [
+  {
+   "anio": "2004",
+   "total": 118.1,
+   "agencias": 4.0,
+   "neta": 114.1
+  },
+  {
+   "anio": "2005",
+   "total": 80.5,
+   "agencias": 5.9,
+   "neta": 74.6
+  },
+  {
+   "anio": "2006",
+   "total": 70.6,
+   "agencias": 10.1,
+   "neta": 60.5
+  },
+  {
+   "anio": "2007",
+   "total": 62.1,
+   "agencias": 9.1,
+   "neta": 53.0
+  },
+  {
+   "anio": "2008",
+   "total": 53.8,
+   "agencias": 18.0,
+   "neta": 35.8
+  },
+  {
+   "anio": "2009",
+   "total": 55.4,
+   "agencias": 18.6,
+   "neta": 36.8
+  },
+  {
+   "anio": "2010",
+   "total": 43.5,
+   "agencias": 18.2,
+   "neta": 25.3
+  },
+  {
+   "anio": "2011",
+   "total": 38.9,
+   "agencias": 18.7,
+   "neta": 20.2
+  },
+  {
+   "anio": "2012",
+   "total": 40.4,
+   "agencias": 21.4,
+   "neta": 19.0
+  },
+  {
+   "anio": "2013",
+   "total": 43.5,
+   "agencias": 23.6,
+   "neta": 19.9
+  },
+  {
+   "anio": "2014",
+   "total": 44.7,
+   "agencias": 25.2,
+   "neta": 19.5
+  },
+  {
+   "anio": "2015",
+   "total": 52.6,
+   "agencias": 30.1,
+   "neta": 22.5
+  },
+  {
+   "anio": "2016",
+   "total": 53.1,
+   "agencias": 28.1,
+   "neta": 25.0
+  },
+  {
+   "anio": "2017",
+   "total": 56.5,
+   "agencias": 27.4,
+   "neta": 29.1
+  },
+  {
+   "anio": "2018",
+   "total": 85.2,
+   "agencias": 32.4,
+   "neta": 52.8
+  },
+  {
+   "anio": "2019",
+   "total": 89.8,
+   "agencias": 35.9,
+   "neta": 53.9
+  },
+  {
+   "anio": "2020",
+   "total": 103.8,
+   "agencias": 41.5,
+   "neta": 62.3
+  },
+  {
+   "anio": "2021",
+   "total": 80.8,
+   "agencias": 35.1,
+   "neta": 45.7
+  },
+  {
+   "anio": "2022",
+   "total": 84.8,
+   "agencias": 38.9,
+   "neta": 45.9
+  },
+  {
+   "anio": "2023",
+   "total": 154.5,
+   "agencias": 69.7,
+   "neta": 84.8
+  },
+  {
+   "anio": "2024",
+   "total": 82.5,
+   "agencias": 38.4,
+   "neta": 44.1
+  },
+  {
+   "anio": "2025",
+   "total": 78.1,
+   "agencias": 34.4,
+   "neta": 43.7
+  },
+  {
+   "anio": "IIT 2026",
+   "total": 71.4,
+   "agencias": 29.7,
+   "neta": 41.7
+  }
+ ],
  "url": "https://www.argentina.gob.ar/economia/finanzas/datos-trimestrales-de-la-deuda",
  "unidad": "millones de dólares",
  "nota": "Deuda neta = deuda bruta menos la parte en manos de agencias del sector público nacional (BCRA, FGS de la ANSES, Banco Nación y otros). El % del PBI es el de cada informe, a tipo de cambio de fin de período.",
- "generado": "2026-11-18T02:37:47+00:00",
+ "generado": "2026-11-19T11:47:41+00:00",
  "puntos": [
   {
    "fecha": "2024-12-31",
