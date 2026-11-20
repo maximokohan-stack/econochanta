@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-19T23:59:13.559236Z",
+ "actualizado": "2026-11-20T06:35:46.967604Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -60,6 +60,69 @@
  ],
  "items": [
   {
+   "titulo": "Qué podría pasar tras el fallo de la Corte Suprema sobre las cuotas de las prepagas y cuál fue la reacción del sector",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/que-podria-pasar-tras-el-fallo-de-la-corte-sobre-las-cuotas-de-las-prepagas-y-como-reacciono-el-nid19112026/",
+   "fecha": "2026-11-20T06:08:39Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El riesgo país contagia al dólar: crece la brecha cambiaria y amenaza con encarecer las tasas y golpear a la actividad",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/20/el-riesgo-pais-contagia-al-dolar-crece-la-brecha-cambiaria-y-amenaza-con-encarecer-las-tasas-y-golpear-a-la-actividad/",
+   "fecha": "2026-11-20T04:32:36Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Malvinas: una petrolera británica se despegó del proyecto Sea Lion en medio de una sanción “heredada” y luego de una denuncia penal",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/20/malvinas-una-petrolera-britanica-se-despego-del-proyecto-sea-lion-en-medio-de-una-sancion-heredada-y-luego-de-una-denuncia-penal/",
+   "fecha": "2026-11-20T04:32:18Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Repunta la venta de autos 0 km, pero hay cautela en el sector: cuáles son los modelos más buscados en lo que va de noviembre",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/20/repunta-la-venta-de-autos-0-km-pero-hay-cautela-en-el-sector-cuales-son-los-modelos-mas-buscados-en-lo-que-va-de-noviembre/",
+   "fecha": "2026-11-20T04:31:58Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Cayó la confianza de los industriales y la mitad de las empresas asegura que la demanda está por debajo de lo normal",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/20/cayo-la-confianza-de-los-industriales-y-la-mitad-de-las-empresas-asegura-que-la-demanda-esta-por-debajo-de-lo-normal/",
+   "fecha": "2026-11-20T04:31:20Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Sergio Díaz-Granados, presidente de CAF: “Me interesa mucho que el banco incursione más con el sector privado en Argentina”",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/20/sergio-diaz-granados-presidente-de-caf-me-interesa-mucho-que-el-banco-incursione-mas-con-el-sector-privado-en-argentina/",
+   "fecha": "2026-11-20T04:27:55Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Las compras vía courier ya superaron los USD 1.000 millones en 2026 y aumentaron 53% en los primeros diez meses del año",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/20/las-compras-via-courier-ya-superaron-los-usd-1000-millones-en-2026-y-aumentaron-53-en-los-primeros-diez-meses-del-ano/",
+   "fecha": "2026-11-20T04:27:32Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Qué es el Tratado de Patentes y qué cambia con la adhesión de la Argentina tras la aprobación del Senado",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/20/que-es-el-tratado-de-patentes-y-que-cambia-con-la-adhesion-de-la-argentina-tras-la-aprobacion-del-senado/",
+   "fecha": "2026-11-20T04:27:14Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Las apuestas de inversión que ven los empresarios para 2027 y el desafío de conseguir financiamiento",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/las-apuestas-inversion-que-ven-los-empresarios-2027-y-el-desafio-conseguir-financiamiento-n6347260",
+   "fecha": "2026-11-20T00:23:00Z",
+   "tema": "empresas"
+  },
+  {
    "titulo": "“Condenadas al fracaso”: Gustavo Grobocopatel reveló detalles desconocidos sobre por qué vendió su empresa hace 10 años",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/campo/condenadas-al-fracaso-gustavo-grobocopatel-revelo-detalles-desconocidos-de-por-que-vendio-su-empresa-nid19112026/",
@@ -107,13 +170,6 @@
    "url": "https://www.lanacion.com.ar/economia/campo/fabrica-paralizada-pauny-ofrece-reiniciar-la-actividad-y-pagar-deudas-en-cuotas-y-el-gobierno-de-nid19112026/",
    "fecha": "2026-11-19T22:24:19Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "Qué podría pasar tras el fallo de la Corte Suprema sobre las cuotas de las prepagas y cuál fue la reacción del sector",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/que-podria-pasar-tras-el-fallo-de-la-corte-sobre-las-cuotas-de-las-prepagas-y-como-reacciono-el-nid19112026/",
-   "fecha": "2026-11-19T22:16:15Z",
-   "tema": "otros"
   },
   {
    "titulo": "El dólar volvió a subir, las acciones argentinas se hundieron hasta 10% en Wall Street y el riesgo país escaló 80 puntos",
@@ -473,13 +529,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Arcor cerró su planta de conservas de pescado de La Campagnola en Mar del Plata: qué pasará con sus 75 empleados",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/19/arcor-cerro-su-planta-de-conservas-de-pescado-de-la-campagnola-en-mar-del-plata-e-importara-caballa-que-pasara-con-sus-75-empleados/",
-   "fecha": "2026-11-19T16:57:31Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Supermercado: qué provincias registraron los mayores aumentos de precios en el último año",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/469560-canasta-basica-cuanto-pesa-salario-provincias-mas-cuesta-noviembre-2026",
@@ -492,13 +541,6 @@
    "url": "https://www.ambito.com/economia/se-venden-50-autos-dia-las-concesionarias-la-nueva-linea-creditos-del-banco-provincia-n6347171",
    "fecha": "2026-11-19T16:22:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Financiación de autos 0 km: en octubre hubo menos operaciones pero creció la proporción dentro de las ventas totales",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/19/financiacion-de-autos-0-km-en-octubre-hubo-menos-operaciones-pero-crecio-la-proporcion-dentro-de-las-ventas-totales/",
-   "fecha": "2026-11-19T15:57:54Z",
-   "tema": "actividad"
   },
   {
    "titulo": "Inflación: cuánto cuesta llenar el changuito del supermercado en cada provincia y qué productos aumentaron más",
@@ -515,13 +557,6 @@
    "tema": "inflacion"
   },
   {
-   "titulo": "Sin el mecanismo de amortiguación de YPF, un litro de nafta costaría casi $3.000: cuándo y cómo podría bajar el combustible",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/19/sin-el-mecanismo-de-amortiguacion-de-ypf-un-litro-de-nafta-costaria-casi-3000-cuando-y-como-podria-bajar-el-combustible/",
-   "fecha": "2026-11-19T15:36:49Z",
-   "tema": "empresas"
-  },
-  {
    "titulo": "Los argentinos le ponen un freno al ajuste de Milei y priorizan los salarios por encima del dólar",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/469551-encuesta-los-argentinos-priorizan-los-salarios-por-encima-del-dolar-y-la-inflacion",
@@ -529,25 +564,11 @@
    "tema": "dolar"
   },
   {
-   "titulo": "Mercado Libre y Carrefour lanzan entregas de supermercado en 45 minutos: cómo funciona el servicio",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/19/mercado-libre-y-carrefour-lanzan-entregas-de-supermercado-en-45-minutos-como-funciona-el-servicio/",
-   "fecha": "2026-11-19T15:32:09Z",
-   "tema": "inflacion"
-  },
-  {
    "titulo": "Caputo enfrenta un dilema tras salto de brecha entre dólar oficial y el que usan empresas",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/469486-que-hay-detras-de-la-suba-del-dolar-que-usan-empresas-para-girar-divisas",
    "fecha": "2026-11-19T14:30:00Z",
    "tema": "dolar"
-  },
-  {
-   "titulo": "La confianza del consumidor bajó 1,3% en noviembre, afectada por la caída del 7,6% en el Gran Buenos Aires",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/19/la-confianza-del-consumidor-bajo-13-en-noviembre-afectada-por-la-caida-del-76-en-el-gran-buenos-aires/",
-   "fecha": "2026-11-19T14:27:02Z",
-   "tema": "otros"
   },
   {
    "titulo": "Aguinaldo 2026: hasta cuándo tienen tiempo las empresas para pagarlo y cuánto corresponde cobrar en diciembre",
@@ -564,24 +585,10 @@
    "tema": "dolar"
   },
   {
-   "titulo": "18 fotos de la cena del Consejo Interamericano de Comercio y Producción con Javier Milei como invitado especial",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/fotos/2026/11/17/18-fotos-de-la-cena-del-consejo-interamericano-de-comercio-y-produccion-con-javier-milei-como-invitado-especial/",
-   "fecha": "2026-11-19T14:15:10Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "Cómo comprar en Carrefour desde Mercado Libre y recibir el pedido en 45 minutos",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/negocios/469545-carrefour-llega-a-mercado-libre-con-entregas-en-menos-de-una-hora-y-envio-gratis",
    "fecha": "2026-11-19T14:13:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Sorpresa en el mercado local de camionetas: la oferta de pickups compactas suma un nuevo modelo para 2027",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/19/sorpresa-en-el-mercado-local-de-camionetas-la-oferta-de-pickups-compactas-suma-un-nuevo-modelo-para-2027/",
-   "fecha": "2026-11-19T14:02:59Z",
    "tema": "otros"
   },
   {
@@ -695,13 +702,6 @@
    "url": "https://www.ambito.com/economia/la-inflacion-britanica-trepa-su-maximo-un-ano-pero-ceden-las-posibilidades-una-suba-tasas-n6346567",
    "fecha": "2026-11-18T13:31:00Z",
    "tema": "inflacion"
-  },
-  {
-   "titulo": "La UIA le presentó al Gobierno una propuesta para bajar impuestos y aliviar los costos de la industria",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/la-uia-le-presento-al-gobierno-una-propuesta-bajar-impuestos-y-aliviar-los-costos-la-industria-n6346551",
-   "fecha": "2026-11-18T13:07:00Z",
-   "tema": "actividad"
   }
  ]
 }
