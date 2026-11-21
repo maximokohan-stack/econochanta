@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-21T16:28:41.783157Z",
+ "actualizado": "2026-11-21T21:57:03.224150Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 19
+   "n": 17
   },
   {
    "medio": "Infobae",
@@ -59,6 +59,34 @@
   }
  ],
  "items": [
+  {
+   "titulo": "Fuerte interés por SanCor: tres empresas quieren producir en plantas de la icónica láctea en quiebra",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/fuerte-interes-por-sancor-tres-empresas-quieren-producir-en-plantas-de-la-iconica-lactea-en-quiebra-nid21112026/",
+   "fecha": "2026-11-21T21:11:30Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Entre el optimismo oficial y las advertencias de Cavallo y Melconian: el debate sobre el rumbo económico",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/21/entre-el-optimismo-oficial-y-las-advertencias-de-cavallo-y-melconian-el-debate-sobre-el-rumbo-economico/",
+   "fecha": "2026-11-21T19:50:54Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Riesgo país por encima de los 1000 puntos: qué factores llevaron a que se disparara 240 unidades en una semana",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/riesgo-pais-por-encima-de-los-1000-puntos-que-factores-llevaron-a-que-se-disparara-240-unidades-en-nid21112026/",
+   "fecha": "2026-11-21T18:15:34Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Con la mora como preocupación central, los bancos públicos dan pelea para competir en el sistema financiero",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/21/con-la-mora-como-preocupacion-central-los-bancos-publicos-dan-pelea-para-competir-en-el-sistema-financiero/",
+   "fecha": "2026-11-21T16:39:41Z",
+   "tema": "otros"
+  },
   {
    "titulo": "El Niño y La Niña: un estudio argentino descubrió patrones de recurrencia y planteó una hipótesis hasta 2030",
    "medio": "La Nación",
@@ -459,20 +487,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Debe más de US$100 millones: una empresa de Los Grobo ofrece quitas de hasta el 70% a sus acreedores",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/debe-mas-de-us100-millones-una-empresa-de-los-grobo-ofrece-quitas-de-hasta-el-70-a-sus-acreedores-nid20112026/",
-   "fecha": "2026-11-20T20:29:56Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Los bancos públicos no esperan una recuperación del crédito en 2027",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/los-bancos-publicos-no-esperan-una-recuperacion-del-credito-en-2027-nid20112026/",
-   "fecha": "2026-11-20T20:28:04Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "YPF y el gobierno de Salta acuerdan cerrar un pozo petrolero que derramó por años",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/energia/469640-ypf-y-el-gobierno-de-salta-acuerdan-cerrar-un-pozo-petrolero-que-derramo-por-anos",
@@ -534,20 +548,6 @@
    "url": "https://www.ambito.com/economia/clave-el-mercosur-el-presidente-panama-buscara-que-el-pais-sea-parte-del-bloque-antes-2030-n6347643",
    "fecha": "2026-11-20T18:50:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Fallo de la Corte Suprema sobre prepagas: qué cambia para los afiliados y cómo reclamar",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/20/fallo-de-la-corte-suprema-sobre-prepagas-que-cambia-para-los-afiliados-y-como-reclamar/",
-   "fecha": "2026-11-20T18:25:09Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Neuquén aprobó una ley para proteger sus tierras productivas",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/20/neuquen-aprobo-una-ley-para-proteger-sus-tierras-productivas/",
-   "fecha": "2026-11-20T18:13:18Z",
-   "tema": "politica"
   },
   {
    "titulo": "Advertencia de Joaquín Cottani: \"Si el Gobierno no actúa, la economía caerá en una lenta agonía\"",
@@ -681,20 +681,6 @@
    "url": "https://www.ambito.com/economia/nacion-nego-que-evalua-postergar-el-pago-del-aguinaldo-y-desmintio-versiones-que-pusieron-alerta-ate-n6347360",
    "fecha": "2026-11-19T23:21:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "El superávit comercial superó los u$s3.000 millones en octubre y rozó el récord de la era Milei",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/el-superavit-comercial-supero-los-us3000-millones-octubre-y-rozo-el-record-la-era-milei-n6347275",
-   "fecha": "2026-11-19T19:19:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Plazo fijo en dólares: ¿conviene congelar los ahorros por un mes?",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/plazo-fijo-dolares-conviene-congelar-los-ahorros-un-mes-n6346562",
-   "fecha": "2026-11-19T19:00:00Z",
-   "tema": "mercados"
   }
  ]
 }
