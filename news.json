@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-20T23:28:20.083206Z",
+ "actualizado": "2026-11-21T06:27:54.754389Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -60,6 +60,104 @@
  ],
  "items": [
   {
+   "titulo": "Ante el freno de la actividad, el Gobierno descarta un cambio de rumbo, se ata a la ortodoxia y profundiza el ajuste",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/21/ante-el-freno-de-la-actividad-el-gobierno-descarta-un-cambio-de-rumbo-se-ata-a-la-ortodoxia-y-profundiza-el-ajuste/",
+   "fecha": "2026-11-21T05:08:58Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "De 400 a más de 1.000 puntos en solo cuatro meses: qué explica la escalada del riesgo país y el derrumbe de los bonos argentinos",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/21/de-400-a-mas-de-1000-puntos-en-solo-cuatro-meses-que-explica-la-escalada-del-riesgo-pais-y-el-derrumbe-de-los-bonos-argentinos/",
+   "fecha": "2026-11-21T05:06:51Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "El consumo masivo repuntó fuerte en octubre, pero acumula una caída de 2,3% en el año",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/21/el-consumo-masivo-repunto-fuerte-en-octubre-pero-acumula-una-caida-de-23-en-el-ano/",
+   "fecha": "2026-11-21T04:56:40Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "El riesgo país escaló 230 puntos y las acciones argentinas se hundieron hasta 25%, en una semana muy negativa de Wall Street",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/21/el-riesgo-pais-escalo-230-puntos-y-las-acciones-argentinas-se-hundieron-hasta-25-en-una-semana-muy-negativa-de-wall-street/",
+   "fecha": "2026-11-21T04:56:24Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Jubilaciones y AUH: la suba de los alimentos erosionó las mejoras acumuladas desde 2023",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/21/jubilaciones-y-auh-la-suba-de-los-alimentos-erosiono-las-mejoras-acumuladas-desde-2023/",
+   "fecha": "2026-11-21T04:55:50Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "El tecno-feudalismo: el nuevo poder global",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/11/21/el-tecno-feudalismo-el-nuevo-poder-global/",
+   "fecha": "2026-11-21T04:55:02Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "¿El mercado ya empezó a votar?",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/11/21/el-mercado-ya-empezo-a-votar/",
+   "fecha": "2026-11-21T04:54:45Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Argentina, del lado de los ganadores entre conflictos globales y la revolución tecnológica",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/11/21/argentina-del-lado-de-los-ganadores-entre-conflictos-globales-y-la-revolucion-tecnologica/",
+   "fecha": "2026-11-21T04:54:27Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "“Justicia social”: las palabras que León XIV se cuidó de no pronunciar en su paso por la Argentina",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/ideas/justicia-social-las-palabras-que-leon-xiv-se-cuido-de-no-pronunciar-en-su-paso-por-la-argentina-nid21112026/",
+   "fecha": "2026-11-21T03:08:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Ulrike Langer: “En cinco años, todos los medios tendrán que atender a un segundo tipo de lector: los agentes de IA",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/negocios/ulrike-langer-en-cinco-anos-todos-los-medios-tendran-que-atender-a-un-segundo-tipo-de-lector-los-nid21112026/",
+   "fecha": "2026-11-21T03:01:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Tesla se presentó en el país: los elogios de Javier Milei y el confuso mensaje de Elon Musk desde un avión",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/20/tesla-se-presento-en-el-pais-los-elogios-de-javier-milei-y-el-confuso-mensaje-de-elon-musk-desde-un-avion/",
+   "fecha": "2026-11-21T01:10:22Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Deuda, reservas y dolarización: las tres alertas del mercado sobre el plan económico de Javier Milei para 2027",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/deuda-reservas-y-dolarizacion-las-tres-alertas-del-mercado-el-plan-economico-javier-milei-2027-n6347745",
+   "fecha": "2026-11-20T23:35:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "“Aumentó dramáticamente”: Visec Carne superó los 50.000 usuarios registrados y ya liberó 409 embarques",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/aumento-dramaticamente-visec-carne-supero-los-50000-usuarios-registrados-y-ya-libero-409-embarques-nid20112026/",
+   "fecha": "2026-11-20T23:31:35Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Tesla le cumplió el sueño a Javier Milei y mostró su súper camioneta eléctrica “tuneada” con un león",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/20/tesla-le-cumplio-el-sueno-a-javier-milei-y-mostro-su-super-camioneta-electrica-tuneada-con-un-leon/",
+   "fecha": "2026-11-20T23:28:00Z",
+   "tema": "politica"
+  },
+  {
    "titulo": "El economista que Javier Milei invitó a una reunión de Gabinete advirtió: \"El problema está más en la deuda que en el dólar\"",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/el-economista-que-javier-milei-invito-una-reunion-gabinete-advirtio-el-problema-esta-mas-la-deuda-que-el-dolar-n6347801",
@@ -93,6 +191,13 @@
    "url": "https://www.infobae.com/economia/2026/11/20/el-riesgo-pais-salto-14-en-un-solo-dia-y-alcanzo-el-nivel-mas-alto-desde-las-elecciones-de-2025/",
    "fecha": "2026-11-20T22:55:47Z",
    "tema": "mercados"
+  },
+  {
+   "titulo": "Cómo será el gasoducto más grande el país que Argentina LNG construirá bajo el RIGI",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/energia/469712-como-sera-el-gasoducto-mas-grande-del-pais-que-habilito-el-rigi",
+   "fecha": "2026-11-20T22:40:00Z",
+   "tema": "otros"
   },
   {
    "titulo": "Juan Cuattromo, presidente del Banco Provincia: “Si caen la actividad y el empleo, no puede haber estabilidad”",
@@ -396,13 +501,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "“Condenadas al fracaso”: Gustavo Grobocopatel reveló detalles desconocidos sobre por qué vendió su empresa hace 10 años",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/condenadas-al-fracaso-gustavo-grobocopatel-revelo-detalles-desconocidos-de-por-que-vendio-su-empresa-nid19112026/",
-   "fecha": "2026-11-20T17:49:49Z",
-   "tema": "empresas"
-  },
-  {
    "titulo": "Javier Milei ahora habla de \"privaciones\": en qué mejoró y en qué empeoró la situación económica de los argentinos",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/javier-milei-ahora-habla-privaciones-que-mejoro-y-que-empeoro-la-situacion-economica-los-argentinos-n6347623",
@@ -431,45 +529,10 @@
    "tema": "otros"
   },
   {
-   "titulo": "Tardaron diez años en lograrlo: el desarrollo argentino que convirtió la mozzarella en chips",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/tardaron-diez-anos-en-lograrlo-el-desarrollo-argentino-que-convirtio-la-mozzarella-en-chips-nid20112026/",
-   "fecha": "2026-11-20T16:20:31Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Mapa interactivo: usan IA y planos oficiales para recrear cómo era Buenos Aires entre 1867 y 1950",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/tecnologia/que-chiquita-mira-como-era-buenos-aires-en-1867-gracias-a-la-inteligencia-artificial-nid20112026/",
-   "fecha": "2026-11-20T16:01:29Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "La visita de Bill Gates a Codelco agita el debate sobre la propiedad del cobre chileno",
    "medio": "Infobae",
    "url": "https://www.infobae.com/america/america-latina/2026/11/20/la-visita-de-bill-gates-a-codelco-agita-el-debate-sobre-la-propiedad-del-cobre-chileno/",
    "fecha": "2026-11-20T15:34:46Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Cuánto necesita una familia del AMBA para pagar los servicios de luz, gas, agua y transporte en noviembre",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/20/cuanto-necesita-una-familia-del-amba-para-pagar-los-servicios-de-luz-gas-agua-y-transporte-en-noviembre/",
-   "fecha": "2026-11-20T15:28:12Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "En plena crisis de Los Grobo, Gustavo Grobocopatel reveló por qué decidió vender la empresa familiar",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/20/en-plena-crisis-de-los-grobo-gustavo-grobocopatel-revelo-por-que-decidio-vender-la-empresa-familiar/",
-   "fecha": "2026-11-20T14:31:39Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "El Reino Unido y la Unión Europea firmaron su mayor acuerdo desde el Brexit y vuelven a discutir la reunificación",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/america/mundo/2026/11/20/el-reino-unido-y-la-union-europea-firmaron-su-mayor-acuerdo-desde-el-brexit-y-vuelven-a-discutir-la-reunificacion/",
-   "fecha": "2026-11-20T14:25:30Z",
    "tema": "otros"
   },
   {
@@ -487,20 +550,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Malvinas: una petrolera británica se despegó del proyecto Sea Lion en medio de una sanción “heredada” y luego de una denuncia penal",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/20/malvinas-una-petrolera-britanica-se-despego-del-proyecto-sea-lion-en-medio-de-una-sancion-heredada-y-luego-de-una-denuncia-penal/",
-   "fecha": "2026-11-20T14:16:49Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Moody’s ve una mejora para la deuda de las empresas argentinas, pero advierte por las elecciones de 2027",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/20/moodys-ve-una-mejora-para-la-deuda-de-las-empresas-argentinas-pero-advierte-por-las-elecciones-de-2027/",
-   "fecha": "2026-11-20T14:16:10Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "EEUU autorizó exportaciones de casi 900.000 chips avanzados de IA a China en seis meses",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/eeuu-autorizo-exportaciones-casi-900000-chips-avanzados-ia-china-seis-meses-n6347525",
@@ -508,24 +557,10 @@
    "tema": "empresas"
   },
   {
-   "titulo": "El duro diagnóstico de un ex funcionario de Caputo: mantener sin cambios la política monetaria condena al país a una \"lenta agonía\"",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/20/el-duro-diagnostico-de-un-ex-funcionario-de-caputo-mantener-sin-cambios-la-politica-monetaria-condena-al-pais-a-una-lenta-agonia/",
-   "fecha": "2026-11-20T14:06:45Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "El 41% de las familias argentinas con hijos no llega a cubrir sus gastos, según UNICEF",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/469655-el-41-por-ciento-de-los-hogares-con-chicos-no-cubre-sus-gastos-segun-unicef",
    "fecha": "2026-11-20T13:55:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Abrió Tesla Argentina y ya se pueden comprar sus autos online: cómo acceder y cuánto cuesta cada modelo",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/20/abrio-tesla-argentina-y-ya-se-pueden-comprar-sus-autos-online-como-acceder-y-cuanto-cuesta-cada-modelo/",
-   "fecha": "2026-11-20T13:27:25Z",
    "tema": "otros"
   },
   {
@@ -550,32 +585,11 @@
    "tema": "dolar"
   },
   {
-   "titulo": "Peajes automáticos: en qué rutas y autopistas ya no se podrá pagar en efectivo desde el 1° de enero",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/20/peajes-automaticos-en-que-rutas-y-autopistas-ya-no-se-podra-pagar-en-efectivo-desde-el-1-de-enero/",
-   "fecha": "2026-11-20T13:01:30Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Argentina se sumó al tratado de patentes y AmCham destacó el impacto para las empresas",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/469647-amcham-destaco-la-adhesion-argentina-al-tratado-de-patentes",
    "fecha": "2026-11-20T12:58:00Z",
    "tema": "empresas"
-  },
-  {
-   "titulo": "Inflación y elecciones: cómo van a aumentar los precios del gas, la luz, el agua y el transporte en 2027",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/20/inflacion-y-elecciones-como-van-a-aumentar-los-precios-del-gas-la-luz-el-agua-y-el-transporte-en-2027/",
-   "fecha": "2026-11-20T12:35:54Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Sergio Díaz-Granados, presidente de CAF: “Me interesa mucho que el banco incursione más con el sector privado en Argentina”",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/20/sergio-diaz-granados-presidente-de-caf-me-interesa-mucho-que-el-banco-incursione-mas-con-el-sector-privado-en-argentina/",
-   "fecha": "2026-11-20T12:25:06Z",
-   "tema": "otros"
   },
   {
    "titulo": "Aguinaldo de diciembre: Credicoop ofrece créditos a pymes",
@@ -662,13 +676,6 @@
    "tema": "dolar"
   },
   {
-   "titulo": "Por qué brókers de la City recomiendan mucha cautela antes de comprar CEDEAR de Anthropic",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/469599-la-verdad-sobre-si-conviene-invertir-ahora-mismo-en-anthropic",
-   "fecha": "2026-11-19T21:32:00Z",
-   "tema": "mercados"
-  },
-  {
    "titulo": "El superávit comercial superó los u$s3.000 millones en octubre y rozó el récord de la era Milei",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/el-superavit-comercial-supero-los-us3000-millones-octubre-y-rozo-el-record-la-era-milei-n6347275",
@@ -695,13 +702,6 @@
    "url": "https://www.ambito.com/economia/inflacion-cuanto-cuesta-llenar-el-changuito-del-supermercado-cada-provincia-y-que-productos-aumentaron-mas-n6347133",
    "fecha": "2026-11-19T15:48:00Z",
    "tema": "inflacion"
-  },
-  {
-   "titulo": "Aguinaldo 2026: hasta cuándo tienen tiempo las empresas para pagarlo y cuánto corresponde cobrar en diciembre",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/aguinaldo-2026-cuando-tienen-tiempo-las-empresas-pagarlo-y-cuanto-corresponde-cobrar-diciembre-n6347106",
-   "fecha": "2026-11-19T14:21:00Z",
-   "tema": "empresas"
   }
  ]
 }
