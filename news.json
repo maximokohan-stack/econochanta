@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-22T01:51:49.955597Z",
+ "actualizado": "2026-11-22T05:56:46.001224Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 18
+   "n": 17
   },
   {
    "medio": "Infobae",
@@ -59,6 +59,125 @@
   }
  ],
  "items": [
+  {
+   "titulo": "El shock financiero complica al Gobierno: presiona al dólar y amenaza el repunte de la economía",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/22/el-shock-financiero-complica-al-gobierno-presiona-al-dolar-y-amenaza-el-repunte-de-la-economia/",
+   "fecha": "2026-11-22T04:31:55Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Clima de Negocios: el magnate de EEUU que maneja el mismo auto hace 25 años, anticipa qué pasará con el dólar en el año electoral",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/22/clima-de-negocios-el-magnate-de-eeuu-que-maneja-el-mismo-auto-hace-25-anos-anticipa-que-pasara-con-el-dolar-en-el-ano-electoral/",
+   "fecha": "2026-11-22T04:31:41Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Las acciones argentinas que cotizan en Wall Street se hunden hasta 61% en el año: por qué no encuentran piso",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/22/las-acciones-argentinas-que-cotizan-en-wall-street-se-hunden-hasta-61-en-el-ano-por-que-no-encuentran-piso/",
+   "fecha": "2026-11-22T04:31:21Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "La Argentina que inventa vuelve al mundo",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/11/22/la-argentina-que-inventa-vuelve-al-mundo/",
+   "fecha": "2026-11-22T04:31:05Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Mensaje de Estados Unidos a la Argentina: China ya controla el litio, la soja y la pesca y va por el cobre y la infraestructura digital",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/22/mensaje-de-estados-unidos-a-la-argentina-china-ya-controla-el-litio-la-soja-y-la-pesca-y-va-por-el-cobre-y-la-infraestructura-digital/",
+   "fecha": "2026-11-22T04:30:45Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Fernando Marengo, de Black Toro Global: “El desafío de Argentina no es volver a crecer, sino sostener el crecimiento”",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/22/fernando-marengo-de-black-toro-global-el-desafio-de-argentina-no-es-volver-a-crecer-sino-sostener-el-crecimiento/",
+   "fecha": "2026-11-22T04:30:20Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Rutas deterioradas: el costo invisible que paga la economía argentina",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/11/22/rutas-deterioradas-el-costo-invisible-que-paga-la-economia-argentina/",
+   "fecha": "2026-11-22T04:30:03Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La importancia del orden macro para impulsar proyectos de inversión… ¿es suficiente?",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/11/22/la-importancia-del-orden-macro-para-impulsar-proyectos-de-inversion-es-suficiente/",
+   "fecha": "2026-11-22T04:29:44Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Boom de IA: un cambio de tendencia es posible",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/11/22/boom-de-ia-un-cambio-de-tendencia-es-posible/",
+   "fecha": "2026-11-22T04:29:03Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Qué hacer para que la economía esté al servicio del hombre",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/que-hacer-para-que-la-economia-este-al-servicio-del-hombre-nid22112026/",
+   "fecha": "2026-11-22T03:01:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Qué se puede hacer para generar empleo formal y de calidad, además de la reforma laboral",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/que-se-puede-hacer-para-generar-mas-empleo-formal-y-de-calidad-ademas-de-la-reforma-laboral-nid22112026/",
+   "fecha": "2026-11-22T03:01:00Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Del Rubik al cerebro ampliado con la IA: el ascenso de una estrella de bajo perfil en la revolución tecnológica del momento",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/del-rubik-al-cerebro-ampliado-con-la-ia-el-ascenso-de-una-estrella-de-bajo-perfil-en-la-revolucion-nid22112026/",
+   "fecha": "2026-11-22T03:01:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Se despertó el dólar en medio de la volatilidad mundial",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/se-desperto-el-dolar-en-medio-de-la-volatilidad-mundial-nid22112026/",
+   "fecha": "2026-11-22T03:01:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Impuesto de sellos: llegó la hora de terminar con esta reliquia colonial",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/impuesto-de-sellos-llego-la-hora-de-terminar-con-esta-reliquia-colonial-nid22112026/",
+   "fecha": "2026-11-22T03:01:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Una crisis de confianza que requiere cambios profundos",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/una-crisis-de-confianza-que-requiere-cambios-profundos-nid22112026/",
+   "fecha": "2026-11-22T03:01:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Claudio Porcel: “La Argentina no puede tener déficit fiscal, porque no le cree nadie, y al otro día hay una crisis”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/claudio-porcel-la-argentina-no-puede-tener-deficit-fiscal-porque-no-le-cree-nadie-y-al-otro-dia-hay-nid22112026/",
+   "fecha": "2026-11-22T03:01:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Daniel Schteingart: “En la década previa a Milei, la Argentina gastó como europeo pero rindió como latinoamericano”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/daniel-schteingart-en-la-decada-previa-a-milei-la-argentina-gasto-como-europeo-pero-rindio-como-nid22112026/",
+   "fecha": "2026-11-22T03:01:00Z",
+   "tema": "politica"
+  },
   {
    "titulo": "“Fuera de lugar”: el gobierno de Kicillof exigirá todos los meses información salarial y laboral de los empleados y la Rural pidió su revisión",
    "medio": "La Nación",
@@ -305,41 +424,6 @@
    "tema": "actividad"
   },
   {
-   "titulo": "Trigo 2026/27: una foto que no debería tapar la película del mercado",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/trigo-202627-una-foto-que-no-deberia-tapar-la-pelicula-del-mercado-nid21112026/",
-   "fecha": "2026-11-21T08:50:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "La cantidad justa de fricción",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/negocios/la-cantidad-justa-de-friccion-nid21112026/",
-   "fecha": "2026-11-21T08:47:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Mercado tranquilo para la hacienda de invernada",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/mercado-tranquilo-para-la-hacienda-de-invernada-nid21112026/",
-   "fecha": "2026-11-21T08:30:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El Beef on Dairy, un círculo virtuoso para los tambos",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/ganaderia/el-beef-on-dairy-un-circulo-virtuoso-para-los-tambos-nid21112026/",
-   "fecha": "2026-11-21T08:18:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Chalimín, el líder indígena que defendió la tierra y el derecho la libertad",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/chalimin-el-lider-indigena-que-defendio-la-tierra-y-el-derecho-la-libertad-nid21112026/",
-   "fecha": "2026-11-21T08:00:00Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Ante el freno de la actividad, el Gobierno descarta un cambio de rumbo, se ata a la ortodoxia y profundiza el ajuste",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/21/ante-el-freno-de-la-actividad-el-gobierno-descarta-un-cambio-de-rumbo-se-ata-a-la-ortodoxia-y-profundiza-el-ajuste/",
@@ -382,34 +466,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "¿El mercado ya empezó a votar?",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/opinion/2026/11/21/el-mercado-ya-empezo-a-votar/",
-   "fecha": "2026-11-21T04:54:45Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Argentina, del lado de los ganadores entre conflictos globales y la revolución tecnológica",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/opinion/2026/11/21/argentina-del-lado-de-los-ganadores-entre-conflictos-globales-y-la-revolucion-tecnologica/",
-   "fecha": "2026-11-21T04:54:27Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "“Justicia social”: las palabras que León XIV se cuidó de no pronunciar en su paso por la Argentina",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/ideas/justicia-social-las-palabras-que-leon-xiv-se-cuido-de-no-pronunciar-en-su-paso-por-la-argentina-nid21112026/",
-   "fecha": "2026-11-21T03:08:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Ulrike Langer: “En cinco años, todos los medios tendrán que atender a un segundo tipo de lector: los agentes de IA",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/negocios/ulrike-langer-en-cinco-anos-todos-los-medios-tendran-que-atender-a-un-segundo-tipo-de-lector-los-nid21112026/",
-   "fecha": "2026-11-21T03:01:00Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Ciberseguridad en la era de la IA: cómo se adaptan las empresas y dónde están las oportunidades de inversión",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/ciberseguridad-la-era-la-ia-como-se-adaptan-las-empresas-y-donde-estan-las-oportunidades-inversion-n6347298",
@@ -424,32 +480,11 @@
    "tema": "politica"
   },
   {
-   "titulo": "“Aumentó dramáticamente”: Visec Carne superó los 50.000 usuarios registrados y ya liberó 409 embarques",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/aumento-dramaticamente-visec-carne-supero-los-50000-usuarios-registrados-y-ya-libero-409-embarques-nid20112026/",
-   "fecha": "2026-11-20T23:31:35Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Tesla le cumplió el sueño a Javier Milei y mostró su súper camioneta eléctrica “tuneada” con un león",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/20/tesla-le-cumplio-el-sueno-a-javier-milei-y-mostro-su-super-camioneta-electrica-tuneada-con-un-leon/",
-   "fecha": "2026-11-20T23:28:00Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "El economista que Javier Milei invitó a una reunión de Gabinete advirtió: \"El problema está más en la deuda que en el dólar\"",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/el-economista-que-javier-milei-invito-una-reunion-gabinete-advirtio-el-problema-esta-mas-la-deuda-que-el-dolar-n6347801",
    "fecha": "2026-11-20T23:15:00Z",
    "tema": "dolar"
-  },
-  {
-   "titulo": "Antonio Aracre explicó su frase sobre la clase media y el aire acondicionado que generó polémica",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/20/vas-a-una-casa-de-clase-media-baja-en-verano-y-usan-aire-acondicionado-polemica-por-los-dichos-de-un-economista-cercano-al-gobierno/",
-   "fecha": "2026-11-20T23:12:32Z",
-   "tema": "otros"
   },
   {
    "titulo": "Morosidad: las tarjetas aliviaron los atrasos en familias, pero en empresas se vio un nuevo récord desde 2024",
@@ -459,25 +494,11 @@
    "tema": "empresas"
   },
   {
-   "titulo": "El riesgo país saltó 14% en un solo día y alcanzó el nivel más alto desde las elecciones de 2025",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/20/el-riesgo-pais-salto-14-en-un-solo-dia-y-alcanzo-el-nivel-mas-alto-desde-las-elecciones-de-2025/",
-   "fecha": "2026-11-20T22:55:47Z",
-   "tema": "mercados"
-  },
-  {
    "titulo": "Cómo será el gasoducto más grande el país que Argentina LNG construirá bajo el RIGI",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/energia/469712-como-sera-el-gasoducto-mas-grande-del-pais-que-habilito-el-rigi",
    "fecha": "2026-11-20T22:40:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Juan Cuattromo, presidente del Banco Provincia: “Si caen la actividad y el empleo, no puede haber estabilidad”",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/20/juan-cuattromo-presidente-del-banco-provincia-si-caen-la-actividad-y-el-empleo-no-puede-haber-estabilidad/",
-   "fecha": "2026-11-20T22:38:05Z",
-   "tema": "actividad"
   },
   {
    "titulo": "La morosidad de las familias cae por segundo mes al hilo, pero el BCRA enciende un alerta",
@@ -501,25 +522,11 @@
    "tema": "dolar"
   },
   {
-   "titulo": "“Es un error”: el economista que invitó Milei a una reunión de Gabinete cuestionó la mirada oficial sobre el riesgo país",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/20/es-un-error-el-economista-que-participo-de-una-reunion-de-gabinete-cuestiono-la-mirada-oficial-sobre-el-riesgo-pais/",
-   "fecha": "2026-11-20T21:27:43Z",
-   "tema": "mercados"
-  },
-  {
    "titulo": "El Gobierno propuso eliminar el Impuesto de Sellos y compensar la mitad de la recaudación perdida",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/el-gobierno-propuso-eliminar-el-impuesto-sellos-y-compensar-la-mitad-la-recaudacion-perdida-n6347734",
    "fecha": "2026-11-20T21:25:00Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "El dólar tocó un nuevo récord nominal y el riesgo país se disparó sobre los 1.000 puntos básicos",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/20/los-bonos-argentinos-siguen-en-caida-libre-y-el-riesgo-pais-se-dispara-sobre-los-1000-puntos-basicos/",
-   "fecha": "2026-11-20T21:23:50Z",
-   "tema": "dolar"
   },
   {
    "titulo": "Cuánto cuesta hacer el \"alto guiso\" que valía $15 en 2011",
@@ -533,13 +540,6 @@
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/finanzas/469581-crece-uso-de-billeteras-digitales-entre-adolescentes-pero-cae-su-capacidad-de-ahorro",
    "fecha": "2026-11-20T20:50:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Leve respiro para las familias endeudadas: volvió a bajar la mora de los hogares y crecieron las refinanciaciones",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/20/leve-respiro-para-las-familias-endeudadas-bajo-la-mora-de-los-hogares-y-crecieron-las-refinanciaciones/",
-   "fecha": "2026-11-20T20:47:12Z",
    "tema": "otros"
   },
   {
@@ -681,13 +681,6 @@
    "url": "https://www.ambito.com/economia/industria-empeoraron-expectativas-demanda-y-produccion-mientras-crecio-la-preocupacion-las-importaciones-n6347387",
    "fecha": "2026-11-20T10:00:00Z",
    "tema": "actividad"
-  },
-  {
-   "titulo": "Lo que se dice en las mesas: si algo le faltaba a la Argentina de cara al 2027 era un \"efecto caipirinha\" 2.0",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/lo-que-se-dice-las-mesas-si-algo-le-faltaba-la-argentina-cara-al-2027-era-un-efecto-caipirinha-20-n6347382",
-   "fecha": "2026-11-20T03:00:00Z",
-   "tema": "otros"
   }
  ]
 }
