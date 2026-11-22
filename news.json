@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-21T21:57:03.224150Z",
+ "actualizado": "2026-11-22T01:51:49.955597Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 17
+   "n": 18
   },
   {
    "medio": "Infobae",
@@ -60,11 +60,88 @@
  ],
  "items": [
   {
+   "titulo": "“Fuera de lugar”: el gobierno de Kicillof exigirá todos los meses información salarial y laboral de los empleados y la Rural pidió su revisión",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/fuera-de-lugar-el-gobierno-de-kicillof-exigira-todos-los-meses-informacion-salarial-y-laboral-de-los-nid20112026/",
+   "fecha": "2026-11-22T01:50:38Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "El Niño y La Niña: un estudio argentino descubrió patrones de recurrencia y planteó una hipótesis hasta 2030",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/el-nino-y-la-nina-un-estudio-argentino-descubrio-patrones-de-recurrencia-y-planteo-una-hipotesis-nid21112026/",
+   "fecha": "2026-11-22T01:35:05Z",
+   "tema": "otros"
+  },
+  {
    "titulo": "Fuerte interés por SanCor: tres empresas quieren producir en plantas de la icónica láctea en quiebra",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/campo/fuerte-interes-por-sancor-tres-empresas-quieren-producir-en-plantas-de-la-iconica-lactea-en-quiebra-nid21112026/",
-   "fecha": "2026-11-21T21:11:30Z",
+   "fecha": "2026-11-22T01:28:31Z",
    "tema": "empresas"
+  },
+  {
+   "titulo": "La ofensiva argentina contra el proyecto petrolero en Malvinas: dos empresas desistieron de participar en Sea Lion",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/22/la-ofensiva-argentina-contra-el-proyecto-petrolero-en-malvinas-dos-empresas-desistieron-de-participar-en-sea-lion/",
+   "fecha": "2026-11-22T01:22:09Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "El consumo masivo subió por primera vez en el año, impulsado por el e-commerce",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/actualidad/469740-el-consumo-masivo-subio-por-primera-vez-en-el-ano-impulsado-por-el-e-commerce",
+   "fecha": "2026-11-21T23:43:00Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "La mejora de los bonos de EEUU y los rindes del trigo, dos faros para la Argentina en medio del vendaval financiero",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/21/la-mejora-de-los-bonos-de-eeuu-y-los-rindes-del-trigo-dos-faros-para-la-argentina-en-medio-del-vendaval-financiero/",
+   "fecha": "2026-11-21T23:32:11Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Dato positivo para el Gobierno: se desacelera la inflación en alimentos",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/dato-positivo-el-gobierno-se-desacelera-la-inflacion-alimentos-n6347967",
+   "fecha": "2026-11-21T23:20:00Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Caución vs. plazo fijo: qué rinde más hoy, cuánto deja cada uno y dónde conviene poner los pesos",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/caucion-vs-plazo-fijo-que-rinde-mas-hoy-cuanto-deja-cada-uno-y-donde-conviene-poner-los-pesos-n6347341",
+   "fecha": "2026-11-21T23:00:00Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Así es el megaproyecto para exportar gas que será la mayor inversión de la historia argentina",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/21/asi-es-el-megaproyecto-para-exportar-gas-que-sera-la-mayor-inversion-de-la-historia-argentina/",
+   "fecha": "2026-11-21T22:31:52Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Se revierte tendencia y crece el consumo masivo con fuerte impacto del ecommerce",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/se-revierte-tendencia-y-crece-el-consumo-masivo-fuerte-impacto-del-ecommerce-n6347962",
+   "fecha": "2026-11-21T22:30:00Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Corridas bancarias: ¿qué enseña la historia?",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/corridas-bancarias-que-ensena-la-historia-nid21112026/",
+   "fecha": "2026-11-21T22:00:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Por qué Wall Street está recortando su apuesta por grandes acciones argentinas",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/469373-por-que-wall-street-recorta-su-apuesta-por-acciones-argentinas",
+   "fecha": "2026-11-21T21:30:00Z",
+   "tema": "mercados"
   },
   {
    "titulo": "Entre el optimismo oficial y las advertencias de Cavallo y Melconian: el debate sobre el rumbo económico",
@@ -88,13 +165,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "El Niño y La Niña: un estudio argentino descubrió patrones de recurrencia y planteó una hipótesis hasta 2030",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/el-nino-y-la-nina-un-estudio-argentino-descubrio-patrones-de-recurrencia-y-planteo-una-hipotesis-nid21112026/",
-   "fecha": "2026-11-21T16:11:10Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "A cuánto abre el dólar el martes 24 de noviembre",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/dolar/a-cuanto-abre-el-dolar-el-martes-24-de-noviembre-nid21112026/",
@@ -114,13 +184,6 @@
    "url": "https://www.lanacion.com.ar/economia/campo/super-nino-anticipan-focos-con-mas-de-100-milimetros-un-drastico-cambio-de-temperatura-y-luego-nid20112026/",
    "fecha": "2026-11-21T15:41:36Z",
    "tema": "dolar"
-  },
-  {
-   "titulo": "“Fuera de lugar”: el gobierno de Kicillof exigirá todos los meses información salarial y laboral de los empleados y la Rural pidió su revisión",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/fuera-de-lugar-el-gobierno-de-kicillof-exigira-todos-los-meses-informacion-salarial-y-laboral-de-los-nid20112026/",
-   "fecha": "2026-11-21T15:25:16Z",
-   "tema": "politica"
   },
   {
    "titulo": "La pista estaba en París: vio un detalle en los menús más exigentes y cambió el rumbo de una empresa con más de 100 años",
@@ -389,13 +452,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Siete señales le meten ruido al mercado",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/siete-senales-le-meten-ruido-al-mercado-nid20112026/",
-   "fecha": "2026-11-20T23:11:31Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Morosidad: las tarjetas aliviaron los atrasos en familias, pero en empresas se vio un nuevo récord desde 2024",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/morosidad-las-tarjetas-aliviaron-los-atrasos-familias-pero-empresas-se-vio-un-nuevo-record-2024-n6347782",
@@ -501,13 +557,6 @@
    "tema": "empresas"
   },
   {
-   "titulo": "La Cámara de Comercio de EEUU celebró la adhesión al Tratado de Patentes: “Es un paso trascendental para el desarrollo del país”",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/20/la-camara-de-comercio-de-eeuu-celebro-la-adhesion-al-tratado-de-patentes-es-un-paso-trascendental-para-el-desarrollo-del-pais/",
-   "fecha": "2026-11-20T19:41:39Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Riesgo país contagia al dólar futuro y este es el precio más alto que prevé la City",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/finanzas/469685-riesgo-pais-contagia-al-dolar-futuro-precio-mas-alto-que-preve-la-city",
@@ -515,25 +564,11 @@
    "tema": "dolar"
   },
   {
-   "titulo": "Caputo anunció el ingreso al RIGI de “la mayor inversión de la historia argentina”",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/20/caputo-anuncio-el-ingreso-al-rigi-de-la-mayor-inversion-de-la-historia-argentina/",
-   "fecha": "2026-11-20T19:30:23Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "El Gobierno aprobó el ingreso al RIGI del proyecto Argentina LNG por u$s50.750 millones",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/energia/469691-el-gobierno-aprobo-el-rigi-para-argentina-lng-por-us50750-millones",
    "fecha": "2026-11-20T19:30:00Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "Cuáles son las consecuencias para la economía Argentina de un riesgo país de más de 1.000 puntos",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/20/cuales-son-las-consecuencias-para-la-economia-argentina-de-un-riesgo-pais-de-mas-de-1000-puntos/",
-   "fecha": "2026-11-20T19:14:58Z",
-   "tema": "mercados"
   },
   {
    "titulo": "Plazo fijo con extra rendimiento: cómo funciona la nueva alternativa que paga hasta 50% más",
@@ -641,20 +676,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Adcap lanza una plataforma para que las PyMEs cobren cheques y facturas en el día",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/469589-adcap-lanza-plataforma-para-que-pymes-cobren-cheques-y-facturas-en-el-mismo-dia",
-   "fecha": "2026-11-20T11:05:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Durlock cerró una fábrica con 120 años de historia y despidió a la  totalidad de sus empleados",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/negocios/469629-durlock-cerro-una-planta-centenaria-en-rio-negro-y-despidio-a-todos-sus-empleados",
-   "fecha": "2026-11-20T10:56:00Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Industria: empeoraron expectativas sobre demanda y producción, mientras creció la preocupación por las importaciones",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/industria-empeoraron-expectativas-demanda-y-produccion-mientras-crecio-la-preocupacion-las-importaciones-n6347387",
@@ -666,20 +687,6 @@
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/lo-que-se-dice-las-mesas-si-algo-le-faltaba-la-argentina-cara-al-2027-era-un-efecto-caipirinha-20-n6347382",
    "fecha": "2026-11-20T03:00:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Las apuestas de inversión que ven los empresarios para 2027 y el desafío de conseguir financiamiento",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/las-apuestas-inversion-que-ven-los-empresarios-2027-y-el-desafio-conseguir-financiamiento-n6347260",
-   "fecha": "2026-11-20T00:23:00Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Nación negó que evalúe postergar el pago del aguinaldo y desmintió versiones que pusieron en alerta a ATE",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/nacion-nego-que-evalua-postergar-el-pago-del-aguinaldo-y-desmintio-versiones-que-pusieron-alerta-ate-n6347360",
-   "fecha": "2026-11-19T23:21:00Z",
    "tema": "otros"
   }
  ]
