@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-22T16:45:25.348164Z",
+ "actualizado": "2026-11-22T22:12:42.547919Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 18
+   "n": 12
   },
   {
    "medio": "Infobae",
@@ -50,7 +50,7 @@
   {
    "medio": "iProfesional",
    "ok": true,
-   "n": 16
+   "n": 9
   },
   {
    "medio": "Perfil",
@@ -60,11 +60,67 @@
  ],
  "items": [
   {
+   "titulo": "Cuáles son las provincias que más empresas perdieron en los últimos 32 meses",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/22/cuales-son-las-provincias-que-mas-empresas-perdieron-en-los-ultimos-32-meses/",
+   "fecha": "2026-11-22T21:33:02Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Un estudio comparó la evolución de la producción agraria de los 4 socios del Mercosur: la Argentina salió cuarta",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/22/un-estudio-comparo-la-evolucion-de-la-produccion-agraria-de-los-paises-del-mercosur-la-argentina-salio-mal-parada/",
+   "fecha": "2026-11-22T20:23:33Z",
+   "tema": "otros"
+  },
+  {
    "titulo": "Boca campeón de la Sudamericana: ¿cuánto pagarán de impuestos el club y los jugadores por los premios?",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/22/boca-campeon-de-la-sudamericana-cuanto-pagaran-de-impuestos-el-club-y-los-jugadores-por-los-premios/",
-   "fecha": "2026-11-22T16:23:07Z",
+   "fecha": "2026-11-22T20:12:13Z",
    "tema": "politica"
+  },
+  {
+   "titulo": "Vendía pan en la calle: hoy, tras empezar con esfuerzo, la historia de Jorge Aníbal Leguiza con los búfalos es un caso de superación y éxito",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/vendia-pan-en-la-calle-hoy-la-historia-de-jorge-anibal-leguiza-con-los-bufalos-es-un-caso-de-nid22112026/",
+   "fecha": "2026-11-22T19:41:23Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Por la suba del petróleo, aerolíneas de Europa y América Latina recortan rutas y asientos",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/22/por-la-suba-del-petroleo-aerolineas-de-europa-y-america-latina-recortan-rutas-y-asientos/",
+   "fecha": "2026-11-22T18:31:36Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Estiman que más de 500.000 hogares califican para acceder a un crédito hipotecario",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/22/estiman-que-mas-de-500000-hogares-califican-para-acceder-a-un-credito-hipotecario/",
+   "fecha": "2026-11-22T17:04:10Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Fuerte interés por SanCor: tres empresas quieren producir en plantas de la icónica láctea en quiebra",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/fuerte-interes-por-sancor-tres-empresas-quieren-producir-en-plantas-de-la-iconica-lactea-en-quiebra-nid21112026/",
+   "fecha": "2026-11-22T16:59:54Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "El Niño y La Niña: un estudio argentino descubrió patrones de recurrencia y planteó una hipótesis hasta 2030",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/el-nino-y-la-nina-un-estudio-argentino-descubrio-patrones-de-recurrencia-y-planteo-una-hipotesis-nid21112026/",
+   "fecha": "2026-11-22T16:59:18Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Las tarjetas de crédito dominan las compras en supermercados: representan el 43% de las ventas",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/las-tarjetas-credito-dominan-las-compras-supermercados-representan-el-43-las-ventas-n6348084",
+   "fecha": "2026-11-22T16:42:00Z",
+   "tema": "actividad"
   },
   {
    "titulo": "Economistas esperan que se mantengan la volatilidad y las tensiones con el dólar",
@@ -256,18 +312,18 @@
    "tema": "mercados"
   },
   {
-   "titulo": "El desafío actual de la ganadería frente a las exigencias europeas",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/el-desafio-actual-de-la-ganaderia-frente-a-las-exigencias-europeas-nid22112026/",
-   "fecha": "2026-11-22T10:00:00Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "De la banana salteña al vino de alta gama: los secretos de las empresas argentinas para competir con productos extranjeros",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/campo/de-la-banana-saltena-al-vino-de-alta-gama-los-secretos-de-las-empresas-argentinas-para-competir-con-nid22112026/",
    "fecha": "2026-11-22T10:00:00Z",
    "tema": "empresas"
+  },
+  {
+   "titulo": "El desafío actual de la ganadería frente a las exigencias europeas",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/el-desafio-actual-de-la-ganaderia-frente-a-las-exigencias-europeas-nid22112026/",
+   "fecha": "2026-11-22T10:00:00Z",
+   "tema": "otros"
   },
   {
    "titulo": "Bitcoin y oro se desploman: por qué caen y hasta dónde pueden llegar",
@@ -289,20 +345,6 @@
    "url": "https://www.iprofesional.com/economia/469392-con-brasil-baratisimo-alertan-que-se-iran-millones-de-dolares-por-turismo",
    "fecha": "2026-11-22T09:30:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Opinión. Una ley de biocombustibles para todos",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/opinion-una-ley-de-biocombustibles-para-todos-nid22112026/",
-   "fecha": "2026-11-22T09:00:01Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Opinión. Una regulación burocrática que afecta a las empresas agropecuarias en la provincia de Buenos Aires",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/opinion-una-regulacion-burocratica-que-afecta-a-las-empresas-agropecuarias-en-la-provincia-de-buenos-nid22112026/",
-   "fecha": "2026-11-22T09:00:00Z",
-   "tema": "empresas"
   },
   {
    "titulo": "El shock financiero complica al Gobierno: presiona al dólar y amenaza el repunte de la economía",
@@ -352,13 +394,6 @@
    "url": "https://www.infobae.com/opinion/2026/11/22/boom-de-ia-un-cambio-de-tendencia-es-posible/",
    "fecha": "2026-11-22T04:29:03Z",
    "tema": "dolar"
-  },
-  {
-   "titulo": "Qué hacer para que la economía esté al servicio del hombre",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/que-hacer-para-que-la-economia-este-al-servicio-del-hombre-nid22112026/",
-   "fecha": "2026-11-22T03:01:00Z",
-   "tema": "otros"
   },
   {
    "titulo": "Gustavo Neffa: \"Es posible un dólar mayorista a $1.700 en diciembre, las cosas cambiaron\"",
@@ -466,20 +501,6 @@
    "tema": "mercados"
   },
   {
-   "titulo": "Paso a paso, cómo anotarse para recibir los subsidios a la luz y el gas",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/21/paso-a-paso-como-anotarse-para-recibir-los-subsidios-a-la-luz-y-el-gas/",
-   "fecha": "2026-11-21T13:20:21Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Tesla se presentó en el país: los elogios de Javier Milei y el confuso mensaje de Elon Musk desde un avión",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/20/tesla-se-presento-en-el-pais-los-elogios-de-javier-milei-y-el-confuso-mensaje-de-elon-musk-desde-un-avion/",
-   "fecha": "2026-11-21T11:43:54Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "El Presupuesto 2027 limita las vacantes y fija excepciones para el empleo público",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/469566-presupuesto-2027-como-sera-el-control-de-vacantes-en-el-estado",
@@ -498,20 +519,6 @@
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/finanzas/469686-el-guru-de-la-city-avisa-que-bonos-seran-un-gran-negocio-sus-fundamentos",
    "fecha": "2026-11-21T11:00:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Ante el freno de la actividad, el Gobierno descarta un cambio de rumbo, se ata a la ortodoxia y profundiza el ajuste",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/21/ante-el-freno-de-la-actividad-el-gobierno-descarta-un-cambio-de-rumbo-se-ata-a-la-ortodoxia-y-profundiza-el-ajuste/",
-   "fecha": "2026-11-21T05:08:58Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "De 400 a más de 1.000 puntos en solo cuatro meses: qué explica la escalada del riesgo país y el derrumbe de los bonos argentinos",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/21/de-400-a-mas-de-1000-puntos-en-solo-cuatro-meses-que-explica-la-escalada-del-riesgo-pais-y-el-derrumbe-de-los-bonos-argentinos/",
-   "fecha": "2026-11-21T05:06:51Z",
    "tema": "mercados"
   },
   {
@@ -548,104 +555,6 @@
    "url": "https://www.iprofesional.com/energia/469712-como-sera-el-gasoducto-mas-grande-del-pais-que-habilito-el-rigi",
    "fecha": "2026-11-20T22:40:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "La morosidad de las familias cae por segundo mes al hilo, pero el BCRA enciende un alerta",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/469704-morosidad-de-familias-cae-por-segundo-mes-consecutivo-pero-banco-central-enciende-alerta",
-   "fecha": "2026-11-20T22:04:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "En un viernes negro, inversores exigen a Caputo una súper tasa por bonos post elecciones",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/469694-bajan-chances-de-milei-e-inversores-exigen-super-tasa-por-bonos",
-   "fecha": "2026-11-20T21:50:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "En los bancos el dólar siguió subiendo post cierre del mercado y se llegó a pedir $1.615",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/469703-en-los-bancos-el-dolar-siguio-subiendo-post-cierre-del-mercado-y-se-llego-a-pedir-1615",
-   "fecha": "2026-11-20T21:49:00Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "El Gobierno propuso eliminar el Impuesto de Sellos y compensar la mitad de la recaudación perdida",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/el-gobierno-propuso-eliminar-el-impuesto-sellos-y-compensar-la-mitad-la-recaudacion-perdida-n6347734",
-   "fecha": "2026-11-20T21:25:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Cuánto cuesta hacer el \"alto guiso\" que valía $15 en 2011",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/cuanto-cuesta-hacer-el-alto-guiso-que-valia-15-2011-n6347650",
-   "fecha": "2026-11-20T21:09:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Crece el uso de billeteras digitales entre adolescentes, pero cae su capacidad de ahorro",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/469581-crece-uso-de-billeteras-digitales-entre-adolescentes-pero-cae-su-capacidad-de-ahorro",
-   "fecha": "2026-11-20T20:50:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "YPF y el gobierno de Salta acuerdan cerrar un pozo petrolero que derramó por años",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/energia/469640-ypf-y-el-gobierno-de-salta-acuerdan-cerrar-un-pozo-petrolero-que-derramo-por-anos",
-   "fecha": "2026-11-20T20:25:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Aprueban el RIGI de YPF para exportar GNL por u$s50.750 millones y será \"la mayor inversión de la historia\"",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/se-aprobo-el-rigi-el-proyecto-argentina-lng-implica-una-inversion-us25000-millones-tres-anos-n6347741",
-   "fecha": "2026-11-20T19:43:00Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Riesgo país contagia al dólar futuro y este es el precio más alto que prevé la City",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/469685-riesgo-pais-contagia-al-dolar-futuro-precio-mas-alto-que-preve-la-city",
-   "fecha": "2026-11-20T19:36:00Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "El Gobierno aprobó el ingreso al RIGI del proyecto Argentina LNG por u$s50.750 millones",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/energia/469691-el-gobierno-aprobo-el-rigi-para-argentina-lng-por-us50750-millones",
-   "fecha": "2026-11-20T19:30:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Plazo fijo con extra rendimiento: cómo funciona la nueva alternativa que paga hasta 50% más",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/plazo-fijo-extra-rendimiento-como-funciona-la-nueva-alternativa-que-paga-50-mas-n6346803",
-   "fecha": "2026-11-20T19:00:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Clave para el Mercosur: el presidente de Panamá buscará que el país sea parte del bloque antes de 2030",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/clave-el-mercosur-el-presidente-panama-buscara-que-el-pais-sea-parte-del-bloque-antes-2030-n6347643",
-   "fecha": "2026-11-20T18:50:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Advertencia de Joaquín Cottani: \"Si el Gobierno no actúa, la economía caerá en una lenta agonía\"",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/advertencia-joaquin-cottani-si-el-gobierno-no-actua-la-caera-una-lenta-agonia-n6347584",
-   "fecha": "2026-11-20T18:06:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Javier Milei ahora habla de \"privaciones\": en qué mejoró y en qué empeoró la situación económica de los argentinos",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/javier-milei-ahora-habla-privaciones-que-mejoro-y-que-empeoro-la-situacion-economica-los-argentinos-n6347623",
-   "fecha": "2026-11-20T17:42:00Z",
-   "tema": "politica"
   }
  ]
 }
