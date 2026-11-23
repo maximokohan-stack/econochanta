@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-22T22:12:42.547919Z",
+ "actualizado": "2026-11-23T03:19:43.022784Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 12
+   "n": 9
   },
   {
    "medio": "Infobae",
@@ -50,7 +50,7 @@
   {
    "medio": "iProfesional",
    "ok": true,
-   "n": 9
+   "n": 11
   },
   {
    "medio": "Perfil",
@@ -60,11 +60,60 @@
  ],
  "items": [
   {
+   "titulo": "De la Confederación Diaguita-Calchaquí: Chalimín, el líder indígena que defendió la tierra y la libertad",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/de-la-confederacion-diaguita-calchaqui-chalimin-el-lider-indigena-que-defendio-la-tierra-y-la-nid22112026/",
+   "fecha": "2026-11-23T02:25:17Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Financial Times duda de la economía argentina: riesgo país, financiamiento e imagen Milei",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/469762-financial-times-duda-de-la-economia-argentina-riesgo-pais-financiamiento-e-imagen-milei",
+   "fecha": "2026-11-23T00:08:00Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Milei defendió el accionar del Gobierno con el oro del Banco Central: \"¿Se imaginan…?\"",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/469761-milei-defendio-el-accionar-del-gobierno-con-el-oro-del-banco-central-se-imaginan",
+   "fecha": "2026-11-22T23:02:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "CABA tiene una carga tributaria menor que el resto del país: cuánto impacta en los precios",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/caba-tiene-una-carga-tributaria-menor-que-el-resto-del-pais-cuanto-impacta-los-precios-n6348123",
+   "fecha": "2026-11-22T22:34:25Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Fuerte preocupación empresaria por una medida de Kicillof que obligará a informar sueldos y jornadas laborales",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/fuerte-preocupacion-empresaria-por-una-medida-de-kicillof-que-obligara-a-informar-sueldos-y-jornadas-nid22112026/",
+   "fecha": "2026-11-22T22:29:54Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Chalimín, el líder indígena que defendió la tierra y la libertad",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/chalimin-el-lider-indigena-que-defendio-la-tierra-y-el-derecho-la-libertad-nid21112026/",
+   "fecha": "2026-11-22T22:29:27Z",
+   "tema": "otros"
+  },
+  {
    "titulo": "Cuáles son las provincias que más empresas perdieron en los últimos 32 meses",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/22/cuales-son-las-provincias-que-mas-empresas-perdieron-en-los-ultimos-32-meses/",
    "fecha": "2026-11-22T21:33:02Z",
    "tema": "empresas"
+  },
+  {
+   "titulo": "Acciones argentinas se desploman hasta 50% en 2026 y la City avisa cuáles comprar baratas",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/469713-que-acciones-argentinas-quedaron-baratas-para-invertir-segun-la-city",
+   "fecha": "2026-11-22T21:30:00Z",
+   "tema": "mercados"
   },
   {
    "titulo": "Un estudio comparó la evolución de la producción agraria de los 4 socios del Mercosur: la Argentina salió cuarta",
@@ -298,32 +347,11 @@
    "tema": "dolar"
   },
   {
-   "titulo": "Dólar hoy y dólar blue hoy: a cuánto cotiza este domingo 22 de noviembre",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/dolar/dolar-hoy-y-dolar-blue-hoy-a-cuanto-cotiza-este-domingo-22-de-noviembre-nid22112026/",
-   "fecha": "2026-11-22T12:29:49Z",
-   "tema": "dolar"
-  },
-  {
    "titulo": "Plazo fijo en noviembre: subieron las tasas, qué bancos pagan más y cuánto rinde invertir $10 millones hoy",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/plazos-fijos-noviembre-subieron-las-tasas-que-bancos-pagan-mas-y-cuanto-rinde-invertir-10-millones-hoy-n6347134",
    "fecha": "2026-11-22T12:00:00Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "De la banana salteña al vino de alta gama: los secretos de las empresas argentinas para competir con productos extranjeros",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/de-la-banana-saltena-al-vino-de-alta-gama-los-secretos-de-las-empresas-argentinas-para-competir-con-nid22112026/",
-   "fecha": "2026-11-22T10:00:00Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "El desafío actual de la ganadería frente a las exigencias europeas",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/el-desafio-actual-de-la-ganaderia-frente-a-las-exigencias-europeas-nid22112026/",
-   "fecha": "2026-11-22T10:00:00Z",
-   "tema": "otros"
   },
   {
    "titulo": "Bitcoin y oro se desploman: por qué caen y hasta dónde pueden llegar",
@@ -396,18 +424,18 @@
    "tema": "dolar"
   },
   {
-   "titulo": "Gustavo Neffa: \"Es posible un dólar mayorista a $1.700 en diciembre, las cosas cambiaron\"",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/gustavo-neffa-es-posible-un-dolar-mayorista-1700-diciembre-las-cosas-cambiaron-n6347925",
-   "fecha": "2026-11-22T03:00:00Z",
-   "tema": "dolar"
-  },
-  {
    "titulo": "La presión del \"efecto caipirinha\" y el salto del riesgo país profundizan una disyuntiva clave para el Gobierno",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/la-presion-del-efecto-caipirinha-y-el-salto-del-riesgo-pais-profundizan-una-disyuntiva-clave-el-gobierno-n6347884",
    "fecha": "2026-11-22T03:00:00Z",
    "tema": "mercados"
+  },
+  {
+   "titulo": "Gustavo Neffa: \"Es posible un dólar mayorista a $1.700 en diciembre, las cosas cambiaron\"",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/gustavo-neffa-es-posible-un-dolar-mayorista-1700-diciembre-las-cosas-cambiaron-n6347925",
+   "fecha": "2026-11-22T03:00:00Z",
+   "tema": "dolar"
   },
   {
    "titulo": "La ofensiva argentina contra el proyecto petrolero en Malvinas: dos empresas desistieron de participar en Sea Lion",
@@ -520,41 +548,6 @@
    "url": "https://www.iprofesional.com/finanzas/469686-el-guru-de-la-city-avisa-que-bonos-seran-un-gran-negocio-sus-fundamentos",
    "fecha": "2026-11-21T11:00:00Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "Ciberseguridad en la era de la IA: cómo se adaptan las empresas y dónde están las oportunidades de inversión",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/ciberseguridad-la-era-la-ia-como-se-adaptan-las-empresas-y-donde-estan-las-oportunidades-inversion-n6347298",
-   "fecha": "2026-11-21T03:00:00Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Deuda, reservas y dolarización: las tres alertas del mercado sobre el plan económico de Javier Milei para 2027",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/deuda-reservas-y-dolarizacion-las-tres-alertas-del-mercado-el-plan-economico-javier-milei-2027-n6347745",
-   "fecha": "2026-11-20T23:35:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "El economista que Javier Milei invitó a una reunión de Gabinete advirtió: \"El problema está más en la deuda que en el dólar\"",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/el-economista-que-javier-milei-invito-una-reunion-gabinete-advirtio-el-problema-esta-mas-la-deuda-que-el-dolar-n6347801",
-   "fecha": "2026-11-20T23:15:00Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "Morosidad: las tarjetas aliviaron los atrasos en familias, pero en empresas se vio un nuevo récord desde 2024",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/morosidad-las-tarjetas-aliviaron-los-atrasos-familias-pero-empresas-se-vio-un-nuevo-record-2024-n6347782",
-   "fecha": "2026-11-20T23:05:00Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Cómo será el gasoducto más grande el país que Argentina LNG construirá bajo el RIGI",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/energia/469712-como-sera-el-gasoducto-mas-grande-del-pais-que-habilito-el-rigi",
-   "fecha": "2026-11-20T22:40:00Z",
-   "tema": "otros"
   }
  ]
 }
