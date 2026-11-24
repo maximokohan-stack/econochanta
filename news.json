@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-24T05:03:35.249542Z",
+ "actualizado": "2026-11-24T09:14:37.993163Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -59,6 +59,62 @@
   }
  ],
  "items": [
+  {
+   "titulo": "Quiénes cobran ANSES hoy, 24 de noviembre de 2026",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/24/quienes-cobran-anses-hoy-24-de-noviembre-de-2026/",
+   "fecha": "2026-11-24T09:00:01Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La oportunidad brasileña del verano (y por qué puede salirte cara si no hacés bien las cuentas)",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/la-oportunidad-brasilena-del-verano-y-por-que-puede-salirte-cara-si-no-haces-bien-las-cuentas-nid24112026/",
+   "fecha": "2026-11-24T09:00:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "¿El dólar empieza a inquietar?: el mercado vuelve a cubrirse ante una eventual suba a menos de un año de las elecciones",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/24/el-dolar-empieza-a-inquietar-el-mercado-vuelve-a-cubrirse-ante-una-eventual-suba-a-un-menos-de-un-ano-de-las-elecciones/",
+   "fecha": "2026-11-24T08:18:22Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Alivio para el Gobierno: volvió la calma a los mercados justo cuando empezaban a subir el dólar y la brecha cambiaria",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/24/alivio-para-el-gobierno-volvio-la-calma-a-los-mercados-justo-cuando-empezaban-a-subir-el-dolar-y-la-brecha-cambiaria/",
+   "fecha": "2026-11-24T05:22:51Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Hoy se conoce un dato clave sobre el rumbo de la economía: ¿la actividad entró en recesión técnica?",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/24/hoy-se-conoce-un-dato-clave-sobre-el-rumbo-de-la-economia-la-actividad-entro-en-recesion-tecnica/",
+   "fecha": "2026-11-24T05:22:45Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "En medio de la tensión por Malvinas, el Gobierno recibió dos ofertas para construir el muelle de la Base Naval Integrada en Ushuaia",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/24/en-medio-de-la-tension-por-malvinas-el-gobierno-recibio-dos-ofertas-para-construir-el-muelle-de-la-base-naval-integrada-en-ushuaia/",
+   "fecha": "2026-11-24T05:22:15Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Dólar, tasas y Brasil: los tres factores que pueden complicar a Argentina pese al rally global",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/24/dolar-tasas-y-brasil-los-tres-factores-que-pueden-complicar-a-argentina-pese-al-rally-global/",
+   "fecha": "2026-11-24T05:22:07Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "¿Cómo sigue la película sobre la economía argentina?",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/11/24/como-sigue-la-pelicula-sobre-la-economia-argentina/",
+   "fecha": "2026-11-24T05:21:58Z",
+   "tema": "otros"
+  },
   {
    "titulo": "Las bolsas asiáticas abrieron con una fuerte alza tras el regreso de Jensen Huang a Nvidia",
    "medio": "La Nación",
@@ -403,25 +459,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "Cierra otra fábrica del sector de calzado y traslada su producción a Brasil: qué pasará con sus empleados",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/23/cierra-otra-fabrica-del-sector-de-calzado-y-traslada-su-produccion-a-brasil-que-pasara-con-sus-empleados/",
-   "fecha": "2026-11-23T13:15:11Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Resistencia antimicrobiana: la variable sanitaria que pone en jaque a la economía global",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/campo/resistencia-antimicrobiana-la-variable-sanitaria-que-pone-en-jaque-a-la-economia-global-nid23112026/",
    "fecha": "2026-11-23T13:03:34Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Hasta el 44% del precio de los alimentos y bebidas son impuestos: dónde se paga más y por qué",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/23/hasta-el-44-del-precio-de-los-alimentos-y-bebidas-son-impuestos-donde-se-paga-mas-y-por-que/",
-   "fecha": "2026-11-23T12:23:29Z",
-   "tema": "politica"
   },
   {
    "titulo": "Empleadas domésticas: los pagos que deben afrontar los empleadores en lo que queda de 2026",
@@ -431,46 +473,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "El manual para ir a una entrevista de trabajo y no “morir” en el intento: qué buscan y qué desaprueban los reclutadores",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/23/el-manual-para-ir-a-una-entrevista-de-trabajo-y-no-morir-en-el-intento-que-buscan-y-que-desaprueban-los-reclutadores/",
-   "fecha": "2026-11-23T11:24:06Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Cae el precio del petróleo, Caputo recibirá menos dólares, pero habrá un efecto positivo",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/469395-cae-precio-del-petroleo-menos-dolares-pero-ayuda-a-la-inflacion",
    "fecha": "2026-11-23T11:01:00Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "Qué servicios públicos aumentaron más en los últimos doce meses y cuánto insume al mes cada uno de ellos",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/23/que-servicios-publicos-aumentaron-mas-en-los-ultimos-doce-meses-y-cuanto-insume-al-mes-cada-uno-de-ellos/",
-   "fecha": "2026-11-23T10:49:31Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Cuánto cobrarán por hora las niñeras en diciembre 2026",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/23/cuanto-cobraran-por-hora-las-nineras-en-diciembre-2026/",
-   "fecha": "2026-11-23T09:41:05Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Tensión con el dólar: crece la brecha cambiaria y se estancan las reservas",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/23/tension-con-el-dolar-crece-la-brecha-cambiaria-y-se-estancan-las-reservas/",
-   "fecha": "2026-11-23T03:53:50Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "La situación internacional cada vez cuenta más: anoche se recuperaban los mercados y bajaba el petróleo",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/23/la-situacion-internacional-cada-vez-cuenta-mas-anoche-se-recuperaban-los-mercados-y-bajaba-el-petroleo/",
-   "fecha": "2026-11-23T03:53:43Z",
-   "tema": "otros"
   },
   {
    "titulo": "Anthropic no revivió el fervor por la IA y le dio el empujón a una corrección de la Bolsa",
@@ -520,13 +527,6 @@
    "url": "https://www.iprofesional.com/finanzas/469713-que-acciones-argentinas-quedaron-baratas-para-invertir-segun-la-city",
    "fecha": "2026-11-22T21:30:00Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "Vendía pan en la calle: hoy, tras empezar con esfuerzo, la historia de Jorge Aníbal Leguiza con los búfalos es un caso de superación y éxito",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/vendia-pan-en-la-calle-hoy-la-historia-de-jorge-anibal-leguiza-con-los-bufalos-es-un-caso-de-nid22112026/",
-   "fecha": "2026-11-22T19:41:23Z",
-   "tema": "otros"
   },
   {
    "titulo": "Las tarjetas de crédito dominan las compras en supermercados: representan el 43% de las ventas",
