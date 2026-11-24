@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-23T20:40:40.885462Z",
+ "actualizado": "2026-11-24T05:03:35.249542Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 13
+   "n": 9
   },
   {
    "medio": "Infobae",
@@ -60,10 +60,94 @@
  ],
  "items": [
   {
-   "titulo": "Las acciones de Nvidia rebotan 30% después de que la compañía anunciara la restitución de Jensen Huang como CEO",
+   "titulo": "Las bolsas asiáticas abrieron con una fuerte alza tras el regreso de Jensen Huang a Nvidia",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/el-mundo/las-bolsas-asiaticas-abrieron-con-una-fuerte-alza-tras-el-regreso-de-jensen-huang-a-nvidia-nid24112026/",
+   "fecha": "2026-11-24T03:58:03Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "De la Confederación Diaguita-Calchaquí: Chalimín, el líder indígena que defendió la tierra y la libertad",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/de-la-confederacion-diaguita-calchaqui-chalimin-el-lider-indigena-que-defendio-la-tierra-y-la-nid22112026/",
+   "fecha": "2026-11-24T02:22:23Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Tiene 73 años: comenzó como piloto aéreo, compró una empresa de pulverizaciones y hoy maneja 20.000 hectáreas agrícolas",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/tiene-73-anos-comenzo-como-piloto-aereo-compro-una-empresa-de-pulverizaciones-y-hoy-maneja-20000-nid23112026/",
+   "fecha": "2026-11-24T02:21:14Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Tiene 83 años: el veterinario que lleva más de seis décadas con la ganadería y fue pionero en incorporar una revolucionaria tecnología",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/tiene-83-anos-el-veterinario-que-lleva-mas-de-seis-decadas-con-la-ganaderia-y-fue-pionero-en-nid23112026/",
+   "fecha": "2026-11-24T02:17:58Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Nuevo dueño: un grupo argentino se quedó con una fábrica de quesos de un gigante francés que iba a cerrarla",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/nuevo-dueno-un-grupo-argentino-se-quedo-con-una-fabrica-de-quesos-de-un-gigante-frances-que-iba-a-nid23112026/",
+   "fecha": "2026-11-24T02:16:38Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El mercado pone a prueba a Caputo: el dato clave que puede definir el futuro del dólar",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/469817-el-mercado-pone-a-prueba-a-caputo-dato-clave-que-define-futuro-del-dolar",
+   "fecha": "2026-11-23T22:50:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "GTA VI: Argentina lidera ranking de países más caros",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/gta-viargentina-lidera-ranking-paises-mas-caros-n6348411",
+   "fecha": "2026-11-23T22:15:34Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Sin operaciones en el mercado local, el riesgo país cayó 30 puntos y las acciones argentinas volaron en Wall Street",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/23/sin-operaciones-en-el-mercado-local-el-riesgo-pais-cayo-30-puntos-y-las-acciones-argentinas-volaron-en-wall-street/",
+   "fecha": "2026-11-23T22:00:17Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Mercado Pago para menores de edad: cómo abrir una cuenta, requisitos y qué pueden hacer",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/469812-mercado-pago-para-menores-de-edad-como-abrir-una-cuenta-requisitos-y-que-pueden-hacer",
+   "fecha": "2026-11-23T21:41:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Cayó el riesgo país: Wall Street rebotó con fuerza y contagió a las acciones argentinas que cotizan en Nueva York",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/dolar/cae-el-riesgo-pais-wall-street-rebota-con-fuerza-y-contagia-a-las-acciones-argentinas-que-cotizan-en-nid23112026/",
+   "fecha": "2026-11-23T21:39:24Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Las acciones argentinas rebotaron hasta 10% y el riesgo país cayó 30 puntos básicos en un día de euforia en las bolsas",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/23/las-acciones-argentinas-rebotan-hasta-7-y-el-riesgo-pais-cae-50-puntos-basicos-en-un-dia-de-euforia-en-las-bolsas/",
+   "fecha": "2026-11-23T21:14:14Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Un funcionario de Caputo atribuyó la suba del riesgo país al contexto global y negó que el aumento del dólar impacte en la inflación",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/23/un-funcionario-de-caputo-atribuyo-la-suba-del-riesgo-pais-al-contexto-global-y-nego-que-el-aumento-del-dolar-impacte-en-la-inflacion/",
+   "fecha": "2026-11-23T21:14:09Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Las acciones de Nvidia rebotaron 32% después de que la compañía anunciara la restitución de Jensen Huang como CEO",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/23/las-acciones-de-nvidia-rebotan-30-despues-de-que-la-compania-anunciara-la-restitucion-de-jensen-huang-como-ceo/",
-   "fecha": "2026-11-23T20:25:11Z",
+   "fecha": "2026-11-23T21:04:28Z",
    "tema": "mercados"
   },
   {
@@ -88,24 +172,10 @@
    "tema": "dolar"
   },
   {
-   "titulo": "Tiene 83 años: el veterinario que lleva más de seis décadas con la ganadería y fue pionero en incorporar una revolucionaria tecnología",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/tiene-83-anos-el-veterinario-que-lleva-mas-de-seis-decadas-con-la-ganaderia-y-fue-pionero-en-nid23112026/",
-   "fecha": "2026-11-23T19:49:34Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "“Todo mientras el ‘Estado’ hacia fiestas en Olivos”: el fuerte mensaje de Galperin en contra del colectivismo",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/23/todo-mientras-el-estado-hacia-fiestas-en-olivos-el-fuerte-mensaje-de-galperin-en-contra-del-colectivismo/",
    "fecha": "2026-11-23T19:41:44Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Nuevo dueño: un grupo argentino se quedó con una fábrica de quesos de un gigante francés que iba a cerrarla",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/nuevo-dueno-un-grupo-argentino-se-quedo-con-una-fabrica-de-quesos-de-un-gigante-frances-que-iba-a-nid23112026/",
-   "fecha": "2026-11-23T19:34:43Z",
    "tema": "otros"
   },
   {
@@ -172,13 +242,6 @@
    "tema": "dolar"
   },
   {
-   "titulo": "Tiene 73 años: comenzó como piloto aéreo, compró una empresa de pulverizaciones y hoy maneja 20.000 hectáreas agrícolas",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/tiene-73-anos-comenzo-como-piloto-aereo-compro-una-empresa-de-pulverizaciones-y-hoy-maneja-20000-nid23112026/",
-   "fecha": "2026-11-23T17:58:41Z",
-   "tema": "empresas"
-  },
-  {
    "titulo": "Polémica por una nueva obligación que Kicillof impone a las empresas: de qué se trata y por qué la rechazan",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/23/polemica-por-una-nueva-obligacion-que-kicillof-impone-a-las-empresas-de-que-se-trata-y-por-que-la-rechazan/",
@@ -212,13 +275,6 @@
    "url": "https://www.lanacion.com.ar/economia/campo/historicamente-muy-bueno-esperan-que-la-agroindustria-aporte-otros-us6000-millones-hasta-fin-de-ano-nid23112026/",
    "fecha": "2026-11-23T17:02:29Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Las acciones argentinas rebotan hasta 6% y el riesgo país cae 30 puntos básicos en un día de euforia en las bolsas",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/23/las-acciones-argentinas-rebotan-hasta-7-y-el-riesgo-pais-cae-50-puntos-basicos-en-un-dia-de-euforia-en-las-bolsas/",
-   "fecha": "2026-11-23T16:54:58Z",
-   "tema": "mercados"
   },
   {
    "titulo": "Quiebra de SanCor: tres empresas quieren producir en sus plantas mientras se define quién se queda con la histórica láctea",
@@ -268,13 +324,6 @@
    "url": "https://www.infobae.com/economia/2026/11/23/el-indec-dara-manana-el-dato-que-determinara-si-la-economia-entro-en-recesion-tecnica/",
    "fecha": "2026-11-23T15:46:01Z",
    "tema": "inflacion"
-  },
-  {
-   "titulo": "Cae el riesgo país: Wall Street rebota con fuerza y contagia a las acciones argentinas que cotizan en Nueva York",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/dolar/cae-el-riesgo-pais-wall-street-rebota-con-fuerza-y-contagia-a-las-acciones-argentinas-que-cotizan-en-nid23112026/",
-   "fecha": "2026-11-23T15:39:49Z",
-   "tema": "mercados"
   },
   {
    "titulo": "Gigante de Wall Street prevé otro año de estancamiento y alerta por el dólar en 2027",
@@ -424,32 +473,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "Inflación de noviembre: los últimos relevamientos arrojaron buenos datos, pero hay dudas por la suba del dólar",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/23/inflacion-de-noviembre-los-ultimos-relevamientos-arrojaron-buenos-datos-pero-hay-dudas-por-la-suba-del-dolar/",
-   "fecha": "2026-11-23T03:53:36Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "Software argentino: se estanca el empleo y la industria busca clientes en medio del avance de la inteligencia artificial",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/23/software-argentino-se-estanca-el-empleo-y-la-industria-busca-clientes-en-medio-del-avance-de-la-inteligencia-artificial/",
-   "fecha": "2026-11-23T03:53:30Z",
-   "tema": "actividad"
-  },
-  {
    "titulo": "Anthropic no revivió el fervor por la IA y le dio el empujón a una corrección de la Bolsa",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/anthropic-no-revivio-el-fervor-la-ia-y-le-dio-el-empujon-una-correccion-la-bolsa-n6348112",
    "fecha": "2026-11-23T03:00:00Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "De la Confederación Diaguita-Calchaquí: Chalimín, el líder indígena que defendió la tierra y la libertad",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/de-la-confederacion-diaguita-calchaqui-chalimin-el-lider-indigena-que-defendio-la-tierra-y-la-nid22112026/",
-   "fecha": "2026-11-23T02:25:17Z",
-   "tema": "otros"
   },
   {
    "titulo": "Financial Times duda de la economía argentina: riesgo país, financiamiento e imagen Milei",
@@ -501,13 +529,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Fuerte interés por SanCor: tres empresas quieren producir en plantas de la icónica láctea en quiebra",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/fuerte-interes-por-sancor-tres-empresas-quieren-producir-en-plantas-de-la-iconica-lactea-en-quiebra-nid21112026/",
-   "fecha": "2026-11-22T16:59:54Z",
-   "tema": "empresas"
-  },
-  {
    "titulo": "Las tarjetas de crédito dominan las compras en supermercados: representan el 43% de las ventas",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/las-tarjetas-credito-dominan-las-compras-supermercados-representan-el-43-las-ventas-n6348084",
@@ -548,55 +569,6 @@
    "url": "https://www.iprofesional.com/economia/469392-con-brasil-baratisimo-alertan-que-se-iran-millones-de-dolares-por-turismo",
    "fecha": "2026-11-22T09:30:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Gustavo Neffa: \"Es posible un dólar mayorista a $1.700 en diciembre, las cosas cambiaron\"",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/gustavo-neffa-es-posible-un-dolar-mayorista-1700-diciembre-las-cosas-cambiaron-n6347925",
-   "fecha": "2026-11-22T03:00:00Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "La presión del \"efecto caipirinha\" y el salto del riesgo país profundizan una disyuntiva clave para el Gobierno",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/la-presion-del-efecto-caipirinha-y-el-salto-del-riesgo-pais-profundizan-una-disyuntiva-clave-el-gobierno-n6347884",
-   "fecha": "2026-11-22T03:00:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "El consumo masivo subió por primera vez en el año, impulsado por el e-commerce",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/actualidad/469740-el-consumo-masivo-subio-por-primera-vez-en-el-ano-impulsado-por-el-e-commerce",
-   "fecha": "2026-11-21T23:43:00Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Dato positivo para el Gobierno: se desacelera la inflación en alimentos",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/dato-positivo-el-gobierno-se-desacelera-la-inflacion-alimentos-n6347967",
-   "fecha": "2026-11-21T23:20:00Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "Caución vs. plazo fijo: qué rinde más hoy, cuánto deja cada uno y dónde conviene poner los pesos",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/caucion-vs-plazo-fijo-que-rinde-mas-hoy-cuanto-deja-cada-uno-y-donde-conviene-poner-los-pesos-n6347341",
-   "fecha": "2026-11-21T23:00:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Se revierte tendencia y crece el consumo masivo con fuerte impacto del ecommerce",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/se-revierte-tendencia-y-crece-el-consumo-masivo-fuerte-impacto-del-ecommerce-n6347962",
-   "fecha": "2026-11-21T22:30:00Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Por qué Wall Street está recortando su apuesta por grandes acciones argentinas",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/469373-por-que-wall-street-recorta-su-apuesta-por-acciones-argentinas",
-   "fecha": "2026-11-21T21:30:00Z",
-   "tema": "mercados"
   }
  ]
 }
