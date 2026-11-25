@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-24T19:46:57.055733Z",
+ "actualizado": "2026-11-25T03:13:59.490382Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -60,6 +60,265 @@
  ],
  "items": [
   {
+   "titulo": "Récord histórico de la carne vacuna: las exportaciones aportaron US$4316,6 millones y marcaron un hito para el país",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/historico-llegaron-us43166-millones-con-las-exportaciones-de-carne-vacuna-un-valor-record-nid24112026/",
+   "fecha": "2026-11-25T02:42:43Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Comenzaron sin oficinas, con dos camionetas que debían y acaban de inaugurar una fábrica de US$1,5 millones",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/comenzaron-sin-oficinas-con-dos-camionetas-que-debian-y-acaban-de-inaugurar-una-fabrica-de-us15-nid24112026/",
+   "fecha": "2026-11-25T02:39:52Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La economía en recesión: cuánto tiempo puede durar y qué hay detrás de la caída de la actividad",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/la-recesion-cuanto-tiempo-puede-durar-y-que-hay-detras-la-caida-la-actividad-n6348954",
+   "fecha": "2026-11-25T00:15:00Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Federico Furiase relativizó la caída trimestral de la economía y negó una recesión",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/lnmas/furiase-relativizo-la-caida-trimestral-de-la-economia-y-nego-una-recesion-nid24112026/",
+   "fecha": "2026-11-25T00:03:21Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Sturzenegger disparó contra la \"casta naviera pesquera\" y el sector le respondió",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/469944-sturzenegger-disparo-contra-la-casta-naviera-pesquera-y-el-sector-le-respondio",
+   "fecha": "2026-11-24T23:32:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Cuáles son los factores que impulsaron al dólar a un nuevo récord",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/469946-cuales-son-los-factores-que-impulsaron-al-dolar-a-un-nuevo-record",
+   "fecha": "2026-11-24T23:27:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Recesión técnica: qué dijo el Gobierno tras el dato que dejó a la economía con dos trimestres consecutivos de caída",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/24/recesion-tecnica-que-dijo-el-gobierno-tras-el-dato-que-dejo-a-la-economia-con-dos-trimestres-consecutivos-de-caida/",
+   "fecha": "2026-11-24T23:24:41Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "El economista Luis Secco cuestionó el programa económico de Milei: “Estamos estancados desde fines del primer trimestre de 2025″",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/24/el-economista-luis-secco-cuestiono-el-programa-economico-de-milei-estamos-estancados-desde-fines-del-primer-trimestre-de-2025/",
+   "fecha": "2026-11-24T23:05:13Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Vacunos: comenzó la semana con subas en el Mercado Agroganadero de Cañuelas",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/vacunos-comenzo-la-semana-con-subas-en-el-mercado-agroganadero-de-canuelas-nid24112026/",
+   "fecha": "2026-11-24T22:45:21Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La economía argentina entró en recesión técnica: qué factores explican la caída de la actividad",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/24/la-economia-argentina-entro-en-recesion-tecnica-que-factores-explican-la-caida-de-la-actividad/",
+   "fecha": "2026-11-24T22:25:43Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "Biocombustibles: venció el plazo para dictaminar y la pelea por el biodiésel sigue trabada en Diputados",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/biocombustibles-vencio-el-plazo-para-dictaminar-y-la-pelea-por-el-biodiesel-sigue-trabada-en-nid24112026/",
+   "fecha": "2026-11-24T22:25:01Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El riesgo país rozó los 1.100 puntos, cayeron las acciones argentinas y el dólar superó los $1.600",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/24/el-riesgo-pais-rozo-los-1100-puntos-cayeron-las-acciones-argentinas-y-el-dolar-supero-los-1600/",
+   "fecha": "2026-11-24T22:06:43Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Corto plazo y cobertura cambiaria: la receta de Caputo para tratar de refinanciar $25 billones",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/corto-plazo-y-cobertura-cambiaria-la-receta-de-caputo-para-tratar-de-refinanciar-25-billones-nid24112026/",
+   "fecha": "2026-11-24T22:06:39Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Los efectos de la suba del dólar en la Argentina y en Brasil: uno por uno, los principales impactos",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/los-efectos-de-la-suba-del-dolar-en-la-argentina-y-en-brasil-uno-por-uno-los-principales-impactos-nid24112026/",
+   "fecha": "2026-11-24T21:45:06Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "La economía entró en recesión técnica: sumó dos trimestres seguidos de caída pese a crecer 1,1% mensual en septiembre",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/la-economia-entro-recesion-tecnica-sumo-dos-trimestres-seguidos-caida-pese-crecer-11-mensual-septiembre-n6348824",
+   "fecha": "2026-11-24T21:37:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Tiene 73 años: comenzó como piloto aéreo, compró una empresa de pulverizaciones y hoy maneja 20.000 hectáreas agrícolas",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/tiene-73-anos-comenzo-como-piloto-aereo-compro-una-empresa-de-pulverizaciones-y-hoy-maneja-20000-nid23112026/",
+   "fecha": "2026-11-24T21:33:42Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Comienza a volar a Argentina la aerolínea israelí El Al: la ruta une por primera vez a ambos países de forma directa",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/24/comienza-a-volar-a-argentina-la-aerolinea-israeli-el-al-la-ruta-une-por-primera-vez-a-ambos-paises-de-forma-directa/",
+   "fecha": "2026-11-24T21:32:36Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Nueva manera para cobrar el reintegro en la compra de gas en garrafa",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/actualidad/469926-nueva-manera-para-cobrar-el-reintegro-en-la-compra-de-gas-en-garrafa",
+   "fecha": "2026-11-24T21:32:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Caputo jugó fuerte y logró achicar la brecha entre el dólar oficial y el que usan empresas",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/469924-caputo-jugo-fuerte-y-logro-achicar-la-brecha-entre-el-dolar-oficial-y-el-que-usan-empresas",
+   "fecha": "2026-11-24T21:25:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Volvieron a caer los bonos argentinos y el riesgo país regresó a la zona de los 1.100 puntos básicos",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/24/vuelven-a-caer-los-bonos-argentinos-y-el-riesgo-pais-toca-su-nivel-mas-alto-del-ano/",
+   "fecha": "2026-11-24T21:18:38Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Las exportaciones de maíz aumentaron 41% en el año y superaran a las de Brasil",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/24/las-exportaciones-de-maiz-aumentaron-41-en-el-ano-y-superaran-a-las-de-brasil/",
+   "fecha": "2026-11-24T21:16:37Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Las acciones argentinas retomaron las pérdidas, contagiadas por las ventas de Wall Street",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/24/las-acciones-argentinas-retoman-las-perdidas-contagiadas-por-las-ventas-de-wall-street/",
+   "fecha": "2026-11-24T21:13:24Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Un proyecto que obliga a anunciar con antelación las subas en surtidores enfrenta a Massa con las petroleras",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/un-proyecto-que-obliga-a-anunciar-las-subas-en-surtidores-tres-dias-antes-enfrenta-a-massa-con-las-nid24112026/",
+   "fecha": "2026-11-24T21:10:43Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Dólar: qué prevé la City hasta fin de año tras el récord que anotó en una jornada caliente",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/469922-el-dolar-anoto-un-nuevo-record-y-la-city-anticipa-que-puede-pasar-rumbo-a-fin-de-ano",
+   "fecha": "2026-11-24T21:05:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Libre de deforestación: Santa Fe busca que los frigoríficos exportadores acepten un certificado y no exijan solo Visec",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/libre-de-deforestacion-santa-fe-busca-que-los-frigorificos-exportadores-acepten-un-certificado-y-no-nid24112026/",
+   "fecha": "2026-11-24T21:04:21Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Qué es la recesión técnica en la que quedó la economía argentina en el tercer trimestre",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/que-es-la-recesion-tecnica-en-la-que-quedo-la-economia-argentina-en-el-tercer-trimestre-nid24112026/",
+   "fecha": "2026-11-24T21:03:35Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Las billeteras digitales suman una nueva función para asegurar el reintegro de subsidios",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/energia/469917-billeteras-digitales-suman-funciones-para-asegurar-el-pago-de-subsidios",
+   "fecha": "2026-11-24T20:55:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El dólar minorista superó por primera vez los $1.600 y el financiero traspasó los $1.800",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/469880-el-dolar-minorista-supero-por-primera-vez-los-1600-y-el-financiero-traspaso-los-1800",
+   "fecha": "2026-11-24T20:50:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Dólar hoy y dólar blue, EN VIVO: a cuánto cotizan el oficial y el paralelo este martes 24 de noviembre, minuto a minuto",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/dolar/dolar-hoy-y-dolar-blue-en-vivo-a-cuanto-cotizan-el-oficial-y-el-paralelo-este-martes-24-de-noviembre-nid24112026/",
+   "fecha": "2026-11-24T20:47:47Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "CyberMonday 2026: las ventas online de artículos de primera necesidad crecieron un 50% y cayeron las de bienes durables",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/24/cybermonday-2026-las-ventas-online-de-articulos-de-primera-necesidad-crecieron-un-50-y-cayeron-las-de-bienes-durables/",
+   "fecha": "2026-11-24T20:44:15Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "El BCRA sumó otra rueda sin comprar dólares y las reservas cayeron más de u$s600 millones",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/469913-el-bcra-sumo-otra-rueda-sin-comprar-dolares-y-las-reservas-cayeron-mas-de-600-millones",
+   "fecha": "2026-11-24T20:06:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Plazo fijo en dólares: ¿cuánto se gana al invertir u$s750?",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/plazo-fijo-dolares-cuanto-se-gana-al-invertir-us750-n6348631",
+   "fecha": "2026-11-24T20:00:00Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Cuál es la diferencia entre una recesión “técnica” y una caída generalizada de la economía",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/24/cual-es-la-diferencia-entre-una-recesion-tecnica-y-una-caida-generalizada-de-la-economia/",
+   "fecha": "2026-11-24T19:59:15Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La fuerte apuesta de Air Europa por Argentina, el crecimiento regional y los desafíos de la compañía que celebra 40 años",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/la-fuerte-apuesta-de-air-europa-por-argentina-el-crecimiento-regional-y-los-desafios-de-la-compania-nid24112026/",
+   "fecha": "2026-11-24T19:55:31Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "La actividad económica registró dos trimestres de caída y Argentina entró en recesión",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/24/la-actividad-economica-registro-dos-trimestres-de-caida-y-argentina-entro-en-recesion/",
+   "fecha": "2026-11-24T19:48:21Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "El dólar superó por primera vez los $1.600 en el Banco Nación y alcanzó precios récord en todos los segmentos",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/24/el-dolar-supera-los-1600-en-el-banco-nacion-y-alcanza-precios-record-en-todos-los-segmentos/",
+   "fecha": "2026-11-24T19:48:20Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "YPF presentó un nuevo RIGI por US$11.688 millones para producir petróleo en Vaca Muerta",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/ypf-presento-un-nuevo-rigi-por-us11688-millones-para-producir-petroleo-en-vaca-muerta-nid24112026/",
+   "fecha": "2026-11-24T19:47:35Z",
+   "tema": "empresas"
+  },
+  {
    "titulo": "El dólar superó los $1600 y el riesgo país se acercó los 1100 puntos",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/dolar/el-dolar-vuelve-a-subir-y-supera-los-1600-nid24112026/",
@@ -67,25 +326,11 @@
    "tema": "dolar"
   },
   {
-   "titulo": "YPF presentó un nuevo RIGI por US$11.688 millones para producir petróleo en Vaca Muerta",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/ypf-presento-un-nuevo-rigi-por-us11688-millones-para-producir-petroleo-en-vaca-muerta-nid24112026/",
-   "fecha": "2026-11-24T19:39:41Z",
-   "tema": "empresas"
-  },
-  {
    "titulo": "Cinco razones por las que la economía entró en recesión",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/cinco-razones-de-por-que-la-economia-podria-entrar-en-recesion-nid24112026/",
    "fecha": "2026-11-24T19:37:06Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "La actividad económica registró dos trimestres de caída y Argentina entró en recesión",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/24/la-actividad-economica-registro-dos-trimestres-de-caida-y-argentina-entro-en-recesion/",
-   "fecha": "2026-11-24T19:36:28Z",
-   "tema": "actividad"
   },
   {
    "titulo": "Narambuena: cómo es el proyecto para desarrollar el norte de Vaca Muerta por el que YPF presentó un nuevo RIGI",
@@ -102,25 +347,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "Qué es la recesión técnica en la que quedó la economía argentina en el tercer trimestre",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/que-es-la-recesion-tecnica-en-la-que-quedo-la-economia-argentina-en-el-tercer-trimestre-nid24112026/",
-   "fecha": "2026-11-24T19:22:35Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Dólar hoy y dólar blue, EN VIVO: a cuánto cotizan el oficial y el paralelo este martes 24 de noviembre, minuto a minuto",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/dolar/dolar-hoy-y-dolar-blue-en-vivo-a-cuanto-cotizan-el-oficial-y-el-paralelo-este-martes-24-de-noviembre-nid24112026/",
-   "fecha": "2026-11-24T19:21:00Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "La economía entró en recesión técnica: sumó dos trimestres seguidos de caída pese a crecer 1,1% mensual en septiembre",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/la-economia-entro-recesion-tecnica-sumo-dos-trimestres-seguidos-caida-pese-crecer-11-mensual-septiembre-n6348824",
-   "fecha": "2026-11-24T19:17:00Z",
-   "tema": "otros"
+   "titulo": "El mensaje de Caputo tras el dato del EMAE que confirmó que la economía entró en recesión",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/economia/469907-el-mensaje-de-caputo-tras-el-dato-del-emae-que-confirmo-que-la-economia-entro-en-recesion",
+   "fecha": "2026-11-24T19:22:00Z",
+   "tema": "politica"
   },
   {
    "titulo": "Qué significa que la economía de Argentina entre en recesión técnica",
@@ -165,25 +396,11 @@
    "tema": "dolar"
   },
   {
-   "titulo": "El dólar superó por primera vez los $1.600 en el Banco Nación y alcanzó precios récord en todos los segmentos",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/24/el-dolar-supera-los-1600-en-el-banco-nacion-y-alcanza-precios-record-en-todos-los-segmentos/",
-   "fecha": "2026-11-24T18:36:23Z",
-   "tema": "dolar"
-  },
-  {
    "titulo": "YPF pidió un nuevo RIGI por u$s11.688 millones para Vaca Muerta",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/energia/469901-ypf-pidio-con-chevron-un-nuevo-rigi-por-us11-688-millones-para-un-bloque-vaca-muerta",
    "fecha": "2026-11-24T18:35:00Z",
    "tema": "empresas"
-  },
-  {
-   "titulo": "El dólar minorista superó por primera vez los $1.600 y el financiero traspasó los $1.800",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/469880-el-dolar-minorista-supero-por-primera-vez-los-1600-y-el-financiero-traspaso-los-1800",
-   "fecha": "2026-11-24T18:20:00Z",
-   "tema": "dolar"
   },
   {
    "titulo": "Por qué la devaluación en Brasil abarata las vacaciones 2027 y preocupa en el turismo argentino",
@@ -298,39 +515,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "Las acciones argentinas retoman las pérdidas, contagiadas por las ventas de Wall Street",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/24/las-acciones-argentinas-retoman-las-perdidas-contagiadas-por-las-ventas-de-wall-street/",
-   "fecha": "2026-11-24T16:29:29Z",
-   "tema": "mercados"
-  },
-  {
    "titulo": "Presupuesto 2026: una mayor inflación a la prevista obligó al Gobierno a recalcular mayores gastos e ingresos",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/presupuesto-2026-una-mayor-inflacion-la-prevista-obligo-al-gobierno-recalcular-mayores-gastos-e-ingresos-n6348548",
    "fecha": "2026-11-24T16:13:00Z",
    "tema": "inflacion"
-  },
-  {
-   "titulo": "Federico Sturzenegger habló de una “casta naviera pesquera” y en el sector le respondieron: “Innecesario ataque”",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/federico-sturzenegger-hablo-de-una-casta-naviera-pesquera-y-en-el-sector-le-respondieron-innecesario-nid24112026/",
-   "fecha": "2026-11-24T16:12:34Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Vuelven a caer los bonos argentinos y el riesgo país supera los 1.100 puntos básicos",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/24/vuelven-a-caer-los-bonos-argentinos-y-el-riesgo-pais-toca-su-nivel-mas-alto-del-ano/",
-   "fecha": "2026-11-24T16:11:42Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Retenciones: otro fallo judicial pone en discusión quién puede decidir cuánto paga el campo",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/campo/retenciones-otro-fallo-judicial-pone-en-discusion-quien-puede-decidir-cuanto-paga-el-campo-nid24112026/",
-   "fecha": "2026-11-24T15:54:42Z",
-   "tema": "politica"
   },
   {
    "titulo": "Brasil profundiza el ajuste fiscal: el Congreso aprobó un paquete de recortes y Lula prepara nuevas medidas",
@@ -347,32 +536,11 @@
    "tema": "empresas"
   },
   {
-   "titulo": "Prevén volatilidad: Moody’s ve una mejora en la calidad crediticia de las empresas argentinas, pero advierte sobre las elecciones",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/preven-volatilidad-moodys-ve-una-mejora-en-la-calidad-crediticia-de-las-empresas-argentinas-pero-nid24112026/",
-   "fecha": "2026-11-24T15:26:16Z",
-   "tema": "empresas"
-  },
-  {
    "titulo": "Petroleras y estaciones en alerta por proyecto de ley bonaerense sobre precios",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/energia/469871-petroleras-en-alerta-por-proyecto-bonaerense-sobre-precios-de-naftas",
    "fecha": "2026-11-24T15:25:00Z",
    "tema": "inflacion"
-  },
-  {
-   "titulo": "El GTA 6 rompió todos los récords de ventas y usuarios, pero los accionistas no están convencidos",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/tecnologia/el-gta-6-rompio-todos-los-records-de-ventas-y-usuarios-pero-los-accionistas-no-estan-convencidos-nid24112026/",
-   "fecha": "2026-11-24T15:12:49Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Un investigador de Anthropic advierte que la IA podría volver “inempleables” a los humanos en cuestión de meses",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/IA/un-investigador-de-anthropic-advierte-que-la-ia-podria-volver-inempleables-a-los-humanos-en-cuestion-nid24112026/",
-   "fecha": "2026-11-24T15:03:32Z",
-   "tema": "otros"
   },
   {
    "titulo": "Enrique Szewach: “Es difícil que en un año electoral las políticas generen algún cambio”",
@@ -382,32 +550,11 @@
    "tema": "dolar"
   },
   {
-   "titulo": "Kaszek levanta US$650 millones y redobla su apuesta por las startups de la región",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/negocios/kaszek-levanta-us650-millones-y-redobla-su-apuesta-por-las-startups-de-la-region-nid24112026/",
-   "fecha": "2026-11-24T15:00:41Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "La UE pone topes a la importación de autos híbridos de China y otros países",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/la-ue-pone-topes-la-importacion-autos-hibridos-china-y-otros-paises-n6348634",
    "fecha": "2026-11-24T14:58:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "De Buenos Aires a Nueva York y Dubái: el título que parecía atarlos a la Argentina y terminó abriéndoles las puertas del mundo",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/negocios/de-buenos-aires-a-nueva-york-y-dubai-el-titulo-que-parecia-atarlos-a-la-argentina-y-termino-nid24112026/",
-   "fecha": "2026-11-24T14:31:08Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Plazo fijo: cuál es la tasa de interés banco por banco este martes 24 de noviembre",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/plazo-fijo-cual-es-la-tasa-de-interes-banco-por-banco-este-martes-24-de-noviembre-nid24112026/",
-   "fecha": "2026-11-24T14:19:01Z",
-   "tema": "mercados"
   },
   {
    "titulo": "Plazo fijo: cuánto pagan los principales bancos por depósitos de $200.000",
@@ -417,32 +564,11 @@
    "tema": "mercados"
   },
   {
-   "titulo": "“Pagos con ojos, cara y dedos”: un experto anticipa qué se viene en la industria de los pagos digitales en la Argentina",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/tecnologia/pagos-con-ojos-cara-y-dedos-un-experto-anticipa-que-se-viene-en-una-industria-en-la-argentina-nid24112026/",
-   "fecha": "2026-11-24T14:09:48Z",
-   "tema": "actividad"
-  },
-  {
    "titulo": "Histórica fábrica de quesos no cierra: mantiene la producción y los puestos de trabajo",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/469854-historica-fabrica-de-quesos-no-cierra-mantiene-la-produccion-y-los-puestos-de-trabajo",
    "fecha": "2026-11-24T14:05:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Lanzan un “súper robot” que entrenará a otros robots para controlarlos",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/tecnologia/lanzan-un-super-robot-que-entrenara-a-otros-robots-para-controlarlos-nid18112026/",
-   "fecha": "2026-11-24T13:58:13Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "De Steve Jobs a Sam Altman: los CEO que se fueron de sus empresas y volvieron",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/negocios/de-steve-jobs-a-sam-altman-los-ceo-que-se-fueron-de-sus-empresas-y-volvieron-nid23112026/",
-   "fecha": "2026-11-24T13:25:23Z",
-   "tema": "empresas"
   },
   {
    "titulo": "Nvidia: volvió su CEO, pero crecen las dudas sobre sus cuentas y el negocio de IA",
@@ -464,13 +590,6 @@
    "url": "https://www.infobae.com/economia/2026/11/24/el-gobierno-aseguro-que-la-desregulacion-abarato-un-15-los-productos-de-supermercado-que-dice-el-estudio-que-lo-respalda/",
    "fecha": "2026-11-24T13:10:30Z",
    "tema": "inflacion"
-  },
-  {
-   "titulo": "El real y el peso argentino fueron las monedas más depreciadas en el último mes: cuánto perdieron frente al dólar",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/24/el-real-y-el-peso-argentino-fueron-las-monedas-mas-depreciadas-en-el-ultimo-mes-cuanto-perdieron-frente-al-dolar/",
-   "fecha": "2026-11-24T12:45:35Z",
-   "tema": "dolar"
   },
   {
    "titulo": "Dónde queda y cuánto cuesta ir a la casita de Papá Noel desde la Argentina",
@@ -501,31 +620,10 @@
    "tema": "inflacion"
   },
   {
-   "titulo": "Lo que un millón de jóvenes vino a decirnos en Palermo",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/opinion/2026/11/24/lo-que-un-millon-de-jovenes-vino-a-decirnos-en-palermo/",
-   "fecha": "2026-11-24T11:58:33Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "El BID aprobó un préstamo de u$s400 millones a la Argentina para reforzar la enseñanza de matemática",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/el-bid-aprobo-un-prestamo-us400-millones-la-argentina-reforzar-la-ensenanza-matematica-n6348499",
    "fecha": "2026-11-24T11:43:28Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "¿Mantener un auto propio o viajar en apps de movilidad?: cuál de las dos opciones es más económica",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/24/mantener-un-auto-propio-o-viajar-en-apps-de-movilidad-cual-de-las-dos-opciones-es-mas-economica/",
-   "fecha": "2026-11-24T11:42:09Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Cuánto costaría el boleto mínimo de colectivo en Buenos Aires si no existieran los subsidios",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/24/cuanto-costaria-el-boleto-minimo-de-colectivo-en-buenos-aires-si-no-existieran-los-subsidios/",
-   "fecha": "2026-11-24T11:41:26Z",
    "tema": "otros"
   },
   {
@@ -536,67 +634,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "El gobierno chino extendió hasta el 27 de enero la suspensión del veto a minerales críticos destinados a Estados Unidos",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/america/mundo/2026/11/24/el-gobierno-chino-extendio-hasta-el-27-de-enero-la-suspension-del-veto-a-minerales-criticos-destinados-a-estados-unidos/",
-   "fecha": "2026-11-24T11:06:38Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "Recesión técnica: el dato del INDEC que puede confirmar dos trimestres de caída económica",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/469831-economia-argentina-recesion-tecnica-indec",
    "fecha": "2026-11-24T10:28:00Z",
    "tema": "inflacion"
-  },
-  {
-   "titulo": "El regreso de Huang trae un respiro al sector de la IA, pero persisten dudas",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/estados-unidos/2026/11/24/el-regreso-de-huang-trae-un-respiro-al-sector-de-la-ia-pero-persisten-dudas/",
-   "fecha": "2026-11-24T10:20:06Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Aguinaldo de diciembre y cuánto cobran rubros clave como comercio y empleadas domésticas",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/management/469659-aguinaldo-de-diciembre-cuanto-cobran-rubros-clave-como-comercio-y-empleadas-domesticas",
-   "fecha": "2026-11-24T10:19:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "La UTA se reúne con las empresas y podría anunciar un paro de colectivos si no hay acuerdo salarial",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/469825-paritaria-de-la-uta-se-viene-un-paro-de-choferes-de-colectivos",
-   "fecha": "2026-11-24T10:10:00Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "La City advierte por la nueva dinámica que puede tomar el riesgo país por las elecciones",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/469820-la-nueva-dinamica-que-podria-tomar-el-riesgo-pais-por-las-elecciones",
-   "fecha": "2026-11-24T09:55:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "Quiénes cobran ANSES hoy, 24 de noviembre de 2026",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/24/quienes-cobran-anses-hoy-24-de-noviembre-de-2026/",
-   "fecha": "2026-11-24T09:00:01Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "¿El dólar empieza a inquietar?: el mercado vuelve a cubrirse ante una eventual suba a menos de un año de las elecciones",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/24/el-dolar-empieza-a-inquietar-el-mercado-vuelve-a-cubrirse-ante-una-eventual-suba-a-un-menos-de-un-ano-de-las-elecciones/",
-   "fecha": "2026-11-24T08:18:22Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "Empleadas domésticas: los pagos que deben afrontar los empleadores en lo que queda de 2026",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/469774-empleadas-domesticas-que-pagos-y-obligaciones-deben-cumplir-empleadores-2026",
-   "fecha": "2026-11-24T03:01:00Z",
-   "tema": "otros"
   },
   {
    "titulo": "GTA VI: Argentina lidera ranking de países más caros",
@@ -606,39 +648,11 @@
    "tema": "otros"
   },
   {
-   "titulo": "El mercado pone a prueba a Caputo: el dato clave que puede definir el futuro del dólar",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/469817-el-mercado-pone-a-prueba-a-caputo-dato-clave-que-define-futuro-del-dolar",
-   "fecha": "2026-11-23T22:50:00Z",
-   "tema": "dolar"
-  },
-  {
-   "titulo": "Mercado Pago para menores de edad: cómo abrir una cuenta, requisitos y qué pueden hacer",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/469812-mercado-pago-para-menores-de-edad-como-abrir-una-cuenta-requisitos-y-que-pueden-hacer",
-   "fecha": "2026-11-23T21:41:00Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "La confianza en el Gobierno subió 4,1% en noviembre, pero sigue 17,5% por debajo de 2025",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/la-confianza-el-gobierno-subio-41-noviembre-pero-sigue-175-debajo-2025-n6348351",
    "fecha": "2026-11-23T18:37:00Z",
    "tema": "politica"
-  },
-  {
-   "titulo": "\"Me tienes que prometer algo\": el pedido de Trump a Huang antes de su regreso a Nvidia",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/actualidad/469804-me-tienes-que-prometer-algo-el-pedido-de-trump-a-huang-antes-de-su-regreso-a-nvidia",
-   "fecha": "2026-11-23T18:30:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Dólar sube casi 20% en menos de 1 mes en Brasil y mete presión al plan económico de Caputo",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/469716-el-dolar-subio-20-por-ciento-en-menos-de-un-mes-en-brasil-y-mete-presion-a-caputo",
-   "fecha": "2026-11-23T18:00:00Z",
-   "tema": "dolar"
   },
   {
    "titulo": "El fin de semana largo movilizó $332.557 millones, pero cayó el gasto turístico y hubo menos viajeros",
@@ -653,20 +667,6 @@
    "url": "https://www.ambito.com/economia/plazo-fijo-cuanto-se-obtiene-al-colocar-1500000-un-mes-n6347694",
    "fecha": "2026-11-23T16:00:00Z",
    "tema": "mercados"
-  },
-  {
-   "titulo": "Anthropic no revivió el fervor por la IA y le dio el empujón a una corrección de la Bolsa",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/anthropic-no-revivio-el-fervor-la-ia-y-le-dio-el-empujon-una-correccion-la-bolsa-n6348112",
-   "fecha": "2026-11-23T03:00:00Z",
-   "tema": "mercados"
-  },
-  {
-   "titulo": "CABA tiene una carga tributaria menor que el resto del país: cuánto impacta en los precios",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/caba-tiene-una-carga-tributaria-menor-que-el-resto-del-pais-cuanto-impacta-los-precios-n6348123",
-   "fecha": "2026-11-22T22:34:25Z",
-   "tema": "inflacion"
   }
  ]
 }
