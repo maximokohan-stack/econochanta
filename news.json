@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-25T03:13:59.490382Z",
+ "actualizado": "2026-11-25T07:49:39.444499Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -60,10 +60,66 @@
  ],
  "items": [
   {
+   "titulo": "La economía creció 1,1% en septiembre y estiman que cayó en recesión técnica",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/la-economia-crecio-11-en-septiembre-y-estiman-que-cayo-en-recesion-nid24112026/",
+   "fecha": "2026-11-25T06:41:59Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Cinco razones por las que la economía entró en recesión",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/cinco-razones-de-por-que-la-economia-podria-entrar-en-recesion-nid24112026/",
+   "fecha": "2026-11-25T05:27:45Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La recesión sería de corta duración, pero tampoco hay garantías de un repunte sostenido",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/25/la-recesion-seria-de-corta-duracion-pero-tampoco-hay-garantias-de-un-repunte-sostenido/",
+   "fecha": "2026-11-25T04:49:57Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Economía en recesión: qué anticipan los datos de octubre y cómo cerraría el año",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/25/economia-en-recesion-que-anticipan-los-datos-de-octubre-y-como-cerraria-el-ano/",
+   "fecha": "2026-11-25T04:49:40Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Autos híbridos y eléctricos: por qué los planes de una sola automotriz marcarán el ritmo del mercado en 2027",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/25/autos-hibridos-y-electricos-por-que-los-planes-de-una-sola-automotriz-marcaran-el-ritmo-del-mercado-en-2027/",
+   "fecha": "2026-11-25T04:49:23Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El riesgo país se acerca a los 1.100 puntos: la Argentina paga caro la falta de reservas y el riesgo electoral",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/25/el-riesgo-pais-se-acerca-a-los-1100-puntos-la-argentina-paga-caro-la-falta-de-reservas-y-el-riesgo-electoral/",
+   "fecha": "2026-11-25T04:48:55Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Un grupo local compró la planta láctea que una multinacional francesa iba a cerrar: qué pasará con los 54 empleados",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/25/un-grupo-local-compro-la-planta-lactea-que-una-multinacional-francesa-iba-a-cerrar-que-pasara-con-los-54-empleados/",
+   "fecha": "2026-11-25T04:48:35Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Cierre de empresas: el Gobierno defendió sus cifras y afirmó que la tasa fue menor que con Cristina Kirchner y Mauricio Macri",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/25/cierre-de-empresas-el-gobierno-defendio-sus-cifras-y-afirmo-que-la-tasa-fue-menor-que-con-cristina-kirchner-y-mauricio-macri/",
+   "fecha": "2026-11-25T04:48:13Z",
+   "tema": "mercados"
+  },
+  {
    "titulo": "Récord histórico de la carne vacuna: las exportaciones aportaron US$4316,6 millones y marcaron un hito para el país",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/campo/historico-llegaron-us43166-millones-con-las-exportaciones-de-carne-vacuna-un-valor-record-nid24112026/",
-   "fecha": "2026-11-25T02:42:43Z",
+   "fecha": "2026-11-25T03:09:08Z",
    "tema": "empresas"
   },
   {
@@ -326,13 +382,6 @@
    "tema": "dolar"
   },
   {
-   "titulo": "Cinco razones por las que la economía entró en recesión",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/cinco-razones-de-por-que-la-economia-podria-entrar-en-recesion-nid24112026/",
-   "fecha": "2026-11-24T19:37:06Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Narambuena: cómo es el proyecto para desarrollar el norte de Vaca Muerta por el que YPF presentó un nuevo RIGI",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/24/narambuena-como-es-el-proyecto-para-desarrollar-el-norte-de-vaca-muerta-para-el-que-ypf-presento-un-nuevo-rigi/",
@@ -372,13 +421,6 @@
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/469893-la-economia-registro-dos-trimestres-consecutivos-en-caida-y-entro-en-recesion-tecnica",
    "fecha": "2026-11-24T19:07:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "La economía creció 1,1% en septiembre y estiman que cayó en recesión técnica",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/la-economia-crecio-11-en-septiembre-y-estiman-que-cayo-en-recesion-nid24112026/",
-   "fecha": "2026-11-24T19:05:19Z",
    "tema": "otros"
   },
   {
@@ -501,13 +543,6 @@
    "tema": "mercados"
   },
   {
-   "titulo": "Brasil redujo al 1,9% su previsión de crecimiento del PIB en 2026",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/america/america-latina/2026/11/24/brasil-redujo-al-19-su-prevision-de-crecimiento-del-pib-en-2026/",
-   "fecha": "2026-11-24T16:49:42Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Por qué crecen las estafas telefónicas, cuáles son los fraudes más frecuentes y cómo no caer en la trampa",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/tecnologia/por-que-crecen-las-estafas-telefonicas-cuales-son-los-fraudes-mas-frecuentes-y-como-no-caer-en-la-nid24112026/",
@@ -529,13 +564,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Las exportaciones agroindustriales superaron los USD 47.800 millones hasta octubre: cuáles fueron los productos ganadores",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/24/las-exportaciones-agroindustriales-superaron-los-usd-47800-millones-hasta-octubre-cuales-fueron-los-productos-ganadores/",
-   "fecha": "2026-11-24T15:39:16Z",
-   "tema": "empresas"
-  },
-  {
    "titulo": "Petroleras y estaciones en alerta por proyecto de ley bonaerense sobre precios",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/energia/469871-petroleras-en-alerta-por-proyecto-bonaerense-sobre-precios-de-naftas",
@@ -543,25 +571,11 @@
    "tema": "inflacion"
   },
   {
-   "titulo": "Enrique Szewach: “Es difícil que en un año electoral las políticas generen algún cambio”",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/24/enrique-szewach-es-dificil-que-en-un-ano-electoral-las-politicas-generen-algun-cambio/",
-   "fecha": "2026-11-24T15:01:40Z",
-   "tema": "dolar"
-  },
-  {
    "titulo": "La UE pone topes a la importación de autos híbridos de China y otros países",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/la-ue-pone-topes-la-importacion-autos-hibridos-china-y-otros-paises-n6348634",
    "fecha": "2026-11-24T14:58:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Plazo fijo: cuánto pagan los principales bancos por depósitos de $200.000",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/24/plazo-fijo-cuanto-pagan-los-principales-bancos-por-depositos-de-200000/",
-   "fecha": "2026-11-24T14:12:57Z",
-   "tema": "mercados"
   },
   {
    "titulo": "Histórica fábrica de quesos no cierra: mantiene la producción y los puestos de trabajo",
@@ -576,20 +590,6 @@
    "url": "https://www.iprofesional.com/finanzas/469846-volvio-el-ceo-de-nvidia-pero-hay-dudas-por-la-sec-y-el-negocio-de-ia",
    "fecha": "2026-11-24T13:15:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "De la Casa Blanca a California: cómo se gestó el retorno de Jensen Huang a Nvidia",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/estados-unidos/2026/11/24/de-la-casa-blanca-a-california-como-se-gesto-el-retorno-de-jensen-huang-a-nvidia/",
-   "fecha": "2026-11-24T13:11:23Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "El Gobierno aseguró que la desregulación abarató un 15% los productos de supermercado: qué dice el estudio que lo respalda",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/24/el-gobierno-aseguro-que-la-desregulacion-abarato-un-15-los-productos-de-supermercado-que-dice-el-estudio-que-lo-respalda/",
-   "fecha": "2026-11-24T13:10:30Z",
-   "tema": "inflacion"
   },
   {
    "titulo": "Dónde queda y cuánto cuesta ir a la casita de Papá Noel desde la Argentina",
