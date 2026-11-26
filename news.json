@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-26T01:59:04.910100Z",
+ "actualizado": "2026-11-26T07:40:41.911640Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -59,6 +59,55 @@
   }
  ],
  "items": [
+  {
+   "titulo": "Recesión técnica, pico del riesgo país, dólar en alza y acciones en rojo: por qué se complicó el frente económico de la Argentina",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/26/recesion-tecnica-pico-del-riesgo-pais-dolar-en-alza-y-acciones-en-rojo-por-que-se-complico-el-frente-economico-de-la-argentina/",
+   "fecha": "2026-11-26T06:08:00Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Licitación clave: el Gobierno enfrenta hoy vencimientos por $25 billones en medio de la tensión con el dólar y el riesgo país",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/26/licitacion-clave-el-gobierno-enfrenta-hoy-vencimientos-por-25-billones-en-medio-de-la-tension-con-el-dolar-y-el-riesgo-pais/",
+   "fecha": "2026-11-26T05:11:56Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "La industria mostró algunos indicios positivos en octubre, pero la mayoría de los sectores se mantiene en terreno negativo",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/26/la-industria-mostro-algunos-indicios-positivos-en-octubre-pero-la-mayoria-de-los-sectores-se-mantiene-en-terreno-negativo/",
+   "fecha": "2026-11-26T05:11:05Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "El banco más grande del mundo analizó el salto del riesgo país y la volatilidad en Argentina: que prevé para las elecciones 2027",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/26/el-banco-mas-grande-del-mundo-analizo-el-salto-del-riesgo-pais-y-la-volatilidad-en-argentina-que-preve-para-las-elecciones-2027/",
+   "fecha": "2026-11-26T05:10:40Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Más agua, más energía: el Súper Niño disparó la generación hidroeléctrica y la principal central del país ampliará su capacidad",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/26/mas-agua-mas-energia-el-super-nino-disparo-la-generacion-hidroelectrica-y-la-principal-central-del-pais-ampliara-su-capacidad/",
+   "fecha": "2026-11-26T05:10:09Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Las elecciones de 2027 explican casi la mitad del riesgo país y hay dudas por la asistencia externa",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/26/las-elecciones-de-2027-explican-casi-la-mitad-del-riesgo-pais-y-hay-dudas-por-la-asistencia-externa/",
+   "fecha": "2026-11-26T05:09:46Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Fredi Vivas, CEO de Rocking Data: “Una empresa agéntica cambia cómo funciona el negocio”",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/negocios/empresas-agenticas-que-son-y-como-pueden-transformar-el-funcionamiento-de-un-negocio-nid25112026/",
+   "fecha": "2026-11-26T03:00:04Z",
+   "tema": "empresas"
+  },
   {
    "titulo": "Martín Guzmán cuestionó el rumbo económico de Javier Milei: \"No hay una forma de salir de ahí desde su propio modelo\"",
    "medio": "Ámbito",
@@ -445,13 +494,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Empresas agénticas: qué son y cómo pueden transformar el funcionamiento de un negocio",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/negocios/empresas-agenticas-que-son-y-como-pueden-transformar-el-funcionamiento-de-un-negocio-nid25112026/",
-   "fecha": "2026-11-25T19:44:51Z",
-   "tema": "empresas"
-  },
-  {
    "titulo": "Las ventas de supermercados cayeron 3% y acumularon nueve meses en baja",
    "medio": "La Nación",
    "url": "https://www.lanacion.com.ar/economia/las-ventas-de-supermercados-cayeron-3-y-acumularon-nueve-meses-en-baja-nid25112026/",
@@ -641,13 +683,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Juicios laborales: el Gobierno proyecta 135.000 demandas este año y un costo millonario para el sistema",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/25/juicios-laborales-el-gobierno-proyecta-135000-demandas-este-ano-y-un-sobrecosto-de-usd-2347-millones/",
-   "fecha": "2026-11-25T15:15:40Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "La inflación en EEUU sigue firme y el mercado se prepara para una suba de tasas en diciembre",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/la-inflacion-eeuu-sigue-firme-y-el-mercado-se-prepara-una-suba-tasas-diciembre-n6349170",
@@ -660,20 +695,6 @@
    "url": "https://www.ambito.com/economia/nueva-ofensiva-donald-trump-impondra-aranceles-20-china-la-ue-india-y-otras-11-s-n6349164",
    "fecha": "2026-11-25T15:14:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Ingresos Brutos y tasas municipales: por qué un mismo negocio paga más impuestos según la ciudad",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/25/ingresos-brutos-y-tasas-municipales-por-que-un-mismo-negocio-paga-mas-impuestos-segun-la-ciudad/",
-   "fecha": "2026-11-25T15:11:09Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Con el foco en las exportaciones, Stellantis inauguró una planta de motores para equipar 11 vehículos de producción regional",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/25/con-el-foco-en-las-exportaciones-stellantis-inauguro-una-planta-de-motores-para-equipar-11-vehiculos-de-produccion-regional/",
-   "fecha": "2026-11-25T15:02:05Z",
-   "tema": "empresas"
   },
   {
    "titulo": "Recesión en Argentina: qué sectores frenan la economía y cuándo podría llegar el rebote",
@@ -697,13 +718,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Cajas navideñas para todos los bolsillos: cuánto cuestan y cómo cambiaron los precios en un año",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/25/cajas-navidenas-para-todos-los-bolsillos-cuanto-cuestan-y-como-cambiaron-los-precios-en-un-ano/",
-   "fecha": "2026-11-25T14:30:01Z",
-   "tema": "inflacion"
-  },
-  {
    "titulo": "Caputo da por perdido el partido del riesgo país y concentra todas sus fuerzas en el dólar",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/469943-caputo-da-por-perdido-el-partido-del-riesgo-pais-y-va-por-el-dolar",
@@ -718,13 +732,6 @@
    "tema": "politica"
   },
   {
-   "titulo": "Más crecimiento y más inflación en EEUU: el PIB subió a 4,3% y los precios igualan su máximo de tres años",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/estados-unidos/2026/11/25/la-inflacion-que-mira-la-reserva-federal-subio-a-38-en-octubre-su-nivel-mas-alto-en-tres-anos/",
-   "fecha": "2026-11-25T14:13:27Z",
-   "tema": "inflacion"
-  },
-  {
    "titulo": "Shopping lanza promociones con hasta 70% de descuento y cuotas por los Black Days",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/actualidad/469996-shopping-en-modo-outlet-lanza-hasta-70-por-ciento-descuento-por-black-friday",
@@ -737,13 +744,6 @@
    "url": "https://www.ambito.com/economia/arca-modifico-los-requisitos-los-fal-que-cambia-las-cooperativas-y-las-pymes-n6349108",
    "fecha": "2026-11-25T14:00:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "Caputo minimizó el riesgo de que se acelere la inflación: “No tememos que la suba del dólar pase a los precios”",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/25/caputo-minimizo-el-riesgo-de-que-se-acelere-la-inflacion-no-tememos-que-la-suba-del-dolar-pase-a-los-precios/",
-   "fecha": "2026-11-25T13:55:15Z",
-   "tema": "dolar"
   },
   {
    "titulo": "La UE creará un nuevo fondo tecnológico de 50.000 millones de euros para reducir dependencia de EEUU y China",
