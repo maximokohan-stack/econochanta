@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-27T01:59:06.817292Z",
+ "actualizado": "2026-11-27T07:39:52.331283Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -59,6 +59,76 @@
   }
  ],
  "items": [
+  {
+   "titulo": "El Senado convirtió en ley al proyecto de vandalismo rural por amplia mayoría",
+   "medio": "La Nación",
+   "url": "https://www.lanacion.com.ar/economia/campo/el-senado-convirtio-en-ley-al-proyecto-de-vandalismo-rural-por-amplia-mayoria-nid27112026/",
+   "fecha": "2026-11-27T06:01:37Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "El Gobierno salió a marcar la cancha para suavizar la suba del dólar y busca acotar el impacto sobre la inflación",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/27/el-gobierno-salio-a-marcar-la-cancha-para-suavizar-la-suba-del-dolar-y-busca-acotar-el-impacto-sobre-la-inflacion/",
+   "fecha": "2026-11-27T05:58:58Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "El plan de Caputo para pagar el abultado vencimiento deuda de enero: qué efecto tendrá sobre las reservas del Central",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/27/el-plan-de-caputo-para-pagar-el-abultado-vencimiento-deuda-de-enero-que-efecto-tendra-sobre-las-reservas-del-central/",
+   "fecha": "2026-11-27T05:58:40Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Privatización del Belgrano Cargas: el Gobierno cede ante un reclamo provincial y crece la chance de una nueva prórroga",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/27/privatizacion-del-belgrano-cargas-el-gobierno-cede-ante-un-reclamo-provincial-y-crece-la-chance-de-una-nueva-prorroga/",
+   "fecha": "2026-11-27T05:58:22Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Dos modelos económicos y un mismo desafío: por qué las automotrices pierden competitividad en Argentina y Brasil",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/27/dos-modelos-economicos-y-un-mismo-desafio-por-que-las-automotrices-pierden-competitividad-en-argentina-y-brasil/",
+   "fecha": "2026-11-27T05:58:01Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "El mapa del consumo: solo cuatro provincias mejoraron sus ventas en supermercados y hubo caídas de hasta 18 por ciento",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/27/el-mapa-del-consumo-solo-cuatro-provincias-mejoraron-sus-ventas-en-supermercados-y-hubo-caidas-de-hasta-18-por-ciento/",
+   "fecha": "2026-11-27T05:57:30Z",
+   "tema": "actividad"
+  },
+  {
+   "titulo": "La política inclinó la balanza: los activos argentinos repuntaron tras la media sanción del proyecto para suspender las PASO",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/27/la-politica-inclino-la-balanza-los-activos-argentinos-repuntaron-tras-la-media-sancion-del-proyecto-para-suspender-las-paso/",
+   "fecha": "2026-11-27T05:56:59Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La City abraza los triunfos políticos de Milei, pero espera más señales para apostar",
+   "medio": "iProfesional",
+   "url": "https://www.iprofesional.com/finanzas/470209-que-dicen-en-la-city-tras-el-triunfo-politico-de-milei-en-el-congreso",
+   "fecha": "2026-11-27T03:05:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Lo que se dice en las mesas: empresas gambetean riesgo electoral, recalculan emisiones y hay alerta sobre la oferta de dólares",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/lo-que-se-dice-las-mesas-empresas-gambetean-riesgo-electoral-recalculan-emisiones-y-hay-alerta-la-oferta-dolares-n6349908",
+   "fecha": "2026-11-27T03:01:00Z",
+   "tema": "empresas"
+  },
+  {
+   "titulo": "Crisis en el comercio: reportan 53.000 kioscos cerrados desde que asumió Javier Milei",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/crisis-el-comercio-reportan-53000-kioscos-cerrados-que-asumio-javier-milei-n6349905",
+   "fecha": "2026-11-27T01:58:00Z",
+   "tema": "politica"
+  },
   {
    "titulo": "Dólar: Orlando Ferreres anticipó hasta dónde puede subir el tipo de cambio y alertó por la falta de inversiones",
    "medio": "Ámbito",
@@ -613,13 +683,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Baires Grill llega a la Argentina después de 27 años en Estados Unidos y prepara cuatro aperturas",
-   "medio": "La Nación",
-   "url": "https://www.lanacion.com.ar/economia/negocios/baires-grill-llega-a-la-argentina-despues-de-27-anos-en-estados-unidos-y-prepara-cuatro-aperturas-nid26112026/",
-   "fecha": "2026-11-26T17:44:29Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Reforma del BCRA: cuáles son los puntos clave del proyecto que se aprobó en Diputados",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/reforma-del-bcra-cuales-son-los-puntos-clave-del-proyecto-que-se-aprobo-diputados-n6349705",
@@ -718,41 +781,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Con el foco en las exportaciones, Stellantis inauguró una planta de motores para equipar 11 vehículos de producción regional",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/25/con-el-foco-en-las-exportaciones-stellantis-inauguro-una-planta-de-motores-para-equipar-11-vehiculos-de-produccion-regional/",
-   "fecha": "2026-11-26T14:11:54Z",
-   "tema": "empresas"
-  },
-  {
-   "titulo": "Después de avisar que podría cerrar sus plantas, el número uno regional de Stellantis pidió limitar los beneficios a los importadores",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/25/despues-de-avisar-que-podria-cerrar-sus-plantas-el-numero-uno-regional-de-stellantis-pidio-limitar-los-beneficios-a-los-importadores/",
-   "fecha": "2026-11-26T14:11:31Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Superdólar: la moneda estadounidense resultó la gran ganadora frente a la corrección bajista de las bolsas internacionales",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/26/superdolar-la-moneda-estadounidense-resulto-la-gran-ganadora-frente-a-la-correccion-bajista-de-las-bolsas-internacionales/",
-   "fecha": "2026-11-26T14:03:08Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Carlos Melconian analizó la caída en recesión técnica: “Estamos en el mismo estancamiento que arrastra el país desde el 2011”",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/26/carlos-melconian-analizo-la-caida-en-recesion-tecnica-estamos-en-el-mismo-estancamiento-que-arrastra-el-pais-desde-el-2011/",
-   "fecha": "2026-11-26T14:00:34Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Neuquén aprobó una ley para proteger las tierras agrícolas del avance urbano impulsado por Vaca Muerta",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/26/neuquen-aprobo-una-ley-para-proteger-las-tierras-agricolas-del-avance-urbano-impulsado-por-vaca-muerta/",
-   "fecha": "2026-11-26T13:47:07Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "Aguinaldo de diciembre: cuánto recibirá un jubilado que cobra la mínima y cuándo lo paga ANSES",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/470118-aguinaldo-jubilados-diciembre-2026-cuanto-cobran-minima-anses",
@@ -765,13 +793,6 @@
    "url": "https://www.ambito.com/economia/se-profundiza-la-caida-del-consumo-masivo-retrocedio-un-75-anual-y-todos-los-canales-venta-registraron-bajas-n6349531",
    "fecha": "2026-11-26T13:18:00Z",
    "tema": "actividad"
-  },
-  {
-   "titulo": "Brasil analiza medidas recíprocas si Estados Unidos impone aranceles a sus exportaciones",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/america/america-latina/2026/11/26/brasil-analiza-medidas-reciprocas-si-estados-unidos-impone-aranceles-a-sus-exportaciones/",
-   "fecha": "2026-11-26T13:07:55Z",
-   "tema": "empresas"
   },
   {
    "titulo": "Bancos registran subas de hasta 60% en operaciones de compra de dólares por home banking",
@@ -807,27 +828,6 @@
    "url": "https://www.iprofesional.com/finanzas/469718-plazo-fijo-en-dolares-por-que-rinde-menos-que-la-inflacion-de-ee-uu-",
    "fecha": "2026-11-26T11:10:00Z",
    "tema": "inflacion"
-  },
-  {
-   "titulo": "Jubilados pueden cobrar más si ANSES cometió alguno de estos errores",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/469397-anses-que-errores-pueden-hacerte-cobrar-menos-jubilacion",
-   "fecha": "2026-11-26T11:07:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "La Justicia advirtió que las pymes no siempre podrán pagar indemnización en 12 cuotas",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/470041-justicia-argentina-advirtio-que-pymes-no-siempre-podran-pagar-indemnizacion-en-12-cuotas",
-   "fecha": "2026-11-26T11:00:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Caución o plazo fijo: cuánto rinde hoy invertir $1 millón",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/finanzas/469770-caucion-vs-plazo-fijo-que-inversion-paga-mas-por-1-millon-hoy",
-   "fecha": "2026-11-26T10:55:00Z",
-   "tema": "mercados"
   }
  ]
 }
