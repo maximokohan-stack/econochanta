@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-28T01:43:00.719493Z",
+ "actualizado": "2026-11-28T07:07:24.673588Z",
  "ventanaHoras": 48,
  "temas": [
   {
@@ -35,7 +35,7 @@
   {
    "medio": "Ámbito",
    "ok": true,
-   "n": 25
+   "n": 20
   },
   {
    "medio": "Infobae",
@@ -59,6 +59,104 @@
   }
  ],
  "items": [
+  {
+   "titulo": "El salto del riesgo país cerró una canilla clave de dólares y el Gobierno apuesta a tres factores para volver a comprar reservas",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/28/el-salto-del-riesgo-pais-cerro-una-canilla-clave-de-dolares-y-el-gobierno-apuesta-a-tres-factores-para-volver-a-comprar-reservas/",
+   "fecha": "2026-11-28T06:26:45Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "El plan del Gobierno para pagar la deuda en enero tiene respuesta y un costo: las reservas del Banco Central",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/28/el-plan-del-gobierno-para-pagar-la-deuda-en-enero-tiene-respuesta-y-un-costo-las-reservas-del-banco-central/",
+   "fecha": "2026-11-28T06:26:30Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Prepagas, alquileres y tarifas: uno por uno, todos los aumentos que llegan en diciembre e impactarán en el bolsillo",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/28/prepagas-alquileres-y-tarifas-uno-por-uno-todos-los-aumentos-que-llegan-en-diciembre-e-impactaran-en-el-bolsillo/",
+   "fecha": "2026-11-28T06:24:56Z",
+   "tema": "inflacion"
+  },
+  {
+   "titulo": "Después del impacto de la suba del dólar en el precio de los autos: ¿conviene comprar un nacional o un importado?",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/28/despues-del-impacto-de-la-suba-del-dolar-en-el-precio-de-los-autos-conviene-comprar-un-nacional-o-un-importado/",
+   "fecha": "2026-11-28T06:24:07Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Las acciones argentinas tuvieron una fuerte recuperación y el riesgo país cayó más de 100 puntos en una semana muy volátil",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/economia/2026/11/28/las-acciones-argentinas-tuvieron-una-fuerte-recuperacion-y-el-riesgo-pais-cayo-mas-de-100-puntos-en-una-semana-muy-volatil/",
+   "fecha": "2026-11-28T06:23:19Z",
+   "tema": "mercados"
+  },
+  {
+   "titulo": "Cómo solucionar la disparatada mora personal regional creada por el Estado",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/11/28/como-solucionar-la-disparatada-mora-personal-regional-creada-por-el-estado/",
+   "fecha": "2026-11-28T06:21:35Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La IA no abarata el software, pero cambia dónde está el costo",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/11/28/la-ia-no-abarata-el-software-pero-cambia-donde-esta-el-costo/",
+   "fecha": "2026-11-28T06:20:50Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Caputo multiplicó apariciones para calmar mercados, pero sigue la presión al dólar",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/economia/caputo-multiplico-apariciones-para-calmar-mercados-pero-sigue-la-presion-al-dolar-aWz0t2r240GR",
+   "fecha": "2026-11-28T06:20:07Z",
+   "tema": "dolar"
+  },
+  {
+   "titulo": "Señales clave para los activos argentinos",
+   "medio": "Infobae",
+   "url": "https://www.infobae.com/opinion/2026/11/28/senales-clave-para-los-activos-argentinos/",
+   "fecha": "2026-11-28T06:20:04Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La AGN alertó por el riesgo de embargo del oro en Londres",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/economia/la-agn-confirmo-que-el-oro-del-banco-central-esta-en-londres-a0Yb10d0IXWH",
+   "fecha": "2026-11-28T03:36:51Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "Ogilvy, Caputo y la estrategia de la elusión: sin respuesta, se confunde la pregunta",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/columnistas/ogilvy-caputo-y-la-estrategia-de-la-elusion-sin-respuesta-se-confunde-la-pregunta-a2vWS2C2nwzE",
+   "fecha": "2026-11-28T03:15:12Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Más allá del turismo: cómo República Dominicana busca convertirse en un hub logístico del Caribe",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/mas-alla-del-turismo-como-republica-dominicana-busca-convertirse-un-hub-logistico-del-caribe-n6350138",
+   "fecha": "2026-11-28T03:00:00Z",
+   "tema": "otros"
+  },
+  {
+   "titulo": "La economía lleva 15 años de estancamiento: ¿por qué la recesión bajo el gobierno de Javier Milei es diferente?",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/la-lleva-15-anos-estancamiento-por-que-la-recesion-el-gobierno-javier-milei-es-diferente-n6350143",
+   "fecha": "2026-11-28T03:00:00Z",
+   "tema": "politica"
+  },
+  {
+   "titulo": "Lula-Lav",
+   "medio": "Perfil",
+   "url": "https://www.perfil.com/columnistas/lula-lav-aP86X1s2TpjP",
+   "fecha": "2026-11-28T02:55:00Z",
+   "tema": "otros"
+  },
   {
    "titulo": "El dólar y el riesgo país cayeron y el Gobierno cree que las turbulencias ya son historia",
    "medio": "iProfesional",
@@ -543,13 +641,6 @@
    "tema": "dolar"
   },
   {
-   "titulo": "Murió el empresario Jorge Born, heredero de Bunge y Born, por quien Montoneros cobró el rescate más alto de la historia mundial",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/protagonistas/murio-el-empresario-jorge-born-heredero-del-grupo-bunge-y-born-aJ4Dk5R916ff",
-   "fecha": "2026-11-27T16:48:40Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Los argentinos no compran los autos más baratos: cuáles son los diez modelos más accesibles y cuántos se venden",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/27/los-argentinos-no-compran-los-autos-mas-baratos-cuales-son-los-diez-modelos-mas-accesibles-y-cuantos-se-venden/",
@@ -568,20 +659,6 @@
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/27/casi-el-60-de-los-inquilinos-en-el-amba-pidio-dinero-prestado-durante-el-ultimo-ano-y-la-mayoria-lo-uso-para-pagar-el-alquiler/",
    "fecha": "2026-11-27T16:19:23Z",
-   "tema": "inflacion"
-  },
-  {
-   "titulo": "El economista Sebastián Menescaldi explica por qué la economía no mejorará en 2027",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/modo-fontevecchia/el-economista-sebastian-menescaldi-explica-por-que-la-economia-no-mejorara-en-2027-aorjQ7d49oCN",
-   "fecha": "2026-11-27T16:17:06Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Los alimentos acumulan tres semanas consecutivas de aumentos, pero la inflación de noviembre cerraría por debajo del 2%",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/economia/los-alimentos-acumulan-tres-semanas-de-subas-y-la-inflacion-de-noviembre-cerraria-por-debajo-del-2-a40-aKP7p9R9n8Lz",
-   "fecha": "2026-11-27T15:56:52Z",
    "tema": "inflacion"
   },
   {
@@ -606,13 +683,6 @@
    "tema": "otros"
   },
   {
-   "titulo": "Los bonos argentinos se recuperan en Wall Street, el riesgo país cae a 959 puntos y el dólar ronda en $1.625",
-   "medio": "Perfil",
-   "url": "https://www.perfil.com/economia/suben-los-bonos-y-el-riesgo-pais-cae-a-956-puntos-a40-aC7mc0z2cT4H",
-   "fecha": "2026-11-27T14:24:55Z",
-   "tema": "dolar"
-  },
-  {
    "titulo": "La crisis de la indumentaria no da tregua: las ventas volvieron a caer y crece la preocupación por los costos",
    "medio": "Infobae",
    "url": "https://www.infobae.com/economia/2026/11/27/la-crisis-de-la-indumentaria-no-da-tregua-las-ventas-volvieron-a-caer-y-crece-la-preocupacion-por-los-costos/",
@@ -634,39 +704,11 @@
    "tema": "politica"
   },
   {
-   "titulo": "Quién es el influencer “CriptoNorber” y por qué se lo acusa de provocar pérdidas por USD 13 millones a sus seguidores",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/27/quien-es-el-influencer-criptonorber-y-por-que-se-lo-acusa-de-provocar-perdidas-por-usd-13-millones-a-sus-seguidores/",
-   "fecha": "2026-11-27T14:13:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "La economía argentina se coló en el debate presidencial de España: qué dijeron sobre Milei y la motosierra",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/27/la-economia-argentina-se-colo-en-el-debate-presidencial-de-espana-que-dijeron-sobre-milei-y-la-motosierra/",
-   "fecha": "2026-11-27T14:10:13Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Los mercados brasileños repuntan tras el nombramiento de Luiz Carlos Trabuco como ministro de Economía",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/america/america-latina/2026/11/27/los-mercados-brasilenos-repuntan-tras-el-nombramiento-de-luiz-carlos-trabuco-como-ministro-de-economia/",
-   "fecha": "2026-11-27T14:05:32Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "Claudio Zuchovicki habló de inversiones en 2027 y explicó el problema del ahorro argentino",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/470249-inversiones-2027-que-oportunidades-ve-claudio-zuchovicki-en-argentina",
    "fecha": "2026-11-27T14:00:00Z",
    "tema": "empresas"
-  },
-  {
-   "titulo": "Más deuda y más atrasos: uno de cada tres pesos prestados por entidades no bancarias cayó en mora",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/27/mas-deuda-y-mas-atrasos-uno-de-cada-tres-pesos-prestados-por-entidades-no-bancarias-cayo-en-mora/",
-   "fecha": "2026-11-27T13:59:12Z",
-   "tema": "politica"
   },
   {
    "titulo": "Milei apuesta a que la reforma del Banco Central ayude a sostener la baja del riesgo país",
@@ -676,25 +718,11 @@
    "tema": "mercados"
   },
   {
-   "titulo": "Por el Black Friday, Aerolíneas Argentinas lanzó descuentos del 10% y hasta 18 cuotas sin interés en sus vuelos",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/27/por-el-black-friday-aerolineas-argentinas-lanzo-descuentos-del-10-y-hasta-18-cuotas-sin-interes-en-sus-vuelos/",
-   "fecha": "2026-11-27T13:24:36Z",
-   "tema": "otros"
-  },
-  {
    "titulo": "ANSES: cuánto se podrá ganar para cobrar el SUAF en diciembre",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/economia/469744-suaf-cuales-seran-los-topes-de-ingresos-en-diciembre",
    "fecha": "2026-11-27T13:20:00Z",
    "tema": "otros"
-  },
-  {
-   "titulo": "\"El dólar se mueve, el dólar flota\": Caputo se mostró confiado ante la volatilidad cambiaria",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/27/el-dolar-se-mueve-el-dolar-flota-caputo-se-mostro-confiado-ante-la-volatilidad-cambiaria/",
-   "fecha": "2026-11-27T13:10:07Z",
-   "tema": "dolar"
   },
   {
    "titulo": "La cosecha alcanzó un récord histórico y el campo aportaría casi u$45.000 millones",
@@ -718,20 +746,6 @@
    "tema": "politica"
   },
   {
-   "titulo": "El Gobierno aprobó un esquema que busca reducir el riesgo de cortes de luz en verano y otros picos de consumo",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/economia/2026/11/27/el-gobierno-aprobo-un-esquema-que-busca-reducir-el-riesgo-de-cortes-de-luz-en-verano-y-otros-picos-de-consumo/",
-   "fecha": "2026-11-27T12:06:51Z",
-   "tema": "actividad"
-  },
-  {
-   "titulo": "Taiwán prevé un crecimiento del PBI del 13,28% en 2026 y de 6,51% en 2027 por la inteligencia artificial",
-   "medio": "Infobae",
-   "url": "https://www.infobae.com/america/mundo/2026/11/27/taiwan-preve-un-crecimiento-del-pbi-del-1328-en-2026-y-de-651-en-2027-por-la-inteligencia-artificial/",
-   "fecha": "2026-11-27T12:06:21Z",
-   "tema": "actividad"
-  },
-  {
    "titulo": "Nuevo récord de Vaca Muerta en petróleo y ya produce el 75% del total nacional",
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/energia/470208-vaca-muerta-record-neuquen-produjo-723929-barriles-de-crudo-al-dia",
@@ -746,18 +760,18 @@
    "tema": "empresas"
   },
   {
-   "titulo": "¿Baja de impuestos en 2027? El recorte de fondos nacionales pone contra las cuerdas a las provincias",
-   "medio": "Ámbito",
-   "url": "https://www.ambito.com/economia/baja-impuestos-2027-el-recorte-fondos-nacionales-pone-contra-las-cuerdas-las-provincias-n6349791",
-   "fecha": "2026-11-27T10:00:00Z",
-   "tema": "politica"
-  },
-  {
    "titulo": "Cuánto cuesta la PlayStation 5 en Argentina en noviembre de 2026: precios de los modelos Slim y Pro",
    "medio": "Ámbito",
    "url": "https://www.ambito.com/economia/cuanto-cuesta-la-playstation-5-argentina-noviembre-2026-precios-los-modelos-slim-y-pro-n6349083",
    "fecha": "2026-11-27T10:00:00Z",
    "tema": "inflacion"
+  },
+  {
+   "titulo": "¿Baja de impuestos en 2027? El recorte de fondos nacionales pone contra las cuerdas a las provincias",
+   "medio": "Ámbito",
+   "url": "https://www.ambito.com/economia/baja-impuestos-2027-el-recorte-fondos-nacionales-pone-contra-las-cuerdas-las-provincias-n6349791",
+   "fecha": "2026-11-27T10:00:00Z",
+   "tema": "politica"
   },
   {
    "titulo": "Milei festeja fin de riesgo Bullrich y prevé mercado más calmo y posible ruptura peronista",
@@ -813,20 +827,6 @@
    "medio": "iProfesional",
    "url": "https://www.iprofesional.com/finanzas/470181-banco-central-desaparecio-mercado-puso-alerta-inversores-argentinos-noviembre-2026",
    "fecha": "2026-11-26T22:30:00Z",
-   "tema": "politica"
-  },
-  {
-   "titulo": "Nucleoeléctrica Argentina exportará ingeniería nuclear a Canadá y al mundo",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/energia/470187-argentina-exportara-ingenieria-nuclear-a-canada-y-el-mundo",
-   "fecha": "2026-11-26T22:23:00Z",
-   "tema": "otros"
-  },
-  {
-   "titulo": "Caputo aspiró pesos del mercado y pudo patear $7 billones para después de las elecciones",
-   "medio": "iProfesional",
-   "url": "https://www.iprofesional.com/economia/470183-caputo-volvio-a-aspirar-pesos-y-pateo-7-billones-para-2028",
-   "fecha": "2026-11-26T21:58:00Z",
    "tema": "politica"
   }
  ]
